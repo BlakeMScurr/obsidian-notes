@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "f898069709d32bb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfbd57a3adefefdb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ZKPs/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+            "mode": "source"
+          }
+        },
+        "group": "d2d1c9b7d9d758cc"
+      },
+      {
+        "id": "bd1a060ebc7a2f2d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ZKPs/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+            "mode": "preview"
+          }
+        },
+        "group": "d2d1c9b7d9d758cc"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7685e94c847e0ed0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0defa784b00328c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd665029fe7d3e2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "45dd9589317113c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "df608e470bfd07c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e46981d43ee11bdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24833a9bfac23e3d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ZKPs/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38247dcd40e729d0",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "dfbd57a3adefefdb",
+  "lastOpenFiles": [
+    "ZKPs/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+    "ZKPs/Cairo/Hello Cairo!/Questions.md",
+    "Rust/General.md",
+    "State Channels/Implementation/Wallet.md",
+    "Rust/Untitled.md",
+    "Rust/Crust of Rust/Lifetime Annotations.md",
+    "Untitled.md",
+    "Cognitas.md",
+    "State Channels/Implementation/Untitled.md"
+  ]
+}
