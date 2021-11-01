@@ -133,3 +133,27 @@ What are the generators of the additive group $\mathbb{z}$?
 ?
 $1$ and $-1$.
 
+What are the properties of an equivalence relation?
+?
+Reflexivity, symmetry, and transitivity.
+
+What is the reflexivity property of an equivalence relation?
+?
+$$(s, s) \in R\ \forall s \in S$$
+
+What is the symmetry property of an equivalence relation?
+?
+$$(t, s) \in R \implies (s, t)$$
+
+What is the transitivity property of an equivalence relation?
+?
+$$(s, t),\ (t, u) \in R \implies (s, u) \in R$$
+
+How does a equivalence relation induce a partition of $S$?
+?
+A partition of $S$ is a representation of $S$ as a union of mutually disjoint subsets of $S$.
+The union of equivalence classes is equivalent to $S$ because of reflexivity (all elements are in a class at least containing themselves), and the classes are mutually disjoint because of symmetry and transitivity (if any two elements are equivalent, they share the same equivalence class with all their other equivalents).
+
+What is the definition of an equivalence class?
+?
+$$[s] = \{ t \in S\ |\ (s, t) \in R\ \}$$
