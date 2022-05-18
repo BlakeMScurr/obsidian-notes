@@ -1066,6 +1066,67 @@ template t() {
 
 
 # Code Quality
+
+What does assert do?
+?
+Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
+
+What creates assertions?
+?
+The `assert` keyword, and constraints.
+
+How do you use `assert`, for example?
+?
+`assert(n <= 254);`
+
+What is `log`?
+?
+A way to log values to the standard error stream.
+
+What can be passed to `log`?
+?
+Any expression except the conditional expression.
+
+What's an example of a `log` instruction?
+?
+`log(123);`
+
 # Circom Insights
 ## Compiler
+
+What are the compiler phases called and what do they do?
+?
+Construction, where constraints are generated
+Code generation, where the code to compute the witness is generated
+
+What kinds of compiler messages are there?
+?
+Hints, warnings, and errors.
+
+What is a hint?
+?
+A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
+
+What is a warning?
+?
+A compiler message meaning that what you've done is allowed but should not happen in general.
+
+ ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
+
+What is an error?
+?
+A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
+
+What is wrong with the following code, and what message is genreated?
+```
+template A() {
+	signal in;
+	in = 1;
+}
+```
+?
+You can't assign to a signal using `=`.
+An error message saying that "Assignee and assigned types do not match operator."
+
 ## Unknowns
+
