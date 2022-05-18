@@ -553,6 +553,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
+<!--SR:2022-05-23,4,250-->
 
 What are the possible values of a field element?
 ?
@@ -567,6 +568,7 @@ What do you use to change the field size?
 What is the conditional expression?
 ?
 `_?_:_`
+<!--SR:2022-05-23,4,250-->
 
 What are the boolean operators?
 ?
@@ -588,6 +590,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
+<!--SR:2022-05-20,1,230-->
 
 What is the `val(x)` function for?
 ?
@@ -599,10 +602,12 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
+<!--SR:2022-05-23,4,250-->
 
 How is `x < y` defined?
 ?
 `val(x % p) < val(y % p)`
+<!--SR:2022-05-23,4,250-->
 
 How is `x > y` defined?
 ?
@@ -621,6 +626,7 @@ How is `x >= y` defined?
 What are the arithmetic operators?
 ?
 `+ - * ** / \ %`
+<!--SR:2022-05-23,4,250-->
 
 What are the `+ - * **` operators?
 ?
@@ -630,6 +636,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
+<!--SR:2022-05-20,1,230-->
 
 What is the `\` operator?
 ?
@@ -654,6 +661,7 @@ What are the bitwise operators?
 What is the `&` operator?
 ?
 Bitwise AND
+<!--SR:2022-05-23,4,250-->
 
 What is the `|` operator?
 ?
@@ -677,6 +685,7 @@ Rightshift
 What is the `<<`?
 ?
 Leftshift
+<!--SR:2022-05-23,4,250-->
 
 How are the shift operators extended?
 ?
@@ -689,6 +698,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
+<!--SR:2022-05-20,1,230-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -717,6 +727,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
+<!--SR:2022-05-23,4,250-->
 
 What is the code for `Num2Bits`
 ?
@@ -777,6 +788,7 @@ Rewrite `out <== 1 - a * b;` more explicitly
 out === 1 - a * b;
 out <-- 1 - a * b;
 ```
+<!--SR:2022-05-23,4,250-->
 
 What kinds of expressions are allowed in constraints?
 ?
@@ -818,6 +830,7 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
+<!--SR:2022-05-20,1,230-->
 
 What is the syntax for `for` loops?
 ?
@@ -923,6 +936,7 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
+<!--SR:2022-05-23,4,250-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
@@ -937,10 +951,12 @@ The size of `z` is not explicitly given, and it will produce a compiler error.
 Can a single array hold multiple types of signals?
 ?
 No, each array can only hold one type of signal.
+<!--SR:2022-05-23,4,250-->
 
 Can an array contain components with different parameters?
 ?
 Yes, as long as they have the same type.
+<!--SR:2022-05-23,4,250-->
 
 What is wrong with the following code and what error message will it give?
 ```
@@ -1000,6 +1016,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
+<!--SR:2022-05-23,4,250-->
 
 What is wrong with this code?
 ```
