@@ -91,7 +91,7 @@ template A(){
 What happens if try to access a non output signal on a component?
 ?
 Compile error.
-<!--SR:2022-05-19,3,250-->
+<!--SR:2022-05-29,10,250-->
 
 What is wrong with the following code?
 ```
@@ -133,7 +133,7 @@ How do we declare a variable?
 
 What values do variables hold?
 ?
-Values of the field, or arithmetic expressions (when used to generate constraints [??? what else are they used for?])
+Values of the field, or arithmetic expressions (when used to generate constraints)
 <!--SR:2022-05-19,1,190-->
 
 What are the various ways we can assign to a variable?
@@ -193,7 +193,7 @@ template tempid (param_1, param2) {
 What can templates not include?
 ?
 Local functions or template definitions.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-25,6,250-->
 
 What is wrong with the following code, and what error will it generate?
 ```
@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get due to a poorly writt
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-05-19,1,210-->
+<!--SR:2022-05-20,1,190-->
 
 ### Components
 
@@ -373,7 +373,7 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-24,5,250-->
 
 When can we use `parallel`?
 ?
@@ -403,7 +403,7 @@ When dealing with large circuits.
 What is the line at the top of every circom file?
 ?
 `pragma circom 2.0.0;`
-<!--SR:2022-05-19,2,230-->
+<!--SR:2022-05-25,6,230-->
 
 What is pragma for?
 ?
@@ -491,7 +491,7 @@ It defines global input and outputs of the circuit, so it needs to be able to sp
 What is the syntax for creating a main component?
 ?
 `component main{public [signal_list]]} = template_id(v1, ..., vn);` where `{public [signal_list]}` is optional.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-25,6,250-->
 
 Which input signals in the main component are private?
 ?
@@ -642,7 +642,7 @@ Remainder after integer division.
 What are the arithmetic/assignment operators?
 ?
 `+= -= *= **= /= \= %= ++ --`
-<!--SR:2022-05-19,1,230-->
+<!--SR:2022-05-21,2,230-->
 
 What are the bitwise operators?
 ?
@@ -898,7 +898,7 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-05-19,1,230-->
+<!--SR:2022-05-22,3,230-->
 
 What is the default type of signals and variables?
 ?
