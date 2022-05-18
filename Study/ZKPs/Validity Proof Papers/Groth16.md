@@ -65,7 +65,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-05-19,3,150-->
+<!--SR:2022-05-21,2,130-->
 
 # Introduction
 
@@ -112,23 +112,23 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-05-19,3,150-->
+<!--SR:2022-05-25,6,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-19,1,130-->
+<!--SR:2022-05-20,1,130-->
 
 What did Gro10 achieve wrt communication complexity?
 ?
 Combined pairing based NIZKs with ideas from interactive zero-knowledge to give the first constant size NIZK arguments.
-<!--SR:2022-05-19,2,210-->
+<!--SR:2022-05-20,1,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-19,1,130-->
+<!--SR:2022-05-20,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?

@@ -24,7 +24,7 @@ In what sense are interactive proofs probabilistic?
 ?
 The verifier can be convinced of a false n-bit statement with $1/2^n$ probability.
 The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probability.
-<!--SR:2022-05-19,13,210-->
+<!--SR:2022-06-18,30,210-->
 
 ### Knowledge Complexity
 * We can investigate the knowledge (as opposed to time) complexity of a proof
@@ -1020,7 +1020,7 @@ NP, since it's a special class of interactive proofs.
 How can knowledge complexity be used for cryptography?
 ?
 For proving the correctness of cryptographic protocols in a modular way.
-<!--SR:2022-05-19,23,230-->
+<!--SR:2022-07-08,50,230-->
 
 
 
@@ -1100,8 +1100,8 @@ To solve the problem of flipping a coin over the telephone.
 
 What is the definition of the BL language?
 ?
-Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes is congruent to 3 mod 4.
-<!--SR:2022-05-19,23,250-->
+Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
+<!--SR:2022-05-31,12,230-->
 
 What is the definition of the quadratic predicate?
 ?
@@ -1197,7 +1197,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-05-19,6,130-->
+<!--SR:2022-05-28,9,130-->
 
 What is the problem with the naive QNR IP?
 ?
@@ -1233,7 +1233,7 @@ $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
 What is $x$ in the zk QNR IP?
 ?
 The random residuosity number B quizzes A about.
-<!--SR:2022-05-19,13,210-->
+<!--SR:2022-06-19,31,210-->
 
 How is $x$ defined in the zk QNR IP?
 ?
@@ -1459,7 +1459,7 @@ $B$ checks $v$, halts if it detects cheating, updates $iteration$, accepts if fi
 How does $B$ check $v$?
 ?
 $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
-<!--SR:2022-05-19,10,230-->
+<!--SR:2022-06-14,26,230-->
 
 When does $B$ accept?
 ?
@@ -1556,7 +1556,7 @@ What are my steps for proving the upper bound for the chance that we halt and re
 Show that $X$ or $Y \leq n/6$ if we halt. 
 Show the chance of that is some factorial expression using a string permutation argument.
 Show that chance is less than the bound given by GMR.
-<!--SR:2022-05-19,10,250-->
+<!--SR:2022-06-16,28,250-->
 
 Based on what condition might we halt given honest $A$ and $B$?
 ?
