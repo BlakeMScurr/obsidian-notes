@@ -673,7 +673,7 @@ A computationally bounded adversary trying to distinguish between distributions,
 What does the distinguisher represent in an Interactive Proof?
 ?
 An verifier trying to tell its own studies apart from notes taken in class.
-<!--SR:2022-05-19,23,230-->
+<!--SR:2022-07-11,53,230-->
 
 What is the definition of a distinguisher?
 ?
@@ -788,7 +788,7 @@ It can be equivalent to sending multiple messages encrypted by the same key, whi
 Informally, which communications convey knowledge?
 ?
 Those that transmit the output of an unfeasible computation, a computation that we cannot perform ourselves.
-<!--SR:2022-05-19,16,230-->
+<!--SR:2022-06-25,37,230-->
 
 How much knowledge do random bits convey and why?
 ?
@@ -1474,7 +1474,7 @@ After checking $v$
 What does $B$ do if $iteration \lt n$?
 ?
 Goes back to step 1.
-<!--SR:2022-05-19,10,230-->
+<!--SR:2022-06-13,25,230-->
 #### It is a Proof System
 ##### Remark 2
 ###### Working it out
@@ -1561,7 +1561,7 @@ Show that chance is less than the bound given by GMR.
 Based on what condition might we halt given honest $A$ and $B$?
 ?
 If $|X' \cup Y'| \leq n/3$
-<!--SR:2022-05-19,10,250-->
+<!--SR:2022-06-15,27,250-->
 
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?

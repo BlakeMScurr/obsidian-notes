@@ -514,7 +514,8 @@ What is the comment syntax for circom?
 
 What can be used for identifiers?
 ?
-`*[a-zA-Z_$]`
+`*[a-zA-Z0-9_$]`
+<!--SR:2022-05-22,3,250-->
 
 What are the reserved keywords?
 ?
@@ -573,10 +574,12 @@ What is the conditional expression?
 What are the boolean operators?
 ?
 `&& || !`
+<!--SR:2022-05-23,4,250-->
 
 What is `&&`?
 ?
 Boolean AND operator.
+<!--SR:2022-05-23,4,250-->
 
 What is `||`?
 ?
@@ -586,6 +589,7 @@ Boolean OR operator.
 What is `!`?
 ?
 Boolean NEGATION operator.
+<!--SR:2022-05-22,3,250-->
 
 What are the relational operators?
 ?
@@ -595,6 +599,7 @@ What are the relational operators?
 What is the `val(x)` function for?
 ?
 Defining negative numbers for use with the relational operators.
+<!--SR:2022-05-23,4,250-->
 
 What is the definition of the `val(x)` function?
 ?
@@ -617,6 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
+<!--SR:2022-05-21,2,250-->
 
 How is `x >= y` defined?
 ?
@@ -676,6 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
+<!--SR:2022-05-20,1,230-->
 
 What is the `>>` operator?
 ?
@@ -690,6 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
+<!--SR:2022-05-20,1,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -740,14 +748,15 @@ template Num2Bits(N) {
 	var e2 = 1;
 	for (var i = 0; i < N; i++) {
 		out[i] <-- (in >> i) & 1;
-		out[i] * (out[i] - 1) == 0;
+		out[i] * (out[i] - 1) === 0;
 		lc1 += out[i] * e2;
 		e2 = e2 + e2;
 	}
 	lc1 === in;
 }
 component main{public[in]} = Num2Bits(3);
-```∫√∫√∫√∫√∫√∫√∫√∫√∫√∫√∫∫√∫∫√∫∫√∫√∫√∫√∫√∫√∫√∫√∫√∫√bvvbvbvbvbvbv∫√
+```
+<!--SR:2022-05-20,1,230-->
 
 # Constraint Generation
 
@@ -776,6 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
+<!--SR:2022-05-21,2,250-->
 
 Which operators impose a constraints?
 ?
@@ -793,6 +803,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
+<!--SR:2022-05-22,3,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -819,12 +830,14 @@ b <== x + 3;
 ?
 `b === a * a + 3`
 Because `x` holds the algebraic expression `a*a` which is used to generate constraints over signals, because we can't use variables in a constraint.
+<!--SR:2022-05-23,4,250-->
 
 # Control Flow
 
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
+<!--SR:2022-05-21,2,250-->
 
 What is the syntax `if` statements?
 ?
@@ -835,6 +848,7 @@ The else block is optional.
 What is the syntax for `for` loops?
 ?
 `for ( initialization_code ; boolean_condition ; step_code ) block_of_code`
+<!--SR:2022-05-22,3,250-->
 
 What's wrong with the following code?
 ```
@@ -851,6 +865,7 @@ i++
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
+<!--SR:2022-05-21,2,250-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -872,6 +887,7 @@ component main{public [in]} = wrong(1);
 ```
 ?
 The condition depends on an unknown, and there are constraints generated inside the condition. This makes it impossible to generate a static circuit from the code.
+<!--SR:2022-05-23,4,250-->
 
 What template has an error and why?
 ```
@@ -910,6 +926,7 @@ template wrong() {
 ```
 ?
 The value of `t` is used in a constraint and its construction depends on the unknown signal `in` via control flow, making the resulting constraint non quadratic. This will cause a compiler error.
+<!--SR:2022-05-23,4,250-->
 
 # Data Types
 
@@ -941,6 +958,7 @@ Signals, vars, the same type of component, or arrays.
 How, for example, do we declare a 2D array with lengths?
 ?
 `var dbl[16][2];`
+<!--SR:2022-05-22,3,250-->
 
 What is wrong with the following code?
 `var z = [2,8,4];`
@@ -1006,12 +1024,12 @@ template Multiplier2(N){
 		out2 <== x;
 	}
 }
-
 component main{public [in]} = Multiplier2(5);
 ```
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
+<!--SR:2022-05-22,3,250-->
 
 Which signals of subcomponents are visible?
 ?
