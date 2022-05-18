@@ -37,19 +37,19 @@ How do you declare an intermediate signal?
 How do you declare an array of output signals?
 ?
 `signal output out[N];` declares an array of length `N` called `out` containing output signals.
-<!--SR:2022-05-19,2,230-->
+<!--SR:2022-05-24,5,230-->
 
 When are signals private vs public?
 ?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-05-19,2,230-->
+<!--SR:2022-05-24,5,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-05-19,2,230-->
+<!--SR:2022-05-23,4,230-->
 
 How can we rewrite the lines:
 ```
@@ -58,7 +58,7 @@ out <== in1 * in2;
 ```
 ?
 `signal output out <== in1 * in2`
-<!--SR:2022-05-19,3,250-->
+<!--SR:2022-05-27,8,250-->
 
 How do we instantiate a component?
 ?
@@ -66,7 +66,7 @@ How do we instantiate a component?
 template B() {
 	component someName = A();
 }
-<!--SR:2022-05-19,3,250-->
+<!--SR:2022-05-28,9,250-->
 
 template A(){
 	...
@@ -129,12 +129,12 @@ Identifiers that hold non-signal data and are mutable.
 How do we declare a variable?
 ?
 `var x;` declares a variable called `x`.
-<!--SR:2022-05-19,3,250-->
+<!--SR:2022-05-29,10,250-->
 
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-19,1,190-->
+<!--SR:2022-05-21,2,190-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-05-19,1,210-->
+<!--SR:2022-05-20,1,190-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -215,7 +215,7 @@ What is the syntax to instantiate template parameters?
 How are the possible values of template parameters restricted?
 ?
 They should be known constants at compile time.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-23,4,250-->
 
 What is wrong with the following code, and what error does it generate?
 ```
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-05-19,1,210-->
+<!--SR:2022-05-22,3,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -301,7 +301,7 @@ No output signal in template.
 What does a component represent?
 ?
 An arithmetic circuit.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-25,6,250-->
 
 What does a component consist of?
 ?
@@ -348,7 +348,7 @@ component main{public[in]} = Main();
 ```
 ?
 `c`'s output is accessed before one of its inputs.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-25,6,250-->
 
 What's wrong with the following code and what error message does it produce?
 ```
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-20,1,230-->
 
 What does a function look like?
 ?
@@ -474,7 +474,7 @@ function example(N) {
 How do you include library code?
 ?
 `include "example_library.circom";`
-<!--SR:2022-05-19,2,250-->
+<!--SR:2022-05-23,4,250-->
 
 ## The main Component
 
@@ -536,7 +536,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-19,1,230-->
+<!--SR:2022-05-20,1,210-->
 
 # Operators
 
@@ -548,7 +548,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-05-19,1,230-->
+<!--SR:2022-05-20,1,210-->
 
 Where can operators be used?
 ?
@@ -616,6 +616,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
+<!--SR:2022-05-20,1,230-->
 
 What are the arithmetic operators?
 ?
@@ -638,6 +639,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
+<!--SR:2022-05-20,1,230-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -647,6 +649,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
+<!--SR:2022-05-23,4,250-->
 
 What is the `&` operator?
 ?
@@ -669,6 +672,7 @@ XOR 254 bits
 What is the `>>` operator?
 ?
 Rightshift
+<!--SR:2022-05-23,4,250-->
 
 What is the `<<`?
 ?
@@ -877,6 +881,7 @@ template B(N1, N2) {
 ```
 ?
 `A`, because its condition depends on a signal which means it's unknown, whereas `B`'s depends on a parameter which means it's known at compile time.
+<!--SR:2022-05-23,4,250-->
 
 What is wrong with the following code?
 ```
@@ -962,6 +967,7 @@ template All(N){
 ?
 `c[i] = fun[i] -> Assignee and assigned types do not match`
 There are two types of components being put into the array `c`. This applies even though the two types are identical, and no components can actually be of type 2 if you follow the runtime logic.
+<!--SR:2022-05-23,4,250-->
 
 # Scoping
 
@@ -1014,6 +1020,7 @@ template t() {
 ```
 ?
 `t` is trying to access a component within a component which is not allowed. If we want an indirect descendant's signals, we need to pass them via the intervening components.
+<!--SR:2022-05-23,4,250-->
 
 
 
