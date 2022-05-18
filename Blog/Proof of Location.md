@@ -1,0 +1,10 @@
+ - Proliferation of neutral institutions requires crypto<->irl bridges
+	 - Government
+	 - IRL DAOs
+	 - Skeuomorphic: tinder, uber, airbnb
+	 - treasure hunts
+ - location attestation is a privacy leak
+ - ZKPs can obscure locations
+ - self attestation suffices for some applications
+ - 3rd party attestation leaks data
+ - More ZKPs and slashing can help to solve this

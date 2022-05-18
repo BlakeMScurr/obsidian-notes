@@ -1,0 +1,6 @@
+ - Blockchain games tend to get botted
+ - Blockchain games tend to just be farming, much like the humiliating playpump
+ - Good onchain games like darkforest have no explicit reward
+ - We can prevent botting with negative sum games
+ - We can include an element of skill with metacognitive elements
+ - Here's a simple negative sum metacognitive game

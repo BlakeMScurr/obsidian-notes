@@ -1,0 +1,2 @@
+Kate polynomials and erasure coding are the choices for the ethereum foundation.
+But surely there is a nice way with simple circom/plonk to prove you have data. First, show you have data that hashes to something. Then someone challenges you to provide the hash of that data plus a random salt. Then you do it and provide a ZKP to that effect.
