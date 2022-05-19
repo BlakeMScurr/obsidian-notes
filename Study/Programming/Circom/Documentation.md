@@ -7,12 +7,12 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-05-20,3,230-->
+<!--SR:2022-05-29,9,230-->
 
 What do signals contain?
 ?
 Field elements in $\mathbb{Z}/p\mathbb{Z}$
-<!--SR:2022-05-20,4,250-->
+<!--SR:2022-05-31,11,250-->
 
 What are the kinds of signals?
 ?
@@ -22,7 +22,7 @@ Input, output, and intermediate.
 How do you declare an input signal?
 ?
 `signal input in;` declares an input signal named `in`
-<!--SR:2022-05-20,3,230-->
+<!--SR:2022-05-27,7,230-->
 
 How do you declare an output signal?
 ?
@@ -32,7 +32,7 @@ How do you declare an output signal?
 How do you declare an intermediate signal?
 ?
 `signal inter;` declares an intermediate signal named `inter`.
-<!--SR:2022-05-20,4,250-->
+<!--SR:2022-06-01,12,250-->
 
 How do you declare an array of output signals?
 ?
@@ -106,7 +106,7 @@ Signals are immutable, so assigning to `out` twice gives a compilation error.
 What operators can be used to assign signals?
 ?
 `<--`, `<==`, `-->`, or `==>`.
-<!--SR:2022-05-20,3,230-->
+<!--SR:2022-05-27,7,230-->
 
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
@@ -117,7 +117,7 @@ What's an example of when we must use `<--` rather than `<==` and what does it d
 ?
 `out[k] <-- (in >> k) & 1`
 Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the end of the number, and `& 1` gives us the least significant bit.
-<!--SR:2022-05-20,4,250-->
+<!--SR:2022-06-01,12,250-->
 
 ## Variables and Mutability
 
@@ -163,7 +163,7 @@ if (x = 3) {
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-05-20,3,230-->
+<!--SR:2022-05-28,8,230-->
 
 # Templates
 
@@ -179,7 +179,7 @@ Templates.
 When are template's parameters instantiated?
 ?
 When the template is used.
-<!--SR:2022-05-20,2,230-->
+<!--SR:2022-05-26,6,230-->
 
 What is the syntax to define a template parameter?
 ?
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-05-20,1,190-->
+<!--SR:2022-05-23,3,190-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-05-20,2,230-->
+<!--SR:2022-05-26,6,230-->
 
 When do we use `--inspect`?
 ?
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-22,2,230-->
 
 What, roughly, are the three compiler warnings you can get due to a poorly written template?
 ?
@@ -306,7 +306,7 @@ An arithmetic circuit.
 What does a component consist of?
 ?
 $N$ input signals, $M$ output signals, and $K$ intermediate signals.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-29,9,250-->
 
 What can a component produce?
 ?
@@ -383,7 +383,7 @@ When components are independent, i.e., the inputs do not depend on each others' 
 How do we use `parallel`?
 ?
 `template parallel NameTemplate(...){...}`
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 What does `parallel` do?
 ?
@@ -413,7 +413,7 @@ To ensure that the circuit is compatible with the specified compiler version.
 If there is no pragma, what do we assume?
 ?
 That the code is compatible with the compiler's latest version.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-28,8,250-->
 
 ## Functions
 
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-20,1,210-->
+<!--SR:2022-05-21,1,190-->
 
 # Operators
 
@@ -594,7 +594,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-22,2,230-->
 
 What is the `val(x)` function for?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-21,1,210-->
 
 What is the `\` operator?
 ?
@@ -652,7 +652,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-23,3,230-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-21,1,210-->
 
 What is the `>>` operator?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-21,1,210-->
 
 # Constraint Generation
 
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-23,3,230-->
 
 What creates assertions?
 ?

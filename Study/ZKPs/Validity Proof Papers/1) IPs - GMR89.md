@@ -278,7 +278,7 @@ How do we define an interactive pair (A, B)?
 Where each listen's to the others' speaking tape.
 They take turns being active.
 Either can halt the pair.
-<!--SR:2022-05-20,24,230-->
+<!--SR:2022-07-14,55,230-->
 
 What is output of an interactive pair?
 ?
@@ -1010,7 +1010,7 @@ That $x \in L$, but the text is of no other use, and could in fact the text coul
 For GMR, what is the theoretical application for knowledge complexity and why?
 ?
 Classifying languages. Languages, or equivalently, theorem proving procedures are intended to communicate knowledge, and are naturally classed by their knowledge complexity, for GMR.
-<!--SR:2022-05-20,17,230-->
+<!--SR:2022-05-31,11,210-->
 
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
