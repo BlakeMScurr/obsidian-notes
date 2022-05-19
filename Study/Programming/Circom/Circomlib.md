@@ -27,7 +27,37 @@ The parameter specifying the number of bits in each operand (binary number being
 
 What does `e` specifiy in the binsum constraints?
 ?
-The number of carries
+The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
+
+What is the main constraint in binsum and what is it for?
+?
+Confirming the inputs sum to the output.
+```
+in[0][0]*2^0 + i[0][1]*2^1 + ... in[0][n-1]*2^(n-1) +
+in[1][0]*2^0 + i[1][1]*2^1 + ... in[1][n-1]*2^(n-1) +
+...
+in[ops-1][0]*2^0 + i[ops-1][1]*2^1 + ... in[ops-1][n-1]*2^(n-1)
+===
+out[0]+2^0 + out[1]^2^1 + ..... + out[n+e-1]*2^(n+e-1)
+```
+
+What is the secondary constraint in binsum and what is it for?
+?
+Ensuring the output is in binary.
+```
+out[0] ** (out[0] - 1) === 0;
+out[1] ** (out[1] -	1) === 0;
+...
+out[n+e-1] ** (out[n+e-1] - 1) === 0;
+```
+
+What are the top level constructions in the binsum.circom file?
+?
+The `nbits` function and the `BinSum` template.
+
+What does `nbits` do?
+?
+Calculates the number of bits required to hold the 
 
 ## e
 
