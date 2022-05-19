@@ -101,7 +101,7 @@ out <== comp.outA;
 ```
 ?
 Signals are immutable, so assigning to `out` twice gives a compilation error.
-<!--SR:2022-05-20,4,250-->
+<!--SR:2022-05-31,11,250-->
 
 What operators can be used to assign signals?
 ?
@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2022-05-20,2,210-->
+<!--SR:2022-05-25,5,210-->
 
 How do we declare a variable?
 ?
@@ -144,7 +144,7 @@ x = 1;
 var y = 2;
 var z[3] = [3,4,5];
 ```
-<!--SR:2022-05-20,3,230-->
+<!--SR:2022-05-29,9,230-->
 
 What is wrong with the following code?
 ```
@@ -188,7 +188,7 @@ template tempid (param_1, param2) {
 	...
 }
 ```
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 What can templates not include?
 ?
@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get due to a poorly writt
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-05-20,1,190-->
+<!--SR:2022-05-23,3,190-->
 
 ### Components
 
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 How do we access the input or output signals of a component?
 ?
@@ -378,7 +378,7 @@ ands[1] = MultiAnd(n2);
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 How do we use `parallel`?
 ?
@@ -388,7 +388,7 @@ How do we use `parallel`?
 What does `parallel` do?
 ?
 The C++ file resulting from compilation will contain parallelized code to compute the witness.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 When is parallelization particularly useful?
 ?
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-22,2,230-->
 
 What does a function look like?
 ?
@@ -486,7 +486,7 @@ The main component.
 How is the main component different from other components?
 ?
 It defines global input and outputs of the circuit, so it needs to be able to specify which input signals are public.
-<!--SR:2022-05-20,3,250-->
+<!--SR:2022-05-30,10,250-->
 
 What is the syntax for creating a main component?
 ?
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-05-20,1,210-->
+<!--SR:2022-05-21,1,190-->
 
 Where can operators be used?
 ?
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-05-20,2,250-->
+<!--SR:2022-05-21,1,230-->
 
 What is the conditional expression?
 ?
@@ -627,7 +627,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-23,3,230-->
 
 What are the arithmetic operators?
 ?
@@ -647,7 +647,7 @@ Multiplication by the multiplicative inverse mod p.
 What is the `\` operator?
 ?
 Quotient after integer devision.
-<!--SR:2022-05-20,2,250-->
+<!--SR:2022-05-26,6,250-->
 
 What is the `%` operator?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-22,2,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-21,1,210-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -843,7 +843,7 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-22,2,230-->
 
 What is the syntax for `for` loops?
 ?
@@ -1075,7 +1075,7 @@ Introduces a condition to be checked at execution time. If the condition fails, 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-05-20,1,230-->
+<!--SR:2022-05-23,3,230-->
 
 How do you use `assert`, for example?
 ?
