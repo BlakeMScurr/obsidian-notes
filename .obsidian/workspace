@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Circom/Documentation.md",
+            "file": "Study/ZKPs/Papers/Literature.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Circom/Documentation.md",
+                "file": "Study/ZKPs/Papers/Literature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/Literature.md",
+    "Study/ZKPs/Questions.md",
+    "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Circom/Documentation.md",
-    "Study/ZKPs/Validity Proof Papers/1) IPs - GMR89.md",
+    "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Rust/Book.md",
-    "Study/ZKPs/Validity Proof Papers/Literature.md",
     "`.md",
     "Blog/Storage.md",
-    "Study/ZKPs/Validity Proof Papers/Groth16.md",
-    "Study/ZKPs/Validity Proof Papers/2) MIPs - BGKW88.md",
-    "Study/ZKPs/Validity Proof Papers/3) MIP(2,1) = NEXP - BFL90.md"
+    "Study/ZKPs/Papers/2) MIPs - BGKW88.md"
   ]
 }

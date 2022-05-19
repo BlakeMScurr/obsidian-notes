@@ -36,3 +36,12 @@ Does the notion of compilable circuits rely on complexity theory results like MI
 Does the PCP theorem matter to groth/plonk/sonic in addition to starks?
 Why does the PCP theorem matter?
 What exactly is the relationship between cryptographic proof systems and complexity theory?
+
+What is witness indistinguishable vs zero knowledge?
+What is a zap?
+What is a non-interactive zap?
+What are universally composable NIZKs?
+What is the fiat shamir heuristic?
+Why is the fiat shamir heuristic seemingly not thought of as a sound way to construct arguments?
+Did Micali00 essentially propose the fiat shamir heuristic?
+Is it important that Groth10 didn't apply the fiat shamir heuristic?

@@ -556,7 +556,7 @@ The Model Centric Framework is a formalisation for knowledge and communication.
 What worldview does MCF capture?
 ?
 The scientific/empricial worldview that it's hard to learn facts about reality, and that we communicate testimony about those facts.
-<!--SR:2022-05-20,24,210-->
+<!--SR:2022-06-03,14,190-->
 
 What are MCF's assumptions?
 ?
@@ -705,7 +705,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 When (at a high level) are two ensembles "at most p-distinguishable?"
 ?
 If they can be told apart with at most p(n) probability
-<!--SR:2022-05-20,24,230-->
+<!--SR:2022-07-10,51,230-->
 
 Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
@@ -1380,7 +1380,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-05-20,4,170-->
+<!--SR:2022-05-27,7,170-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1425,7 +1425,7 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 4?
 ?
 $A$ checks the form and size of $X' \cup Y'$. If those are invalid halts and rejects, otherwise, $A$ computes and sends $\mathbb{Q}_m(x)$.
-<!--SR:2022-05-20,11,230-->
+<!--SR:2022-06-16,27,230-->
 
 What is $v$?
 ?
@@ -1435,7 +1435,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-05-20,11,230--> 
+<!--SR:2022-06-14,25,230--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?
@@ -1454,7 +1454,7 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 5?
 ?
 $B$ checks $v$, halts if it detects cheating, updates $iteration$, accepts if finished, or starts again at step 1.
-<!--SR:2022-05-20,11,230-->
+<!--SR:2022-06-17,28,230-->
 
 How does $B$ check $v$?
 ?
@@ -1573,7 +1573,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-05-20,7,190-->
+<!--SR:2022-06-04,15,190-->
 
 How does the proof for claim 1 work?
 ?

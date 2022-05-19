@@ -9,7 +9,7 @@ Small size and low verification complexity.
 What is a SNARG?
 ?
 Succinct non-interactive argument
-<!--SR:2022-05-20,8,250-->
+<!--SR:2022-06-09,20,250-->
 
 What is a SNARK?
 ?
@@ -118,17 +118,17 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-20,1,130-->
+<!--SR:2022-05-21,1,130-->
 
-What did Gro10 achieve wrt communication complexity?
+What did Gro10 achieve wrt communication complexity and how?
 ?
-Combined pairing based NIZKs with ideas from interactive zero-knowledge to give the first constant size NIZK arguments.
-<!--SR:2022-05-20,1,190-->
+The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
+<!--SR:2022-05-22,2,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-20,1,130-->
+<!--SR:2022-05-21,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -161,7 +161,7 @@ Some subset of the the input/ouput wires. Requiring input and output wires allow
 What represents the witness in our arithmetic circuit?
 ?
 The wires that aren't the statement.
-<!--SR:2022-05-20,4,210-->
+<!--SR:2022-05-30,10,210-->
 
 What does binary relation of our arithmetic circuit consist of?
 ?
@@ -193,7 +193,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-05-20,4,210-->
+<!--SR:2022-05-28,8,210-->
 
 What is the form of our arithmetic constraints?
 ?
