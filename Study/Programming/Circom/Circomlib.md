@@ -64,6 +64,10 @@ What does `nbits` do?
 Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
 
 What do `a`, `r`, and `n` represent in `nbits`?
+?
+`a` is the number we're trying to represent in binary
+`r` is the number of bits required
+`n` is the 
 
 ## e
 
