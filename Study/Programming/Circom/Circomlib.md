@@ -61,9 +61,9 @@ No.
 
 What does `nbits` do?
 ?
-Calculates the number of bits in the output required to hold the full sum.
+Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
 
-How does 
+What do `a`, `r`, and `n` represent in `nbits`?
 
 ## e
 
