@@ -1130,3 +1130,88 @@ An error message saying that "Assignee and assigned types do not match operator.
 
 ## Unknowns
 
+Why are checks imposed on the use of unknown values at compile?
+?
+Because expressions accepted during constraint generation have to be quadratic.
+
+What kinds of values are always known or unknown?
+?
+Constant values and template parameters are known.
+Signals are unknown.
+
+When are expressions known?
+?
+Expressions depending on only known values are known.
+Expressions depending on unknowns are unknown.
+
+Which identifiers and known and unknown in the following code?
+```
+template A(n1, n2) {
+	signal input in1;
+	signal input in2;
+	var x = 0;
+	var y = n1;
+	var z = in1;
+}
+```
+?
+`n1`, `n2`, `x`, and `y` are known.
+`in1`, `in2`, and `z` are unknown.
+
+A constraint with an array access . . . ?
+?
+Must have a known accessing position.
+
+What is wrong with the following code, and what message does it generate?
+```
+template A(n) {
+	signal input in;
+	signal output out;
+	var array[n];	
+	out <== array[in];
+}
+```
+?
+The index for the array in the constraint is unknown.
+"Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
+
+What restrictions are placed on the size of an array?
+?
+The size must be a known value.
+
+What is wrong with the following code and what message does it generate?
+```
+template A() {
+	signal in;
+	var array[in];
+}
+```
+?
+Length of `array` must be known.
+"Error: The length of every array must known during the constraint generation phase"
+
+A constraint in a control flow must . . . ?
+?
+Have a known condition.
+
+What is wrong with the following code and what message does it generate?
+```
+template A() {
+	signal input in;
+	signal output out;
+	if (in < 0) {
+		out <== 0;
+	}
+}
+```
+?
+There is a constraint in control flow with an unknown condition.
+"Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
+
+
+
+
+
+
+
+
