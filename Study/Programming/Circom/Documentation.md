@@ -1070,26 +1070,32 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
+<!--SR:2022-05-20,1,230-->
 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
+<!--SR:2022-05-20,1,230-->
 
 How do you use `assert`, for example?
 ?
 `assert(n <= 254);`
+<!--SR:2022-05-23,4,250-->
 
 What is `log`?
 ?
 A way to log values to the standard error stream.
+<!--SR:2022-05-22,3,250-->
 
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
+<!--SR:2022-05-21,2,250-->
 
 What's an example of a `log` instruction?
 ?
 `log(123);`
+<!--SR:2022-05-21,2,250-->
 
 # Circom Insights
 ## Compiler
@@ -1098,24 +1104,29 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
+<!--SR:2022-05-23,4,250-->
 
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
+<!--SR:2022-05-23,4,250-->
 
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
+<!--SR:2022-05-21,2,250-->
 
 What is a warning?
 ?
 A compiler message meaning that what you've done is allowed but should not happen in general.
+<!--SR:2022-05-22,3,250-->
 
  ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
 
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
+<!--SR:2022-05-21,2,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
@@ -1127,22 +1138,26 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
+<!--SR:2022-05-23,4,250-->
 
 ## Unknowns
 
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
+<!--SR:2022-05-21,2,250-->
 
 What kinds of values are always known or unknown?
 ?
 Constant values and template parameters are known.
 Signals are unknown.
+<!--SR:2022-05-23,4,250-->
 
 When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
+<!--SR:2022-05-21,2,250-->
 
 Which identifiers and known and unknown in the following code?
 ```
@@ -1157,10 +1172,12 @@ template A(n1, n2) {
 ?
 `n1`, `n2`, `x`, and `y` are known.
 `in1`, `in2`, and `z` are unknown.
+<!--SR:2022-05-23,4,250-->
 
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
+<!--SR:2022-05-22,3,250-->
 
 What is wrong with the following code, and what message does it generate?
 ```
@@ -1174,10 +1191,12 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
+<!--SR:2022-05-22,3,250-->
 
 What restrictions are placed on the size of an array?
 ?
 The size must be a known value.
+<!--SR:2022-05-22,3,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
@@ -1189,10 +1208,12 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
+<!--SR:2022-05-21,2,250-->
 
 A constraint in a control flow must . . . ?
 ?
 Have a known condition.
+<!--SR:2022-05-22,3,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
@@ -1207,7 +1228,23 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
+<!--SR:2022-05-23,4,250-->
 
+What is wrong with the following code and what message does it generate?
+```
+template A() {
+	signal input in;
+	signal output out;
+	for (var i = 0; i < 10; i++) {
+		out <== i;
+	}
+}
+```
+?
+There is a constraint in control flow with an unknown condition.
+"Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
+(ignore the fact that out is assigned multiple times, that's not the point, the docs are just bad)
+<!--SR:2022-05-22,3,250-->
 
 
 
