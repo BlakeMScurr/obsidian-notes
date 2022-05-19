@@ -55,9 +55,15 @@ What are the top level constructions in the binsum.circom file?
 ?
 The `nbits` function and the `BinSum` template.
 
+Does `BinSum` require binary inputs?
+?
+No.
+
 What does `nbits` do?
 ?
-Calculates the number of bits required to hold the 
+Calculates the number of bits in the output required to hold the full sum.
+
+How does 
 
 ## e
 
