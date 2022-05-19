@@ -199,6 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
+<!--SR:2022-05-21,1,230-->
 
 Who are the authors of Gro09?
 ?

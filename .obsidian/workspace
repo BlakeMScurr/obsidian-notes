@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/ZKPs/Papers/Literature.md",
+            "file": "Study/Programming/Circom/Circomlib.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/ZKPs/Papers/Literature.md",
+                "file": "Study/Programming/Circom/Circomlib.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/Programming/Circom/Circomlib.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Questions.md",
     "Study/ZKPs/Papers/Groth16.md",
@@ -104,7 +105,6 @@
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Rust/Book.md",
     "`.md",
-    "Blog/Storage.md",
-    "Study/ZKPs/Papers/2) MIPs - BGKW88.md"
+    "Blog/Storage.md"
   ]
 }
