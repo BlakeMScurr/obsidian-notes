@@ -1,4 +1,6 @@
 # Circuits
+## a-c
+
 What are the files starting with a-c?
 ?
 aliascheck
@@ -8,6 +10,14 @@ binsum
 bitify
 comparators
 compconstant
+
+# binsum
+
+What is binsum?
+?
+
+
+## e
 
 What are the files starting with e?
 ?
@@ -19,6 +29,8 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
+
+## g-m
 
 What are the files starting with g-m?
 ?
@@ -32,6 +44,8 @@ mux2
 mux3
 mux4
 
+## p-s
+
 What are the files starting with p-s?
 ?
 pedersen
@@ -43,9 +57,3 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-
-What is aliascheck?
-???
-
-What is compconstant?
-????
