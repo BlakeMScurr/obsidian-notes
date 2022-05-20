@@ -152,6 +152,23 @@ What is the formal definition of $\mathbb{Q}(\sqrt{2})$?
 $\{a + b\sqrt{2} : a, b \in \mathbb{Q}\}$
 <!--SR:2022-06-10,25,250-->
 
+How do we calculate the number of automorphisms fixing $\mathbb{Q}$ in $\mathbb{Q}(\sqrt{2})$?
+?
+$\sigma(a + b \sqrt{2})$ arbitrary automorphism of arbitrary element
+$= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative properties of automorphisms
+$= a + b + \sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
+$= a + b \pm\sqrt{2}$ since automorphisms send numbers to one of their conjugates
+So there are just 2 such automorphisms.
+
+How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
+?
+Just draw how it acts on the conjugates of $\sqrt{2}$, since that determines how it acts on the whole field.
+
+What do the each of the automorphisms fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$ do to the conjugates of $\sqrt{2}$?
+?
+The first leaves all conjugates in the same place.
+The second swaps $\sqrt{2}$ and $-\sqrt{2}$
+
 # Group Theory
 
 # The Fundamental Theorem
