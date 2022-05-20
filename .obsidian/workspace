@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+            "file": "Study/Software/Tornado Cash.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+            "file": "Study/Software/Tornado Cash.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+                "file": "Study/Software/Tornado Cash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +109,7 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/Software/Tornado Cash.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Number Theory/QRP.md",
     "Study/Programming/Circom/Circomlib.md",
@@ -117,7 +118,6 @@
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/Programming/Rust/Book.md",
-    "`.md"
+    "Study/Programming/Rust/Book.md"
   ]
 }
