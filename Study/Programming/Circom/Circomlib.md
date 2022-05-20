@@ -67,7 +67,40 @@ What do `a`, `r`, and `n` represent in `nbits`?
 ?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
-`n` is the 
+`n` is the `2^r`
+
+What is the code for `nbits`?
+?
+```
+function nbits(a) {
+	var r = 0;
+	var n = 1;
+	while (n-1<a) {
+		r++;
+		n *= 2;
+	}
+	return r;
+}
+```
+
+What is `nout` in `Binsum`?
+?
+The number of bits require
+
+What are `in` and `out` in `Binsum`?
+?
+
+What are `lin` and `lout` in `Binsum`?
+?
+
+What are `k` and `j` in `Binsum`?
+?
+
+What is `e2` in `Binsum`?
+?
+
+What are the knowns and unknowns in `Binsum`?
+?
 
 ## e
 
