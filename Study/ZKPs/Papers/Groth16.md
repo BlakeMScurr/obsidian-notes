@@ -39,7 +39,7 @@ Assymetric pairings for higher efficiency.
 What does a Groth16 SNARG consist of?
 ?
 3 group elements.
-<!--SR:2022-05-21,9,250-->
+<!--SR:2022-06-13,23,250-->
 
 What does verifying a Groth16 SNARG require?
 ?
@@ -65,7 +65,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-05-21,2,130-->
+<!--SR:2022-05-25,4,130-->
 
 # Introduction
 
@@ -82,7 +82,7 @@ Completeness, Soundness, and Zero-Knowledge.
 Describe the completeness property.
 ?
 Given a statement and a witness, the prover can convince the verifier.
-<!--SR:2022-05-21,5,190-->
+<!--SR:2022-06-02,12,190-->
 
 Describe the soundness property.
 ?
@@ -118,7 +118,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-21,1,130-->
+<!--SR:2022-05-22,1,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-21,1,130-->
+<!--SR:2022-05-22,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -156,7 +156,7 @@ Addition and multiplication gates over a finite field.
 What represents the statement in our arithmetic circuit? Why?
 ?
 Some subset of the the input/ouput wires. Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.
-<!--SR:2022-05-21,5,210-->
+<!--SR:2022-06-03,13,210-->
 
 What represents the witness in our arithmetic circuit?
 ?

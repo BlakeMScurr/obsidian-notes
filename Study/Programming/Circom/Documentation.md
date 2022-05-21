@@ -17,7 +17,7 @@ Field elements in $\mathbb{Z}/p\mathbb{Z}$
 What are the kinds of signals?
 ?
 Input, output, and intermediate.
-<!--SR:2022-05-21,3,210-->
+<!--SR:2022-05-27,6,210-->
 
 How do you declare an input signal?
 ?
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-21,2,190-->
+<!--SR:2022-05-22,1,170-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -174,7 +174,7 @@ An assignment, which is a statement and has no value, is being used as part of a
 What do we use to create generic circuits in circom?
 ?
 Templates.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 When are template's parameters instantiated?
 ?
@@ -210,7 +210,7 @@ We are assigning a value to an input signal in the same template where it has be
 What is the syntax to instantiate template parameters?
 ?
 `component c = tempid(value_1, ... , value_n)`;
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-05-31,10,250-->
 
 How are the possible values of template parameters restricted?
 ?
@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -257,7 +257,7 @@ component main{public [in]} = A(1);
 ?
 The `in` signal is not used in any constraints. 
 It will give a warning when `--inspect` is used to compile: "In template "A1". Unconstrained signal. "in" = Maybe use: in*0 === 0"
-<!--SR:2022-05-21,3,230-->
+<!--SR:2022-05-28,7,230-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -321,12 +321,12 @@ c.a <== y*z-1;
 var x;
 x = c.b;
 ```
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
 Instantiation won't be triggered until all the component's inputs have been supplied, meaning instantiaion may be delayed. This means the outputs of a component can't be used until all the inputs are set.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 What is wrong with the following piece of code?
 ```
@@ -362,7 +362,7 @@ if (N > 0) {
 ?
 If there are multiple initialization instructions for a component, they must all be from the same template (perhaps with different parameters).
 "Assignee and assigned types do not match"
-<!--SR:2022-05-21,3,230-->
+<!--SR:2022-05-30,9,230-->
 
 How do you make an array of components? What is the syntactic restriction?
 ?
@@ -393,7 +393,7 @@ The C++ file resulting from compilation will contain parallelized code to comput
 When is parallelization particularly useful?
 ?
 When dealing with large circuits.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 
 
@@ -408,7 +408,7 @@ What is the line at the top of every circom file?
 What is pragma for?
 ?
 To ensure that the circuit is compatible with the specified compiler version.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 If there is no pragma, what do we assume?
 ?
@@ -430,32 +430,32 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-05-24,3,230-->
 
 Can functions be recursive?
 ?
 Yes.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-05-31,10,250-->
 
 How many return statements can a function have?
 ?
 As many as it likes.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-05-31,10,250-->
 
 What does executing a return statement do?
 ?
 Returns control to the caller of the function.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 What error does this code produce?
 ```
@@ -467,7 +467,7 @@ function example(N) {
 ```
 ?
 "In example there are paths without return"
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 ## Include
 
@@ -481,7 +481,7 @@ How do you include library code?
 Where do we start execution?
 ?
 The main component.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-02,12,250-->
 
 How is the main component different from other components?
 ?
@@ -496,12 +496,12 @@ What is the syntax for creating a main component?
 Which input signals in the main component are private?
 ?
 All input signals not explicitly declared to be public.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 How can we define multiple main components in one program?
 ?
 We can't - we'll get a "Multiple main components  in the project structure" error.
-<!--SR:2022-05-21,4,250-->
+<!--SR:2022-06-01,11,250-->
 
 
 
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-21,1,190-->
+<!--SR:2022-05-22,1,170-->
 
 # Operators
 
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-05-21,1,190-->
+<!--SR:2022-05-24,3,190-->
 
 Where can operators be used?
 ?
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-05-21,1,230-->
+<!--SR:2022-05-24,3,230-->
 
 What is the conditional expression?
 ?
@@ -622,7 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 How is `x >= y` defined?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-05-21,1,210-->
+<!--SR:2022-05-24,3,210-->
 
 What is the `\` operator?
 ?
@@ -657,7 +657,7 @@ Remainder after integer division.
 What are the arithmetic/assignment operators?
 ?
 `+= -= *= **= /= \= %= ++ --`
-<!--SR:2022-05-21,2,230-->
+<!--SR:2022-05-27,6,230-->
 
 What are the bitwise operators?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-05-21,1,210-->
+<!--SR:2022-05-24,3,210-->
 
 What is the `>>` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-21,1,210-->
+<!--SR:2022-05-22,1,190-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-05-21,3,250-->
+<!--SR:2022-05-24,3,230-->
 
 What are the bitwise assignment operators?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-05-21,1,210-->
+<!--SR:2022-05-24,3,210-->
 
 # Constraint Generation
 
@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-27,6,250-->
 
 Which operators impose a constraints?
 ?
@@ -837,7 +837,7 @@ Because `x` holds the algebraic expression `a*a` which is used to generate const
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-27,6,250-->
 
 What is the syntax `if` statements?
 ?
@@ -860,12 +860,12 @@ i++
 ```
 ?
 `i` is only in scope for the `for` block and can't be used outside of it.
-<!--SR:2022-05-21,3,250-->
+<!--SR:2022-05-31,10,250-->
 
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -1008,7 +1008,7 @@ There are two types of components being put into the array `c`. This applies eve
 How does scoping work?
 ?
 We have static/lexical scoping, and that signals must be defined at the top level block of the template that uses them, effectively giving them global scope.
-<!--SR:2022-05-21,3,250-->
+<!--SR:2022-05-31,10,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -1090,12 +1090,12 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-27,6,250-->
 
 What's an example of a `log` instruction?
 ?
 `log(123);`
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 # Circom Insights
 ## Compiler
@@ -1114,7 +1114,7 @@ Hints, warnings, and errors.
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-25,4,250-->
 
 What is a warning?
 ?
@@ -1126,7 +1126,7 @@ A compiler message meaning that what you've done is allowed but should not happe
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
@@ -1145,7 +1145,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 What kinds of values are always known or unknown?
 ?
@@ -1157,7 +1157,7 @@ When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-26,5,250-->
 
 Which identifiers and known and unknown in the following code?
 ```
@@ -1208,7 +1208,7 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
-<!--SR:2022-05-21,2,250-->
+<!--SR:2022-05-25,4,250-->
 
 A constraint in a control flow must . . . ?
 ?

@@ -84,7 +84,7 @@ $a^na^m = a^{n+m}$
 Additive:
 $(-n)a = n(-a)$
 $na + ma = (n + m)a$
-<!--SR:2022-05-21,1,130-->
+<!--SR:2022-05-22,1,130-->
 
 What is "0-fold" of $a$ in both notations?
 ?

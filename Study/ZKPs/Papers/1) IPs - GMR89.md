@@ -352,7 +352,7 @@ $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B acc
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
 No, because the properties (true statements are provable, and false ones aren't) hold independently of the prover by definition.
-<!--SR:2022-05-21,25,210-->
+<!--SR:2022-07-13,53,210-->
 
 What proofs can be constructed in an interactive proof system for $x \not in \mathcal{L}$?
 $
@@ -607,7 +607,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-05-21,5,130-->
+<!--SR:2022-05-29,8,130-->
 
 What is an I-c-ensemble used for?
 ?
@@ -693,7 +693,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 What does $p^D_{x, 2}$ denote?
 ?
 The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen with $\Pi_{2,x}$
-<!--SR:2022-05-21,25,230-->
+<!--SR:2022-07-18,58,230-->
 
 #### At Most Distinguishable
 
@@ -936,7 +936,7 @@ B' is an adversarial verifier trying to learn additional knowledge. B' can learn
 What additional information does the super basic NP style algorithm for proving $x \in QR$ convey?
 ?
 A square root of x, in addition to showing $x \in QR$
-<!--SR:2022-05-21,18,230-->
+<!--SR:2022-07-01,41,230-->
 
 How much knowledge do traditional proofs of theorems convey?
 ?
@@ -1202,7 +1202,7 @@ If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the qui
 What is the problem with the naive QNR IP?
 ?
 $A$ may release the quadratic residuosity of another $x\in \mathbb{Z}_m^*$chosen by a cheating $B'$
-<!--SR:2022-05-21,25,250-->
+<!--SR:2022-07-23,63,250-->
 
 How (roughly) do we change the naive QNR IP to make it zero knowledge?
 ?
@@ -1417,7 +1417,7 @@ $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-05-21,12,250-->
+<!--SR:2022-06-22,32,250-->
 <!--SR:2022-05-05,2,230-->
 
 ##### Step 4
@@ -1445,7 +1445,7 @@ $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cd
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-05-21,12,250-->
+<!--SR:2022-06-22,32,250-->
 
 ??? why does it matter that $X' \cup Y'$ is sent in a random order?
 
@@ -1566,7 +1566,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:2022-05-21,12,250-->
+<!--SR:2022-06-23,33,250-->
 
 ##### Claim 1
 
@@ -1586,7 +1586,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-05-21,12,250-->
+<!--SR:2022-06-23,33,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
@@ -1643,7 +1643,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-05-21,12,250-->
+<!--SR:2022-06-23,33,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?

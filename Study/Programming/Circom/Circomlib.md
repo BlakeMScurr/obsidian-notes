@@ -12,14 +12,14 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-21,1,230-->
+<!--SR:2022-05-22,1,210-->
 
 # binsum
 
 What is binsum?
 ?
 Creates a constraint specifying that some binary inputs add to some binary output.
-<!--SR:2022-05-21,1,230-->
+<!--SR:2022-05-24,3,230-->
 
 What is `ops` in binsum?
 ?
@@ -180,7 +180,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-21,1,230-->
+<!--SR:2022-05-22,1,210-->
 
 ## g-m
 
@@ -210,4 +210,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-05-21,1,230-->
+<!--SR:2022-05-22,1,210-->
