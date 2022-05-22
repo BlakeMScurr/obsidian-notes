@@ -49,7 +49,7 @@ The rest of the signals are private and can't be made public.
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-05-23,4,230-->
+<!--SR:2022-06-01,9,230-->
 
 How can we rewrite the lines:
 ```
@@ -80,7 +80,7 @@ template B(){
 	component comp = A();
 	someSignal <== A.outA
 }
-<!--SR:2022-05-23,5,250-->
+<!--SR:2022-06-07,15,250-->
 
 template A(){
 	...
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-23,1,150-->
+<!--SR:2022-05-26,3,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -152,7 +152,7 @@ a = (b = 3) + 2;
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-05-23,5,250-->
+<!--SR:2022-06-07,15,250-->
 
 What is wrong with the following code?
 ```
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-05-23,3,190-->
+<!--SR:2022-05-29,6,190-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -215,7 +215,7 @@ What is the syntax to instantiate template parameters?
 How are the possible values of template parameters restricted?
 ?
 They should be known constants at compile time.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-02,10,250-->
 
 What is wrong with the following code, and what error does it generate?
 ```
@@ -287,14 +287,14 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-05-23,1,210-->
+<!--SR:2022-05-26,3,210-->
 
 What, roughly, are the three compiler warnings you can get due to a poorly written template?
 ?
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-05-23,3,190-->
+<!--SR:2022-05-30,7,190-->
 
 ### Components
 
@@ -474,7 +474,7 @@ function example(N) {
 How do you include library code?
 ?
 `include "example_library.circom";`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 ## The main Component
 
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-23,1,150-->
+<!--SR:2022-05-24,1,130-->
 
 # Operators
 
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What are the possible values of a field element?
 ?
@@ -569,17 +569,17 @@ What do you use to change the field size?
 What is the conditional expression?
 ?
 `_?_:_`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-05-31,8,250-->
 
 What are the boolean operators?
 ?
 `&& || !`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-02,10,250-->
 
 What is `&&`?
 ?
 Boolean AND operator.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is `||`?
 ?
@@ -599,7 +599,7 @@ What are the relational operators?
 What is the `val(x)` function for?
 ?
 Defining negative numbers for use with the relational operators.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-03,11,250-->
 
 What is the definition of the `val(x)` function?
 ?
@@ -607,12 +607,12 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 How is `x < y` defined?
 ?
 `val(x % p) < val(y % p)`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 How is `x > y` defined?
 ?
@@ -627,12 +627,12 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-05-23,3,230-->
+<!--SR:2022-05-30,7,230-->
 
 What are the arithmetic operators?
 ?
 `+ - * ** / \ %`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-03,11,250-->
 
 What are the `+ - * **` operators?
 ?
@@ -652,7 +652,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2022-05-23,3,230-->
+<!--SR:2022-06-01,9,230-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -662,12 +662,12 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is the `&` operator?
 ?
 Bitwise AND
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is the `|` operator?
 ?
@@ -687,12 +687,12 @@ XOR 254 bits
 What is the `>>` operator?
 ?
 Rightshift
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is the `<<`?
 ?
 Leftshift
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-01,9,250-->
 
 How are the shift operators extended?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-23,1,170-->
+<!--SR:2022-05-24,1,150-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -735,7 +735,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-05-26,3,230-->
 
 What is the code for `Num2Bits`
 ?
@@ -798,7 +798,7 @@ Rewrite `out <== 1 - a * b;` more explicitly
 out === 1 - a * b;
 out <-- 1 - a * b;
 ```
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-05-31,8,250-->
 
 What kinds of expressions are allowed in constraints?
 ?
@@ -830,7 +830,7 @@ b <== x + 3;
 ?
 `b === a * a + 3`
 Because `x` holds the algebraic expression `a*a` which is used to generate constraints over signals, because we can't use variables in a constraint.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-03,11,250-->
 
 # Control Flow
 
@@ -887,7 +887,7 @@ component main{public [in]} = wrong(1);
 ```
 ?
 The condition depends on an unknown, and there are constraints generated inside the condition. This makes it impossible to generate a static circuit from the code.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-01,9,250-->
 
 What template has an error and why?
 ```
@@ -910,7 +910,7 @@ template B(N1, N2) {
 ```
 ?
 `A`, because its condition depends on a signal which means it's unknown, whereas `B`'s depends on a parameter which means it's known at compile time.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is wrong with the following code?
 ```
@@ -926,7 +926,7 @@ template wrong() {
 ```
 ?
 The value of `t` is used in a constraint and its construction depends on the unknown signal `in` via control flow, making the resulting constraint non quadratic. This will cause a compiler error.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-02,10,250-->
 
 # Data Types
 
@@ -953,7 +953,7 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-05-26,3,230-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
@@ -969,12 +969,12 @@ The size of `z` is not explicitly given, and it will produce a compiler error.
 Can a single array hold multiple types of signals?
 ?
 No, each array can only hold one type of signal.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-03,11,250-->
 
 Can an array contain components with different parameters?
 ?
 Yes, as long as they have the same type.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is wrong with the following code and what error message will it give?
 ```
@@ -1001,7 +1001,7 @@ template All(N){
 ?
 `c[i] = fun[i] -> Assignee and assigned types do not match`
 There are two types of components being put into the array `c`. This applies even though the two types are identical, and no components can actually be of type 2 if you follow the runtime logic.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 # Scoping
 
@@ -1034,7 +1034,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-05-26,3,230-->
 
 What is wrong with this code?
 ```
@@ -1055,7 +1055,7 @@ template t() {
 ```
 ?
 `t` is trying to access a component within a component which is not allowed. If we want an indirect descendant's signals, we need to pass them via the intervening components.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 
 
@@ -1070,17 +1070,17 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-05-23,3,230-->
+<!--SR:2022-05-26,3,210-->
 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-05-23,3,230-->
+<!--SR:2022-05-31,8,230-->
 
 How do you use `assert`, for example?
 ?
 `assert(n <= 254);`
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is `log`?
 ?
@@ -1104,12 +1104,12 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 What is a hint?
 ?
@@ -1138,7 +1138,7 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 ## Unknowns
 
@@ -1151,7 +1151,7 @@ What kinds of values are always known or unknown?
 ?
 Constant values and template parameters are known.
 Signals are unknown.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-02,10,250-->
 
 When are expressions known?
 ?
@@ -1172,7 +1172,7 @@ template A(n1, n2) {
 ?
 `n1`, `n2`, `x`, and `y` are known.
 `in1`, `in2`, and `z` are unknown.
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-04,12,250-->
 
 A constraint with an array access . . . ?
 ?
@@ -1228,7 +1228,7 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
-<!--SR:2022-05-23,4,250-->
+<!--SR:2022-06-02,10,250-->
 
 What two things are wrong with the following code and what message does it generate?
 ```

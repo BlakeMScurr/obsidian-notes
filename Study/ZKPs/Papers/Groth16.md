@@ -24,7 +24,7 @@ A number of group elements.
 What is the central question of Groth16?
 ?
 How efficient can pairing based SNARGs be?
-<!--SR:2022-05-23,7,230-->
+<!--SR:2022-06-08,16,230-->
 
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
@@ -34,7 +34,7 @@ Circuit satisfiability, that it is NP-complete.
 What kind of pairings does Groth16 use and why?
 ?
 Assymetric pairings for higher efficiency.
-<!--SR:2022-05-23,10,250-->
+<!--SR:2022-06-17,25,250-->
 
 What does a Groth16 SNARG consist of?
 ?
@@ -72,7 +72,7 @@ Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
 Who introduced zero-knowledge proofs?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
-<!--SR:2022-05-23,11,270-->
+<!--SR:2022-06-26,34,270-->
 
 What are the 3 core properties of zero knowledge proofs?
 ?
@@ -107,7 +107,7 @@ The construction of non-interactive cryptographic schemes, e.g., digital key sig
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
 Kili92, by Joe Kilian.
-<!--SR:2022-05-23,7,190-->
+<!--SR:2022-06-06,14,190-->
 
 What did Micali00 propose?
 ?
@@ -118,7 +118,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-23,1,130-->
+<!--SR:2022-05-24,1,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-23,1,130-->
+<!--SR:2022-05-24,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?

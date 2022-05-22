@@ -668,7 +668,7 @@ We say $\Pi = \{\Pi_x | x \in I\}$ is an I-c-ensemble.
 What does a distinguisher represent in general?
 ?
 A computationally bounded adversary trying to distinguish between distributions, such as encrypted data from truly random data, or the output of an interactive proof system from an imitator.
-<!--SR:2022-05-23,14,210-->
+<!--SR:2022-06-25,33,210-->
 
 What does the distinguisher represent in an Interactive Proof?
 ?
@@ -761,7 +761,7 @@ Which notion of indistinguishability presented in GMR is necessary for zero know
 How much data is each distinguisher fed at a time?
 ?
 A single $|x|^c$-bit string
-<!--SR:2022-05-23,13,210-->
+<!--SR:2022-06-21,29,210-->
 
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -905,10 +905,10 @@ The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0,
  * If $QNR \notin NP$ A communicates more than 0 bits
 	 * B' can learn the unknown residuosity of some $t_i$ by sending it to A
 
-How much information does A communicate to B in naive QNR?
+How much information does A communicate to B in naive QNR IP? (Multi round version, not just NP version).
 ?
 Zero.
-<!--SR:2022-05-23,27,250-->
+<!--SR:2022-07-26,64,250-->
 
 How does M simulate (A,B) in naive QNR?
 ?
@@ -982,7 +982,7 @@ When restricting inputs of $(A, B)$ to the strings in $L$, A communicates at mos
 What how much knowledge is conveyed by an interactive proof if $x \notin L$?
 ?
 Interactive proofs are only defined for "yes-instances", and their complexity of a false proof is not analysed. The prover would "give up" or be "caught out", so the possible knowledge conveyed is not meaningful.
-<!--SR:2022-05-23,27,250-->
+<!--SR:2022-07-27,65,250-->
 
 What is the verifier left with at the end of an interactive proof?
 ?
@@ -1015,7 +1015,7 @@ Classifying languages. Languages, or equivalently, theorem proving procedures ar
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
 NP, since it's a special class of interactive proofs.
-<!--SR:2022-05-23,27,250-->
+<!--SR:2022-07-30,68,250-->
 
 How can knowledge complexity be used for cryptography?
 ?
@@ -1061,7 +1061,7 @@ An NP prover sends one message. If the message released no knowledge then it wou
 Why is KC(0)-BPP of interest to GMR?
 ?
 If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
-<!--SR:2022-05-23,25,250-->
+<!--SR:2022-07-22,60,250-->
 
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
@@ -1081,7 +1081,7 @@ RP-P, there appears to be a language, namely primality testing, which may be in 
 What languages did GMR know to be in $KC(0)-BPP$?
 ?
 QNR and BL.
-<!--SR:2022-05-23,25,250-->
+<!--SR:2022-07-25,63,250-->
 
 Who invented the language BL?
 ?
@@ -1145,7 +1145,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:2022-05-23,7,170-->
+<!--SR:2022-06-05,13,170-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1220,8 +1220,8 @@ But type 2 numbers are quadratic residues if and only if $y$ is a quadratic resi
 
 What is the input to the zk QNR IP?
 ?
-$(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2n$
-<!--SR:2022-05-23,14,210-->
+$(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
+<!--SR:2022-06-22,30,210-->
 
 What happens in step 1?
 ?
@@ -1390,7 +1390,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-05-23,13,230-->
+<!--SR:2022-05-28,5,210-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?

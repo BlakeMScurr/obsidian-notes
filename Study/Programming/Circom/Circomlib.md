@@ -12,9 +12,18 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-23,1,190-->
+<!--SR:2022-05-24,1,170-->
 
-# binsum
+What is aliascheck?
+?
+
+### Aliascheck
+
+What is aliascheck?
+?
+Checks that a binary number is positive.
+
+### binsum
 
 What is binsum?
 ?
@@ -168,6 +177,18 @@ template BinSum(n, ops) {
 ```
 <!--SR:2022-05-24,4,250-->
 
+### binsub
+
+What is binsub?
+?
+Creates a constraint specifying that A - B = C for A, B, C binary numbers
+
+### compconstant
+
+What is compconstant?
+?
+Returns 1 if the binary input signal is greater than some constant.
+
 ## e
 
 What are the files starting with e?
@@ -180,7 +201,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-23,1,190-->
+<!--SR:2022-05-24,1,230-->
 
 ## g-m
 
@@ -210,4 +231,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-05-23,1,190-->
+<!--SR:2022-05-24,1,170-->
