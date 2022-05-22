@@ -29,7 +29,7 @@ How efficient can pairing based SNARGs be?
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
 Circuit satisfiability, that it is NP-complete.
-<!--SR:2022-05-22,9,250-->
+<!--SR:2022-06-11,20,250-->
 
 What kind of pairings does Groth16 use and why?
 ?
@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-05-22,6,210-->
+<!--SR:2022-06-05,14,210-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -97,7 +97,7 @@ The proof does not reveal anything but the truth of the statement, in particular
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
 To non-interactive zero knowledge proofs (NIZK) in the common reference string model.
-<!--SR:2022-05-22,10,250-->
+<!--SR:2022-06-19,28,250-->
 
 Where are NIZKs useful, according to Groth16?
 ?
@@ -118,17 +118,17 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-22,1,130-->
+<!--SR:2022-05-23,1,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-05-22,2,190-->
+<!--SR:2022-05-26,4,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-22,1,130-->
+<!--SR:2022-05-23,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?

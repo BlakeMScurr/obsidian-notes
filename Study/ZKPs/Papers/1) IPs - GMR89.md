@@ -109,7 +109,7 @@ What are NP's prover and verifier?
 ?
 The prover is an exponential time turing machine.
 The verifier is a polynomial time turing machine.
-<!--SR:2022-05-22,26,230-->
+<!--SR:2022-07-21,60,230-->
 
 
 ### Proof Systems in General
@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-05-22,6,130-->
+<!--SR:2022-05-26,4,130-->
 
 ### Interactive Proof System Definition
 
@@ -327,7 +327,7 @@ The lesson is *on an idea*, which is *in a topic*, held as a *conversation*, whe
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
-<!--SR:2022-05-22,6,190-->
+<!--SR:2022-06-04,13,190-->
 
 How is the general topic of an interactive proof system formalised?
 ?
@@ -504,7 +504,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-05-22,26,230-->
+<!--SR:2022-07-17,56,230-->
 
 ### Interactive Hierarchy
 
@@ -521,7 +521,7 @@ $L \in AM \implies L \in NP$ for a random oracle
 How do classes AM and IP compare?
 ?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
-<!--SR:2022-05-22,18,230-->
+<!--SR:2022-05-31,9,210-->
 
 What is the interactive hierarchy, for GMR?
 ?
@@ -617,7 +617,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The output of a probabilistic computation.
-<!--SR:2022-05-22,13,230-->
+<!--SR:2022-05-29,7,210-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -739,7 +739,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-05-22,4,130-->
+<!--SR:2022-05-27,5,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -749,7 +749,7 @@ Probabilistic encryption and pseudo random number generation.
 In what sense is zkQNR indistinguishable?
 ?
 Strictly more than traditional indistinguishability: for all $|x|^c$ bit string are equal, except a set of strings whose total probability doesn't exceed $1/2^{d|x|}$ for some d between 0 and 1.
-<!--SR:2022-05-22,18,230-->
+<!--SR:2022-07-02,41,230-->
 
 ??? how does this further notion of indistinguishability map onto my understanding of the proof for the zero knowledge of the protocol?
 
@@ -993,7 +993,7 @@ The text of the computation with the prover, containing no more than $f(n)$ extr
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?
 That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" text.
-<!--SR:2022-05-22,26,250-->
+<!--SR:2022-06-05,14,230-->
 
 If $L \in KC(0)$, the verifier learns . . . ?
 ?
@@ -1464,7 +1464,7 @@ $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
 When does $B$ accept?
 ?
 If $iteration \geq n$
-<!--SR:2022-05-22,13,250-->
+<!--SR:2022-06-27,36,250-->
 
 When does $B$ increment $iteration$?
 ?

@@ -9,7 +9,7 @@ Algerbraic expressions including values like $\sqrt{2}$ and $-\sqrt{2}$, and the
 What is the popularly known consequence of the Fundamental Theorem of Galois Theory?
 ?
 That there is no general formula to solve a polynomial of degree 5 or higher.
-<!--SR:2022-05-22,13,250-->
+<!--SR:2022-06-26,35,250-->
 
 
 # What is the Square root of 2?

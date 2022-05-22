@@ -111,7 +111,7 @@ What operators can be used to assign signals?
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
 `==>` and `<==` add a constraint, making them the safer option.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 What's an example of when we must use `<--` rather than `<==` and what does it do?
 ?
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-22,1,170-->
+<!--SR:2022-05-23,1,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-05-22,3,210-->
+<!--SR:2022-05-28,6,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-05-22,2,230-->
+<!--SR:2022-05-23,1,210-->
 
 What, roughly, are the three compiler warnings you can get due to a poorly written template?
 ?
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-05-22,2,230-->
+<!--SR:2022-05-28,6,230-->
 
 What does a function look like?
 ?
@@ -510,12 +510,12 @@ We can't - we'll get a "Multiple main components  in the project structure" erro
 What is the comment syntax for circom?
 ?
 `//` for single line, and `/**/` for multiline.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-02,11,250-->
 
 What can be used for identifiers?
 ?
 `*[a-zA-Z0-9_$]`
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-30,8,250-->
 
 What are the reserved keywords?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-22,1,170-->
+<!--SR:2022-05-23,1,150-->
 
 # Operators
 
@@ -559,7 +559,7 @@ To make expressions, but the conditional operator can only be used at the top le
 What are the possible values of a field element?
 ?
 It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular large number.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 What do you use to change the field size?
 ?
@@ -584,17 +584,17 @@ Boolean AND operator.
 What is `||`?
 ?
 Boolean OR operator.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-05-31,9,250-->
 
 What is `!`?
 ?
 Boolean NEGATION operator.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-06-01,10,250-->
 
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-05-22,2,230-->
+<!--SR:2022-05-28,6,230-->
 
 What is the `val(x)` function for?
 ?
@@ -617,7 +617,7 @@ How is `x < y` defined?
 How is `x > y` defined?
 ?
 `val(x % p) > val(y % p)`
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-02,11,250-->
 
 How is `x <= y` defined?
 ?
@@ -637,7 +637,7 @@ What are the arithmetic operators?
 What are the `+ - * **` operators?
 ?
 Addition, subtraction, multiplication, exponentiation all mod p.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 What is the `/` operator?
 ?
@@ -672,12 +672,12 @@ Bitwise AND
 What is the `|` operator?
 ?
 Bitwise OR
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-02,11,250-->
 
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-05-25,3,230-->
 
 What is the `^` operator?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-05-22,2,230-->
+<!--SR:2022-05-27,5,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-22,1,190-->
+<!--SR:2022-05-23,1,170-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -719,7 +719,7 @@ x << k = x >> (p - k)
 What are the bitwise assignment operators?
 ?
 `&= |= ~= ^= >>= <<=`
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 What is the code for the `IsZero` template?
 ?
@@ -763,22 +763,22 @@ component main{public[in]} = Num2Bits(3);
 What is a linear expression?
 ?
 An expression where only addition is used.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-05-25,3,230-->
 
 What is a quadratic expression?
 ?
 An expression resulting from the multiplication of two linear expressions and addition of another: `A*B+C` where `A,B,C` are linear expressions.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 Circom generates constraints, what form must they have?
 ?
 They must be quadratic of the form `A*B+C=0` where `A,B,C` are linear combinations of variables.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 What transformations does circom apply to correctly form constraints?
 ?
@@ -787,10 +787,10 @@ Applications of the commutativity of addition.
 Multiplication (or division) by constants.
 <!--SR:2022-05-27,6,250-->
 
-Which operators impose a constraints?
+Which operators impose constraints?
 ?
 `===`, `<==`
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 Rewrite `out <== 1 - a * b;` more explicitly
 ?
@@ -803,7 +803,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-30,8,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -818,7 +818,7 @@ template multi3() {
 ?
 The constraint `out === in*in1*in2` is not quadratic so we get:
 "Non quadratic constraints are not allowed!"
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 Write out the full constraint generated by the following code, why does it work like this?
 ```
@@ -843,12 +843,12 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-05-22,2,230-->
+<!--SR:2022-05-28,6,230-->
 
 What is the syntax for `for` loops?
 ?
 `for ( initialization_code ; boolean_condition ; step_code ) block_of_code`
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-31,9,250-->
 
 What's wrong with the following code?
 ```
@@ -870,7 +870,7 @@ What is the syntax for a `while` loop?
 What restriction is placed on constraints inside control flow blocks?
 ?
 The conditions of the flow control blocks cannot be unknown. This is because constraint generation must be unique and cannot depend on unknown input signals.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-05-31,9,250-->
 
 What is wrong with the following code?
 ```
@@ -933,22 +933,22 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-05-22,3,230-->
+<!--SR:2022-05-29,7,230-->
 
 What is the default type of signals and variables?
 ?
 A field element.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-01,10,250-->
 
 Are arrays dynamic?
 ?
 No, they can hold a finite number of elements known at compile time.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-02,11,250-->
 
 How many different types of elements can a single array hold?
 ?
 Just one type.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-01,10,250-->
 
 What types can arrays hold?
 ?
@@ -958,13 +958,13 @@ Signals, vars, the same type of component, or arrays.
 How, for example, do we declare a 2D array with lengths?
 ?
 `var dbl[16][2];`
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-31,9,250-->
 
 What is wrong with the following code?
 `var z = [2,8,4];`
 ?
 The size of `z` is not explicitly given, and it will produce a compiler error.
-<!--SR:2022-05-22,4,250-->
+<!--SR:2022-06-03,12,250-->
 
 Can a single array hold multiple types of signals?
 ?
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-28,6,250-->
 
 Which signals of subcomponents are visible?
 ?
@@ -1085,7 +1085,7 @@ How do you use `assert`, for example?
 What is `log`?
 ?
 A way to log values to the standard error stream.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-30,8,250-->
 
 What can be passed to `log`?
 ?
@@ -1119,7 +1119,7 @@ A compiler message that means that what you've done is allowed but uncommon, so 
 What is a warning?
 ?
 A compiler message meaning that what you've done is allowed but should not happen in general.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-06-01,10,250-->
 
  ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
 
@@ -1177,7 +1177,7 @@ template A(n1, n2) {
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-29,7,250-->
 
 What is wrong with the following code, and what message does it generate?
 ```
@@ -1191,12 +1191,12 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-29,7,250-->
 
 What restrictions are placed on the size of an array?
 ?
 The size must be a known value.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-30,8,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
@@ -1210,10 +1210,10 @@ Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
 <!--SR:2022-05-25,4,250-->
 
-A constraint in a control flow must . . . ?
+A control flow with a constraint . . . ?
 ?
 Have a known condition.
-<!--SR:2022-05-22,3,250-->
+<!--SR:2022-05-29,7,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
@@ -1230,7 +1230,7 @@ There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 <!--SR:2022-05-23,4,250-->
 
-What is wrong with the following code and what message does it generate?
+What two things are wrong with the following code and what message does it generate?
 ```
 template A() {
 	signal input in;
@@ -1243,8 +1243,8 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
-(ignore the fact that out is assigned multiple times, that's not the point, the docs are just bad)
-<!--SR:2022-05-22,3,250-->
+Also, out is assigned multiple times.
+<!--SR:2022-05-25,3,230-->
 
 
 

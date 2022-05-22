@@ -9,23 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Software/Tornado Cash.md",
+            "file": "Study/Programming/Circom/Documentation.md",
             "mode": "source"
           }
-        },
-        "group": "74a81456fe8b99c5"
-      },
-      {
-        "id": "4ba37c7a9580f4de",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Study/Software/Tornado Cash.md",
-            "mode": "preview"
-          }
-        },
-        "group": "74a81456fe8b99c5"
+        }
       }
     ],
     "direction": "vertical"
@@ -81,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Software/Tornado Cash.md",
+                "file": "Study/Programming/Circom/Documentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +96,7 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/Programming/Circom/Documentation.md",
     "Study/Software/Tornado Cash.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Number Theory/QRP.md",
@@ -116,7 +104,6 @@
     "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Questions.md",
     "Study/ZKPs/Papers/Groth16.md",
-    "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Programming/Rust/Book.md"
   ]

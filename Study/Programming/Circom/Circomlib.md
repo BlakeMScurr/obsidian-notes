@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-22,1,210-->
+<!--SR:2022-05-23,1,190-->
 
 # binsum
 
@@ -180,7 +180,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-22,1,210-->
+<!--SR:2022-05-23,1,190-->
 
 ## g-m
 
@@ -210,4 +210,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-05-22,1,210-->
+<!--SR:2022-05-23,1,190-->
