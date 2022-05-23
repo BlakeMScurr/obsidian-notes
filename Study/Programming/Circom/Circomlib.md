@@ -189,6 +189,121 @@ What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
 
+What are the sections in compconstant?
+?
+Initialisation
+Buliding a part
+looping along the bitstring
+Checking the 127th bit
+Output
+
+What are the signals in compconstant?
+?
+```
+signal input in[254];
+signal output out;
+
+signal parts[127];
+signal sout;
+```
+
+What are the variables in compconstant?
+?
+```
+var clsb;
+var cmsb;
+var slsb;
+var smsb;
+
+var sum = 0;
+var b = (1 << 128) - 1;
+var a = 1;
+var e = 1;
+var i;
+```
+
+What do `clsb` etc represent?
+?
+Constant/signal least/most significant bit.
+
+How do we calculate `clsb` etc?
+?
+```
+clsb = (ct >> (i*2) & 1;
+cmsb = (ct >> (i*2+1)) & 1;
+slsb = in[i*2];
+smsb = in[i*2+1];
+```
+
+What is the value of each part?
+?
+`a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
+
+What does `a` look like and what is its formula?
+?
+00000010000, where the 1 is at the ith digit
+2^i
+
+What does `b` look like and what is its formula?
+?
+1111110000 where the last 1 is the ith digit.
+(2^127-1) - (2^(i-1) - 1)
+
+What does `a` do from a bitwise perspective and how?
+?
+Zeroes each `jth` left hand bit where `i < j <= 127`.
+Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
+
+What does `b` do from a bitwise perspective and how?
+?
+Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
+If they're all 0, simply by adding a 1 to each bit.
+If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
+
+What are the 4 cases for defining parts?
+?
+```
+cmsb == 0 && clsb == 0
+cmsb == 0 && clsb == 1
+cmsb == 1 && clsb == 1
+cmsb == 0 && clsb == 0
+```
+
+What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
+?
+`-b*smsb*slsb + b*smsb + b*slsb`
+It must be `0` if `smsb == slsb == 0`
+`b` otherwise.
+
+What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
+?
+`a*slsb*smsb - a*slsb + b*smsb - a*slsb + a`
+It must be `a` if `smsb == slsb == 0`
+It must be `0` if `smsb == 0` and `slsb == 1`
+It must be `b` if `smsb == 1` and `slsb == 0`
+It must be `b` if `smsb == 1` and `slsb == 1`
+
+
+What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
+?
+`b*smsb*slsb - a*smsb + a`
+It must be `a` if `smsb == 0` and `slsb == 0`
+It must be `a` if `smsb == 0` and `slsb == 1`
+It must be `0` if `smsb == 1` and `slsb == 0`
+It must be `b` if `smsb == 1` and `slsb == 1`
+
+What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
+?
+`-a*smsb*slsb + a`
+It must be `a` if `smsb == 0` and `slsb == 0`
+It must be `a` if `smsb == 0` and `slsb == 1`
+It must be `a` if `smsb == 1` and `slsb == 0`
+It must be `0` if `smsb == 1` and `slsb == 1`
+
+What is the updating code for each loop?
+
+
+
 ## e
 
 What are the files starting with e?
