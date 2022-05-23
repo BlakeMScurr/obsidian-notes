@@ -14,15 +14,6 @@ comparators
 compconstant
 <!--SR:2022-05-24,1,170-->
 
-What is aliascheck?
-?
-
-### Aliascheck
-
-What is aliascheck?
-?
-Checks that a binary number is positive.
-
 ### binsum
 
 What is binsum?
@@ -301,8 +292,22 @@ It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
 
 What is the updating code for each loop?
+?
+```
+sum = sum + parts[i];
+b = b -e;
+a = a+e;
+e = e*2;
+```
 
-
+What is the code for the final check and output?
+?
+```
+sout <== sum;
+component num2bits = Num2Bits(135);
+num2bits.in <== sout;
+out <== num2bits.out[127];
+```
 
 ## e
 
@@ -332,6 +337,52 @@ mux2
 mux3
 mux4
 <!--SR:2022-05-24,4,250-->
+
+### Mux1
+
+What are the top level constructs in Mux1?
+?
+`template MultiMux1` and `template Mux1`
+
+What does `MultiMux1` do?
+?
+Selects 1 of 2 length n arrays.
+
+What does `Mux1` do?
+?
+Selects 1 of 2 values.
+
+What is the code for MultiMux1?
+?
+```
+template MultiMux2(n) {
+	signal input in[n][2];
+	signal input s;
+	signal out[n];
+	
+	for (var i = 0; i < n; i++) {
+		out[i] <== (in[i][1] - in[in][0])*s + in[i][0];
+	}
+}
+```
+
+What is the code for Mux1?
+?
+```
+template Mux1() {
+	signal input in[2];
+	signal input s;
+	signal output out;
+	
+	component mux = MultiMux1(1);
+	for(var i = 0; i < 2; i++) {
+		mux.in[0][i] <== in[i];
+	}
+	
+	mux.s <== s;
+	out <== mux.out[0];
+}
+```
 
 ## p-s
 
