@@ -4,7 +4,7 @@
 What makes SNARGs succinct?
 ?
 Small size and low verification complexity.
-<!--SR:2022-05-24,8,210-->
+<!--SR:2022-06-10,17,210-->
 
 What is a SNARG?
 ?
@@ -60,7 +60,7 @@ By showing that linear interactive proofs cannot have a linear decision procedur
 What would extending the lower bound in Groth16 prove?
 ?
 Extending the lower bound to 2 elements would prove the optimality of the 3 element SNARG.
-<!--SR:2022-05-24,11,250-->
+<!--SR:2022-06-21,28,250-->
 
 Who posed the question answered by Groth16's second contribution?
 ?
@@ -92,7 +92,7 @@ A malicious prover cannot convince the verifier of a false statement.
 Describe the zero knowledge property.
 ?
 The proof does not reveal anything but the truth of the statement, in particular it does not reveal the prover's witness.
-<!--SR:2022-05-24,8,190-->
+<!--SR:2022-06-09,16,190-->
 
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
@@ -118,7 +118,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -128,12 +128,12 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-05-24,8,190-->
+<!--SR:2022-06-10,17,190-->
 
 UNFINISHED
 

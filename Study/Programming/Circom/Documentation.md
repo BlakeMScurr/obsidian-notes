@@ -27,7 +27,7 @@ How do you declare an input signal?
 How do you declare an output signal?
 ?
 `signal output out;` declares an output signal named `out`
-<!--SR:2022-05-24,6,250-->
+<!--SR:2022-06-09,16,250-->
 
 How do you declare an intermediate signal?
 ?
@@ -37,14 +37,14 @@ How do you declare an intermediate signal?
 How do you declare an array of output signals?
 ?
 `signal output out[N];` declares an array of length `N` called `out` containing output signals.
-<!--SR:2022-05-24,5,230-->
+<!--SR:2022-06-07,14,230-->
 
 When are signals private vs public?
 ?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-05-24,5,230-->
+<!--SR:2022-06-05,12,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
@@ -373,7 +373,7 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-05-24,5,250-->
+<!--SR:2022-05-28,4,230-->
 
 When can we use `parallel`?
 ?
@@ -435,7 +435,7 @@ function funid (param_1, ..., param_n) {
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-05-24,3,230-->
+<!--SR:2022-05-31,7,230-->
 
 Can functions be recursive?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 # Operators
 
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-05-24,3,190-->
+<!--SR:2022-05-30,6,190-->
 
 Where can operators be used?
 ?
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-05-24,3,230-->
+<!--SR:2022-05-29,5,230-->
 
 What is the conditional expression?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-05-24,3,210-->
+<!--SR:2022-05-29,5,210-->
 
 What is the `\` operator?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-05-24,3,210-->
+<!--SR:2022-05-30,6,210-->
 
 What is the `>>` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-24,1,150-->
+<!--SR:2022-05-25,1,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-05-24,3,230-->
+<!--SR:2022-05-27,3,210-->
 
 What are the bitwise assignment operators?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-05-24,3,210-->
+<!--SR:2022-05-30,6,210-->
 
 # Constraint Generation
 

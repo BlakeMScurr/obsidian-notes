@@ -12,29 +12,29 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-24,1,170-->
+<!--SR:2022-05-25,1,150-->
 
 ### binsum
 
 What is binsum?
 ?
 Creates a constraint specifying that some binary inputs add to some binary output.
-<!--SR:2022-05-24,3,230-->
+<!--SR:2022-06-01,8,230-->
 
 What is `ops` in binsum?
 ?
 The parameter specifying the number of operands. I.e., the number of binary numbers being added together.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is `n` in binsum?
 ?
 The parameter specifying the number of bits in each operand (binary number being added together).
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is the main constraint in binsum and what is it for?
 ?
@@ -47,7 +47,7 @@ in[ops-1][0]*2^0 + i[ops-1][1]*2^1 + ... in[ops-1][n-1]*2^(n-1)
 ===
 out[0]+2^0 + out[1]^2^1 + ..... + out[n+e-1]*2^(n+e-1)
 ```
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is the secondary constraint in binsum and what is it for?
 ?
@@ -58,29 +58,29 @@ out[1] * (out[1] -	1) === 0;
 ...
 out[n+e-1] * (out[n+e-1] - 1) === 0;
 ```
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What are the top level constructions in the binsum.circom file?
 ?
 The `nbits` function and the `BinSum` template.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 Does `BinSum` require binary inputs?
 ?
 No.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What does `nbits` do?
 ?
 Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What do `a`, `r`, and `n` represent in `nbits`?
 ?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
-`n` is the `2^r`
-<!--SR:2022-05-24,4,250-->
+`n` is `2^r`
+<!--SR:2022-06-05,12,250-->
 
 What is the code for `nbits`?
 ?
@@ -95,24 +95,24 @@ function nbits(a) {
 	return r;
 }
 ```
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is `nout` in `Binsum`?
 ?
 The number of bits required to represent the output of the sum.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What are `in` and `out` in `Binsum`?
 ?
 `in` is a 2D array of bits representing binary numbers.
 `out` is an array bits representing a number, namely the sum of the numbers in `in`.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What are `lin` and `lout` in `Binsum`?
 ?
 `lin` is the algebraic expression for the sum of the numbers in `in`.
 `lout` is the algebraic expression for the value of `out`
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 ??? does the l in lin and lout represent "algebra?"
 
@@ -120,18 +120,18 @@ What are `k` and `j` in `Binsum`?
 ?
 `k` is the index variable used to count through the `n` digits of each `in` number, and the `nout` digits of `out`.
 `j` is the index variable used to count through the `ops` operands in `in`.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is `e2` in `Binsum`?
 ?
 `e2` is the variable that keeps track of the power of 2 represented by each digit to save exponentiations.
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 What is the code for `BinSum`?
 ?
@@ -166,19 +166,21 @@ template BinSum(n, ops) {
 	lin === lout;
 }
 ```
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-06-05,12,250-->
 
 ### binsub
 
 What is binsub?
 ?
 Creates a constraint specifying that A - B = C for A, B, C binary numbers
+<!--SR:2022-05-27,3,250-->
 
 ### compconstant
 
 What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
+<!--SR:2022-05-28,4,250-->
 
 What are the sections in compconstant?
 ?
@@ -187,16 +189,17 @@ Buliding a part
 looping along the bitstring
 Checking the 127th bit
 Output
+<!--SR:2022-05-27,3,250-->
 
 What are the signals in compconstant?
 ?
 ```
 signal input in[254];
 signal output out;
-
 signal parts[127];
 signal sout;
 ```
+<!--SR:2022-05-25,1,230-->
 
 What are the variables in compconstant?
 ?
@@ -205,17 +208,18 @@ var clsb;
 var cmsb;
 var slsb;
 var smsb;
-
 var sum = 0;
 var b = (1 << 128) - 1;
 var a = 1;
 var e = 1;
 var i;
 ```
+<!--SR:2022-05-25,1,230-->
 
 What do `clsb` etc represent?
 ?
 Constant/signal least/most significant bit.
+<!--SR:2022-05-28,4,250-->
 
 How do we calculate `clsb` etc?
 ?
@@ -225,31 +229,37 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
+<!--SR:2022-05-28,4,250-->
 
-What is the value of each part?
+What is the value of each part, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
+<!--SR:2022-05-28,4,250-->
 
 What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
+<!--SR:2022-05-27,3,250-->
 
 What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
+<!--SR:2022-05-28,4,250-->
 
 What does `a` do from a bitwise perspective and how?
 ?
 Zeroes each `jth` left hand bit where `i < j <= 127`.
 Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
+<!--SR:2022-05-28,4,250-->
 
 What does `b` do from a bitwise perspective and how?
 ?
 Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
 If they're all 0, simply by adding a 1 to each bit.
 If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
+<!--SR:2022-05-26,2,250-->
 
 What are the 4 cases for defining parts?
 ?
@@ -259,20 +269,23 @@ cmsb == 0 && clsb == 1
 cmsb == 1 && clsb == 1
 cmsb == 0 && clsb == 0
 ```
+<!--SR:2022-05-26,2,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 ?
 `-b*smsb*slsb + b*smsb + b*slsb`
 It must be `0` if `smsb == slsb == 0`
 `b` otherwise.
+<!--SR:2022-05-27,3,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
 ?
-`a*slsb*smsb - a*slsb + b*smsb - a*slsb + a`
+`a*smsb*slsb - a*slsb + b*smsb - a*smsb + a`
 It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
+<!--SR:2022-05-28,4,250-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
@@ -282,6 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
+<!--SR:2022-05-25,1,230-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -290,6 +304,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
+<!--SR:2022-05-28,4,250-->
 
 What is the updating code for each loop?
 ?
@@ -299,6 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
+<!--SR:2022-05-25,1,230-->
 
 What is the code for the final check and output?
 ?
@@ -308,6 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
+<!--SR:2022-05-25,1,230-->
 
 ## e
 
@@ -321,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-24,1,230-->
+<!--SR:2022-05-25,1,210-->
 
 ## g-m
 
@@ -336,21 +353,24 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-05-24,4,250-->
+<!--SR:2022-05-27,3,230-->
 
 ### Mux1
 
 What are the top level constructs in Mux1?
 ?
 `template MultiMux1` and `template Mux1`
+<!--SR:2022-05-27,3,250-->
 
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
+<!--SR:2022-05-27,3,250-->
 
 What does `Mux1` do?
 ?
 Selects 1 of 2 values.
+<!--SR:2022-05-28,4,250-->
 
 What is the code for MultiMux1?
 ?
@@ -361,10 +381,11 @@ template MultiMux2(n) {
 	signal out[n];
 	
 	for (var i = 0; i < n; i++) {
-		out[i] <== (in[i][1] - in[in][0])*s + in[i][0];
+		out[i] <== (in[i][1] - in[i][0])*s + in[i][0];
 	}
 }
 ```
+<!--SR:2022-05-25,1,230-->
 
 What is the code for Mux1?
 ?
@@ -383,6 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
+<!--SR:2022-05-27,3,250-->
 
 ## p-s
 
@@ -397,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-05-24,1,170-->
+<!--SR:2022-05-27,3,170-->

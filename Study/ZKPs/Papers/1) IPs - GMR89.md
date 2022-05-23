@@ -647,7 +647,7 @@ Some natural number.
 How do we define an I-c-ensembles's $\Pi_x$?
 ?
 $\forall x \in I$ where $|x| = n$ let $\Pi_x$ be a probability distribution over $n^c$ bit strings
-<!--SR:2022-05-24,28,230-->
+<!--SR:2022-07-29,66,230-->
 
 How do we define an I-c-ensemble $\Pi$?
 ?
@@ -683,7 +683,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-05-24,6,130-->
+<!--SR:2022-06-01,8,130-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -711,7 +711,7 @@ Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
 for all distinguishers $D$, $|p^d_{x,1} - p^d_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
 Where $p:N \to [0,1]$
-<!--SR:2022-05-24,11,190-->
+<!--SR:2022-06-15,22,190-->
 
 
 #### 0-Distinguishability
@@ -756,7 +756,7 @@ Strictly more than traditional indistinguishability: for all $|x|^c$ bit string 
 Which notion of indistinguishability presented in GMR is necessary for zero knowledge?
 ?
 "at-most-0-distinguishable", as opposed to "largely equal distributions aside from a vanishing sum" which zkQNR additionally fulfills.
-<!--SR:2022-05-24,28,230-->
+<!--SR:2022-07-24,61,230-->
 
 How much data is each distinguisher fed at a time?
 ?
@@ -766,7 +766,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-05-24,7,130-->
+<!--SR:2022-06-03,10,130-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -814,7 +814,7 @@ Bits.
 How do we define the the possible outputs of a probabilistic turing machine?
 ?
 The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible outputs of M on x.
-<!--SR:2022-05-24,15,190-->
+<!--SR:2022-06-25,32,190-->
 
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
@@ -963,7 +963,7 @@ $L \in KC(f(n))$
 $L$ has knowledge complexity $f(n)$ if . . . ?
 ?
 When restricting inputs of $(A, B)$ to the strings in $L$, A communicates at most $f(n)$ bits of knowledge.
-<!--SR:2022-05-24,18,230-->
+<!--SR:2022-07-04,41,230-->
 
 #### Zero *extra* knowlege
  * ??? Is it reasonable to call the text of a zero knowledge computation "irrelevant" for any other purpose? It may be useful for speeding up polynomial computations.
@@ -1066,7 +1066,7 @@ If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
 RP-P, there appears to be a language, namely primality testing, which may be in RP-P (it is certainly in RP, and maybe P). A similar language would be useful to distinguish KC(0) and BPP.
-<!--SR:2022-05-24,28,250-->
+<!--SR:2022-06-08,15,230-->
 
 #### Known languages in KC(0)-BPP
 * There are 2 languages known to be in KC(0)-BPP
@@ -1096,7 +1096,7 @@ Because it was presented with all the ingredients required to prove that $BL \in
 Why was the language BL invented?
 ?
 To solve the problem of flipping a coin over the telephone.
-<!--SR:2022-05-24,28,250-->
+<!--SR:2022-08-02,70,250-->
 
 What is the definition of the BL language?
 ?
@@ -1106,7 +1106,7 @@ Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in 
 What is the definition of the quadratic predicate?
 ?
 $\mathcal{Q}_m(y) = 0$ if y is quadratic residue mod m, and $1$ otherwise.
-<!--SR:2022-05-24,26,250-->
+<!--SR:2022-07-28,65,250-->
 
 What is the definition of the language QNR?
 ?
@@ -1312,7 +1312,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-05-24,8,170-->
+<!--SR:2022-05-29,5,150-->
 
 How large is $Z$?
 ?
@@ -1350,7 +1350,7 @@ The difference in size between $T - Z$ and $S - Z$.
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
 $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - Z$ or $S -Z$.
-<!--SR:2022-05-24,13,210-->
+<!--SR:2022-06-24,31,210-->
 
 How is $D$ notated?
 ?

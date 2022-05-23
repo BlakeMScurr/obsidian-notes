@@ -90,7 +90,7 @@ Lázsló Babai, Lance Fortnow, and Carsten Lund
 What does BFL90 show?
 ?
 NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
-<!--SR:2022-05-24,14,150-->
+<!--SR:2022-06-16,23,150-->
 
 
 
@@ -123,7 +123,7 @@ That 1 round NIZKs are only possible for trival (BPP) languages.
 Who are the authors of GOS12?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-05-24,5,230-->
+<!--SR:2022-06-06,13,230-->
 
 What is the title of GOS12?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 Who are the authors of GOS06?
 ?
@@ -147,12 +147,12 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-05-24,5,130-->
+<!--SR:2022-05-31,7,130-->
 
 Who are the authors of Gro06?
 ?
@@ -162,12 +162,12 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 Who are the authors of GS12?
 ?
@@ -177,12 +177,12 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did Gro10 contribute?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did Gro09 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-05-24,1,130-->
+<!--SR:2022-05-25,1,130-->
 
 What did Groth16 contribute?
 ?
