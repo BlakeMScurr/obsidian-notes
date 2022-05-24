@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Circom/Circomlib.md",
+            "file": "Blog/ZK Music NFTs.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Circom/Circomlib.md",
+                "file": "Blog/ZK Music NFTs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Blog/ZK Music NFTs.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
@@ -104,7 +105,6 @@
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Number Theory/QRP.md",
     "Study/ZKPs/Questions.md",
-    "Study/ZKPs/Papers/Groth16.md",
-    "Study/Programming/Rust/Book.md"
+    "Study/ZKPs/Papers/Groth16.md"
   ]
 }
