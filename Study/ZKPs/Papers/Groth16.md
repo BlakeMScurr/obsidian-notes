@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-05-26,10,210-->
+<!--SR:2022-06-01,6,190-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -118,17 +118,17 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-05-26,4,190-->
+<!--SR:2022-06-05,10,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-27,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -183,7 +183,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2022-05-26,10,250-->
+<!--SR:2022-05-30,4,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?
@@ -199,7 +199,7 @@ What is the form of our arithmetic constraints?
 ?
 $\sum a_iu_{i,q}\sum a_iv_{i,q}=\sum a_iw_{i,q}$,
 where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
-<!--SR:2022-05-26,10,250-->
+<!--SR:2022-06-20,25,250-->
 
 ### Generalising Circuits
 

@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-05-26,4,130-->
+<!--SR:2022-05-31,5,130-->
 
 ### Interactive Proof System Definition
 
@@ -347,7 +347,7 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-05-26,10,130-->
+<!--SR:2022-06-10,15,130-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
@@ -477,7 +477,7 @@ The class of languages possessing an interactive proof system.
 What is $IP_{T(n)}$?
 ?
 The class of languages with an interactive proof system where the prover runs in $T(n)$ time.
-<!--SR:2022-05-26,30,250-->
+<!--SR:2022-08-07,73,250-->
 
 What is $IP[f(n)]$?
 ?
@@ -493,7 +493,7 @@ The class of languages with an interactive proof system that halts within $f(n)$
 Who invented Arthur-Merlin games?
 ?
 László Babai.
-<!--SR:2022-05-26,30,250-->
+<!--SR:2022-08-09,75,250-->
 
 Which came first, Arthur-Merlin games, or Interactive Proof Systems?
 ?
@@ -526,7 +526,7 @@ $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ accord
 What is the interactive hierarchy, for GMR?
 ?
 The hypothesis that strictly $IP[k] \subset IP[k+1]$
-<!--SR:2022-05-26,30,250-->
+<!--SR:2022-08-05,71,250-->
 
 
 
@@ -576,7 +576,7 @@ Infinite computing power by all. The various inputs discussed can be hidden to d
 How do GMR differ from the MCF philosophically?
 ?
 GMR hold that our computation is limited, and that we communicate about available public inputs.
-<!--SR:2022-05-26,30,250-->
+<!--SR:2022-08-10,76,250-->
 
 What does GMR's philosophy of knowledge apply to, in addition to epistemology?
 ?
@@ -846,7 +846,7 @@ At home he tries to extract the esoteric knowledge.
 First he imitates the lesson as best he can.
 Then he scrutinizes, as best he can, the difference between his imitation and the lesson.
 To the degree that they are different, some knowledge has leaked.
-<!--SR:2022-05-26,30,250-->
+<!--SR:2022-08-08,74,250-->
 
 How do I extend my analogy for determining knowledge to cover all the knowledge conveyed by a prover?
 ?
@@ -1150,7 +1150,7 @@ $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
 Computing $\mathcal{Q}_m(x)$ is a hard problem.
-<!--SR:2022-05-26,17,210-->
+<!--SR:2022-07-01,36,210-->
 
 The algorithm for generating $x$ with $\mathcal{Q}_m(x) = 1$ and $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1345,7 +1345,7 @@ For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = 
 What is $d$?
 ?
 The difference in size between $T - Z$ and $S - Z$.
-<!--SR:2022-05-26,15,230-->
+<!--SR:2022-06-30,35,230-->
 
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
@@ -1355,7 +1355,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-05-26,10,190-->
+<!--SR:2022-06-14,19,190-->
 
 How does $B$ reveal $D$?
 ?

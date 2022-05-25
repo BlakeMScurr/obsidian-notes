@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-05-26,10,150-->
+<!--SR:2022-06-19,24,170-->
 
 ## BGKW88
 
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did GOS06 contribute?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did Gro06 contribute?
 ?
@@ -177,12 +177,12 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did Gro10 contribute?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did Gro09 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-29,3,150-->
 
 What did Groth16 contribute?
 ?

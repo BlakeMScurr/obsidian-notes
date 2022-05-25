@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-26,3,150-->
+<!--SR:2022-05-31,5,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -179,7 +179,7 @@ Templates.
 When are template's parameters instantiated?
 ?
 When the template is used.
-<!--SR:2022-05-26,6,230-->
+<!--SR:2022-06-09,14,230-->
 
 What is the syntax to define a template parameter?
 ?
@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-05-26,6,230-->
+<!--SR:2022-06-11,16,230-->
 
 When do we use `--inspect`?
 ?
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-05-26,3,210-->
+<!--SR:2022-06-02,7,210-->
 
 What, roughly, are the three compiler warnings you can get due to a poorly written template?
 ?
@@ -622,7 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-07,12,250-->
 
 How is `x >= y` defined?
 ?
@@ -647,7 +647,7 @@ Multiplication by the multiplicative inverse mod p.
 What is the `\` operator?
 ?
 Quotient after integer devision.
-<!--SR:2022-05-26,6,250-->
+<!--SR:2022-06-12,17,250-->
 
 What is the `%` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-26,1,130-->
+<!--SR:2022-05-27,1,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -735,7 +735,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2022-05-26,3,230-->
+<!--SR:2022-06-04,9,230-->
 
 What is the code for `Num2Bits`
 ?
@@ -865,7 +865,7 @@ i++
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-09,14,250-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -953,7 +953,7 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
-<!--SR:2022-05-26,3,230-->
+<!--SR:2022-06-04,9,230-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
@@ -1034,7 +1034,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
-<!--SR:2022-05-26,3,230-->
+<!--SR:2022-06-03,8,230-->
 
 What is wrong with this code?
 ```
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-05-26,3,210-->
+<!--SR:2022-05-29,3,190-->
 
 What creates assertions?
 ?
@@ -1095,7 +1095,7 @@ Any expression except the conditional expression.
 What's an example of a `log` instruction?
 ?
 `log(123);`
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-10,15,250-->
 
 # Circom Insights
 ## Compiler
@@ -1126,7 +1126,7 @@ A compiler message meaning that what you've done is allowed but should not happe
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-08,13,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
@@ -1145,7 +1145,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-08,13,250-->
 
 What kinds of values are always known or unknown?
 ?
@@ -1157,7 +1157,7 @@ When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
-<!--SR:2022-05-26,5,250-->
+<!--SR:2022-06-07,12,250-->
 
 Which identifiers and known and unknown in the following code?
 ```

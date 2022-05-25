@@ -126,7 +126,7 @@ An automorphism is a function that shuffles around the field elements while resp
 What is $Aut\ F$?
 ?
 The set of all automorphisms of $F$.
-<!--SR:2022-05-26,15,250-->
+<!--SR:2022-07-06,41,250-->
 
 What is the additional property of an automorphism fixing $\mathbb{Q}$?
 ?
@@ -142,7 +142,7 @@ What are the formalisations for "numbers" and permutations from the $\sqrt{2}$  
 ?
 Numbers become fields, i.e., $\sqrt{2}$ and $-\sqrt{2}$ becomes $\mathbb{Q}(\sqrt{2})$.
 Permutations become automorphism, i.e., the permutations of $\sqrt{2}$ and $-\sqrt{2}$ become the automorphisms of $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-05-26,16,250-->
+<!--SR:2022-07-05,40,250-->
 
 
 # Examples
