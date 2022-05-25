@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-25,1,150-->
+<!--SR:2022-05-28,3,170-->
 
 ### binsum
 
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-26,1,210-->
 
 What are the variables in compconstant?
 ?
@@ -214,7 +214,7 @@ var a = 1;
 var e = 1;
 var i;
 ```
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-27,2,230-->
 
 What do `clsb` etc represent?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-27,2,230-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-27,2,230-->
 
 What is the code for the final check and output?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-29,4,250-->
 
 ## e
 
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-25,1,210-->
+<!--SR:2022-05-28,3,210-->
 
 ## g-m
 
@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-05-25,1,230-->
+<!--SR:2022-05-28,3,230-->
 
 What is the code for Mux1?
 ?

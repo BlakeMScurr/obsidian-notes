@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-05-25,9,170-->
+<!--SR:2022-06-11,17,170-->
 
 What did GOS12 contribute?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-28,3,150-->
 
 Who are the authors of GOS06?
 ?
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did GOS06 contribute?
 ?
@@ -162,12 +162,12 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-27,2,150-->
 
 Who are the authors of GS12?
 ?
@@ -177,12 +177,12 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -194,12 +194,12 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-05-25,3,210-->
+<!--SR:2022-05-31,6,210-->
 
 Who are the authors of Gro09?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did Gro09 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did Groth16 contribute?
 ?

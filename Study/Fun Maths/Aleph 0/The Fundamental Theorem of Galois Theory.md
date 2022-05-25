@@ -4,7 +4,7 @@
 What is the Fundamental Theorem of Galois Theory about, roughly?
 ?
 Algerbraic expressions including values like $\sqrt{2}$ and $-\sqrt{2}$, and the ways you can permute those values while keeping the expression true.
-<!--SR:2022-05-25,16,270-->
+<!--SR:2022-07-07,43,270-->
 
 What is the popularly known consequence of the Fundamental Theorem of Galois Theory?
 ?
@@ -74,7 +74,7 @@ $(\zeta,\zeta^2,\zeta^3,\zeta^4)$
 $(\zeta^2,\zeta^4,\zeta,\zeta^3)$
 $(\zeta^3,\zeta,\zeta^4,\zeta^2)$
 $(\zeta^4,\zeta^3,\zeta^2,\zeta)$
-<!--SR:2022-05-25,15,250-->
+<!--SR:2022-06-30,36,250-->
 
 Why do we want to study the algebra preserving permutations of conjugates?
 ?
@@ -156,21 +156,21 @@ How do we calculate the number of automorphisms fixing $\mathbb{Q}$ in $\mathbb{
 ?
 $\sigma(a + b \sqrt{2})$ arbitrary automorphism of arbitrary element
 $= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative properties of automorphisms
-$= a + b + \sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
-$= a + b \pm\sqrt{2}$ since automorphisms send numbers to one of their conjugates
+$= a + b\sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
+$= a + b \cdot(\pm\sqrt{2})$ since automorphisms send numbers to one of their conjugates
 So there are just 2 such automorphisms.
-<!--SR:2022-05-25,4,250-->
+<!--SR:2022-06-06,12,250-->
 
 How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
 ?
 Just draw how it acts on the conjugates of $\sqrt{2}$, since that determines how it acts on the whole field.
-<!--SR:2022-05-25,4,250-->
+<!--SR:2022-06-06,12,250-->
 
 What do the each of the automorphisms fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$ do to the conjugates of $\sqrt{2}$?
 ?
 The first leaves all conjugates in the same place.
 The second swaps $\sqrt{2}$ and $-\sqrt{2}$
-<!--SR:2022-05-25,4,250-->
+<!--SR:2022-06-06,12,250-->
 
 # Group Theory
 

@@ -14,12 +14,12 @@ Succinct non-interactive argument
 What is a SNARK?
 ?
 Succinct non-interactive argument of knowledge
-<!--SR:2022-05-25,12,250-->
+<!--SR:2022-06-27,33,250-->
 
 What does a pairing based SNARG consist of?
 ?
 A number of group elements.
-<!--SR:2022-05-25,12,250-->
+<!--SR:2022-06-28,34,250-->
 
 What is the central question of Groth16?
 ?
@@ -65,7 +65,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-05-25,4,130-->
+<!--SR:2022-05-30,5,130-->
 
 # Introduction
 
@@ -102,7 +102,7 @@ To non-interactive zero knowledge proofs (NIZK) in the common reference string m
 Where are NIZKs useful, according to Groth16?
 ?
 The construction of non-interactive cryptographic schemes, e.g., digital key signatures, and CCA-secure public key encryption.
-<!--SR:2022-05-25,9,190-->
+<!--SR:2022-06-13,19,190-->
 
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
@@ -112,13 +112,13 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-05-25,6,150-->
+<!--SR:2022-06-04,10,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -211,7 +211,7 @@ Multiplication and addition gates are special cases of constraint equations.
 How can a multiplication gate be described as a constraint?
 ?
 $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the remaining constants for the equation are $0$.
-<!--SR:2022-05-25,9,250-->
+<!--SR:2022-06-18,24,250-->
 
 How can an addition gate be described as a constraint?
 ?

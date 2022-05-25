@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2022-05-25,5,210-->
+<!--SR:2022-06-07,13,210-->
 
 How do we declare a variable?
 ?
@@ -193,7 +193,7 @@ template tempid (param_1, param2) {
 What can templates not include?
 ?
 Local functions or template definitions.
-<!--SR:2022-05-25,6,250-->
+<!--SR:2022-06-11,17,250-->
 
 What is wrong with the following code, and what error will it generate?
 ```
@@ -301,7 +301,7 @@ No output signal in template.
 What does a component represent?
 ?
 An arithmetic circuit.
-<!--SR:2022-05-25,6,250-->
+<!--SR:2022-06-09,15,250-->
 
 What does a component consist of?
 ?
@@ -348,7 +348,7 @@ component main{public[in]} = Main();
 ```
 ?
 `c`'s output is accessed before one of its inputs.
-<!--SR:2022-05-25,6,250-->
+<!--SR:2022-06-11,17,250-->
 
 What's wrong with the following code and what error message does it produce?
 ```
@@ -403,7 +403,7 @@ When dealing with large circuits.
 What is the line at the top of every circom file?
 ?
 `pragma circom 2.0.0;`
-<!--SR:2022-05-25,6,230-->
+<!--SR:2022-06-08,14,230-->
 
 What is pragma for?
 ?
@@ -491,7 +491,7 @@ It defines global input and outputs of the circuit, so it needs to be able to sp
 What is the syntax for creating a main component?
 ?
 `component main{public [signal_list]]} = template_id(v1, ..., vn);` where `{public [signal_list]}` is optional.
-<!--SR:2022-05-25,6,250-->
+<!--SR:2022-06-10,16,250-->
 
 Which input signals in the main component are private?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-28,3,150-->
 
 # Operators
 
@@ -677,7 +677,7 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-05-25,3,230-->
+<!--SR:2022-06-03,9,230-->
 
 What is the `^` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-25,1,130-->
+<!--SR:2022-05-26,1,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -768,7 +768,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-05-25,3,230-->
+<!--SR:2022-06-02,8,230-->
 
 What is a quadratic expression?
 ?
@@ -1114,7 +1114,7 @@ Hints, warnings, and errors.
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
-<!--SR:2022-05-25,4,250-->
+<!--SR:2022-06-06,12,250-->
 
 What is a warning?
 ?
@@ -1208,7 +1208,7 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
-<!--SR:2022-05-25,4,250-->
+<!--SR:2022-06-06,12,250-->
 
 A control flow with a constraint . . . ?
 ?
@@ -1235,7 +1235,7 @@ What two things are wrong with the following code and what message does it gener
 template A() {
 	signal input in;
 	signal output out;
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < in; i++) {
 		out <== i;
 	}
 }
@@ -1244,7 +1244,7 @@ template A() {
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 Also, out is assigned multiple times.
-<!--SR:2022-05-25,3,230-->
+<!--SR:2022-06-01,7,230-->
 
 
 

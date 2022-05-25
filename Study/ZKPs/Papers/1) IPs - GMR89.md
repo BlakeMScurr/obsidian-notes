@@ -210,7 +210,7 @@ Work tape
 Random tape
 Speaking tape
 Input tape
-<!--SR:2022-05-25,29,230-->
+<!--SR:2022-07-31,67,230-->
 
 How is an ITM's listening tape implemented?
 ?
@@ -516,7 +516,7 @@ They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, a
 How do classes AM and NP compare?
 ?
 $L \in AM \implies L \in NP$ for a random oracle
-<!--SR:2022-05-25,9,190-->
+<!--SR:2022-06-12,18,190-->
 
 How do classes AM and IP compare?
 ?
@@ -872,7 +872,7 @@ A's program, B's program, and the input x. That is, nothing in the interactive p
 Can imitator M run A's program?
 ?
 Not necessarily, as A's program may be absolutely inefficient, and M is polynomially bounded.
-<!--SR:2022-05-25,29,250-->
+<!--SR:2022-08-04,71,250-->
 
 
 #### Reporter and Policeman
@@ -888,7 +888,7 @@ Not necessarily, as A's program may be absolutely inefficient, and M is polynomi
 What is GMR's analogy for communication complexity?
 ?
 A reporter trying to get information from a policeman who wants to keep most information private.
-<!--SR:2022-05-25,29,250-->
+<!--SR:2022-08-06,73,250-->
 
 What are the cases in GMR's communication complexity analogy?
 ?
@@ -946,7 +946,7 @@ More than language membership, think NP style QR.
 What is the notion of "$L$ has $f(n$) knowledge complexity" meant to capture?
 ?
 The the prover conveys $f(n)$ addition knowledge to the verifier during a proof.
-<!--SR:2022-05-25,29,250-->
+<!--SR:2022-08-03,70,250-->
 
 #### Definition of Knowledge Complexity
 Note: by restricting to the strings in the language we can use the notion of zero knowledge communication, but still let the one bit membership notion "slip through."
@@ -1175,7 +1175,7 @@ Is not known to exist, efficiently.
 For which $x \in \mathbb{Z}_m^*$ is GMR's zk QNR IP defined?
 ?
 $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}{0}{x}{m} = 1$ (since $\genfrac(){}{0}{x}{m} = -1$ directly implies $x$ is a quadratic non residue)
-<!--SR:2022-05-25,16,210-->
+<!--SR:2022-06-28,34,210-->
 
 How powerful does the A have to be in GMR's zk QNR IP?
 ?
@@ -1185,7 +1185,7 @@ It can just be probabilistic polynomial time turing machine with the additionalp
 What are type 1 numbers in GMR's zk QNR IP?
 ?
 $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-05-25,27,250-->
+<!--SR:2022-08-01,68,250-->
 
 What are type 2 numbers in GMR's zk QNR IP?
 ?
@@ -1400,7 +1400,7 @@ Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_
 What are the two forms of numbers in $X' \cup Y'$?
 ?
 $\sqrt{y \cdot x \cdot t_i}$ and $\sqrt{x \cdot t_i}$
-<!--SR:2022-05-25,14,230-->
+<!--SR:2022-06-29,35,230-->
 
 How is $X' \cup Y'$ defined?
 ?
