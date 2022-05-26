@@ -173,7 +173,7 @@ template BinSum(n, ops) {
 What is binsub?
 ?
 Creates a constraint specifying that A - B = C for A, B, C binary numbers
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 ### compconstant
 
@@ -189,7 +189,7 @@ Buliding a part
 looping along the bitstring
 Checking the 127th bit
 Output
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 What are the signals in compconstant?
 ?
@@ -214,7 +214,7 @@ var a = 1;
 var e = 1;
 var i;
 ```
-<!--SR:2022-05-27,2,230-->
+<!--SR:2022-06-01,5,230-->
 
 What do `clsb` etc represent?
 ?
@@ -240,7 +240,7 @@ What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 What does `b` look like and what is its formula?
 ?
@@ -276,7 +276,7 @@ What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 `-b*smsb*slsb + b*smsb + b*slsb`
 It must be `0` if `smsb == slsb == 0`
 `b` otherwise.
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-05-27,2,230-->
+<!--SR:2022-06-02,6,230-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-05-27,2,230-->
+<!--SR:2022-06-02,6,230-->
 
 What is the code for the final check and output?
 ?
@@ -353,19 +353,19 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-05-27,3,230-->
+<!--SR:2022-05-30,3,210-->
 
 ### Mux1
 
 What are the top level constructs in Mux1?
 ?
 `template MultiMux1` and `template Mux1`
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-06-06,10,250-->
 
 What does `Mux1` do?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-05-27,3,250-->
+<!--SR:2022-05-30,3,230-->
 
 ## p-s
 
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-05-27,3,170-->
+<!--SR:2022-06-02,6,170-->

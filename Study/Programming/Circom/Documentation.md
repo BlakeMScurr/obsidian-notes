@@ -17,12 +17,12 @@ Field elements in $\mathbb{Z}/p\mathbb{Z}$
 What are the kinds of signals?
 ?
 Input, output, and intermediate.
-<!--SR:2022-05-27,6,210-->
+<!--SR:2022-06-11,15,210-->
 
 How do you declare an input signal?
 ?
 `signal input in;` declares an input signal named `in`
-<!--SR:2022-05-27,7,230-->
+<!--SR:2022-06-14,18,230-->
 
 How do you declare an output signal?
 ?
@@ -58,7 +58,7 @@ out <== in1 * in2;
 ```
 ?
 `signal output out <== in1 * in2`
-<!--SR:2022-05-27,8,250-->
+<!--SR:2022-06-16,20,250-->
 
 How do we instantiate a component?
 ?
@@ -106,7 +106,7 @@ Signals are immutable, so assigning to `out` twice gives a compilation error.
 What operators can be used to assign signals?
 ?
 `<--`, `<==`, `-->`, or `==>`.
-<!--SR:2022-05-27,7,230-->
+<!--SR:2022-06-14,18,230-->
 
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
@@ -657,7 +657,7 @@ Remainder after integer division.
 What are the arithmetic/assignment operators?
 ?
 `+= -= *= **= /= \= %= ++ --`
-<!--SR:2022-05-27,6,230-->
+<!--SR:2022-06-12,16,230-->
 
 What are the bitwise operators?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-05-27,5,230-->
+<!--SR:2022-06-08,12,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-27,1,130-->
+<!--SR:2022-05-30,3,150-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-05-27,3,210-->
+<!--SR:2022-05-30,3,190-->
 
 What are the bitwise assignment operators?
 ?
@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-05-27,6,250-->
+<!--SR:2022-06-13,17,250-->
 
 Which operators impose constraints?
 ?
@@ -837,7 +837,7 @@ Because `x` holds the algebraic expression `a*a` which is used to generate const
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
-<!--SR:2022-05-27,6,250-->
+<!--SR:2022-06-12,16,250-->
 
 What is the syntax `if` statements?
 ?
@@ -1090,7 +1090,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-05-27,6,250-->
+<!--SR:2022-06-13,17,250-->
 
 What's an example of a `log` instruction?
 ?

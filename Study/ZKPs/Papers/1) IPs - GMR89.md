@@ -245,7 +245,7 @@ It's a coin flip.
 How is an ITM's speaking tape implemented?
 ?
 As a write only tape, where each cell can only be written once, and each cell must be written in in order to proceed to the next.
-<!--SR:2022-05-27,31,250-->
+<!--SR:2022-08-11,76,250-->
 
 What does an ITM's input tape represent?
 ?
@@ -270,7 +270,7 @@ The proposition being thought about.
 What does a pair of interactive Turing machines represent?
 ?
 The possible polite conversations that two (particular) people might have on a proposition.
-<!--SR:2022-05-27,18,210-->
+<!--SR:2022-07-08,42,210-->
 
 How do we define an interactive pair (A, B)?
 ?
@@ -283,7 +283,7 @@ Either can halt the pair.
 What is output of an interactive pair?
 ?
 Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's turn, likewise for $b_i$. The output is $\{b_1, a_1, ..., b_n, a_n\}$, where $a_n$ is empty if B halts.
-<!--SR:2022-05-27,31,250-->
+<!--SR:2022-08-14,79,250-->
 
 What is (A, B)[x] for an interactive pair?
 ?
@@ -423,7 +423,7 @@ How does B mix random numbers with x in the basic QNR IP?
 B flips n coins and forms $\{t_1, t_2, ..., t_n\}$
 If tails, B forms $t_i = xr_i^2\ mod \ n$
 If heads, B forms $t_i = r_i^2\ mod\ n$
-<!--SR:2022-05-27,31,250-->
+<!--SR:2022-08-12,77,250-->
 
 What does A do in the basic QNR IP?
 ?
@@ -451,12 +451,12 @@ How do we know that we can't falsely prove $x \in \mathcal{L}$ (i.e., where $x \
 ?
 $x \notin QNR \implies xr^2 \notin QNR \land r^2 \notin QNR$ making either case a random quadratic residue.
 So the verifier has a $1/2$ chance of picking any given toss, and a $1/2^n$ chance of getting all n tosses.
-<!--SR:2022-05-27,31,250-->
+<!--SR:2022-08-15,80,250-->
 
 How many coin flips does the verifier do in the basic QNR IP?
 ?
 $n = |x|$, i.e., the length of x.
-<!--SR:2022-05-27,31,250-->
+<!--SR:2022-08-13,78,250-->
 
 How is the basic QNR IP not zero knowledge?
 ?
@@ -739,7 +739,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-05-27,5,130-->
+<!--SR:2022-06-05,9,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -837,7 +837,7 @@ There exists a probabilstic polynomial-time machine M such that the I-c-ensemble
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
 For all polynomial time ITMs B', A communicates at most $f(n)$ bits of knowledge to B'
-<!--SR:2022-05-27,11,190-->
+<!--SR:2022-06-17,21,190-->
 
 What is my analogy for determining the knowledge conveyed from a prover to a verifier?
 ?
@@ -1239,7 +1239,7 @@ How is $x$ defined in the zk QNR IP?
 ?
 In step 1, $B$ chooses a random $r_0$ from $\mathbb{Z}_m^*$ and then tosses a coin $C_x$.
 If $C_x = 0$ then B sets $x = r_0^2 \mod n$,  else if $C_x = 1$, $B$ sets $x = y \cdot r^2 \mod n$
-<!--SR:2022-05-27,18,230-->
+<!--SR:2022-07-09,43,230-->
 
 If $C_x = 0$, what are $x$ and the type of $x$?
 ?
@@ -1264,7 +1264,7 @@ $x$ is of  type 2
 What is $T \cup S$ for?
 ?
 The set of random numbers used to convince $A$ that $B$ knows the residuosity of $x$ without revealing it.
-<!--SR:2022-05-27,11,230-->
+<!--SR:2022-06-03,7,210-->
 
 What is the size of $T \cup S$?
 ?
@@ -1380,7 +1380,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-05-27,7,170-->
+<!--SR:2022-05-31,4,150-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?

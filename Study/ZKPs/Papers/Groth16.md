@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-27,1,130-->
+<!--SR:2022-05-28,1,130-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -151,7 +151,7 @@ UNFINISHED
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-05-27,11,250-->
+<!--SR:2022-06-27,31,250-->
 
 What represents the statement in our arithmetic circuit? Why?
 ?
@@ -188,7 +188,7 @@ The variables not in the statement.
 What is the binary relation of our arithmetic constraints?
 ?
 WItnesses and statements that satisfy all the equations.
-<!--SR:2022-05-27,11,250-->
+<!--SR:2022-06-28,32,250-->
 
 What are our arithmetic constraints over?
 ?
@@ -216,12 +216,12 @@ $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the rem
 How can an addition gate be described as a constraint?
 ?
 $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$ by definition.
-<!--SR:2022-05-27,11,250-->
+<!--SR:2022-06-26,30,250-->
 
 In what sense are addition gates handled "for free?"
 ?
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
-<!--SR:2022-05-27,11,250-->
+<!--SR:2022-06-24,28,250-->
 
 UNFINISHED
 ## Linear Interactive Proofs
