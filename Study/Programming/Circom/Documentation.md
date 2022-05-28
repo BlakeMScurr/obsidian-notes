@@ -66,7 +66,7 @@ How do we instantiate a component?
 template B() {
 	component someName = A();
 }
-<!--SR:2022-05-28,9,250-->
+<!--SR:2022-06-22,25,250-->
 
 template A(){
 	...
@@ -163,7 +163,7 @@ if (x = 3) {
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-05-28,8,230-->
+<!--SR:2022-06-15,18,230-->
 
 # Templates
 
@@ -257,7 +257,7 @@ component main{public [in]} = A(1);
 ?
 The `in` signal is not used in any constraints. 
 It will give a warning when `--inspect` is used to compile: "In template "A1". Unconstrained signal. "in" = Maybe use: in*0 === 0"
-<!--SR:2022-05-28,7,230-->
+<!--SR:2022-06-15,18,230-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-05-28,6,210-->
+<!--SR:2022-06-12,15,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -373,7 +373,7 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-05-28,4,230-->
+<!--SR:2022-06-07,10,230-->
 
 When can we use `parallel`?
 ?
@@ -413,14 +413,14 @@ To ensure that the circuit is compatible with the specified compiler version.
 If there is no pragma, what do we assume?
 ?
 That the code is compatible with the compiler's latest version.
-<!--SR:2022-05-28,8,250-->
+<!--SR:2022-06-18,21,250-->
 
 ## Functions
 
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-05-28,6,230-->
+<!--SR:2022-06-11,14,230-->
 
 What does a function look like?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-05-28,3,150-->
+<!--SR:2022-06-03,6,150-->
 
 # Operators
 
@@ -594,7 +594,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-05-28,6,230-->
+<!--SR:2022-06-13,16,230-->
 
 What is the `val(x)` function for?
 ?
@@ -843,7 +843,7 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-05-28,6,230-->
+<!--SR:2022-06-13,16,230-->
 
 What is the syntax for `for` loops?
 ?
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-05-28,6,250-->
+<!--SR:2022-05-31,3,230-->
 
 Which signals of subcomponents are visible?
 ?

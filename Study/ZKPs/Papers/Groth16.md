@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-28,1,130-->
+<!--SR:2022-05-30,2,150-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -166,19 +166,19 @@ The wires that aren't the statement.
 What does binary relation of our arithmetic circuit consist of?
 ?
 Statement wires and witness wires that satisfy the arithmetic circuit.
-<!--SR:2022-05-28,12,250-->
+<!--SR:2022-06-29,32,250-->
 
 ### Arithmetic Constraints
 
 What is the generalisation for circuits?
 ?
 Arithmetic constraints - relations described by equations over a set of variables.
-<!--SR:2022-05-28,12,250-->
+<!--SR:2022-06-30,33,250-->
 
 What corresponds to the statement in our arithmetic constraints?
 ?
 A subset of the variables.
-<!--SR:2022-05-28,12,250-->
+<!--SR:2022-06-29,32,250-->
 
 What corresponds to the witness in our arithmetic constraints?
 ?
@@ -193,7 +193,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-05-28,8,210-->
+<!--SR:2022-06-16,19,210-->
 
 What is the form of our arithmetic constraints?
 ?
@@ -206,7 +206,7 @@ where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
 How do we know arithmetic constraints generalise circuits?
 ?
 Multiplication and addition gates are special cases of constraint equations.
-<!--SR:2022-05-28,12,250-->
+<!--SR:2022-07-01,34,250-->
 
 How can a multiplication gate be described as a constraint?
 ?

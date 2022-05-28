@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-05-28,19,150-->
+<!--SR:2022-06-09,12,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-05-28,3,150-->
+<!--SR:2022-06-06,9,170-->
 
 Who are the authors of GOS06?
 ?

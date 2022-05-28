@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-05-28,3,170-->
+<!--SR:2022-06-03,6,170-->
 
 ### binsum
 
@@ -180,7 +180,7 @@ Creates a constraint specifying that A - B = C for A, B, C binary numbers
 What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-09,12,250-->
 
 What are the sections in compconstant?
 ?
@@ -219,7 +219,7 @@ var i;
 What do `clsb` etc represent?
 ?
 Constant/signal least/most significant bit.
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-08,11,250-->
 
 How do we calculate `clsb` etc?
 ?
@@ -229,12 +229,12 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-07,10,250-->
 
 What is the value of each part, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-09,12,250-->
 
 What does `a` look like and what is its formula?
 ?
@@ -246,13 +246,13 @@ What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-07,10,250-->
 
 What does `a` do from a bitwise perspective and how?
 ?
 Zeroes each `jth` left hand bit where `i < j <= 127`.
 Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-08,11,250-->
 
 What does `b` do from a bitwise perspective and how?
 ?
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-07,10,250-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
@@ -304,7 +304,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-08,11,250-->
 
 What is the updating code for each loop?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-05-28,3,210-->
+<!--SR:2022-05-31,3,190-->
 
 ## g-m
 
@@ -370,7 +370,7 @@ Selects 1 of 2 length n arrays.
 What does `Mux1` do?
 ?
 Selects 1 of 2 values.
-<!--SR:2022-05-28,4,250-->
+<!--SR:2022-06-09,12,250-->
 
 What is the code for MultiMux1?
 ?
@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-05-28,3,230-->
+<!--SR:2022-06-06,9,230-->
 
 What is the code for Mux1?
 ?

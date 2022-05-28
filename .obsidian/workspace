@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+            "file": "Study/ZKPs/Papers/1) IPs - GMR89.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "c411494de241e8b7"
+      },
+      {
+        "id": "53e1e0e0e2a9f48a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Study/ZKPs/Papers/1) IPs - GMR89.md",
+            "mode": "preview"
+          }
+        },
+        "group": "c411494de241e8b7"
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+                "file": "Study/ZKPs/Papers/1) IPs - GMR89.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,11 +109,11 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/1) IPs - GMR89.md",
+    "Study/Programming/Circom/Circomlib.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Documentation.md",
     "Blog/ZK Music NFTs.md",
-    "Study/Programming/Circom/Circomlib.md",
-    "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Software/Tornado Cash.md",
     "Study/Number Theory/QRP.md",

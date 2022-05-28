@@ -373,7 +373,7 @@ None are guaranteed to be able to be constructed. Interactive proof systems don'
 What is QNR, loosely?
 ?
 The quadratic non residue language. The language of non-"squares" mod some large number.
-<!--SR:2022-05-28,32,250-->
+<!--SR:2022-08-18,82,250-->
 
 What is $\mathbb{Z^*_m}$?
 ?
@@ -472,7 +472,7 @@ By acting maliciously and sending a random element with unknown residuosity, B l
 What is IP?
 ?
 The class of languages possessing an interactive proof system.
-<!--SR:2022-05-28,32,250-->
+<!--SR:2022-08-19,83,250-->
 
 What is $IP_{T(n)}$?
 ?
@@ -776,7 +776,7 @@ They may become significantly more distinguishable.
 Why does feeding $m > 1$ strings to a distinguisher matter for encryption schemes?
 ?
 It can be equivalent to sending multiple messages encrypted by the same key, which may significantly reduce the distinguishability of the ensembles and security of the encryption.
-<!--SR:2022-05-28,32,250-->
+<!--SR:2022-08-16,80,250-->
 ### Knowledge Communication
 #### Knowledge Communication Definition
 * Communications that convey knowledge are those that output an infeasible computation
@@ -851,7 +851,7 @@ To the degree that they are different, some knowledge has leaked.
 How do I extend my analogy for determining knowledge to cover all the knowledge conveyed by a prover?
 ?
 Consider the most malicious student aiming to get whatever lessons he can from the wizard, even by tricking him during the lesson.
-<!--SR:2022-05-28,32,250-->
+<!--SR:2022-08-17,81,250-->
 
 * The imitator M tries to select as string "as undistinguishable as possible" from a computation randomly selected from $(A,B)[\cdot]$.
 	* No information is hidden from M
@@ -1155,7 +1155,7 @@ Computing $\mathcal{Q}_m(x)$ is a hard problem.
 The algorithm for generating $x$ with $\mathcal{Q}_m(x) = 1$ and $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
 Is not known to exist, efficiently.
-<!--SR:2022-05-28,30,250-->
+<!--SR:2022-08-11,75,250-->
 
 ### zk QNR IP
 #### Overview
@@ -1190,14 +1190,14 @@ $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
 What are type 2 numbers in GMR's zk QNR IP?
 ?
 $y \cdot r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-05-28,30,250-->
+<!--SR:2022-06-14,17,230-->
 
 What is the basic (pre zk) idea of GMR's zk QNR IP?
 ?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-05-28,9,130-->
+<!--SR:2022-06-10,13,130-->
 
 What is the problem with the naive QNR IP?
 ?
@@ -1370,7 +1370,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-05-28,12,190-->
+<!--SR:2022-06-23,26,190-->
 
 What is the purpose of $X' \cup Y'$?
 ?
@@ -1390,12 +1390,12 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-05-28,5,210-->
+<!--SR:2022-06-10,13,210-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?
-Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-05-28,16,230-->
+Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
+<!--SR:2022-07-04,37,230-->
 
 What are the two forms of numbers in $X' \cup Y'$?
 ?
