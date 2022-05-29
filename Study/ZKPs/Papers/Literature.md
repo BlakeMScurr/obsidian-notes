@@ -17,7 +17,7 @@ Shafi Goldwasser, Silvio Micali, and Charles Rackoff
 What does GMR89 contribute?
 ?
 The notion of interactive proofs, communcation complexity, and that interactive proofs reduce communication complexity.
-<!--SR:2022-05-29,28,190-->
+<!--SR:2022-08-13,76,210-->
 
 ## GMW91
 
@@ -46,7 +46,7 @@ Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
 Who are the authors of BGKW88?
 ?
 Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
-<!--SR:2022-05-29,16,150-->
+<!--SR:2022-07-02,34,170-->
 
 What does BGKW88 contribute?
 ?
@@ -73,14 +73,14 @@ Lance Fortnow, John Rompel, and Michael Sipser.
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-05-29,12,130-->
+<!--SR:2022-06-05,7,130-->
 
 ## BFL90
 
 What is BFL90's title?
 ?
 Non-deterministic exponential time has two prover interactive protocols.
-<!--SR:2022-05-29,9,130-->
+<!--SR:2022-06-18,20,150-->
 
 Who are the authors of BFL90?
 ?
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-03,5,150-->
 
 What did GOS06 contribute?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-03,5,150-->
 
 What did Gro06 contribute?
 ?
@@ -177,12 +177,12 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-07,9,170-->
 
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-04,6,150-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-07,9,170-->
 
 What did Gro10 contribute?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-04,6,150-->
 
 What did Gro09 contribute?
 ?
@@ -224,12 +224,12 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-07,9,170-->
 
 What did Groth16 contribute?
 ?
 Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2 group elements in the symmetric group setting
-<!--SR:2022-05-29,13,210-->
+<!--SR:2022-06-27,29,210-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

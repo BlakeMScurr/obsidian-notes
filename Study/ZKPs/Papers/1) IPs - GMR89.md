@@ -427,8 +427,8 @@ If heads, B forms $t_i = r_i^2\ mod\ n$
 
 What does A do in the basic QNR IP?
 ?
-Calculates A's coin flips by deciding quadratic residues, and sending those flips back to A.
-<!--SR:2022-05-29,33,250-->
+Calculates B's coin flips by deciding quadratic residues, and sending those flips back to B.
+<!--SR:2022-08-21,84,250-->
 
 ##### Properties
 
@@ -607,7 +607,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-05-29,8,130-->
+<!--SR:2022-06-10,12,130-->
 
 What is an I-c-ensemble used for?
 ?
@@ -617,7 +617,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The output of a probabilistic computation.
-<!--SR:2022-05-29,7,210-->
+<!--SR:2022-06-02,4,190-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -862,7 +862,7 @@ Consider the most malicious student aiming to get whatever lessons he can from t
 What does the imitator machine M try to do?
 ?
 Select as string as undistinguishable as possible from a computation randomly selected from $(A,B)[\cdot]$
-<!--SR:2022-05-29,33,250-->
+<!--SR:2022-08-23,86,250-->
 
 What are the inputs of imitator M?
 ?
@@ -895,7 +895,7 @@ What are the cases in GMR's communication complexity analogy?
 The reporter knows what the cop will say - i.e., their chance of generating the police's statements is 1. i.e., zero knowledge.
 The reporter knows some of what the cop will say - i.e., their chance '' '' is, say 3/4, i.e., some knowledge
 The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0, i.e., a lot of knowledge is communicated
-<!--SR:2022-05-29,33,250-->
+<!--SR:2022-09-22,116,270-->
 
 #### KC of naive QNR
  
@@ -914,7 +914,7 @@ How does M simulate (A,B) in naive QNR?
 ?
 M can simply simulate B since B is polynomial.
 M can simulate A by just looking at B's coin tosses directly, since B knows the residuosity of each number.
-<!--SR:2022-05-29,33,250-->
+<!--SR:2022-08-20,83,250-->
 
 How much information does A communicate in naive QNR?
 ?
@@ -924,7 +924,7 @@ More than Zero if $QNR \notin PP$, namely the residuosity of each $t_i$
 How does B' work in naive QNR?
 ?
 B' is an adversarial verifier trying to learn additional knowledge. B' can learn the unknown residuosity of some $t_i$ by sending it to A.
-<!--SR:2022-05-29,33,250-->
+<!--SR:2022-08-22,85,250-->
 ### Knowledge Complexity
 #### Knowledge conveyed by a Theorem Proof
 
@@ -1312,7 +1312,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-05-29,5,150-->
+<!--SR:2022-06-08,10,150-->
 
 How large is $Z$?
 ?
@@ -1365,7 +1365,7 @@ $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \c
 How is $X$ defined?
 ?
 $T - Z - D$
-<!--SR:2022-05-29,17,250-->
+<!--SR:2022-07-15,47,250-->
 
 How is $Y$ defined?
 ?
@@ -1375,7 +1375,7 @@ $S - Z - D$
 What is the purpose of $X' \cup Y'$?
 ?
 Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqrt{x}$. That is, so that a simulator $M$ can calculate $\sqrt{x}$ using $B'$.
-<!--SR:2022-05-29,11,150-->
+<!--SR:2022-06-17,19,150-->
 
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
@@ -1549,7 +1549,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:2022-05-29,13,210-->
+<!--SR:2022-06-07,9,190-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?

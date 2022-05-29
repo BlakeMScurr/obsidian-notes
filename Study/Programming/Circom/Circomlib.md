@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-05-29,3,210-->
+<!--SR:2022-06-05,7,210-->
 
 What are the variables in compconstant?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-05-29,4,250-->
+<!--SR:2022-06-01,3,230-->
 
 ## e
 

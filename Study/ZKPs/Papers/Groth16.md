@@ -118,7 +118,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-05-29,3,150-->
+<!--SR:2022-06-04,6,150-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?

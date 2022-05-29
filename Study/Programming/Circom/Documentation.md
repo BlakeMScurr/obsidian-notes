@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-05-29,9,230-->
+<!--SR:2022-06-04,6,210-->
 
 What do signals contain?
 ?
@@ -91,7 +91,7 @@ template A(){
 What happens if try to access a non output signal on a component?
 ?
 Compile error.
-<!--SR:2022-05-29,10,250-->
+<!--SR:2022-06-25,27,250-->
 
 What is wrong with the following code?
 ```
@@ -129,7 +129,7 @@ Identifiers that hold non-signal data and are mutable.
 How do we declare a variable?
 ?
 `var x;` declares a variable called `x`.
-<!--SR:2022-05-29,10,250-->
+<!--SR:2022-06-26,28,250-->
 
 What values do variables hold?
 ?
@@ -144,7 +144,7 @@ x = 1;
 var y = 2;
 var z[3] = [3,4,5];
 ```
-<!--SR:2022-05-29,9,230-->
+<!--SR:2022-06-19,21,230-->
 
 What is wrong with the following code?
 ```
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-05-29,6,190-->
+<!--SR:2022-06-10,12,190-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -306,7 +306,7 @@ An arithmetic circuit.
 What does a component consist of?
 ?
 $N$ input signals, $M$ output signals, and $K$ intermediate signals.
-<!--SR:2022-05-29,9,250-->
+<!--SR:2022-06-21,23,250-->
 
 What can a component produce?
 ?
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-05-29,5,230-->
+<!--SR:2022-06-12,14,230-->
 
 What is the conditional expression?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-05-29,5,210-->
+<!--SR:2022-06-11,13,210-->
 
 What is the `\` operator?
 ?
@@ -933,7 +933,7 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-05-29,7,230-->
+<!--SR:2022-06-15,17,230-->
 
 What is the default type of signals and variables?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-05-29,3,190-->
+<!--SR:2022-06-05,7,190-->
 
 What creates assertions?
 ?
@@ -1177,7 +1177,7 @@ template A(n1, n2) {
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
-<!--SR:2022-05-29,7,250-->
+<!--SR:2022-06-16,18,250-->
 
 What is wrong with the following code, and what message does it generate?
 ```
@@ -1191,7 +1191,7 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
-<!--SR:2022-05-29,7,250-->
+<!--SR:2022-06-17,19,250-->
 
 What restrictions are placed on the size of an array?
 ?
@@ -1212,8 +1212,8 @@ Length of `array` must be known.
 
 A control flow with a constraint . . . ?
 ?
-Have a known condition.
-<!--SR:2022-05-29,7,250-->
+Must have a known condition.
+<!--SR:2022-06-18,20,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
