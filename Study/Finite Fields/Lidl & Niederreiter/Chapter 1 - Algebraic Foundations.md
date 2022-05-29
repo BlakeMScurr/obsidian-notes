@@ -114,7 +114,7 @@ $a$ is called the generator and we write $G = \langle a\rangle$.
 What is the immediate property of cyclic groups and how do we know?
 ?
 Cyclic groups are commutative because all elements can be represented as a power of $a$, and $aaaa = aaaa$ no matter how many times you move an $a$ around.
-<!--SR:2022-05-30,29,210-->
+<!--SR:2022-07-30,61,210-->
 
 What are the generators of the additive group $\mathbb{z}$?
 ?
@@ -129,7 +129,7 @@ Reflexivity, symmetry, and transitivity.
 What is the reflexivity property of an equivalence relation?
 ?
 $$(s, s) \in R\ \forall s \in S$$
-<!--SR:2022-05-30,14,170-->
+<!--SR:2022-06-23,24,170-->
 
 What is the symmetry property of an equivalence relation?
 ?

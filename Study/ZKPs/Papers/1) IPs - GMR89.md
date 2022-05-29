@@ -195,7 +195,7 @@ A classroom lesson has a *teacher* and *student* in *conversation* about a *prop
 What does ITM stand for?
 ?
 An Interactive Turing Machine.
-<!--SR:2022-05-30,34,250-->
+<!--SR:2022-08-23,85,250-->
 
 What does an ITM model?
 ?
@@ -342,7 +342,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-05-30,14,130-->
+<!--SR:2022-06-17,18,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -378,7 +378,7 @@ The quadratic non residue language. The language of non-"squares" mod some large
 What is $\mathbb{Z^*_m}$?
 ?
 The integers between 1 and m relatively prime to m.
-<!--SR:2022-05-30,34,250-->
+<!--SR:2022-08-27,89,250-->
 
 $a \in \mathbb{Z}^*_m$ is a quadratic residue if . . . ?
 ?
@@ -445,7 +445,7 @@ Calculates B's coin flips by deciding quadratic residues, and sending those flip
 How do we know that we can prove $x \in \mathcal{L}$ with sufficient probability in the basic QNR IP?
 ?
 $x \in QNR \implies xr^2 \in QNR \land r^2 \notin QNR$ so the prover can perfectly pick the coin toss.
-<!--SR:2022-05-30,34,250-->
+<!--SR:2022-08-25,87,250-->
 
 How do we know that we can't falsely prove $x \in \mathcal{L}$ (i.e., where $x \notin \mathcal{L}$) with non-negligible probability for the basic QNR IP?
 ?
@@ -771,7 +771,7 @@ They remain 0-distinguishable, provided $m < poly(|x|)$.
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They may become significantly more distinguishable.
-<!--SR:2022-05-30,34,250-->
+<!--SR:2022-08-24,86,250-->
 
 Why does feeding $m > 1$ strings to a distinguisher matter for encryption schemes?
 ?
@@ -793,7 +793,7 @@ Those that transmit the output of an unfeasible computation, a computation that 
 How much knowledge do random bits convey and why?
 ?
 None because we could generate them ourselves trivially.
-<!--SR:2022-05-30,34,250-->
+<!--SR:2022-08-26,88,250-->
 
 How much knowledge do the results of a polynomial computation convey and why?
 ?

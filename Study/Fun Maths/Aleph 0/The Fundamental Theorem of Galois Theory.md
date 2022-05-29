@@ -40,7 +40,7 @@ Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ w
 What is the "basic question" of Galois Theory?
 ?
 Given a bunch of numbers that are conjugate over $\mathbb{Q}$, how many ways are there to swap them that preserve algebraic relations?
-<!--SR:2022-05-30,9,170-->
+<!--SR:2022-06-22,23,190-->
 
 What is an example of an equation where you can swap $\sqrt{2}$ and $-\sqrt{2}$?
 ?
@@ -86,7 +86,7 @@ It helps to understand how numbers (like $\sqrt{2}$ and $e^{\frac{2i\pi}{5}}$) a
 What is a field, roughly speaking?
 ?
 Any set where you can add, subtract, multiply, and divide elements.
-<!--SR:2022-05-30,18,250-->
+<!--SR:2022-07-16,47,250-->
 
 Name a field (basic, but highly relevant to Galois theory)
 ?

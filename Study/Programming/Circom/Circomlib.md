@@ -259,7 +259,7 @@ What does `b` do from a bitwise perspective and how?
 Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
 If they're all 0, simply by adding a 1 to each bit.
 If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
-<!--SR:2022-05-30,4,250-->
+<!--SR:2022-06-15,16,270-->
 
 What are the 4 cases for defining parts?
 ?
@@ -353,7 +353,7 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-05-30,3,210-->
+<!--SR:2022-06-06,7,210-->
 
 ### Mux1
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-05-30,3,230-->
+<!--SR:2022-06-01,2,210-->
 
 ## p-s
 

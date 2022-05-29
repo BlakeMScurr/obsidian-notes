@@ -49,7 +49,7 @@ Checking a single pairing product equation using 3 pairings in total.
 What is the knowledge complexity of the Groth16 SNARG?
 ?
 It is zero knowledge.
-<!--SR:2022-05-30,12,230-->
+<!--SR:2022-06-30,31,230-->
 
 What is the second contribution of Groth16 and how is it shown?
 ?
@@ -65,7 +65,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-05-30,5,130-->
+<!--SR:2022-06-11,12,150-->
 
 # Introduction
 
@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-05-30,2,150-->
+<!--SR:2022-06-04,5,170-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -161,7 +161,7 @@ Some subset of the the input/ouput wires. Requiring input and output wires allow
 What represents the witness in our arithmetic circuit?
 ?
 The wires that aren't the statement.
-<!--SR:2022-05-30,10,210-->
+<!--SR:2022-06-23,24,210-->
 
 What does binary relation of our arithmetic circuit consist of?
 ?
@@ -183,7 +183,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2022-05-30,4,230-->
+<!--SR:2022-06-09,10,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?

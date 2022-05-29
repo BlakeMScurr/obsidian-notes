@@ -188,7 +188,7 @@ template tempid (param_1, param2) {
 	...
 }
 ```
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-24,25,250-->
 
 What can templates not include?
 ?
@@ -289,12 +289,12 @@ There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
 <!--SR:2022-06-02,7,210-->
 
-What, roughly, are the three compiler warnings you can get due to a poorly written template?
+What, roughly, are the three compiler warnings you can get from misusing signals in a template?
 ?
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-05-30,7,190-->
+<!--SR:2022-06-14,15,190-->
 
 ### Components
 
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-05,6,230-->
 
 How do we access the input or output signals of a component?
 ?
@@ -362,7 +362,7 @@ if (N > 0) {
 ?
 If there are multiple initialization instructions for a component, they must all be from the same template (perhaps with different parameters).
 "Assignee and assigned types do not match"
-<!--SR:2022-05-30,9,230-->
+<!--SR:2022-06-20,21,230-->
 
 How do you make an array of components? What is the syntactic restriction?
 ?
@@ -378,17 +378,17 @@ ands[1] = MultiAnd(n2);
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-27,28,250-->
 
 How do we use `parallel`?
 ?
 `template parallel NameTemplate(...){...}`
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-24,25,250-->
 
 What does `parallel` do?
 ?
 The C++ file resulting from compilation will contain parallelized code to compute the witness.
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-26,27,250-->
 
 When is parallelization particularly useful?
 ?
@@ -486,7 +486,7 @@ The main component.
 How is the main component different from other components?
 ?
 It defines global input and outputs of the circuit, so it needs to be able to specify which input signals are public.
-<!--SR:2022-05-30,10,250-->
+<!--SR:2022-06-25,26,250-->
 
 What is the syntax for creating a main component?
 ?
@@ -515,7 +515,7 @@ What is the comment syntax for circom?
 What can be used for identifiers?
 ?
 `*[a-zA-Z0-9_$]`
-<!--SR:2022-05-30,8,250-->
+<!--SR:2022-06-20,21,250-->
 
 What are the reserved keywords?
 ?
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-05-30,6,190-->
+<!--SR:2022-06-02,3,170-->
 
 Where can operators be used?
 ?
@@ -627,7 +627,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-05-30,7,230-->
+<!--SR:2022-06-15,16,230-->
 
 What are the arithmetic operators?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-05-30,6,210-->
+<!--SR:2022-06-02,3,190-->
 
 What is the `>>` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-05-30,3,150-->
+<!--SR:2022-06-08,9,170-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-05-30,3,190-->
+<!--SR:2022-06-06,7,190-->
 
 What are the bitwise assignment operators?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-05-30,6,210-->
+<!--SR:2022-06-19,20,230-->
 
 # Constraint Generation
 
@@ -803,7 +803,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
-<!--SR:2022-05-30,8,250-->
+<!--SR:2022-06-19,20,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -1085,7 +1085,7 @@ How do you use `assert`, for example?
 What is `log`?
 ?
 A way to log values to the standard error stream.
-<!--SR:2022-05-30,8,250-->
+<!--SR:2022-06-21,22,250-->
 
 What can be passed to `log`?
 ?
@@ -1196,7 +1196,7 @@ The index for the array in the constraint is unknown.
 What restrictions are placed on the size of an array?
 ?
 The size must be a known value.
-<!--SR:2022-05-30,8,250-->
+<!--SR:2022-06-22,23,250-->
 
 What is wrong with the following code and what message does it generate?
 ```
