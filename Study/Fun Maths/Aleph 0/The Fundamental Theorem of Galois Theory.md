@@ -116,12 +116,12 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:2022-05-31,15,210-->
+<!--SR:2022-07-05,35,210-->
 
 What is the intuition behind the definition of an automorphism?
 ?
 An automorphism is a function that shuffles around the field elements while respecting the field operations.
-<!--SR:2022-05-31,18,230-->
+<!--SR:2022-07-11,41,230-->
 
 What is $Aut\ F$?
 ?

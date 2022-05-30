@@ -84,7 +84,7 @@ $a^na^m = a^{n+m}$
 Additive:
 $(-n)a = n(-a)$
 $na + ma = (n + m)a$
-<!--SR:2022-05-31,4,170-->
+<!--SR:2022-06-12,12,190-->
 
 What is "0-fold" of $a$ in both notations?
 ?
@@ -103,7 +103,7 @@ A modular arithmetic group.
 What are the identity and inverse of $a$ in the additive group over the integers?
 ?
 $0$ and $-a$
-<!--SR:2022-05-31,35,250-->
+<!--SR:2022-10-01,123,270-->
 
 What is a cyclic multiplicative group, and what is the generator?
 ?

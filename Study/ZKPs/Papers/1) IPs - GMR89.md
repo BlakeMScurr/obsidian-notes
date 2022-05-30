@@ -142,7 +142,7 @@ A proof has a is easier to verify than compute, whereas a computation must be en
 What two foundational ideas are actually intuitive notions with various formalisations, for GMR?
 ?
 Proof and computation.
-<!--SR:2022-05-31,35,250-->
+<!--SR:2022-08-30,91,250-->
 
 What are GMR's examples of formalisations for "computation?"
 ?
@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-05-31,5,130-->
+<!--SR:2022-06-12,12,150-->
 
 ### Interactive Proof System Definition
 
@@ -521,7 +521,7 @@ $L \in AM \implies L \in NP$ for a random oracle
 How do classes AM and IP compare?
 ?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
-<!--SR:2022-05-31,9,210-->
+<!--SR:2022-06-29,29,230-->
 
 What is the interactive hierarchy, for GMR?
 ?
@@ -561,7 +561,7 @@ The scientific/empricial worldview that it's hard to learn facts about reality, 
 What are MCF's assumptions?
 ?
 Infinite computing power by all. The various inputs discussed can be hidden to different participants.
-<!--SR:2022-05-31,35,250-->
+<!--SR:2022-08-28,89,250-->
 
 #### GMR vs MCF
 
@@ -612,7 +612,7 @@ The possible outputs (with polynomially bounded length) of a probabilistic compu
 What is an I-c-ensemble used for?
 ?
 As an abstraction that allows us to compare and distinguish different types of computations.
-<!--SR:2022-05-31,30,210-->
+<!--SR:2022-08-02,63,210-->
 
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
@@ -642,7 +642,7 @@ An infinite set of strings.
 How do we define an I-c-ensembles's $c$?
 ?
 Some natural number.
-<!--SR:2022-05-31,35,250-->
+<!--SR:2022-08-29,90,250-->
 
 How do we define an I-c-ensembles's $\Pi_x$?
 ?
@@ -819,7 +819,7 @@ The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible output
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
 As an I-c-ensemble $(A,B)[.]$
-<!--SR:2022-05-31,35,250-->
+<!--SR:2022-06-19,19,230-->
 
 #### Communication
 * We can think of communication measurement as a student scrutinising a lesson for hidden knowledge
@@ -1010,7 +1010,7 @@ That $x \in L$, but the text is of no other use, and could in fact the text coul
 For GMR, what is the theoretical application for knowledge complexity and why?
 ?
 Classifying languages. Languages, or equivalently, theorem proving procedures are intended to communicate knowledge, and are naturally classed by their knowledge complexity, for GMR.
-<!--SR:2022-05-31,11,210-->
+<!--SR:2022-06-26,26,210-->
 
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
@@ -1101,7 +1101,7 @@ To solve the problem of flipping a coin over the telephone.
 What is the definition of the BL language?
 ?
 Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
-<!--SR:2022-05-31,12,230-->
+<!--SR:2022-07-02,32,230-->
 
 What is the definition of the quadratic predicate?
 ?
@@ -1380,7 +1380,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-05-31,4,150-->
+<!--SR:2022-06-11,11,170-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?

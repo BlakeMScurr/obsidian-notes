@@ -87,7 +87,7 @@ Given a statement and a witness, the prover can convince the verifier.
 Describe the soundness property.
 ?
 A malicious prover cannot convince the verifier of a false statement.
-<!--SR:2022-05-31,15,250-->
+<!--SR:2022-07-10,40,250-->
 
 Describe the zero knowledge property.
 ?

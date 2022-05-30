@@ -12,7 +12,7 @@ Signals.
 What do signals contain?
 ?
 Field elements in $\mathbb{Z}/p\mathbb{Z}$
-<!--SR:2022-05-31,11,250-->
+<!--SR:2022-07-02,32,250-->
 
 What are the kinds of signals?
 ?
@@ -101,7 +101,7 @@ out <== comp.outA;
 ```
 ?
 Signals are immutable, so assigning to `out` twice gives a compilation error.
-<!--SR:2022-05-31,11,250-->
+<!--SR:2022-07-01,31,250-->
 
 What operators can be used to assign signals?
 ?
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-05-31,5,150-->
+<!--SR:2022-06-10,10,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -210,7 +210,7 @@ We are assigning a value to an input signal in the same template where it has be
 What is the syntax to instantiate template parameters?
 ?
 `component c = tempid(value_1, ... , value_n)`;
-<!--SR:2022-05-31,10,250-->
+<!--SR:2022-06-27,27,250-->
 
 How are the possible values of template parameters restricted?
 ?
@@ -435,12 +435,12 @@ function funid (param_1, ..., param_n) {
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-05-31,7,230-->
+<!--SR:2022-06-16,16,230-->
 
 Can functions be recursive?
 ?
 Yes.
-<!--SR:2022-05-31,10,250-->
+<!--SR:2022-06-26,26,250-->
 
 How many return statements can a function have?
 ?
@@ -450,7 +450,7 @@ As many as it likes.
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2022-05-31,10,250-->
+<!--SR:2022-06-28,28,250-->
 
 What does executing a return statement do?
 ?
@@ -569,7 +569,7 @@ What do you use to change the field size?
 What is the conditional expression?
 ?
 `_?_:_`
-<!--SR:2022-05-31,8,250-->
+<!--SR:2022-06-20,20,250-->
 
 What are the boolean operators?
 ?
@@ -584,7 +584,7 @@ Boolean AND operator.
 What is `||`?
 ?
 Boolean OR operator.
-<!--SR:2022-05-31,9,250-->
+<!--SR:2022-06-23,23,250-->
 
 What is `!`?
 ?
@@ -798,7 +798,7 @@ Rewrite `out <== 1 - a * b;` more explicitly
 out === 1 - a * b;
 out <-- 1 - a * b;
 ```
-<!--SR:2022-05-31,8,250-->
+<!--SR:2022-06-21,21,250-->
 
 What kinds of expressions are allowed in constraints?
 ?
@@ -848,7 +848,7 @@ The else block is optional.
 What is the syntax for `for` loops?
 ?
 `for ( initialization_code ; boolean_condition ; step_code ) block_of_code`
-<!--SR:2022-05-31,9,250-->
+<!--SR:2022-06-24,24,250-->
 
 What's wrong with the following code?
 ```
@@ -860,7 +860,7 @@ i++
 ```
 ?
 `i` is only in scope for the `for` block and can't be used outside of it.
-<!--SR:2022-05-31,10,250-->
+<!--SR:2022-06-28,28,250-->
 
 What is the syntax for a `while` loop?
 ?
@@ -870,7 +870,7 @@ What is the syntax for a `while` loop?
 What restriction is placed on constraints inside control flow blocks?
 ?
 The conditions of the flow control blocks cannot be unknown. This is because constraint generation must be unique and cannot depend on unknown input signals.
-<!--SR:2022-05-31,9,250-->
+<!--SR:2022-06-22,22,250-->
 
 What is wrong with the following code?
 ```
@@ -958,7 +958,7 @@ Signals, vars, the same type of component, or arrays.
 How, for example, do we declare a 2D array with lengths?
 ?
 `var dbl[16][2];`
-<!--SR:2022-05-31,9,250-->
+<!--SR:2022-06-25,25,250-->
 
 What is wrong with the following code?
 `var z = [2,8,4];`
@@ -1008,7 +1008,7 @@ There are two types of components being put into the array `c`. This applies eve
 How does scoping work?
 ?
 We have static/lexical scoping, and that signals must be defined at the top level block of the template that uses them, effectively giving them global scope.
-<!--SR:2022-05-31,10,250-->
+<!--SR:2022-06-25,25,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-05-31,3,230-->
+<!--SR:2022-06-09,9,230-->
 
 Which signals of subcomponents are visible?
 ?
@@ -1075,7 +1075,7 @@ Introduces a condition to be checked at execution time. If the condition fails, 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-05-31,8,230-->
+<!--SR:2022-06-18,18,230-->
 
 How do you use `assert`, for example?
 ?

@@ -152,7 +152,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-05-31,7,130-->
+<!--SR:2022-06-11,11,130-->
 
 Who are the authors of Gro06?
 ?
@@ -199,7 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-05-31,6,210-->
+<!--SR:2022-06-04,4,250-->
 
 Who are the authors of Gro09?
 ?
