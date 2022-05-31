@@ -32,7 +32,7 @@ How do you declare an output signal?
 How do you declare an intermediate signal?
 ?
 `signal inter;` declares an intermediate signal named `inter`.
-<!--SR:2022-06-01,12,250-->
+<!--SR:2022-07-04,33,250-->
 
 How do you declare an array of output signals?
 ?
@@ -49,7 +49,7 @@ The rest of the signals are private and can't be made public.
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-06-01,9,230-->
+<!--SR:2022-06-20,19,230-->
 
 How can we rewrite the lines:
 ```
@@ -117,7 +117,7 @@ What's an example of when we must use `<--` rather than `<==` and what does it d
 ?
 `out[k] <-- (in >> k) & 1`
 Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the end of the number, and `& 1` gives us the least significant bit.
-<!--SR:2022-06-01,12,250-->
+<!--SR:2022-07-03,32,250-->
 
 ## Variables and Mutability
 
@@ -174,7 +174,7 @@ An assignment, which is a statement and has no value, is being used as part of a
 What do we use to create generic circuits in circom?
 ?
 Templates.
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-07-03,32,250-->
 
 When are template's parameters instantiated?
 ?
@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-06-30,29,250-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -430,7 +430,7 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-07-01,30,250-->
 
 What can functions output?
 ?
@@ -455,7 +455,7 @@ At the end of every execution trace.
 What does executing a return statement do?
 ?
 Returns control to the caller of the function.
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-07-02,31,250-->
 
 What error does this code produce?
 ```
@@ -496,12 +496,12 @@ What is the syntax for creating a main component?
 Which input signals in the main component are private?
 ?
 All input signals not explicitly declared to be public.
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-06-30,29,250-->
 
 How can we define multiple main components in one program?
 ?
 We can't - we'll get a "Multiple main components  in the project structure" error.
-<!--SR:2022-06-01,11,250-->
+<!--SR:2022-07-03,32,250-->
 
 
 
@@ -589,7 +589,7 @@ Boolean OR operator.
 What is `!`?
 ?
 Boolean NEGATION operator.
-<!--SR:2022-06-01,10,250-->
+<!--SR:2022-06-29,28,250-->
 
 What are the relational operators?
 ?
@@ -652,7 +652,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2022-06-01,9,230-->
+<!--SR:2022-06-22,21,230-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -692,7 +692,7 @@ Rightshift
 What is the `<<`?
 ?
 Leftshift
-<!--SR:2022-06-01,9,250-->
+<!--SR:2022-06-24,23,250-->
 
 How are the shift operators extended?
 ?
@@ -887,7 +887,7 @@ component main{public [in]} = wrong(1);
 ```
 ?
 The condition depends on an unknown, and there are constraints generated inside the condition. This makes it impossible to generate a static circuit from the code.
-<!--SR:2022-06-01,9,250-->
+<!--SR:2022-06-27,26,250-->
 
 What template has an error and why?
 ```
@@ -938,7 +938,7 @@ Field elements and arrays.
 What is the default type of signals and variables?
 ?
 A field element.
-<!--SR:2022-06-01,10,250-->
+<!--SR:2022-06-28,27,250-->
 
 Are arrays dynamic?
 ?
@@ -948,7 +948,7 @@ No, they can hold a finite number of elements known at compile time.
 How many different types of elements can a single array hold?
 ?
 Just one type.
-<!--SR:2022-06-01,10,250-->
+<!--SR:2022-06-28,27,250-->
 
 What types can arrays hold?
 ?
@@ -1119,7 +1119,7 @@ A compiler message that means that what you've done is allowed but uncommon, so 
 What is a warning?
 ?
 A compiler message meaning that what you've done is allowed but should not happen in general.
-<!--SR:2022-06-01,10,250-->
+<!--SR:2022-06-29,28,250-->
 
  ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
 
@@ -1244,7 +1244,7 @@ template A() {
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 Also, out is assigned multiple times.
-<!--SR:2022-06-01,7,230-->
+<!--SR:2022-06-17,16,230-->
 
 
 

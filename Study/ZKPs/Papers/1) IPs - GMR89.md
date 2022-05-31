@@ -250,7 +250,7 @@ As a write only tape, where each cell can only be written once, and each cell mu
 What does an ITM's input tape represent?
 ?
 The proposition being thought about.
-<!--SR:2022-06-01,36,250-->
+<!--SR:2022-09-01,92,250-->
 
 ### Interactive Pair
 
@@ -317,7 +317,7 @@ The text of all possible computations of (A, B) on input x, taken over the distr
 What is an interactive proof system analogous to?
 ?
 A lesson in a classroom.
-<!--SR:2022-06-01,36,250-->
+<!--SR:2022-09-02,93,250-->
 
 What are the properties of a classroom lesson (in the context of an interactive proof system)?
 ?
@@ -683,7 +683,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-06-01,8,130-->
+<!--SR:2022-06-18,17,150-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-01,15,190-->
+<!--SR:2022-06-11,10,170-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -867,7 +867,7 @@ Select as string as undistinguishable as possible from a computation randomly se
 What are the inputs of imitator M?
 ?
 A's program, B's program, and the input x. That is, nothing in the interactive proof is hidden.
-<!--SR:2022-06-01,36,250-->
+<!--SR:2022-09-03,94,250-->
 
 Can imitator M run A's program?
 ?
@@ -958,7 +958,7 @@ Note: by restricting to the strings in the language we can use the notion of zer
 How do we denote that $L$ has knowledge complexity $f(n)$?
 ?
 $L \in KC(f(n))$
-<!--SR:2022-06-01,34,250-->
+<!--SR:2022-08-25,85,250-->
 
 $L$ has knowledge complexity $f(n)$ if . . . ?
 ?
@@ -1285,7 +1285,7 @@ $S = \{t_{n+1},...,t_{2n}\ |\ t_i = y\cdot r_i^2\}$
 What type are each $t_i$?
 ?
 Type 1
-<!--SR:2022-06-01,22,230-->
+<!--SR:2022-07-19,48,230-->
 
 What type are each $s_i$?
 ?
@@ -1410,7 +1410,7 @@ $Y' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in Y\
 else:
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in X\}$ 
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
-<!--SR:2022-06-01,16,210--> 
+<!--SR:2022-07-20,49,230--> 
 
 ??? why $\mod n$ rather than $\mod m$???
 

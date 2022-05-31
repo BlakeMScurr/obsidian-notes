@@ -55,7 +55,7 @@ Yes.
 What is $\zeta$
 ?
 $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
-<!--SR:2022-06-01,16,210-->
+<!--SR:2022-07-06,35,210-->
 
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?

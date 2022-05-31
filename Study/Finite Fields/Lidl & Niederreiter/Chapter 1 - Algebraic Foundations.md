@@ -124,7 +124,7 @@ $1$ and $-1$.
 What are the properties of an equivalence relation?
 ?
 Reflexivity, symmetry, and transitivity.
-<!--SR:2022-06-01,36,250-->
+<!--SR:2022-08-31,91,250-->
 
 What is the reflexivity property of an equivalence relation?
 ?

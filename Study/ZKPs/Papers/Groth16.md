@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-01,6,190-->
+<!--SR:2022-06-04,3,170-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -77,7 +77,7 @@ Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
 What are the 3 core properties of zero knowledge proofs?
 ?
 Completeness, Soundness, and Zero-Knowledge.
-<!--SR:2022-06-01,15,250-->
+<!--SR:2022-07-12,41,250-->
 
 Describe the completeness property.
 ?

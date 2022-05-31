@@ -19,7 +19,7 @@ compconstant
 What is binsum?
 ?
 Creates a constraint specifying that some binary inputs add to some binary output.
-<!--SR:2022-06-01,8,230-->
+<!--SR:2022-06-21,20,230-->
 
 What is `ops` in binsum?
 ?
@@ -214,7 +214,7 @@ var a = 1;
 var e = 1;
 var i;
 ```
-<!--SR:2022-06-01,5,230-->
+<!--SR:2022-06-13,12,230-->
 
 What do `clsb` etc represent?
 ?
@@ -266,10 +266,10 @@ What are the 4 cases for defining parts?
 ```
 cmsb == 0 && clsb == 0
 cmsb == 0 && clsb == 1
+cmsb == 1 && clsb == 0
 cmsb == 1 && clsb == 1
-cmsb == 0 && clsb == 0
 ```
-<!--SR:2022-06-01,6,250-->
+<!--SR:2022-06-16,15,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-06-01,3,230-->
+<!--SR:2022-06-10,9,230-->
 
 ## e
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-01,2,210-->
+<!--SR:2022-06-02,1,190-->
 
 ## p-s
 
