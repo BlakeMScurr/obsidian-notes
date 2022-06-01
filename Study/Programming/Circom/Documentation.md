@@ -215,7 +215,7 @@ What is the syntax to instantiate template parameters?
 How are the possible values of template parameters restricted?
 ?
 They should be known constants at compile time.
-<!--SR:2022-06-02,10,250-->
+<!--SR:2022-06-25,23,250-->
 
 What is wrong with the following code, and what error does it generate?
 ```
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-06-02,7,210-->
+<!--SR:2022-06-19,17,210-->
 
 What, roughly, are the three compiler warnings you can get from misusing signals in a template?
 ?
@@ -321,12 +321,12 @@ c.a <== y*z-1;
 var x;
 x = c.b;
 ```
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-06,34,250-->
 
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
 Instantiation won't be triggered until all the component's inputs have been supplied, meaning instantiaion may be delayed. This means the outputs of a component can't be used until all the inputs are set.
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-03,31,250-->
 
 What is wrong with the following piece of code?
 ```
@@ -393,7 +393,7 @@ The C++ file resulting from compilation will contain parallelized code to comput
 When is parallelization particularly useful?
 ?
 When dealing with large circuits.
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-06,34,250-->
 
 
 
@@ -408,7 +408,7 @@ What is the line at the top of every circom file?
 What is pragma for?
 ?
 To ensure that the circuit is compatible with the specified compiler version.
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-05,33,250-->
 
 If there is no pragma, what do we assume?
 ?
@@ -445,7 +445,7 @@ Yes.
 How many return statements can a function have?
 ?
 As many as it likes.
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-05,33,250-->
 
 When is a return statement required?
 ?
@@ -467,7 +467,7 @@ function example(N) {
 ```
 ?
 "In example there are paths without return"
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-06,34,250-->
 
 ## Include
 
@@ -481,7 +481,7 @@ How do you include library code?
 Where do we start execution?
 ?
 The main component.
-<!--SR:2022-06-02,12,250-->
+<!--SR:2022-07-05,33,250-->
 
 How is the main component different from other components?
 ?
@@ -510,7 +510,7 @@ We can't - we'll get a "Multiple main components  in the project structure" erro
 What is the comment syntax for circom?
 ?
 `//` for single line, and `/**/` for multiline.
-<!--SR:2022-06-02,11,250-->
+<!--SR:2022-07-04,32,250-->
 
 What can be used for identifiers?
 ?
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-06-02,3,170-->
+<!--SR:2022-06-08,6,170-->
 
 Where can operators be used?
 ?
@@ -574,7 +574,7 @@ What is the conditional expression?
 What are the boolean operators?
 ?
 `&& || !`
-<!--SR:2022-06-02,10,250-->
+<!--SR:2022-06-30,28,250-->
 
 What is `&&`?
 ?
@@ -617,7 +617,7 @@ How is `x < y` defined?
 How is `x > y` defined?
 ?
 `val(x % p) > val(y % p)`
-<!--SR:2022-06-02,11,250-->
+<!--SR:2022-07-02,30,250-->
 
 How is `x <= y` defined?
 ?
@@ -672,7 +672,7 @@ Bitwise AND
 What is the `|` operator?
 ?
 Bitwise OR
-<!--SR:2022-06-02,11,250-->
+<!--SR:2022-07-04,32,250-->
 
 What is the `~` operator?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-06-02,3,190-->
+<!--SR:2022-06-09,7,190-->
 
 What is the `>>` operator?
 ?
@@ -768,7 +768,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-06-02,8,230-->
+<!--SR:2022-06-20,18,230-->
 
 What is a quadratic expression?
 ?
@@ -926,7 +926,7 @@ template wrong() {
 ```
 ?
 The value of `t` is used in a constraint and its construction depends on the unknown signal `in` via control flow, making the resulting constraint non quadratic. This will cause a compiler error.
-<!--SR:2022-06-02,10,250-->
+<!--SR:2022-06-30,28,250-->
 
 # Data Types
 
@@ -943,7 +943,7 @@ A field element.
 Are arrays dynamic?
 ?
 No, they can hold a finite number of elements known at compile time.
-<!--SR:2022-06-02,11,250-->
+<!--SR:2022-07-01,29,250-->
 
 How many different types of elements can a single array hold?
 ?
@@ -1151,7 +1151,7 @@ What kinds of values are always known or unknown?
 ?
 Constant values and template parameters are known.
 Signals are unknown.
-<!--SR:2022-06-02,10,250-->
+<!--SR:2022-06-29,27,250-->
 
 When are expressions known?
 ?
@@ -1228,7 +1228,7 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
-<!--SR:2022-06-02,10,250-->
+<!--SR:2022-06-27,25,250-->
 
 What two things are wrong with the following code and what message does it generate?
 ```

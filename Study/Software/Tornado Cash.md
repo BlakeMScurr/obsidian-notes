@@ -28,26 +28,27 @@ What does withdraw.circom include?
 circomlib/circuits/bitify.circom
 circomlib/circuits/pedersen.circom
 merkleTree.circom
-<!--SR:2022-06-02,1,230-->
+<!--SR:2022-06-03,1,210-->
 
 ## MerkleTree
 
 What does merkleTree.circom include?
 ?
 circomlib/circuits/mimcsponge.circom
-<!--SR:2022-06-02,1,230-->
+<!--SR:2022-06-05,3,230-->
 
 What are the top level constructions in merkleTree.circom?
 ?
 The HashLeftRight template
 The DualMux template
 The MerkleTreeChecker template
-<!--SR:2022-06-02,1,230-->
+<!--SR:2022-06-03,1,210-->
 
 What does HashLeftRight do?
 ?
 Outputs the mimcsponge hash of two input signals left and right.
 I.e., `computes MiMC([left, right])`
+<!--SR:2022-06-06,4,250-->
 
 What is the code for HashLeftRight?
 ?
@@ -64,7 +65,7 @@ template HashLeftRight(){
 	out <== mimc.outs[0];
 }
 ```
-<!--SR:2022-06-02,1,230-->
+<!--SR:2022-06-03,1,210-->
 
 What does DualMux do?
 ?

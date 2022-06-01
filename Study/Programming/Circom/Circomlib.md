@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-02,6,230-->
+<!--SR:2022-06-06,4,210-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-06-02,6,230-->
+<!--SR:2022-06-06,4,210-->
 
 What is the code for the final check and output?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-02,1,190-->
+<!--SR:2022-06-03,1,170-->
 
 ## p-s
 
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-06-02,6,170-->
+<!--SR:2022-06-06,4,150-->

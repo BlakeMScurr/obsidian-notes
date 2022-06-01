@@ -152,7 +152,7 @@ Deterministic Turing machines, and probabilistic Turing machines.
 What are GMR's examples of formalisations for "proof?"
 ?
 NP and IP.
-<!--SR:2022-06-02,37,250-->
+<!--SR:2022-09-07,97,250-->
 
 What are GMR's analogies for NP and IP?
 ?
@@ -230,7 +230,7 @@ It means an ITM can't simply be modelled in an interaction with a more powerful 
 What does an ITM's random tape represent?
 ?
 The irreducibility/unmodelability of the human mind, we can think of this as our capacity for creative daydreaming.
-<!--SR:2022-06-02,37,250-->
+<!--SR:2022-09-06,96,250-->
 
 How is an ITM's random tape implemented?
 ?
@@ -616,8 +616,8 @@ As an abstraction that allows us to compare and distinguish different types of c
 
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
-The output of a probabilistic computation.
-<!--SR:2022-06-02,4,190-->
+The language accepted by the probabilistic computation.
+<!--SR:2022-06-12,10,190-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -632,7 +632,7 @@ The distribution of outputs on $x$
 What is an I-c-ensemble's $c$ through a computational lens?
 ?
 The highest power (probably +1) in the polynomial restricting the output size, so that all possible outputs are represented in the ensemble.
-<!--SR:2022-06-02,35,230-->
+<!--SR:2022-08-22,81,230-->
 
 How do we define an I-c-ensembles's $I$?
 ?
@@ -734,7 +734,7 @@ Where $p:N \to [0,1]$
 What are 0-distinguishable otherwise described as?
 ?
 Indistinguishable.
-<!--SR:2022-06-02,37,250-->
+<!--SR:2022-09-05,95,250-->
 
 What does it mean for two ensembles to be indistinguishable?
 ?
@@ -798,7 +798,7 @@ None because we could generate them ourselves trivially.
 How much knowledge do the results of a polynomial computation convey and why?
 ?
 None because we could compute it ourselves easily.
-<!--SR:2022-06-02,37,250-->
+<!--SR:2022-09-04,94,250-->
 
 What is the unit for knowledge communcation?
 ?
@@ -1360,7 +1360,7 @@ $\{t_{i_1},...,t_{i_d}\}$.
 How does $B$ reveal $D$?
 ?
 $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \cdot r_{i_j}^2 \mod m$ for some $1 \leq i_j \leq 2n$.
-<!--SR:2022-06-02,16,190-->
+<!--SR:2022-07-04,32,190-->
 
 How is $X$ defined?
 ?
@@ -1578,7 +1578,7 @@ If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with proba
 How does the proof for claim 1 work?
 ?
 $P[C_x = 0] = 1/2$, and even with infinite computation power $A'$ can't tell the two types in $X' \cup Y'$ apart since they're all random square roots of random squares. We run through all 4 cases of $C_x$ and $w$ showing that they're random square roots of random squares.
-<!--SR:2022-06-02,17,230-->
+<!--SR:2022-07-13,41,230-->
 
 What cases do we have to prove to show that all $w \in X' \cup Y'$ are random square roots of random squares if $(y, m) \notin QNR$?
 ?

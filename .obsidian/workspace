@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Software/Tornado Cash.md",
+            "file": "Study/ZKPs/Papers/1) IPs - GMR89.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Software/Tornado Cash.md",
+                "file": "Study/ZKPs/Papers/1) IPs - GMR89.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,11 +96,11 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Software/Tornado Cash.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Circom/Documentation.md",
-    "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Blog/ZK Music NFTs.md",
     "Study/Number Theory/QRP.md",

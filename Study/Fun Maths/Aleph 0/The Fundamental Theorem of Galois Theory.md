@@ -50,7 +50,7 @@ $\frac{1}{3 + 2\sqrt{2}} = [1 + (-\sqrt(2)]^2$
 Can we always swap $\sqrt{2}$ and $-\sqrt{2}$ in algebraic expressions with rational coefficients?
 ?
 Yes.
-<!--SR:2022-06-02,20,250-->
+<!--SR:2022-07-22,50,250-->
 
 What is $\zeta$
 ?

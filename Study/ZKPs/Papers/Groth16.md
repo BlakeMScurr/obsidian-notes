@@ -82,7 +82,7 @@ Completeness, Soundness, and Zero-Knowledge.
 Describe the completeness property.
 ?
 Given a statement and a witness, the prover can convince the verifier.
-<!--SR:2022-06-02,12,190-->
+<!--SR:2022-06-23,21,190-->
 
 Describe the soundness property.
 ?
