@@ -7,7 +7,7 @@ How do deposits work?
 The user privately generates random bytes, hashes them, and sends them to the contract.
 The user also sends the token.
 The contract inserts the hash into a Merkle Tree.
-<!--SR:2022-06-03,2,250-->
+<!--SR:2022-06-08,5,250-->
 
 How do withdrawls work?
 ?
@@ -28,7 +28,7 @@ What does withdraw.circom include?
 circomlib/circuits/bitify.circom
 circomlib/circuits/pedersen.circom
 merkleTree.circom
-<!--SR:2022-06-03,1,210-->
+<!--SR:2022-06-06,3,210-->
 
 ## MerkleTree
 
@@ -42,7 +42,7 @@ What are the top level constructions in merkleTree.circom?
 The HashLeftRight template
 The DualMux template
 The MerkleTreeChecker template
-<!--SR:2022-06-03,1,210-->
+<!--SR:2022-06-04,1,190-->
 
 What does HashLeftRight do?
 ?
@@ -65,7 +65,7 @@ template HashLeftRight(){
 	out <== mimc.outs[0];
 }
 ```
-<!--SR:2022-06-03,1,210-->
+<!--SR:2022-06-06,3,210-->
 
 What does DualMux do?
 ?

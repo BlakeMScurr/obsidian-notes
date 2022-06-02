@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-06-03,6,170-->
+<!--SR:2022-06-15,12,170-->
 
 ### binsum
 
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-06-03,3,170-->
+<!--SR:2022-06-09,6,170-->
 
 ## g-m
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-03,1,170-->
+<!--SR:2022-06-06,3,170-->
 
 ## p-s
 

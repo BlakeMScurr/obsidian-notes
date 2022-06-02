@@ -461,7 +461,7 @@ $n = |x|$, i.e., the length of x.
 How is the basic QNR IP not zero knowledge?
 ?
 By acting maliciously and sending a random element with unknown residuosity, B learns its residuosity.
-<!--SR:2022-06-03,38,250-->
+<!--SR:2022-09-08,97,250-->
 
 ### The Class IP
 
@@ -556,7 +556,7 @@ The Model Centric Framework is a formalisation for knowledge and communication.
 What worldview does MCF capture?
 ?
 The scientific/empricial worldview that it's hard to learn facts about reality, and that we communicate testimony about those facts.
-<!--SR:2022-06-03,14,190-->
+<!--SR:2022-07-01,28,190-->
 
 What are MCF's assumptions?
 ?
@@ -581,7 +581,7 @@ GMR hold that our computation is limited, and that we communicate about availabl
 What does GMR's philosophy of knowledge apply to, in addition to epistemology?
 ?
 Cryptography.
-<!--SR:2022-06-03,38,250-->
+<!--SR:2022-09-10,99,250-->
 
 What does GMR study with respect to knowledge?
 ?
@@ -622,7 +622,7 @@ The language accepted by the probabilistic computation.
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
 The input of a computation.
-<!--SR:2022-06-03,38,250-->
+<!--SR:2022-09-06,95,250-->
 
 What is an I-c-ensemble's $\Pi_x$ through a computational lens?
 ?
@@ -688,7 +688,7 @@ Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |
 What does $p^D_{x, 1}$ denote?
 ?
 The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen with $\Pi_{1,x}$
-<!--SR:2022-06-03,38,250-->
+<!--SR:2022-09-09,98,250-->
 
 What does $p^D_{x, 2}$ denote?
 ?
@@ -766,7 +766,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-06-03,10,130-->
+<!--SR:2022-06-16,13,130-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -941,7 +941,7 @@ A square root of x, in addition to showing $x \in QR$
 How much knowledge do traditional proofs of theorems convey?
 ?
 More than language membership, think NP style QR.
-<!--SR:2022-06-03,36,250-->
+<!--SR:2022-09-01,90,250-->
 
 What is the notion of "$L$ has $f(n$) knowledge complexity" meant to capture?
 ?
@@ -1264,7 +1264,7 @@ $x$ is of  type 2
 What is $T \cup S$ for?
 ?
 The set of random numbers used to convince $A$ that $B$ knows the residuosity of $x$ without revealing it.
-<!--SR:2022-06-03,7,210-->
+<!--SR:2022-06-18,15,210-->
 
 What is the size of $T \cup S$?
 ?
@@ -1335,7 +1335,7 @@ B makes equally sized sets of opposite secret residuosity $X$ and $Y$.
 B reveals the random values left over.
 B ties $X$ and $Y$ to  the residuosity of $x$ with sets $X'$ and $Y'$.
 B sends $X' \cup Y'$ to A.
-<!--SR:2022-06-03,17,190-->
+<!--SR:2022-07-08,35,190-->
 
 How does B reveal the random $r$ values in $Z$?
 ?
@@ -1591,7 +1591,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-06-03,18,230-->
+<!--SR:2022-07-15,42,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf
@@ -1648,7 +1648,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-06-03,18,230-->
+<!--SR:2022-07-15,42,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf

@@ -153,10 +153,12 @@ What does our arithmetic circuit consist of?
 Addition and multiplication gates over a finite field.
 <!--SR:2022-06-27,31,250-->
 
-What represents the statement in our arithmetic circuit? Why?
+What represents the statement in our arithmetic circuit?
 ?
-Some subset of the the input/ouput wires. Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.
-<!--SR:2022-06-03,13,210-->
+Some subset of the the input/ouput wires.
+<!--SR:2022-07-02,29,210-->
+
+%% Why? Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.%%
 
 What represents the witness in our arithmetic circuit?
 ?

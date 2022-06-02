@@ -104,7 +104,7 @@ Oded Goldreich and Yair Oren
 What is the title of GO94?
 ?
 Definitions and properties of zero-knowledge proof systems
-<!--SR:2022-06-03,12,170-->
+<!--SR:2022-06-26,23,170-->
 
 What does GO94 show, according to Groth's talk in the 3rd BIU winter school?
 ?
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-06-03,5,150-->
+<!--SR:2022-06-13,10,150-->
 
 What did GOS06 contribute?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-06-03,5,150-->
+<!--SR:2022-06-13,10,150-->
 
 What did Gro06 contribute?
 ?

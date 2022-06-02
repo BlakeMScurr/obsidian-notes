@@ -43,9 +43,9 @@ Given a bunch of numbers that are conjugate over $\mathbb{Q}$, how many ways are
 <!--SR:2022-06-22,23,190-->
 
 What is an example of an equation where you can swap $\sqrt{2}$ and $-\sqrt{2}$?
-?
+%%%%?
 $\frac{1}{3 + 2\sqrt{2}} = [1 + (-\sqrt(2)]^2$
-<!--SR:2022-06-03,17,190-->
+<!--SR:2022-07-08,35,190-->
 
 Can we always swap $\sqrt{2}$ and $-\sqrt{2}$ in algebraic expressions with rational coefficients?
 ?
