@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-06-04,6,210-->
+<!--SR:2022-06-17,13,210-->
 
 What do signals contain?
 ?
@@ -474,7 +474,7 @@ function example(N) {
 How do you include library code?
 ?
 `include "example_library.circom";`
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-04,30,250-->
 
 ## The main Component
 
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-01,27,250-->
 
 What are the possible values of a field element?
 ?
@@ -579,7 +579,7 @@ What are the boolean operators?
 What is `&&`?
 ?
 Boolean AND operator.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-03,29,250-->
 
 What is `||`?
 ?
@@ -607,12 +607,12 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 How is `x < y` defined?
 ?
 `val(x % p) < val(y % p)`
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-06-30,26,250-->
 
 How is `x > y` defined?
 ?
@@ -662,12 +662,12 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-02,28,250-->
 
 What is the `&` operator?
 ?
 Bitwise AND
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-04,30,250-->
 
 What is the `|` operator?
 ?
@@ -687,7 +687,7 @@ XOR 254 bits
 What is the `>>` operator?
 ?
 Rightshift
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 What is the `<<`?
 ?
@@ -735,7 +735,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2022-06-04,9,230-->
+<!--SR:2022-06-28,24,230-->
 
 What is the code for `Num2Bits`
 ?
@@ -910,7 +910,7 @@ template B(N1, N2) {
 ```
 ?
 `A`, because its condition depends on a signal which means it's unknown, whereas `B`'s depends on a parameter which means it's known at compile time.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 What is wrong with the following code?
 ```
@@ -953,7 +953,7 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
-<!--SR:2022-06-04,9,230-->
+<!--SR:2022-06-25,21,230-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
@@ -974,7 +974,7 @@ No, each array can only hold one type of signal.
 Can an array contain components with different parameters?
 ?
 Yes, as long as they have the same type.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 What is wrong with the following code and what error message will it give?
 ```
@@ -1001,7 +1001,7 @@ template All(N){
 ?
 `c[i] = fun[i] -> Assignee and assigned types do not match`
 There are two types of components being put into the array `c`. This applies even though the two types are identical, and no components can actually be of type 2 if you follow the runtime logic.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 # Scoping
 
@@ -1055,7 +1055,7 @@ template t() {
 ```
 ?
 `t` is trying to access a component within a component which is not allowed. If we want an indirect descendant's signals, we need to pass them via the intervening components.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-06,32,250-->
 
 
 
@@ -1080,7 +1080,7 @@ The `assert` keyword, and constraints.
 How do you use `assert`, for example?
 ?
 `assert(n <= 254);`
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-07,33,250-->
 
 What is `log`?
 ?
@@ -1104,12 +1104,12 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-06-10,6,230-->
 
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-08,34,250-->
 
 What is a hint?
 ?
@@ -1133,12 +1133,13 @@ What is wrong with the following code, and what message is genreated?
 template A() {
 	signal in;
 	in = 1;
+	signal out <== in;
 }
 ```
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-06-11,7,230-->
 
 ## Unknowns
 
@@ -1172,7 +1173,7 @@ template A(n1, n2) {
 ?
 `n1`, `n2`, `x`, and `y` are known.
 `in1`, `in2`, and `z` are unknown.
-<!--SR:2022-06-04,12,250-->
+<!--SR:2022-07-05,31,250-->
 
 A constraint with an array access . . . ?
 ?

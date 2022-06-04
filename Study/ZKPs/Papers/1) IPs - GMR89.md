@@ -52,7 +52,7 @@ Knowledge is information that is difficult to acquire.
 How can we study knowledge complexity per se, rather than instances of proof systems?
 ?
 By classifying languages according to their knowledge complexity.
-<!--SR:2022-06-04,39,230-->
+<!--SR:2022-09-02,90,230-->
  
 
 ### Interaction reduces knowledge
@@ -200,7 +200,7 @@ An Interactive Turing Machine.
 What does an ITM model?
 ?
 A person who *listens*, *thinks*, *daydreams creatively*, and *speaks* about a *proposition*.
-<!--SR:2022-06-04,39,250-->
+<!--SR:2022-09-13,101,250-->
 
 What are the components of an ITM?
 ?
@@ -327,12 +327,12 @@ The lesson is *on an idea*, which is *in a topic*, held as a *conversation*, whe
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
-<!--SR:2022-06-04,13,190-->
+<!--SR:2022-06-29,25,190-->
 
 How is the general topic of an interactive proof system formalised?
 ?
 As a language $\mathcal{L} \subseteq \{0,1\}^*$
-<!--SR:2022-06-04,39,250-->
+<!--SR:2022-09-11,99,250-->
 
 How is the "idea" in an interactive proof system formalised?
 ?
@@ -678,7 +678,7 @@ An verifier trying to tell its own studies apart from notes taken in class.
 What is the definition of a distinguisher?
 ?
 A probabilistic polynomial time algorithm $D$ that takes a string $s$ and outputs a bit.
-<!--SR:2022-06-04,39,250-->
+<!--SR:2022-09-12,100,250-->
 
 What, formally, does a distinguisher distinguish between?
 ?
@@ -1440,7 +1440,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-06-04,18,230-->
+<!--SR:2022-06-15,11,210-->
 
 How is $X' \cup Y'$ sent?
 ?
@@ -1573,7 +1573,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-06-04,15,190-->
+<!--SR:2022-07-05,31,190-->
 
 How does the proof for claim 1 work?
 ?

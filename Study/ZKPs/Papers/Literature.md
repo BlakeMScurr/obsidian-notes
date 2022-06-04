@@ -63,7 +63,7 @@ An interactive proof system that doesn't rely on the one way function assumption
 What is FRS88's title?
 ?
 On the power of multi-prover interactive protocols
-<!--SR:2022-06-04,37,210-->
+<!--SR:2022-08-21,78,210-->
 
 Who are the authors of FRS88?
 ?
@@ -115,7 +115,7 @@ What does GO94 show?
 ?
 Classifies and defines two new definitions of zero knowledge: auxiliary input, and simultation, and shows that blackbox-simulation -> auxiliary -> GMR definition, and that composition of auxiliary gives auxiliary.
 That 1 round NIZKs are only possible for trival (BPP) languages.
-<!--SR:2022-06-04,13,190-->
+<!--SR:2022-06-12,8,170-->
 
 
 # Pairing Based Snarks
@@ -182,7 +182,7 @@ Efficient noninteractive proof systems for bilinear groups
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-06-04,6,150-->
+<!--SR:2022-06-15,11,150-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -199,7 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-06-04,4,250-->
+<!--SR:2022-06-16,12,250-->
 
 Who are the authors of Gro09?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-06-04,6,150-->
+<!--SR:2022-06-14,10,150-->
 
 What did Gro09 contribute?
 ?

@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-04,3,170-->
+<!--SR:2022-06-07,3,150-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -112,13 +112,13 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-06-04,10,150-->
+<!--SR:2022-06-19,15,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-06-04,6,150-->
+<!--SR:2022-06-08,4,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -128,7 +128,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-06-04,5,170-->
+<!--SR:2022-06-14,10,170-->
 
 What is Groth's constant size NIZK based on?
 ?
