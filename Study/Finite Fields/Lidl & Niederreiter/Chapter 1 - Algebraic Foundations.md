@@ -150,4 +150,4 @@ The union of equivalence classes is equivalent to $S$ because of reflexivity (al
 What is the definition of an equivalence class?
 ?
 $$[s] = \{ t \in S\ |\ (s, t) \in R\ \}$$
-<!--SR:2022-06-06,27,170-->
+<!--SR:2022-07-18,42,170-->

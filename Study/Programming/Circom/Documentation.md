@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-06-06,7,190-->
+<!--SR:2022-06-21,15,190-->
 
 What are the bitwise assignment operators?
 ?
@@ -1114,7 +1114,7 @@ Hints, warnings, and errors.
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
-<!--SR:2022-06-06,12,250-->
+<!--SR:2022-07-10,34,250-->
 
 What is a warning?
 ?
@@ -1209,7 +1209,7 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
-<!--SR:2022-06-06,12,250-->
+<!--SR:2022-07-10,34,250-->
 
 A control flow with a constraint . . . ?
 ?

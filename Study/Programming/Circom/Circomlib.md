@@ -189,7 +189,7 @@ Buliding a part
 looping along the bitstring
 Checking the 127th bit
 Output
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-06-30,24,250-->
 
 What are the signals in compconstant?
 ?
@@ -240,7 +240,7 @@ What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-06-29,23,250-->
 
 What does `b` look like and what is its formula?
 ?
@@ -276,7 +276,7 @@ What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 `-b*smsb*slsb + b*smsb + b*slsb`
 It must be `0` if `smsb == slsb == 0`
 `b` otherwise.
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-07-01,25,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-06,4,210-->
+<!--SR:2022-06-15,9,210-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -365,7 +365,7 @@ What are the top level constructs in Mux1?
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-06-28,22,250-->
 
 What does `Mux1` do?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-06,3,170-->
+<!--SR:2022-06-12,6,170-->
 
 ## p-s
 
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-06-06,4,150-->
+<!--SR:2022-06-13,7,150-->
