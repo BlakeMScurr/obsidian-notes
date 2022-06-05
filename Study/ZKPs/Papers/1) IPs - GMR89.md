@@ -98,7 +98,7 @@ Theorem proving.
 What's the key property of proofs in NP?
 ?
 That proofs are easy to verify, i.e., they can be verified in polynomial time.
-<!--SR:2022-06-05,40,250-->
+<!--SR:2022-09-16,103,250-->
 
 What "physical" parts does NP consist of?
 ?
@@ -498,7 +498,7 @@ László Babai.
 Which came first, Arthur-Merlin games, or Interactive Proof Systems?
 ?
 Arthur-Merlin games.
-<!--SR:2022-06-05,40,270-->
+<!--SR:2022-09-21,108,270-->
 
 How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
@@ -627,7 +627,7 @@ The input of a computation.
 What is an I-c-ensemble's $\Pi_x$ through a computational lens?
 ?
 The distribution of outputs on $x$
-<!--SR:2022-06-05,40,250-->
+<!--SR:2022-09-14,101,250-->
 
 What is an I-c-ensemble's $c$ through a computational lens?
 ?
@@ -652,7 +652,7 @@ $\forall x \in I$ where $|x| = n$ let $\Pi_x$ be a probability distribution over
 How do we define an I-c-ensemble $\Pi$?
 ?
 We say $\Pi = \{\Pi_x | x \in I\}$ is an I-c-ensemble.
-<!--SR:2022-06-05,40,250-->
+<!--SR:2022-09-15,102,250-->
 
 
 #### Distinguishers
@@ -739,7 +739,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-06-05,9,130-->
+<!--SR:2022-06-18,13,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -993,7 +993,7 @@ The text of the computation with the prover, containing no more than $f(n)$ extr
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?
 That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" text.
-<!--SR:2022-06-05,14,230-->
+<!--SR:2022-07-10,35,230-->
 
 If $L \in KC(0)$, the verifier learns . . . ?
 ?
@@ -1145,7 +1145,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:2022-06-05,13,170-->
+<!--SR:2022-06-27,22,170-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?

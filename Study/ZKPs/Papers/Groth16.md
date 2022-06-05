@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-06-05,14,210-->
+<!--SR:2022-06-14,9,190-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -123,7 +123,7 @@ The first linear sized proofs based on standard assumptions.
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-06-05,10,190-->
+<!--SR:2022-06-24,19,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?

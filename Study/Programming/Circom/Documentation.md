@@ -44,7 +44,7 @@ When are signals private vs public?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-06-05,12,230-->
+<!--SR:2022-07-06,31,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-06-05,6,230-->
+<!--SR:2022-06-20,15,230-->
 
 How do we access the input or output signals of a component?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-06-05,7,190-->
+<!--SR:2022-06-10,5,170-->
 
 What creates assertions?
 ?

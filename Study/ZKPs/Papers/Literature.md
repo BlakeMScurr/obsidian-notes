@@ -68,12 +68,12 @@ On the power of multi-prover interactive protocols
 Who are the authors of FRS88?
 ?
 Lance Fortnow, John Rompel, and Michael Sipser.
-<!--SR:2022-06-05,26,170-->
+<!--SR:2022-07-19,44,170-->
 
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-06-05,7,130-->
+<!--SR:2022-06-10,5,130-->
 
 ## BFL90
 

@@ -14,12 +14,12 @@ How do withdrawls work?
 The user splits their private note into a secret part and a nullifier.
 The user generates a zkp of the merkle proof that their nullifier is in the tree.
 The user sends the nullifier and the zkp to the contract who verifies it and sends the user money.
-<!--SR:2022-06-05,4,250-->
+<!--SR:2022-06-16,11,250-->
 
 What are the circom files in tornado cash?
 ?
 withdraw.circom and merkleTree.circom
-<!--SR:2022-06-05,4,250-->
+<!--SR:2022-06-17,12,250-->
 
 ## Withdraw
 
@@ -35,7 +35,7 @@ merkleTree.circom
 What does merkleTree.circom include?
 ?
 circomlib/circuits/mimcsponge.circom
-<!--SR:2022-06-05,3,230-->
+<!--SR:2022-06-13,8,230-->
 
 What are the top level constructions in merkleTree.circom?
 ?
@@ -71,7 +71,7 @@ What does DualMux do?
 ?
 if `s === 0` returns `[in[0], in[1]]`
 if `s === 1` returns `[in[1], in[0]]`
-<!--SR:2022-06-05,4,250-->
+<!--SR:2022-06-17,12,250-->
 
 What is the code for DualMux?
 ?
