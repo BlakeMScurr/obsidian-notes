@@ -147,7 +147,7 @@ Proof and computation.
 What are GMR's examples of formalisations for "computation?"
 ?
 Deterministic Turing machines, and probabilistic Turing machines.
-<!--SR:2022-06-07,42,270-->
+<!--SR:2022-09-28,113,270-->
 
 What are GMR's examples of formalisations for "proof?"
 ?
@@ -482,7 +482,7 @@ The class of languages with an interactive proof system where the prover runs in
 What is $IP[f(n)]$?
 ?
 The class of languages with an interactive proof system that halts within $f(n)$ turns.
-<!--SR:2022-06-07,40,250-->
+<!--SR:2022-06-24,17,230-->
 
 ### Arthur Merlin Games
 * "Arthur-Merlin" by Babai games are a predecessor of IPs by GMR
@@ -1116,7 +1116,7 @@ $QNR = \{(y, m) | \mathcal{Q}_m(y) = 1\}$
 GMR's proof that $QNR \in KC(0)$ relies on . . . ?
 ?
 No unproven computational complexity assumptions.
-<!--SR:2022-06-07,37,250-->
+<!--SR:2022-09-05,90,250-->
 
 
 ### The Quadratic Residuosity Problem
@@ -1245,7 +1245,7 @@ If $C_x = 0$, what are $x$ and the type of $x$?
 ?
 $x = r_0^2 \mod n$
 Type 1
-<!--SR:2022-06-07,26,230-->
+<!--SR:2022-08-06,60,230-->
 
 If $C_x = 0$, what are $x$ and the type of $x$?
 ?
@@ -1549,7 +1549,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:2022-06-07,9,190-->
+<!--SR:2022-06-23,16,190-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?

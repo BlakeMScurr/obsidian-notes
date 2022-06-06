@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Circom/Circomlib.md",
+            "file": "Study/ZKPs/Papers/Literature.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Circom/Circomlib.md",
+                "file": "Study/ZKPs/Papers/Literature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,13 +96,13 @@
   },
   "active": "0db9cae75653e22c",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Software/Tornado Cash.md",
-    "Study/ZKPs/Papers/Literature.md",
     "Blog/ZK Music NFTs.md",
     "Study/Number Theory/QRP.md",
     "Study/ZKPs/Questions.md"

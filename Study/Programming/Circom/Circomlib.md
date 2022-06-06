@@ -229,7 +229,7 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-06-07,10,250-->
+<!--SR:2022-07-02,25,250-->
 
 What is the value of each part, and when?
 ?
@@ -246,7 +246,7 @@ What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
-<!--SR:2022-06-07,10,250-->
+<!--SR:2022-07-03,26,250-->
 
 What does `a` do from a bitwise perspective and how?
 ?
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-07,10,250-->
+<!--SR:2022-06-11,4,230-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?

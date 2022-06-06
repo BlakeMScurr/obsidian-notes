@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-06-07,9,170-->
+<!--SR:2022-06-13,6,150-->
 
 What did GS12 contribute?
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-06-07,9,170-->
+<!--SR:2022-06-08,1,230-->
 
 What did Gro10 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-06-07,9,170-->
+<!--SR:2022-06-22,15,170-->
 
 What did Groth16 contribute?
 ?

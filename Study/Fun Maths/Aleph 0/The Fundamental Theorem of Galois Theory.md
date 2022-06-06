@@ -79,7 +79,7 @@ $(\zeta^4,\zeta^3,\zeta^2,\zeta)$
 Why do we want to study the algebra preserving permutations of conjugates?
 ?
 It helps to understand how numbers (like $\sqrt{2}$ and $e^{\frac{2i\pi}{5}}$) are related to each other.
-<!--SR:2022-06-07,22,230-->
+<!--SR:2022-07-28,51,230-->
 
 # Fields and Automorphisms
 

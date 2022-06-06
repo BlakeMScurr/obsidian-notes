@@ -37,7 +37,7 @@ How do you declare an intermediate signal?
 How do you declare an array of output signals?
 ?
 `signal output out[N];` declares an array of length `N` called `out` containing output signals.
-<!--SR:2022-06-07,14,230-->
+<!--SR:2022-07-11,34,230-->
 
 When are signals private vs public?
 ?
@@ -80,7 +80,7 @@ template B(){
 	component comp = A();
 	someSignal <== A.outA
 }
-<!--SR:2022-06-07,15,250-->
+<!--SR:2022-07-12,35,250-->
 
 template A(){
 	...
@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2022-06-07,13,210-->
+<!--SR:2022-07-07,30,210-->
 
 How do we declare a variable?
 ?
@@ -152,7 +152,7 @@ a = (b = 3) + 2;
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-06-07,15,250-->
+<!--SR:2022-07-17,40,250-->
 
 What is wrong with the following code?
 ```
@@ -373,7 +373,7 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-06-07,10,230-->
+<!--SR:2022-06-27,20,230-->
 
 When can we use `parallel`?
 ?
@@ -622,7 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
-<!--SR:2022-06-07,12,250-->
+<!--SR:2022-07-11,34,250-->
 
 How is `x >= y` defined?
 ?
@@ -1158,7 +1158,7 @@ When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
-<!--SR:2022-06-07,12,250-->
+<!--SR:2022-07-11,34,250-->
 
 Which identifiers and known and unknown in the following code?
 ```

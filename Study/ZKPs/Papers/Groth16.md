@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-07,3,150-->
+<!--SR:2022-06-10,3,130-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
