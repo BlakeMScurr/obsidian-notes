@@ -107,7 +107,7 @@ Being closed under +, -, \*, and /, it contains $1+\sqrt{2}$ etc.
 Describe the automorphisms analogous to our non-rigorous motivating example with $\sqrt{2}$
 ?
 Some automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-06-06,19,210-->
+<!--SR:2022-07-16,40,210-->
 
 What is an automorphism, formally?
 ?
@@ -159,18 +159,18 @@ $= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative pro
 $= a + b\sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
 $= a + b \cdot(\pm\sqrt{2})$ since automorphisms send numbers to one of their conjugates
 So there are just 2 such automorphisms.
-<!--SR:2022-06-06,12,250-->
+<!--SR:2022-07-10,34,250-->
 
 How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
 ?
 Just draw how it acts on the conjugates of $\sqrt{2}$, since that determines how it acts on the whole field.
-<!--SR:2022-06-06,12,250-->
+<!--SR:2022-07-10,34,250-->
 
 What do the each of the automorphisms fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$ do to the conjugates of $\sqrt{2}$?
 ?
 The first leaves all conjugates in the same place.
 The second swaps $\sqrt{2}$ and $-\sqrt{2}$
-<!--SR:2022-06-06,12,250-->
+<!--SR:2022-07-10,34,250-->
 
 # Group Theory
 

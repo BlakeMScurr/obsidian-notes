@@ -173,7 +173,7 @@ template BinSum(n, ops) {
 What is binsub?
 ?
 Creates a constraint specifying that A - B = C for A, B, C binary numbers
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-06-28,22,250-->
 
 ### compconstant
 
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-06-06,4,210-->
+<!--SR:2022-06-16,10,210-->
 
 What is the code for the final check and output?
 ?
@@ -353,14 +353,14 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-06-06,7,210-->
+<!--SR:2022-06-22,16,210-->
 
 ### Mux1
 
 What are the top level constructs in Mux1?
 ?
 `template MultiMux1` and `template Mux1`
-<!--SR:2022-06-06,10,250-->
+<!--SR:2022-06-29,23,250-->
 
 What does `MultiMux1` do?
 ?
@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-06-06,9,230-->
+<!--SR:2022-06-26,20,230-->
 
 What is the code for Mux1?
 ?

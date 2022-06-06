@@ -123,7 +123,7 @@ That 1 round NIZKs are only possible for trival (BPP) languages.
 Who are the authors of GOS12?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-06-06,13,230-->
+<!--SR:2022-07-10,34,230-->
 
 What is the title of GOS12?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-06-06,9,170-->
+<!--SR:2022-06-25,19,190-->
 
 Who are the authors of GOS06?
 ?
@@ -214,7 +214,7 @@ Linear algebra with sub-linear zero-knowledge arguments
 What did Gro09 contribute?
 ?
 Given commitments to matrices, gives a sublinear proof showing their product. Arithmetic circuits can be formed using these matrices, giving a more efficient reduction than earlier proof systems for circuit satisfiability
-<!--SR:2022-06-06,14,170-->
+<!--SR:2022-06-30,24,170-->
 
 Who are the authors of Groth16?
 ?

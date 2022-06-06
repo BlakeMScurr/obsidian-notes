@@ -47,7 +47,7 @@ The exact path itself, as opposed to just the 1 bit statement of its existence.
 What is knowledge as opposed to information, roughly?
 ?
 Knowledge is information that is difficult to acquire.
-<!--SR:2022-06-06,41,250-->
+<!--SR:2022-09-17,103,250-->
 
 How can we study knowledge complexity per se, rather than instances of proof systems?
 ?
@@ -67,7 +67,7 @@ By classifying languages according to their knowledge complexity.
 How do interactive proofs relate to knowledge complexity?
 ?
 Interaction may reduce knowledge complexity.
-<!--SR:2022-06-06,41,230-->
+<!--SR:2022-09-08,94,230-->
 
 How does adding interaction reduce the knowledge complexity of deciding quadratic residuosity?
 ?
@@ -1086,7 +1086,7 @@ QNR and BL.
 Who invented the language BL?
 ?
 Manuel Blum.
-<!--SR:2022-06-06,36,250-->
+<!--SR:2022-09-04,90,250-->
 
 Why was the language BL interesting to GMR?
 ?
@@ -1307,7 +1307,7 @@ $A$ constructs $Z$ and sends it to $B$.
 What is $Z$ for?
 ?
 Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \cup S$.
-<!--SR:2022-06-06,26,230-->
+<!--SR:2022-08-05,60,230-->
 
 How is $Z$ constructed?
 ?

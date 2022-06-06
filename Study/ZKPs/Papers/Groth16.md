@@ -107,7 +107,7 @@ The construction of non-interactive cryptographic schemes, e.g., digital key sig
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
 Kili92, by Joe Kilian.
-<!--SR:2022-06-06,14,190-->
+<!--SR:2022-07-06,30,190-->
 
 What did Micali00 propose?
 ?
