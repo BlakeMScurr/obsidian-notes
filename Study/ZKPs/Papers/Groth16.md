@@ -24,7 +24,7 @@ A number of group elements.
 What is the central question of Groth16?
 ?
 How efficient can pairing based SNARGs be?
-<!--SR:2022-06-08,16,230-->
+<!--SR:2022-07-17,39,230-->
 
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
@@ -118,7 +118,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-06-08,4,130-->
+<!--SR:2022-06-14,6,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?

@@ -134,7 +134,7 @@ $$(s, s) \in R\ \forall s \in S$$
 What is the symmetry property of an equivalence relation?
 ?
 $$(t, s) \in R \implies (s, t) \in R$$
-<!--SR:2022-06-08,43,270-->
+<!--SR:2022-10-02,116,270-->
 
 What is the transitivity property of an equivalence relation?
 ?

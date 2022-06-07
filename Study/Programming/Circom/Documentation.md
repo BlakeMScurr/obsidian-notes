@@ -403,7 +403,7 @@ When dealing with large circuits.
 What is the line at the top of every circom file?
 ?
 `pragma circom 2.0.0;`
-<!--SR:2022-06-08,14,230-->
+<!--SR:2022-07-14,36,230-->
 
 What is pragma for?
 ?
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-06-08,6,170-->
+<!--SR:2022-06-19,11,170-->
 
 Where can operators be used?
 ?
@@ -677,7 +677,7 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-06-08,5,210-->
+<!--SR:2022-06-20,12,210-->
 
 What is the `^` operator?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-06-08,12,230-->
+<!--SR:2022-07-10,32,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-06-08,9,170-->
+<!--SR:2022-06-23,15,170-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -1126,7 +1126,7 @@ A compiler message meaning that what you've done is allowed but should not happe
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
-<!--SR:2022-06-08,13,250-->
+<!--SR:2022-07-13,35,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
@@ -1146,7 +1146,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-06-08,13,250-->
+<!--SR:2022-06-17,9,230-->
 
 What kinds of values are always known or unknown?
 ?

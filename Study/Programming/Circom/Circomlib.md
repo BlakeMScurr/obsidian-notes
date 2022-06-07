@@ -219,7 +219,7 @@ var i;
 What do `clsb` etc represent?
 ?
 Constant/signal least/most significant bit.
-<!--SR:2022-06-08,11,250-->
+<!--SR:2022-07-08,30,250-->
 
 How do we calculate `clsb` etc?
 ?
@@ -252,7 +252,7 @@ What does `a` do from a bitwise perspective and how?
 ?
 Zeroes each `jth` left hand bit where `i < j <= 127`.
 Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
-<!--SR:2022-06-08,11,250-->
+<!--SR:2022-07-10,32,250-->
 
 What does `b` do from a bitwise perspective and how?
 ?
@@ -304,7 +304,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-08,11,250-->
+<!--SR:2022-07-09,31,250-->
 
 What is the updating code for each loop?
 ?

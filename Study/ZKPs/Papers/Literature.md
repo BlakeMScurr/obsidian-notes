@@ -56,7 +56,7 @@ The notion of multi-prover interactive protocols, that all languages in NP have 
 What did BGKW88 see themselves as contributing?
 ?
 An interactive proof system that doesn't rely on the one way function assumption, instead relying on physical separation.
-<!--SR:2022-06-08,17,150-->
+<!--SR:2022-06-19,11,130-->
 
 ## FRS88
 
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-06-08,1,230-->
+<!--SR:2022-06-11,3,230-->
 
 What did Gro10 contribute?
 ?

@@ -171,12 +171,12 @@ How might a class be more useful than a textbook?
 ?
 In classrooms, students can raise questions at crucial points.
 A book must, in a sense answer all possible questions in advance.
-<!--SR:2022-06-08,38,230-->
+<!--SR:2022-09-03,87,230-->
 
 What are the components of a classroom lesson (in the context of IPs at a high level)?
 ?
 A classroom lesson has a *teacher* and *student* in *conversation* about a *proposition*.
-<!--SR:2022-06-08,37,230-->
+<!--SR:2022-08-28,81,230-->
 
 ### Interactive Turing Machine
 
@@ -1066,7 +1066,7 @@ If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
 RP-P, there appears to be a language, namely primality testing, which may be in RP-P (it is certainly in RP, and maybe P). A similar language would be useful to distinguish KC(0) and BPP.
-<!--SR:2022-06-08,15,230-->
+<!--SR:2022-07-16,38,230-->
 
 #### Known languages in KC(0)-BPP
 * There are 2 languages known to be in KC(0)-BPP
@@ -1312,7 +1312,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-06-08,10,150-->
+<!--SR:2022-06-23,15,150-->
 
 How large is $Z$?
 ?
@@ -1340,7 +1340,7 @@ B sends $X' \cup Y'$ to A.
 How does B reveal the random $r$ values in $Z$?
 ?
 For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = y \cdot r^2 \mod m$
-<!--SR:2022-06-08,23,230-->
+<!--SR:2022-07-27,49,230-->
 
 What is $d$?
 ?
