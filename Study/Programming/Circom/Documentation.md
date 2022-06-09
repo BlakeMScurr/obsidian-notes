@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-06-10,10,150-->
+<!--SR:2022-06-25,15,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-06-10,12,190-->
+<!--SR:2022-06-16,6,170-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -491,7 +491,7 @@ It defines global input and outputs of the circuit, so it needs to be able to sp
 What is the syntax for creating a main component?
 ?
 `component main{public [signal_list]]} = template_id(v1, ..., vn);` where `{public [signal_list]}` is optional.
-<!--SR:2022-06-10,16,250-->
+<!--SR:2022-07-23,43,250-->
 
 Which input signals in the main component are private?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-06-10,5,170-->
+<!--SR:2022-06-20,10,170-->
 
 What creates assertions?
 ?
@@ -1095,7 +1095,7 @@ Any expression except the conditional expression.
 What's an example of a `log` instruction?
 ?
 `log(123);`
-<!--SR:2022-06-10,15,250-->
+<!--SR:2022-07-19,39,250-->
 
 # Circom Insights
 ## Compiler
@@ -1104,7 +1104,7 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-06-10,6,230-->
+<!--SR:2022-06-24,14,230-->
 
 What kinds of compiler messages are there?
 ?

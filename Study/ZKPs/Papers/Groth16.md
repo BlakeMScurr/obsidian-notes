@@ -4,7 +4,7 @@
 What makes SNARGs succinct?
 ?
 Small size and low verification complexity.
-<!--SR:2022-06-10,17,210-->
+<!--SR:2022-07-20,40,210-->
 
 What is a SNARG?
 ?
@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-10,3,130-->
+<!--SR:2022-06-15,5,130-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -133,7 +133,7 @@ Constant size NIZK arguments based on progression-free sets to reduce the size o
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-06-10,17,190-->
+<!--SR:2022-07-14,34,190-->
 
 UNFINISHED
 

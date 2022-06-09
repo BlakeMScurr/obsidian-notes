@@ -98,7 +98,7 @@ What are some trivial examples of groups?
 Integers under addition.
 The group with a single element e.
 A modular arithmetic group.
-<!--SR:2022-06-10,32,230-->
+<!--SR:2022-08-19,70,230-->
 
 What are the identity and inverse of $a$ in the additive group over the integers?
 ?

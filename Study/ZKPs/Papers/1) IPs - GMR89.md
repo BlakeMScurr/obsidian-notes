@@ -77,7 +77,7 @@ It removes the need to give `m`'s factorisation, and allows a zero knowledge pro
 What is true of all known NP algorithms of quadratic residuosity?
 ?
 They exhibit `m`'s factorisation to the verifier.
-<!--SR:2022-06-10,45,250-->
+<!--SR:2022-09-26,108,250-->
 
 ## Interactive Proof Systems
 
@@ -347,7 +347,7 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-06-10,15,130-->
+<!--SR:2022-06-27,17,130-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
@@ -551,7 +551,7 @@ Transferring knowledge.
 What is MCF?
 ?
 The Model Centric Framework is a formalisation for knowledge and communication.
-<!--SR:2022-06-10,40,230-->
+<!--SR:2022-09-10,92,230-->
 
 What worldview does MCF capture?
 ?
@@ -607,7 +607,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-06-10,12,130-->
+<!--SR:2022-06-26,16,130-->
 
 What is an I-c-ensemble used for?
 ?
@@ -1197,7 +1197,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-06-10,13,130-->
+<!--SR:2022-06-28,18,130-->
 
 What is the problem with the naive QNR IP?
 ?
@@ -1390,7 +1390,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-06-10,13,210-->
+<!--SR:2022-06-19,9,190-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?
@@ -1469,7 +1469,7 @@ If $iteration \geq n$
 When does $B$ increment $iteration$?
 ?
 After checking $v$
-<!--SR:2022-06-10,23,230-->
+<!--SR:2022-08-01,52,230-->
 
 What does $B$ do if $iteration \lt n$?
 ?

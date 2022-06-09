@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-06-10,9,230-->
+<!--SR:2022-07-01,21,230-->
 
 ## e
 
