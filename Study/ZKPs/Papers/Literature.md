@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-06-09,12,130-->
+<!--SR:2022-06-26,17,130-->
 
 What did BGKW88 see themselves as contributing?
 ?

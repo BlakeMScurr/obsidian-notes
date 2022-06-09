@@ -93,7 +93,7 @@ They exhibit `m`'s factorisation to the verifier.
 What intuitive notion is NP a formalisation for?
 ?
 Theorem proving.
-<!--SR:2022-06-09,42,250-->
+<!--SR:2022-09-19,102,250-->
 
 What's the key property of proofs in NP?
 ?
@@ -1050,7 +1050,7 @@ What are the trivial relationships between KC(0) and polynomial languages and ho
 $P \subseteq KC(0),\ RP \subseteq KC(0),\ BPP \subseteq KC(0)$
 Intuitively, polynomial computation is defined as "easy" and not containing knowledge.
 All these languages can be decided with a probabilistic polynomial machine. Hence a trivial polynomial imitator machine can be constructed with an identical ouput, thus communicating zero knowledge.
-<!--SR:2022-06-09,39,250-->
+<!--SR:2022-09-18,101,250-->
 
 How much knowledge does an NP proof for a language not in BPP communicate and how do we know?
 ?
@@ -1091,7 +1091,7 @@ Manuel Blum.
 Why was the language BL interesting to GMR?
 ?
 Because it was presented with all the ingredients required to prove that $BL \in KC(0)$
-<!--SR:2022-06-09,39,250-->
+<!--SR:2022-09-15,98,250-->
 
 Why was the language BL invented?
 ?
@@ -1385,7 +1385,7 @@ Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0 ^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-06-09,24,230-->
+<!--SR:2022-06-21,12,210-->
 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?

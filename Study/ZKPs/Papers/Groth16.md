@@ -9,7 +9,7 @@ Small size and low verification complexity.
 What is a SNARG?
 ?
 Succinct non-interactive argument
-<!--SR:2022-06-09,20,250-->
+<!--SR:2022-07-29,50,250-->
 
 What is a SNARK?
 ?
@@ -92,7 +92,7 @@ A malicious prover cannot convince the verifier of a false statement.
 Describe the zero knowledge property.
 ?
 The proof does not reveal anything but the truth of the statement, in particular it does not reveal the prover's witness.
-<!--SR:2022-06-09,16,190-->
+<!--SR:2022-06-18,9,170-->
 
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
@@ -185,7 +185,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2022-06-09,10,230-->
+<!--SR:2022-07-04,25,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?

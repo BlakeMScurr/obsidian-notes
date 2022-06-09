@@ -27,7 +27,7 @@ How do you declare an input signal?
 How do you declare an output signal?
 ?
 `signal output out;` declares an output signal named `out`
-<!--SR:2022-06-09,16,250-->
+<!--SR:2022-07-20,41,250-->
 
 How do you declare an intermediate signal?
 ?
@@ -179,7 +179,7 @@ Templates.
 When are template's parameters instantiated?
 ?
 When the template is used.
-<!--SR:2022-06-09,14,230-->
+<!--SR:2022-07-12,33,230-->
 
 What is the syntax to define a template parameter?
 ?
@@ -301,7 +301,7 @@ No output signal in template.
 What does a component represent?
 ?
 An arithmetic circuit.
-<!--SR:2022-06-09,15,250-->
+<!--SR:2022-07-21,42,250-->
 
 What does a component consist of?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-06-09,7,190-->
+<!--SR:2022-06-22,13,190-->
 
 What is the `>>` operator?
 ?
@@ -865,7 +865,7 @@ i++
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
-<!--SR:2022-06-09,14,250-->
+<!--SR:2022-07-18,39,250-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-06-09,9,230-->
+<!--SR:2022-06-30,21,230-->
 
 Which signals of subcomponents are visible?
 ?

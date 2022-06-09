@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-06-09,4,250-->
+<!--SR:2022-06-11,2,230-->
 
 What is the code for `BinSum`?
 ?
@@ -180,7 +180,7 @@ Creates a constraint specifying that A - B = C for A, B, C binary numbers
 What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
-<!--SR:2022-06-09,12,250-->
+<!--SR:2022-07-13,34,250-->
 
 What are the sections in compconstant?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-06-09,4,190-->
+<!--SR:2022-06-12,3,170-->
 
 What are the variables in compconstant?
 ?
@@ -234,7 +234,7 @@ smsb = in[i*2+1];
 What is the value of each part, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
-<!--SR:2022-06-09,12,250-->
+<!--SR:2022-07-13,34,250-->
 
 What does `a` look like and what is its formula?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-06-09,6,170-->
+<!--SR:2022-06-12,3,150-->
 
 ## g-m
 
@@ -370,7 +370,7 @@ Selects 1 of 2 length n arrays.
 What does `Mux1` do?
 ?
 Selects 1 of 2 values.
-<!--SR:2022-06-09,12,250-->
+<!--SR:2022-07-12,33,250-->
 
 What is the code for MultiMux1?
 ?
