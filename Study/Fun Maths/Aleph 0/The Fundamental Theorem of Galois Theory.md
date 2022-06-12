@@ -33,7 +33,7 @@ $(\sqrt{2})^3 = 2\sqrt{2}$
 What does it mean to say that $\sqrt{2}$ and $-\sqrt{2}$ are conjugate over $\mathbb{Q}$?
 ?
 Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ with $-\sqrt{2}$ will leave the equation holding true.
-<!--SR:2022-06-12,20,190-->
+<!--SR:2022-07-23,41,190-->
 
 ??? Does this mean that we can construct expressions with non rational coefficients for which $\sqrt{2}$ and $-\sqrt{2}$ are not conjugate?
 
@@ -91,7 +91,7 @@ Any set where you can add, subtract, multiply, and divide elements.
 Name a field (basic, but highly relevant to Galois theory)
 ?
 The rational numbers
-<!--SR:2022-06-12,27,250-->
+<!--SR:2022-08-15,64,250-->
 
 What can't you do in a field?
 ?
@@ -131,7 +131,7 @@ The set of all automorphisms of $F$.
 What is the additional property of an automorphism fixing $\mathbb{Q}$?
 ?
 $\sigma(x) = x,\ \forall x \in \mathbb{Q}$
-<!--SR:2022-06-11,26,250-->
+<!--SR:2022-08-17,66,250-->
 
 What is $Aut\ F/\mathbb{Q}$?
 ?

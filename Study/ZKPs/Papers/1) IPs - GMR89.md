@@ -72,7 +72,7 @@ Interaction may reduce knowledge complexity.
 How does adding interaction reduce the knowledge complexity of deciding quadratic residuosity?
 ?
 It removes the need to give `m`'s factorisation, and allows a zero knowledge proof.
-<!--SR:2022-06-11,46,250-->
+<!--SR:2022-10-06,116,250-->
 
 What is true of all known NP algorithms of quadratic residuosity?
 ?
@@ -103,7 +103,7 @@ That proofs are easy to verify, i.e., they can be verified in polynomial time.
 What "physical" parts does NP consist of?
 ?
 A prover, verifier, input tape, and communication tape.
-<!--SR:2022-06-11,41,230-->
+<!--SR:2022-09-11,91,230-->
 
 What are NP's prover and verifier?
 ?
@@ -125,7 +125,7 @@ What are the 3 defining features of theorem proving for GMR?
 It must be possible to prove a true theorem.
 It must be impossible to prove a false theorem.
 It must be easier to verify a proof than construct it originally.
-<!--SR:2022-06-12,42,230-->
+<!--SR:2022-09-17,97,230-->
 
 What, intuitively, is the difference between a proof and a computation, for GMR?
 ?
@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-06-12,12,150-->
+<!--SR:2022-07-02,20,150-->
 
 ### Interactive Proof System Definition
 
@@ -516,7 +516,7 @@ They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, a
 How do classes AM and NP compare?
 ?
 $L \in AM \implies L \in NP$ for a random oracle
-<!--SR:2022-06-12,18,190-->
+<!--SR:2022-07-19,37,190-->
 
 How do classes AM and IP compare?
 ?
@@ -617,7 +617,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The language accepted by the probabilistic computation.
-<!--SR:2022-06-12,10,190-->
+<!--SR:2022-07-03,21,190-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-11,10,170-->
+<!--SR:2022-06-16,4,150-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -1056,7 +1056,7 @@ How much knowledge does an NP proof for a language not in BPP communicate and ho
 ?
 More than zero.
 An NP prover sends one message. If the message released no knowledge then it would be imitable by a probabilistic turing machine, and therefore the language would be in BPP.
-<!--SR:2022-06-11,33,230-->
+<!--SR:2022-08-24,73,230-->
 
 Why is KC(0)-BPP of interest to GMR?
 ?
@@ -1380,7 +1380,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-06-11,11,170-->
+<!--SR:2022-07-04,22,170-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1430,7 +1430,7 @@ $A$ checks the form and size of $X' \cup Y'$. If those are invalid halts and rej
 What is $v$?
 ?
 $\mathbb{Q}_m(x)$ calculated by $A$
-<!--SR:2022-06-11,24,230-->
+<!--SR:2022-08-07,56,230-->
 
 What should $|X' \cup Y'|$ be?
 ?

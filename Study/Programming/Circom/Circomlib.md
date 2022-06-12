@@ -68,7 +68,7 @@ The `nbits` function and the `BinSum` template.
 Does `BinSum` check that inputs are binary?
 ?
 No.
-<!--SR:2022-06-12,7,230-->
+<!--SR:2022-06-28,16,230-->
 
 What does `nbits` do?
 ?
@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-06-11,2,230-->
+<!--SR:2022-06-19,7,230-->
 
 What is the code for `BinSum`?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-06-12,3,170-->
+<!--SR:2022-06-18,6,170-->
 
 What are the variables in compconstant?
 ?
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-11,4,230-->
+<!--SR:2022-06-23,11,230-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-06-12,3,150-->
+<!--SR:2022-06-17,5,150-->
 
 ## g-m
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-12,6,170-->
+<!--SR:2022-06-22,10,170-->
 
 ## p-s
 

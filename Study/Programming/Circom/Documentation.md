@@ -348,7 +348,7 @@ component main{public[in]} = Main();
 ```
 ?
 `c`'s output is accessed before one of its inputs.
-<!--SR:2022-06-11,17,250-->
+<!--SR:2022-07-26,44,250-->
 
 What's wrong with the following code and what error message does it produce?
 ```
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-06-12,14,230-->
+<!--SR:2022-07-18,36,230-->
 
 What is the conditional expression?
 ?

@@ -12,7 +12,7 @@ The Knowledge Complexity of Interactive Proof-Systems.
 Who are the authors of GMR89?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff
-<!--SR:2022-06-12,40,210-->
+<!--SR:2022-08-31,80,210-->
 
 What does GMR89 contribute?
 ?
@@ -115,7 +115,7 @@ What does GO94 show?
 ?
 Classifies and defines two new definitions of zero knowledge: auxiliary input, and simultation, and shows that blackbox-simulation -> auxiliary -> GMR definition, and that composition of auxiliary gives auxiliary.
 That 1 round NIZKs are only possible for trival (BPP) languages.
-<!--SR:2022-06-12,8,170-->
+<!--SR:2022-06-26,14,170-->
 
 
 # Pairing Based Snarks
@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-06-11,17,170-->
+<!--SR:2022-07-15,33,170-->
 
 What did GOS12 contribute?
 ?
@@ -152,12 +152,12 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-06-11,11,130-->
+<!--SR:2022-06-18,6,130-->
 
 Who are the authors of Gro06?
 ?
 Jens Groth
-<!--SR:2022-06-12,25,250-->
+<!--SR:2022-08-14,63,250-->
 
 What is the title of Gro06?
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-06-11,3,230-->
+<!--SR:2022-06-15,3,210-->
 
 What did Gro10 contribute?
 ?

@@ -65,7 +65,7 @@ template HashLeftRight(){
 	out <== mimc.outs[0];
 }
 ```
-<!--SR:2022-06-12,6,210-->
+<!--SR:2022-06-25,13,210-->
 
 What does DualMux do?
 ?

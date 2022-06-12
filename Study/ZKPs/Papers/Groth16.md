@@ -29,7 +29,7 @@ How efficient can pairing based SNARGs be?
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
 Circuit satisfiability, that it is NP-complete.
-<!--SR:2022-06-11,20,250-->
+<!--SR:2022-08-03,52,250-->
 
 What kind of pairings does Groth16 use and why?
 ?
@@ -65,7 +65,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-06-11,12,150-->
+<!--SR:2022-07-01,19,150-->
 
 # Introduction
 
