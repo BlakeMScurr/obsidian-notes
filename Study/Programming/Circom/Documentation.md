@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-06-13,10,150-->
+<!--SR:2022-06-19,6,130-->
 
 # Operators
 
@@ -594,7 +594,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-06-13,16,230-->
+<!--SR:2022-07-20,37,230-->
 
 What is the `val(x)` function for?
 ?
@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-06-13,17,250-->
+<!--SR:2022-06-24,11,230-->
 
 Which operators impose constraints?
 ?
@@ -843,7 +843,7 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-06-13,16,230-->
+<!--SR:2022-07-24,41,230-->
 
 What is the syntax for `for` loops?
 ?
@@ -1090,7 +1090,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-06-13,17,250-->
+<!--SR:2022-07-25,42,250-->
 
 What's an example of a `log` instruction?
 ?

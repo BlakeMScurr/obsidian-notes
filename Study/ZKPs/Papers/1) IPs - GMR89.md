@@ -130,7 +130,7 @@ It must be easier to verify a proof than construct it originally.
 What, intuitively, is the difference between a proof and a computation, for GMR?
 ?
 A proof has a is easier to verify than compute, whereas a computation must be entirely rerun to be verified.
-<!--SR:2022-06-13,43,250-->
+<!--SR:2022-09-29,108,250-->
 
 ### Moving from NP to IPs
 
@@ -388,7 +388,7 @@ $a = x^2\ mod\ m$ for some $x \in \mathbb{Z}^*_m$
 $a \in \mathbb{Z}^*_m$ is a quadratic non-residue if . . . ?
 ?
 $a \neq x^2\ mod\ m$ for all $x \in \mathbb{Z}^*_m$
-<!--SR:2022-06-13,43,250-->
+<!--SR:2022-09-24,103,250-->
 
 Is $QNR \in NP$? How do we know?
 ?
@@ -1140,7 +1140,7 @@ No unproven computational complexity assumptions.
 What is the Jacobi symbol?
 ?
 $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates to 1 or -1 and gives information on the residuosity of x in $\mathbb{Z}^*_m$
-<!--SR:2022-06-13,34,230-->
+<!--SR:2022-06-30,17,210-->
 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
@@ -1474,7 +1474,7 @@ After checking $v$
 What does $B$ do if $iteration \lt n$?
 ?
 Goes back to step 1.
-<!--SR:2022-06-13,25,230-->
+<!--SR:2022-08-10,58,230-->
 #### It is a Proof System
 ##### Remark 2
 ###### Working it out

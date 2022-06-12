@@ -39,7 +39,7 @@ Assymetric pairings for higher efficiency.
 What does a Groth16 SNARG consist of?
 ?
 3 group elements.
-<!--SR:2022-06-13,23,250-->
+<!--SR:2022-08-09,57,250-->
 
 What does verifying a Groth16 SNARG require?
 ?
@@ -102,7 +102,7 @@ To non-interactive zero knowledge proofs (NIZK) in the common reference string m
 Where are NIZKs useful, according to Groth16?
 ?
 The construction of non-interactive cryptographic schemes, e.g., digital key signatures, and CCA-secure public key encryption.
-<!--SR:2022-06-13,19,190-->
+<!--SR:2022-06-23,10,170-->
 
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
@@ -139,9 +139,69 @@ UNFINISHED
 
 # Preliminaries
 ## Notation
-UNFINISHED
+
+What does $\approx$ mean, roughly?
+?
+That two functions approach each other exponentially.
+
+What is the definition of $\approx$?
+?
+Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(lambda)| = \lambda^{-\omega(1)}$
+
+What is the limit definition of $\omega$?
+?
+$lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
+
+What is the formal definition of $\omega$?
+?
+$\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
+
+What does $\lambda$ represent, and what do its values mean?
+?
+$\lambda$ is the security parameter, and as it grows we want higher security.
+
+What does $y = A(x;r)$ mean?
+?
+That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
+
+What does $y \leftarrow A(x)$ mean?
+?
+We pick randomness $r$ at random and set $y = A(x;r)$.
+
+What does $y \leftarrow S$ mean?
+?
+We pick $y$ uniformly at random from set $S$.
+
+What do we assume about random sampling?
+?
+That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
+
+What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
+?
+$\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the same input (including random coins).
+
 ## Bilinear Groups
-UNFINISHED
+
+What are the parts of a bilinear group?
+?
+$(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
+
+What is $p$?
+?
+A prime number.
+
+What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
+?
+Groups of prime order $p$.
+
+What is $e$?
+?
+$e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
+
+
+
+
+
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 UNFINISHED
 ## Quadratic Arithmetic Programs

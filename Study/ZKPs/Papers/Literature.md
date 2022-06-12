@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-06-13,10,150-->
+<!--SR:2022-06-28,15,150-->
 
 What did GOS06 contribute?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-06-13,10,150-->
+<!--SR:2022-06-18,5,130-->
 
 What did Gro06 contribute?
 ?
@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-06-13,6,150-->
+<!--SR:2022-06-16,3,130-->
 
 What did GS12 contribute?
 ?

@@ -7,9 +7,25 @@
         "id": "885d9b3c1e04d7da",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
-        }
+          "type": "markdown",
+          "state": {
+            "file": "Study/ZKPs/Papers/Groth16.md",
+            "mode": "source"
+          }
+        },
+        "group": "4d46c827a2a261e0"
+      },
+      {
+        "id": "f0efb95ffb114456",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Study/ZKPs/Papers/Groth16.md",
+            "mode": "preview"
+          }
+        },
+        "group": "4d46c827a2a261e0"
       }
     ],
     "direction": "vertical"
@@ -65,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Study/ZKPs/Papers/Groth16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,10 +109,10 @@
   },
   "active": "885d9b3c1e04d7da",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/Programming/Circom/Documentation.md",
-    "Study/ZKPs/Papers/Groth16.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Software/Tornado Cash.md",

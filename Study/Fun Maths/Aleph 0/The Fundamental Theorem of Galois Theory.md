@@ -102,7 +102,7 @@ What is $\mathbb{Q}(\sqrt(2)$? What does it contain?
 ?
 The smallest field containing the rationals and $\sqrt{2}$.
 Being closed under +, -, \*, and /, it contains $1+\sqrt{2}$ etc.
-<!--SR:2022-06-13,27,250-->
+<!--SR:2022-08-20,68,250-->
 
 Describe the automorphisms analogous to our non-rigorous motivating example with $\sqrt{2}$
 ?
