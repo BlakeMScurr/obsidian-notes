@@ -17,7 +17,7 @@ Field elements in $\mathbb{Z}/p\mathbb{Z}$
 What are the kinds of signals?
 ?
 Input, output, and intermediate.
-<!--SR:2022-06-11,15,210-->
+<!--SR:2022-07-15,33,210-->
 
 How do you declare an input signal?
 ?
@@ -193,7 +193,7 @@ template tempid (param_1, param2) {
 What can templates not include?
 ?
 Local functions or template definitions.
-<!--SR:2022-06-11,17,250-->
+<!--SR:2022-07-26,44,250-->
 
 What is wrong with the following code, and what error will it generate?
 ```
@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-06-11,16,230-->
+<!--SR:2022-07-21,39,230-->
 
 When do we use `--inspect`?
 ?
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-06-12,15,210-->
+<!--SR:2022-07-16,34,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-06-11,14,230-->
+<!--SR:2022-07-17,35,230-->
 
 What does a function look like?
 ?
@@ -642,12 +642,12 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-06-11,13,210-->
+<!--SR:2022-07-14,32,210-->
 
 What is the `\` operator?
 ?
 Quotient after integer devision.
-<!--SR:2022-06-12,17,250-->
+<!--SR:2022-07-25,43,250-->
 
 What is the `%` operator?
 ?
@@ -657,7 +657,7 @@ Remainder after integer division.
 What are the arithmetic/assignment operators?
 ?
 `+= -= *= **= /= \= %= ++ --`
-<!--SR:2022-06-12,16,230-->
+<!--SR:2022-07-22,40,230-->
 
 What are the bitwise operators?
 ?
@@ -837,7 +837,7 @@ Because `x` holds the algebraic expression `a*a` which is used to generate const
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
-<!--SR:2022-06-12,16,250-->
+<!--SR:2022-07-24,42,250-->
 
 What is the syntax `if` statements?
 ?
@@ -1139,7 +1139,7 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-06-11,7,230-->
+<!--SR:2022-06-29,17,230-->
 
 ## Unknowns
 

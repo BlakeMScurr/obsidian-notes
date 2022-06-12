@@ -69,7 +69,7 @@ In additive notation we have n summands of a:
 $$
 na = a + a + ... + a
 $$
-<!--SR:2022-06-12,47,210-->
+<!--SR:2022-09-20,100,210-->
 
 How do we know that $a_1a_2...a_n$ is an unambiguous expression for a group?
 ?
@@ -84,7 +84,7 @@ $a^na^m = a^{n+m}$
 Additive:
 $(-n)a = n(-a)$
 $na + ma = (n + m)a$
-<!--SR:2022-06-12,12,190-->
+<!--SR:2022-07-05,23,190-->
 
 What is "0-fold" of $a$ in both notations?
 ?
