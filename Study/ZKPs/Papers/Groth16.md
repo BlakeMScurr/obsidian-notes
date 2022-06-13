@@ -153,11 +153,13 @@ That two functions approach each other exponentially.
 
 What is the definition of $\approx$?
 ?
-Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(lambda)| = \lambda^{-\omega(1)}$
+Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
+<!--SR:2022-06-17,4,250-->
 
 What is the limit definition of $\omega$?
 ?
 $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
+<!--SR:2022-06-15,2,250-->
 
 What is the formal definition of $\omega$?
 ?
@@ -355,6 +357,7 @@ What is $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
+<!--SR:2022-06-14,1,230-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -379,6 +382,7 @@ What is the definition of perfect completeness?
 ?
 For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w) : \textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
+<!--SR:2022-06-14,1,230-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -390,6 +394,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
+<!--SR:2022-06-14,1,230-->
 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
@@ -428,8 +433,11 @@ What inputs does the adversary in the definition of computational soundness acce
 ?
 The relation, the auxilary input, and the common reference string.
 $(R, z, \sigma)$
+<!--SR:2022-06-16,3,250-->
 
 ??? Why does it not also accept the simulation trapdoor? Is it because then it could create any proof it likes.
+
+??? Why does it have the auxilary input? What's the point of the auxilary input, in fact?
 
 What is computational knowledge soundness, roughly?
 ?
@@ -448,7 +456,9 @@ Full access to the adversary's state, including any random coins.
 
 What is the definition of computational knowledge soundness?
 ?
+For all non-uniform polynomial time adversaries $\mathcal{A}$ there exists a non-uniform polynomial time extractor $\mathcal{X_A} such that:
 $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); ((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma): (\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
+<!--SR:2022-06-14,1,230-->
 
 ## Quadratic Arithmetic Programs
 
