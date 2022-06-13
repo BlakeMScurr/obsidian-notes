@@ -69,6 +69,8 @@ Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
 
 # Introduction
 
+## Prior Work
+
 Who introduced zero-knowledge proofs?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
@@ -137,6 +139,10 @@ Constructing a set of polynomial equations and using pairings to efficiently ver
 
 UNFINISHED
 
+## Our Contribution
+
+UNFINISHED
+
 # Preliminaries
 ## Notation
 
@@ -198,12 +204,178 @@ What is $e$?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
 
+What is a property of generators of our bilinear group?
+?
+if $G$ is a generator of $\mathbb{G}_1$ and $H$ is a generator of $\mathbb{G}_2$ then $e(G, H)$ is a generator of $\mathbb{G}_T$.
 
+What are the generic bilinear group operations?
+?
+Group operations for the groups.
+Evaluating the bilinear map.
+Deciding the equality of group elements.
+Sampling generators of the groups.
 
+What do we assume about the bilinear group operations?
+?
+That there are efficient algorithms for computing them.
 
+What are the names for the types of bilinear groups?
+?
+Type I, Type II, and Type III
+
+Who classified the types of bilinear groups?
+?
+Galbraith et al GPS08
+
+What is a Type I bilinear group?
+?
+Where $\mathbb{G}_1 = \mathbb{G}_2$
+
+What are Type II bilinear groups?
+?
+Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable non-trivial homomorphism $\psi : \mathbb{G}_1 \rightarrow \mathbb{G}_2$
+
+What are Type III bilinear groups?
+?
+Where there is no efficiently non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
+
+What is special about Type III bilinear groups?
+?
+They are the most efficient type of bilinear groups, and hence the most relevant for practical applications.
+
+For which type of bilinear group is the lower bound given?
+?
+Type III
+
+For which type of bilinear group does the construction work?
+?
+All 3 types
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
-UNFINISHED
+
+### Algorithms
+
+What is $\mathcal{R}$?
+?
+A relation generator that, given $\lambda$ in unary returns a polynomial time decidable binary relation $R$.
+
+What is $\phi$?
+?
+The statement.
+
+What is $w$?
+?
+The witness.
+
+What kinds of pairs are in $R$?
+?
+$(\phi, w)$, i.e., statement and witness
+
+What is $\mathcal{R}_\lambda$?
+?
+The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
+
+What is $z$?
+?
+Auxilliary information that the relation generator might output, which will be given to the adversary.
+
+What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
+?
+A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
+
+What is $\textbf{Setup}$?
+?
+$(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
+The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
+
+??? why don't we write the setup as explicitly taking the security parameter?
+
+What is $\textbf{Prove}$?
+?
+$\pi \leftarrow\textbf{Prove}(R, \sigma, \phi, w)$
+The prover algorithm takes as input the common reference string and $(\phi, w) \in R$ and outputs the argument $\pi$.
+
+??? Why do we say the prover algorithm accepts the relation?
+
+What is $\sigma$?
+?
+The common reference string.
+
+What is $\tau$?
+?
+The simulation trapdoor.
+
+What is $\pi$?
+?
+The argument.
+
+What is $\textbf{Vfy}$?
+?
+$0/1 \leftarrow \textbf{Vfy}(R, \sigma, \phi, \pi)$
+The verification algorithm takes as input the common reference string, the statement, and the argument, and returns 0 (reject) or 1 (accept).
+
+What is $\textbf{Sim}$?
+?
+$\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
+The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
+
+??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
+
+### Properties
+
+What is a non-interactive argument?
+?
+We say $(\textbf{Setup, PRove, Vfy)})$ is a non-interactive for $\mathcal{R}$ if it has perfect completeness and computation soundness.
+
+What is a perfect non-interactive zero-knowledge argument of knowledge?
+?
+We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zero-knowledge argument of knowledge for $\mathcal{R}$ if it has perfect completeness, perfect zero knowledge, and computational knowledge soundness.
+
+What is perfect completeness, roughly?
+?
+Completeness says that, given any true statement, an honest prover should be able to convince an honest verifier.
+
+What is the definition of perfect completeness?
+?
+For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
+$Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w) : \textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
+
+What is perfect zero knowledge, roughly?
+?
+An argument is zero knowledge if it does not leak any information besides the truth of the statement.
+
+What is the definition of perfect zero-knowledge?
+?
+We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
+$Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
+$Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
+
+What does the adversary represent in the definition of perfect zero knowledge?
+?
+A malicious verifier trying to learn extra information from the proof.
+
+What does the adversary in the definition of perfect zero knowledge do?
+?
+Tries to distinguish between the proofs output by the prover and the simulator.
+
+What inputs does the adversary in the definition of perfect zero knowledge get?
+?
+The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
+$R, z, \sigma, \tau, \pi$
+
+What is computational soundness, roughly?
+?
+We say a set of algorithms is sound if it is not possible to prove a false statement, i.e., convince the verifier if no witness exists.
+
+What is the definition of computational soundness?
+?
+Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
+$Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \sigma \notin L_R \land \textbf(R, \sigma, \phi, \pi) = 1] \approx 0$
+
+What does the adversary represent in the definition of computational soundness?
+?
+A malicious prover trying to find an acce
+
 ## Quadratic Arithmetic Programs
 
 ### Circuits

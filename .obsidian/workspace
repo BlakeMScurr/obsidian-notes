@@ -12,20 +12,7 @@
             "file": "Study/ZKPs/Papers/Groth16.md",
             "mode": "source"
           }
-        },
-        "group": "4d46c827a2a261e0"
-      },
-      {
-        "id": "f0efb95ffb114456",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Study/ZKPs/Papers/Groth16.md",
-            "mode": "preview"
-          }
-        },
-        "group": "4d46c827a2a261e0"
+        }
       }
     ],
     "direction": "vertical"
@@ -65,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 193.49999809265137
+    "width": 193.49999809265137,
+    "collapsed": true
   },
   "right": {
     "id": "df608e470bfd07c0",
