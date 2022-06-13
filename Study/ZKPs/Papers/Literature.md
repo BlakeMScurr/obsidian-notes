@@ -167,7 +167,7 @@ Simulation-sound NIZK proofs for a practical language and constant size group si
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-06-14,13,190-->
+<!--SR:2022-07-11,27,190-->
 
 Who are the authors of GS12?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-06-14,10,150-->
+<!--SR:2022-06-20,6,130-->
 
 What did Gro09 contribute?
 ?

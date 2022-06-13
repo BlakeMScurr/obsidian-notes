@@ -42,7 +42,7 @@ A measure of the additional knowledge conveyed by a proof.
 What extra information does a standard NP proof of a Hamiltonian path convey?
 ?
 The exact path itself, as opposed to just the 1 bit statement of its existence.
-<!--SR:2022-06-14,44,250-->
+<!--SR:2022-09-27,105,250-->
 
 What is knowledge as opposed to information, roughly?
 ?
@@ -1043,7 +1043,7 @@ For proving the correctness of cryptographic protocols in a modular way.
 How, in an abstract sense, can we study the characteristics of KC(0)?
 ?
 By comparing it to other language classes.
-<!--SR:2022-06-14,32,230-->
+<!--SR:2022-08-27,74,230-->
 
 What are the trivial relationships between KC(0) and polynomial languages and how do we know?
 ?
@@ -1190,7 +1190,7 @@ $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
 What are type 2 numbers in GMR's zk QNR IP?
 ?
 $y \cdot r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-06-14,17,230-->
+<!--SR:2022-07-23,39,230-->
 
 What is the basic (pre zk) idea of GMR's zk QNR IP?
 ?
@@ -1355,7 +1355,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-06-14,19,190-->
+<!--SR:2022-06-22,8,170-->
 
 How does $B$ reveal $D$?
 ?
@@ -1435,7 +1435,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-06-14,25,230--> 
+<!--SR:2022-06-25,11,210--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?
@@ -1459,7 +1459,7 @@ $B$ checks $v$, halts if it detects cheating, updates $iteration$, accepts if fi
 How does $B$ check $v$?
 ?
 $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
-<!--SR:2022-06-14,26,230-->
+<!--SR:2022-08-16,63,230-->
 
 When does $B$ accept?
 ?

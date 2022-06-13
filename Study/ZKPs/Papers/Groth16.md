@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-06-14,9,190-->
+<!--SR:2022-07-02,18,190-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -120,7 +120,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-06-14,6,130-->
+<!--SR:2022-06-20,6,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -130,7 +130,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-06-14,10,170-->
+<!--SR:2022-07-03,19,170-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -174,6 +174,7 @@ $\lambda$ is the security parameter, and as it grows we want higher security.
 What does $y = A(x;r)$ mean?
 ?
 That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
+<!--SR:2022-06-18,4,250-->
 
 What does $y \leftarrow A(x)$ mean?
 ?
@@ -183,11 +184,12 @@ We pick randomness $r$ at random and set $y = A(x;r)$.
 What does $y \leftarrow S$ mean?
 ?
 We pick $y$ uniformly at random from set $S$.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-16,2,230-->
 
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
+<!--SR:2022-06-15,1,230-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -215,6 +217,7 @@ Groups of prime order $p$.
 What is $e$?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
+<!--SR:2022-06-15,1,230-->
 
 What is a property of generators of our bilinear group?
 ?
@@ -242,7 +245,7 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-17,3,230-->
 
 What is a Type I bilinear group?
 ?
@@ -257,11 +260,12 @@ Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable no
 What are Type III bilinear groups?
 ?
 Where there is no efficiently computable non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-16,2,230-->
 
 What is special about Type III bilinear groups?
 ?
 They are the most efficient type of bilinear groups, and hence the most relevant for practical applications.
+<!--SR:2022-06-18,4,250-->
 
 For which type of bilinear group is the lower bound given?
 ?
@@ -307,14 +311,14 @@ The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
 What is $z$?
 ?
 Auxilliary information that the relation generator might output, which will be given to the adversary.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-17,3,230-->
 
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
 <!--SR:2022-06-17,4,250-->
 
-What is $\textbf{Setup}$?
+What is the definition of $\textbf{Setup}$?
 ?
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
 The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
@@ -322,16 +326,18 @@ The setup takes as input the security paramater $\lambda$ and a relation $R \in 
 
 ??? why don't we write the setup as explicitly taking the security parameter?
 
-What is $\textbf{Prove}$?
+What is the definition of $\textbf{Prove}$?
 ?
 $\pi \leftarrow\textbf{Prove}(R, \sigma, \phi, w)$
 The prover algorithm takes as input the common reference string and $(\phi, w) \in R$ and outputs the argument $\pi$.
+<!--SR:2022-06-18,4,250-->
 
 ??? Why do we say the prover algorithm accepts the relation?
 
 What is $\sigma$?
 ?
 The common reference string.
+<!--SR:2022-06-18,4,250-->
 
 What is $\tau$?
 ?
@@ -341,23 +347,24 @@ The simulation trapdoor.
 What is $tau$ used for?
 ?
 The simulator gets access to $tau$ so it can generate proofs indistinguishable from actual proofs, so that we can prove that an argument is zero knowledge.
+<!--SR:2022-06-18,4,250-->
 
 What is $\pi$?
 ?
 The argument.
 <!--SR:2022-06-15,2,250-->
 
-What is $\textbf{Vfy}$?
+What is the definition of $\textbf{Vfy}$?
 ?
 $0/1 \leftarrow \textbf{Vfy}(R, \sigma, \phi, \pi)$
 The verification algorithm takes as input the common reference string, the statement, and the argument, and returns 0 (reject) or 1 (accept).
 <!--SR:2022-06-15,2,250-->
 
-What is $\textbf{Sim}$?
+What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-16,2,230-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -381,8 +388,10 @@ Completeness says that, given any true statement, an honest prover should be abl
 What is the definition of perfect completeness?
 ?
 For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
-$Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w) : \textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-06-14,1,230-->
+$Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
+$\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
+$\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
+<!--SR:2022-06-17,3,230-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -394,7 +403,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-15,1,210-->
 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
@@ -404,12 +413,13 @@ A malicious verifier trying to learn extra information from the proof.
 What does the adversary in the definition of perfect zero knowledge do?
 ?
 Tries to distinguish between the proof from prover and the proof from simulator.
+<!--SR:2022-06-18,4,250-->
 
 What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-15,1,210-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -422,12 +432,12 @@ What is the definition of computational soundness?
 ?
 Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
 $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \sigma \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-16,2,230-->
 
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-15,1,210-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -442,6 +452,7 @@ $(R, z, \sigma)$
 What is computational knowledge soundness, roughly?
 ?
 A strengthening of the notion of soundness, where there is an extractor that can compute a witness whenver an adversary produces a valid argument.
+<!--SR:2022-06-18,4,250-->
 
 ??? Why does the extractor in the definition for computational knowledge soundness not need the simulation trapdoor?
 
@@ -452,13 +463,18 @@ A strengthening of the notion of soundness, where there is an extractor that can
 What does the extractor in the definition of computational knowledge soundness have access to?
 ?
 Full access to the adversary's state, including any random coins.
-<!--SR:2022-06-14,1,230-->
+<!--SR:2022-06-15,1,210-->
 
 What is the definition of computational knowledge soundness?
 ?
-For all non-uniform polynomial time adversaries $\mathcal{A}$ there exists a non-uniform polynomial time extractor $\mathcal{X_A} such that:
-$Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); ((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma): (\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-14,1,230-->
+For all non-uniform polynomial time adversaries $\mathcal{A}$ there exists a non-uniform polynomial time extractor $\mathcal{X_A}$ such that:
+$Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
+$(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
+$((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
+$(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
+<!--SR:2022-06-15,1,210-->
+
+### Definitions
 
 ## Quadratic Arithmetic Programs
 

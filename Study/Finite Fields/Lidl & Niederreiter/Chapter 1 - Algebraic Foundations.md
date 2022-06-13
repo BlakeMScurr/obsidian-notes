@@ -145,7 +145,7 @@ How does an equivalence relation induce a partition of $S$?
 ?
 A partition of $S$ is a representation of $S$ as a union of mutually disjoint subsets of $S$.
 The union of equivalence classes is equivalent to $S$ because of reflexivity (all elements are in a class at least containing themselves), and the classes are mutually disjoint because of symmetry and transitivity (if any two elements are equivalent, they share the same equivalence class with all their other equivalents).
-<!--SR:2022-06-14,43,230-->
+<!--SR:2022-09-23,101,230-->
 
 What is the definition of an equivalence class?
 ?

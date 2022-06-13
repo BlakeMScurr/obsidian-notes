@@ -22,7 +22,7 @@ Input, output, and intermediate.
 How do you declare an input signal?
 ?
 `signal input in;` declares an input signal named `in`
-<!--SR:2022-06-14,18,230-->
+<!--SR:2022-07-28,44,230-->
 
 How do you declare an output signal?
 ?
@@ -106,7 +106,7 @@ Signals are immutable, so assigning to `out` twice gives a compilation error.
 What operators can be used to assign signals?
 ?
 `<--`, `<==`, `-->`, or `==>`.
-<!--SR:2022-06-14,18,230-->
+<!--SR:2022-07-27,43,230-->
 
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get from misusing signals
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-06-14,15,190-->
+<!--SR:2022-07-16,32,190-->
 
 ### Components
 
