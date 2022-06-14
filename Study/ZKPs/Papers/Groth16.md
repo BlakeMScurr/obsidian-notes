@@ -619,6 +619,46 @@ In what sense are addition gates handled "for free?"
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
 <!--SR:2022-06-24,28,250-->
 
+### Formulating QAPs
+
+What can we reformulate arithmetic constraints as, and what assumption do we have to make?
+?
+As a quadratic arithmetic program.
+That the field $\mathbb{F}$ is large enough.
+
+Who introduced the idea of quadratic arithmetic programs?
+?
+Gennaro et al GGPR13.
+
+What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
+?
+Picking a random vector.
+Forming $t(x)$.
+Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
+Expressing the constraint as an evaluation of a polynomial.
+Refomulating the polynomial evaluation over values mod $t(x)$.
+
+What is the random vector?
+?
+Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
+
+How is $t(x)$ defined?
+?
+$t(x) = \prod_{q=1}^n(x-r_q)$
+
+What are $u_i(x), v_i(x), w_i(x)$ and how are they defined?
+?
+They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
+$u_i(r_q) = u_{i,q}$
+$v_i(r_q) = v_{i,q}$
+$w_i(r_q) = w_{i,q}$
+
+??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
+
+What is the condition that follows from an arithmetic constraint's constants being replaced by polynomials?
+?
+$$\sum_{i=0}^m$$
+
 UNFINISHED
 ## Linear Interactive Proofs
 UNFINISHED
