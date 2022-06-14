@@ -139,7 +139,7 @@ $$(t, s) \in R \implies (s, t) \in R$$
 What is the transitivity property of an equivalence relation?
 ?
 $$(s, t),\ (t, u) \in R \implies (s, u) \in R$$
-<!--SR:2022-06-15,43,230-->
+<!--SR:2022-09-25,102,230-->
 
 How does an equivalence relation induce a partition of $S$?
 ?

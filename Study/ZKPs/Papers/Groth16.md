@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-15,5,130-->
+<!--SR:2022-06-22,7,130-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -159,7 +159,7 @@ Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \
 What is the limit definition of $\omega$?
 ?
 $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-21,6,250-->
 
 What is the formal definition of $\omega$?
 ?
@@ -169,7 +169,7 @@ $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
 What does $\lambda$ represent, and what do its values mean?
 ?
 $\lambda$ is the security parameter, and as it grows we want higher security.
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-20,5,250-->
 
 What does $y = A(x;r)$ mean?
 ?
@@ -189,7 +189,7 @@ We pick $y$ uniformly at random from set $S$.
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-18,3,230-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -202,22 +202,22 @@ This includes the input of both algorithms $(R, z, \sigma)$.
 What are the parts of a bilinear group?
 ?
 $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-21,6,250-->
 
 What is $p$?
 ?
 A prime number.
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-21,6,250-->
 
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
 Groups of prime order $p$.
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-20,5,250-->
 
-What is $e$?
+What is $e$ and what is its definition?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-19,4,250-->
 
 What is a property of generators of our bilinear group?
 ?
@@ -230,7 +230,7 @@ Group operations for the groups.
 Evaluating the bilinear map.
 Deciding the equality of group elements.
 Sampling generators of the groups.
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-19,4,250-->
 
 What do we assume about the bilinear group operations?
 ?
@@ -240,7 +240,7 @@ That there are efficient algorithms for computing them.
 What are the names for the types of bilinear groups?
 ?
 Type I, Type II, and Type III
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-19,4,250-->
 
 Who classified the types of bilinear groups?
 ?
@@ -270,7 +270,7 @@ They are the most efficient type of bilinear groups, and hence the most relevant
 For which type of bilinear group is the lower bound given?
 ?
 Type III
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-21,6,250-->
 
 For which type of bilinear group does the construction work?
 ?
@@ -301,7 +301,7 @@ The witness.
 What kinds of pairs are in $R$?
 ?
 $(\phi, w)$, i.e., statement and witness
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-19,4,250-->
 
 What is $\mathcal{R}_\lambda$?
 ?
@@ -352,13 +352,13 @@ The simulator gets access to $tau$ so it can generate proofs indistinguishable f
 What is $\pi$?
 ?
 The argument.
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-20,5,250-->
 
 What is the definition of $\textbf{Vfy}$?
 ?
 $0/1 \leftarrow \textbf{Vfy}(R, \sigma, \phi, \pi)$
 The verification algorithm takes as input the common reference string, the statement, and the argument, and returns 0 (reject) or 1 (accept).
-<!--SR:2022-06-15,2,250-->
+<!--SR:2022-06-21,6,250-->
 
 What is the definition of $\textbf{Sim}$?
 ?
@@ -372,8 +372,8 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 
 What is a non-interactive argument?
 ?
-We say $(\textbf{Setup, PRove, Vfy)})$ is a non-interactive for $\mathcal{R}$ if it has perfect completeness and computation soundness.
-<!--SR:2022-06-15,2,250-->
+We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
+<!--SR:2022-06-20,5,250-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
@@ -403,7 +403,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-06-15,1,210-->
+<!--SR:2022-06-17,2,210-->
 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
@@ -419,9 +419,11 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-06-15,1,210-->
+<!--SR:2022-06-16,1,190-->
 
 ??? Why does this adversary get so much information including z and tau?
+
+??? Why does this adversary not get the statement? Does this mean that possibly with the statement they'd be able to deduce some knowledge?
 
 What is computational soundness, roughly?
 ?
@@ -437,7 +439,7 @@ $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{S
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-06-15,1,210-->
+<!--SR:2022-06-17,2,210-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -463,7 +465,7 @@ A strengthening of the notion of soundness, where there is an extractor that can
 What does the extractor in the definition of computational knowledge soundness have access to?
 ?
 Full access to the adversary's state, including any random coins.
-<!--SR:2022-06-15,1,210-->
+<!--SR:2022-06-16,1,190-->
 
 What is the definition of computational knowledge soundness?
 ?
@@ -472,7 +474,9 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-15,1,210-->
+<!--SR:2022-06-16,1,190-->
+
+??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
 ### Definitions
 #### Verifiability
@@ -507,7 +511,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-16,1,210-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -541,12 +545,12 @@ Preprocessing SNARKs.
 What danger does indistinguishability obfuscation imply and who initially showed it?
 ?
 Bitansky et al BCPR14 show that indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-17,2,230-->
 
 What is the strongest negative consequence of indistinguishability obfuscation and who showed it?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, Boyle and Pass BP15 show that there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-16,1,210-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction?
 ?
@@ -645,7 +649,7 @@ That the field $\mathbb{F}$ is large enough.
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-16,1,210-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -654,7 +658,7 @@ Forming $t(x)$.
 Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
 Expressing the constraints as an evaluation of a single polynomial.
 Refomulating the polynomial evaluation over values mod $t(x)$.
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-18,3,230-->
 
 What is the random vector?
 ?
@@ -672,7 +676,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-16,1,210-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -680,14 +684,14 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-18,3,230-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-06-15,1,230-->
+<!--SR:2022-06-16,1,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?

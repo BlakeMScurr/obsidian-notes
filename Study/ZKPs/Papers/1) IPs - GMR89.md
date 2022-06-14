@@ -225,7 +225,7 @@ It is a full read-write tape.
 What does an ITM's random tape achieve?
 ?
 It means an ITM can't simply be modelled in an interaction with a more powerful adversary.
-<!--SR:2022-06-15,45,250-->
+<!--SR:2022-10-03,110,250-->
 
 What does an ITM's random tape represent?
 ?
@@ -699,7 +699,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 
 * Two ensembles are "at most p-distinguishable" if they can only be told apart with a p(n) probability
 	* Let $p:N \to [0,1]$
-	* We say ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if, for all distinguishers D, $|p^d_{x,1} - p^d_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
+	* We say ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if, for all distinguishers D, $|p^D_{x,1} - p^D_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
 		* ??? why are we requiring the probability difference to grow faster than any polynomial? Is it because that captures the intuitive notion of distinguishability? Or is it because there exists some reduction, where a polynomial machine could take any polynomial distinguishability and reduce it (to linear or a lower degree polynomial etc)?
 
 When (at a high level) are two ensembles "at most p-distinguishable?"
@@ -711,7 +711,7 @@ Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
 for all distinguishers $D$, $|p^d_{x,1} - p^d_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
 Where $p:N \to [0,1]$
-<!--SR:2022-06-15,22,190-->
+<!--SR:2022-07-27,42,190-->
 
 
 #### 0-Distinguishability
@@ -1440,7 +1440,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-06-15,11,210-->
+<!--SR:2022-07-11,26,210-->
 
 How is $X' \cup Y'$ sent?
 ?
@@ -1561,7 +1561,7 @@ Show that chance is less than the bound given by GMR.
 Based on what condition might we halt given honest $A$ and $B$?
 ?
 If $|X' \cup Y'| \leq n/3$
-<!--SR:2022-06-15,27,250-->
+<!--SR:2022-08-18,64,250-->
 
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?

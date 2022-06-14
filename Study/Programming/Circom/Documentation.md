@@ -163,7 +163,7 @@ if (x = 3) {
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-06-15,18,230-->
+<!--SR:2022-07-29,44,230-->
 
 # Templates
 
@@ -257,7 +257,7 @@ component main{public [in]} = A(1);
 ?
 The `in` signal is not used in any constraints. 
 It will give a warning when `--inspect` is used to compile: "In template "A1". Unconstrained signal. "in" = Maybe use: in*0 === 0"
-<!--SR:2022-06-15,18,230-->
+<!--SR:2022-07-30,45,230-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -627,7 +627,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-06-15,16,230-->
+<!--SR:2022-07-22,37,230-->
 
 What are the arithmetic operators?
 ?
@@ -933,7 +933,7 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-06-15,17,230-->
+<!--SR:2022-07-24,39,230-->
 
 What is the default type of signals and variables?
 ?

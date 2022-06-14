@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-06-15,12,170-->
+<!--SR:2022-07-07,22,170-->
 
 ### binsum
 
@@ -259,7 +259,7 @@ What does `b` do from a bitwise perspective and how?
 Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
 If they're all 0, simply by adding a 1 to each bit.
 If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
-<!--SR:2022-06-15,16,270-->
+<!--SR:2022-07-31,46,270-->
 
 What are the 4 cases for defining parts?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-15,9,210-->
+<!--SR:2022-07-05,20,210-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
