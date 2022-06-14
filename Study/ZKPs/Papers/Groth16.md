@@ -475,6 +475,68 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 <!--SR:2022-06-15,1,210-->
 
 ### Definitions
+#### Verifiability
+
+What are the two types of verifiability for proofs?
+?
+Public verifiability and designated verifier proofs.
+
+How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
+?
+We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover and the verifier respectively.
+
+When is a non-interactive argument publicly verifiable?
+?
+When $\sigma_V$ can be deduced from $\sigma_P$.
+
+When is a non-interactive argument a designated verifier proof?
+?
+When $\sigma_V$ cannot be deduced from $\sigma_P$.
+
+We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
+?
+We can relax soundness and knowledge soundness such that the adversary only sees $\sigma_P$ but not $\sigma_V$.
+
+#### SNARKs and SNARGs
+
+What is the definition of succinctness for SNARKs and SNARGs?
+?
+A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
+
+What is the difference between SNARKs and SNARGs?
+?
+A SNARG is sound, a SNARK is knowledge sound.
+
+What is the full expanded acronym for SNARK and SNARG?
+?
+Preprocessing succinct non-interactive argument of knowledge
+Preprocessing succinct non-interactive argument
+
+What does fully succinct mean?
+?
+A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
+
+What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
+?
+You can compile a preprocessing SNARK into a fully succinct SNARK.
+
+Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
+?
+Preprocessing SNARKs.
+
+#### Benign Relation Generators
+
+What danger does indistinguishability obfuscation imply and who initially showed it?
+?
+Bitansky et al BCPR14 show that indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
+
+What is the strongest negative consequence of indistinguishability obfuscation and who showed it?
+?
+Assuming public coin differing input obfuscation and other cryptographic assumptions, Boyle and Pass BP15 show that there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
+
+How do we get around impossibility results about relation generators' auxiliary input, and witness extraction?
+?
+Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and hte auxiliary input are distributed in such a way that SNARKs can exist.
 
 ## Quadratic Arithmetic Programs
 
