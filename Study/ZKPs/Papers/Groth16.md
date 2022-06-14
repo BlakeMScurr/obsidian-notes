@@ -480,63 +480,78 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
+<!--SR:2022-06-18,4,250-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
 We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover and the verifier respectively.
+<!--SR:2022-06-18,4,250-->
 
 When is a non-interactive argument publicly verifiable?
 ?
 When $\sigma_V$ can be deduced from $\sigma_P$.
+<!--SR:2022-06-18,4,250-->
 
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
+<!--SR:2022-06-17,3,250-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
 We can relax soundness and knowledge soundness such that the adversary only sees $\sigma_P$ but not $\sigma_V$.
+<!--SR:2022-06-18,4,250-->
 
 #### SNARKs and SNARGs
 
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
+<!--SR:2022-06-15,1,230-->
 
 What is the difference between SNARKs and SNARGs?
 ?
 A SNARG is sound, a SNARK is knowledge sound.
+<!--SR:2022-06-16,2,250-->
 
 What is the full expanded acronym for SNARK and SNARG?
 ?
 Preprocessing succinct non-interactive argument of knowledge
 Preprocessing succinct non-interactive argument
+<!--SR:2022-06-18,4,250-->
 
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
+<!--SR:2022-06-18,4,250-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
 You can compile a preprocessing SNARK into a fully succinct SNARK.
+Bitansky et al BCCT13.
+<!--SR:2022-06-18,4,250-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
 Preprocessing SNARKs.
+<!--SR:2022-06-18,4,250-->
 
 #### Benign Relation Generators
 
 What danger does indistinguishability obfuscation imply and who initially showed it?
 ?
 Bitansky et al BCPR14 show that indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
+<!--SR:2022-06-15,1,230-->
 
 What is the strongest negative consequence of indistinguishability obfuscation and who showed it?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, Boyle and Pass BP15 show that there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
+<!--SR:2022-06-15,1,230-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction?
 ?
 Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and hte auxiliary input are distributed in such a way that SNARKs can exist.
+<!--SR:2022-06-16,2,250-->
 
 ## Quadratic Arithmetic Programs
 
@@ -625,26 +640,31 @@ What can we reformulate arithmetic constraints as, and what assumption do we hav
 ?
 As a quadratic arithmetic program.
 That the field $\mathbb{F}$ is large enough.
+<!--SR:2022-06-17,3,250-->
 
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
+<!--SR:2022-06-15,1,230-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
 Picking a random vector.
 Forming $t(x)$.
 Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
-Expressing the constraint as an evaluation of a polynomial.
+Expressing the constraints as an evaluation of a single polynomial.
 Refomulating the polynomial evaluation over values mod $t(x)$.
+<!--SR:2022-06-15,1,230-->
 
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
+<!--SR:2022-06-17,3,250-->
 
 How is $t(x)$ defined?
 ?
 $t(x) = \prod_{q=1}^n(x-r_q)$
+<!--SR:2022-06-18,4,250-->
 
 What are $u_i(x), v_i(x), w_i(x)$ and how are they defined?
 ?
@@ -652,12 +672,30 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
+<!--SR:2022-06-15,1,230-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
 What is the condition that follows from an arithmetic constraint's constants being replaced by polynomials?
 ?
-$$\sum_{i=0}^m$$
+$a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
+$$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
+<!--SR:2022-06-15,1,230-->
+
+??? is it supposed to say "each $r_1, ..., r_n$?"
+
+What is the final form of a quadratic arithmetic program?
+?
+$$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
+<!--SR:2022-06-15,1,230-->
+
+How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
+?
+$t(X)$ is the lowest degree monomial with $t(r_q) = 0$ for each $r_q$.
+Let $LHS = a(x)$ and $RHS = b(x)$
+$a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot t(X) = b(X)$ from the definition of mod
+Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
+<!--SR:2022-06-18,4,250-->
 
 UNFINISHED
 ## Linear Interactive Proofs
