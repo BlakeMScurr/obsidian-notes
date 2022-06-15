@@ -701,6 +701,123 @@ $a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot
 Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 <!--SR:2022-06-18,4,250-->
 
-UNFINISHED
+### QAP Definition
+
+What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
+?
+$R = (\mathcal{F}, aux, \mathscr{l}, {u_i(X), v_i(X),w_i(X)}_{i=0}^m, t(X))$
+
+What is $\mathbb{F}$?
+?
+A finite field.
+
+What is $aux$?
+?
+Auxiliary information.
+
+What is the $\mathscr{l}$ for?
+?
+Delineating the variables for the statement and the witness.
+
+What is the definition of $\mathscr{l}$?
+?
+$1 \geq \mathscr{l} \geq m$
+
+How are $u_i(X), v_i(X), w_i(X), t(X)$ defined?
+?
+$u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
+
+What is the setbuilder notation for a quadratic arithmetic program?
+?
+$$
+\begin{aligned}
+R = \{ \\
+(\phi, w) | \\
+\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}} \\
+w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
+\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)} \\
+\}
+\end{aligned}
+$$
+
+What is the definition of $\phi$ in a QAP?
+?
+$\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
+
+What is the definition of $w$ in a QAP?
+?
+$w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
+
+When is $\mathcal{R}$ a QAP generator?
+?
+If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
+
+How might relation generators vary in practice?
+?
+Deterministic vs randomised.
+Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
+
+Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
+?
+To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
+
+In pairing based NIZK arguments, what does aux specify and why?
+?
+The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
+
+Why does chosing the group in the auxiliary information do lose generality?
+?
+Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
+
+What assumption does chosing the binlinear group as auxiliary information force?
+?
+That the relation generator is benign.
+
+Why do we have to assume the relation generator is benign?
+?
+Because indistinguishability obfuscation implies there is some auxiliary information for which witness extraction is impossible.
+And because the relation generator picks the bilinear group to give our generator definition flexibility.
+
 ## Linear Interactive Proofs
+
+What does LIP stand for?
+?
+Linear interactive proof
+
+What is the purpose of a LIP?
+?
+It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
+
+Who invented LIPs?
+?
+Bitansky et al. BCI+13
+
+How do we denote the degree of a LIP?
+?
+$(d_Q, d_D)$
+
+What are the algorithms for a LIP?
+?
+Setup
+Prove
+Vfy
+
+What does a LIP operate over?
+?
+A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
+
+What, *extremely broadly* is a LIP?
+?
+A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work in a particular way.
+
+How does Setup work for a LIP?
+?
+It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
+
+What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
+?
+That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
+
+??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
+
 UNFINISHED

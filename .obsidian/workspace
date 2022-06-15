@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "885d9b3c1e04d7da",
+        "id": "dd5e0af0de59a752",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/ZKPs/Papers/Literature.md",
+            "file": "Study/ZKPs/Papers/Groth16.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/ZKPs/Papers/Literature.md",
+                "file": "Study/ZKPs/Papers/Groth16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,10 +94,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "885d9b3c1e04d7da",
+  "active": "dd5e0af0de59a752",
   "lastOpenFiles": [
-    "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Papers/Groth16.md",
+    "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/Programming/Circom/Documentation.md",
