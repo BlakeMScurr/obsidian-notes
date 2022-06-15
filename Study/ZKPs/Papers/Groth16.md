@@ -810,7 +810,7 @@ What, *extremely broadly* is a LIP?
 ?
 A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work in a particular way.
 
-How does Setup work for a LIP?
+What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
 
@@ -820,4 +820,48 @@ That $\sigma$ always contains 1 as an entry such that there is no distinction be
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
+What does the Prove do in a LIP?
+?
+It operates in two stages.
+First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
+Then it computes the proof as $\pi = \Pi\sigma$
+
+??? What is k?
+
+What does Vfy do in a LIP?
+?
+The verifier runs in two stages.
+First is runs a deterministic polynomial time algorithm $t \leftarrow \textbf{Test}(R, \phi)$ to get an arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
+It then accepts the proof if and only if $t(\sigma, \pi) = 0$
+
+??? What is $\eta$?
+
+What are the degrees and dimensions of a LIP?
+?
+$d_Q, d_D, \mu, m, n, k, \eta$
+
+What kinds of values can the degrees and dimensions of a LIP take?
+?
+They may be constants of polynomials in the security parameter $\lambda$
+
 UNFINISHED
+
+What is $d_Q$?
+?
+The multiplicative depth of the setup circuit.
+
+What is $d_D$?
+?
+The multiplicatied depth of the verifier circuit.
+
+What is $\mu$?
+?
+The number of elements in the randomness vector used in Setup.
+
+What is $m$ in a LIP?
+?
+The number of elements in the crs vector $\sigma$ made in Setup.
+
+What is $n$ in a LIP?
+What is $k$ in a LIP?
+What is $\eta$ in a LIP?
