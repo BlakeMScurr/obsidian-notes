@@ -269,7 +269,7 @@ cmsb == 0 && clsb == 1
 cmsb == 1 && clsb == 0
 cmsb == 1 && clsb == 1
 ```
-<!--SR:2022-06-16,15,250-->
+<!--SR:2022-07-25,39,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 ?
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-06-16,10,210-->
+<!--SR:2022-07-08,22,210-->
 
 What is the code for the final check and output?
 ?

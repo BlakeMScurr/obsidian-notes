@@ -58,7 +58,7 @@ out <== in1 * in2;
 ```
 ?
 `signal output out <== in1 * in2`
-<!--SR:2022-06-16,20,250-->
+<!--SR:2022-08-04,49,250-->
 
 How do we instantiate a component?
 ?
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-06-16,6,170-->
+<!--SR:2022-06-26,10,170-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -435,7 +435,7 @@ function funid (param_1, ..., param_n) {
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-06-16,16,230-->
+<!--SR:2022-07-21,35,230-->
 
 Can functions be recursive?
 ?
@@ -1178,7 +1178,7 @@ template A(n1, n2) {
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
-<!--SR:2022-06-16,18,250-->
+<!--SR:2022-08-01,46,250-->
 
 What is wrong with the following code, and what message does it generate?
 ```

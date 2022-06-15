@@ -215,7 +215,7 @@ Input tape
 How is an ITM's listening tape implemented?
 ?
 It is read only.
-<!--SR:2022-06-16,45,250-->
+<!--SR:2022-10-07,113,250-->
 
 How is an ITM's work tape implemented?
 ?
@@ -766,7 +766,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-06-16,13,130-->
+<!--SR:2022-07-05,19,130-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-16,4,150-->
+<!--SR:2022-06-19,3,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -988,7 +988,7 @@ What is the verifier left with at the end of an interactive proof?
 ?
 The knowledge that $x \in L$.
 The text of the computation with the prover, containing no more than $f(n)$ extra knowledge, no matter how cleverly and maliciousy the verifier operates
-<!--SR:2022-06-16,31,210-->
+<!--SR:2022-08-20,65,210-->
 
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?
@@ -1425,7 +1425,7 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 4?
 ?
 $A$ checks the form and size of $X' \cup Y'$. If those are invalid halts and rejects, otherwise, $A$ computes and sends $\mathbb{Q}_m(x)$.
-<!--SR:2022-06-16,27,230-->
+<!--SR:2022-08-17,62,230-->
 
 What is $v$?
 ?
@@ -1556,7 +1556,7 @@ What are my steps for proving the upper bound for the chance that we halt and re
 Show that $X$ or $Y \leq n/6$ if we halt. 
 Show the chance of that is some factorial expression using a string permutation argument.
 Show that chance is less than the bound given by GMR.
-<!--SR:2022-06-16,28,250-->
+<!--SR:2022-06-30,14,230-->
 
 Based on what condition might we halt given honest $A$ and $B$?
 ?

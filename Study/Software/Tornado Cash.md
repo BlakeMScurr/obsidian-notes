@@ -14,7 +14,7 @@ How do withdrawls work?
 The user splits their private note into a secret part and a nullifier.
 The user generates a zkp of the merkle proof that their nullifier is in the tree.
 The user sends the nullifier and the zkp to the contract who verifies it and sends the user money.
-<!--SR:2022-06-16,11,250-->
+<!--SR:2022-07-17,31,250-->
 
 What are the circom files in tornado cash?
 ?

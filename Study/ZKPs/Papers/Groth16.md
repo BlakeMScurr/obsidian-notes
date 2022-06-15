@@ -62,6 +62,8 @@ What would extending the lower bound in Groth16 prove?
 Extending the lower bound to 2 elements would prove the optimality of the 3 element SNARG.
 <!--SR:2022-06-21,28,250-->
 
+??? How do we know that the lower bound actually applies - is a LIP really the only information theoretic model that could yield pairing based SNARKs?
+
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
@@ -149,7 +151,7 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-19,3,230-->
 
 What is the definition of $\approx$?
 ?
@@ -164,7 +166,7 @@ $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
 What is the formal definition of $\omega$?
 ?
 $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-25,9,250-->
 
 What does $\lambda$ represent, and what do its values mean?
 ?
@@ -179,12 +181,12 @@ That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
 What does $y \leftarrow A(x)$ mean?
 ?
 We pick randomness $r$ at random and set $y = A(x;r)$.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-24,8,250-->
 
 What does $y \leftarrow S$ mean?
 ?
 We pick $y$ uniformly at random from set $S$.
-<!--SR:2022-06-16,2,230-->
+<!--SR:2022-06-22,6,230-->
 
 What do we assume about random sampling?
 ?
@@ -194,8 +196,7 @@ That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
 $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the same input (including random coins).
-This includes the input of both algorithms $(R, z, \sigma)$.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-23,7,250-->
 
 ## Bilinear Groups
 
@@ -260,7 +261,7 @@ Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable no
 What are Type III bilinear groups?
 ?
 Where there is no efficiently computable non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
-<!--SR:2022-06-16,2,230-->
+<!--SR:2022-06-22,6,230-->
 
 What is special about Type III bilinear groups?
 ?
@@ -284,7 +285,7 @@ All 3 types
 What is $\mathcal{R}$?
 ?
 A relation generator that, given $\lambda$ in unary returns a polynomial time decidable binary relation $R$.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-24,8,250-->
 
 ??? Why is lambda in unary?
 
@@ -296,7 +297,7 @@ The statement.
 What is $w$?
 ?
 The witness.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-23,7,250-->
 
 What kinds of pairs are in $R$?
 ?
@@ -322,7 +323,7 @@ What is the definition of $\textbf{Setup}$?
 ?
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
 The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-24,8,250-->
 
 ??? why don't we write the setup as explicitly taking the security parameter?
 
@@ -342,7 +343,7 @@ The common reference string.
 What is $\tau$?
 ?
 The simulation trapdoor.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-26,10,250-->
 
 What is $tau$ used for?
 ?
@@ -364,7 +365,7 @@ What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-06-16,2,230-->
+<!--SR:2022-06-17,1,210-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -383,7 +384,7 @@ We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zer
 What is perfect completeness, roughly?
 ?
 Completeness says that, given any true statement, an honest prover should be able to convince an honest verifier.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-23,7,250-->
 
 What is the definition of perfect completeness?
 ?
@@ -408,7 +409,7 @@ $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
 A malicious verifier trying to learn extra information from the proof.
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-26,10,250-->
 
 What does the adversary in the definition of perfect zero knowledge do?
 ?
@@ -419,7 +420,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-06-16,1,190-->
+<!--SR:2022-06-19,3,190-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -433,8 +434,8 @@ We say a set of algorithms is sound if it is not possible to prove a false state
 What is the definition of computational soundness?
 ?
 Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
-$Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \sigma \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-16,2,230-->
+$Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \phi \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
+<!--SR:2022-06-22,6,230-->
 
 What does the adversary represent in the definition of computational soundness?
 ?
@@ -445,7 +446,7 @@ What inputs does the adversary in the definition of computational soundness acce
 ?
 The relation, the auxilary input, and the common reference string.
 $(R, z, \sigma)$
-<!--SR:2022-06-16,3,250-->
+<!--SR:2022-06-25,9,250-->
 
 ??? Why does it not also accept the simulation trapdoor? Is it because then it could create any proof it likes.
 
@@ -465,7 +466,10 @@ A strengthening of the notion of soundness, where there is an extractor that can
 What does the extractor in the definition of computational knowledge soundness have access to?
 ?
 Full access to the adversary's state, including any random coins.
-<!--SR:2022-06-16,1,190-->
+It operates on the same inputs too, $(R, z, \sigma)$
+<!--SR:2022-06-19,3,190-->
+Note, this is already implicit in its access to the adversaries state.
+
 
 What is the definition of computational knowledge soundness?
 ?
@@ -474,7 +478,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-16,1,190-->
+<!--SR:2022-06-17,1,170-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -511,12 +515,12 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-06-16,1,210-->
+<!--SR:2022-06-19,3,210-->
 
 What is the difference between SNARKs and SNARGs?
 ?
 A SNARG is sound, a SNARK is knowledge sound.
-<!--SR:2022-06-16,2,250-->
+<!--SR:2022-06-21,5,250-->
 
 What is the full expanded acronym for SNARK and SNARG?
 ?
@@ -542,20 +546,29 @@ Preprocessing SNARKs.
 
 #### Benign Relation Generators
 
-What danger does indistinguishability obfuscation imply and who initially showed it?
+What was the first danger discovered that was implied by indistinguishability obfuscation?
 ?
-Bitansky et al BCPR14 show that indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
-<!--SR:2022-06-17,2,230-->
+Indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
+<!--SR:2022-06-20,4,250-->
 
-What is the strongest negative consequence of indistinguishability obfuscation and who showed it?
+Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
-Assuming public coin differing input obfuscation and other cryptographic assumptions, Boyle and Pass BP15 show that there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-06-16,1,210-->
+Bitansky et al BCPR14
+<!--SR:2022-06-17,1,230-->
 
-How do we get around impossibility results about relation generators' auxiliary input, and witness extraction?
+What is the strongest negative consequence of indistinguishability obfuscation?
 ?
-Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and hte auxiliary input are distributed in such a way that SNARKs can exist.
-<!--SR:2022-06-16,2,250-->
+Assuming public coin differing input obfuscation and other cryptographic assumptions, there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
+<!--SR:2022-06-17,1,230-->
+
+Who showed the strongest negative consequence of indistinguishability obfuscation?
+?
+Boyle and Pass BP15
+<!--SR:2022-06-17,1,230-->
+
+How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
+?
+Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and the auxiliary input are distributed in such a way that SNARKs can exist.
 
 ## Quadratic Arithmetic Programs
 
@@ -608,7 +621,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-06-16,19,210-->
+<!--SR:2022-07-26,40,210-->
 
 What is the form of our arithmetic constraints?
 ?
@@ -649,7 +662,7 @@ That the field $\mathbb{F}$ is large enough.
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-06-16,1,210-->
+<!--SR:2022-06-17,1,190-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -676,7 +689,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-06-16,1,210-->
+<!--SR:2022-06-17,1,190-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -691,7 +704,7 @@ $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-06-16,1,210-->
+<!--SR:2022-06-19,3,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -705,11 +718,13 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
-$R = (\mathcal{F}, aux, \mathscr{l}, {u_i(X), v_i(X),w_i(X)}_{i=0}^m, t(X))$
+$R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
+<!--SR:2022-06-17,1,230-->
 
 What is $\mathbb{F}$?
 ?
 A finite field.
+<!--SR:2022-06-20,4,250-->
 
 What is $aux$?
 ?
@@ -739,14 +754,17 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
+<!--SR:2022-06-20,4,250-->
 
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
+<!--SR:2022-06-17,1,230-->
 
 What is the definition of $w$ in a QAP?
 ?
 $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
+<!--SR:2022-06-20,4,250-->
 
 When is $\mathcal{R}$ a QAP generator?
 ?
@@ -756,18 +774,22 @@ How might relation generators vary in practice?
 ?
 Deterministic vs randomised.
 Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
+<!--SR:2022-06-17,1,230-->
 
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
 To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
+<!--SR:2022-06-20,4,250-->
 
 In pairing based NIZK arguments, what does aux specify and why?
 ?
 The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
+<!--SR:2022-06-20,4,250-->
 
-Why does chosing the group in the auxiliary information do lose generality?
+Why does chosing the group in the auxiliary information not lose generality?
 ?
 Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
+<!--SR:2022-06-20,4,250-->
 
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
@@ -787,36 +809,43 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
+<!--SR:2022-06-17,1,230-->
 
 Who invented LIPs?
 ?
 Bitansky et al. BCI+13
+<!--SR:2022-06-17,1,230-->
 
 How do we denote the degree of a LIP?
 ?
 $(d_Q, d_D)$
+<!--SR:2022-06-20,4,250-->
 
-What are the algorithms for a LIP?
+What are the (top level) algorithms for a LIP?
 ?
 Setup
 Prove
 Vfy
+<!--SR:2022-06-19,3,250-->
 
-What does a LIP operate over?
+What does a LIP generated by?
 ?
 A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
 
-What, *extremely broadly* is a LIP?
+What, broadly, is a LIP?
 ?
-A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work in a particular way.
+A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work with matrices.
+<!--SR:2022-06-20,4,250-->
 
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
+<!--SR:2022-06-17,1,230-->
 
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
+<!--SR:2022-06-17,1,230-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -825,8 +854,24 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\pi = \Pi\sigma$
+<!--SR:2022-06-17,1,230-->
 
-??? What is k?
+What is ProofMatrix, broadly?
+?
+A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
+
+What is the output of ProofMatrix?
+?
+A matrix $\Pi \in \mathbb{F}^{k \times m}$
+
+What is k?
+?
+The number of rows in the matrix from ProofMatrix
+<!--SR:2022-06-19,3,250-->
+
+What arguments does ProofMatrix accept?
+?
+$(R, \sigma, w)$
 
 What does Vfy do in a LIP?
 ?
@@ -834,11 +879,35 @@ The verifier runs in two stages.
 First is runs a deterministic polynomial time algorithm $t \leftarrow \textbf{Test}(R, \phi)$ to get an arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
 It then accepts the proof if and only if $t(\sigma, \pi) = 0$
 
+What is Test?
+?
+A deterministic polynomial time algorithm.
+
+What are the inputs of Test?
+?
+$(R, \phi)$
+
+What does Test output?
+?
+An arithmetic circuit $t$.
+
+What is the definition of $t$?
+?
+An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
+
+What arguments is $t$ passed?
+?
+$(\sigma, \pi)$
+
+When does Vfy accept in a LIP?
+
+
 ??? What is $\eta$?
 
 What are the degrees and dimensions of a LIP?
 ?
 $d_Q, d_D, \mu, m, n, k, \eta$
+<!--SR:2022-06-17,1,230-->
 
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
@@ -852,15 +921,19 @@ The multiplicative depth of the setup circuit.
 
 What is $d_D$?
 ?
-The multiplicatied depth of the verifier circuit.
+The multiplicative depth of the verifier circuit output by Test.
 
 What is $\mu$?
 ?
-The number of elements in the randomness vector used in Setup.
+The dimension of the randomness vector used in Setup.
+<!--SR:2022-06-19,3,250-->
 
 What is $m$ in a LIP?
 ?
-The number of elements in the crs vector $\sigma$ made in Setup.
+The dimension in the crs vector $\sigma$ made in Setup.
+<!--SR:2022-06-20,4,250-->
+
+??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 
 What is $n$ in a LIP?
 What is $k$ in a LIP?
