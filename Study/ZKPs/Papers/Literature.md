@@ -231,6 +231,77 @@ What did Groth16 contribute?
 Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2 group elements in the symmetric group setting
 <!--SR:2022-06-27,29,210-->
 
+## Universal Updatable Snarks
+
+### GKMMM18
+
+Who are the authors of GKMMM18?
+?
+Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
+
+What is the title of GKMMM18?
+?
+Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
+
+What did GKMMM18 contribute?
+?
+A zk-SNARK with an updatable and universal CRS.
+Updatability guarantees the security of the CRS as long as one party is honest.
+Universality means the CRS applies to any relation.
+Neither property had existed before.
+
+###
+
+Who are the authors of MBKM19?
+?
+Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
+
+What is the title of MBKM19?
+?
+Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
+
+What did MBKM19 contribute?
+?
+A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
+
+What is MBKM19 otherwise known as?
+?
+Sonic
+
+### GWC21
+
+Who are the authors of GWC21?
+?
+Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
+
+What is the title of GWC21?
+?
+Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
+
+What did GWC21 contribute?
+?
+A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
+
+What is GWC21 otherwise known as?
+?
+Plonk
+
+# CRS MPC Protocols
+
+## BGM19
+
+Who are the authors of BGM19?
+?
+Sean Bowe, Ariel Gabizon, Ian Miers
+
+What is the title of BGM19?
+?
+Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
+
+What did BGM19 contribute?
+?
+A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
+
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.
 This seems to show that MIP = NEXP, and seems to have the same result as BFL. It also has to do with PSPACE. This was mentioned in Shafi Goldwasser's Turing award speech.
