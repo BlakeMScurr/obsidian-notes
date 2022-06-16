@@ -223,7 +223,7 @@ $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear ma
 What is a property of generators of our bilinear group?
 ?
 if $G$ is a generator of $\mathbb{G}_1$ and $H$ is a generator of $\mathbb{G}_2$ then $e(G, H)$ is a generator of $\mathbb{G}_T$.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-27,10,250-->
 
 What are the generic bilinear group operations?
 ?
@@ -246,17 +246,17 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-06-17,3,230-->
+<!--SR:2022-06-20,3,210-->
 
 What is a Type I bilinear group?
 ?
 Where $\mathbb{G}_1 = \mathbb{G}_2$
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-29,12,250-->
 
 What are Type II bilinear groups?
 ?
 Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable non-trivial homomorphism $\psi : \mathbb{G}_1 \rightarrow \mathbb{G}_2$
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-26,9,250-->
 
 What are Type III bilinear groups?
 ?
@@ -276,7 +276,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-19,2,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -292,7 +292,7 @@ A relation generator that, given $\lambda$ in unary returns a polynomial time de
 What is $\phi$?
 ?
 The statement.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-28,11,250-->
 
 What is $w$?
 ?
@@ -312,12 +312,12 @@ The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
 What is $z$?
 ?
 Auxilliary information that the relation generator might output, which will be given to the adversary.
-<!--SR:2022-06-17,3,230-->
+<!--SR:2022-06-25,8,230-->
 
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-20,3,230-->
 
 What is the definition of $\textbf{Setup}$?
 ?
@@ -392,7 +392,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-06-17,3,230-->
+<!--SR:2022-06-20,3,210-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -442,7 +442,7 @@ $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{S
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-06-17,2,210-->
+<!--SR:2022-06-22,5,210-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -480,7 +480,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-17,1,170-->
+<!--SR:2022-06-19,2,170-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -681,7 +681,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2022-06-17,3,250-->
+<!--SR:2022-06-25,8,250-->
 
 How is $t(x)$ defined?
 ?
@@ -694,7 +694,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-06-17,1,190-->
+<!--SR:2022-06-18,1,170-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -724,7 +724,9 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
+
+??? Why are u, v, w described by their evaluations, but not t(X)?
 
 What is $\mathbb{F}$?
 ?
@@ -768,7 +770,7 @@ $$
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What is the definition of $w$ in a QAP?
 ?
@@ -824,12 +826,12 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 Who invented LIPs?
 ?
 Bitansky et al. BCI+13
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 How do we denote the degree of a LIP?
 ?
@@ -846,7 +848,7 @@ Vfy
 What is a LIP generated by, and what do we assume about it?
 ?
 A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 What, broadly, is a LIP?
 ?
@@ -856,12 +858,14 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
+
+??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -869,8 +873,8 @@ What does the Prove do in a LIP?
 ?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
-Then it computes the proof as $\pi = \Pi\sigma$
-<!--SR:2022-06-17,1,230-->
+Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
+<!--SR:2022-06-18,1,210-->
 
 What is ProofMatrix, broadly?
 ?
@@ -922,12 +926,12 @@ An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
 What arguments is $t$ passed?
 ?
 $(\sigma, \pi)$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 When does Vfy accept in a LIP?
 ?
 If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 What are the degrees and dimensions of a LIP?
 ?
@@ -999,7 +1003,9 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
+
+??? Why does the adversary not accept sigma? Is that because it doesn't need to, since it implicitly takes this argument since we're requiring that Vfy works with sigma.
 
 ??? Why is there a single extractor, whereas in computational knowledge soundness each adversary has its own extractor?
 
