@@ -7,7 +7,7 @@
 What is GMR89's title?
 ?
 The Knowledge Complexity of Interactive Proof-Systems.
-<!--SR:2022-06-16,51,250-->
+<!--SR:2022-10-22,128,250-->
 
 Who are the authors of GMR89?
 ?
@@ -90,7 +90,7 @@ Lázsló Babai, Lance Fortnow, and Carsten Lund
 What does BFL90 show?
 ?
 NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
-<!--SR:2022-06-16,23,150-->
+<!--SR:2022-07-21,35,150-->
 
 
 
@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-06-16,3,130-->
+<!--SR:2022-06-21,5,130-->
 
 What did GS12 contribute?
 ?
@@ -199,7 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-06-16,12,250-->
+<!--SR:2022-07-18,32,250-->
 
 Who are the authors of Gro09?
 ?
@@ -238,10 +238,12 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
+<!--SR:2022-06-17,1,230-->
 
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
+<!--SR:2022-06-18,2,250-->
 
 What did GKMMM18 contribute?
 ?
@@ -249,42 +251,51 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
+<!--SR:2022-06-19,3,250-->
 
 ###
 
 Who are the authors of MBKM19?
 ?
 Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
+<!--SR:2022-06-19,3,250-->
 
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
+<!--SR:2022-06-17,1,230-->
 
 What did MBKM19 contribute?
 ?
 A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
+<!--SR:2022-06-17,1,230-->
 
 What is MBKM19 otherwise known as?
 ?
 Sonic
+<!--SR:2022-06-18,2,250-->
 
 ### GWC21
 
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
+<!--SR:2022-06-17,1,230-->
 
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
+<!--SR:2022-06-17,1,230-->
 
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
+<!--SR:2022-06-19,3,250-->
 
 What is GWC21 otherwise known as?
 ?
 Plonk
+<!--SR:2022-06-20,4,250-->
 
 # CRS MPC Protocols
 
@@ -293,14 +304,17 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
+<!--SR:2022-06-17,1,230-->
 
 What is the title of BGM19?
 ?
 Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
+<!--SR:2022-06-18,2,250-->
 
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
+<!--SR:2022-06-20,4,250-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.
