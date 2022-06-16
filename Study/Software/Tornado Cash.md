@@ -19,7 +19,7 @@ The user sends the nullifier and the zkp to the contract who verifies it and sen
 What are the circom files in tornado cash?
 ?
 withdraw.circom and merkleTree.circom
-<!--SR:2022-06-17,12,250-->
+<!--SR:2022-07-20,33,250-->
 
 ## Withdraw
 
@@ -71,7 +71,7 @@ What does DualMux do?
 ?
 if `s === 0` returns `[in[0], in[1]]`
 if `s === 1` returns `[in[1], in[0]]`
-<!--SR:2022-06-17,12,250-->
+<!--SR:2022-07-19,32,250-->
 
 What is the code for DualMux?
 ?

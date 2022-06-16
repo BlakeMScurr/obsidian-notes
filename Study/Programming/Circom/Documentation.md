@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-06-17,13,210-->
+<!--SR:2022-07-14,27,210-->
 
 What do signals contain?
 ?
@@ -1146,7 +1146,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-06-17,9,230-->
+<!--SR:2022-07-11,24,230-->
 
 What kinds of values are always known or unknown?
 ?
@@ -1192,7 +1192,7 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
-<!--SR:2022-06-17,19,250-->
+<!--SR:2022-08-04,48,250-->
 
 What restrictions are placed on the size of an array?
 ?
@@ -1245,7 +1245,7 @@ template A() {
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 Also, out is assigned multiple times.
-<!--SR:2022-06-17,16,230-->
+<!--SR:2022-07-28,41,230-->
 
 
 

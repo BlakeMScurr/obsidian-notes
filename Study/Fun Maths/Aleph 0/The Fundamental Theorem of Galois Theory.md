@@ -60,7 +60,7 @@ $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?
 $\zeta,\zeta^2,\zeta^3,\zeta^4$
-<!--SR:2022-06-17,30,250-->
+<!--SR:2022-07-02,15,230-->
 
 How many ways are there to permutate the conjugates of $\zeta$ over $\mathbb{Q}$, and how many of those permute algebraic relations?
 ?

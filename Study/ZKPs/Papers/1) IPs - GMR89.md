@@ -18,7 +18,7 @@ Interactive proof systems are a method of communicating a proof, they are intera
 What does the "interactive" in interactive proof systems mean?
 ?
 That a verifier asks a series of questions of a prover.
-<!--SR:2022-06-17,50,250-->
+<!--SR:2022-10-14,119,250-->
 
 In what sense are interactive proofs probabilistic?
 ?
@@ -342,7 +342,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-06-17,18,130-->
+<!--SR:2022-07-13,26,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -837,7 +837,7 @@ There exists a probabilstic polynomial-time machine M such that the I-c-ensemble
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
 For all polynomial time ITMs B', A communicates at most $f(n)$ bits of knowledge to B'
-<!--SR:2022-06-17,21,190-->
+<!--SR:2022-07-29,42,190-->
 
 What is my analogy for determining the knowledge conveyed from a prover to a verifier?
 ?
@@ -1111,7 +1111,7 @@ $\mathcal{Q}_m(y) = 0$ if y is quadratic residue mod m, and $1$ otherwise.
 What is the definition of the language QNR?
 ?
 $QNR = \{(y, m) | \mathcal{Q}_m(y) = 1\}$
-<!--SR:2022-06-17,35,230-->
+<!--SR:2022-09-07,82,230-->
 
 GMR's proof that $QNR \in KC(0)$ relies on . . . ?
 ?
@@ -1322,7 +1322,7 @@ $n$
 How does $A$ send $Z$ to $B$?
 ?
 However it pleases - no restriction.
-<!--SR:2022-06-17,37,230-->
+<!--SR:2022-09-09,84,230-->
 
 ??? why is $x$ chosen $mod\ n$ rather than $mod\ m$?
 
@@ -1375,7 +1375,7 @@ $S - Z - D$
 What is the purpose of $X' \cup Y'$?
 ?
 Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqrt{x}$. That is, so that a simulator $M$ can calculate $\sqrt{x}$ using $B'$.
-<!--SR:2022-06-17,19,150-->
+<!--SR:2022-07-16,29,150-->
 
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
@@ -1454,7 +1454,7 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 5?
 ?
 $B$ checks $v$, halts if it detects cheating, updates $iteration$, accepts if finished, or starts again at step 1.
-<!--SR:2022-06-17,28,230-->
+<!--SR:2022-08-16,60,230-->
 
 How does $B$ check $v$?
 ?

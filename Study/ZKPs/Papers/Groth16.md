@@ -34,7 +34,7 @@ Circuit satisfiability, that it is NP-complete.
 What kind of pairings does Groth16 use and why?
 ?
 Assymetric pairings for higher efficiency.
-<!--SR:2022-06-17,25,250-->
+<!--SR:2022-08-19,63,250-->
 
 What does a Groth16 SNARG consist of?
 ?
@@ -156,7 +156,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-19,2,230-->
 
 What is the limit definition of $\omega$?
 ?
@@ -236,7 +236,7 @@ Sampling generators of the groups.
 What do we assume about the bilinear group operations?
 ?
 That there are efficient algorithms for computing them.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-29,12,250-->
 
 What are the names for the types of bilinear groups?
 ?
@@ -307,7 +307,7 @@ $(\phi, w)$, i.e., statement and witness
 What is $\mathcal{R}_\lambda$?
 ?
 The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-29,12,250-->
 
 What is $z$?
 ?
@@ -365,7 +365,7 @@ What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-06-17,1,210-->
+<!--SR:2022-06-18,1,190-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -379,7 +379,7 @@ We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathca
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
 We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zero-knowledge argument of knowledge for $\mathcal{R}$ if it has perfect completeness, perfect zero knowledge, and computational knowledge soundness.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-29,12,250-->
 
 What is perfect completeness, roughly?
 ?
@@ -397,14 +397,16 @@ $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
 What is perfect zero knowledge, roughly?
 ?
 An argument is zero knowledge if it does not leak any information besides the truth of the statement.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-28,11,250-->
 
 What is the definition of perfect zero-knowledge?
 ?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-06-17,2,210-->
+<!--SR:2022-06-18,1,190-->
+
+??? Why does the definition of perfect zero-knowledge not include the relation generation in the probability expressions? Whereas it does in the definitions of soundness. Would it make a difference here?
 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
@@ -429,7 +431,7 @@ $R, z, \sigma, \tau, \pi$
 What is computational soundness, roughly?
 ?
 We say a set of algorithms is sound if it is not possible to prove a false statement, i.e., convince the verifier if no witness exists.
-<!--SR:2022-06-17,4,250-->
+<!--SR:2022-06-28,11,250-->
 
 What is the definition of computational soundness?
 ?
@@ -503,7 +505,7 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-06-17,3,250-->
+<!--SR:2022-06-19,2,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
@@ -554,17 +556,17 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
@@ -658,12 +660,14 @@ What can we reformulate arithmetic constraints as, and what assumption do we hav
 ?
 As a quadratic arithmetic program.
 That the field $\mathbb{F}$ is large enough.
-<!--SR:2022-06-17,3,250-->
+<!--SR:2022-06-27,10,250-->
+
+??? Is this because the modular rearrangement doesn't work for tiny fields? Maybe fields with fewer elements than the number of roots in the polynomial?
 
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-06-17,1,190-->
+<!--SR:2022-06-18,1,170-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -740,12 +744,12 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 What is the setbuilder notation for a quadratic arithmetic program?
 ?
@@ -774,13 +778,13 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 How might relation generators vary in practice?
 ?
 Deterministic vs randomised.
 Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
@@ -886,7 +890,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What does Vfy do in a LIP?
 ?
@@ -903,7 +907,7 @@ A deterministic polynomial time algorithm.
 What are the inputs of Test?
 ?
 $(R, \phi)$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What does Test output?
 ?
@@ -928,7 +932,7 @@ If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
 What are the degrees and dimensions of a LIP?
 ?
 $d_Q, d_D, \mu, m, n, k, \eta$
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
@@ -938,7 +942,7 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 What is $d_D$?
 ?
@@ -977,7 +981,7 @@ What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
 
-What, roughly, does statistical knowledge soundness against affine prover strategies?
+What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
 That a witness can be extracted from a proof matrix.
 
@@ -995,6 +999,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
+<!--SR:2022-06-17,1,230-->
 
 ??? Why is there a single extractor, whereas in computational knowledge soundness each adversary has its own extractor?
 
@@ -1026,3 +1031,4 @@ By verifying a number of pairing product equations, which corresponds to checkin
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
+<!--SR:2022-06-20,4,250-->
