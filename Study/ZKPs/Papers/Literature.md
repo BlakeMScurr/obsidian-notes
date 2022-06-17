@@ -73,7 +73,7 @@ Lance Fortnow, John Rompel, and Michael Sipser.
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-06-17,7,130-->
+<!--SR:2022-06-26,9,130-->
 
 ## BFL90
 
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-06-17,2,190-->
+<!--SR:2022-06-23,6,210-->
 
 What did Gro10 contribute?
 ?
@@ -238,7 +238,7 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 What is the title of GKMMM18?
 ?
@@ -263,12 +263,12 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What did MBKM19 contribute?
 ?
 A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-20,3,230-->
 
 What is MBKM19 otherwise known as?
 ?
@@ -280,12 +280,12 @@ Sonic
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-18,1,210-->
 
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-21,4,250-->
 
 What did GWC21 contribute?
 ?
@@ -304,7 +304,7 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
-<!--SR:2022-06-17,1,230-->
+<!--SR:2022-06-19,2,230-->
 
 What is the title of BGM19?
 ?

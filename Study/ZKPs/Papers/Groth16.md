@@ -977,17 +977,17 @@ The dimension of the vector output by $t$.
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
-UNFINISHED
-
 ### Definition of a LIP
 
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
+<!--SR:2022-06-18,1,230-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
 That a witness can be extracted from a proof matrix.
+<!--SR:2022-06-21,4,250-->
 
 What is the definition of statistical knowledge soundness against affine prover strategies?
 ?
@@ -1015,26 +1015,47 @@ $$
 
 What can LIPs be compiled into and how?
 ?
-Non-interactive by using pairings.
+Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
+<!--SR:2022-06-21,4,250-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
+<!--SR:2022-06-21,4,250-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?
-Exponentiations of the field elements in $\sigma$, (where $\sigma$ refers the crs of the LIP).
+Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
+<!--SR:2022-06-18,1,230-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
+<!--SR:2022-06-18,1,230-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
+<!--SR:2022-06-18,1,230-->
 
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
 <!--SR:2022-06-20,4,250-->
+# Constructions
+
+What kind of language does our pairing based NIZK construction prove?
+?
+Quadratic Arithmetic Programs.
+
+What does a proof in our NIZK construction construction consist of?
+?
+3 group elements.
+
+What are the steps for consructing our NIZK argument?
+?
+Construct a LIP.
+Convert the LIP into a pairing-based NIZK argument.
+
+### LIPs or QAPs
