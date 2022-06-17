@@ -1059,3 +1059,37 @@ Construct a LIP.
 Convert the LIP into a pairing-based NIZK argument.
 
 ### LIPs or QAPs
+
+What is $h(x)$?
+?
+The quotient polynomial, i.e, the number of times we add $t(X)$ to make each side of the QAP equation equal, given equality $\mod t(X)$.
+
+What is the degree of $h(X)$?
+?
+$n-2$
+
+How do we know the degree of $h(X)$?
+?
+$u_i(X), v_i(X), w_i(X)$ are degree $n-1$ polynomials, and $t(X)$ is a degree $n$ polynomial. 
+Since, roughly, $h$ = $(u \cdot v - w)/t$ then the degree of is $(n-1) + (n-1) - n = n - 2$
+
+What are the steps in Setup for a LIP for a QAP, roughly?
+?
+Pick parameters
+Set $\boldsymbol{\tau}$
+Set $\boldsymbol{\sigma}$
+
+What are the parameters selected in the Setup for a LIP for a QAP?
+?
+$\alpha, \beta, \gamma, \delta, x$
+
+What is $\boldsymbol{\tau}$ in a LIP for a QAP?
+?
+$(\alpha, \beta, \gamma, \delta, x)$
+
+
+What set are the parameters in Setup for a LIP for a QAP selected from?
+?
+$\mathbb{F}^*$
+
+??? How is it possible that they are selected from this? They appear to just be single elements?

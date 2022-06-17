@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "5c81cd53504777a2",
+        "id": "ab4c0ce05eada015",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -95,7 +95,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5c81cd53504777a2",
+  "active": "ab4c0ce05eada015",
   "lastOpenFiles": [
     "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/Literature.md",
