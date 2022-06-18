@@ -80,7 +80,7 @@ That interaction with two provers is equivalent to interaction with one prover p
 What is BFL90's title?
 ?
 Non-deterministic exponential time has two prover interactive protocols.
-<!--SR:2022-06-18,20,150-->
+<!--SR:2022-07-18,30,150-->
 
 Who are the authors of BFL90?
 ?
@@ -142,7 +142,7 @@ What did GOS12 contribute?
 Who are the authors of GOS06?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-06-18,29,250-->
+<!--SR:2022-08-30,73,250-->
 
 What is the title of GOS06?
 ?
@@ -152,7 +152,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-06-18,6,130-->
+<!--SR:2022-06-24,6,130-->
 
 Who are the authors of Gro06?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-06-18,5,130-->
+<!--SR:2022-06-22,4,130-->
 
 What did Gro06 contribute?
 ?
@@ -243,7 +243,7 @@ Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
-<!--SR:2022-06-18,2,250-->
+<!--SR:2022-06-23,5,250-->
 
 What did GKMMM18 contribute?
 ?
@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-06-18,1,210-->
+<!--SR:2022-06-21,3,210-->
 
 What did MBKM19 contribute?
 ?
@@ -273,14 +273,14 @@ A zk_SNARK with a universal updatable CRS that scales linearly with respect to t
 What is MBKM19 otherwise known as?
 ?
 Sonic
-<!--SR:2022-06-18,2,250-->
+<!--SR:2022-06-24,6,250-->
 
 ### GWC21
 
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-06-18,1,210-->
+<!--SR:2022-06-21,3,210-->
 
 What is the title of GWC21?
 ?
@@ -309,7 +309,7 @@ Sean Bowe, Ariel Gabizon, Ian Miers
 What is the title of BGM19?
 ?
 Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
-<!--SR:2022-06-18,2,250-->
+<!--SR:2022-06-23,5,250-->
 
 What did BGM19 contribute?
 ?

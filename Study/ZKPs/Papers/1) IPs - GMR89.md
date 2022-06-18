@@ -24,7 +24,7 @@ In what sense are interactive proofs probabilistic?
 ?
 The verifier can be convinced of a false n-bit statement with $1/2^n$ probability.
 The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probability.
-<!--SR:2022-06-18,30,210-->
+<!--SR:2022-08-18,61,210-->
 
 ### Knowledge Complexity
 * We can investigate the knowledge (as opposed to time) complexity of a proof
@@ -683,7 +683,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-06-18,17,150-->
+<!--SR:2022-07-15,27,150-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -739,7 +739,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-06-18,13,130-->
+<!--SR:2022-07-06,18,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -803,7 +803,7 @@ None because we could compute it ourselves easily.
 What is the unit for knowledge communcation?
 ?
 Bits.
-<!--SR:2022-06-18,53,270-->
+<!--SR:2022-11-08,143,270-->
 
 #### Machine Ensembles
 * Probabilistic (polynomial output) turing machines generate ensembles
@@ -919,7 +919,7 @@ M can simulate A by just looking at B's coin tosses directly, since B knows the 
 How much information does A communicate in naive QNR?
 ?
 More than Zero if $QNR \notin PP$, namely the residuosity of each $t_i$
-<!--SR:2022-06-18,33,230-->
+<!--SR:2022-08-29,72,230-->
 
 How does B' work in naive QNR?
 ?
@@ -1264,7 +1264,7 @@ $x$ is of  type 2
 What is $T \cup S$ for?
 ?
 The set of random numbers used to convince $A$ that $B$ knows the residuosity of $x$ without revealing it.
-<!--SR:2022-06-18,15,210-->
+<!--SR:2022-07-23,35,210-->
 
 What is the size of $T \cup S$?
 ?
@@ -1279,7 +1279,7 @@ $T = \{t_1, ..., t_n\ |\ t_i = r_i^2\}$
 How is $S$ constructed?
 ?
 $S = \{t_{n+1},...,t_{2n}\ |\ t_i = y\cdot r_i^2\}$
-<!--SR:2022-06-18,38,250-->
+<!--SR:2022-09-21,95,250-->
 
 
 What type are each $t_i$?

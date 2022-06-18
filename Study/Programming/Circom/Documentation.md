@@ -413,7 +413,7 @@ To ensure that the circuit is compatible with the specified compiler version.
 If there is no pragma, what do we assume?
 ?
 That the code is compatible with the compiler's latest version.
-<!--SR:2022-06-18,21,250-->
+<!--SR:2022-08-06,49,250-->
 
 ## Functions
 
@@ -1075,7 +1075,7 @@ Introduces a condition to be checked at execution time. If the condition fails, 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-06-18,18,230-->
+<!--SR:2022-08-02,45,230-->
 
 How do you use `assert`, for example?
 ?
@@ -1214,7 +1214,7 @@ Length of `array` must be known.
 A control flow with a constraint . . . ?
 ?
 Must have a known condition.
-<!--SR:2022-06-18,20,250-->
+<!--SR:2022-08-07,50,250-->
 
 What is wrong with the following code and what message does it generate?
 ```

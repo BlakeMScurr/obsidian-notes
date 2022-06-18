@@ -48,7 +48,7 @@ What does HashLeftRight do?
 ?
 Outputs the mimcsponge hash of two input signals left and right.
 I.e., `computes MiMC([left, right])`
-<!--SR:2022-06-18,12,250-->
+<!--SR:2022-07-22,34,250-->
 
 What is the code for HashLeftRight?
 ?
