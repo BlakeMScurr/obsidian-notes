@@ -144,7 +144,7 @@ x = 1;
 var y = 2;
 var z[3] = [3,4,5];
 ```
-<!--SR:2022-06-19,21,230-->
+<!--SR:2022-08-05,47,230-->
 
 What is wrong with the following code?
 ```
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-06-19,17,210-->
+<!--SR:2022-07-25,36,210-->
 
 What, roughly, are the three compiler warnings you can get from misusing signals in a template?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-06-19,6,130-->
+<!--SR:2022-06-25,6,130-->
 
 # Operators
 
@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-06-19,11,170-->
+<!--SR:2022-07-09,20,170-->
 
 Where can operators be used?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-06-19,20,230-->
+<!--SR:2022-08-03,45,230-->
 
 # Constraint Generation
 
@@ -803,7 +803,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
-<!--SR:2022-06-19,20,250-->
+<!--SR:2022-08-08,50,250-->
 
 What is wrong with the following code and what error does it produce?
 ```

@@ -546,7 +546,7 @@ The hypothesis that strictly $IP[k] \subset IP[k+1]$
 What is communication for, according to GMR?
 ?
 Transferring knowledge.
-<!--SR:2022-06-19,48,250-->
+<!--SR:2022-10-17,120,250-->
 
 What is MCF?
 ?
@@ -587,7 +587,7 @@ What does GMR study with respect to knowledge?
 ?
 What a polynomially bounded participant can learn from communication.
 The quantity of knowledge required to prove a theorem.
-<!--SR:2022-06-19,33,210-->
+<!--SR:2022-08-27,69,210-->
 
 ### Distinguishing
 #### Ensembles
@@ -819,7 +819,7 @@ The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible output
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
 As an I-c-ensemble $(A,B)[.]$
-<!--SR:2022-06-19,19,230-->
+<!--SR:2022-08-02,44,230-->
 
 #### Communication
 * We can think of communication measurement as a student scrutinising a lesson for hidden knowledge
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-19,3,130-->
+<!--SR:2022-06-22,3,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -1233,7 +1233,7 @@ $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
 What is $x$ in the zk QNR IP?
 ?
 The random residuosity number B quizzes A about.
-<!--SR:2022-06-19,31,210-->
+<!--SR:2022-08-23,65,210-->
 
 How is $x$ defined in the zk QNR IP?
 ?
@@ -1317,7 +1317,7 @@ $A$ randomly selects a subset of $T \cup S$ of size $n$
 How large is $Z$?
 ?
 $n$
-<!--SR:2022-06-19,39,250-->
+<!--SR:2022-09-25,98,250-->
 
 How does $A$ send $Z$ to $B$?
 ?
@@ -1390,7 +1390,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-06-19,9,190-->
+<!--SR:2022-07-08,19,190-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?

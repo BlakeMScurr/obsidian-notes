@@ -101,7 +101,7 @@ The proof does not reveal anything but the truth of the statement, in particular
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
 To non-interactive zero knowledge proofs (NIZK) in the common reference string model.
-<!--SR:2022-06-19,28,250-->
+<!--SR:2022-08-28,70,250-->
 
 Where are NIZKs useful, according to Groth16?
 ?
@@ -116,7 +116,7 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-06-19,15,150-->
+<!--SR:2022-07-12,23,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
@@ -151,12 +151,14 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-06-19,3,230-->
+<!--SR:2022-06-26,7,230-->
+
+??? Wait, is this right? It appears to only mean that they approach each other polynomially.
 
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-20,1,210-->
 
 What is the limit definition of $\omega$?
 ?
@@ -218,7 +220,7 @@ Groups of prime order $p$.
 What is $e$ and what is its definition?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
-<!--SR:2022-06-19,4,250-->
+<!--SR:2022-07-01,12,250-->
 
 What is a property of generators of our bilinear group?
 ?
@@ -231,7 +233,7 @@ Group operations for the groups.
 Evaluating the bilinear map.
 Deciding the equality of group elements.
 Sampling generators of the groups.
-<!--SR:2022-06-19,4,250-->
+<!--SR:2022-07-01,12,250-->
 
 What do we assume about the bilinear group operations?
 ?
@@ -241,7 +243,7 @@ That there are efficient algorithms for computing them.
 What are the names for the types of bilinear groups?
 ?
 Type I, Type II, and Type III
-<!--SR:2022-06-19,4,250-->
+<!--SR:2022-07-01,12,250-->
 
 Who classified the types of bilinear groups?
 ?
@@ -276,7 +278,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-24,5,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -302,7 +304,7 @@ The witness.
 What kinds of pairs are in $R$?
 ?
 $(\phi, w)$, i.e., statement and witness
-<!--SR:2022-06-19,4,250-->
+<!--SR:2022-07-01,12,250-->
 
 What is $\mathcal{R}_\lambda$?
 ?
@@ -424,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-06-19,3,190-->
+<!--SR:2022-06-25,6,190-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -471,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-06-19,3,190-->
+<!--SR:2022-06-25,6,190-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -482,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-06-19,2,170-->
+<!--SR:2022-06-23,4,190-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -507,7 +509,7 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-24,5,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
@@ -519,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-06-19,3,210-->
+<!--SR:2022-06-24,5,210-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -558,7 +560,7 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-06-19,1,190-->
+<!--SR:2022-06-22,3,190-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
@@ -711,7 +713,7 @@ $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-06-19,3,210-->
+<!--SR:2022-06-25,6,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -748,7 +750,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-23,4,230-->
 
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -782,7 +784,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-24,5,230-->
 
 How might relation generators vary in practice?
 ?
@@ -814,7 +816,7 @@ Why do we have to assume the relation generator is benign?
 ?
 Because indistinguishability obfuscation implies there is some auxiliary information for which witness extraction is impossible.
 And because the relation generator picks the bilinear group to give our generator definition flexibility.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-27,8,250-->
 
 ## Linear Interactive Proofs
 
@@ -828,7 +830,7 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-23,4,230-->
 
 Who invented LIPs?
 ?
@@ -845,7 +847,7 @@ What are the (top level) algorithms for a LIP?
 Setup
 Prove
 Vfy
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-29,10,250-->
 
 What is a LIP generated by, and what do we assume about it?
 ?
@@ -860,7 +862,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-06-19,1,190-->
+<!--SR:2022-06-22,3,190-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -876,22 +878,22 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-06-19,1,190-->
+<!--SR:2022-06-22,3,190-->
 
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-26,7,250-->
 
 What is the output of ProofMatrix?
 ?
 A matrix $\Pi \in \mathbb{F}^{k \times m}$
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-26,7,250-->
 
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-29,10,250-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -903,12 +905,12 @@ What does Vfy do in a LIP?
 The verifier runs in two stages.
 First is runs a deterministic polynomial time algorithm $t \leftarrow \textbf{Test}(R, \phi)$ to get an arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$ of multiplicative depth $d_D$
 It then accepts the proof if and only if $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-28,9,250-->
 
 What is Test?
 ?
 A deterministic polynomial time algorithm.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-28,9,250-->
 
 What are the inputs of Test?
 ?
@@ -933,7 +935,7 @@ $(\sigma, \pi)$
 When does Vfy accept in a LIP?
 ?
 If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-23,4,230-->
 
 What are the degrees and dimensions of a LIP?
 ?
@@ -943,7 +945,7 @@ $d_Q, d_D, \mu, m, n, k, \eta$
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
 They may be constants or polynomials in the security parameter $\lambda$
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-27,8,250-->
 
 What is $d_Q$?
 ?
@@ -958,7 +960,7 @@ The multiplicative depth of the verifier circuit output by Test.
 What is $\mu$?
 ?
 The dimension of the randomness vector used in Setup.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-25,6,250-->
 
 What is $m$ in a LIP?
 ?
@@ -970,12 +972,12 @@ The dimension in the crs vector $\sigma$ made in Setup.
 What is $n$ in a LIP?
 ?
 The dimension of the simulation trapdoor vector $\tau$ made in Setup.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-27,8,250-->
 
 What is $\eta$ in a LIP?
 ?
 The dimension of the vector output by $t$.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-22,3,230-->
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
@@ -1005,7 +1007,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-06-19,1,190-->
+<!--SR:2022-06-22,3,190-->
 
 ??? Why does the adversary not accept sigma? Is that because it doesn't need to, since it implicitly takes this argument since we're requiring that Vfy works with sigma. Does the extractor not accept sigma for the same reasons?
 
@@ -1029,7 +1031,7 @@ An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
 What does the crs of a compiled LIP contain, roughly?
 ?
 Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
-<!--SR:2022-06-19,1,210-->
+<!--SR:2022-06-20,1,190-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
@@ -1039,7 +1041,7 @@ With multi-exponentiations of group elements, corresponding to linear operations
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-06-19,1,210-->
+<!--SR:2022-06-20,1,190-->
 
 What are pairing product equations?
 ?

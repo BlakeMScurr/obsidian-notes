@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-06-19,24,170-->
+<!--SR:2022-07-02,13,150-->
 
 ## BGKW88
 
@@ -56,7 +56,7 @@ The notion of multi-prover interactive protocols, that all languages in NP have 
 What did BGKW88 see themselves as contributing?
 ?
 An interactive proof system that doesn't rely on the one way function assumption, instead relying on physical separation.
-<!--SR:2022-06-19,11,130-->
+<!--SR:2022-07-04,15,130-->
 
 ## FRS88
 
@@ -238,7 +238,7 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-25,6,230-->
 
 What is the title of GKMMM18?
 ?
@@ -251,14 +251,14 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-29,10,250-->
 
 ###
 
 Who are the authors of MBKM19?
 ?
 Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-28,9,250-->
 
 What is the title of MBKM19?
 ?
@@ -290,7 +290,7 @@ Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
-<!--SR:2022-06-19,3,250-->
+<!--SR:2022-06-27,8,250-->
 
 What is GWC21 otherwise known as?
 ?
@@ -304,7 +304,7 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
-<!--SR:2022-06-19,2,230-->
+<!--SR:2022-06-24,5,230-->
 
 What is the title of BGM19?
 ?
