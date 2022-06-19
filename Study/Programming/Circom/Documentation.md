@@ -49,7 +49,7 @@ The rest of the signals are private and can't be made public.
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-06-20,19,230-->
+<!--SR:2022-08-03,44,230-->
 
 How can we rewrite the lines:
 ```
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-06-20,15,230-->
+<!--SR:2022-07-24,34,230-->
 
 How do we access the input or output signals of a component?
 ?
@@ -362,7 +362,7 @@ if (N > 0) {
 ?
 If there are multiple initialization instructions for a component, they must all be from the same template (perhaps with different parameters).
 "Assignee and assigned types do not match"
-<!--SR:2022-06-20,21,230-->
+<!--SR:2022-08-09,50,230-->
 
 How do you make an array of components? What is the syntactic restriction?
 ?
@@ -515,7 +515,7 @@ What is the comment syntax for circom?
 What can be used for identifiers?
 ?
 `*[a-zA-Z0-9_$]`
-<!--SR:2022-06-20,21,250-->
+<!--SR:2022-08-12,53,250-->
 
 What are the reserved keywords?
 ?
@@ -569,7 +569,7 @@ What do you use to change the field size?
 What is the conditional expression?
 ?
 `_?_:_`
-<!--SR:2022-06-20,20,250-->
+<!--SR:2022-08-11,52,250-->
 
 What are the boolean operators?
 ?
@@ -677,7 +677,7 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-06-20,12,210-->
+<!--SR:2022-07-17,27,210-->
 
 What is the `^` operator?
 ?
@@ -768,7 +768,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-06-20,18,230-->
+<!--SR:2022-07-31,41,230-->
 
 What is a quadratic expression?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-06-20,10,170-->
+<!--SR:2022-07-09,19,170-->
 
 What creates assertions?
 ?

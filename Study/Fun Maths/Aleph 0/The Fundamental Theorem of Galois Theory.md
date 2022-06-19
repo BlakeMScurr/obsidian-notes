@@ -66,7 +66,7 @@ How many ways are there to permutate the conjugates of $\zeta$ over $\mathbb{Q}$
 ?
 $4! = 24$ permutations
 $4$ preserve algebraic relations
-<!--SR:2022-06-20,31,250-->
+<!--SR:2022-09-06,78,250-->
 
 What are the permutations of conjugates of $\zeta$ that preserve algebraic relations?
 ?
@@ -96,7 +96,7 @@ The rational numbers
 What can't you do in a field?
 ?
 Take square roots.
-<!--SR:2022-06-20,33,250-->
+<!--SR:2022-09-12,84,250-->
 
 What is $\mathbb{Q}(\sqrt(2)$? What does it contain?
 ?

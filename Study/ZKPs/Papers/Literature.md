@@ -204,12 +204,12 @@ Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduce
 Who are the authors of Gro09?
 ?
 Jens Groth
-<!--SR:2022-06-20,30,250-->
+<!--SR:2022-09-03,75,250-->
 
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-06-20,6,130-->
+<!--SR:2022-06-30,10,130-->
 
 What did Gro09 contribute?
 ?
@@ -268,7 +268,7 @@ Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured
 What did MBKM19 contribute?
 ?
 A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-26,6,230-->
 
 What is MBKM19 otherwise known as?
 ?
@@ -295,7 +295,7 @@ A zk-SNARK with an linear sized updatable universal structured reference string 
 What is GWC21 otherwise known as?
 ?
 Plonk
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 # CRS MPC Protocols
 
@@ -314,7 +314,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

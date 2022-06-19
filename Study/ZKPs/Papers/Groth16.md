@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-06-20,6,130-->
+<!--SR:2022-06-30,10,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-06-20,1,210-->
+<!--SR:2022-06-23,3,210-->
 
 What is the limit definition of $\omega$?
 ?
@@ -173,7 +173,7 @@ $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
 What does $\lambda$ represent, and what do its values mean?
 ?
 $\lambda$ is the security parameter, and as it grows we want higher security.
-<!--SR:2022-06-20,5,250-->
+<!--SR:2022-07-03,13,250-->
 
 What does $y = A(x;r)$ mean?
 ?
@@ -215,7 +215,7 @@ A prime number.
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
 Groups of prime order $p$.
-<!--SR:2022-06-20,5,250-->
+<!--SR:2022-07-05,15,250-->
 
 What is $e$ and what is its definition?
 ?
@@ -248,7 +248,7 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-06-20,3,210-->
+<!--SR:2022-06-23,3,190-->
 
 What is a Type I bilinear group?
 ?
@@ -319,7 +319,7 @@ Auxilliary information that the relation generator might output, which will be g
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-23,3,210-->
 
 What is the definition of $\textbf{Setup}$?
 ?
@@ -355,7 +355,7 @@ The simulator gets access to $tau$ so it can generate proofs indistinguishable f
 What is $\pi$?
 ?
 The argument.
-<!--SR:2022-06-20,5,250-->
+<!--SR:2022-07-05,15,250-->
 
 What is the definition of $\textbf{Vfy}$?
 ?
@@ -376,7 +376,7 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 What is a non-interactive argument?
 ?
 We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
-<!--SR:2022-06-20,5,250-->
+<!--SR:2022-07-03,13,250-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
@@ -394,7 +394,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-06-20,3,210-->
+<!--SR:2022-06-26,6,210-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -555,7 +555,7 @@ Preprocessing SNARKs.
 What was the first danger discovered that was implied by indistinguishability obfuscation?
 ?
 Indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
@@ -575,7 +575,7 @@ Boyle and Pass BP15
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
 Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and the auxiliary input are distributed in such a way that SNARKs can exist.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 ## Quadratic Arithmetic Programs
 
@@ -634,7 +634,7 @@ What is the form of our arithmetic constraints?
 ?
 $\sum a_iu_{i,q}\sum a_iv_{i,q}=\sum a_iw_{i,q}$,
 where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
-<!--SR:2022-06-20,25,250-->
+<!--SR:2022-07-04,14,230-->
 
 ### Generalising Circuits
 
@@ -735,17 +735,17 @@ $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
 What is $\mathbb{F}$?
 ?
 A finite field.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What is $aux$?
 ?
 Auxiliary information.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 What is the $\mathscr{l}$ for?
 ?
 Delineating the variables for the statement and the witness.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What is the definition of $\mathscr{l}$?
 ?
@@ -755,7 +755,7 @@ $1 \leq \mathscr{l} \leq m$
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-25,5,230-->
 
 What is the setbuilder notation for a quadratic arithmetic program?
 ?
@@ -769,7 +769,7 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-06-23,3,230-->
 
 What is the definition of $\phi$ in a QAP?
 ?
@@ -779,7 +779,7 @@ $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
 What is the definition of $w$ in a QAP?
 ?
 $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-06-23,3,230-->
 
 When is $\mathcal{R}$ a QAP generator?
 ?
@@ -790,27 +790,27 @@ How might relation generators vary in practice?
 ?
 Deterministic vs randomised.
 Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-29,9,230-->
 
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
 To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 In pairing based NIZK arguments, what does aux specify and why?
 ?
 The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-06-30,10,250-->
 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
 Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
 That the relation generator is benign.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 Why do we have to assume the relation generator is benign?
 ?
@@ -825,7 +825,7 @@ And because the relation generator picks the bilinear group to give our generato
 What does LIP stand for?
 ?
 Linear interactive proof
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What is the purpose of a LIP?
 ?
@@ -840,7 +840,7 @@ Bitansky et al. BCI+13
 How do we denote the degree of a LIP?
 ?
 $(d_Q, d_D)$
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What are the (top level) algorithms for a LIP?
 ?
@@ -852,12 +852,12 @@ Vfy
 What is a LIP generated by, and what do we assume about it?
 ?
 A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-23,3,210-->
 
 What, broadly, is a LIP?
 ?
 A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work with matrices.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What does Setup do in a LIP?
 ?
@@ -869,7 +869,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-27,7,230-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -920,12 +920,12 @@ $(R, \phi)$
 What does Test output?
 ?
 An arithmetic circuit $t$.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-06-30,10,250-->
 
 What is the definition of $t$?
 ?
 An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-02,12,250-->
 
 What arguments is $t$ passed?
 ?
@@ -950,12 +950,12 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-06-20,3,230-->
+<!--SR:2022-06-28,8,230-->
 
 What is $d_D$?
 ?
 The multiplicative depth of the verifier circuit output by Test.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 
 What is $\mu$?
 ?
@@ -965,7 +965,7 @@ The dimension of the randomness vector used in Setup.
 What is $m$ in a LIP?
 ?
 The dimension in the crs vector $\sigma$ made in Setup.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-06-30,10,250-->
 
 ??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 
@@ -1031,7 +1031,7 @@ An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
 What does the crs of a compiled LIP contain, roughly?
 ?
 Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
-<!--SR:2022-06-20,1,190-->
+<!--SR:2022-06-23,3,190-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
@@ -1041,12 +1041,12 @@ With multi-exponentiations of group elements, corresponding to linear operations
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-06-20,1,190-->
+<!--SR:2022-06-23,3,190-->
 
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
-<!--SR:2022-06-20,4,250-->
+<!--SR:2022-07-01,11,250-->
 # Constructions
 
 What kind of language does our pairing based NIZK construction prove?

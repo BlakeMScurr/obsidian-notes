@@ -57,7 +57,7 @@ You prove it by noting that both are the inverse of $ab$:
 $$
 b^{-1}a^{-1} = b^{-1}a^{-1}ab(ab)^{-1} = (ab)^{-1}
 $$
-<!--SR:2022-06-20,55,250-->
+<!--SR:2022-11-05,138,250-->
 
 How do you represent the n-fold composite of a group element with itself?
 ?

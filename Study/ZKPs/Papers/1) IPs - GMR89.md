@@ -1287,10 +1287,10 @@ What type are each $t_i$?
 Type 1
 <!--SR:2022-07-19,48,230-->
 
-What type are each $s_i$?
+What type are each $t_i in S$?
 ?
 Type 2
-<!--SR:2022-06-20,40,250-->
+<!--SR:2022-07-13,23,230-->
 
 How does $B$ send $T$ and $S$ to $A$?
 ?
