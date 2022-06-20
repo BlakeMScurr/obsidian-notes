@@ -119,7 +119,7 @@ Cyclic groups are commutative because all elements can be represented as a power
 What are the generators of the additive group $\mathbb{z}$?
 ?
 $1$ and $-1$.
-<!--SR:2022-06-21,48,250-->
+<!--SR:2022-10-13,114,250-->
 
 What are the properties of an equivalence relation?
 ?

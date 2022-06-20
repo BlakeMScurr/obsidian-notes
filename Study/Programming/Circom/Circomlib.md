@@ -19,7 +19,7 @@ compconstant
 What is binsum?
 ?
 Creates a constraint specifying that some binary inputs add to some binary output.
-<!--SR:2022-06-21,20,230-->
+<!--SR:2022-08-06,46,230-->
 
 What is `ops` in binsum?
 ?

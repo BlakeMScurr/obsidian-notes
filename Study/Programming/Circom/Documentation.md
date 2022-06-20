@@ -306,7 +306,7 @@ An arithmetic circuit.
 What does a component consist of?
 ?
 $N$ input signals, $M$ output signals, and $K$ intermediate signals.
-<!--SR:2022-06-21,23,250-->
+<!--SR:2022-08-21,61,250-->
 
 What can a component produce?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-06-21,15,190-->
+<!--SR:2022-06-29,8,170-->
 
 What are the bitwise assignment operators?
 ?
@@ -798,7 +798,7 @@ Rewrite `out <== 1 - a * b;` more explicitly
 out === 1 - a * b;
 out <-- 1 - a * b;
 ```
-<!--SR:2022-06-21,21,250-->
+<!--SR:2022-08-14,54,250-->
 
 What kinds of expressions are allowed in constraints?
 ?
@@ -1034,7 +1034,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
-<!--SR:2022-06-21,18,230-->
+<!--SR:2022-08-01,41,230-->
 
 What is wrong with this code?
 ```
@@ -1085,7 +1085,7 @@ How do you use `assert`, for example?
 What is `log`?
 ?
 A way to log values to the standard error stream.
-<!--SR:2022-06-21,22,250-->
+<!--SR:2022-08-15,55,250-->
 
 What can be passed to `log`?
 ?

@@ -416,7 +416,7 @@ Choose random numbers.
 Form squares (i.e., non residues).
 Mix/multiply some with input x.
 Sends the mix to A.
-<!--SR:2022-06-21,39,230-->
+<!--SR:2022-09-19,90,230-->
 
 How does B mix random numbers with x in the basic QNR IP?
 ?
@@ -761,7 +761,7 @@ Which notion of indistinguishability presented in GMR is necessary for zero know
 How much data is each distinguisher fed at a time?
 ?
 A single $|x|^c$-bit string
-<!--SR:2022-06-21,29,210-->
+<!--SR:2022-08-24,64,210-->
 
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -1274,7 +1274,7 @@ $2n$, since $T$ and $S$ both have size $n$.
 How is $T$ constructed?
 ?
 $T = \{t_1, ..., t_n\ |\ t_i = r_i^2\}$
-<!--SR:2022-06-21,40,250-->
+<!--SR:2022-09-30,101,250-->
 
 How is $S$ constructed?
 ?
@@ -1385,7 +1385,7 @@ Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0 ^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-06-21,12,210-->
+<!--SR:2022-07-19,28,210-->
 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?

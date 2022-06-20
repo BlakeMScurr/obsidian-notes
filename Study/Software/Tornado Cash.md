@@ -7,7 +7,7 @@ How do deposits work?
 The user privately generates random bytes, hashes them, and sends them to the contract.
 The user also sends the token.
 The contract inserts the hash into a Merkle Tree.
-<!--SR:2022-06-21,13,250-->
+<!--SR:2022-07-26,35,250-->
 
 How do withdrawls work?
 ?

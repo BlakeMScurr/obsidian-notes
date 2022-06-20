@@ -930,7 +930,7 @@ An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
 What arguments is $t$ passed?
 ?
 $(\sigma, \pi)$
-<!--SR:2022-06-21,3,210-->
+<!--SR:2022-06-28,7,210-->
 
 When does Vfy accept in a LIP?
 ?
