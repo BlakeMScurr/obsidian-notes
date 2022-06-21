@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-06-22,4,150-->
+<!--SR:2022-06-24,2,130-->
 
 What are the variables in compconstant?
 ?
@@ -353,7 +353,7 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-06-22,16,210-->
+<!--SR:2022-07-30,38,210-->
 
 ### Mux1
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-06-22,10,170-->
+<!--SR:2022-07-11,19,170-->
 
 ## p-s
 

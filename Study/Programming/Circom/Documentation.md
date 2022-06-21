@@ -66,7 +66,7 @@ How do we instantiate a component?
 template B() {
 	component someName = A();
 }
-<!--SR:2022-06-22,25,250-->
+<!--SR:2022-08-25,64,250-->
 
 template A(){
 	...
@@ -652,7 +652,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2022-06-22,21,230-->
+<!--SR:2022-08-09,48,230-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-06-22,13,190-->
+<!--SR:2022-07-20,28,190-->
 
 What is the `>>` operator?
 ?
@@ -870,7 +870,7 @@ What is the syntax for a `while` loop?
 What restriction is placed on constraints inside control flow blocks?
 ?
 The conditions of the flow control blocks cannot be unknown. This is because constraint generation must be unique and cannot depend on unknown input signals.
-<!--SR:2022-06-22,22,250-->
+<!--SR:2022-08-16,55,250-->
 
 What is wrong with the following code?
 ```
@@ -1197,7 +1197,7 @@ The index for the array in the constraint is unknown.
 What restrictions are placed on the size of an array?
 ?
 The size must be a known value.
-<!--SR:2022-06-22,23,250-->
+<!--SR:2022-08-19,58,250-->
 
 What is wrong with the following code and what message does it generate?
 ```

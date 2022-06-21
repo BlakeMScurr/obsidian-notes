@@ -235,7 +235,7 @@ The irreducibility/unmodelability of the human mind, we can think of this as our
 How is an ITM's random tape implemented?
 ?
 It is readonly from left to right.
-<!--SR:2022-06-22,48,250-->
+<!--SR:2022-10-15,115,250-->
 
 How can we think of a read from an ITM's random tape?
 ?
@@ -383,7 +383,7 @@ The integers between 1 and m relatively prime to m.
 $a \in \mathbb{Z}^*_m$ is a quadratic residue if . . . ?
 ?
 $a = x^2\ mod\ m$ for some $x \in \mathbb{Z}^*_m$
-<!--SR:2022-06-22,48,250-->
+<!--SR:2022-10-16,116,250-->
 
 $a \in \mathbb{Z}^*_m$ is a quadratic non-residue if . . . ?
 ?
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-22,3,130-->
+<!--SR:2022-06-25,3,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -1221,7 +1221,7 @@ But type 2 numbers are quadratic residues if and only if $y$ is a quadratic resi
 What is the input to the zk QNR IP?
 ?
 $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
-<!--SR:2022-06-22,30,210-->
+<!--SR:2022-07-07,15,190-->
 
 What happens in step 1?
 ?
@@ -1355,7 +1355,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-06-22,8,170-->
+<!--SR:2022-06-26,4,150-->
 
 How does $B$ reveal $D$?
 ?
@@ -1417,7 +1417,7 @@ $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-06-22,32,250-->
+<!--SR:2022-09-13,83,250-->
 <!--SR:2022-05-05,2,230-->
 
 ##### Step 4
@@ -1445,7 +1445,7 @@ $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cd
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-06-22,32,250-->
+<!--SR:2022-09-13,83,250-->
 
 ??? why does it matter that $X' \cup Y'$ is sent in a random order?
 

@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-06-22,4,130-->
+<!--SR:2022-06-26,4,130-->
 
 What did Gro06 contribute?
 ?
@@ -172,12 +172,12 @@ Applications of pairing NIZKs to particular problems (without expensive circuit 
 Who are the authors of GS12?
 ?
 Jens Groth, Amit Sahai
-<!--SR:2022-06-21,32,250-->
+<!--SR:2022-09-14,84,250-->
 
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-06-21,5,130-->
+<!--SR:2022-06-30,8,130-->
 
 What did GS12 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-06-22,15,170-->
+<!--SR:2022-07-21,29,170-->
 
 What did Groth16 contribute?
 ?
@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-06-21,3,210-->
+<!--SR:2022-06-27,5,210-->
 
 What did MBKM19 contribute?
 ?
@@ -280,12 +280,12 @@ Sonic
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-06-21,3,210-->
+<!--SR:2022-06-29,7,210-->
 
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-06-21,4,250-->
+<!--SR:2022-07-05,13,250-->
 
 What did GWC21 contribute?
 ?
