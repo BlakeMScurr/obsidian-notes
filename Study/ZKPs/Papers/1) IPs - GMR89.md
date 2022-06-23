@@ -1251,7 +1251,7 @@ If $C_x = 0$, what are $x$ and the type of $x$?
 ?
 $x = r_0^2 \mod n$
 $x$ is of  type 1
-<!--SR:2022-06-23,42,250-->
+<!--SR:2022-10-04,103,250-->
 
 If $C_x = 1$, what are $x$ and the type of $x$?
 ?
@@ -1370,7 +1370,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-06-23,26,190-->
+<!--SR:2022-07-07,14,170-->
 
 What is the purpose of $X' \cup Y'$?
 ?
@@ -1586,7 +1586,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-06-23,33,250-->
+<!--SR:2022-09-16,85,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
@@ -1643,7 +1643,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-06-23,33,250-->
+<!--SR:2022-09-16,85,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?

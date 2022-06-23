@@ -35,7 +35,7 @@ What are the elementary consequences of the group axioms?
 Uniqueness of the identity
 Uniqueness of the inverse
 Inversion of a product
-<!--SR:2022-06-23,58,250-->
+<!--SR:2022-07-22,29,230-->
 
 How do you prove the uniqueness of group identity?
 ?
@@ -129,7 +129,7 @@ Reflexivity, symmetry, and transitivity.
 What is the reflexivity property of an equivalence relation?
 ?
 $$(s, s) \in R\ \forall s \in S$$
-<!--SR:2022-06-23,24,170-->
+<!--SR:2022-08-04,42,170-->
 
 What is the symmetry property of an equivalence relation?
 ?

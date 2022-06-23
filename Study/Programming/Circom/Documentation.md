@@ -584,7 +584,7 @@ Boolean AND operator.
 What is `||`?
 ?
 Boolean OR operator.
-<!--SR:2022-06-23,23,250-->
+<!--SR:2022-08-20,58,250-->
 
 What is `!`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-06-23,15,170-->
+<!--SR:2022-07-19,26,170-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?

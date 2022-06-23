@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-06-23,11,230-->
+<!--SR:2022-07-18,25,230-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
