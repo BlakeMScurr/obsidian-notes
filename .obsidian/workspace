@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/ZKPs/Papers/Groth16.md",
+            "file": "Study/ZKPs/Papers/Literature.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/ZKPs/Papers/Groth16.md",
+                "file": "Study/ZKPs/Papers/Literature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,9 +96,9 @@
   },
   "active": "ab4c0ce05eada015",
   "lastOpenFiles": [
+    "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/ZKPs/Papers/Literature.md",
     "Study/ZKPs/Papers/Oracle MIP - FRS.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/Programming/Circom/Documentation.md",

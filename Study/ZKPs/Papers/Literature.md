@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-06-23,6,210-->
+<!--SR:2022-07-06,13,210-->
 
 What did Gro10 contribute?
 ?
@@ -243,7 +243,7 @@ Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
-<!--SR:2022-06-23,5,250-->
+<!--SR:2022-06-26,3,250-->
 
 What did GKMMM18 contribute?
 ?
@@ -253,7 +253,7 @@ Universality means the CRS applies to any relation.
 Neither property had existed before.
 <!--SR:2022-06-29,10,250-->
 
-###
+### MBKM19
 
 Who are the authors of MBKM19?
 ?
@@ -309,7 +309,7 @@ Sean Bowe, Ariel Gabizon, Ian Miers
 What is the title of BGM19?
 ?
 Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
-<!--SR:2022-06-23,5,250-->
+<!--SR:2022-07-08,15,250-->
 
 What did BGM19 contribute?
 ?

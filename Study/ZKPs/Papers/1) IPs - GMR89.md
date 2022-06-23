@@ -1312,7 +1312,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-06-23,15,150-->
+<!--SR:2022-07-16,23,150-->
 
 How large is $Z$?
 ?
@@ -1549,7 +1549,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:2022-06-23,16,190-->
+<!--SR:2022-07-27,34,190-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?
@@ -1566,7 +1566,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:2022-06-23,33,250-->
+<!--SR:2022-09-14,83,250-->
 
 ##### Claim 1
 
