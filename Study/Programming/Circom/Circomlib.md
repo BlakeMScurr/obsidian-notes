@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-06-24,2,130-->
+<!--SR:2022-07-03,6,130-->
 
 What are the variables in compconstant?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-06-27,10,150-->
+<!--SR:2022-07-03,6,130-->
 
 ## g-m
 
@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-06-26,20,230-->
+<!--SR:2022-08-13,47,230-->
 
 What is the code for Mux1?
 ?
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-06-24,11,150-->
+<!--SR:2022-07-04,7,130-->

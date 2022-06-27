@@ -14,7 +14,7 @@ Succinct non-interactive argument
 What is a SNARK?
 ?
 Succinct non-interactive argument of knowledge
-<!--SR:2022-06-27,33,250-->
+<!--SR:2022-09-18,83,250-->
 
 What does a pairing based SNARG consist of?
 ?
@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-06-26,4,130-->
+<!--SR:2022-07-04,7,130-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -76,7 +76,7 @@ Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
 Who introduced zero-knowledge proofs?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
-<!--SR:2022-06-26,34,270-->
+<!--SR:2022-09-28,93,270-->
 
 What are the 3 core properties of zero knowledge proofs?
 ?
@@ -127,7 +127,7 @@ The first linear sized proofs based on standard assumptions.
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-06-24,19,190-->
+<!--SR:2022-07-09,12,170-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
@@ -151,7 +151,7 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-06-26,7,230-->
+<!--SR:2022-07-14,17,230-->
 
 ??? Wait, is this right? It appears to only mean that they approach each other polynomially.
 
@@ -168,7 +168,7 @@ $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
 What is the formal definition of $\omega$?
 ?
 $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
-<!--SR:2022-06-25,9,250-->
+<!--SR:2022-07-03,6,230-->
 
 What does $\lambda$ represent, and what do its values mean?
 ?
@@ -178,12 +178,12 @@ $\lambda$ is the security parameter, and as it grows we want higher security.
 What does $y = A(x;r)$ mean?
 ?
 That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
-<!--SR:2022-06-26,8,250-->
+<!--SR:2022-07-18,21,250-->
 
 What does $y \leftarrow A(x)$ mean?
 ?
 We pick randomness $r$ at random and set $y = A(x;r)$.
-<!--SR:2022-06-24,8,250-->
+<!--SR:2022-07-21,24,250-->
 
 What does $y \leftarrow S$ mean?
 ?
@@ -193,7 +193,7 @@ We pick $y$ uniformly at random from set $S$.
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
-<!--SR:2022-06-24,6,230-->
+<!--SR:2022-07-14,17,230-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -225,7 +225,7 @@ $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear ma
 What is a property of generators of our bilinear group?
 ?
 if $G$ is a generator of $\mathbb{G}_1$ and $H$ is a generator of $\mathbb{G}_2$ then $e(G, H)$ is a generator of $\mathbb{G}_T$.
-<!--SR:2022-06-27,10,250-->
+<!--SR:2022-07-24,27,250-->
 
 What are the generic bilinear group operations?
 ?
@@ -258,7 +258,7 @@ Where $\mathbb{G}_1 = \mathbb{G}_2$
 What are Type II bilinear groups?
 ?
 Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable non-trivial homomorphism $\psi : \mathbb{G}_1 \rightarrow \mathbb{G}_2$
-<!--SR:2022-06-26,9,250-->
+<!--SR:2022-07-24,27,250-->
 
 What are Type III bilinear groups?
 ?
@@ -268,7 +268,7 @@ Where there is no efficiently computable non-trivial homomorphism in either dire
 What is special about Type III bilinear groups?
 ?
 They are the most efficient type of bilinear groups, and hence the most relevant for practical applications.
-<!--SR:2022-06-27,9,250-->
+<!--SR:2022-07-20,23,250-->
 
 For which type of bilinear group is the lower bound given?
 ?
@@ -278,7 +278,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-06-24,5,230-->
+<!--SR:2022-07-14,17,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -287,7 +287,7 @@ All 3 types
 What is $\mathcal{R}$?
 ?
 A relation generator that, given $\lambda$ in unary returns a polynomial time decidable binary relation $R$.
-<!--SR:2022-06-24,8,250-->
+<!--SR:2022-07-22,25,250-->
 
 ??? Why is lambda in unary?
 
@@ -314,7 +314,7 @@ The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
 What is $z$?
 ?
 Auxilliary information that the relation generator might output, which will be given to the adversary.
-<!--SR:2022-06-25,8,230-->
+<!--SR:2022-07-17,20,230-->
 
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
@@ -325,7 +325,7 @@ What is the definition of $\textbf{Setup}$?
 ?
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
 The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
-<!--SR:2022-06-24,8,250-->
+<!--SR:2022-07-23,26,250-->
 
 ??? why don't we write the setup as explicitly taking the security parameter?
 
@@ -345,7 +345,7 @@ The common reference string.
 What is $\tau$?
 ?
 The simulation trapdoor.
-<!--SR:2022-06-26,10,250-->
+<!--SR:2022-07-25,28,250-->
 
 What is $tau$ used for?
 ?
@@ -394,7 +394,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-06-26,6,210-->
+<!--SR:2022-07-13,16,210-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -415,18 +415,18 @@ $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
 A malicious verifier trying to learn extra information from the proof.
-<!--SR:2022-06-26,10,250-->
+<!--SR:2022-07-25,28,250-->
 
 What does the adversary in the definition of perfect zero knowledge do?
 ?
 Tries to distinguish between the proof from prover and the proof from simulator.
-<!--SR:2022-06-27,9,250-->
+<!--SR:2022-07-21,24,250-->
 
 What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-06-25,6,190-->
+<!--SR:2022-07-12,15,190-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -452,7 +452,7 @@ What inputs does the adversary in the definition of computational soundness acce
 ?
 The relation, the auxilary input, and the common reference string.
 $(R, z, \sigma)$
-<!--SR:2022-06-25,9,250-->
+<!--SR:2022-07-22,25,250-->
 
 ??? Why does it not also accept the simulation trapdoor? Is it because then it could create any proof it likes.
 
@@ -473,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-06-25,6,190-->
+<!--SR:2022-07-11,14,190-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -494,7 +494,7 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
-<!--SR:2022-06-26,8,250-->
+<!--SR:2022-07-02,5,230-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
@@ -509,19 +509,19 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-06-24,5,230-->
+<!--SR:2022-07-14,17,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
 We can relax soundness and knowledge soundness such that the adversary only sees $\sigma_P$ but not $\sigma_V$.
-<!--SR:2022-06-27,9,250-->
+<!--SR:2022-07-23,26,250-->
 
 #### SNARKs and SNARGs
 
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-06-24,5,210-->
+<!--SR:2022-07-13,16,210-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -584,7 +584,7 @@ Since those results rely on specific auxiliary input distributions, we can assum
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-06-27,31,250-->
+<!--SR:2022-07-15,18,230-->
 
 What represents the statement in our arithmetic circuit?
 ?
@@ -651,12 +651,12 @@ $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the rem
 How can an addition gate be described as a constraint?
 ?
 $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$ by definition.
-<!--SR:2022-06-26,30,250-->
+<!--SR:2022-07-12,15,230-->
 
 In what sense are addition gates handled "for free?"
 ?
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
-<!--SR:2022-06-24,28,250-->
+<!--SR:2022-07-11,14,230-->
 
 ### Formulating QAPs
 
@@ -664,14 +664,14 @@ What can we reformulate arithmetic constraints as, and what assumption do we hav
 ?
 As a quadratic arithmetic program.
 That the field $\mathbb{F}$ is large enough.
-<!--SR:2022-06-27,10,250-->
+<!--SR:2022-07-25,28,250-->
 
 ??? Is this because the modular rearrangement doesn't work for tiny fields? Maybe fields with fewer elements than the number of roots in the polynomial?
 
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-06-27,5,170-->
+<!--SR:2022-07-08,11,170-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -685,7 +685,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2022-06-25,8,250-->
+<!--SR:2022-07-02,5,230-->
 
 How is $t(x)$ defined?
 ?
@@ -706,14 +706,14 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-06-27,5,210-->
+<!--SR:2022-07-01,4,190-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-06-25,6,210-->
+<!--SR:2022-07-14,17,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -755,7 +755,7 @@ $1 \leq \mathscr{l} \leq m$
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-06-25,5,230-->
+<!--SR:2022-07-13,16,230-->
 
 What is the setbuilder notation for a quadratic arithmetic program as a relation?
 ?
@@ -769,12 +769,12 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
-<!--SR:2022-06-25,2,210-->
+<!--SR:2022-07-04,7,210-->
 
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-06-25,3,190-->
+<!--SR:2022-07-07,10,190-->
 
 What is the definition of $w$ in a QAP?
 ?
@@ -784,7 +784,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-06-24,5,230-->
+<!--SR:2022-07-01,4,210-->
 
 How might relation generators vary in practice?
 ?
@@ -816,7 +816,7 @@ Why do we have to assume the relation generator is benign?
 ?
 Because indistinguishability obfuscation implies there is some auxiliary information for which witness extraction is impossible.
 And because the relation generator picks the bilinear group to give our generator definition flexibility.
-<!--SR:2022-06-27,8,250-->
+<!--SR:2022-07-18,21,250-->
 
 ## Linear Interactive Proofs
 
@@ -869,7 +869,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-06-27,7,230-->
+<!--SR:2022-07-15,18,230-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -878,17 +878,17 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-06-27,5,190-->
+<!--SR:2022-07-01,4,170-->
 
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-06-26,7,250-->
+<!--SR:2022-07-16,19,250-->
 
 What is the output of ProofMatrix?
 ?
 A matrix $\Pi \in \mathbb{F}^{k \times m}$
-<!--SR:2022-06-26,7,250-->
+<!--SR:2022-07-16,19,250-->
 
 What is $k$ in a LIP?
 ?
@@ -945,7 +945,7 @@ $d_Q, d_D, \mu, m, n, k, \eta$
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
 They may be constants or polynomials in the security parameter $\lambda$
-<!--SR:2022-06-27,8,250-->
+<!--SR:2022-07-17,20,250-->
 
 What is $d_Q$?
 ?
@@ -960,7 +960,7 @@ The multiplicative depth of the verifier circuit output by Test.
 What is $\mu$?
 ?
 The dimension of the randomness vector used in Setup.
-<!--SR:2022-06-25,6,250-->
+<!--SR:2022-07-15,18,250-->
 
 What is $m$ in a LIP?
 ?
@@ -972,7 +972,7 @@ The dimension in the crs vector $\sigma$ made in Setup.
 What is $n$ in a LIP?
 ?
 The dimension of the simulation trapdoor vector $\tau$ made in Setup.
-<!--SR:2022-06-27,8,250-->
+<!--SR:2022-07-19,22,250-->
 
 What is $\eta$ in a LIP?
 ?
@@ -1023,12 +1023,12 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-06-25,3,230-->
+<!--SR:2022-06-30,3,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
-<!--SR:2022-06-24,2,230-->
+<!--SR:2022-07-06,9,230-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?
@@ -1038,12 +1038,12 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-06-24,2,210-->
+<!--SR:2022-06-28,1,190-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-06-26,3,170-->
+<!--SR:2022-07-03,6,170-->
 
 What are pairing product equations?
 ?

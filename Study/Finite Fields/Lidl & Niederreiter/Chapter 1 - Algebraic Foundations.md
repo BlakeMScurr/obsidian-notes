@@ -40,7 +40,7 @@ Inversion of a product
 How do you prove the uniqueness of group identity?
 ?
 $e_1 = e_1e_2 = e_2$ by the indentity property of $e_1$ and $e_2$
-<!--SR:2022-06-25,60,250-->
+<!--SR:2022-11-27,153,250-->
 
 How do you prove the uniqueness of the group inverse?
 ?
@@ -74,7 +74,7 @@ $$
 How do we know that $a_1a_2...a_n$ is an unambiguous expression for a group?
 ?
 The associative law implies that no matter how we insert parentheses, the expression will always represent the same element of G.
-<!--SR:2022-06-24,59,250-->
+<!--SR:2022-11-25,151,250-->
 
 What are the "n-fold" rules in each notation?
 ?

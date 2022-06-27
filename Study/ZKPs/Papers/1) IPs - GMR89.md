@@ -240,7 +240,7 @@ It is readonly from left to right.
 How can we think of a read from an ITM's random tape?
 ?
 It's a coin flip.
-<!--SR:2022-06-26,52,250-->
+<!--SR:2022-10-31,126,250-->
 
 How is an ITM's speaking tape implemented?
 ?
@@ -347,7 +347,7 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-06-27,17,130-->
+<!--SR:2022-07-20,23,130-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
@@ -393,7 +393,7 @@ $a \neq x^2\ mod\ m$ for all $x \in \mathbb{Z}^*_m$
 Is $QNR \in NP$? How do we know?
 ?
 Yes. If the prover factorizes m, the verifier can decide quadratic residuosity in polynomial time using a method like euclid's algorithm that uses quadratic reciprocity.
-<!--SR:2022-06-27,52,250-->
+<!--SR:2022-11-04,130,250-->
 
 #### QNR IP
 
@@ -482,7 +482,7 @@ The class of languages with an interactive proof system where the prover runs in
 What is $IP[f(n)]$?
 ?
 The class of languages with an interactive proof system that halts within $f(n)$ turns.
-<!--SR:2022-06-24,17,230-->
+<!--SR:2022-08-07,41,230-->
 
 ### Arthur Merlin Games
 * "Arthur-Merlin" by Babai games are a predecessor of IPs by GMR
@@ -607,7 +607,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-06-26,16,130-->
+<!--SR:2022-07-17,20,130-->
 
 What is an I-c-ensemble used for?
 ?
@@ -668,7 +668,7 @@ We say $\Pi = \{\Pi_x | x \in I\}$ is an I-c-ensemble.
 What does a distinguisher represent in general?
 ?
 A computationally bounded adversary trying to distinguish between distributions, such as encrypted data from truly random data, or the output of an interactive proof system from an imitator.
-<!--SR:2022-06-25,33,210-->
+<!--SR:2022-09-10,75,210-->
 
 What does the distinguisher represent in an Interactive Proof?
 ?
@@ -744,7 +744,7 @@ That they are "equal" with respect to any polynomial time computation. At least,
 What was distinguishability used for before GMR?
 ?
 Probabilistic encryption and pseudo random number generation.
-<!--SR:2022-06-24,37,230-->
+<!--SR:2022-09-20,85,230-->
 
 In what sense is zkQNR indistinguishable?
 ?
@@ -788,7 +788,7 @@ It can be equivalent to sending multiple messages encrypted by the same key, whi
 Informally, which communications convey knowledge?
 ?
 Those that transmit the output of an unfeasible computation, a computation that we cannot perform ourselves.
-<!--SR:2022-06-25,37,230-->
+<!--SR:2022-09-18,83,230-->
 
 How much knowledge do random bits convey and why?
 ?
@@ -814,7 +814,7 @@ Bits.
 How do we define the the possible outputs of a probabilistic turing machine?
 ?
 The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible outputs of M on x.
-<!--SR:2022-06-25,32,190-->
+<!--SR:2022-08-25,59,190-->
 
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-06-25,3,130-->
+<!--SR:2022-07-03,6,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -1010,7 +1010,7 @@ That $x \in L$, but the text is of no other use, and could in fact the text coul
 For GMR, what is the theoretical application for knowledge complexity and why?
 ?
 Classifying languages. Languages, or equivalently, theorem proving procedures are intended to communicate knowledge, and are naturally classed by their knowledge complexity, for GMR.
-<!--SR:2022-06-26,26,210-->
+<!--SR:2022-08-22,56,210-->
 
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
@@ -1145,7 +1145,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:2022-06-27,22,170-->
+<!--SR:2022-08-03,37,170-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1226,7 +1226,7 @@ $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
 What happens in step 1?
 ?
 $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
-<!--SR:2022-06-25,44,250-->
+<!--SR:2022-10-18,113,250-->
 
 ###### x
 
@@ -1302,7 +1302,7 @@ As $T \cup S$ in a random order.
 What happens in step 2?
 ?
 $A$ constructs $Z$ and sends it to $B$.
-<!--SR:2022-06-24,43,250-->
+<!--SR:2022-10-11,106,250-->
 
 What is $Z$ for?
 ?
@@ -1350,12 +1350,12 @@ The difference in size between $T - Z$ and $S - Z$.
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
 $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - Z$ or $S -Z$.
-<!--SR:2022-06-24,31,210-->
+<!--SR:2022-08-30,64,210-->
 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-06-26,4,150-->
+<!--SR:2022-07-06,9,150-->
 
 How does $B$ reveal $D$?
 ?
@@ -1435,7 +1435,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-06-25,11,210--> 
+<!--SR:2022-07-04,7,190--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?
@@ -1464,7 +1464,7 @@ $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
 When does $B$ accept?
 ?
 If $iteration \geq n$
-<!--SR:2022-06-27,36,250-->
+<!--SR:2022-09-22,87,250-->
 
 When does $B$ increment $iteration$?
 ?

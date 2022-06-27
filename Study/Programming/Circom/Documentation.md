@@ -91,7 +91,7 @@ template A(){
 What happens if try to access a non output signal on a component?
 ?
 Compile error.
-<!--SR:2022-06-25,27,250-->
+<!--SR:2022-09-08,73,250-->
 
 What is wrong with the following code?
 ```
@@ -129,12 +129,12 @@ Identifiers that hold non-signal data and are mutable.
 How do we declare a variable?
 ?
 `var x;` declares a variable called `x`.
-<!--SR:2022-06-26,28,250-->
+<!--SR:2022-09-09,74,250-->
 
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-06-25,15,150-->
+<!--SR:2022-07-23,26,150-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -188,7 +188,7 @@ template tempid (param_1, param2) {
 	...
 }
 ```
-<!--SR:2022-06-24,25,250-->
+<!--SR:2022-09-01,66,250-->
 
 What can templates not include?
 ?
@@ -205,17 +205,17 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-06-26,10,170-->
+<!--SR:2022-07-15,18,170-->
 
 What is the syntax to instantiate template parameters?
 ?
 `component c = tempid(value_1, ... , value_n)`;
-<!--SR:2022-06-27,27,250-->
+<!--SR:2022-09-03,68,250-->
 
 How are the possible values of template parameters restricted?
 ?
 They should be known constants at compile time.
-<!--SR:2022-06-25,23,250-->
+<!--SR:2022-08-26,60,250-->
 
 What is wrong with the following code, and what error does it generate?
 ```
@@ -373,22 +373,22 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-06-27,20,230-->
+<!--SR:2022-08-08,42,230-->
 
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-06-27,28,250-->
+<!--SR:2022-09-05,70,250-->
 
 How do we use `parallel`?
 ?
 `template parallel NameTemplate(...){...}`
-<!--SR:2022-06-24,25,250-->
+<!--SR:2022-09-02,67,250-->
 
 What does `parallel` do?
 ?
 The C++ file resulting from compilation will contain parallelized code to compute the witness.
-<!--SR:2022-06-26,27,250-->
+<!--SR:2022-09-04,69,250-->
 
 When is parallelization particularly useful?
 ?
@@ -440,7 +440,7 @@ Numeric values, or expressions, or arrays of one or the other.
 Can functions be recursive?
 ?
 Yes.
-<!--SR:2022-06-26,26,250-->
+<!--SR:2022-08-28,62,250-->
 
 How many return statements can a function have?
 ?
@@ -486,7 +486,7 @@ The main component.
 How is the main component different from other components?
 ?
 It defines global input and outputs of the circuit, so it needs to be able to specify which input signals are public.
-<!--SR:2022-06-25,26,250-->
+<!--SR:2022-09-07,72,250-->
 
 What is the syntax for creating a main component?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-06-25,6,130-->
+<!--SR:2022-07-07,10,130-->
 
 # Operators
 
@@ -692,7 +692,7 @@ Rightshift
 What is the `<<`?
 ?
 Leftshift
-<!--SR:2022-06-24,23,250-->
+<!--SR:2022-08-27,61,250-->
 
 How are the shift operators extended?
 ?
@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-06-24,11,230-->
+<!--SR:2022-07-28,31,230-->
 
 Which operators impose constraints?
 ?
@@ -848,7 +848,7 @@ The else block is optional.
 What is the syntax for `for` loops?
 ?
 `for ( initialization_code ; boolean_condition ; step_code ) block_of_code`
-<!--SR:2022-06-24,24,250-->
+<!--SR:2022-08-30,64,250-->
 
 What's wrong with the following code?
 ```
@@ -887,7 +887,7 @@ component main{public [in]} = wrong(1);
 ```
 ?
 The condition depends on an unknown, and there are constraints generated inside the condition. This makes it impossible to generate a static circuit from the code.
-<!--SR:2022-06-27,26,250-->
+<!--SR:2022-08-31,65,250-->
 
 What template has an error and why?
 ```
@@ -953,12 +953,12 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
-<!--SR:2022-06-25,21,230-->
+<!--SR:2022-08-17,51,230-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
 `var dbl[16][2];`
-<!--SR:2022-06-25,25,250-->
+<!--SR:2022-08-29,63,250-->
 
 What is wrong with the following code?
 `var z = [2,8,4];`
@@ -1008,7 +1008,7 @@ There are two types of components being put into the array `c`. This applies eve
 How does scoping work?
 ?
 We have static/lexical scoping, and that signals must be defined at the top level block of the template that uses them, effectively giving them global scope.
-<!--SR:2022-06-25,25,250-->
+<!--SR:2022-08-31,65,250-->
 
 What is wrong with the following code and what error does it produce?
 ```
@@ -1104,7 +1104,7 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-06-24,14,230-->
+<!--SR:2022-07-29,32,230-->
 
 What kinds of compiler messages are there?
 ?
@@ -1229,7 +1229,7 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
-<!--SR:2022-06-27,25,250-->
+<!--SR:2022-08-29,63,250-->
 
 What two things are wrong with the following code and what message does it generate?
 ```
