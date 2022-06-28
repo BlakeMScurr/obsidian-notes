@@ -68,7 +68,7 @@ The `nbits` function and the `BinSum` template.
 Does `BinSum` check that inputs are binary?
 ?
 No.
-<!--SR:2022-06-28,16,230-->
+<!--SR:2022-07-31,33,230-->
 
 What does `nbits` do?
 ?
@@ -173,7 +173,7 @@ template BinSum(n, ops) {
 What is binsub?
 ?
 Creates a constraint specifying that A - B = C for A, B, C binary numbers
-<!--SR:2022-06-28,22,250-->
+<!--SR:2022-08-21,54,250-->
 
 ### compconstant
 
@@ -365,7 +365,7 @@ What are the top level constructs in Mux1?
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
-<!--SR:2022-06-28,22,250-->
+<!--SR:2022-08-24,57,250-->
 
 What does `Mux1` do?
 ?

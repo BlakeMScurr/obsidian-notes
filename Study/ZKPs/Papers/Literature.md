@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-06-28,15,150-->
+<!--SR:2022-07-21,23,150-->
 
 What did GOS06 contribute?
 ?
@@ -258,7 +258,7 @@ Neither property had existed before.
 Who are the authors of MBKM19?
 ?
 Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
-<!--SR:2022-06-28,9,250-->
+<!--SR:2022-07-18,20,250-->
 
 What is the title of MBKM19?
 ?

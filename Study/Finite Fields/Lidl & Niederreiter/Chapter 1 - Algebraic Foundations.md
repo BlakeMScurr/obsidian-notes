@@ -109,7 +109,7 @@ What is a cyclic multiplicative group, and what is the generator?
 ?
 A multiplicative group is called cyclic if there is some $a \in G$ such that for any $b \in G$ there is some integer $j$ with $b = a^j$.
 $a$ is called the generator and we write $G = \langle a\rangle$.
-<!--SR:2022-06-28,42,190-->
+<!--SR:2022-09-12,76,190-->
 
 What is the immediate property of cyclic groups and how do we know?
 ?

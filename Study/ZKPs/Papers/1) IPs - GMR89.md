@@ -998,7 +998,7 @@ That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" t
 If $L \in KC(0)$, the verifier learns . . . ?
 ?
 That $x \in L$, but the text is of no other use, and could in fact the text could easily have been generated without the prover.
-<!--SR:2022-06-28,43,230-->
+<!--SR:2022-10-05,99,230-->
 
 #### Applications of Knowledge Complexity
 
@@ -1175,7 +1175,7 @@ Is not known to exist, efficiently.
 For which $x \in \mathbb{Z}_m^*$ is GMR's zk QNR IP defined?
 ?
 $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}{0}{x}{m} = 1$ (since $\genfrac(){}{0}{x}{m} = -1$ directly implies $x$ is a quadratic non residue)
-<!--SR:2022-06-28,34,210-->
+<!--SR:2022-09-07,71,210-->
 
 How powerful does the A have to be in GMR's zk QNR IP?
 ?
@@ -1197,7 +1197,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-06-28,18,130-->
+<!--SR:2022-07-21,23,130-->
 
 What is the problem with the naive QNR IP?
 ?

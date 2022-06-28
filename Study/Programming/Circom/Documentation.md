@@ -450,7 +450,7 @@ As many as it likes.
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2022-06-28,28,250-->
+<!--SR:2022-09-05,69,250-->
 
 What does executing a return statement do?
 ?
@@ -735,7 +735,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2022-06-28,24,230-->
+<!--SR:2022-08-18,51,230-->
 
 What is the code for `Num2Bits`
 ?
@@ -860,7 +860,7 @@ i++
 ```
 ?
 `i` is only in scope for the `for` block and can't be used outside of it.
-<!--SR:2022-06-28,28,250-->
+<!--SR:2022-09-06,70,250-->
 
 What is the syntax for a `while` loop?
 ?
@@ -938,7 +938,7 @@ Field elements and arrays.
 What is the default type of signals and variables?
 ?
 A field element.
-<!--SR:2022-06-28,27,250-->
+<!--SR:2022-09-04,68,250-->
 
 Are arrays dynamic?
 ?
@@ -948,7 +948,7 @@ No, they can hold a finite number of elements known at compile time.
 How many different types of elements can a single array hold?
 ?
 Just one type.
-<!--SR:2022-06-28,27,250-->
+<!--SR:2022-09-02,66,250-->
 
 What types can arrays hold?
 ?
