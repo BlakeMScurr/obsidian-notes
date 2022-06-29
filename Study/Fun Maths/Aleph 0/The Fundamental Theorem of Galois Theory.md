@@ -74,7 +74,7 @@ $(\zeta,\zeta^2,\zeta^3,\zeta^4)$
 $(\zeta^2,\zeta^4,\zeta,\zeta^3)$
 $(\zeta^3,\zeta,\zeta^4,\zeta^2)$
 $(\zeta^4,\zeta^3,\zeta^2,\zeta)$
-<!--SR:2022-06-30,36,250-->
+<!--SR:2022-09-26,88,250-->
 
 Why do we want to study the algebra preserving permutations of conjugates?
 ?

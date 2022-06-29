@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-06-30,8,130-->
+<!--SR:2022-07-11,11,130-->
 
 What did GS12 contribute?
 ?
@@ -209,12 +209,12 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-06-30,10,130-->
+<!--SR:2022-07-13,13,130-->
 
 What did Gro09 contribute?
 ?
 Given commitments to matrices, gives a sublinear proof showing their product. Arithmetic circuits can be formed using these matrices, giving a more efficient reduction than earlier proof systems for circuit satisfiability
-<!--SR:2022-06-30,24,170-->
+<!--SR:2022-08-11,42,170-->
 
 Who are the authors of Groth16?
 ?

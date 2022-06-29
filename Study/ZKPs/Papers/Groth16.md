@@ -49,7 +49,7 @@ Checking a single pairing product equation using 3 pairings in total.
 What is the knowledge complexity of the Groth16 SNARG?
 ?
 It is zero knowledge.
-<!--SR:2022-06-30,31,230-->
+<!--SR:2022-09-09,71,230-->
 
 What is the second contribution of Groth16 and how is it shown?
 ?
@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-06-30,10,130-->
+<!--SR:2022-07-14,14,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -319,7 +319,7 @@ Auxilliary information that the relation generator might output, which will be g
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-06-30,7,210-->
+<!--SR:2022-07-15,15,210-->
 
 What is the definition of $\textbf{Setup}$?
 ?
@@ -333,14 +333,14 @@ What is the definition of $\textbf{Prove}$?
 ?
 $\pi \leftarrow\textbf{Prove}(R, \sigma, \phi, w)$
 The prover algorithm takes as input the common reference string and $(\phi, w) \in R$ and outputs the argument $\pi$.
-<!--SR:2022-06-30,12,250-->
+<!--SR:2022-08-02,33,250-->
 
 ??? Why do we say the prover algorithm accepts the relation?
 
 What is $\sigma$?
 ?
 The common reference string.
-<!--SR:2022-06-30,12,250-->
+<!--SR:2022-08-01,32,250-->
 
 What is $\tau$?
 ?
@@ -367,7 +367,7 @@ What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-06-30,8,190-->
+<!--SR:2022-07-17,17,190-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -532,12 +532,12 @@ What is the full expanded acronym for SNARK and SNARG?
 ?
 Preprocessing succinct non-interactive argument of knowledge
 Preprocessing succinct non-interactive argument
-<!--SR:2022-06-30,12,250-->
+<!--SR:2022-07-31,31,250-->
 
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-06-30,8,230-->
+<!--SR:2022-07-05,5,210-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
@@ -548,7 +548,7 @@ Bitansky et al BCCT13.
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
 Preprocessing SNARKs.
-<!--SR:2022-06-30,12,250-->
+<!--SR:2022-07-30,30,250-->
 
 #### Benign Relation Generators
 
@@ -608,7 +608,7 @@ Statement wires and witness wires that satisfy the arithmetic circuit.
 What is the generalisation for circuits?
 ?
 Arithmetic constraints - relations described by equations over a set of variables.
-<!--SR:2022-06-30,33,250-->
+<!--SR:2022-09-24,86,250-->
 
 What corresponds to the statement in our arithmetic constraints?
 ?
@@ -721,7 +721,7 @@ $t(X)$ is the lowest degree monomial with $t(r_q) = 0$ for each $r_q$.
 Let $LHS = a(x)$ and $RHS = b(x)$
 $a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot t(X) = b(X)$ from the definition of mod
 Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
-<!--SR:2022-06-30,12,250-->
+<!--SR:2022-07-29,29,250-->
 
 ### QAP Definition
 
@@ -800,7 +800,7 @@ To get the maximum flexibility, so that all different options can be modelled by
 In pairing based NIZK arguments, what does aux specify and why?
 ?
 The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
-<!--SR:2022-06-30,10,250-->
+<!--SR:2022-07-28,28,250-->
 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
@@ -915,12 +915,12 @@ A deterministic polynomial time algorithm.
 What are the inputs of Test?
 ?
 $(R, \phi)$
-<!--SR:2022-06-30,8,210-->
+<!--SR:2022-07-19,19,210-->
 
 What does Test output?
 ?
 An arithmetic circuit $t$.
-<!--SR:2022-06-30,10,250-->
+<!--SR:2022-07-27,27,250-->
 
 What is the definition of $t$?
 ?
@@ -965,7 +965,7 @@ The dimension of the randomness vector used in Setup.
 What is $m$ in a LIP?
 ?
 The dimension in the crs vector $\sigma$ made in Setup.
-<!--SR:2022-06-30,10,250-->
+<!--SR:2022-07-28,28,250-->
 
 ??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 
@@ -977,7 +977,7 @@ The dimension of the simulation trapdoor vector $\tau$ made in Setup.
 What is $\eta$ in a LIP?
 ?
 The dimension of the vector output by $t$.
-<!--SR:2022-06-30,8,230-->
+<!--SR:2022-07-18,18,230-->
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
@@ -1023,7 +1023,7 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-06-30,3,210-->
+<!--SR:2022-07-07,7,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-06-30,2,190-->
+<!--SR:2022-07-01,1,170-->
 
 How does the verifier in a compiled LIP check the argument?
 ?

@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-06-30,29,250-->
+<!--SR:2022-07-17,17,230-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -496,7 +496,7 @@ What is the syntax for creating a main component?
 Which input signals in the main component are private?
 ?
 All input signals not explicitly declared to be public.
-<!--SR:2022-06-30,29,250-->
+<!--SR:2022-09-14,76,250-->
 
 How can we define multiple main components in one program?
 ?
@@ -574,7 +574,7 @@ What is the conditional expression?
 What are the boolean operators?
 ?
 `&& || !`
-<!--SR:2022-06-30,28,250-->
+<!--SR:2022-09-11,73,250-->
 
 What is `&&`?
 ?
@@ -612,7 +612,7 @@ val(z) = z, otherwise
 How is `x < y` defined?
 ?
 `val(x % p) < val(y % p)`
-<!--SR:2022-06-30,26,250-->
+<!--SR:2022-09-03,65,250-->
 
 How is `x > y` defined?
 ?
@@ -926,7 +926,7 @@ template wrong() {
 ```
 ?
 The value of `t` is used in a constraint and its construction depends on the unknown signal `in` via control flow, making the resulting constraint non quadratic. This will cause a compiler error.
-<!--SR:2022-06-30,28,250-->
+<!--SR:2022-09-12,74,250-->
 
 # Data Types
 
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-06-30,21,230-->
+<!--SR:2022-08-15,46,230-->
 
 Which signals of subcomponents are visible?
 ?

@@ -37,7 +37,7 @@ The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probabili
 What is knowledge complexity?
 ?
 A measure of the additional knowledge conveyed by a proof.
-<!--SR:2022-06-30,52,230-->
+<!--SR:2022-10-28,120,230-->
 
 What extra information does a standard NP proof of a Hamiltonian path convey?
 ?
@@ -1140,7 +1140,7 @@ No unproven computational complexity assumptions.
 What is the Jacobi symbol?
 ?
 $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates to 1 or -1 and gives information on the residuosity of x in $\mathbb{Z}^*_m$
-<!--SR:2022-06-30,17,210-->
+<!--SR:2022-08-06,37,210-->
 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
@@ -1345,7 +1345,7 @@ For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = 
 What is $d$?
 ?
 The difference in size between $T - Z$ and $S - Z$.
-<!--SR:2022-06-30,35,230-->
+<!--SR:2022-09-23,85,230-->
 
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
@@ -1556,7 +1556,7 @@ What are my steps for proving the upper bound for the chance that we halt and re
 Show that $X$ or $Y \leq n/6$ if we halt. 
 Show the chance of that is some factorial expression using a string permutation argument.
 Show that chance is less than the bound given by GMR.
-<!--SR:2022-06-30,14,230-->
+<!--SR:2022-08-03,34,230-->
 
 Based on what condition might we halt given honest $A$ and $B$?
 ?
