@@ -251,7 +251,7 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-06-29,10,250-->
+<!--SR:2022-07-26,27,250-->
 
 ### MBKM19
 
@@ -280,7 +280,7 @@ Sonic
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-06-29,7,210-->
+<!--SR:2022-07-16,17,210-->
 
 What is the title of GWC21?
 ?

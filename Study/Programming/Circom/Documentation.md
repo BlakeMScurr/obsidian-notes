@@ -589,7 +589,7 @@ Boolean OR operator.
 What is `!`?
 ?
 Boolean NEGATION operator.
-<!--SR:2022-06-29,28,250-->
+<!--SR:2022-09-10,73,250-->
 
 What are the relational operators?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-06-29,8,170-->
+<!--SR:2022-07-04,5,150-->
 
 What are the bitwise assignment operators?
 ?
@@ -1119,7 +1119,7 @@ A compiler message that means that what you've done is allowed but uncommon, so 
 What is a warning?
 ?
 A compiler message meaning that what you've done is allowed but should not happen in general.
-<!--SR:2022-06-29,28,250-->
+<!--SR:2022-09-09,72,250-->
 
  ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
 
@@ -1131,15 +1131,15 @@ A compiler message meaning that what you've done is not allowed, and the compila
 What is wrong with the following code, and what message is genreated?
 ```
 template A() {
-	signal in;
-	in = 1;
-	signal out <== in;
+	signal x;
+	x = 1;
+	signal out <== x;
 }
 ```
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-06-29,17,230-->
+<!--SR:2022-07-10,11,210-->
 
 ## Unknowns
 
@@ -1152,7 +1152,7 @@ What kinds of values are always known or unknown?
 ?
 Constant values and template parameters are known.
 Signals are unknown.
-<!--SR:2022-06-29,27,250-->
+<!--SR:2022-09-08,71,250-->
 
 When are expressions known?
 ?

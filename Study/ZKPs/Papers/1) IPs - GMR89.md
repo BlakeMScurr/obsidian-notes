@@ -13,7 +13,7 @@
 What are interactive proof systems?
 ?
 Interactive proof systems are a method of communicating a proof, they are interactive and probabilistic.
-<!--SR:2022-06-29,43,190-->
+<!--SR:2022-09-22,85,190-->
 
 What does the "interactive" in interactive proof systems mean?
 ?
@@ -327,7 +327,7 @@ The lesson is *on an idea*, which is *in a topic*, held as a *conversation*, whe
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
-<!--SR:2022-06-29,25,190-->
+<!--SR:2022-08-14,46,190-->
 
 How is the general topic of an interactive proof system formalised?
 ?
@@ -521,7 +521,7 @@ $L \in AM \implies L \in NP$ for a random oracle
 How do classes AM and IP compare?
 ?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
-<!--SR:2022-06-29,29,230-->
+<!--SR:2022-09-04,67,230-->
 
 What is the interactive hierarchy, for GMR?
 ?
@@ -1257,7 +1257,7 @@ If $C_x = 1$, what are $x$ and the type of $x$?
 ?
 $x = y \cdot r_0^2 \mod n$
 $x$ is of  type 2
-<!--SR:2022-06-29,44,250-->
+<!--SR:2022-10-21,114,250-->
 
 ###### T and S
 
@@ -1400,7 +1400,7 @@ Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_
 What are the two forms of numbers in $X' \cup Y'$?
 ?
 $\sqrt{y \cdot x \cdot t_i}$ and $\sqrt{x \cdot t_i}$
-<!--SR:2022-06-29,35,230-->
+<!--SR:2022-09-20,83,230-->
 
 How is $X' \cup Y'$ defined?
 ?

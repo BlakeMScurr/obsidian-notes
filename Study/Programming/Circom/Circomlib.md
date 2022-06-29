@@ -240,7 +240,7 @@ What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
-<!--SR:2022-06-29,23,250-->
+<!--SR:2022-08-26,58,250-->
 
 What does `b` look like and what is its formula?
 ?
@@ -360,7 +360,7 @@ mux4
 What are the top level constructs in Mux1?
 ?
 `template MultiMux1` and `template Mux1`
-<!--SR:2022-06-29,23,250-->
+<!--SR:2022-09-19,82,270-->
 
 What does `MultiMux1` do?
 ?
