@@ -67,7 +67,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-07-01,19,150-->
+<!--SR:2022-08-02,32,150-->
 
 # Introduction
 
@@ -220,7 +220,7 @@ Groups of prime order $p$.
 What is $e$ and what is its definition?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
-<!--SR:2022-07-01,12,250-->
+<!--SR:2022-08-03,33,250-->
 
 What is a property of generators of our bilinear group?
 ?
@@ -233,7 +233,7 @@ Group operations for the groups.
 Evaluating the bilinear map.
 Deciding the equality of group elements.
 Sampling generators of the groups.
-<!--SR:2022-07-01,12,250-->
+<!--SR:2022-08-03,33,250-->
 
 What do we assume about the bilinear group operations?
 ?
@@ -243,7 +243,7 @@ That there are efficient algorithms for computing them.
 What are the names for the types of bilinear groups?
 ?
 Type I, Type II, and Type III
-<!--SR:2022-07-01,12,250-->
+<!--SR:2022-08-04,34,250-->
 
 Who classified the types of bilinear groups?
 ?
@@ -304,7 +304,7 @@ The witness.
 What kinds of pairs are in $R$?
 ?
 $(\phi, w)$, i.e., statement and witness
-<!--SR:2022-07-01,12,250-->
+<!--SR:2022-08-04,34,250-->
 
 What is $\mathcal{R}_\lambda$?
 ?
@@ -406,9 +406,9 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-07-01,9,190-->
+<!--SR:2022-07-07,6,170-->
 
-??? Why does the adversary not get phi as well? Does that represent a weakening of the definition?
+??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
 ??? Why does the definition of perfect zero-knowledge not include the relation generation in the probability expressions? Whereas it does in the definitions of soundness. Would it make a difference here?
 
@@ -560,22 +560,22 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-07-01,3,170-->
+<!--SR:2022-07-06,5,170-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-07-01,9,210-->
+<!--SR:2022-07-22,21,210-->
 
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-07-01,9,210-->
+<!--SR:2022-07-20,19,210-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
 Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and the auxiliary input are distributed in such a way that SNARKs can exist.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-30,29,250-->
 
 ## Quadratic Arithmetic Programs
 
@@ -641,7 +641,7 @@ where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
 How do we know arithmetic constraints generalise circuits?
 ?
 Multiplication and addition gates are special cases of constraint equations.
-<!--SR:2022-07-01,34,250-->
+<!--SR:2022-09-27,88,250-->
 
 How can a multiplication gate be described as a constraint?
 ?
@@ -706,7 +706,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-07-01,4,190-->
+<!--SR:2022-07-11,10,190-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -728,7 +728,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-07-01,9,210-->
+<!--SR:2022-07-05,4,250-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -740,7 +740,7 @@ A finite field.
 What is $aux$?
 ?
 Auxiliary information.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-31,30,250-->
 
 What is the $\mathscr{l}$ for?
 ?
@@ -784,7 +784,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-07-01,4,210-->
+<!--SR:2022-07-11,10,210-->
 
 How might relation generators vary in practice?
 ?
@@ -795,7 +795,7 @@ Field generated the rest of the relation is built on the field vs polynomials sp
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
 To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-30,29,250-->
 
 In pairing based NIZK arguments, what does aux specify and why?
 ?
@@ -805,7 +805,7 @@ The bilinear group. To provide a better model of settings where the relation is 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
 Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-29,28,250-->
 
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
@@ -878,7 +878,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-07-01,4,170-->
+<!--SR:2022-07-04,3,150-->
 
 What is ProofMatrix, broadly?
 ?
@@ -955,7 +955,7 @@ The multiplicative depth of the setup circuit.
 What is $d_D$?
 ?
 The multiplicative depth of the verifier circuit output by Test.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-29,28,250-->
 
 What is $\mu$?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-01,1,170-->
+<!--SR:2022-07-02,1,150-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1048,7 +1048,7 @@ By verifying a number of pairing product equations, which corresponds to checkin
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-08-01,31,250-->
 # Constructions
 
 What kind of language does our pairing based NIZK construction prove?

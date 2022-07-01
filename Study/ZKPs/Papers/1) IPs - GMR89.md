@@ -556,7 +556,7 @@ The Model Centric Framework is a formalisation for knowledge and communication.
 What worldview does MCF capture?
 ?
 The scientific/empricial worldview that it's hard to learn facts about reality, and that we communicate testimony about those facts.
-<!--SR:2022-07-01,28,190-->
+<!--SR:2022-08-23,53,190-->
 
 What are MCF's assumptions?
 ?
@@ -936,7 +936,7 @@ B' is an adversarial verifier trying to learn additional knowledge. B' can learn
 What additional information does the super basic NP style algorithm for proving $x \in QR$ convey?
 ?
 A square root of x, in addition to showing $x \in QR$
-<!--SR:2022-07-01,41,230-->
+<!--SR:2022-10-03,94,230-->
 
 How much knowledge do traditional proofs of theorems convey?
 ?
@@ -1150,7 +1150,7 @@ $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
 Computing $\mathcal{Q}_m(x)$ is a hard problem.
-<!--SR:2022-07-01,36,210-->
+<!--SR:2022-09-19,80,210-->
 
 The algorithm for generating $x$ with $\mathcal{Q}_m(x) = 1$ and $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1213,7 +1213,7 @@ What is the relationship between types and quadratic residuosity?
 ?
 Type 1 numbers are always quadratic residues.
 But type 2 numbers are quadratic residues if and only if $y$ is a quadratic residue.
-<!--SR:2022-07-01,46,250-->
+<!--SR:2022-10-24,115,250-->
 
 #### Protocol
 ##### Step 1

@@ -101,7 +101,7 @@ out <== comp.outA;
 ```
 ?
 Signals are immutable, so assigning to `out` twice gives a compilation error.
-<!--SR:2022-07-01,31,250-->
+<!--SR:2022-09-18,79,250-->
 
 What operators can be used to assign signals?
 ?
@@ -430,7 +430,7 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2022-07-01,30,250-->
+<!--SR:2022-09-16,77,250-->
 
 What can functions output?
 ?
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-07-01,27,250-->
+<!--SR:2022-09-07,68,250-->
 
 What are the possible values of a field element?
 ?
@@ -599,7 +599,7 @@ What are the relational operators?
 What is the `val(x)` function for?
 ?
 Defining negative numbers for use with the relational operators.
-<!--SR:2022-07-01,28,250-->
+<!--SR:2022-09-05,66,250-->
 
 What is the definition of the `val(x)` function?
 ?
@@ -943,7 +943,7 @@ A field element.
 Are arrays dynamic?
 ?
 No, they can hold a finite number of elements known at compile time.
-<!--SR:2022-07-01,29,250-->
+<!--SR:2022-09-15,76,250-->
 
 How many different types of elements can a single array hold?
 ?

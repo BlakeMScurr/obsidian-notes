@@ -73,7 +73,7 @@ No.
 What does `nbits` do?
 ?
 Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
-<!--SR:2022-07-01,26,250-->
+<!--SR:2022-08-31,61,250-->
 
 What do `a`, `r`, and `n` represent in `nbits`?
 ?
@@ -276,7 +276,7 @@ What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 `-b*smsb*slsb + b*smsb + b*slsb`
 It must be `0` if `smsb == slsb == 0`
 `b` otherwise.
-<!--SR:2022-07-01,25,250-->
+<!--SR:2022-09-02,63,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-07-01,21,230-->
+<!--SR:2022-08-18,48,230-->
 
 ## e
 

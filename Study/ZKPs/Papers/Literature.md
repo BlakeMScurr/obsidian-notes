@@ -295,7 +295,7 @@ A zk-SNARK with an linear sized updatable universal structured reference string 
 What is GWC21 otherwise known as?
 ?
 Plonk
-<!--SR:2022-07-01,11,250-->
+<!--SR:2022-07-31,30,250-->
 
 # CRS MPC Protocols
 
