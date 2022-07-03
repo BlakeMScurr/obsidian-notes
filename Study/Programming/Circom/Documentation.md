@@ -12,7 +12,7 @@ Signals.
 What do signals contain?
 ?
 Field elements in $\mathbb{Z}/p\mathbb{Z}$
-<!--SR:2022-07-02,32,250-->
+<!--SR:2022-09-29,87,250-->
 
 What are the kinds of signals?
 ?
@@ -117,7 +117,7 @@ What's an example of when we must use `<--` rather than `<==` and what does it d
 ?
 `out[k] <-- (in >> k) & 1`
 Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the end of the number, and `& 1` gives us the least significant bit.
-<!--SR:2022-07-03,32,250-->
+<!--SR:2022-09-27,85,250-->
 
 ## Variables and Mutability
 
@@ -174,7 +174,7 @@ An assignment, which is a statement and has no value, is being used as part of a
 What do we use to create generic circuits in circom?
 ?
 Templates.
-<!--SR:2022-07-03,32,250-->
+<!--SR:2022-09-26,84,250-->
 
 When are template's parameters instantiated?
 ?
@@ -326,7 +326,7 @@ x = c.b;
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
 Instantiation won't be triggered until all the component's inputs have been supplied, meaning instantiaion may be delayed. This means the outputs of a component can't be used until all the inputs are set.
-<!--SR:2022-07-03,31,250-->
+<!--SR:2022-09-22,80,250-->
 
 What is wrong with the following piece of code?
 ```
@@ -501,7 +501,7 @@ All input signals not explicitly declared to be public.
 How can we define multiple main components in one program?
 ?
 We can't - we'll get a "Multiple main components  in the project structure" error.
-<!--SR:2022-07-03,32,250-->
+<!--SR:2022-09-25,83,250-->
 
 
 
@@ -632,7 +632,7 @@ How is `x >= y` defined?
 What are the arithmetic operators?
 ?
 `+ - * ** / \ %`
-<!--SR:2022-07-04,31,250-->
+<!--SR:2022-09-21,79,250-->
 
 What are the `+ - * **` operators?
 ?
@@ -662,7 +662,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-07-02,28,250-->
+<!--SR:2022-07-19,15,230-->
 
 What is the `&` operator?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-07-04,5,150-->
+<!--SR:2022-07-08,4,130-->
 
 What are the bitwise assignment operators?
 ?
@@ -969,7 +969,7 @@ The size of `z` is not explicitly given, and it will produce a compiler error.
 Can a single array hold multiple types of signals?
 ?
 No, each array can only hold one type of signal.
-<!--SR:2022-07-03,30,250-->
+<!--SR:2022-09-20,78,250-->
 
 Can an array contain components with different parameters?
 ?
