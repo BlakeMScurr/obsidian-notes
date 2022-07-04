@@ -24,7 +24,7 @@ Creates a constraint specifying that some binary inputs add to some binary outpu
 What is `ops` in binsum?
 ?
 The parameter specifying the number of operands. I.e., the number of binary numbers being added together.
-<!--SR:2022-07-04,29,250-->
+<!--SR:2022-09-16,73,250-->
 
 What is `n` in binsum?
 ?
@@ -58,12 +58,12 @@ out[1] * (out[1] -	1) === 0;
 ...
 out[n+e-1] * (out[n+e-1] - 1) === 0;
 ```
-<!--SR:2022-07-03,28,250-->
+<!--SR:2022-09-11,68,250-->
 
 What are the top level constructions in the binsum.circom file?
 ?
 The `nbits` function and the `BinSum` template.
-<!--SR:2022-07-05,30,250-->
+<!--SR:2022-09-20,77,250-->
 
 Does `BinSum` check that inputs are binary?
 ?
@@ -112,7 +112,7 @@ What are `lin` and `lout` in `Binsum`?
 ?
 `lin` is the algebraic expression for the sum of the numbers in `in`.
 `lout` is the algebraic expression for the value of `out`
-<!--SR:2022-07-02,27,250-->
+<!--SR:2022-07-21,16,230-->
 
 ??? does the l in lin and lout represent "algebra?"
 
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-07-03,6,130-->
+<!--SR:2022-07-13,8,130-->
 
 What are the variables in compconstant?
 ?
@@ -229,7 +229,7 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-07-02,25,250-->
+<!--SR:2022-07-19,14,230-->
 
 What is the value of each part, and when?
 ?
@@ -246,7 +246,7 @@ What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
-<!--SR:2022-07-03,26,250-->
+<!--SR:2022-07-20,15,230-->
 
 What does `a` do from a bitwise perspective and how?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-07-05,20,210-->
+<!--SR:2022-08-16,42,210-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-07-03,6,130-->
+<!--SR:2022-07-15,10,130-->
 
 ## g-m
 
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-07-04,7,130-->
+<!--SR:2022-07-16,11,130-->

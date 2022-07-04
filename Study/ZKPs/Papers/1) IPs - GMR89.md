@@ -157,7 +157,7 @@ NP and IP.
 What are GMR's analogies for NP and IP?
 ?
 NP is "book proofs", IP is "classroom proofs."
-<!--SR:2022-07-03,55,250-->
+<!--SR:2022-11-21,139,250-->
 
 ### IPs Informally
 
@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-07-02,20,150-->
+<!--SR:2022-08-08,34,150-->
 
 ### Interactive Proof System Definition
 
@@ -337,7 +337,7 @@ As a language $\mathcal{L} \subseteq \{0,1\}^*$
 How is the "idea" in an interactive proof system formalised?
 ?
 As the input $x \in \mathcal{L}$
-<!--SR:2022-07-03,46,210-->
+<!--SR:2022-10-11,98,210-->
 
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
@@ -617,7 +617,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The language accepted by the probabilistic computation.
-<!--SR:2022-07-03,21,190-->
+<!--SR:2022-08-15,41,190-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -637,7 +637,7 @@ The highest power (probably +1) in the polynomial restricting the output size, s
 How do we define an I-c-ensembles's $I$?
 ?
 An infinite set of strings.
-<!--SR:2022-07-04,56,250-->
+<!--SR:2022-11-22,140,250-->
 
 How do we define an I-c-ensembles's $c$?
 ?
@@ -749,7 +749,7 @@ Probabilistic encryption and pseudo random number generation.
 In what sense is zkQNR indistinguishable?
 ?
 Strictly more than traditional indistinguishability: for all $|x|^c$ bit string are equal, except a set of strings whose total probability doesn't exceed $1/2^{d|x|}$ for some d between 0 and 1.
-<!--SR:2022-07-02,41,230-->
+<!--SR:2022-10-10,97,230-->
 
 ??? how does this further notion of indistinguishability map onto my understanding of the proof for the zero knowledge of the protocol?
 
@@ -832,7 +832,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-07-03,6,130-->
+<!--SR:2022-07-14,9,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -963,7 +963,7 @@ $L \in KC(f(n))$
 $L$ has knowledge complexity $f(n)$ if . . . ?
 ?
 When restricting inputs of $(A, B)$ to the strings in $L$, A communicates at most $f(n)$ bits of knowledge.
-<!--SR:2022-07-04,41,230-->
+<!--SR:2022-10-09,96,230-->
 
 #### Zero *extra* knowlege
  * ??? Is it reasonable to call the text of a zero knowledge computation "irrelevant" for any other purpose? It may be useful for speeding up polynomial computations.
@@ -1101,7 +1101,7 @@ To solve the problem of flipping a coin over the telephone.
 What is the definition of the BL language?
 ?
 Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
-<!--SR:2022-07-02,32,230-->
+<!--SR:2022-07-22,17,210-->
 
 What is the definition of the quadratic predicate?
 ?
@@ -1295,7 +1295,7 @@ Type 2
 How does $B$ send $T$ and $S$ to $A$?
 ?
 As $T \cup S$ in a random order.
-<!--SR:2022-07-02,47,250-->
+<!--SR:2022-10-27,114,250-->
 
 ##### Step 2
 
@@ -1360,7 +1360,7 @@ $\{t_{i_1},...,t_{i_d}\}$.
 How does $B$ reveal $D$?
 ?
 $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \cdot r_{i_j}^2 \mod m$ for some $1 \leq i_j \leq 2n$.
-<!--SR:2022-07-04,32,190-->
+<!--SR:2022-08-31,57,190-->
 
 How is $X$ defined?
 ?
@@ -1380,7 +1380,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-07-04,22,170-->
+<!--SR:2022-08-09,35,170-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1395,7 +1395,7 @@ Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-07-04,37,230-->
+<!--SR:2022-10-02,89,230-->
 
 What are the two forms of numbers in $X' \cup Y'$?
 ?
@@ -1435,7 +1435,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-07-04,7,190--> 
+<!--SR:2022-07-18,13,190--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?

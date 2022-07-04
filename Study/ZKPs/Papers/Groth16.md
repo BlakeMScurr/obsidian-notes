@@ -484,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-07-03,10,190-->
+<!--SR:2022-07-10,5,170-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -735,7 +735,7 @@ $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
 What is $\mathbb{F}$?
 ?
 A finite field.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-07,33,250-->
 
 What is $aux$?
 ?
@@ -745,7 +745,7 @@ Auxiliary information.
 What is the $\mathscr{l}$ for?
 ?
 Delineating the variables for the statement and the witness.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-10,36,250-->
 
 What is the definition of $\mathscr{l}$?
 ?

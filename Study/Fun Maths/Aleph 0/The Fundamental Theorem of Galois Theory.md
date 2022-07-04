@@ -17,7 +17,7 @@ That there is no general formula to solve a polynomial of degree 5 or higher.
 What is the square root of 2 as a truncated decimal?
 ?
 1.41... and -1.41...
-<!--SR:2022-07-03,37,230-->
+<!--SR:2022-10-01,88,230-->
 
 Explain the "algebraic difference" between $\sqrt(2)$ and $-\sqrt{2}$.
 ?
@@ -60,7 +60,7 @@ $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?
 $\zeta,\zeta^2,\zeta^3,\zeta^4$
-<!--SR:2022-07-02,15,230-->
+<!--SR:2022-08-11,37,230-->
 
 How many ways are there to permutate the conjugates of $\zeta$ over $\mathbb{Q}$, and how many of those permute algebraic relations?
 ?
@@ -116,7 +116,7 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:2022-07-05,35,210-->
+<!--SR:2022-09-13,70,210-->
 
 What is the intuition behind the definition of an automorphism?
 ?
@@ -142,7 +142,7 @@ What are the formalisations for "numbers" and permutations from the $\sqrt{2}$  
 ?
 Numbers become fields, i.e., $\sqrt{2}$ and $-\sqrt{2}$ becomes $\mathbb{Q}(\sqrt{2})$.
 Permutations become automorphism, i.e., the permutations of $\sqrt{2}$ and $-\sqrt{2}$ become the automorphisms of $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-07-05,40,250-->
+<!--SR:2022-10-08,95,250-->
 
 
 # Examples
