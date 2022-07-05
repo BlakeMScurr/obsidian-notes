@@ -220,7 +220,7 @@ It is read only.
 How is an ITM's work tape implemented?
 ?
 It is a full read-write tape.
-<!--SR:2022-07-06,58,250-->
+<!--SR:2022-11-28,145,250-->
 
 What does an ITM's random tape achieve?
 ?
@@ -739,7 +739,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-07-06,18,130-->
+<!--SR:2022-07-26,20,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -1355,7 +1355,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-07-06,9,150-->
+<!--SR:2022-07-19,13,150-->
 
 How does $B$ reveal $D$?
 ?

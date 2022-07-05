@@ -111,7 +111,7 @@ The construction of non-interactive cryptographic schemes, e.g., digital key sig
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
 Kili92, by Joe Kilian.
-<!--SR:2022-07-06,30,190-->
+<!--SR:2022-08-28,53,190-->
 
 What did Micali00 propose?
 ?
@@ -188,7 +188,7 @@ We pick randomness $r$ at random and set $y = A(x;r)$.
 What does $y \leftarrow S$ mean?
 ?
 We pick $y$ uniformly at random from set $S$.
-<!--SR:2022-07-06,14,230-->
+<!--SR:2022-08-09,34,230-->
 
 What do we assume about random sampling?
 ?
@@ -526,7 +526,7 @@ A non-interactive argument where the verifier runs in polynomial time in $\lambd
 What is the difference between SNARKs and SNARGs?
 ?
 A SNARG is sound, a SNARK is knowledge sound.
-<!--SR:2022-07-06,14,250-->
+<!--SR:2022-08-13,38,250-->
 
 What is the full expanded acronym for SNARK and SNARG?
 ?
@@ -560,7 +560,7 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-07-06,5,170-->
+<!--SR:2022-07-17,11,170-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
@@ -835,7 +835,7 @@ It is a useful characterisation of the information theoretic underpinning of var
 Who invented LIPs?
 ?
 Bitansky et al. BCI+13
-<!--SR:2022-07-06,14,250-->
+<!--SR:2022-08-14,39,250-->
 
 How do we denote the degree of a LIP?
 ?
@@ -1028,7 +1028,7 @@ Designated verifier non-interactive arguments using Paillier encryption.
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
-<!--SR:2022-07-06,9,230-->
+<!--SR:2022-07-28,22,230-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-06,1,130-->
+<!--SR:2022-07-07,1,130-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1131,7 +1131,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-07-06,1,230-->
+<!--SR:2022-07-08,2,230-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1159,3 +1159,45 @@ x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
 <!--SR:2022-07-09,4,250-->
+
+##### Prove
+
+What is the function signature of Prove for a QAPLIP?
+?
+$\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
+
+What are the steps involved in Prove for a QAP LIP?
+?
+Choosing random values.
+Calculating the elements $(A, B, C)$.
+Calculating the matrix $\Pi$.
+
+What is the dimension of $\Pi$ in a QAPLIP?
+?
+$3 \times (m + 2n + 4)$
+
+??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
+
+What is the definition of $pi$ in a QAPLIP?
+?
+$\pi = \Pi\sigma = (A, B, C)$
+
+What is the definition of $A$ in a QAPLIP?
+?
+$A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
+
+What is the definition of $B$ in a QAPLIP?
+?
+$B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
+
+What is the definition of $C$ in a QAPLIP?
+?
+$$
+C = 
+\frac{
+\sum_{i=\mathscr{l}+1}^m
+a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
+}
+{\delta}
++ As + rB - rs\delta
+$$

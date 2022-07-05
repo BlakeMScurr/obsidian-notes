@@ -55,7 +55,7 @@ Yes.
 What is $\zeta$
 ?
 $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
-<!--SR:2022-07-06,35,210-->
+<!--SR:2022-09-21,77,210-->
 
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?
@@ -126,7 +126,7 @@ An automorphism is a function that shuffles around the field elements while resp
 What is $Aut\ F$?
 ?
 The set of all automorphisms of $F$.
-<!--SR:2022-07-06,41,250-->
+<!--SR:2022-10-17,103,250-->
 
 What is the additional property of an automorphism fixing $\mathbb{Q}$?
 ?

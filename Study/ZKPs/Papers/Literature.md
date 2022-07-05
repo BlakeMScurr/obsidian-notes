@@ -24,7 +24,7 @@ The notion of interactive proofs, communcation complexity, and that interactive 
 What is GMW91's title?
 ?
 Proofs that Yield Nothing but their Validity or All Languages in NP Have Zero-Knowledge Proof Systems
-<!--SR:2022-07-06,26,130-->
+<!--SR:2022-08-13,38,130-->
 
 Who are the authors of GMW91
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-07-06,13,210-->
+<!--SR:2022-07-14,8,190-->
 
 What did Gro10 contribute?
 ?

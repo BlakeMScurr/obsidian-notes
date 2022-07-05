@@ -44,7 +44,7 @@ When are signals private vs public?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-07-06,31,230-->
+<!--SR:2022-07-24,18,210-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
@@ -321,7 +321,7 @@ c.a <== y*z-1;
 var x;
 x = c.b;
 ```
-<!--SR:2022-07-06,34,250-->
+<!--SR:2022-10-01,87,250-->
 
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
@@ -393,7 +393,7 @@ The C++ file resulting from compilation will contain parallelized code to comput
 When is parallelization particularly useful?
 ?
 When dealing with large circuits.
-<!--SR:2022-07-06,34,250-->
+<!--SR:2022-10-03,89,250-->
 
 
 
@@ -467,7 +467,7 @@ function example(N) {
 ```
 ?
 "In example there are paths without return"
-<!--SR:2022-07-06,34,250-->
+<!--SR:2022-10-02,88,250-->
 
 ## Include
 
@@ -719,7 +719,7 @@ x << k = x >> (p - k)
 What are the bitwise assignment operators?
 ?
 `&= |= ~= ^= >>= <<=`
-<!--SR:2022-07-06,33,250-->
+<!--SR:2022-09-29,85,250-->
 
 What is the code for the `IsZero` template?
 ?
@@ -778,7 +778,7 @@ An expression resulting from the multiplication of two linear expressions and ad
 Circom generates constraints, what form must they have?
 ?
 They must be quadratic of the form `A*B+C=0` where `A,B,C` are linear combinations of variables.
-<!--SR:2022-07-06,33,250-->
+<!--SR:2022-09-28,84,250-->
 
 What transformations does circom apply to correctly form constraints?
 ?
@@ -1055,7 +1055,7 @@ template t() {
 ```
 ?
 `t` is trying to access a component within a component which is not allowed. If we want an indirect descendant's signals, we need to pass them via the intervening components.
-<!--SR:2022-07-06,32,250-->
+<!--SR:2022-09-24,80,250-->
 
 
 
