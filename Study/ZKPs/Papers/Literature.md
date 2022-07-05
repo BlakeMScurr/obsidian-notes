@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-07-02,13,150-->
+<!--SR:2022-07-27,22,150-->
 
 ## BGKW88
 
@@ -46,7 +46,7 @@ Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
 Who are the authors of BGKW88?
 ?
 Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
-<!--SR:2022-07-02,34,170-->
+<!--SR:2022-09-03,60,170-->
 
 What does BGKW88 contribute?
 ?
@@ -56,7 +56,7 @@ The notion of multi-prover interactive protocols, that all languages in NP have 
 What did BGKW88 see themselves as contributing?
 ?
 An interactive proof system that doesn't rely on the one way function assumption, instead relying on physical separation.
-<!--SR:2022-07-04,15,130-->
+<!--SR:2022-07-25,20,130-->
 
 ## FRS88
 
@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-07-05,33,210-->
+<!--SR:2022-07-24,19,190-->
 
 What is the title of GO94?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-07-04,7,130-->
+<!--SR:2022-07-23,18,150-->
 
 What did Gro06 contribute?
 ?
@@ -182,7 +182,7 @@ Efficient noninteractive proof systems for bilinear groups
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-07-04,19,150-->
+<!--SR:2022-08-07,33,150-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -285,12 +285,12 @@ Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-07-05,13,250-->
+<!--SR:2022-07-13,8,230-->
 
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
-<!--SR:2022-07-02,5,230-->
+<!--SR:2022-07-20,15,230-->
 
 What is GWC21 otherwise known as?
 ?
@@ -314,7 +314,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-08,34,250-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

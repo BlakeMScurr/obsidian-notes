@@ -766,7 +766,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-07-05,19,130-->
+<!--SR:2022-08-01,27,130-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -1269,7 +1269,7 @@ The set of random numbers used to convince $A$ that $B$ knows the residuosity of
 What is the size of $T \cup S$?
 ?
 $2n$, since $T$ and $S$ both have size $n$.
-<!--SR:2022-07-05,50,250-->
+<!--SR:2022-11-07,125,250-->
 
 How is $T$ constructed?
 ?
@@ -1573,7 +1573,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-07-05,31,190-->
+<!--SR:2022-08-30,56,190-->
 
 How does the proof for claim 1 work?
 ?

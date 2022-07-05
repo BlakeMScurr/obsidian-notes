@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-07-04,7,130-->
+<!--SR:2022-07-17,12,130-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-07-02,18,190-->
+<!--SR:2022-08-14,40,190-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -96,7 +96,7 @@ A malicious prover cannot convince the verifier of a false statement.
 Describe the zero knowledge property.
 ?
 The proof does not reveal anything but the truth of the statement, in particular it does not reveal the prover's witness.
-<!--SR:2022-07-03,15,170-->
+<!--SR:2022-08-05,31,170-->
 
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
@@ -132,7 +132,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-07-03,19,170-->
+<!--SR:2022-07-14,9,150-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -168,12 +168,12 @@ $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
 What is the formal definition of $\omega$?
 ?
 $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
-<!--SR:2022-07-03,6,230-->
+<!--SR:2022-07-09,4,210-->
 
 What does $\lambda$ represent, and what do its values mean?
 ?
 $\lambda$ is the security parameter, and as it grows we want higher security.
-<!--SR:2022-07-03,13,250-->
+<!--SR:2022-08-09,35,250-->
 
 What does $y = A(x;r)$ mean?
 ?
@@ -215,7 +215,7 @@ A prime number.
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
 Groups of prime order $p$.
-<!--SR:2022-07-05,15,250-->
+<!--SR:2022-08-12,38,250-->
 
 What is $e$ and what is its definition?
 ?
@@ -355,7 +355,7 @@ The simulator gets access to $tau$ so it can generate proofs indistinguishable f
 What is $\pi$?
 ?
 The argument.
-<!--SR:2022-07-05,15,250-->
+<!--SR:2022-08-12,38,250-->
 
 What is the definition of $\textbf{Vfy}$?
 ?
@@ -376,7 +376,7 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 What is a non-interactive argument?
 ?
 We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
-<!--SR:2022-07-03,13,250-->
+<!--SR:2022-08-13,39,250-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
@@ -446,7 +446,7 @@ $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{S
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-07-05,13,210-->
+<!--SR:2022-08-04,30,210-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -494,7 +494,7 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
-<!--SR:2022-07-02,5,230-->
+<!--SR:2022-07-21,16,230-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
@@ -537,7 +537,7 @@ Preprocessing succinct non-interactive argument
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-07-05,5,210-->
+<!--SR:2022-07-18,13,210-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
@@ -555,7 +555,7 @@ Preprocessing SNARKs.
 What was the first danger discovered that was implied by indistinguishability obfuscation?
 ?
 Indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-12,38,250-->
 
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
@@ -589,7 +589,7 @@ Addition and multiplication gates over a finite field.
 What represents the statement in our arithmetic circuit?
 ?
 Some subset of the the input/ouput wires.
-<!--SR:2022-07-02,29,210-->
+<!--SR:2022-09-08,65,210-->
 
 %% Why? Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.%%
 
@@ -618,7 +618,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2022-07-04,25,230-->
+<!--SR:2022-09-01,58,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?
@@ -634,7 +634,7 @@ What is the form of our arithmetic constraints?
 ?
 $\sum a_iu_{i,q}\sum a_iv_{i,q}=\sum a_iw_{i,q}$,
 where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
-<!--SR:2022-07-04,14,230-->
+<!--SR:2022-08-11,37,230-->
 
 ### Generalising Circuits
 
@@ -685,7 +685,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2022-07-02,5,230-->
+<!--SR:2022-07-22,17,230-->
 
 How is $t(x)$ defined?
 ?
@@ -728,7 +728,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-07-05,4,250-->
+<!--SR:2022-07-16,11,250-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -750,7 +750,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-07-03,10,230-->
+<!--SR:2022-07-11,6,210-->
 
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -769,7 +769,7 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
-<!--SR:2022-07-04,7,210-->
+<!--SR:2022-07-23,18,210-->
 
 What is the definition of $\phi$ in a QAP?
 ?
@@ -779,7 +779,7 @@ $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
 What is the definition of $w$ in a QAP?
 ?
 $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
-<!--SR:2022-07-02,9,230-->
+<!--SR:2022-07-29,24,230-->
 
 When is $\mathcal{R}$ a QAP generator?
 ?
@@ -810,7 +810,7 @@ Because we can think of the tradition setting where the relation is chosen first
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
 That the relation generator is benign.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-05,31,250-->
 
 Why do we have to assume the relation generator is benign?
 ?
@@ -825,12 +825,12 @@ And because the relation generator picks the bilinear group to give our generato
 What does LIP stand for?
 ?
 Linear interactive proof
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-08,34,250-->
 
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:2022-07-04,11,230-->
+<!--SR:2022-08-02,28,230-->
 
 Who invented LIPs?
 ?
@@ -840,7 +840,7 @@ Bitansky et al. BCI+13
 How do we denote the degree of a LIP?
 ?
 $(d_Q, d_D)$
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-10,36,250-->
 
 What are the (top level) algorithms for a LIP?
 ?
@@ -852,12 +852,12 @@ Vfy
 What is a LIP generated by, and what do we assume about it?
 ?
 A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
-<!--SR:2022-07-02,4,190-->
+<!--SR:2022-07-16,11,190-->
 
 What, broadly, is a LIP?
 ?
 A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work with matrices.
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-11,37,250-->
 
 What does Setup do in a LIP?
 ?
@@ -878,7 +878,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-07-04,3,150-->
+<!--SR:2022-07-08,3,130-->
 
 What is ProofMatrix, broadly?
 ?
@@ -898,7 +898,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-07-02,4,190-->
+<!--SR:2022-07-15,10,190-->
 
 What does Vfy do in a LIP?
 ?
@@ -925,17 +925,17 @@ An arithmetic circuit $t$.
 What is the definition of $t$?
 ?
 An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
-<!--SR:2022-07-02,12,250-->
+<!--SR:2022-08-10,36,250-->
 
 What arguments is $t$ passed?
 ?
 $(\sigma, \pi)$
-<!--SR:2022-07-03,5,190-->
+<!--SR:2022-07-17,12,190-->
 
 When does Vfy accept in a LIP?
 ?
 If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-07-04,11,230-->
+<!--SR:2022-07-31,26,230-->
 
 What are the degrees and dimensions of a LIP?
 ?
@@ -986,12 +986,12 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:2022-07-02,10,230-->
+<!--SR:2022-08-03,29,230-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
 That a witness can be extracted from a proof matrix.
-<!--SR:2022-07-05,13,250-->
+<!--SR:2022-08-07,33,250-->
 
 What is the definition of statistical knowledge soundness against affine prover strategies?
 ?
@@ -1038,12 +1038,12 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-02,1,150-->
+<!--SR:2022-07-06,1,130-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-07-03,6,170-->
+<!--SR:2022-07-18,13,170-->
 
 What are pairing product equations?
 ?
@@ -1054,58 +1054,108 @@ Equations formed by multiplying together the results of pairings.
 What kind of language does our pairing based NIZK construction prove?
 ?
 Quadratic Arithmetic Programs.
-<!--SR:2022-07-03,11,250-->
+<!--SR:2022-07-12,7,230-->
 
 What does a proof in our NIZK construction consist of?
 ?
 3 group elements.
-<!--SR:2022-07-04,12,250-->
+<!--SR:2022-08-08,34,250-->
 
 What are the (very broad) steps for consructing the Groth16 NIZK argument?
 ?
 Construct a LIP.
 Convert the LIP into a pairing-based NIZK argument.
-<!--SR:2022-07-03,11,250-->
+<!--SR:2022-08-06,32,250-->
 
 ### LIPs for QAPs
 
 What is $h(x)$?
 ?
 The quotient polynomial, i.e, the number of times we add $t(X)$ to make each side of the QAP equation equal, given equality $\mod t(X)$.
-<!--SR:2022-07-03,11,250-->
+<!--SR:2022-08-06,32,250-->
 
 What is the degree of $h(X)$?
 ?
 $n-2$
-<!--SR:2022-07-03,11,250-->
+<!--SR:2022-08-06,32,250-->
 
 How do we know the degree of $h(X)$?
 ?
 $u_i(X), v_i(X), w_i(X)$ are degree $n-1$ polynomials, and $t(X)$ is a degree $n$ polynomial. 
 Since, roughly, $h$ = $(u \cdot v - w)/t$ then the degree of is $(n-1) + (n-1) - n = n - 2$
-<!--SR:2022-07-04,12,250-->
+<!--SR:2022-08-09,35,250-->
+
+#### Setup
 
 What are the steps in Setup for a LIP for a QAP, roughly?
 ?
 Pick parameters
 Set $\boldsymbol{\tau}$
 Set $\boldsymbol{\sigma}$
-<!--SR:2022-07-04,12,250-->
+<!--SR:2022-07-12,7,230-->
 
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:2022-07-03,11,250-->
+<!--SR:2022-08-05,31,250-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
 $(\alpha, \beta, \gamma, \delta, x)$
-<!--SR:2022-07-04,12,250-->
+<!--SR:2022-08-07,33,250-->
 
 
 What set are the parameters in Setup for a LIP for a QAP selected from?
 ?
 $\mathbb{F}^*$
-<!--SR:2022-07-04,12,250-->
+<!--SR:2022-07-12,7,230-->
 
 ??? How is it possible that they are selected from this? They appear to just be single elements?
+
+##### $\sigma$
+
+What, broadly are the parts of $\sigma$ in a LIP for a QAP?
+?
+The $\tau$ part
+The exponentiations of $x$
+The linear combinations for $\phi$
+The linear combinations for $w$
+The evaluations of $t(x)$
+<!--SR:2022-07-09,4,250-->
+
+What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
+?
+$\alpha, \beta, \gamma, \delta$
+<!--SR:2022-07-08,3,250-->
+
+What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
+?
+$\{x^i\}_{i=0}^{n-1}$
+<!--SR:2022-07-06,1,230-->
+
+What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
+?
+$$\Bigl\{ 
+\frac{
+\beta u_i(x) + \alpha v_i(x) + w_i(x)
+}{\gamma}
+\Bigl\}^\mathscr{l}_{i=0}$$
+<!--SR:2022-07-09,4,250-->
+
+What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
+?
+$$\Bigl\{ 
+\frac{
+\beta u_i(x) + \alpha v_i(x) + w_i(x)
+}{\delta}
+\Bigl\}^m_{i=\mathscr{l}+1}$$
+<!--SR:2022-07-07,2,250-->
+
+What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
+?
+$$\Bigl\{ 
+\frac{
+x^it(x)
+}{\delta}
+\Bigl\}^{n-2}_{i=0}$$
+<!--SR:2022-07-09,4,250-->

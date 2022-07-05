@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "ab4c0ce05eada015",
+        "id": "7452536d8885e460",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -94,7 +94,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ab4c0ce05eada015",
+  "active": "7452536d8885e460",
   "lastOpenFiles": [
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Circom/Documentation.md",
