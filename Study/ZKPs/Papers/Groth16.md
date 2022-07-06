@@ -1214,14 +1214,17 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
+<!--SR:2022-07-08,1,230-->
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
+<!--SR:2022-07-09,2,250-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
+<!--SR:2022-07-11,4,250-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1229,7 +1232,46 @@ $$
 A \cdot B =
 \alpha \cdot \beta +
 \frac{
-\sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
+\sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma}
-+ \gamma + C \cdot \delta
+\cdot \gamma + C \cdot \delta
 $$
+<!--SR:2022-07-10,3,250-->
+
+??? Why are we dividing by gamma then multiplying by it again?
+
+What are the "parts" of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+Proof element product
+CRS product
+Statement sum
+Proof CRS product
+<!--SR:2022-07-11,4,250-->
+
+What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$A \cdot B$
+<!--SR:2022-07-10,3,250-->
+
+What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$\alpha \cdot \beta$
+<!--SR:2022-07-09,2,250-->
+
+What is in the "statement sum" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$$
+\frac{
+\sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
+}{\gamma} \cdot \gamma 
+$$
+<!--SR:2022-07-11,4,250-->
+
+What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$C \cdot \delta$
+<!--SR:2022-07-10,3,250-->
+
+When does Vfy accept in a QAPLIP?
+?
+When the polynomial test passes.
