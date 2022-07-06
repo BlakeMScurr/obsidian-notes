@@ -1178,7 +1178,7 @@ $3 \times (m + 2n + 4)$
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
-What is the definition of $pi$ in a QAPLIP?
+What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
 
