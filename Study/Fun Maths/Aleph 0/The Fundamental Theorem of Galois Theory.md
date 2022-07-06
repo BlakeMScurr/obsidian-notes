@@ -4,7 +4,7 @@
 What is the Fundamental Theorem of Galois Theory about, roughly?
 ?
 Algerbraic expressions including values like $\sqrt{2}$ and $-\sqrt{2}$, and the ways you can permute those values while keeping the expression true.
-<!--SR:2022-07-07,43,270-->
+<!--SR:2022-10-26,111,270-->
 
 What is the popularly known consequence of the Fundamental Theorem of Galois Theory?
 ?

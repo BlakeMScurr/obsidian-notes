@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2022-07-07,30,210-->
+<!--SR:2022-09-10,65,210-->
 
 How do we declare a variable?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-07-07,10,130-->
+<!--SR:2022-07-21,14,130-->
 
 # Operators
 
@@ -559,7 +559,7 @@ To make expressions, but the conditional operator can only be used at the top le
 What are the possible values of a field element?
 ?
 It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular large number.
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-10-04,89,250-->
 
 What do you use to change the field size?
 ?
@@ -637,7 +637,7 @@ What are the arithmetic operators?
 What are the `+ - * **` operators?
 ?
 Addition, subtraction, multiplication, exponentiation all mod p.
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-10-04,89,250-->
 
 What is the `/` operator?
 ?
@@ -763,7 +763,7 @@ component main{public[in]} = Num2Bits(3);
 What is a linear expression?
 ?
 An expression where only addition is used.
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-10-02,87,250-->
 
 How can we rewrite some linear expressions succinctly?
 ?
@@ -773,7 +773,7 @@ By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
 What is a quadratic expression?
 ?
 An expression resulting from the multiplication of two linear expressions and addition of another: `A*B+C` where `A,B,C` are linear expressions.
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-09-30,85,250-->
 
 Circom generates constraints, what form must they have?
 ?
@@ -790,7 +790,7 @@ Multiplication (or division) by constants.
 Which operators impose constraints?
 ?
 `===`, `<==`
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-10-04,89,250-->
 
 Rewrite `out <== 1 - a * b;` more explicitly
 ?
@@ -964,7 +964,7 @@ What is wrong with the following code?
 `var z = [2,8,4];`
 ?
 The size of `z` is not explicitly given, and it will produce a compiler error.
-<!--SR:2022-07-07,34,250-->
+<!--SR:2022-10-03,88,250-->
 
 Can a single array hold multiple types of signals?
 ?
@@ -1080,7 +1080,7 @@ The `assert` keyword, and constraints.
 How do you use `assert`, for example?
 ?
 `assert(n <= 254);`
-<!--SR:2022-07-07,33,250-->
+<!--SR:2022-10-01,86,250-->
 
 What is `log`?
 ?

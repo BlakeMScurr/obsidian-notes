@@ -263,7 +263,7 @@ Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable no
 What are Type III bilinear groups?
 ?
 Where there is no efficiently computable non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
-<!--SR:2022-07-07,15,230-->
+<!--SR:2022-08-15,39,230-->
 
 What is special about Type III bilinear groups?
 ?
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-07-07,6,170-->
+<!--SR:2022-07-10,3,150-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -774,7 +774,7 @@ $$
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-07-07,10,190-->
+<!--SR:2022-07-26,19,190-->
 
 What is the definition of $w$ in a QAP?
 ?
@@ -1023,7 +1023,7 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-07-07,7,210-->
+<!--SR:2022-07-23,16,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-07,1,130-->
+<!--SR:2022-07-08,1,130-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1149,7 +1149,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-07-07,2,250-->
+<!--SR:2022-07-08,1,230-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1165,30 +1165,36 @@ x^it(x)
 What is the function signature of Prove for a QAPLIP?
 ?
 $\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
+<!--SR:2022-07-08,1,230-->
 
 What are the steps involved in Prove for a QAP LIP?
 ?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
+<!--SR:2022-07-11,4,250-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
+<!--SR:2022-07-08,1,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
 What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
+<!--SR:2022-07-10,3,250-->
 
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
+<!--SR:2022-07-11,4,250-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
+<!--SR:2022-07-08,1,230-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1200,4 +1206,30 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 }
 {\delta}
 + As + rB - rs\delta
+$$
+<!--SR:2022-07-08,1,230-->
+
+##### Vfy
+
+What is the signature of Vfy in a QAPLIP?
+?
+$0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
+
+What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
+?
+A quadratic multi-variate polynomial.
+
+What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
+
+What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
+?
+$$
+A \cdot B =
+\alpha \cdot \beta +
+\frac{
+\sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
+}{\gamma}
++ \gamma + C \cdot \delta
 $$

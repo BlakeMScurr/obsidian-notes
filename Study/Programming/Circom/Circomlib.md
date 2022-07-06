@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-07-07,22,170-->
+<!--SR:2022-08-17,41,170-->
 
 ### binsum
 
@@ -106,7 +106,7 @@ What are `in` and `out` in `Binsum`?
 ?
 `in` is a 2D array of bits representing binary numbers.
 `out` is an array bits representing a number, namely the sum of the numbers in `in`.
-<!--SR:2022-07-07,32,250-->
+<!--SR:2022-09-25,80,250-->
 
 What are `lin` and `lout` in `Binsum`?
 ?
@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-07-07,18,230-->
+<!--SR:2022-07-18,11,210-->
 
 What is the code for `BinSum`?
 ?

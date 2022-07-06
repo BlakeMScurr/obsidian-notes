@@ -319,11 +319,6 @@ What is an interactive proof system analogous to?
 A lesson in a classroom.
 <!--SR:2022-09-02,93,250-->
 
-What are the properties of a classroom lesson (in the context of an interactive proof system)?
-?
-The lesson is *on an idea*, which is *in a topic*, held as a *conversation*, where *true ideas can be proven*, and *false ideas cannot be proven*.
-<!--SR:2022-07-07,50,210-->
-
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
@@ -1221,7 +1216,7 @@ But type 2 numbers are quadratic residues if and only if $y$ is a quadratic resi
 What is the input to the zk QNR IP?
 ?
 $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
-<!--SR:2022-07-07,15,190-->
+<!--SR:2022-08-05,29,190-->
 
 What happens in step 1?
 ?
@@ -1370,7 +1365,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-07-07,14,170-->
+<!--SR:2022-07-30,23,170-->
 
 What is the purpose of $X' \cup Y'$?
 ?
