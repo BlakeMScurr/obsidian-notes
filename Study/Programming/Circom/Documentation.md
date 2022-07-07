@@ -607,7 +607,7 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-07-25,17,230-->
 
 How is `x < y` defined?
 ?
@@ -687,7 +687,7 @@ XOR 254 bits
 What is the `>>` operator?
 ?
 Rightshift
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-10-05,89,250-->
 
 What is the `<<`?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-07-08,4,130-->
+<!--SR:2022-07-13,5,130-->
 
 What are the bitwise assignment operators?
 ?
@@ -910,7 +910,7 @@ template B(N1, N2) {
 ```
 ?
 `A`, because its condition depends on a signal which means it's unknown, whereas `B`'s depends on a parameter which means it's known at compile time.
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-10-05,89,250-->
 
 What is wrong with the following code?
 ```
@@ -974,7 +974,7 @@ No, each array can only hold one type of signal.
 Can an array contain components with different parameters?
 ?
 Yes, as long as they have the same type.
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-10-05,89,250-->
 
 What is wrong with the following code and what error message will it give?
 ```
@@ -1001,7 +1001,7 @@ template All(N){
 ?
 `c[i] = fun[i] -> Assignee and assigned types do not match`
 There are two types of components being put into the array `c`. This applies even though the two types are identical, and no components can actually be of type 2 if you follow the runtime logic.
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-09-27,81,250-->
 
 # Scoping
 
@@ -1109,7 +1109,7 @@ Code generation, where the code to compute the witness is generated
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
-<!--SR:2022-07-08,34,250-->
+<!--SR:2022-10-01,85,250-->
 
 What is a hint?
 ?
