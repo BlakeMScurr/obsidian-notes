@@ -1275,3 +1275,4 @@ $C \cdot \delta$
 When does Vfy accept in a QAPLIP?
 ?
 When the polynomial test passes.
+<!--SR:2022-07-10,3,250-->
