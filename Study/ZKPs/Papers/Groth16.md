@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-08,1,130-->
+<!--SR:2022-07-09,1,130-->
 
 How does the verifier in a compiled LIP check the argument?
 ?

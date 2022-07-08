@@ -270,7 +270,7 @@ The proposition being thought about.
 What does a pair of interactive Turing machines represent?
 ?
 The possible polite conversations that two (particular) people might have on a proposition.
-<!--SR:2022-07-08,42,210-->
+<!--SR:2022-10-06,90,210-->
 
 How do we define an interactive pair (A, B)?
 ?
@@ -1015,7 +1015,7 @@ NP, since it's a special class of interactive proofs.
 How can knowledge complexity be used for cryptography?
 ?
 For proving the correctness of cryptographic protocols in a modular way.
-<!--SR:2022-07-08,50,230-->
+<!--SR:2022-11-02,117,230-->
 
 
 
@@ -1330,7 +1330,7 @@ B makes equally sized sets of opposite secret residuosity $X$ and $Y$.
 B reveals the random values left over.
 B ties $X$ and $Y$ to  the residuosity of $x$ with sets $X'$ and $Y'$.
 B sends $X' \cup Y'$ to A.
-<!--SR:2022-07-08,35,190-->
+<!--SR:2022-09-12,66,190-->
 
 How does B reveal the random $r$ values in $Z$?
 ?
@@ -1385,7 +1385,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-07-08,19,190-->
+<!--SR:2022-08-16,39,190-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?

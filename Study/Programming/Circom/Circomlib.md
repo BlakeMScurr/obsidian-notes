@@ -166,7 +166,7 @@ template BinSum(n, ops) {
 	lin === lout;
 }
 ```
-<!--SR:2022-07-08,33,250-->
+<!--SR:2022-07-27,19,230-->
 
 ### binsub
 
@@ -219,7 +219,7 @@ var i;
 What do `clsb` etc represent?
 ?
 Constant/signal least/most significant bit.
-<!--SR:2022-07-08,30,250-->
+<!--SR:2022-09-22,76,250-->
 
 How do we calculate `clsb` etc?
 ?
@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-07-08,22,210-->
+<!--SR:2022-08-19,42,210-->
 
 What is the code for the final check and output?
 ?
