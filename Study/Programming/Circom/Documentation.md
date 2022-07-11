@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-07-09,20,170-->
+<!--SR:2022-08-20,40,170-->
 
 Where can operators be used?
 ?
@@ -622,7 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
-<!--SR:2022-07-11,34,250-->
+<!--SR:2022-10-07,88,250-->
 
 How is `x >= y` defined?
 ?
@@ -1146,7 +1146,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-07-11,24,230-->
+<!--SR:2022-09-04,55,230-->
 
 What kinds of values are always known or unknown?
 ?
