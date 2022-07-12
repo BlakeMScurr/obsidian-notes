@@ -81,7 +81,7 @@ Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
 What are the 3 core properties of zero knowledge proofs?
 ?
 Completeness, Soundness, and Zero-Knowledge.
-<!--SR:2022-07-12,41,250-->
+<!--SR:2022-10-23,103,250-->
 
 Describe the completeness property.
 ?
@@ -91,7 +91,7 @@ Given a statement and a witness, the prover can convince the verifier.
 Describe the soundness property.
 ?
 A malicious prover cannot convince the verifier of a false statement.
-<!--SR:2022-07-10,40,250-->
+<!--SR:2022-10-18,98,250-->
 
 Describe the zero knowledge property.
 ?
@@ -116,7 +116,7 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-07-12,23,150-->
+<!--SR:2022-08-19,38,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
@@ -163,12 +163,12 @@ Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \
 What is the limit definition of $\omega$?
 ?
 $lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
-<!--SR:2022-07-10,18,250-->
+<!--SR:2022-08-25,44,250-->
 
 What is the formal definition of $\omega$?
 ?
 $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
-<!--SR:2022-07-09,4,210-->
+<!--SR:2022-07-24,12,210-->
 
 What does $\lambda$ represent, and what do its values mean?
 ?
@@ -198,14 +198,14 @@ That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
 $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the same input (including random coins).
-<!--SR:2022-07-12,19,250-->
+<!--SR:2022-08-29,48,250-->
 
 ## Bilinear Groups
 
 What are the parts of a bilinear group?
 ?
 $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
-<!--SR:2022-07-08,16,250-->
+<!--SR:2022-08-24,43,250-->
 
 What is $p$?
 ?
@@ -248,7 +248,7 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-07-12,13,190-->
+<!--SR:2022-08-07,26,190-->
 
 What is a Type I bilinear group?
 ?
@@ -299,7 +299,7 @@ The statement.
 What is $w$?
 ?
 The witness.
-<!--SR:2022-07-12,19,250-->
+<!--SR:2022-08-26,45,250-->
 
 What kinds of pairs are in $R$?
 ?
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-07-10,3,150-->
+<!--SR:2022-07-18,6,150-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-07-12,15,190-->
+<!--SR:2022-08-11,30,190-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -484,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-07-10,5,170-->
+<!--SR:2022-07-22,10,170-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -651,12 +651,12 @@ $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the rem
 How can an addition gate be described as a constraint?
 ?
 $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$ by definition.
-<!--SR:2022-07-12,15,230-->
+<!--SR:2022-08-20,39,230-->
 
 In what sense are addition gates handled "for free?"
 ?
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
-<!--SR:2022-07-11,14,230-->
+<!--SR:2022-08-15,34,230-->
 
 ### Formulating QAPs
 
@@ -671,7 +671,7 @@ That the field $\mathbb{F}$ is large enough.
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-07-08,11,170-->
+<!--SR:2022-08-01,20,170-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -698,7 +698,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-07-10,12,170-->
+<!--SR:2022-08-04,23,170-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -706,7 +706,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-07-11,10,190-->
+<!--SR:2022-08-02,21,190-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -750,7 +750,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-07-11,6,210-->
+<!--SR:2022-07-25,13,210-->
 
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -862,7 +862,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-07-12,13,190-->
+<!--SR:2022-07-19,7,170-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -878,7 +878,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-07-08,3,130-->
+<!--SR:2022-07-21,9,130-->
 
 What is ProofMatrix, broadly?
 ?
@@ -1007,7 +1007,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-07-11,13,190-->
+<!--SR:2022-07-20,8,170-->
 
 ??? Is there a mistake here, should it me that Pi in kxm rather than mxk?
 
@@ -1033,7 +1033,7 @@ An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
 What does the crs of a compiled LIP contain, roughly?
 ?
 Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
-<!--SR:2022-07-09,11,190-->
+<!--SR:2022-08-08,27,190-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
@@ -1092,7 +1092,7 @@ What are the steps in Setup for a LIP for a QAP, roughly?
 Pick parameters
 Set $\boldsymbol{\tau}$
 Set $\boldsymbol{\sigma}$
-<!--SR:2022-07-12,7,230-->
+<!--SR:2022-07-27,15,230-->
 
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
@@ -1121,7 +1121,7 @@ The exponentiations of $x$
 The linear combinations for $\phi$
 The linear combinations for $w$
 The evaluations of $t(x)$
-<!--SR:2022-07-09,4,250-->
+<!--SR:2022-07-26,14,250-->
 
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
@@ -1131,7 +1131,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-07-08,2,230-->
+<!--SR:2022-07-21,9,230-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1140,7 +1140,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:2022-07-09,4,250-->
+<!--SR:2022-07-26,14,250-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1149,7 +1149,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-19,7,230-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1165,14 +1165,14 @@ x^it(x)
 What is the function signature of Prove for a QAPLIP?
 ?
 $\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-13,1,210-->
 
 What are the steps involved in Prove for a QAP LIP?
 ?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
-<!--SR:2022-07-11,4,250-->
+<!--SR:2022-07-23,11,250-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
@@ -1184,7 +1184,7 @@ $3 \times (m + 2n + 4)$
 What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
-<!--SR:2022-07-10,3,250-->
+<!--SR:2022-07-23,11,250-->
 
 What is the definition of $A$ in a QAPLIP?
 ?
@@ -1207,19 +1207,19 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-13,1,210-->
 
 ##### Vfy
 
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-20,8,230-->
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-07-09,2,250-->
+<!--SR:2022-07-13,1,230-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1246,7 +1246,7 @@ Proof element product
 CRS product
 Statement sum
 Proof CRS product
-<!--SR:2022-07-11,4,250-->
+<!--SR:2022-07-15,3,230-->
 
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1256,7 +1256,7 @@ $A \cdot B$
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\alpha \cdot \beta$
-<!--SR:2022-07-09,2,250-->
+<!--SR:2022-07-22,10,250-->
 
 What is in the "statement sum" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1270,9 +1270,9 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-07-10,3,250-->
+<!--SR:2022-07-14,2,230-->
 
 When does Vfy accept in a QAPLIP?
 ?
 When the polynomial test passes.
-<!--SR:2022-07-10,3,250-->
+<!--SR:2022-07-24,12,250-->

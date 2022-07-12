@@ -73,7 +73,7 @@ Lance Fortnow, John Rompel, and Michael Sipser.
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-07-11,14,130-->
+<!--SR:2022-08-12,31,150-->
 
 ## BFL90
 
@@ -123,7 +123,7 @@ That 1 round NIZKs are only possible for trival (BPP) languages.
 Who are the authors of GOS12?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-07-10,34,230-->
+<!--SR:2022-11-06,117,250-->
 
 What is the title of GOS12?
 ?
@@ -152,7 +152,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-07-09,12,130-->
+<!--SR:2022-07-31,19,130-->
 
 Who are the authors of Gro06?
 ?
@@ -167,7 +167,7 @@ Simulation-sound NIZK proofs for a practical language and constant size group si
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-07-11,27,190-->
+<!--SR:2022-09-30,80,210-->
 
 Who are the authors of GS12?
 ?
@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-07-11,11,130-->
+<!--SR:2022-07-29,17,130-->
 
 What did GS12 contribute?
 ?
@@ -243,7 +243,7 @@ Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
-<!--SR:2022-07-08,11,250-->
+<!--SR:2022-08-16,35,250-->
 
 What did GKMMM18 contribute?
 ?
@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-07-10,13,210-->
+<!--SR:2022-07-17,5,190-->
 
 What did MBKM19 contribute?
 ?
@@ -309,7 +309,7 @@ Sean Bowe, Ariel Gabizon, Ian Miers
 What is the title of BGM19?
 ?
 Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
-<!--SR:2022-07-08,15,250-->
+<!--SR:2022-09-17,67,270-->
 
 What did BGM19 contribute?
 ?
