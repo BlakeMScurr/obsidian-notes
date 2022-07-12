@@ -121,7 +121,7 @@ for all x and y in the field
 What is the intuition behind the definition of an automorphism?
 ?
 An automorphism is a function that shuffles around the field elements while respecting the field operations.
-<!--SR:2022-07-11,41,230-->
+<!--SR:2022-10-15,95,230-->
 
 What is $Aut\ F$?
 ?
@@ -159,18 +159,18 @@ $= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative pro
 $= a + b\sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
 $= a + b \cdot(\pm\sqrt{2})$ since automorphisms send numbers to one of their conjugates
 So there are just 2 such automorphisms.
-<!--SR:2022-07-10,34,250-->
+<!--SR:2022-10-08,88,250-->
 
 How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
 ?
 Just draw how it acts on the conjugates of $\sqrt{2}$, since that determines how it acts on the whole field.
-<!--SR:2022-07-10,34,250-->
+<!--SR:2022-10-07,87,250-->
 
 What do the each of the automorphisms fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$ do to the conjugates of $\sqrt{2}$?
 ?
 The first leaves all conjugates in the same place.
 The second swaps $\sqrt{2}$ and $-\sqrt{2}$
-<!--SR:2022-07-10,34,250-->
+<!--SR:2022-10-06,86,250-->
 
 # Group Theory
 

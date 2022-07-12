@@ -106,7 +106,7 @@ To non-interactive zero knowledge proofs (NIZK) in the common reference string m
 Where are NIZKs useful, according to Groth16?
 ?
 The construction of non-interactive cryptographic schemes, e.g., digital key signatures, and CCA-secure public key encryption.
-<!--SR:2022-07-12,19,170-->
+<!--SR:2022-08-14,33,170-->
 
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
@@ -127,7 +127,7 @@ The first linear sized proofs based on standard assumptions.
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-07-09,12,170-->
+<!--SR:2022-08-04,23,170-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
@@ -210,7 +210,7 @@ $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
 What is $p$?
 ?
 A prime number.
-<!--SR:2022-07-10,18,250-->
+<!--SR:2022-08-26,45,250-->
 
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
@@ -273,7 +273,7 @@ They are the most efficient type of bilinear groups, and hence the most relevant
 For which type of bilinear group is the lower bound given?
 ?
 Type III
-<!--SR:2022-07-09,17,250-->
+<!--SR:2022-08-27,46,250-->
 
 For which type of bilinear group does the construction work?
 ?
@@ -361,7 +361,7 @@ What is the definition of $\textbf{Vfy}$?
 ?
 $0/1 \leftarrow \textbf{Vfy}(R, \sigma, \phi, \pi)$
 The verification algorithm takes as input the common reference string, the statement, and the argument, and returns 0 (reject) or 1 (accept).
-<!--SR:2022-07-10,18,250-->
+<!--SR:2022-08-25,44,250-->
 
 What is the definition of $\textbf{Sim}$?
 ?
@@ -441,7 +441,7 @@ What is the definition of computational soundness?
 ?
 Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
 $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \phi \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-07-08,16,230-->
+<!--SR:2022-08-22,41,230-->
 
 What does the adversary represent in the definition of computational soundness?
 ?
@@ -473,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-07-11,14,190-->
+<!--SR:2022-08-10,29,190-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -784,7 +784,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-07-11,10,210-->
+<!--SR:2022-08-03,22,210-->
 
 How might relation generators vary in practice?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-09,1,130-->
+<!--SR:2022-07-16,4,130-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1054,7 +1054,7 @@ Equations formed by multiplying together the results of pairings.
 What kind of language does our pairing based NIZK construction prove?
 ?
 Quadratic Arithmetic Programs.
-<!--SR:2022-07-12,7,230-->
+<!--SR:2022-07-28,16,230-->
 
 What does a proof in our NIZK construction consist of?
 ?
@@ -1108,11 +1108,11 @@ $(\alpha, \beta, \gamma, \delta, x)$
 What set are the parameters in Setup for a LIP for a QAP selected from?
 ?
 $\mathbb{F}^*$
-<!--SR:2022-07-12,7,230-->
+<!--SR:2022-07-30,18,230-->
 
 ??? How is it possible that they are selected from this? They appear to just be single elements?
 
-##### $\sigma$
+##### Sigma
 
 What, broadly are the parts of $\sigma$ in a LIP for a QAP?
 ?
@@ -1126,7 +1126,7 @@ The evaluations of $t(x)$
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
 $\alpha, \beta, \gamma, \delta$
-<!--SR:2022-07-08,3,250-->
+<!--SR:2022-07-25,13,250-->
 
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1158,7 +1158,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-07-09,4,250-->
+<!--SR:2022-07-15,3,230-->
 
 ##### Prove
 
@@ -1177,7 +1177,7 @@ Calculating the matrix $\Pi$.
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-19,7,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
@@ -1189,12 +1189,12 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-07-11,4,250-->
+<!--SR:2022-07-15,3,230-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-08,1,230-->
+<!--SR:2022-07-13,1,210-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1224,7 +1224,7 @@ A quadratic multi-variate polynomial.
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
-<!--SR:2022-07-11,4,250-->
+<!--SR:2022-07-24,12,250-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1236,7 +1236,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-10,3,250-->
+<!--SR:2022-07-14,2,230-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1251,7 +1251,7 @@ Proof CRS product
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $A \cdot B$
-<!--SR:2022-07-10,3,250-->
+<!--SR:2022-07-22,10,250-->
 
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1265,7 +1265,7 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-07-11,4,250-->
+<!--SR:2022-07-14,2,230-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

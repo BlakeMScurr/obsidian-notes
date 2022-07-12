@@ -29,12 +29,12 @@ The parameter specifying the number of operands. I.e., the number of binary numb
 What is `n` in binsum?
 ?
 The parameter specifying the number of bits in each operand (binary number being added together).
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-08,88,250-->
 
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-07-28,16,230-->
 
 What is the main constraint in binsum and what is it for?
 ?
@@ -47,7 +47,7 @@ in[ops-1][0]*2^0 + i[ops-1][1]*2^1 + ... in[ops-1][n-1]*2^(n-1)
 ===
 out[0]+2^0 + out[1]^2^1 + ..... + out[n+e-1]*2^(n+e-1)
 ```
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-11,91,250-->
 
 What is the secondary constraint in binsum and what is it for?
 ?
@@ -80,7 +80,7 @@ What do `a`, `r`, and `n` represent in `nbits`?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
 `n` is `2^r`
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-07-29,17,230-->
 
 What is the code for `nbits`?
 ?
@@ -95,12 +95,12 @@ function nbits(a) {
 	return r;
 }
 ```
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-10,90,250-->
 
 What is `nout` in `Binsum`?
 ?
 The number of bits required to represent the output of the sum.
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-09,89,250-->
 
 What are `in` and `out` in `Binsum`?
 ?
@@ -120,12 +120,12 @@ What are `k` and `j` in `Binsum`?
 ?
 `k` is the index variable used to count through the `n` digits of each `in` number, and the `nout` digits of `out`.
 `j` is the index variable used to count through the `ops` operands in `in`.
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-12,92,250-->
 
 What is `e2` in `Binsum`?
 ?
 `e2` is the variable that keeps track of the power of 2 represented by each digit to save exponentiations.
-<!--SR:2022-07-09,34,250-->
+<!--SR:2022-10-13,93,250-->
 
 What are the knowns and unknowns in `Binsum`?
 ?
@@ -214,7 +214,7 @@ var a = 1;
 var e = 1;
 var i;
 ```
-<!--SR:2022-07-11,28,230-->
+<!--SR:2022-09-16,66,230-->
 
 What do `clsb` etc represent?
 ?
@@ -252,7 +252,7 @@ What does `a` do from a bitwise perspective and how?
 ?
 Zeroes each `jth` left hand bit where `i < j <= 127`.
 Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
-<!--SR:2022-07-10,32,250-->
+<!--SR:2022-10-06,86,250-->
 
 What does `b` do from a bitwise perspective and how?
 ?
@@ -304,7 +304,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-07-09,31,250-->
+<!--SR:2022-09-28,78,250-->
 
 What is the updating code for each loop?
 ?
@@ -370,7 +370,7 @@ Selects 1 of 2 length n arrays.
 What does `Mux1` do?
 ?
 Selects 1 of 2 values.
-<!--SR:2022-07-12,33,250-->
+<!--SR:2022-10-07,87,250-->
 
 What is the code for MultiMux1?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-07-11,19,170-->
+<!--SR:2022-08-18,37,170-->
 
 ## p-s
 

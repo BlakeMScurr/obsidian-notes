@@ -37,7 +37,7 @@ How do you declare an intermediate signal?
 How do you declare an array of output signals?
 ?
 `signal output out[N];` declares an array of length `N` called `out` containing output signals.
-<!--SR:2022-07-11,34,230-->
+<!--SR:2022-09-29,79,230-->
 
 When are signals private vs public?
 ?
@@ -80,7 +80,7 @@ template B(){
 	component comp = A();
 	someSignal <== A.outA
 }
-<!--SR:2022-07-12,35,250-->
+<!--SR:2022-10-08,88,250-->
 
 template A(){
 	...
@@ -179,7 +179,7 @@ Templates.
 When are template's parameters instantiated?
 ?
 When the template is used.
-<!--SR:2022-07-12,33,230-->
+<!--SR:2022-09-23,73,230-->
 
 What is the syntax to define a template parameter?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-07-10,32,230-->
+<!--SR:2022-09-26,76,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-07-09,19,170-->
+<!--SR:2022-08-17,36,170-->
 
 What creates assertions?
 ?
@@ -1114,7 +1114,7 @@ Hints, warnings, and errors.
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
-<!--SR:2022-07-10,34,250-->
+<!--SR:2022-10-12,92,250-->
 
 What is a warning?
 ?
@@ -1139,7 +1139,7 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-07-10,11,210-->
+<!--SR:2022-08-06,25,210-->
 
 ## Unknowns
 
@@ -1158,7 +1158,7 @@ When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
-<!--SR:2022-07-11,34,250-->
+<!--SR:2022-10-10,90,250-->
 
 Which identifiers and known and unknown in the following code?
 ```
@@ -1209,7 +1209,7 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
-<!--SR:2022-07-10,34,250-->
+<!--SR:2022-10-09,89,250-->
 
 A control flow with a constraint . . . ?
 ?

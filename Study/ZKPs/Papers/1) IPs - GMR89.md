@@ -668,7 +668,7 @@ A computationally bounded adversary trying to distinguish between distributions,
 What does the distinguisher represent in an Interactive Proof?
 ?
 An verifier trying to tell its own studies apart from notes taken in class.
-<!--SR:2022-07-11,53,230-->
+<!--SR:2022-11-12,123,230-->
 
 What is the definition of a distinguisher?
 ?
@@ -700,7 +700,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 When (at a high level) are two ensembles "at most p-distinguishable?"
 ?
 If they can be told apart with at most p(n) probability
-<!--SR:2022-07-10,51,230-->
+<!--SR:2022-11-09,120,230-->
 
 Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
@@ -988,7 +988,7 @@ The text of the computation with the prover, containing no more than $f(n)$ extr
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?
 That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" text.
-<!--SR:2022-07-10,35,230-->
+<!--SR:2022-10-03,83,230-->
 
 If $L \in KC(0)$, the verifier learns . . . ?
 ?
@@ -1175,7 +1175,7 @@ $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}
 How powerful does the A have to be in GMR's zk QNR IP?
 ?
 It can just be probabilistic polynomial time turing machine with the additionalpower to compute $\mathcal{Q}_m$.
-<!--SR:2022-07-12,55,250-->
+<!--SR:2022-11-23,134,250-->
 
 What are type 1 numbers in GMR's zk QNR IP?
 ?
@@ -1202,7 +1202,7 @@ $A$ may release the quadratic residuosity of another $x\in \mathbb{Z}_m^*$chosen
 How (roughly) do we change the naive QNR IP to make it zero knowledge?
 ?
 We have $A$ make sure $B$ "knows" the types of the numbers it quizzes $A$ about.
-<!--SR:2022-07-09,53,250-->
+<!--SR:2022-11-19,130,250-->
 
 What is the relationship between types and quadratic residuosity?
 ?
@@ -1234,7 +1234,7 @@ How is $x$ defined in the zk QNR IP?
 ?
 In step 1, $B$ chooses a random $r_0$ from $\mathbb{Z}_m^*$ and then tosses a coin $C_x$.
 If $C_x = 0$ then B sets $x = r_0^2 \mod n$,  else if $C_x = 1$, $B$ sets $x = y \cdot r^2 \mod n$
-<!--SR:2022-07-09,43,230-->
+<!--SR:2022-10-25,105,230-->
 
 If $C_x = 0$, what are $x$ and the type of $x$?
 ?
@@ -1435,7 +1435,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-07-11,26,210-->
+<!--SR:2022-09-06,56,210-->
 
 How is $X' \cup Y'$ sent?
 ?
