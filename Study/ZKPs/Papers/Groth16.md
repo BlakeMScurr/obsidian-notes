@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-07-13,14,210-->
+<!--SR:2022-08-13,31,210-->
 
 What is the limit definition of $\omega$?
 ?
@@ -386,7 +386,7 @@ We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zer
 What is perfect completeness, roughly?
 ?
 Completeness says that, given any true statement, an honest prover should be able to convince an honest verifier.
-<!--SR:2022-07-13,20,250-->
+<!--SR:2022-08-28,46,250-->
 
 What is the definition of perfect completeness?
 ?
@@ -394,7 +394,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-07-13,16,210-->
+<!--SR:2022-08-18,36,210-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -521,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-07-13,16,210-->
+<!--SR:2022-08-19,37,210-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -755,7 +755,7 @@ $1 \leq \mathscr{l} \leq m$
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-07-13,16,230-->
+<!--SR:2022-08-21,39,230-->
 
 What is the setbuilder notation for a quadratic arithmetic program as a relation?
 ?
@@ -1165,7 +1165,7 @@ x^it(x)
 What is the function signature of Prove for a QAPLIP?
 ?
 $\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
-<!--SR:2022-07-13,1,210-->
+<!--SR:2022-07-16,3,210-->
 
 What are the steps involved in Prove for a QAP LIP?
 ?
@@ -1194,7 +1194,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-13,1,210-->
+<!--SR:2022-07-14,1,190-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1207,7 +1207,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-13,1,210-->
+<!--SR:2022-07-14,1,190-->
 
 ##### Vfy
 
@@ -1219,7 +1219,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-07-13,1,230-->
+<!--SR:2022-07-15,2,230-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

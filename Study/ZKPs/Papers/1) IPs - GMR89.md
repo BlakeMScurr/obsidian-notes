@@ -337,7 +337,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-07-13,26,130-->
+<!--SR:2022-08-17,35,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -347,7 +347,7 @@ $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B acc
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
 No, because the properties (true statements are provable, and false ones aren't) hold independently of the prover by definition.
-<!--SR:2022-07-13,53,210-->
+<!--SR:2022-11-03,113,210-->
 
 What proofs can be constructed in an interactive proof system for $x \not in \mathcal{L}$?
 $
@@ -1285,7 +1285,7 @@ Type 1
 What type are each $t_i in S$?
 ?
 Type 2
-<!--SR:2022-07-13,23,230-->
+<!--SR:2022-09-01,50,230-->
 
 How does $B$ send $T$ and $S$ to $A$?
 ?
@@ -1573,7 +1573,7 @@ If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with proba
 How does the proof for claim 1 work?
 ?
 $P[C_x = 0] = 1/2$, and even with infinite computation power $A'$ can't tell the two types in $X' \cup Y'$ apart since they're all random square roots of random squares. We run through all 4 cases of $C_x$ and $w$ showing that they're random square roots of random squares.
-<!--SR:2022-07-13,41,230-->
+<!--SR:2022-10-14,93,230-->
 
 What cases do we have to prove to show that all $w \in X' \cup Y'$ are random square roots of random squares if $(y, m) \notin QNR$?
 ?

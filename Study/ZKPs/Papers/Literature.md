@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-07-13,13,130-->
+<!--SR:2022-07-30,17,130-->
 
 What did Gro09 contribute?
 ?
@@ -285,7 +285,7 @@ Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-07-13,8,230-->
+<!--SR:2022-08-02,20,230-->
 
 What did GWC21 contribute?
 ?
@@ -304,7 +304,7 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
-<!--SR:2022-07-13,16,230-->
+<!--SR:2022-08-21,39,230-->
 
 What is the title of BGM19?
 ?

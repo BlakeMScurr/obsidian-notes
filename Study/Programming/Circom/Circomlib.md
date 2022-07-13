@@ -180,7 +180,7 @@ Creates a constraint specifying that A - B = C for A, B, C binary numbers
 What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
-<!--SR:2022-07-13,34,250-->
+<!--SR:2022-10-09,88,250-->
 
 What are the sections in compconstant?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-07-13,8,130-->
+<!--SR:2022-07-25,12,130-->
 
 What are the variables in compconstant?
 ?
@@ -231,10 +231,10 @@ smsb = in[i*2+1];
 ```
 <!--SR:2022-07-19,14,230-->
 
-What is the value of each part, and when?
+What does each part resolve to, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
-<!--SR:2022-07-13,34,250-->
+<!--SR:2022-08-01,19,230-->
 
 What does `a` look like and what is its formula?
 ?

@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-07-13,5,130-->
+<!--SR:2022-07-16,3,130-->
 
 What are the bitwise assignment operators?
 ?
@@ -1126,7 +1126,7 @@ A compiler message meaning that what you've done is allowed but should not happe
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
-<!--SR:2022-07-13,35,250-->
+<!--SR:2022-10-13,92,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
