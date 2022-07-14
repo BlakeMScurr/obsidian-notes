@@ -278,7 +278,7 @@ How do we define an interactive pair (A, B)?
 Where each listen's to the others' speaking tape.
 They take turns being active.
 Either can halt the pair.
-<!--SR:2022-07-14,55,230-->
+<!--SR:2022-11-18,127,230-->
 
 What is output of an interactive pair?
 ?
@@ -827,7 +827,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-07-14,9,130-->
+<!--SR:2022-07-27,13,130-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?

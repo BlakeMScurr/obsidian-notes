@@ -189,12 +189,12 @@ Practical efficient NIZK and NI witness indistinguishable proofs by satisfying e
 Who are the authors of Gro10?
 ?
 Jens Groth
-<!--SR:2022-07-14,42,230-->
+<!--SR:2022-11-24,133,250-->
 
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-07-14,8,190-->
+<!--SR:2022-07-31,17,190-->
 
 What did Gro10 contribute?
 ?
@@ -268,7 +268,7 @@ Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured
 What did MBKM19 contribute?
 ?
 A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
-<!--SR:2022-07-14,17,230-->
+<!--SR:2022-08-21,38,230-->
 
 What is MBKM19 otherwise known as?
 ?

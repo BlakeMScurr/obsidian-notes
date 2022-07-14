@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-07-14,14,130-->
+<!--SR:2022-08-03,20,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -132,12 +132,12 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-07-14,9,150-->
+<!--SR:2022-07-28,14,150-->
 
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-07-14,34,190-->
+<!--SR:2022-09-13,61,190-->
 
 UNFINISHED
 
@@ -151,7 +151,7 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-07-14,17,230-->
+<!--SR:2022-08-22,39,230-->
 
 ??? Wait, is this right? It appears to only mean that they approach each other polynomially.
 
@@ -193,7 +193,7 @@ We pick $y$ uniformly at random from set $S$.
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
-<!--SR:2022-07-14,17,230-->
+<!--SR:2022-08-22,39,230-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -278,7 +278,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-07-14,17,230-->
+<!--SR:2022-08-23,40,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -509,7 +509,7 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-07-14,17,230-->
+<!--SR:2022-08-24,41,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
@@ -713,7 +713,7 @@ $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-07-14,17,210-->
+<!--SR:2022-08-20,37,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -1194,7 +1194,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-14,1,190-->
+<!--SR:2022-07-15,1,170-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1207,7 +1207,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-14,1,190-->
+<!--SR:2022-07-15,1,170-->
 
 ##### Vfy
 
@@ -1236,7 +1236,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-14,2,230-->
+<!--SR:2022-07-15,1,210-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1265,12 +1265,12 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-07-14,2,230-->
+<!--SR:2022-07-20,6,230-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-07-14,2,230-->
+<!--SR:2022-07-15,1,210-->
 
 When does Vfy accept in a QAPLIP?
 ?

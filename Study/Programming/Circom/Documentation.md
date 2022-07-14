@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-07-14,27,210-->
+<!--SR:2022-09-09,57,210-->
 
 What do signals contain?
 ?
@@ -403,7 +403,7 @@ When dealing with large circuits.
 What is the line at the top of every circom file?
 ?
 `pragma circom 2.0.0;`
-<!--SR:2022-07-14,36,230-->
+<!--SR:2022-10-05,83,230-->
 
 What is pragma for?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-07-14,32,210-->
+<!--SR:2022-09-19,67,210-->
 
 What is the `\` operator?
 ?
