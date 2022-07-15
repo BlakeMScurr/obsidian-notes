@@ -17,7 +17,7 @@ Field elements in $\mathbb{Z}/p\mathbb{Z}$
 What are the kinds of signals?
 ?
 Input, output, and intermediate.
-<!--SR:2022-07-15,33,210-->
+<!--SR:2022-09-22,69,210-->
 
 How do you declare an input signal?
 ?
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-07-15,18,170-->
+<!--SR:2022-08-15,31,170-->
 
 What is the syntax to instantiate template parameters?
 ?

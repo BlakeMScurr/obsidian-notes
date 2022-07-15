@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-07-15,33,170-->
+<!--SR:2022-08-01,17,150-->
 
 What did GOS12 contribute?
 ?
@@ -238,7 +238,7 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
-<!--SR:2022-07-15,18,230-->
+<!--SR:2022-08-23,39,230-->
 
 What is the title of GKMMM18?
 ?

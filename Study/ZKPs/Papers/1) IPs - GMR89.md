@@ -678,7 +678,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-07-15,27,150-->
+<!--SR:2022-08-27,43,150-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -1360,7 +1360,7 @@ $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \c
 How is $X$ defined?
 ?
 $T - Z - D$
-<!--SR:2022-07-15,47,250-->
+<!--SR:2022-11-10,118,250-->
 
 How is $Y$ defined?
 ?
@@ -1586,7 +1586,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-07-15,42,230-->
+<!--SR:2022-10-20,97,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf
@@ -1643,7 +1643,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-07-15,42,230-->
+<!--SR:2022-10-20,97,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf

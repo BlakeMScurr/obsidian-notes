@@ -319,7 +319,7 @@ Auxilliary information that the relation generator might output, which will be g
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-07-15,15,210-->
+<!--SR:2022-08-16,32,210-->
 
 What is the definition of $\textbf{Setup}$?
 ?
@@ -584,7 +584,7 @@ Since those results rely on specific auxiliary input distributions, we can assum
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-07-15,18,230-->
+<!--SR:2022-07-26,11,210-->
 
 What represents the statement in our arithmetic circuit?
 ?
@@ -869,7 +869,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-07-15,18,230-->
+<!--SR:2022-08-25,41,230-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -898,7 +898,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-07-15,10,190-->
+<!--SR:2022-08-05,21,190-->
 
 What does Vfy do in a LIP?
 ?
@@ -940,7 +940,7 @@ If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
 What are the degrees and dimensions of a LIP?
 ?
 $d_Q, d_D, \mu, m, n, k, \eta$
-<!--SR:2022-07-15,16,210-->
+<!--SR:2022-08-18,34,210-->
 
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
@@ -960,7 +960,7 @@ The multiplicative depth of the verifier circuit output by Test.
 What is $\mu$?
 ?
 The dimension of the randomness vector used in Setup.
-<!--SR:2022-07-15,18,250-->
+<!--SR:2022-08-30,46,250-->
 
 What is $m$ in a LIP?
 ?
@@ -1158,7 +1158,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-07-15,3,230-->
+<!--SR:2022-07-23,8,230-->
 
 ##### Prove
 
@@ -1189,12 +1189,12 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-07-15,3,230-->
+<!--SR:2022-07-24,9,230-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-15,1,170-->
+<!--SR:2022-07-18,3,170-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1207,7 +1207,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-15,1,170-->
+<!--SR:2022-07-16,1,150-->
 
 ##### Vfy
 
@@ -1219,7 +1219,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-07-15,2,230-->
+<!--SR:2022-07-21,6,230-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1236,7 +1236,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-15,1,210-->
+<!--SR:2022-07-17,2,210-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1246,7 +1246,7 @@ Proof element product
 CRS product
 Statement sum
 Proof CRS product
-<!--SR:2022-07-15,3,230-->
+<!--SR:2022-07-22,7,230-->
 
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1270,7 +1270,7 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-07-15,1,210-->
+<!--SR:2022-07-17,2,210-->
 
 When does Vfy accept in a QAPLIP?
 ?
