@@ -499,7 +499,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-07-17,56,230-->
+<!--SR:2022-08-17,31,210-->
 
 ### Interactive Hierarchy
 
@@ -602,7 +602,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-07-17,20,130-->
+<!--SR:2022-08-14,28,130-->
 
 What is an I-c-ensemble used for?
 ?
@@ -1061,7 +1061,7 @@ If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
 RP-P, there appears to be a language, namely primality testing, which may be in RP-P (it is certainly in RP, and maybe P). A similar language would be useful to distinguish KC(0) and BPP.
-<!--SR:2022-07-16,38,230-->
+<!--SR:2022-10-16,91,230-->
 
 #### Known languages in KC(0)-BPP
 * There are 2 languages known to be in KC(0)-BPP
@@ -1307,7 +1307,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-07-16,23,150-->
+<!--SR:2022-08-21,35,150-->
 
 How large is $Z$?
 ?
@@ -1370,7 +1370,7 @@ $S - Z - D$
 What is the purpose of $X' \cup Y'$?
 ?
 Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqrt{x}$. That is, so that a simulator $M$ can calculate $\sqrt{x}$ using $B'$.
-<!--SR:2022-07-16,29,150-->
+<!--SR:2022-09-02,47,150-->
 
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?

@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-07-17,5,190-->
+<!--SR:2022-07-27,10,190-->
 
 What did MBKM19 contribute?
 ?
@@ -273,14 +273,14 @@ A zk_SNARK with a universal updatable CRS that scales linearly with respect to t
 What is MBKM19 otherwise known as?
 ?
 Sonic
-<!--SR:2022-07-16,19,250-->
+<!--SR:2022-09-08,53,250-->
 
 ### GWC21
 
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-07-16,17,210-->
+<!--SR:2022-08-27,41,210-->
 
 What is the title of GWC21?
 ?

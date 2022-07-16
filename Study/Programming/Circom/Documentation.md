@@ -152,7 +152,7 @@ a = (b = 3) + 2;
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-07-17,40,250-->
+<!--SR:2022-10-25,100,250-->
 
 What is wrong with the following code?
 ```
@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-07-17,17,230-->
+<!--SR:2022-08-24,38,230-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-07-16,34,210-->
+<!--SR:2022-09-27,72,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get from misusing signals
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-07-16,32,190-->
+<!--SR:2022-09-14,59,190-->
 
 ### Components
 
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-07-17,35,230-->
+<!--SR:2022-10-10,85,230-->
 
 What does a function look like?
 ?
@@ -677,7 +677,7 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-07-17,27,210-->
+<!--SR:2022-09-12,57,210-->
 
 What is the `^` operator?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-07-16,3,130-->
+<!--SR:2022-07-23,6,130-->
 
 What are the bitwise assignment operators?
 ?

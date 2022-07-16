@@ -86,7 +86,7 @@ It helps to understand how numbers (like $\sqrt{2}$ and $e^{\frac{2i\pi}{5}}$) a
 What is a field, roughly speaking?
 ?
 Any set where you can add, subtract, multiply, and divide elements.
-<!--SR:2022-07-16,47,250-->
+<!--SR:2022-11-13,119,250-->
 
 Name a field (basic, but highly relevant to Galois theory)
 ?
@@ -107,7 +107,7 @@ Being closed under +, -, \*, and /, it contains $1+\sqrt{2}$ etc.
 Describe the automorphisms analogous to our non-rigorous motivating example with $\sqrt{2}$
 ?
 Some automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-07-16,40,210-->
+<!--SR:2022-10-14,89,210-->
 
 What is an automorphism, formally?
 ?
