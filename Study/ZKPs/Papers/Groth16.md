@@ -178,7 +178,7 @@ $\lambda$ is the security parameter, and as it grows we want higher security.
 What does $y = A(x;r)$ mean?
 ?
 That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
-<!--SR:2022-07-18,21,250-->
+<!--SR:2022-10-04,78,270-->
 
 What does $y \leftarrow A(x)$ mean?
 ?
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-07-18,6,150-->
+<!--SR:2022-07-26,8,150-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -537,7 +537,7 @@ Preprocessing succinct non-interactive argument
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-07-18,13,210-->
+<!--SR:2022-08-28,41,230-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
@@ -816,7 +816,7 @@ Why do we have to assume the relation generator is benign?
 ?
 Because indistinguishability obfuscation implies there is some auxiliary information for which witness extraction is impossible.
 And because the relation generator picks the bilinear group to give our generator definition flexibility.
-<!--SR:2022-07-18,21,250-->
+<!--SR:2022-09-30,74,270-->
 
 ## Linear Interactive Proofs
 
@@ -862,7 +862,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-07-19,7,170-->
+<!--SR:2022-07-31,12,170-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -905,7 +905,7 @@ What does Vfy do in a LIP?
 The verifier runs in two stages.
 First is runs a deterministic polynomial time algorithm $t \leftarrow \textbf{Test}(R, \phi)$ to get an arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$ of multiplicative depth $d_D$
 It then accepts the proof if and only if $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-07-19,21,250-->
+<!--SR:2022-10-01,74,270-->
 
 What is Test?
 ?
@@ -915,7 +915,7 @@ A deterministic polynomial time algorithm.
 What are the inputs of Test?
 ?
 $(R, \phi)$
-<!--SR:2022-07-19,19,210-->
+<!--SR:2022-09-11,54,230-->
 
 What does Test output?
 ?
@@ -972,12 +972,12 @@ The dimension in the crs vector $\sigma$ made in Setup.
 What is $n$ in a LIP?
 ?
 The dimension of the simulation trapdoor vector $\tau$ made in Setup.
-<!--SR:2022-07-19,22,250-->
+<!--SR:2022-10-08,81,270-->
 
 What is $\eta$ in a LIP?
 ?
 The dimension of the vector output by $t$.
-<!--SR:2022-07-18,18,230-->
+<!--SR:2022-08-29,42,230-->
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
@@ -1038,12 +1038,12 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-19,2,130-->
+<!--SR:2022-07-22,3,150-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-07-18,13,170-->
+<!--SR:2022-08-20,33,190-->
 
 What are pairing product equations?
 ?
@@ -1177,7 +1177,7 @@ Calculating the matrix $\Pi$.
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-07-19,7,230-->
+<!--SR:2022-07-23,4,210-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
@@ -1194,7 +1194,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-18,3,170-->
+<!--SR:2022-07-20,2,150-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1207,7 +1207,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-18,1,130-->
+<!--SR:2022-07-21,2,150-->
 
 ##### Vfy
 

@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-07-18,11,210-->
+<!--SR:2022-07-25,7,190-->
 
 What is the code for `BinSum`?
 ?
@@ -229,7 +229,7 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-07-19,14,230-->
+<!--SR:2022-09-03,46,250-->
 
 What does each part resolve to, and when?
 ?
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-07-18,25,230-->
+<!--SR:2022-10-11,85,250-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?

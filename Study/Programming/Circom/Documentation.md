@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-07-18,36,230-->
+<!--SR:2022-11-11,116,250-->
 
 What is the conditional expression?
 ?
@@ -662,7 +662,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-07-19,15,230-->
+<!--SR:2022-09-10,53,250-->
 
 What is the `&` operator?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-07-19,26,170-->
+<!--SR:2022-09-21,64,190-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -865,7 +865,7 @@ i++
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
-<!--SR:2022-07-18,39,250-->
+<!--SR:2022-12-02,137,270-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -1095,7 +1095,7 @@ Any expression except the conditional expression.
 What's an example of a `log` instruction?
 ?
 `log(123);`
-<!--SR:2022-07-19,39,250-->
+<!--SR:2022-10-21,94,250-->
 
 # Circom Insights
 ## Compiler

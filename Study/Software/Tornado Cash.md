@@ -71,7 +71,7 @@ What does DualMux do?
 ?
 if `s === 0` returns `[in[0], in[1]]`
 if `s === 1` returns `[in[1], in[0]]`
-<!--SR:2022-07-19,32,250-->
+<!--SR:2022-10-07,80,250-->
 
 What is the code for DualMux?
 ?

@@ -80,7 +80,7 @@ That interaction with two provers is equivalent to interaction with one prover p
 What is BFL90's title?
 ?
 Non-deterministic exponential time has two prover interactive protocols.
-<!--SR:2022-07-18,30,150-->
+<!--SR:2022-09-18,62,170-->
 
 Who are the authors of BFL90?
 ?
@@ -199,7 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-07-18,32,250-->
+<!--SR:2022-10-06,80,250-->
 
 Who are the authors of Gro09?
 ?
@@ -258,7 +258,7 @@ Neither property had existed before.
 Who are the authors of MBKM19?
 ?
 Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
-<!--SR:2022-07-18,20,250-->
+<!--SR:2022-09-26,70,270-->
 
 What is the title of MBKM19?
 ?

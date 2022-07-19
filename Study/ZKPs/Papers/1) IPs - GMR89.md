@@ -511,7 +511,7 @@ They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, a
 How do classes AM and NP compare?
 ?
 $L \in AM \implies L \in NP$ for a random oracle
-<!--SR:2022-07-19,37,190-->
+<!--SR:2022-10-28,101,210-->
 
 How do classes AM and IP compare?
 ?
@@ -688,7 +688,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 What does $p^D_{x, 2}$ denote?
 ?
 The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen with $\Pi_{2,x}$
-<!--SR:2022-07-18,58,230-->
+<!--SR:2022-11-26,131,230-->
 
 #### At Most Distinguishable
 
@@ -1280,7 +1280,7 @@ $S = \{t_{n+1},...,t_{2n}\ |\ t_i = y\cdot r_i^2\}$
 What type are each $t_i$?
 ?
 Type 1
-<!--SR:2022-07-19,48,230-->
+<!--SR:2022-11-06,110,230-->
 
 What type are each $t_i in S$?
 ?
@@ -1350,7 +1350,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-07-19,13,150-->
+<!--SR:2022-08-17,29,170-->
 
 How does $B$ reveal $D$?
 ?
@@ -1380,7 +1380,7 @@ Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0 ^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-07-19,28,210-->
+<!--SR:2022-10-15,88,230-->
 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1430,7 +1430,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-07-18,13,190--> 
+<!--SR:2022-08-22,35,210--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?
