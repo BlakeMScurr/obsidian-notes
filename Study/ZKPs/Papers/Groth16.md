@@ -1149,7 +1149,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-07-19,7,230-->
+<!--SR:2022-08-05,17,230-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?

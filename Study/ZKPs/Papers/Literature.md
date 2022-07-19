@@ -68,7 +68,7 @@ On the power of multi-prover interactive protocols
 Who are the authors of FRS88?
 ?
 Lance Fortnow, John Rompel, and Michael Sipser.
-<!--SR:2022-07-19,44,170-->
+<!--SR:2022-11-05,109,190-->
 
 What does FRS88 contribute?
 ?
