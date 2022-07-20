@@ -27,7 +27,7 @@ How do you declare an input signal?
 How do you declare an output signal?
 ?
 `signal output out;` declares an output signal named `out`
-<!--SR:2022-07-20,41,250-->
+<!--SR:2022-10-31,103,250-->
 
 How do you declare an intermediate signal?
 ?
@@ -594,7 +594,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-07-20,37,230-->
+<!--SR:2022-11-17,120,250-->
 
 What is the `val(x)` function for?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-07-20,28,190-->
+<!--SR:2022-09-15,57,190-->
 
 What is the `>>` operator?
 ?

@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-07-20,23,130-->
+<!--SR:2022-08-23,34,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -290,7 +290,7 @@ Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
-<!--SR:2022-07-20,15,230-->
+<!--SR:2022-09-04,46,250-->
 
 What is GWC21 otherwise known as?
 ?

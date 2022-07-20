@@ -246,7 +246,7 @@ What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
-<!--SR:2022-07-20,15,230-->
+<!--SR:2022-09-07,49,250-->
 
 What does `a` do from a bitwise perspective and how?
 ?

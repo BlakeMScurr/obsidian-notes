@@ -4,7 +4,7 @@
 What makes SNARGs succinct?
 ?
 Small size and low verification complexity.
-<!--SR:2022-07-20,40,210-->
+<!--SR:2022-11-15,118,230-->
 
 What is a SNARG?
 ?
@@ -268,7 +268,7 @@ Where there is no efficiently computable non-trivial homomorphism in either dire
 What is special about Type III bilinear groups?
 ?
 They are the most efficient type of bilinear groups, and hence the most relevant for practical applications.
-<!--SR:2022-07-20,23,250-->
+<!--SR:2022-10-12,84,270-->
 
 For which type of bilinear group is the lower bound given?
 ?
@@ -570,7 +570,7 @@ Assuming public coin differing input obfuscation and other cryptographic assumpt
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-07-20,19,210-->
+<!--SR:2022-07-30,10,190-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
@@ -790,7 +790,7 @@ How might relation generators vary in practice?
 ?
 Deterministic vs randomised.
 Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
-<!--SR:2022-07-20,21,230-->
+<!--SR:2022-09-24,66,250-->
 
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
@@ -1007,7 +1007,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-07-20,8,170-->
+<!--SR:2022-08-10,21,190-->
 
 ??? Is there a mistake here, should it me that Pi in kxm rather than mxk?
 
@@ -1194,7 +1194,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-20,2,150-->
+<!--SR:2022-07-24,4,170-->
 
 What is the definition of $C$ in a QAPLIP?
 ?
@@ -1214,7 +1214,7 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-07-20,8,230-->
+<!--SR:2022-07-25,5,210-->
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
@@ -1236,7 +1236,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-20,3,210-->
+<!--SR:2022-07-22,2,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1265,7 +1265,7 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-07-20,6,230-->
+<!--SR:2022-08-03,14,230-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

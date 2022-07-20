@@ -342,7 +342,7 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-07-20,23,130-->
+<!--SR:2022-08-30,41,150-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
@@ -1405,7 +1405,7 @@ $Y' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in Y\
 else:
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in X\}$ 
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
-<!--SR:2022-07-20,49,230--> 
+<!--SR:2022-12-26,159,250--> 
 
 ??? why $\mod n$ rather than $\mod m$???
 
