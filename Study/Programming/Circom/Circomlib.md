@@ -112,7 +112,7 @@ What are `lin` and `lout` in `Binsum`?
 ?
 `lin` is the algebraic expression for the sum of the numbers in `in`.
 `lout` is the algebraic expression for the value of `out`
-<!--SR:2022-07-21,16,230-->
+<!--SR:2022-08-31,41,230-->
 
 ??? does the l in lin and lout represent "algebra?"
 

@@ -183,7 +183,7 @@ That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
 What does $y \leftarrow A(x)$ mean?
 ?
 We pick randomness $r$ at random and set $y = A(x;r)$.
-<!--SR:2022-07-21,24,250-->
+<!--SR:2022-10-17,88,270-->
 
 What does $y \leftarrow S$ mean?
 ?
@@ -420,7 +420,7 @@ A malicious verifier trying to learn extra information from the proof.
 What does the adversary in the definition of perfect zero knowledge do?
 ?
 Tries to distinguish between the proof from prover and the proof from simulator.
-<!--SR:2022-07-21,24,250-->
+<!--SR:2022-10-16,87,270-->
 
 What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
@@ -494,7 +494,7 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
-<!--SR:2022-07-21,16,230-->
+<!--SR:2022-08-27,37,230-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
@@ -878,7 +878,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-07-21,9,130-->
+<!--SR:2022-08-07,17,150-->
 
 What is ProofMatrix, broadly?
 ?
@@ -1131,7 +1131,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-07-21,9,230-->
+<!--SR:2022-07-26,5,210-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1207,7 +1207,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-21,2,150-->
+<!--SR:2022-07-24,3,150-->
 
 ##### Vfy
 
@@ -1219,7 +1219,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-07-21,6,230-->
+<!--SR:2022-08-06,16,230-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1270,9 +1270,36 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-07-21,4,210-->
+<!--SR:2022-07-30,9,210-->
 
 When does Vfy accept in a QAPLIP?
 ?
 When the polynomial test passes.
 <!--SR:2022-07-24,12,250-->
+
+##### Sim
+
+What is the function signature of Sim for a QAPLIP?
+?
+$\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
+
+What, roughly, are the steps of Sim in a QAPLIP?
+?
+Pick A and B.
+Compute C.
+Return proof.
+
+How does the simulator pick A and B in a QAPLIP?
+?
+Randomly from $\mathbb{F}$
+
+How does the siulator in a QAPLIP compute C?
+?
+$$
+C =
+\frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
+$$
+
+What is the definition of the proof that the simulator returns in a QAPLIP?
+?
+$\boldsymbol{\pi} = (A,B,C)$

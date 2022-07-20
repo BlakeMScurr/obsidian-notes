@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Circom/Circomlib.md",
-            "mode": "source"
+            "file": "Study/ZKPs/Papers/Groth16.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Circom/Circomlib.md",
+                "file": "Study/ZKPs/Papers/Groth16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,8 +96,8 @@
   },
   "active": "42b6fc0347d3bee4",
   "lastOpenFiles": [
-    "Study/Programming/Circom/Circomlib.md",
     "Study/ZKPs/Papers/Groth16.md",
+    "Study/Programming/Circom/Circomlib.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/Literature.md",

@@ -90,7 +90,7 @@ Lázsló Babai, Lance Fortnow, and Carsten Lund
 What does BFL90 show?
 ?
 NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
-<!--SR:2022-07-21,35,150-->
+<!--SR:2022-10-09,80,170-->
 
 
 
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-07-21,23,150-->
+<!--SR:2022-09-10,51,170-->
 
 What did GOS06 contribute?
 ?
@@ -224,7 +224,7 @@ Jens Groth
 What is the title of Groth16?
 ?
 On the Size of Pairing-Based Non-interactive Arguments
-<!--SR:2022-07-21,29,170-->
+<!--SR:2022-09-28,69,190-->
 
 What did Groth16 contribute?
 ?

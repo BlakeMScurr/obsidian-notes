@@ -109,7 +109,7 @@ What are NP's prover and verifier?
 ?
 The prover is an exponential time turing machine.
 The verifier is a polynomial time turing machine.
-<!--SR:2022-07-21,60,230-->
+<!--SR:2023-02-01,195,250-->
 
 
 ### Proof Systems in General
@@ -1192,7 +1192,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-07-21,23,130-->
+<!--SR:2022-09-01,42,150-->
 
 What is the problem with the naive QNR IP?
 ?

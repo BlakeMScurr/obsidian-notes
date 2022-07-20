@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-07-21,39,230-->
+<!--SR:2022-08-11,21,210-->
 
 When do we use `--inspect`?
 ?
@@ -301,7 +301,7 @@ No output signal in template.
 What does a component represent?
 ?
 An arithmetic circuit.
-<!--SR:2022-07-21,42,250-->
+<!--SR:2022-11-03,105,250-->
 
 What does a component consist of?
 ?
@@ -435,7 +435,7 @@ function funid (param_1, ..., param_n) {
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-07-21,35,230-->
+<!--SR:2022-11-16,118,250-->
 
 Can functions be recursive?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-07-21,14,130-->
+<!--SR:2022-08-08,18,130-->
 
 # Operators
 
