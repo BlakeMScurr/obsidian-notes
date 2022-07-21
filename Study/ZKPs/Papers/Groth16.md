@@ -1303,3 +1303,24 @@ $$
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
 $\boldsymbol{\pi} = (A,B,C)$
+
+
+
+
+
+
+
+
+
+
+??? "at significant computational cost though" seems like an ugly sentence.
+
+## NIZK for QAP
+
+??? Why don't we have h(x) in the definition of the relation?
+
+??? How can we construct A, B, and C without alpha, beta, r, and delta? Is it possible to do with the other group elements, i.e, you don't have to do it by exponentiating the generator?
+
+??? Shouldn't we be subtracting $rs\delta$ in the compiled LIP too?
+
+??? How is the verification pairing equation equivalent to the QAPLIP's verification equation?

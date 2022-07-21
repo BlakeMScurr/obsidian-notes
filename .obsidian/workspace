@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "42b6fc0347d3bee4",
+        "id": "640cbcc35e84c526",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Study/ZKPs/Papers/Groth16.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -94,7 +94,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "42b6fc0347d3bee4",
+  "active": "640cbcc35e84c526",
   "lastOpenFiles": [
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Circom/Circomlib.md",
