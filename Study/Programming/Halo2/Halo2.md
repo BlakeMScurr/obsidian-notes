@@ -1,3 +1,5 @@
+#flashcards/halo2
+
 # Concepts
 
 ## Proof Systems
@@ -54,6 +56,7 @@ The must evaluate to zero *for each row*.
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
+<!--SR:2022-07-23,1,230-->
 
 What is the maximum degree of each polynomial?
 ?

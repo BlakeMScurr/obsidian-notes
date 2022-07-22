@@ -627,7 +627,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-07-22,37,230-->
+<!--SR:2022-11-20,121,250-->
 
 What are the arithmetic operators?
 ?
@@ -657,7 +657,7 @@ Remainder after integer division.
 What are the arithmetic/assignment operators?
 ?
 `+= -= *= **= /= \= %= ++ --`
-<!--SR:2022-07-22,40,230-->
+<!--SR:2022-11-29,130,250-->
 
 What are the bitwise operators?
 ?
