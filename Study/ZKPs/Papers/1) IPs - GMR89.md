@@ -1056,7 +1056,7 @@ An NP prover sends one message. If the message released no knowledge then it wou
 Why is KC(0)-BPP of interest to GMR?
 ?
 If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
-<!--SR:2022-07-22,60,250-->
+<!--SR:2023-02-18,211,270-->
 
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
@@ -1096,7 +1096,7 @@ To solve the problem of flipping a coin over the telephone.
 What is the definition of the BL language?
 ?
 Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
-<!--SR:2022-07-22,17,210-->
+<!--SR:2022-09-11,51,230-->
 
 What is the definition of the quadratic predicate?
 ?

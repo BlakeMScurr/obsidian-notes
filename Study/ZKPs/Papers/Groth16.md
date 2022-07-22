@@ -287,7 +287,7 @@ All 3 types
 What is $\mathcal{R}$?
 ?
 A relation generator that, given $\lambda$ in unary returns a polynomial time decidable binary relation $R$.
-<!--SR:2022-07-22,25,250-->
+<!--SR:2022-09-25,65,250-->
 
 ??? Why is lambda in unary?
 
@@ -452,7 +452,7 @@ What inputs does the adversary in the definition of computational soundness acce
 ?
 The relation, the auxilary input, and the common reference string.
 $(R, z, \sigma)$
-<!--SR:2022-07-22,25,250-->
+<!--SR:2022-10-22,92,270-->
 
 ??? Why does it not also accept the simulation trapdoor? Is it because then it could create any proof it likes.
 
@@ -484,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-07-22,10,170-->
+<!--SR:2022-08-16,25,190-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -565,7 +565,7 @@ Bitansky et al BCPR14
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-07-22,21,210-->
+<!--SR:2022-09-23,63,230-->
 
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
@@ -685,7 +685,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2022-07-22,17,230-->
+<!--SR:2022-09-15,55,250-->
 
 How is $t(x)$ defined?
 ?
@@ -1038,7 +1038,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-22,3,150-->
+<!--SR:2022-07-31,9,170-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1236,7 +1236,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-22,2,190-->
+<!--SR:2022-07-28,6,210-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1246,17 +1246,17 @@ Proof element product
 CRS product
 Statement sum
 Proof CRS product
-<!--SR:2022-07-22,7,230-->
+<!--SR:2022-08-14,23,250-->
 
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $A \cdot B$
-<!--SR:2022-07-22,10,250-->
+<!--SR:2022-08-13,22,250-->
 
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\alpha \cdot \beta$
-<!--SR:2022-07-22,10,250-->
+<!--SR:2022-08-26,35,270-->
 
 What is in the "statement sum" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1282,16 +1282,19 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
+<!--SR:2022-07-27,5,270-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?
 Pick A and B.
 Compute C.
 Return proof.
+<!--SR:2022-07-26,4,270-->
 
 How does the simulator pick A and B in a QAPLIP?
 ?
 Randomly from $\mathbb{F}$
+<!--SR:2022-07-25,3,270-->
 
 How does the siulator in a QAPLIP compute C?
 ?
@@ -1299,10 +1302,12 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
+<!--SR:2022-07-23,1,230-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
 $\boldsymbol{\pi} = (A,B,C)$
+<!--SR:2022-07-25,3,270-->
 
 
 

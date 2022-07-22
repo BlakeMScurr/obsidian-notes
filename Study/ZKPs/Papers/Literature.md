@@ -115,7 +115,7 @@ What does GO94 show?
 ?
 Classifies and defines two new definitions of zero knowledge: auxiliary input, and simultation, and shows that blackbox-simulation -> auxiliary -> GMR definition, and that composition of auxiliary gives auxiliary.
 That 1 round NIZKs are only possible for trival (BPP) languages.
-<!--SR:2022-07-22,25,170-->
+<!--SR:2022-09-22,62,190-->
 
 
 # Pairing Based Snarks
