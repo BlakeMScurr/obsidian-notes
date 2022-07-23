@@ -33,7 +33,7 @@ $(\sqrt{2})^3 = 2\sqrt{2}$
 What does it mean to say that $\sqrt{2}$ and $-\sqrt{2}$ are conjugate over $\mathbb{Q}$?
 ?
 Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ with $-\sqrt{2}$ will leave the equation holding true.
-<!--SR:2022-07-23,41,190-->
+<!--SR:2022-11-12,112,210-->
 
 ??? Does this mean that we can construct expressions with non rational coefficients for which $\sqrt{2}$ and $-\sqrt{2}$ are not conjugate?
 

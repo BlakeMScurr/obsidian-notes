@@ -1185,7 +1185,7 @@ $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
 What are type 2 numbers in GMR's zk QNR IP?
 ?
 $y \cdot r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-07-23,39,230-->
+<!--SR:2022-10-24,93,230-->
 
 What is the basic (pre zk) idea of GMR's zk QNR IP?
 ?
@@ -1197,7 +1197,7 @@ If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the qui
 What is the problem with the naive QNR IP?
 ?
 $A$ may release the quadratic residuosity of another $x\in \mathbb{Z}_m^*$chosen by a cheating $B'$
-<!--SR:2022-07-23,63,250-->
+<!--SR:2023-03-01,221,270-->
 
 How (roughly) do we change the naive QNR IP to make it zero knowledge?
 ?
@@ -1259,7 +1259,7 @@ $x$ is of  type 2
 What is $T \cup S$ for?
 ?
 The set of random numbers used to convince $A$ that $B$ knows the residuosity of $x$ without revealing it.
-<!--SR:2022-07-23,35,210-->
+<!--SR:2022-11-01,101,230-->
 
 What is the size of $T \cup S$?
 ?

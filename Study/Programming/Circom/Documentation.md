@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-07-23,26,150-->
+<!--SR:2022-09-18,57,170-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -491,7 +491,7 @@ It defines global input and outputs of the circuit, so it needs to be able to sp
 What is the syntax for creating a main component?
 ?
 `component main{public [signal_list]]} = template_id(v1, ..., vn);` where `{public [signal_list]}` is optional.
-<!--SR:2022-07-23,43,250-->
+<!--SR:2022-12-21,151,270-->
 
 Which input signals in the main component are private?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-07-23,6,130-->
+<!--SR:2022-08-04,12,150-->
 
 What are the bitwise assignment operators?
 ?

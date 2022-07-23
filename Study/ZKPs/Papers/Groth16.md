@@ -325,7 +325,7 @@ What is the definition of $\textbf{Setup}$?
 ?
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
 The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
-<!--SR:2022-07-23,26,250-->
+<!--SR:2022-10-26,95,270-->
 
 ??? why don't we write the setup as explicitly taking the security parameter?
 
@@ -514,7 +514,7 @@ When $\sigma_V$ cannot be deduced from $\sigma_P$.
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
 We can relax soundness and knowledge soundness such that the adversary only sees $\sigma_P$ but not $\sigma_V$.
-<!--SR:2022-07-23,26,250-->
+<!--SR:2022-10-22,91,270-->
 
 #### SNARKs and SNARGs
 
@@ -769,7 +769,7 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
-<!--SR:2022-07-23,18,210-->
+<!--SR:2022-09-02,41,210-->
 
 What is the definition of $\phi$ in a QAP?
 ?
@@ -910,7 +910,7 @@ It then accepts the proof if and only if $t(\sigma, \pi) = \textbf{0}$, i.e., th
 What is Test?
 ?
 A deterministic polynomial time algorithm.
-<!--SR:2022-07-23,25,250-->
+<!--SR:2022-10-19,88,270-->
 
 What are the inputs of Test?
 ?
@@ -1023,7 +1023,7 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-07-23,16,210-->
+<!--SR:2022-08-24,32,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
@@ -1158,7 +1158,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-07-23,8,230-->
+<!--SR:2022-07-28,5,210-->
 
 ##### Prove
 
@@ -1172,19 +1172,19 @@ What are the steps involved in Prove for a QAP LIP?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
-<!--SR:2022-07-23,11,250-->
+<!--SR:2022-07-29,6,230-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-07-23,4,210-->
+<!--SR:2022-08-05,13,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
 What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
-<!--SR:2022-07-23,11,250-->
+<!--SR:2022-08-31,39,270-->
 
 What is the definition of $A$ in a QAPLIP?
 ?
@@ -1296,13 +1296,13 @@ How does the simulator pick A and B in a QAPLIP?
 Randomly from $\mathbb{F}$
 <!--SR:2022-07-25,3,270-->
 
-How does the siulator in a QAPLIP compute C?
+How does the simulator in a QAPLIP compute C?
 ?
 $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-24,1,210-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

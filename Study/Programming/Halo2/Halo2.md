@@ -7,12 +7,12 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-27,4,250-->
 
 What is advice?
 ?
 Intermediate values used to create the proof
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-26,3,250-->
 
 What is the witness?
 ?
@@ -29,14 +29,14 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-24,1,210-->
 
 What are the possible specifications for each column?
 ?
 Fixed
 Advice
 Instance
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-24,1,210-->
 
 What is a fixed column?
 ?
@@ -46,7 +46,7 @@ A column whose values are fixed by the circuit.
 What is an advice column?
 ?
 A column that corresponds to witness values.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-26,3,230-->
 
 What is an instance column?
 ?
@@ -61,17 +61,17 @@ Multivariate polynomails over F.
 What do the constraints require?
 ?
 They must evaluate to zero *for each row*.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-25,2,230-->
 
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-24,1,210-->
 
 What is the maximum degree of each polynomial?
 ?
 The maximum constraint degree.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-25,2,230-->
 
 What are lookup arguments defined over?
 ?
@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-24,1,210-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -93,7 +93,7 @@ The proving key and the verification key.
 What is a selector?
 ?
 A value defined in a fixed column that allows polynomial constraints to be turned on or off.
-<!--SR:2022-07-23,1,230-->
+<!--SR:2022-07-25,2,250-->
 
 How, roughly are gates implemented?
 ?

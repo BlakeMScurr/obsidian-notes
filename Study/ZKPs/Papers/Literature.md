@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-07-23,18,150-->
+<!--SR:2022-08-19,27,150-->
 
 What did Gro06 contribute?
 ?
