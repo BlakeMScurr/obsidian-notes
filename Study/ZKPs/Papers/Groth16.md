@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-07-26,8,150-->
+<!--SR:2022-08-12,17,170-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -499,7 +499,7 @@ Public verifiability and designated verifier proofs.
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
 We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover and the verifier respectively.
-<!--SR:2022-07-26,28,250-->
+<!--SR:2022-11-02,99,270-->
 
 When is a non-interactive argument publicly verifiable?
 ?
@@ -542,8 +542,12 @@ A SNARK or SNARG is fully succinct if the common reference string is polynomial 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
 You can compile a preprocessing SNARK into a fully succinct SNARK.
+<!--SR:2022-10-04,70,250-->
+
+Who showed the relationship between preprocessing and fully succinct SNARKs?
+?
 Bitansky et al BCCT13.
-<!--SR:2022-07-26,28,250-->
+<!--SR:2022-07-30,4,250-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
@@ -584,7 +588,7 @@ Since those results rely on specific auxiliary input distributions, we can assum
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-07-26,11,210-->
+<!--SR:2022-08-21,26,210-->
 
 What represents the statement in our arithmetic circuit?
 ?
@@ -628,7 +632,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-07-26,40,210-->
+<!--SR:2022-08-15,20,190-->
 
 What is the form of our arithmetic constraints?
 ?
@@ -774,7 +778,7 @@ $$
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-07-26,19,190-->
+<!--SR:2022-09-16,52,210-->
 
 What is the definition of $w$ in a QAP?
 ?
@@ -1121,7 +1125,7 @@ The exponentiations of $x$
 The linear combinations for $\phi$
 The linear combinations for $w$
 The evaluations of $t(x)$
-<!--SR:2022-07-26,14,250-->
+<!--SR:2022-08-29,34,250-->
 
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
@@ -1131,7 +1135,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-07-26,5,210-->
+<!--SR:2022-08-10,15,230-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1140,7 +1144,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:2022-07-26,14,250-->
+<!--SR:2022-08-30,35,250-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1289,7 +1293,7 @@ What, roughly, are the steps of Sim in a QAPLIP?
 Pick A and B.
 Compute C.
 Return proof.
-<!--SR:2022-07-26,4,270-->
+<!--SR:2022-08-08,13,270-->
 
 How does the simulator pick A and B in a QAPLIP?
 ?

@@ -734,7 +734,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-07-26,20,130-->
+<!--SR:2022-08-06,11,130-->
 
 What was distinguishability used for before GMR?
 ?
@@ -900,10 +900,10 @@ The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0,
  * If $QNR \notin NP$ A communicates more than 0 bits
 	 * B' can learn the unknown residuosity of some $t_i$ by sending it to A
 
-How much information does A communicate to B in naive QNR IP? (Multi round version, not just NP version).
+How much information does A communicate to honest B in naive QNR IP? (Multi round version, not just NP version).
 ?
 Zero.
-<!--SR:2022-07-26,64,250-->
+<!--SR:2022-08-25,30,230-->
 
 How does M simulate (A,B) in naive QNR?
 ?

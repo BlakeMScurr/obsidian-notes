@@ -7,7 +7,7 @@ How do deposits work?
 The user privately generates random bytes, hashes them, and sends them to the contract.
 The user also sends the token.
 The contract inserts the hash into a Merkle Tree.
-<!--SR:2022-07-26,35,250-->
+<!--SR:2022-12-01,128,270-->
 
 How do withdrawls work?
 ?
@@ -65,7 +65,7 @@ template HashLeftRight(){
 	out <== mimc.outs[0];
 }
 ```
-<!--SR:2022-07-26,29,210-->
+<!--SR:2022-10-21,87,230-->
 
 What does DualMux do?
 ?

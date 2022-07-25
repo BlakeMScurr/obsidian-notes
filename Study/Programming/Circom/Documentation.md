@@ -193,7 +193,7 @@ template tempid (param_1, param2) {
 What can templates not include?
 ?
 Local functions or template definitions.
-<!--SR:2022-07-26,44,250-->
+<!--SR:2022-11-13,110,250-->
 
 What is wrong with the following code, and what error will it generate?
 ```
@@ -348,7 +348,7 @@ component main{public[in]} = Main();
 ```
 ?
 `c`'s output is accessed before one of its inputs.
-<!--SR:2022-07-26,44,250-->
+<!--SR:2022-12-27,154,270-->
 
 What's wrong with the following code and what error message does it produce?
 ```

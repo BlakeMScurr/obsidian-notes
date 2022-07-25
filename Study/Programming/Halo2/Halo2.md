@@ -12,7 +12,7 @@ Private inputs and intemediate values called advice values.
 What is advice?
 ?
 Intermediate values used to create the proof
-<!--SR:2022-07-26,3,250-->
+<!--SR:2022-08-04,9,250-->
 
 What is the witness?
 ?
@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-07-26,1,190-->
+<!--SR:2022-07-28,2,190-->
 
 What are the possible specifications for each column?
 ?
@@ -46,12 +46,12 @@ A column whose values are fixed by the circuit.
 What is an advice column?
 ?
 A column that corresponds to witness values.
-<!--SR:2022-07-26,3,230-->
+<!--SR:2022-08-03,8,230-->
 
 What is an instance column?
 ?
 It's for elements shared between the prover and verifier, typeically public inputs.
-<!--SR:2022-07-26,4,250-->
+<!--SR:2022-07-29,3,230-->
 
 What are the constraints?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-07-26,4,250-->
+<!--SR:2022-07-29,3,230-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-26,1,190-->
+<!--SR:2022-07-27,1,170-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -117,11 +117,11 @@ To create a higher level API than the matrix view of a PLONKish circuit, offerin
 What are some examples of things chips might do?
 ?
 Cryptographic primitives like hash functions or ciphers, or algorithms like scalar multiplication or pairings.
-<!--SR:2022-07-26,4,250-->
+<!--SR:2022-08-05,10,250-->
 
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:2022-07-26,4,270-->
+<!--SR:2022-08-08,13,270-->
 
 ## Gadgets
