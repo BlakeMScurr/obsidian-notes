@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-07-25,7,190-->
+<!--SR:2022-08-13,19,210-->
 
 What is the code for `BinSum`?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-07-25,12,130-->
+<!--SR:2022-08-18,24,150-->
 
 What are the variables in compconstant?
 ?
@@ -269,7 +269,7 @@ cmsb == 0 && clsb == 1
 cmsb == 1 && clsb == 0
 cmsb == 1 && clsb == 1
 ```
-<!--SR:2022-07-25,39,250-->
+<!--SR:2022-12-09,137,270-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 ?

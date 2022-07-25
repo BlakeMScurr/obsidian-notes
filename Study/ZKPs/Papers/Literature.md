@@ -56,7 +56,7 @@ The notion of multi-prover interactive protocols, that all languages in NP have 
 What did BGKW88 see themselves as contributing?
 ?
 An interactive proof system that doesn't rely on the one way function assumption, instead relying on physical separation.
-<!--SR:2022-07-25,20,130-->
+<!--SR:2022-09-02,39,150-->
 
 ## FRS88
 
@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-07-24,19,190-->
+<!--SR:2022-08-28,34,190-->
 
 What is the title of GO94?
 ?

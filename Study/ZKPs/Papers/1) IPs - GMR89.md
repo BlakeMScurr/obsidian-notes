@@ -751,7 +751,7 @@ Strictly more than traditional indistinguishability: for all $|x|^c$ bit string 
 Which notion of indistinguishability presented in GMR is necessary for zero knowledge?
 ?
 "at-most-0-distinguishable", as opposed to "largely equal distributions aside from a vanishing sum" which zkQNR additionally fulfills.
-<!--SR:2022-07-24,61,230-->
+<!--SR:2023-02-12,202,250-->
 
 How much data is each distinguisher fed at a time?
 ?
@@ -1076,7 +1076,7 @@ RP-P, there appears to be a language, namely primality testing, which may be in 
 What languages did GMR know to be in $KC(0)-BPP$?
 ?
 QNR and BL.
-<!--SR:2022-07-25,63,250-->
+<!--SR:2023-03-03,221,270-->
 
 Who invented the language BL?
 ?

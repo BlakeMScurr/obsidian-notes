@@ -17,7 +17,7 @@ Intermediate values used to create the proof
 What is the witness?
 ?
 The advice and the private inputs.
-<!--SR:2022-07-24,2,250-->
+<!--SR:2022-08-07,13,270-->
 
 ## PLONKish Arithmetization
 
@@ -29,14 +29,14 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-07-24,1,210-->
+<!--SR:2022-07-26,1,190-->
 
 What are the possible specifications for each column?
 ?
 Fixed
 Advice
 Instance
-<!--SR:2022-07-24,1,210-->
+<!--SR:2022-08-01,7,230-->
 
 What is a fixed column?
 ?
@@ -56,22 +56,22 @@ It's for elements shared between the prover and verifier, typeically public inpu
 What are the constraints?
 ?
 Multivariate polynomails over F.
-<!--SR:2022-07-25,3,250-->
+<!--SR:2022-08-06,12,270-->
 
 What do the constraints require?
 ?
 They must evaluate to zero *for each row*.
-<!--SR:2022-07-25,2,230-->
+<!--SR:2022-07-30,5,230-->
 
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
-<!--SR:2022-07-24,1,210-->
+<!--SR:2022-07-29,4,210-->
 
 What is the maximum degree of each polynomial?
 ?
 The maximum constraint degree.
-<!--SR:2022-07-25,2,230-->
+<!--SR:2022-07-31,6,230-->
 
 What are lookup arguments defined over?
 ?
@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-24,1,210-->
+<!--SR:2022-07-26,1,190-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -93,12 +93,12 @@ The proving key and the verification key.
 What is a selector?
 ?
 A value defined in a fixed column that allows polynomial constraints to be turned on or off.
-<!--SR:2022-07-25,2,250-->
+<!--SR:2022-07-30,5,250-->
 
 How, roughly are gates implemented?
 ?
 Sets of constraints like $q_i \cdot p(...)$, along with a set of selector columns are called a gate.
-<!--SR:2022-07-25,3,250-->
+<!--SR:2022-08-02,8,250-->
 
 ??? Why is it not just a single constraint along with a selector column? Intuitively that's what a gate would be, to me.
 

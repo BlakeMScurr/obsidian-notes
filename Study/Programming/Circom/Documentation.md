@@ -44,7 +44,7 @@ When are signals private vs public?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-07-24,18,210-->
+<!--SR:2022-09-20,57,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-07-25,36,210-->
+<!--SR:2022-11-10,108,230-->
 
 What, roughly, are the three compiler warnings you can get from misusing signals in a template?
 ?
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-07-24,34,230-->
+<!--SR:2022-11-16,114,250-->
 
 How do we access the input or output signals of a component?
 ?
@@ -607,7 +607,7 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-07-25,17,230-->
+<!--SR:2022-09-05,42,230-->
 
 How is `x < y` defined?
 ?
@@ -647,7 +647,7 @@ Multiplication by the multiplicative inverse mod p.
 What is the `\` operator?
 ?
 Quotient after integer devision.
-<!--SR:2022-07-25,43,250-->
+<!--SR:2022-12-23,151,270-->
 
 What is the `%` operator?
 ?
@@ -837,13 +837,13 @@ Because `x` holds the algebraic expression `a*a` which is used to generate const
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
-<!--SR:2022-07-24,42,250-->
+<!--SR:2022-11-08,106,250-->
 
 What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-07-24,41,230-->
+<!--SR:2022-10-27,94,230-->
 
 What is the syntax for `for` loops?
 ?
@@ -933,7 +933,7 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-07-24,39,230-->
+<!--SR:2022-11-30,128,250-->
 
 What is the default type of signals and variables?
 ?
@@ -1090,7 +1090,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-07-25,42,250-->
+<!--SR:2022-08-12,18,230-->
 
 What's an example of a `log` instruction?
 ?
