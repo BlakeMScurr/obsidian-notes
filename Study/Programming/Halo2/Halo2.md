@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-07-27,4,250-->
+<!--SR:2022-08-07,11,250-->
 
 What is advice?
 ?
@@ -41,7 +41,7 @@ Instance
 What is a fixed column?
 ?
 A column whose values are fixed by the circuit.
-<!--SR:2022-07-27,5,270-->
+<!--SR:2022-08-10,14,270-->
 
 What is an advice column?
 ?
@@ -83,12 +83,12 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-27,1,170-->
+<!--SR:2022-07-28,1,150-->
 
 What keys do we genererate from the circuit description?
 ?
 The proving key and the verification key.
-<!--SR:2022-07-27,5,270-->
+<!--SR:2022-08-11,15,270-->
 
 What is a selector?
 ?
@@ -105,14 +105,14 @@ Sets of constraints like $q_i \cdot p(...)$, along with a set of selector column
 What kinds of gates are there?
 ?
 Standard gates that support generic field operations like multiplication and addition, and custom gates for more specialized operations.
-<!--SR:2022-07-27,5,270-->
+<!--SR:2022-08-09,13,270-->
 
 ## Chips
 
 What is the purpose of a chip?
 ?
 To create a higher level API than the matrix view of a PLONKish circuit, offering auditability, efficiency, modularity, and expressiveness.
-<!--SR:2022-07-27,5,270-->
+<!--SR:2022-08-12,16,270-->
 
 What are some examples of things chips might do?
 ?

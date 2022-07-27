@@ -106,7 +106,7 @@ Signals are immutable, so assigning to `out` twice gives a compilation error.
 What operators can be used to assign signals?
 ?
 `<--`, `<==`, `-->`, or `==>`.
-<!--SR:2022-07-27,43,230-->
+<!--SR:2022-12-14,140,250-->
 
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?

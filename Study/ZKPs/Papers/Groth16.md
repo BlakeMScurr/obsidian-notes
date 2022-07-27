@@ -294,7 +294,7 @@ A relation generator that, given $\lambda$ in unary returns a polynomial time de
 What is $\phi$?
 ?
 The statement.
-<!--SR:2022-07-27,29,250-->
+<!--SR:2022-10-10,75,250-->
 
 What is $w$?
 ?
@@ -350,7 +350,7 @@ The simulation trapdoor.
 What is $tau$ used for?
 ?
 The simulator gets access to $tau$ so it can generate proofs indistinguishable from actual proofs, so that we can prove that an argument is zero knowledge.
-<!--SR:2022-07-27,28,250-->
+<!--SR:2022-10-05,70,250-->
 
 What is $\pi$?
 ?
@@ -897,7 +897,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-07-27,28,250-->
+<!--SR:2022-08-11,15,230-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -924,7 +924,7 @@ $(R, \phi)$
 What does Test output?
 ?
 An arithmetic circuit $t$.
-<!--SR:2022-07-27,27,250-->
+<!--SR:2022-10-30,95,270-->
 
 What is the definition of $t$?
 ?
@@ -954,7 +954,7 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-07-27,10,210-->
+<!--SR:2022-08-01,5,190-->
 
 What is $d_D$?
 ?
@@ -1096,7 +1096,7 @@ What are the steps in Setup for a LIP for a QAP, roughly?
 Pick parameters
 Set $\boldsymbol{\tau}$
 Set $\boldsymbol{\sigma}$
-<!--SR:2022-07-27,15,230-->
+<!--SR:2022-09-14,49,250-->
 
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
@@ -1286,7 +1286,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-07-27,5,270-->
+<!--SR:2022-07-31,4,250-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?

@@ -706,7 +706,7 @@ Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
 for all distinguishers $D$, $|p^d_{x,1} - p^d_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
 Where $p:N \to [0,1]$
-<!--SR:2022-07-27,42,190-->
+<!--SR:2022-10-15,80,190-->
 
 
 #### 0-Distinguishability
@@ -827,7 +827,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-07-27,13,130-->
+<!--SR:2022-08-22,26,150-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -977,7 +977,7 @@ When restricting inputs of $(A, B)$ to the strings in $L$, A communicates at mos
 What how much knowledge is conveyed by an interactive proof if $x \notin L$?
 ?
 Interactive proofs are only defined for "yes-instances", and their complexity of a false proof is not analysed. The prover would "give up" or be "caught out", so the possible knowledge conveyed is not meaningful.
-<!--SR:2022-07-27,65,250-->
+<!--SR:2023-03-12,228,270-->
 
 What is the verifier left with at the end of an interactive proof?
 ?
@@ -1335,7 +1335,7 @@ B sends $X' \cup Y'$ to A.
 How does B reveal the random $r$ values in $Z$?
 ?
 For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = y \cdot r^2 \mod m$
-<!--SR:2022-07-27,49,230-->
+<!--SR:2022-11-17,113,230-->
 
 What is $d$?
 ?
@@ -1544,7 +1544,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:2022-07-27,34,190-->
+<!--SR:2022-10-28,93,210-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?
