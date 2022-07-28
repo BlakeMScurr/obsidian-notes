@@ -51,7 +51,7 @@ A column that corresponds to witness values.
 What is an instance column?
 ?
 It's for elements shared between the prover and verifier, typeically public inputs.
-<!--SR:2022-07-29,3,230-->
+<!--SR:2022-08-06,8,230-->
 
 What are the constraints?
 ?
@@ -66,7 +66,7 @@ They must evaluate to zero *for each row*.
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
-<!--SR:2022-07-29,4,210-->
+<!--SR:2022-08-12,14,230-->
 
 What is the maximum degree of each polynomial?
 ?
@@ -76,7 +76,7 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-07-29,3,230-->
+<!--SR:2022-08-01,3,210-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?

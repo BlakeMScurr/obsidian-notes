@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-07-29,17,130-->
+<!--SR:2022-09-04,37,150-->
 
 What did GS12 contribute?
 ?

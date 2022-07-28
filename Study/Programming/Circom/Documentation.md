@@ -163,7 +163,7 @@ if (x = 3) {
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-07-29,44,230-->
+<!--SR:2022-11-11,105,230-->
 
 # Templates
 
@@ -1104,7 +1104,7 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-07-29,32,230-->
+<!--SR:2022-11-09,103,250-->
 
 What kinds of compiler messages are there?
 ?

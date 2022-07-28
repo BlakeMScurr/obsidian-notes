@@ -80,7 +80,7 @@ What do `a`, `r`, and `n` represent in `nbits`?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
 `n` is `2^r`
-<!--SR:2022-07-29,17,230-->
+<!--SR:2022-09-19,52,250-->
 
 What is the code for `nbits`?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-07-29,14,130-->
+<!--SR:2022-08-25,27,150-->
 
 ## g-m
 

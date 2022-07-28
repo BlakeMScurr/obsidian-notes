@@ -642,7 +642,7 @@ Some natural number.
 How do we define an I-c-ensembles's $\Pi_x$?
 ?
 $\forall x \in I$ where $|x| = n$ let $\Pi_x$ be a probability distribution over $n^c$ bit strings
-<!--SR:2022-07-29,66,230-->
+<!--SR:2023-02-19,205,250-->
 
 How do we define an I-c-ensemble $\Pi$?
 ?
@@ -832,7 +832,7 @@ There exists a probabilstic polynomial-time machine M such that the I-c-ensemble
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
 For all polynomial time ITMs B', A communicates at most $f(n)$ bits of knowledge to B'
-<!--SR:2022-07-29,42,190-->
+<!--SR:2022-11-21,115,210-->
 
 What is my analogy for determining the knowledge conveyed from a prover to a verifier?
 ?

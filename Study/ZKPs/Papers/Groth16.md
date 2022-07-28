@@ -9,7 +9,7 @@ Small size and low verification complexity.
 What is a SNARG?
 ?
 Succinct non-interactive argument
-<!--SR:2022-07-29,50,250-->
+<!--SR:2023-01-21,176,270-->
 
 What is a SNARK?
 ?
@@ -399,7 +399,7 @@ $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
 What is perfect zero knowledge, roughly?
 ?
 An argument is zero knowledge if it does not leak any information besides the truth of the statement.
-<!--SR:2022-07-29,31,250-->
+<!--SR:2022-11-15,109,270-->
 
 What is the definition of perfect zero-knowledge?
 ?
@@ -725,7 +725,7 @@ $t(X)$ is the lowest degree monomial with $t(r_q) = 0$ for each $r_q$.
 Let $LHS = a(x)$ and $RHS = b(x)$
 $a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot t(X) = b(X)$ from the definition of mod
 Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
-<!--SR:2022-07-29,29,250-->
+<!--SR:2022-11-08,102,270-->
 
 ### QAP Definition
 
@@ -783,7 +783,7 @@ $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
 What is the definition of $w$ in a QAP?
 ?
 $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
-<!--SR:2022-07-29,24,230-->
+<!--SR:2022-10-16,79,250-->
 
 When is $\mathcal{R}$ a QAP generator?
 ?
@@ -809,7 +809,7 @@ The bilinear group. To provide a better model of settings where the relation is 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
 Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
-<!--SR:2022-07-29,28,250-->
+<!--SR:2022-11-04,98,270-->
 
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
@@ -949,7 +949,7 @@ $d_Q, d_D, \mu, m, n, k, \eta$
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
 They may be constants or polynomials in the security parameter $\lambda$
-<!--SR:2022-07-29,12,230-->
+<!--SR:2022-09-06,39,250-->
 
 What is $d_Q$?
 ?
@@ -959,7 +959,7 @@ The multiplicative depth of the setup circuit.
 What is $d_D$?
 ?
 The multiplicative depth of the verifier circuit output by Test.
-<!--SR:2022-07-29,28,250-->
+<!--SR:2022-11-01,95,270-->
 
 What is $\mu$?
 ?
@@ -1176,7 +1176,7 @@ What are the steps involved in Prove for a QAP LIP?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
-<!--SR:2022-07-29,6,230-->
+<!--SR:2022-08-18,20,250-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
@@ -1306,7 +1306,7 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-07-29,4,210-->
+<!--SR:2022-07-31,2,190-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
