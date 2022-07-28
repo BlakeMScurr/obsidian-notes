@@ -1101,7 +1101,7 @@ Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in 
 What is the definition of the quadratic predicate?
 ?
 $\mathcal{Q}_m(y) = 0$ if y is quadratic residue mod m, and $1$ otherwise.
-<!--SR:2022-07-28,65,250-->
+<!--SR:2023-01-07,163,250-->
 
 What is the definition of the language QNR?
 ?

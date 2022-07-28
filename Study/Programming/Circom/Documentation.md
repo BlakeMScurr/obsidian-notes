@@ -22,7 +22,7 @@ Input, output, and intermediate.
 How do you declare an input signal?
 ?
 `signal input in;` declares an input signal named `in`
-<!--SR:2022-07-28,44,230-->
+<!--SR:2022-12-18,143,250-->
 
 How do you declare an output signal?
 ?
@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-07-28,31,230-->
+<!--SR:2022-11-04,99,250-->
 
 Which operators impose constraints?
 ?
@@ -1245,7 +1245,7 @@ template A() {
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 Also, out is assigned multiple times.
-<!--SR:2022-07-28,41,230-->
+<!--SR:2022-12-08,133,250-->
 
 
 

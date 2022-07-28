@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-07-28,2,190-->
+<!--SR:2022-08-02,5,190-->
 
 What are the possible specifications for each column?
 ?
@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-28,1,150-->
+<!--SR:2022-07-30,2,170-->
 
 What keys do we genererate from the circuit description?
 ?

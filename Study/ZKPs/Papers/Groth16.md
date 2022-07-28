@@ -132,7 +132,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-07-28,14,150-->
+<!--SR:2022-09-01,35,170-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -435,7 +435,7 @@ $R, z, \sigma, \tau, \pi$
 What is computational soundness, roughly?
 ?
 We say a set of algorithms is sound if it is not possible to prove a false statement, i.e., convince the verifier if no witness exists.
-<!--SR:2022-07-28,30,250-->
+<!--SR:2022-10-14,78,250-->
 
 What is the definition of computational soundness?
 ?
@@ -461,7 +461,7 @@ $(R, z, \sigma)$
 What is computational knowledge soundness, roughly?
 ?
 A strengthening of the notion of soundness, where there is an extractor that can compute a witness whenver an adversary produces a valid argument.
-<!--SR:2022-07-28,29,250-->
+<!--SR:2022-11-07,102,270-->
 
 ??? Why does the extractor in the definition for computational knowledge soundness not need the simulation trapdoor?
 
@@ -804,7 +804,7 @@ To get the maximum flexibility, so that all different options can be modelled by
 In pairing based NIZK arguments, what does aux specify and why?
 ?
 The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
-<!--SR:2022-07-28,28,250-->
+<!--SR:2022-10-31,95,270-->
 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
@@ -887,7 +887,7 @@ Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-07-28,11,230-->
+<!--SR:2022-08-24,27,230-->
 
 What is the output of ProofMatrix?
 ?
@@ -969,7 +969,7 @@ The dimension of the randomness vector used in Setup.
 What is $m$ in a LIP?
 ?
 The dimension in the crs vector $\sigma$ made in Setup.
-<!--SR:2022-07-28,28,250-->
+<!--SR:2022-11-03,98,270-->
 
 ??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 
@@ -1032,7 +1032,7 @@ Designated verifier non-interactive arguments using Paillier encryption.
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
-<!--SR:2022-07-28,22,230-->
+<!--SR:2022-08-09,12,210-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?
@@ -1058,7 +1058,7 @@ Equations formed by multiplying together the results of pairings.
 What kind of language does our pairing based NIZK construction prove?
 ?
 Quadratic Arithmetic Programs.
-<!--SR:2022-07-28,16,230-->
+<!--SR:2022-09-03,37,230-->
 
 What does a proof in our NIZK construction consist of?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-07-28,5,210-->
+<!--SR:2022-08-01,4,190-->
 
 ##### Prove
 
@@ -1198,9 +1198,9 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-07-28,3,150-->
+<!--SR:2022-08-03,6,150-->
 
-What is the definition of $C$ in the proof of a QAPLIP?
+How is $C$ computed by Prove in a QAPLIP?
 ?
 $$
 C = 
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-28,3,130-->
+<!--SR:2022-07-31,3,130-->
 
 ##### Vfy
 
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-07-28,6,210-->
+<!--SR:2022-08-01,4,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
