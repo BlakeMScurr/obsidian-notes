@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-07-30,17,130-->
+<!--SR:2022-09-05,37,150-->
 
 What did Gro09 contribute?
 ?

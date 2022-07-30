@@ -114,7 +114,7 @@ $a$ is called the generator and we write $G = \langle a\rangle$.
 What is the immediate property of cyclic groups and how do we know?
 ?
 Cyclic groups are commutative because all elements can be represented as a power of $a$, and $aaaa = aaaa$ no matter how many times you move an $a$ around.
-<!--SR:2022-07-30,61,210-->
+<!--SR:2023-01-28,182,230-->
 
 What are the generators of the additive group $\mathbb{z}$?
 ?

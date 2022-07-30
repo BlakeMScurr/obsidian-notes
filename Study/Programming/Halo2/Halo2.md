@@ -58,10 +58,10 @@ What are the constraints?
 Multivariate polynomails over F.
 <!--SR:2022-08-06,12,270-->
 
-What do the constraints require?
+What must the constraints evaluate to?
 ?
-They must evaluate to zero *for each row*.
-<!--SR:2022-07-30,5,230-->
+Zero *for each row*.
+<!--SR:2022-08-03,4,210-->
 
 What do the variables in a polynomial constraint refer to?
 ?
@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-07-30,2,170-->
+<!--SR:2022-08-02,3,170-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -93,7 +93,7 @@ The proving key and the verification key.
 What is a selector?
 ?
 A value defined in a fixed column that allows polynomial constraints to be turned on or off.
-<!--SR:2022-07-30,5,250-->
+<!--SR:2022-08-17,18,270-->
 
 How, roughly are gates implemented?
 ?

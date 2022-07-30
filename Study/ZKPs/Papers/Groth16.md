@@ -309,7 +309,7 @@ $(\phi, w)$, i.e., statement and witness
 What is $\mathcal{R}_\lambda$?
 ?
 The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
-<!--SR:2022-07-30,31,250-->
+<!--SR:2022-11-18,111,270-->
 
 What is $z$?
 ?
@@ -547,12 +547,12 @@ You can compile a preprocessing SNARK into a fully succinct SNARK.
 Who showed the relationship between preprocessing and fully succinct SNARKs?
 ?
 Bitansky et al BCCT13.
-<!--SR:2022-07-30,4,250-->
+<!--SR:2022-08-10,11,250-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
 Preprocessing SNARKs.
-<!--SR:2022-07-30,30,250-->
+<!--SR:2022-10-17,79,250-->
 
 #### Benign Relation Generators
 
@@ -574,12 +574,12 @@ Assuming public coin differing input obfuscation and other cryptographic assumpt
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-07-30,10,190-->
+<!--SR:2022-08-26,27,210-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
 Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and the auxiliary input are distributed in such a way that SNARKs can exist.
-<!--SR:2022-07-30,29,250-->
+<!--SR:2022-11-09,102,270-->
 
 ## Quadratic Arithmetic Programs
 
@@ -799,7 +799,7 @@ Field generated the rest of the relation is built on the field vs polynomials sp
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
 To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
-<!--SR:2022-07-30,29,250-->
+<!--SR:2022-11-14,107,270-->
 
 In pairing based NIZK arguments, what does aux specify and why?
 ?
@@ -1112,7 +1112,7 @@ $(\alpha, \beta, \gamma, \delta, x)$
 What set are the parameters in Setup for a LIP for a QAP selected from?
 ?
 $\mathbb{F}^*$
-<!--SR:2022-07-30,18,230-->
+<!--SR:2022-09-13,45,230-->
 
 ??? How is it possible that they are selected from this? They appear to just be single elements?
 
@@ -1274,7 +1274,7 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-07-30,9,210-->
+<!--SR:2022-08-27,28,230-->
 
 When does Vfy accept in a QAPLIP?
 ?

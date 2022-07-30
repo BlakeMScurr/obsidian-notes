@@ -1010,7 +1010,7 @@ Classifying languages. Languages, or equivalently, theorem proving procedures ar
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
 NP, since it's a special class of interactive proofs.
-<!--SR:2022-07-30,68,250-->
+<!--SR:2023-01-16,170,250-->
 
 How can knowledge complexity be used for cryptography?
 ?
@@ -1365,7 +1365,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-07-30,23,170-->
+<!--SR:2022-09-25,57,190-->
 
 What is the purpose of $X' \cup Y'$?
 ?

@@ -257,7 +257,7 @@ component main{public [in]} = A(1);
 ?
 The `in` signal is not used in any constraints. 
 It will give a warning when `--inspect` is used to compile: "In template "A1". Unconstrained signal. "in" = Maybe use: in*0 === 0"
-<!--SR:2022-07-30,45,230-->
+<!--SR:2022-12-16,139,250-->
 
 What is wrong with the following code and what error will it generate?
 ```
