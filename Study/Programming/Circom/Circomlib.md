@@ -68,7 +68,7 @@ The `nbits` function and the `BinSum` template.
 Does `BinSum` check that inputs are binary?
 ?
 No.
-<!--SR:2022-07-31,33,230-->
+<!--SR:2022-10-23,82,230-->
 
 What does `nbits` do?
 ?
@@ -234,7 +234,7 @@ smsb = in[i*2+1];
 What does each part resolve to, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
-<!--SR:2022-08-01,19,230-->
+<!--SR:2022-10-06,65,250-->
 
 What does `a` look like and what is its formula?
 ?
@@ -259,7 +259,7 @@ What does `b` do from a bitwise perspective and how?
 Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
 If they're all 0, simply by adding a 1 to each bit.
 If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
-<!--SR:2022-07-31,46,270-->
+<!--SR:2023-01-30,181,290-->
 
 What are the 4 cases for defining parts?
 ?
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-08-02,16,130-->
+<!--SR:2022-09-02,31,150-->

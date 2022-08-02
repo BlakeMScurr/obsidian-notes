@@ -768,7 +768,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-07-31,41,230-->
+<!--SR:2022-11-07,97,230-->
 
 What is a quadratic expression?
 ?
@@ -1034,7 +1034,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
-<!--SR:2022-08-01,41,230-->
+<!--SR:2022-11-05,95,230-->
 
 What is wrong with this code?
 ```
@@ -1075,7 +1075,7 @@ Introduces a condition to be checked at execution time. If the condition fails, 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-08-02,45,230-->
+<!--SR:2022-11-19,109,230-->
 
 How do you use `assert`, for example?
 ?
@@ -1178,7 +1178,7 @@ template A(n1, n2) {
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
-<!--SR:2022-08-01,46,250-->
+<!--SR:2023-01-06,157,270-->
 
 What is wrong with the following code, and what message does it generate?
 ```

@@ -28,7 +28,7 @@ What are basic examples of algebraic expressions that both $\sqrt{2}$ and $-\sqr
 ?
 $\sqrt{2}^2 = 2$
 $(\sqrt{2})^3 = 2\sqrt{2}$
-<!--SR:2022-07-31,53,230-->
+<!--SR:2023-01-20,171,250-->
 
 What does it mean to say that $\sqrt{2}$ and $-\sqrt{2}$ are conjugate over $\mathbb{Q}$?
 ?
