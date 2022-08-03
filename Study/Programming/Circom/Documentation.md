@@ -49,7 +49,7 @@ The rest of the signals are private and can't be made public.
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-08-03,44,230-->
+<!--SR:2022-12-24,143,250-->
 
 How can we rewrite the lines:
 ```
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-08-03,45,230-->
+<!--SR:2022-08-28,25,210-->
 
 # Constraint Generation
 

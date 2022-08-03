@@ -36,7 +36,7 @@ What are the possible specifications for each column?
 Fixed
 Advice
 Instance
-<!--SR:2022-08-01,7,230-->
+<!--SR:2022-08-07,4,210-->
 
 What is a fixed column?
 ?
@@ -61,7 +61,7 @@ Multivariate polynomails over F.
 What must the constraints evaluate to?
 ?
 Zero *for each row*.
-<!--SR:2022-08-03,4,210-->
+<!--SR:2022-08-15,12,230-->
 
 What do the variables in a polynomial constraint refer to?
 ?
@@ -71,7 +71,7 @@ A cell in a given column of the current row, or a given column of another row re
 What is the maximum degree of each polynomial?
 ?
 The maximum constraint degree.
-<!--SR:2022-07-31,6,230-->
+<!--SR:2022-09-01,29,250-->
 
 What are lookup arguments defined over?
 ?
@@ -98,7 +98,7 @@ A value defined in a fixed column that allows polynomial constraints to be turne
 How, roughly are gates implemented?
 ?
 Sets of constraints like $q_i \cdot p(...)$, along with a set of selector columns are called a gate.
-<!--SR:2022-08-02,8,250-->
+<!--SR:2022-08-24,21,250-->
 
 ??? Why is it not just a single constraint along with a selector column? Intuitively that's what a gate would be, to me.
 
