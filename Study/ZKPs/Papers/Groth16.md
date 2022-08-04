@@ -29,7 +29,7 @@ How efficient can pairing based SNARGs be?
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
 Circuit satisfiability, that it is NP-complete.
-<!--SR:2022-08-03,52,250-->
+<!--SR:2022-12-13,131,250-->
 
 What kind of pairings does Groth16 use and why?
 ?
@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-08-04,18,130-->
+<!--SR:2022-09-08,35,150-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -67,7 +67,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-08-02,32,150-->
+<!--SR:2022-10-19,76,170-->
 
 # Introduction
 
@@ -86,7 +86,7 @@ Completeness, Soundness, and Zero-Knowledge.
 Describe the completeness property.
 ?
 Given a statement and a witness, the prover can convince the verifier.
-<!--SR:2022-08-02,40,190-->
+<!--SR:2022-11-27,115,210-->
 
 Describe the soundness property.
 ?
@@ -122,12 +122,12 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-08-03,20,130-->
+<!--SR:2022-09-14,41,150-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-08-04,23,170-->
+<!--SR:2022-09-27,54,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
@@ -220,7 +220,7 @@ Groups of prime order $p$.
 What is $e$ and what is its definition?
 ?
 $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear map, i.e., $e(U^a, V^b) = e(U, V)^{ab}$
-<!--SR:2022-08-03,33,250-->
+<!--SR:2022-11-29,117,270-->
 
 What is a property of generators of our bilinear group?
 ?
@@ -233,17 +233,17 @@ Group operations for the groups.
 Evaluating the bilinear map.
 Deciding the equality of group elements.
 Sampling generators of the groups.
-<!--SR:2022-08-03,33,250-->
+<!--SR:2022-12-06,124,270-->
 
 What do we assume about the bilinear group operations?
 ?
 That there are efficient algorithms for computing them.
-<!--SR:2022-08-02,34,250-->
+<!--SR:2022-12-04,122,270-->
 
 What are the names for the types of bilinear groups?
 ?
 Type I, Type II, and Type III
-<!--SR:2022-08-04,34,250-->
+<!--SR:2022-11-30,118,270-->
 
 Who classified the types of bilinear groups?
 ?
@@ -253,7 +253,7 @@ Galbraith et al GPS08
 What is a Type I bilinear group?
 ?
 Where $\mathbb{G}_1 = \mathbb{G}_2$
-<!--SR:2022-08-01,33,250-->
+<!--SR:2022-12-03,121,270-->
 
 What are Type II bilinear groups?
 ?
@@ -304,7 +304,7 @@ The witness.
 What kinds of pairs are in $R$?
 ?
 $(\phi, w)$, i.e., statement and witness
-<!--SR:2022-08-04,34,250-->
+<!--SR:2022-12-01,119,270-->
 
 What is $\mathcal{R}_\lambda$?
 ?
@@ -333,14 +333,14 @@ What is the definition of $\textbf{Prove}$?
 ?
 $\pi \leftarrow\textbf{Prove}(R, \sigma, \phi, w)$
 The prover algorithm takes as input the common reference string and $(\phi, w) \in R$ and outputs the argument $\pi$.
-<!--SR:2022-08-02,33,250-->
+<!--SR:2022-12-07,125,270-->
 
 ??? Why do we say the prover algorithm accepts the relation?
 
 What is $\sigma$?
 ?
 The common reference string.
-<!--SR:2022-08-01,32,250-->
+<!--SR:2022-12-05,123,270-->
 
 What is $\tau$?
 ?
@@ -381,7 +381,7 @@ We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathca
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
 We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zero-knowledge argument of knowledge for $\mathcal{R}$ if it has perfect completeness, perfect zero knowledge, and computational knowledge soundness.
-<!--SR:2022-08-01,33,250-->
+<!--SR:2022-12-10,128,270-->
 
 What is perfect completeness, roughly?
 ?
@@ -446,7 +446,7 @@ $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{S
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-08-04,30,210-->
+<!--SR:2022-11-02,90,230-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -504,7 +504,7 @@ We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover a
 When is a non-interactive argument publicly verifiable?
 ?
 When $\sigma_V$ can be deduced from $\sigma_P$.
-<!--SR:2022-07-31,32,250-->
+<!--SR:2022-12-05,123,270-->
 
 When is a non-interactive argument a designated verifier proof?
 ?
@@ -532,7 +532,7 @@ What is the full expanded acronym for SNARK and SNARG?
 ?
 Preprocessing succinct non-interactive argument of knowledge
 Preprocessing succinct non-interactive argument
-<!--SR:2022-07-31,31,250-->
+<!--SR:2022-12-11,129,270-->
 
 What does fully succinct mean?
 ?
@@ -675,7 +675,7 @@ That the field $\mathbb{F}$ is large enough.
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-08-01,20,170-->
+<!--SR:2022-09-30,57,190-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -702,7 +702,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-08-04,23,170-->
+<!--SR:2022-09-26,53,190-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-08-02,21,190-->
+<!--SR:2022-08-14,10,170-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -744,7 +744,7 @@ A finite field.
 What is $aux$?
 ?
 Auxiliary information.
-<!--SR:2022-07-31,30,250-->
+<!--SR:2022-11-28,116,270-->
 
 What is the $\mathscr{l}$ for?
 ?
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-08-03,9,190-->
+<!--SR:2022-09-03,30,210-->
 
 How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -788,7 +788,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-08-03,22,210-->
+<!--SR:2022-09-21,48,210-->
 
 How might relation generators vary in practice?
 ?
@@ -834,7 +834,7 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:2022-08-02,28,230-->
+<!--SR:2022-11-10,98,250-->
 
 Who invented LIPs?
 ?
@@ -866,7 +866,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-07-31,12,170-->
+<!--SR:2022-09-17,44,190-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -939,7 +939,7 @@ $(\sigma, \pi)$
 When does Vfy accept in a LIP?
 ?
 If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-07-31,26,230-->
+<!--SR:2022-11-11,99,250-->
 
 What are the degrees and dimensions of a LIP?
 ?
@@ -954,7 +954,7 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-08-01,5,190-->
+<!--SR:2022-08-29,25,210-->
 
 What is $d_D$?
 ?
@@ -990,7 +990,7 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:2022-08-03,29,230-->
+<!--SR:2022-08-20,16,210-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
@@ -1042,7 +1042,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-07-31,9,170-->
+<!--SR:2022-08-09,5,150-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1052,7 +1052,7 @@ By verifying a number of pairing product equations, which corresponds to checkin
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
-<!--SR:2022-08-01,31,250-->
+<!--SR:2022-10-26,83,250-->
 # Constructions
 
 What kind of language does our pairing based NIZK construction prove?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-08-01,4,190-->
+<!--SR:2022-08-06,2,170-->
 
 ##### Prove
 
@@ -1193,12 +1193,12 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-07-31,6,210-->
+<!--SR:2022-08-08,4,190-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-08-03,6,150-->
+<!--SR:2022-08-19,15,170-->
 
 How is $C$ computed by Prove in a QAPLIP?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-07-31,3,130-->
+<!--SR:2022-08-13,9,130-->
 
 ##### Vfy
 
@@ -1228,7 +1228,7 @@ A quadratic multi-variate polynomial.
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
-<!--SR:2022-08-01,7,230-->
+<!--SR:2022-08-08,4,210-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-08-01,4,190-->
+<!--SR:2022-08-06,2,170-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1269,7 +1269,7 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-08-03,14,230-->
+<!--SR:2022-09-10,37,230-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1286,7 +1286,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-07-31,4,250-->
+<!--SR:2022-08-07,3,230-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?
@@ -1298,7 +1298,7 @@ Return proof.
 How does the simulator pick A and B in a QAPLIP?
 ?
 Randomly from $\mathbb{F}$
-<!--SR:2022-08-04,10,270-->
+<!--SR:2022-09-09,36,290-->
 
 How does the simulator in a QAPLIP compute C?
 ?
@@ -1306,12 +1306,12 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-07-31,2,190-->
+<!--SR:2022-08-12,8,190-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
 $\boldsymbol{\pi} = (A,B,C)$
-<!--SR:2022-08-02,8,270-->
+<!--SR:2022-09-11,38,290-->
 
 
 

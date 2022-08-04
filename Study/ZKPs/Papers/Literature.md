@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-08-01,17,150-->
+<!--SR:2022-08-30,26,150-->
 
 What did GOS12 contribute?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-08-04,38,190-->
+<!--SR:2022-08-23,19,170-->
 
 Who are the authors of GOS06?
 ?
@@ -152,7 +152,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-07-31,19,130-->
+<!--SR:2022-09-18,45,150-->
 
 Who are the authors of Gro06?
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-07-31,17,190-->
+<!--SR:2022-08-14,10,170-->
 
 What did Gro10 contribute?
 ?
@@ -285,7 +285,7 @@ Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-08-02,20,230-->
+<!--SR:2022-09-24,51,230-->
 
 What did GWC21 contribute?
 ?
@@ -295,7 +295,7 @@ A zk-SNARK with an linear sized updatable universal structured reference string 
 What is GWC21 otherwise known as?
 ?
 Plonk
-<!--SR:2022-07-31,30,250-->
+<!--SR:2022-10-25,82,250-->
 
 # CRS MPC Protocols
 

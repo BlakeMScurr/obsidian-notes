@@ -210,7 +210,7 @@ Work tape
 Random tape
 Speaking tape
 Input tape
-<!--SR:2022-07-31,67,230-->
+<!--SR:2023-03-23,231,250-->
 
 How is an ITM's listening tape implemented?
 ?
@@ -607,7 +607,7 @@ The possible outputs (with polynomially bounded length) of a probabilistic compu
 What is an I-c-ensemble used for?
 ?
 As an abstraction that allows us to compare and distinguish different types of computations.
-<!--SR:2022-08-02,63,210-->
+<!--SR:2023-02-14,194,230-->
 
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
@@ -761,7 +761,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-08-01,27,130-->
+<!--SR:2022-10-02,59,150-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -814,7 +814,7 @@ The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible output
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
 As an I-c-ensemble $(A,B)[.]$
-<!--SR:2022-08-02,44,230-->
+<!--SR:2023-01-01,150,250-->
 
 #### Communication
 * We can think of communication measurement as a student scrutinising a lesson for hidden knowledge
@@ -867,7 +867,7 @@ A's program, B's program, and the input x. That is, nothing in the interactive p
 Can imitator M run A's program?
 ?
 Not necessarily, as A's program may be absolutely inefficient, and M is polynomially bounded.
-<!--SR:2022-08-04,71,250-->
+<!--SR:2023-04-10,249,270-->
 
 
 #### Reporter and Policeman
@@ -941,7 +941,7 @@ More than language membership, think NP style QR.
 What is the notion of "$L$ has $f(n$) knowledge complexity" meant to capture?
 ?
 The the prover conveys $f(n)$ addition knowledge to the verifier during a proof.
-<!--SR:2022-08-03,70,250-->
+<!--SR:2023-03-29,237,270-->
 
 #### Definition of Knowledge Complexity
 Note: by restricting to the strings in the language we can use the notion of zero knowledge communication, but still let the one bit membership notion "slip through."
@@ -1091,7 +1091,7 @@ Because it was presented with all the ingredients required to prove that $BL \in
 Why was the language BL invented?
 ?
 To solve the problem of flipping a coin over the telephone.
-<!--SR:2022-08-02,70,250-->
+<!--SR:2023-04-14,253,270-->
 
 What is the definition of the BL language?
 ?
@@ -1140,7 +1140,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:2022-08-03,37,170-->
+<!--SR:2022-11-06,94,190-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1180,7 +1180,7 @@ It can just be probabilistic polynomial time turing machine with the additionalp
 What are type 1 numbers in GMR's zk QNR IP?
 ?
 $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-08-01,68,250-->
+<!--SR:2023-03-30,238,270-->
 
 What are type 2 numbers in GMR's zk QNR IP?
 ?
@@ -1464,7 +1464,7 @@ If $iteration \geq n$
 When does $B$ increment $iteration$?
 ?
 After checking $v$
-<!--SR:2022-08-01,52,230-->
+<!--SR:2023-01-22,171,250-->
 
 What does $B$ do if $iteration \lt n$?
 ?
@@ -1551,7 +1551,7 @@ What are my steps for proving the upper bound for the chance that we halt and re
 Show that $X$ or $Y \leq n/6$ if we halt. 
 Show the chance of that is some factorial expression using a string permutation argument.
 Show that chance is less than the bound given by GMR.
-<!--SR:2022-08-03,34,230-->
+<!--SR:2022-11-26,114,250-->
 
 Based on what condition might we halt given honest $A$ and $B$?
 ?

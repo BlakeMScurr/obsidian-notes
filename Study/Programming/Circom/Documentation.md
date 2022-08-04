@@ -58,7 +58,7 @@ out <== in1 * in2;
 ```
 ?
 `signal output out <== in1 * in2`
-<!--SR:2022-08-04,49,250-->
+<!--SR:2023-01-23,172,270-->
 
 How do we instantiate a component?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-08-04,12,150-->
+<!--SR:2022-08-31,27,170-->
 
 What are the bitwise assignment operators?
 ?
@@ -1192,7 +1192,7 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
-<!--SR:2022-08-04,48,250-->
+<!--SR:2023-01-19,168,270-->
 
 What restrictions are placed on the size of an array?
 ?

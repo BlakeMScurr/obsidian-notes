@@ -12,7 +12,7 @@ Private inputs and intemediate values called advice values.
 What is advice?
 ?
 Intermediate values used to create the proof
-<!--SR:2022-08-04,9,250-->
+<!--SR:2022-09-07,34,270-->
 
 What is the witness?
 ?
@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-08-02,5,190-->
+<!--SR:2022-08-13,9,190-->
 
 What are the possible specifications for each column?
 ?
@@ -46,7 +46,7 @@ A column whose values are fixed by the circuit.
 What is an advice column?
 ?
 A column that corresponds to witness values.
-<!--SR:2022-08-03,8,230-->
+<!--SR:2022-08-21,17,230-->
 
 What is an instance column?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-01,3,210-->
+<!--SR:2022-08-06,2,190-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-08-02,3,170-->
+<!--SR:2022-08-07,3,150-->
 
 What keys do we genererate from the circuit description?
 ?
