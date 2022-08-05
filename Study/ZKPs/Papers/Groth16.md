@@ -96,7 +96,7 @@ A malicious prover cannot convince the verifier of a false statement.
 Describe the zero knowledge property.
 ?
 The proof does not reveal anything but the truth of the statement, in particular it does not reveal the prover's witness.
-<!--SR:2022-08-05,31,170-->
+<!--SR:2022-10-21,77,190-->
 
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
@@ -814,7 +814,7 @@ Because we can think of the tradition setting where the relation is chosen first
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
 That the relation generator is benign.
-<!--SR:2022-08-05,31,250-->
+<!--SR:2022-10-22,78,250-->
 
 Why do we have to assume the relation generator is benign?
 ?
@@ -902,7 +902,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-08-05,21,190-->
+<!--SR:2022-09-12,38,190-->
 
 What does Vfy do in a LIP?
 ?
@@ -1101,7 +1101,7 @@ Set $\boldsymbol{\sigma}$
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:2022-08-05,31,250-->
+<!--SR:2022-08-22,17,230-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
@@ -1153,7 +1153,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-08-05,17,230-->
+<!--SR:2022-09-13,39,230-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1181,7 +1181,7 @@ Calculating the matrix $\Pi$.
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-08-05,13,230-->
+<!--SR:2022-09-04,30,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 

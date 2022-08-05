@@ -518,10 +518,10 @@ How do classes AM and IP compare?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
 <!--SR:2022-09-04,67,230-->
 
-What is the interactive hierarchy, for GMR?
+What do GMR believe about the "interactive hierarchy"?
 ?
-The hypothesis that strictly $IP[k] \subset IP[k+1]$
-<!--SR:2022-08-05,71,250-->
+That it doesn't collapse. I.e., each layer is a strict subset of the next: $IP[k] \subset IP[k+1]$
+<!--SR:2023-01-24,172,250-->
 
 
 
@@ -1216,7 +1216,7 @@ But type 2 numbers are quadratic residues if and only if $y$ is a quadratic resi
 What is the input to the zk QNR IP?
 ?
 $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
-<!--SR:2022-08-05,29,190-->
+<!--SR:2022-10-27,83,210-->
 
 What happens in step 1?
 ?
@@ -1302,7 +1302,7 @@ $A$ constructs $Z$ and sends it to $B$.
 What is $Z$ for?
 ?
 Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \cup S$.
-<!--SR:2022-08-05,60,230-->
+<!--SR:2022-12-15,132,230-->
 
 How is $Z$ constructed?
 ?

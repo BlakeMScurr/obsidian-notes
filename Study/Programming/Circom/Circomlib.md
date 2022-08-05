@@ -34,7 +34,7 @@ The parameter specifying the number of bits in each operand (binary number being
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-08-05,8,210-->
+<!--SR:2022-08-29,24,230-->
 
 What is the main constraint in binsum and what is it for?
 ?

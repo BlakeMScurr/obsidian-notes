@@ -40,7 +40,7 @@ Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ w
 What is the "basic question" of Galois Theory?
 ?
 Given a bunch of numbers that are conjugate over $\mathbb{Q}$, how many ways are there to swap them that preserve algebraic relations?
-<!--SR:2022-08-05,44,190-->
+<!--SR:2022-12-03,120,210-->
 
 What is an example of an equation where you can swap $\sqrt{2}$ and $-\sqrt{2}$?
 %%%%?
