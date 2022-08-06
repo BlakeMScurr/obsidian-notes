@@ -734,7 +734,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-08-06,11,130-->
+<!--SR:2022-08-27,21,150-->
 
 What was distinguishability used for before GMR?
 ?
@@ -883,7 +883,7 @@ Not necessarily, as A's program may be absolutely inefficient, and M is polynomi
 What is GMR's analogy for communication complexity?
 ?
 A reporter trying to get information from a policeman who wants to keep most information private.
-<!--SR:2022-08-06,73,250-->
+<!--SR:2023-04-19,256,270-->
 
 What are the cases in GMR's communication complexity analogy?
 ?
@@ -1135,7 +1135,7 @@ No unproven computational complexity assumptions.
 What is the Jacobi symbol?
 ?
 $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates to 1 or -1 and gives information on the residuosity of x in $\mathbb{Z}^*_m$
-<!--SR:2022-08-06,37,210-->
+<!--SR:2022-10-23,78,210-->
 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
@@ -1240,7 +1240,7 @@ If $C_x = 0$, what are $x$ and the type of $x$?
 ?
 $x = r_0^2 \mod n$
 Type 1
-<!--SR:2022-08-06,60,230-->
+<!--SR:2023-02-17,195,250-->
 
 If $C_x = 0$, what are $x$ and the type of $x$?
 ?

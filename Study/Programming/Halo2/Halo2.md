@@ -51,12 +51,12 @@ A column that corresponds to witness values.
 What is an instance column?
 ?
 It's for elements shared between the prover and verifier, typeically public inputs.
-<!--SR:2022-08-06,8,230-->
+<!--SR:2022-08-25,19,230-->
 
 What are the constraints?
 ?
 Multivariate polynomails over F.
-<!--SR:2022-08-06,12,270-->
+<!--SR:2022-09-20,45,290-->
 
 What must the constraints evaluate to?
 ?
@@ -76,7 +76,7 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-06,2,190-->
+<!--SR:2022-08-07,1,170-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?

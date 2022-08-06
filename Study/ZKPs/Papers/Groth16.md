@@ -564,7 +564,7 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-08-06,20,170-->
+<!--SR:2022-09-24,49,190-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
@@ -1069,19 +1069,19 @@ What are the (very broad) steps for consructing the Groth16 NIZK argument?
 ?
 Construct a LIP.
 Convert the LIP into a pairing-based NIZK argument.
-<!--SR:2022-08-06,32,250-->
+<!--SR:2022-11-23,109,270-->
 
 ### LIPs for QAPs
 
 What is $h(x)$?
 ?
 The quotient polynomial, i.e, the number of times we add $t(X)$ to make each side of the QAP equation equal, given equality $\mod t(X)$.
-<!--SR:2022-08-06,32,250-->
+<!--SR:2022-11-24,110,270-->
 
 What is the degree of $h(X)$?
 ?
 $n-2$
-<!--SR:2022-08-06,32,250-->
+<!--SR:2022-11-25,111,270-->
 
 How do we know the degree of $h(X)$?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-08-06,2,170-->
+<!--SR:2022-08-10,4,170-->
 
 ##### Prove
 
@@ -1223,7 +1223,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-08-06,16,230-->
+<!--SR:2022-09-29,54,250-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-08-06,2,170-->
+<!--SR:2022-08-11,5,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 

@@ -413,7 +413,7 @@ To ensure that the circuit is compatible with the specified compiler version.
 If there is no pragma, what do we assume?
 ?
 That the code is compatible with the compiler's latest version.
-<!--SR:2022-08-06,49,250-->
+<!--SR:2023-01-25,172,270-->
 
 ## Functions
 
@@ -1139,7 +1139,7 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-08-06,25,210-->
+<!--SR:2022-09-28,53,210-->
 
 ## Unknowns
 
