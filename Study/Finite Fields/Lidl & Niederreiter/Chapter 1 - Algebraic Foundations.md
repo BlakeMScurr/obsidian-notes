@@ -35,7 +35,7 @@ What are the elementary consequences of the group axioms?
 Uniqueness of the identity
 Uniqueness of the inverse
 Inversion of a product
-<!--SR:2022-08-07,16,210-->
+<!--SR:2022-09-21,45,230-->
 
 How do you prove the uniqueness of group identity?
 ?

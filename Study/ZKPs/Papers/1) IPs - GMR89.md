@@ -472,12 +472,12 @@ The class of languages possessing an interactive proof system.
 What is $IP_{T(n)}$?
 ?
 The class of languages with an interactive proof system where the prover runs in $T(n)$ time.
-<!--SR:2022-08-07,73,250-->
+<!--SR:2023-04-20,256,270-->
 
 What is $IP[f(n)]$?
 ?
 The class of languages with an interactive proof system that halts within $f(n)$ turns.
-<!--SR:2022-08-07,41,230-->
+<!--SR:2022-12-12,127,250-->
 
 ### Arthur Merlin Games
 * "Arthur-Merlin" by Babai games are a predecessor of IPs by GMR
@@ -1425,7 +1425,7 @@ $A$ checks the form and size of $X' \cup Y'$. If those are invalid halts and rej
 What is $v$?
 ?
 $\mathbb{Q}_m(x)$ calculated by $A$
-<!--SR:2022-08-07,56,230-->
+<!--SR:2023-02-05,182,250-->
 
 What should $|X' \cup Y'|$ be?
 ?

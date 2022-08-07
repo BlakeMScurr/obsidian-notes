@@ -248,7 +248,7 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-08-07,26,190-->
+<!--SR:2022-09-22,46,190-->
 
 What is a Type I bilinear group?
 ?
@@ -739,7 +739,7 @@ $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
 What is $\mathbb{F}$?
 ?
 A finite field.
-<!--SR:2022-08-07,33,250-->
+<!--SR:2022-12-02,117,270-->
 
 What is $aux$?
 ?
@@ -882,7 +882,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-08-07,17,150-->
+<!--SR:2022-09-16,40,170-->
 
 What is ProofMatrix, broadly?
 ?
@@ -995,7 +995,7 @@ The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mat
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
 That a witness can be extracted from a proof matrix.
-<!--SR:2022-08-07,33,250-->
+<!--SR:2022-12-04,119,270-->
 
 What is the definition of statistical knowledge soundness against affine prover strategies?
 ?
@@ -1106,7 +1106,7 @@ $\alpha, \beta, \gamma, \delta, x$
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
 $(\alpha, \beta, \gamma, \delta, x)$
-<!--SR:2022-08-07,33,250-->
+<!--SR:2022-10-29,83,250-->
 
 
 What set are the parameters in Setup for a LIP for a QAP selected from?
@@ -1286,7 +1286,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-08-07,3,230-->
+<!--SR:2022-08-10,3,210-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?

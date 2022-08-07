@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-08-07,11,250-->
+<!--SR:2022-09-15,39,270-->
 
 What is advice?
 ?
@@ -17,7 +17,7 @@ Intermediate values used to create the proof
 What is the witness?
 ?
 The advice and the private inputs.
-<!--SR:2022-08-07,13,270-->
+<!--SR:2022-09-25,49,290-->
 
 ## PLONKish Arithmetization
 
@@ -36,7 +36,7 @@ What are the possible specifications for each column?
 Fixed
 Advice
 Instance
-<!--SR:2022-08-07,4,210-->
+<!--SR:2022-08-19,12,230-->
 
 What is a fixed column?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-07,1,170-->
+<!--SR:2022-08-08,1,150-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-08-07,3,150-->
+<!--SR:2022-08-09,2,130-->
 
 What keys do we genererate from the circuit description?
 ?
