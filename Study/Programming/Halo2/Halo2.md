@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-08-09,2,130-->
+<!--SR:2022-08-13,4,150-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -105,7 +105,7 @@ Sets of constraints like $q_i \cdot p(...)$, along with a set of selector column
 What kinds of gates are there?
 ?
 Standard gates that support generic field operations like multiplication and addition, and custom gates for more specialized operations.
-<!--SR:2022-08-09,13,270-->
+<!--SR:2022-10-01,53,290-->
 
 ## Chips
 

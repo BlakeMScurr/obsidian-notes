@@ -488,7 +488,7 @@ The class of languages with an interactive proof system that halts within $f(n)$
 Who invented Arthur-Merlin games?
 ?
 László Babai.
-<!--SR:2022-08-09,75,250-->
+<!--SR:2023-04-29,263,270-->
 
 Which came first, Arthur-Merlin games, or Interactive Proof Systems?
 ?
@@ -1375,7 +1375,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-08-09,35,170-->
+<!--SR:2022-11-03,86,190-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?

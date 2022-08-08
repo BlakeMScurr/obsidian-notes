@@ -362,7 +362,7 @@ if (N > 0) {
 ?
 If there are multiple initialization instructions for a component, they must all be from the same template (perhaps with different parameters).
 "Assignee and assigned types do not match"
-<!--SR:2022-08-09,50,230-->
+<!--SR:2023-01-11,155,250-->
 
 How do you make an array of components? What is the syntactic restriction?
 ?
@@ -652,7 +652,7 @@ Quotient after integer devision.
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2022-08-09,48,230-->
+<!--SR:2023-01-12,156,250-->
 
 What are the arithmetic/assignment operators?
 ?

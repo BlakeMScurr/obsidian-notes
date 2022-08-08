@@ -251,7 +251,7 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-08-09,14,230-->
+<!--SR:2022-09-27,49,250-->
 
 ### MBKM19
 
