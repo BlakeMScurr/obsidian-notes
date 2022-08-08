@@ -373,7 +373,7 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-08-08,42,230-->
+<!--SR:2022-12-17,131,250-->
 
 When can we use `parallel`?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-08-08,18,130-->
+<!--SR:2022-09-12,35,150-->
 
 # Operators
 
@@ -803,7 +803,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
-<!--SR:2022-08-08,50,250-->
+<!--SR:2023-01-31,176,270-->
 
 What is wrong with the following code and what error does it produce?
 ```

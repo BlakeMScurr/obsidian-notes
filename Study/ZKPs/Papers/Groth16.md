@@ -829,7 +829,7 @@ And because the relation generator picks the bilinear group to give our generato
 What does LIP stand for?
 ?
 Linear interactive proof
-<!--SR:2022-08-08,34,250-->
+<!--SR:2022-11-01,85,250-->
 
 What is the purpose of a LIP?
 ?
@@ -1037,7 +1037,7 @@ An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
 What does the crs of a compiled LIP contain, roughly?
 ?
 Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
-<!--SR:2022-08-08,27,190-->
+<!--SR:2022-10-25,78,210-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
@@ -1063,7 +1063,7 @@ Quadratic Arithmetic Programs.
 What does a proof in our NIZK construction consist of?
 ?
 3 group elements.
-<!--SR:2022-08-08,34,250-->
+<!--SR:2022-12-06,120,270-->
 
 What are the (very broad) steps for consructing the Groth16 NIZK argument?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-08-08,4,190-->
+<!--SR:2022-08-17,9,210-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
@@ -1228,7 +1228,7 @@ A quadratic multi-variate polynomial.
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
-<!--SR:2022-08-08,4,210-->
+<!--SR:2022-08-20,12,230-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
@@ -1293,7 +1293,7 @@ What, roughly, are the steps of Sim in a QAPLIP?
 Pick A and B.
 Compute C.
 Return proof.
-<!--SR:2022-08-08,13,270-->
+<!--SR:2022-09-23,46,290-->
 
 How does the simulator pick A and B in a QAPLIP?
 ?

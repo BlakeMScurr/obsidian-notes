@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-08-08,34,150-->
+<!--SR:2022-10-24,77,170-->
 
 ### Interactive Proof System Definition
 
@@ -841,7 +841,7 @@ At home he tries to extract the esoteric knowledge.
 First he imitates the lesson as best he can.
 Then he scrutinizes, as best he can, the difference between his imitation and the lesson.
 To the degree that they are different, some knowledge has leaked.
-<!--SR:2022-08-08,74,250-->
+<!--SR:2023-04-25,260,270-->
 
 How do I extend my analogy for determining knowledge to cover all the knowledge conveyed by a prover?
 ?

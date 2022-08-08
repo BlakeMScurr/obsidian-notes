@@ -76,7 +76,7 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-08,1,150-->
+<!--SR:2022-08-11,3,170-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
@@ -122,6 +122,6 @@ Cryptographic primitives like hash functions or ciphers, or algorithms like scal
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:2022-08-08,13,270-->
+<!--SR:2022-09-26,49,290-->
 
 ## Gadgets

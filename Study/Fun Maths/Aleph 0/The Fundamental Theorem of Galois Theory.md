@@ -22,7 +22,7 @@ What is the square root of 2 as a truncated decimal?
 Explain the "algebraic difference" between $\sqrt(2)$ and $-\sqrt{2}$.
 ?
 There is none. Consider any true expression containing $\sqrt{2}$, it will still be true if you replace $\sqrt{2}$ with  $-\sqrt{2}$.
-<!--SR:2022-08-08,60,250-->
+<!--SR:2023-03-07,211,270-->
 
 What are basic examples of algebraic expressions that both $\sqrt{2}$ and $-\sqrt{2}$ satisfy?
 ?
