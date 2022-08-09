@@ -41,7 +41,7 @@ If one way functions exist, then every NP language has a computationally zero-kn
 What is BGKW88's title?
 ?
 Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
-<!--SR:2022-08-10,56,170-->
+<!--SR:2022-11-13,95,170-->
 
 Who are the authors of BGKW88?
 ?
@@ -104,7 +104,7 @@ Oded Goldreich and Yair Oren
 What is the title of GO94?
 ?
 Definitions and properties of zero-knowledge proof systems
-<!--SR:2022-08-10,44,170-->
+<!--SR:2022-11-27,109,190-->
 
 What does GO94 show, according to Groth's talk in the 3rd BIU winter school?
 ?

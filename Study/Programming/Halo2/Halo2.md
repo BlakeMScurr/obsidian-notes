@@ -41,7 +41,7 @@ Instance
 What is a fixed column?
 ?
 A column whose values are fixed by the circuit.
-<!--SR:2022-08-10,14,270-->
+<!--SR:2022-10-03,54,290-->
 
 What is an advice column?
 ?

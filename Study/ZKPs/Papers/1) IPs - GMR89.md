@@ -571,7 +571,7 @@ Infinite computing power by all. The various inputs discussed can be hidden to d
 How do GMR differ from the MCF philosophically?
 ?
 GMR hold that our computation is limited, and that we communicate about available public inputs.
-<!--SR:2022-08-10,76,250-->
+<!--SR:2023-05-04,267,270-->
 
 What does GMR's philosophy of knowledge apply to, in addition to epistemology?
 ?
@@ -1469,7 +1469,7 @@ After checking $v$
 What does $B$ do if $iteration \lt n$?
 ?
 Goes back to step 1.
-<!--SR:2022-08-10,58,230-->
+<!--SR:2023-02-15,189,250-->
 #### It is a Proof System
 ##### Remark 2
 ###### Working it out

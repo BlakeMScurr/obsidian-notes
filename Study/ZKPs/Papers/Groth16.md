@@ -225,7 +225,7 @@ $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear ma
 What is a property of generators of our bilinear group?
 ?
 if $G$ is a generator of $\mathbb{G}_1$ and $H$ is a generator of $\mathbb{G}_2$ then $e(G, H)$ is a generator of $\mathbb{G}_T$.
-<!--SR:2022-08-10,16,230-->
+<!--SR:2022-10-04,55,250-->
 
 What are the generic bilinear group operations?
 ?
@@ -473,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-08-10,29,190-->
+<!--SR:2022-08-25,15,170-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -547,7 +547,7 @@ You can compile a preprocessing SNARK into a fully succinct SNARK.
 Who showed the relationship between preprocessing and fully succinct SNARKs?
 ?
 Bitansky et al BCCT13.
-<!--SR:2022-08-10,11,250-->
+<!--SR:2022-09-18,39,270-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
@@ -749,7 +749,7 @@ Auxiliary information.
 What is the $\mathscr{l}$ for?
 ?
 Delineating the variables for the statement and the witness.
-<!--SR:2022-08-10,36,250-->
+<!--SR:2022-12-14,126,270-->
 
 What is the definition of $\mathscr{l}$?
 ?
@@ -844,7 +844,7 @@ Bitansky et al. BCI+13
 How do we denote the degree of a LIP?
 ?
 $(d_Q, d_D)$
-<!--SR:2022-08-10,36,250-->
+<!--SR:2022-12-19,131,270-->
 
 What are the (top level) algorithms for a LIP?
 ?
@@ -929,7 +929,7 @@ An arithmetic circuit $t$.
 What is the definition of $t$?
 ?
 An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
-<!--SR:2022-08-10,36,250-->
+<!--SR:2022-12-20,132,270-->
 
 What arguments is $t$ passed?
 ?
@@ -1011,7 +1011,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-08-10,21,190-->
+<!--SR:2022-09-19,40,190-->
 
 ??? Is there a mistake here, should it me that Pi in kxm rather than mxk?
 
@@ -1135,7 +1135,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-08-10,15,230-->
+<!--SR:2022-08-18,8,210-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-08-10,4,170-->
+<!--SR:2022-08-22,12,190-->
 
 ##### Prove
 
@@ -1286,7 +1286,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-08-10,3,210-->
+<!--SR:2022-08-19,9,230-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?
