@@ -76,7 +76,7 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-11,3,170-->
+<!--SR:2022-08-13,2,150-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
@@ -88,7 +88,7 @@ The values of fixed columns at each row.
 What keys do we genererate from the circuit description?
 ?
 The proving key and the verification key.
-<!--SR:2022-08-11,15,270-->
+<!--SR:2022-09-21,41,270-->
 
 What is a selector?
 ?

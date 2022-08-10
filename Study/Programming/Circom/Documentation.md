@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-08-11,21,210-->
+<!--SR:2022-10-13,63,230-->
 
 When do we use `--inspect`?
 ?
@@ -569,7 +569,7 @@ What do you use to change the field size?
 What is the conditional expression?
 ?
 `_?_:_`
-<!--SR:2022-08-11,52,250-->
+<!--SR:2023-02-10,183,270-->
 
 What are the boolean operators?
 ?

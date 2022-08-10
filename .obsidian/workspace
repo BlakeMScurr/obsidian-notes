@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "640cbcc35e84c526",
+        "id": "ae41b1345c609984",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -96,11 +96,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "640cbcc35e84c526",
+  "active": "ae41b1345c609984",
   "lastOpenFiles": [
+    "Study/Software/EigenLayer.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/Software/EigenLayer.md",
     "Study/Programming/Halo2/Halo2.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Circom/Circomlib.md",

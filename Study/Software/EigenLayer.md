@@ -41,12 +41,12 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-08-11,1,230-->
+<!--SR:2022-08-14,3,230-->
 
 What does $S_j$ denote?
 ?
 The set of stakers who have staked for the task $j$.
-<!--SR:2022-08-11,1,230-->
+<!--SR:2022-08-15,4,250-->
 
 What does $\alpha_j$ denote?
 ?
@@ -66,7 +66,7 @@ A subset of the tasks $T$
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-08-11,1,230-->
+<!--SR:2022-08-12,1,210-->
 
 What is $S_j^c$?
 ?
@@ -83,10 +83,12 @@ $$
 What does $S^c(V)$ denote?
 ?
 The collection of staker sets which are sufficient to corrupt all tasks in the subset $V$.
+<!--SR:2022-08-15,4,250-->
 
 What is the definition of $S^c(V)$?
 ?
 $\bigcap_{j \in V} S_j^c$
+<!--SR:2022-08-12,1,230-->
 
 What does $c(V)$ denote?
 ?
@@ -99,26 +101,32 @@ $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
 What does $p_j$ denote?
 ?
 The profit from corruption of task $j$.
+<!--SR:2022-08-16,5,270-->
 
 What does $p(V)$ denote?
 ?
 The total profit from corrupting the set of tasks $V$.
+<!--SR:2022-08-15,4,250-->
 
 How is $p(V)$ defined?
 ?
 $$\sum_{j \in V} p_j$$
+<!--SR:2022-08-16,5,270-->
 
 When is a task $j$ secure? Use natural language.
 ?
 If for all sets of tasks containing $j$, the cost of corruption is higher than the profit from corruption.
+<!--SR:2022-08-15,4,250-->
 
 When is a task $j$ secure? Use mathmatical symbols.
 ?
 $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
+<!--SR:2022-08-12,1,230-->
 
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
 $c(V) > p(V)$
+<!--SR:2022-08-16,5,270-->
 
 What does $T^c(U)$ denote?
 ?
@@ -131,13 +139,13 @@ $$
 $$
 
 
-All tasks are secure $\iff$ . . . ?
+All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
-$$\forall\ U \in S, \sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
+$$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
 
 What does $\gamma_{ij}$ denote?
 ?
-The fraction of task $j$'s securing stake which is held by staker $i$.
+The fraction of task $j
 
 How is $\gamma_{ij}$ defined?
 ?
@@ -146,6 +154,33 @@ $s_i/\sum_{k \in S_j} s_k$
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
+<!--SR:2022-08-16,5,270-->
+
+### B.1
+
+What is the simple sufficient enforcable condition for cryptoeconomic security of all tasks?
+?
+$$
+s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
+$$
+
+
+
+
+
+
+
+s securing stake which is held by staker $i$.
+<!--SR:2022-08-15,4,270-->
+
+How is $\gamma_{ij}$ defined?
+?
+$s_i/\sum_{k \in S_j} s_k$
+
+What does $T_i$ denote?
+?
+The set of tasks for which $i$ is a staker.
+<!--SR:2022-08-16,5,270-->
 
 ### B.1
 
