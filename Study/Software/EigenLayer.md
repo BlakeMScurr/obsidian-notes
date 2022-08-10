@@ -24,6 +24,10 @@ What is the $CoC$ of a DApp with restaking?
 $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 <!--SR:2022-08-14,4,250-->
 
+## B
+
+### B.0
+
 What does $S$ denote?
 ?
 The set of all stakers.
@@ -129,8 +133,27 @@ $$
 
 All tasks are secure $\iff$ . . . ?
 ?
-$$\forall\ U \in S, \sum $$
+$$\forall\ U \in S, \sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
 
+What does $\gamma_{ij}$ denote?
+?
+The fraction of task $j$'s securing stake which is held by staker $i$.
+
+How is $\gamma_{ij}$ defined?
+?
+$s_i/\sum_{k \in S_j} s_k$
+
+What does $T_i$ denote?
+?
+The set of tasks for which $i$ is a staker.
+
+### B.1
+
+What is the simple sufficient enforcable condition for cryptoeconomic security of all tasks?
+?
+$$
+s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
+$$
 
 
 
