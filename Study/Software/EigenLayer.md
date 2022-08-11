@@ -56,7 +56,7 @@ The fraction of stake require to corrupt task $j$.
 What does $U$ denote?
 ?
 A sumset of the validators/restakers $S$.
-<!--SR:2022-08-12,2,250-->
+<!--SR:2022-08-18,6,250-->
 
 What does $V$ denote?
 ?

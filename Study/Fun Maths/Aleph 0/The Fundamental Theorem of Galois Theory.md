@@ -150,7 +150,7 @@ Permutations become automorphism, i.e., the permutations of $\sqrt{2}$ and $-\sq
 What is the formal definition of $\mathbb{Q}(\sqrt{2})$?
 ?
 $\{a + b\sqrt{2} : a, b \in \mathbb{Q}\}$
-<!--SR:2022-08-12,63,250-->
+<!--SR:2023-03-21,221,270-->
 
 How do we calculate the number of automorphisms fixing $\mathbb{Q}$ in $\mathbb{Q}(\sqrt{2})$?
 ?

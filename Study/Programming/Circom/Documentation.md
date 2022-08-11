@@ -515,7 +515,7 @@ What is the comment syntax for circom?
 What can be used for identifiers?
 ?
 `*[a-zA-Z0-9_$]`
-<!--SR:2022-08-12,53,250-->
+<!--SR:2023-02-06,178,270-->
 
 What are the reserved keywords?
 ?
@@ -1090,7 +1090,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-08-12,18,230-->
+<!--SR:2022-09-22,41,230-->
 
 What's an example of a `log` instruction?
 ?
