@@ -98,6 +98,7 @@ The cost of corruption for a subset of tasks $V$.
 How is $c(V)$ defined?
 ?
 $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
+<!--SR:2022-08-15,4,250-->
 
 What does $p_j$ denote?
 ?
@@ -132,47 +133,24 @@ $c(V) > p(V)$
 What does $T^c(U)$ denote?
 ?
 The set of tasks that the stakers $U$ are able to corrupt.
+<!--SR:2022-08-14,3,250-->
 
 What is the definition of $T^c(U)$?
 ?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
+<!--SR:2022-08-12,1,230-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
+<!--SR:2022-08-13,2,250-->
 
 What does $\gamma_{ij}$ denote?
 ?
-The fraction of task $j
-
-How is $\gamma_{ij}$ defined?
-?
-$s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-08-12,1,230-->
-
-What does $T_i$ denote?
-?
-The set of tasks for which $i$ is a staker.
-<!--SR:2022-08-16,5,270-->
-
-### B.1
-
-What is the simple sufficient enforcable condition for cryptoeconomic security of all tasks?
-?
-$$
-s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
-$$
-
-
-
-
-
-
-
-s securing stake which is held by staker $i$.
+The fraction of task $j$s securing stake which is held by staker $i$.
 <!--SR:2022-08-15,4,270-->
 
 How is $\gamma_{ij}$ defined?
@@ -192,10 +170,33 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
+<!--SR:2022-08-15,4,250-->
+
+How is $\gamma_{ij}$ defined?
+?
+$s_i/\sum_{k \in S_j} s_k$
+<!--SR:2022-08-12,1,230-->
+
+What does $T_i$ denote?
+?
+The set of tasks for which $i$ is a staker.
+<!--SR:2022-08-16,5,270-->
+
+### B.1
+
+What is the simple sufficient enforcable condition for cryptoeconomic security of all tasks?
+?
+$$
+s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
+$$
+<!--SR:2022-08-15,4,250-->
 
 
-
-
-
-
-
+??? How do the steps in line (10) work?
+1/  just applies (9) and sums both sides
+2/ Just inverts the sum looking from a different perspective, i.e., for every staker in the subset, for each of their tasks, is equivalent to, for every task, for every staker of that task in the subset.
+3/ idk!
+4/ Just takes the fact that U is able to corrupt the subset, and so its proportion is at least as large as alpha_j
+5/ just a simple x/x = 1 reduction
+...
+So, let's keep looking at step 3. So TcU is a subset of T, can it be equal? Yes, since U is defined as such. So there is no tradeoff of the rest of the equation there.

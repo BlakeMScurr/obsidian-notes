@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 193.49999809265137,
-    "collapsed": true
+    "width": 193.49999809265137
   },
   "right": {
     "id": "df608e470bfd07c0",
@@ -98,8 +97,8 @@
   },
   "active": "ae41b1345c609984",
   "lastOpenFiles": [
-    "Study/Software/EigenLayer.md",
     "Study/ZKPs/Papers/Groth16.md",
+    "Study/Software/EigenLayer.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Programming/Halo2/Halo2.md",
     "Study/ZKPs/Papers/Literature.md",

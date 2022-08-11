@@ -245,7 +245,7 @@ It's a coin flip.
 How is an ITM's speaking tape implemented?
 ?
 As a write only tape, where each cell can only be written once, and each cell must be written in in order to proceed to the next.
-<!--SR:2022-08-11,76,250-->
+<!--SR:2023-02-08,181,250-->
 
 What does an ITM's input tape represent?
 ?
@@ -1150,7 +1150,7 @@ Computing $\mathcal{Q}_m(x)$ is a hard problem.
 The algorithm for generating $x$ with $\mathcal{Q}_m(x) = 1$ and $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
 Is not known to exist, efficiently.
-<!--SR:2022-08-11,75,250-->
+<!--SR:2023-05-01,263,270-->
 
 ### zk QNR IP
 #### Overview

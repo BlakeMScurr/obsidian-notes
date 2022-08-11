@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-08-11,30,190-->
+<!--SR:2022-08-28,17,170-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -638,7 +638,7 @@ What is the form of our arithmetic constraints?
 ?
 $\sum a_iu_{i,q}\sum a_iv_{i,q}=\sum a_iw_{i,q}$,
 where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
-<!--SR:2022-08-11,37,230-->
+<!--SR:2022-11-04,85,230-->
 
 ### Generalising Circuits
 
@@ -861,7 +861,7 @@ A relation generator $\mathcal{R}$, where we assume the relations specify a fini
 What, broadly, is a LIP?
 ?
 A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work with matrices.
-<!--SR:2022-08-11,37,250-->
+<!--SR:2022-11-12,93,250-->
 
 What does Setup do in a LIP?
 ?
@@ -897,7 +897,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-08-11,15,230-->
+<!--SR:2022-08-17,6,210-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -1218,7 +1218,7 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-08-11,17,230-->
+<!--SR:2022-09-19,39,230-->
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-08-11,5,190-->
+<!--SR:2022-08-23,12,210-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 

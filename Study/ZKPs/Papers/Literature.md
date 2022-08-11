@@ -214,7 +214,7 @@ Linear algebra with sub-linear zero-knowledge arguments
 What did Gro09 contribute?
 ?
 Given commitments to matrices, gives a sublinear proof showing their product. Arithmetic circuits can be formed using these matrices, giving a more efficient reduction than earlier proof systems for circuit satisfiability
-<!--SR:2022-08-11,42,170-->
+<!--SR:2022-10-21,71,170-->
 
 Who are the authors of Groth16?
 ?
