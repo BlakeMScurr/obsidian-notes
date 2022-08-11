@@ -215,7 +215,7 @@ A prime number.
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
 Groups of prime order $p$.
-<!--SR:2022-08-12,38,250-->
+<!--SR:2022-12-22,132,270-->
 
 What is $e$ and what is its definition?
 ?
@@ -355,7 +355,7 @@ The simulator gets access to $tau$ so it can generate proofs indistinguishable f
 What is $\pi$?
 ?
 The argument.
-<!--SR:2022-08-12,38,250-->
+<!--SR:2022-11-15,95,250-->
 
 What is the definition of $\textbf{Vfy}$?
 ?
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-08-12,17,170-->
+<!--SR:2022-09-23,42,190-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -559,7 +559,7 @@ Preprocessing SNARKs.
 What was the first danger discovered that was implied by indistinguishability obfuscation?
 ?
 Indisginguishability obfuscation implies that for every candidate SNARK there are auxiliary output distributions that enable the adversary to create a valid proof without it being possible to extract the witness.
-<!--SR:2022-08-12,38,250-->
+<!--SR:2022-12-25,135,270-->
 
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
@@ -600,7 +600,7 @@ Some subset of the the input/ouput wires.
 What represents the witness in our arithmetic circuit?
 ?
 The wires that aren't the statement.
-<!--SR:2022-08-12,50,210-->
+<!--SR:2023-01-09,150,230-->
 
 What does binary relation of our arithmetic circuit consist of?
 ?
@@ -1306,7 +1306,7 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-08-12,8,190-->
+<!--SR:2022-09-05,24,210-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

@@ -17,7 +17,7 @@ Cost of corruption.
 What is the $CoC$ of a DApp without restaking?
 ?
 $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
-<!--SR:2022-08-12,2,250-->
+<!--SR:2022-08-18,6,250-->
 
 What is the $CoC$ of a DApp with restaking?
 ?
@@ -66,7 +66,7 @@ A subset of the tasks $T$
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-08-12,1,210-->
+<!--SR:2022-08-14,2,210-->
 
 What is $S_j^c$?
 ?
@@ -78,7 +78,7 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:2022-08-12,2,250-->
+<!--SR:2022-08-17,5,250-->
 
 What does $S^c(V)$ denote?
 ?
@@ -88,7 +88,7 @@ The collection of staker sets which are sufficient to corrupt all tasks in the s
 What is the definition of $S^c(V)$?
 ?
 $\bigcap_{j \in V} S_j^c$
-<!--SR:2022-08-12,1,230-->
+<!--SR:2022-08-16,4,250-->
 
 What does $c(V)$ denote?
 ?
@@ -123,7 +123,7 @@ If for all sets of tasks containing $j$, the cost of corruption is higher than t
 When is a task $j$ secure? Use mathmatical symbols.
 ?
 $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
-<!--SR:2022-08-12,1,230-->
+<!--SR:2022-08-16,4,250-->
 
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
@@ -140,7 +140,7 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-08-12,1,230-->
+<!--SR:2022-08-13,1,210-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
@@ -156,7 +156,7 @@ The fraction of task $j$s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-08-12,1,230-->
+<!--SR:2022-08-14,2,230-->
 
 What does $T_i$ denote?
 ?
@@ -171,11 +171,6 @@ $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
 <!--SR:2022-08-15,4,250-->
-
-How is $\gamma_{ij}$ defined?
-?
-$s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-08-12,1,230-->
 
 What does $T_i$ denote?
 ?

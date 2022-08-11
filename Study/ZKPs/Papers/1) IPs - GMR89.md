@@ -418,7 +418,7 @@ How does B mix random numbers with x in the basic QNR IP?
 B flips n coins and forms $\{t_1, t_2, ..., t_n\}$
 If tails, B forms $t_i = xr_i^2\ mod \ n$
 If heads, B forms $t_i = r_i^2\ mod\ n$
-<!--SR:2022-08-12,77,250-->
+<!--SR:2023-02-21,193,250-->
 
 What does A do in the basic QNR IP?
 ?

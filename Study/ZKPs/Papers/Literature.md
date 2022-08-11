@@ -73,7 +73,7 @@ Lance Fortnow, John Rompel, and Michael Sipser.
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-08-12,31,150-->
+<!--SR:2022-10-20,69,170-->
 
 ## BFL90
 
