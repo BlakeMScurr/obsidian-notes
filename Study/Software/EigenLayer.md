@@ -93,6 +93,7 @@ $\bigcap_{j \in V} S_j^c$
 What does $c(V)$ denote?
 ?
 The cost of corruption for a subset of tasks $V$.
+<!--SR:2022-08-16,5,270-->
 
 How is $c(V)$ defined?
 ?
@@ -150,6 +151,7 @@ The fraction of task $j
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
+<!--SR:2022-08-12,1,230-->
 
 What does $T_i$ denote?
 ?
@@ -176,6 +178,7 @@ s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
+<!--SR:2022-08-12,1,230-->
 
 What does $T_i$ denote?
 ?
