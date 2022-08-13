@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-08-13,19,210-->
+<!--SR:2022-10-11,59,230-->
 
 What is the code for `BinSum`?
 ?
@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-08-13,47,230-->
+<!--SR:2022-09-06,24,210-->
 
 What is the code for Mux1?
 ?

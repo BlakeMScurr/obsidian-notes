@@ -451,7 +451,7 @@ So the verifier has a $1/2$ chance of picking any given toss, and a $1/2^n$ chan
 How many coin flips does the verifier do in the basic QNR IP?
 ?
 $n = |x|$, i.e., the length of x.
-<!--SR:2022-08-13,78,250-->
+<!--SR:2023-02-24,195,250-->
 
 How is the basic QNR IP not zero knowledge?
 ?

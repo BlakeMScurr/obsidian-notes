@@ -17,14 +17,14 @@ Shafi Goldwasser, Silvio Micali, and Charles Rackoff
 What does GMR89 contribute?
 ?
 The notion of interactive proofs, communcation complexity, and that interactive proofs reduce communication complexity.
-<!--SR:2022-08-13,76,210-->
+<!--SR:2023-03-28,227,230-->
 
 ## GMW91
 
 What is GMW91's title?
 ?
 Proofs that Yield Nothing but their Validity or All Languages in NP Have Zero-Knowledge Proof Systems
-<!--SR:2022-08-13,38,130-->
+<!--SR:2022-10-05,53,130-->
 
 Who are the authors of GMW91
 ?

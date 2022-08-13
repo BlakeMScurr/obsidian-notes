@@ -31,12 +31,12 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-08-13,3,250-->
+<!--SR:2022-08-16,3,230-->
 
 What does $T$ denote?
 ?
 The set of all tasks secured by eigenlayer.
-<!--SR:2022-08-13,3,250-->
+<!--SR:2022-08-21,8,250-->
 
 What does $s_i$ denote?
 ?
@@ -71,7 +71,7 @@ $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share 
 What is $S_j^c$?
 ?
 The collection of staker sets sufficient to corrupt $j$.
-<!--SR:2022-08-13,3,250-->
+<!--SR:2022-08-20,7,250-->
 
 How do we define $S_j^c$?
 ?
@@ -140,13 +140,13 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-08-13,1,210-->
+<!--SR:2022-08-14,1,190-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-08-13,2,250-->
+<!--SR:2022-08-14,1,230-->
 
 What does $\gamma_{ij}$ denote?
 ?

@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-08-13,31,210-->
+<!--SR:2022-08-29,16,190-->
 
 What is the limit definition of $\omega$?
 ?
@@ -376,7 +376,7 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 What is a non-interactive argument?
 ?
 We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
-<!--SR:2022-08-13,39,250-->
+<!--SR:2022-09-02,20,230-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
@@ -526,7 +526,7 @@ A non-interactive argument where the verifier runs in polynomial time in $\lambd
 What is the difference between SNARKs and SNARGs?
 ?
 A SNARG is sound, a SNARK is knowledge sound.
-<!--SR:2022-08-13,38,250-->
+<!--SR:2022-12-28,137,270-->
 
 What is the full expanded acronym for SNARK and SNARG?
 ?
@@ -650,7 +650,7 @@ Multiplication and addition gates are special cases of constraint equations.
 How can a multiplication gate be described as a constraint?
 ?
 $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the remaining constants for the equation are $0$.
-<!--SR:2022-08-13,56,250-->
+<!--SR:2023-02-26,197,270-->
 
 How can an addition gate be described as a constraint?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-08-13,9,130-->
+<!--SR:2022-08-19,6,130-->
 
 ##### Vfy
 
@@ -1255,7 +1255,7 @@ Proof CRS product
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $A \cdot B$
-<!--SR:2022-08-13,22,250-->
+<!--SR:2022-10-07,55,250-->
 
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
