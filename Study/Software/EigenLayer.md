@@ -12,7 +12,7 @@ How does "the value of Ethereum increases significantly due to the future fee op
 What $CoC$ mean?
 ?
 Cost of corruption.
-<!--SR:2022-08-14,4,250-->
+<!--SR:2022-08-24,10,250-->
 
 What is the $CoC$ of a DApp without restaking?
 ?
@@ -22,7 +22,7 @@ $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
 What is the $CoC$ of a DApp with restaking?
 ?
 $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
-<!--SR:2022-08-14,4,250-->
+<!--SR:2022-08-27,13,270-->
 
 ## B
 
@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-08-14,3,230-->
+<!--SR:2022-08-26,12,250-->
 
 What does $S_j$ denote?
 ?
@@ -51,7 +51,7 @@ The set of stakers who have staked for the task $j$.
 What does $\alpha_j$ denote?
 ?
 The fraction of stake require to corrupt task $j$.
-<!--SR:2022-08-14,4,250-->
+<!--SR:2022-08-28,14,270-->
 
 What does $U$ denote?
 ?
@@ -61,12 +61,12 @@ A sumset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2022-08-14,4,250-->
+<!--SR:2022-08-30,16,270-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-08-14,2,210-->
+<!--SR:2022-08-18,4,210-->
 
 What is $S_j^c$?
 ?
@@ -133,20 +133,20 @@ $c(V) > p(V)$
 What does $T^c(U)$ denote?
 ?
 The set of tasks that the stakers $U$ are able to corrupt.
-<!--SR:2022-08-14,3,250-->
+<!--SR:2022-08-25,11,270-->
 
 What is the definition of $T^c(U)$?
 ?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-08-14,1,190-->
+<!--SR:2022-08-17,3,210-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-08-14,1,230-->
+<!--SR:2022-08-17,3,230-->
 
 What does $\gamma_{ij}$ denote?
 ?
@@ -156,7 +156,7 @@ The fraction of task $j$s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-08-14,2,230-->
+<!--SR:2022-08-22,8,250-->
 
 What does $T_i$ denote?
 ?

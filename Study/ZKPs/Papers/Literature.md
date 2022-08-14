@@ -157,7 +157,7 @@ Gives non interactive Zaps for all NP (where they had only existed for some non 
 Who are the authors of Gro06?
 ?
 Jens Groth
-<!--SR:2022-08-14,63,250-->
+<!--SR:2023-03-13,211,270-->
 
 What is the title of Gro06?
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-08-14,10,170-->
+<!--SR:2022-09-08,25,190-->
 
 What did Gro10 contribute?
 ?

@@ -76,7 +76,7 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-14,1,130-->
+<!--SR:2022-08-15,1,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?

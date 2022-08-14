@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-08-14,40,190-->
+<!--SR:2022-12-01,109,210-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -106,7 +106,7 @@ To non-interactive zero knowledge proofs (NIZK) in the common reference string m
 Where are NIZKs useful, according to Groth16?
 ?
 The construction of non-interactive cryptographic schemes, e.g., digital key signatures, and CCA-secure public key encryption.
-<!--SR:2022-08-14,33,170-->
+<!--SR:2022-10-31,78,190-->
 
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-08-14,10,170-->
+<!--SR:2022-08-20,6,150-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -839,7 +839,7 @@ It is a useful characterisation of the information theoretic underpinning of var
 Who invented LIPs?
 ?
 Bitansky et al. BCI+13
-<!--SR:2022-08-14,39,250-->
+<!--SR:2022-12-29,137,270-->
 
 How do we denote the degree of a LIP?
 ?
@@ -1250,7 +1250,7 @@ Proof element product
 CRS product
 Statement sum
 Proof CRS product
-<!--SR:2022-08-14,23,250-->
+<!--SR:2022-10-30,77,270-->
 
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

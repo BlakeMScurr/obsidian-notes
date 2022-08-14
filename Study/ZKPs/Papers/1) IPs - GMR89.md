@@ -283,7 +283,7 @@ Either can halt the pair.
 What is output of an interactive pair?
 ?
 Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's turn, likewise for $b_i$. The output is $\{b_1, a_1, ..., b_n, a_n\}$, where $a_n$ is empty if B halts.
-<!--SR:2022-08-14,79,250-->
+<!--SR:2023-05-18,277,270-->
 
 What is (A, B)[x] for an interactive pair?
 ?
@@ -322,7 +322,7 @@ A lesson in a classroom.
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
-<!--SR:2022-08-14,46,190-->
+<!--SR:2022-12-18,126,210-->
 
 How is the general topic of an interactive proof system formalised?
 ?
@@ -602,7 +602,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-08-14,28,130-->
+<!--SR:2022-10-12,59,150-->
 
 What is an I-c-ensemble used for?
 ?

@@ -798,7 +798,7 @@ Rewrite `out <== 1 - a * b;` more explicitly
 out === 1 - a * b;
 out <-- 1 - a * b;
 ```
-<!--SR:2022-08-14,54,250-->
+<!--SR:2023-02-20,190,270-->
 
 What kinds of expressions are allowed in constraints?
 ?
