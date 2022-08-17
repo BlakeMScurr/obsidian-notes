@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-08-18,24,150-->
+<!--SR:2022-08-31,13,130-->
 
 What are the variables in compconstant?
 ?

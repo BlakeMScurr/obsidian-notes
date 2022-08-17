@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-08-15,31,170-->
+<!--SR:2022-11-14,88,190-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -735,7 +735,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2022-08-18,51,230-->
+<!--SR:2023-01-27,162,250-->
 
 What is the code for `Num2Bits`
 ?
@@ -870,7 +870,7 @@ What is the syntax for a `while` loop?
 What restriction is placed on constraints inside control flow blocks?
 ?
 The conditions of the flow control blocks cannot be unknown. This is because constraint generation must be unique and cannot depend on unknown input signals.
-<!--SR:2022-08-16,55,250-->
+<!--SR:2023-03-06,200,270-->
 
 What is wrong with the following code?
 ```
@@ -953,7 +953,7 @@ Just one type.
 What types can arrays hold?
 ?
 Signals, vars, the same type of component, or arrays.
-<!--SR:2022-08-17,51,230-->
+<!--SR:2023-02-03,169,250-->
 
 How, for example, do we declare a 2D array with lengths?
 ?
@@ -1029,7 +1029,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2022-08-15,46,230-->
+<!--SR:2023-01-17,152,250-->
 
 Which signals of subcomponents are visible?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-08-17,36,170-->
+<!--SR:2022-11-20,94,190-->
 
 What creates assertions?
 ?
@@ -1085,7 +1085,7 @@ How do you use `assert`, for example?
 What is `log`?
 ?
 A way to log values to the standard error stream.
-<!--SR:2022-08-15,55,250-->
+<!--SR:2023-03-10,204,270-->
 
 What can be passed to `log`?
 ?
