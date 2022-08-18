@@ -467,7 +467,7 @@ By acting maliciously and sending a random element with unknown residuosity, B l
 What is IP?
 ?
 The class of languages possessing an interactive proof system.
-<!--SR:2022-08-19,83,250-->
+<!--SR:2023-06-06,291,270-->
 
 What is $IP_{T(n)}$?
 ?

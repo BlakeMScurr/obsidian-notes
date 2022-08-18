@@ -314,7 +314,7 @@ b = b -e;
 a = a+e;
 e = e*2;
 ```
-<!--SR:2022-08-19,42,210-->
+<!--SR:2022-09-09,21,190-->
 
 What is the code for the final check and output?
 ?

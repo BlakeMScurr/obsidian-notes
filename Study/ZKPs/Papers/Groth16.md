@@ -34,7 +34,7 @@ Circuit satisfiability, that it is NP-complete.
 What kind of pairings does Groth16 use and why?
 ?
 Assymetric pairings for higher efficiency.
-<!--SR:2022-08-19,63,250-->
+<!--SR:2023-03-18,211,270-->
 
 What does a Groth16 SNARG consist of?
 ?
@@ -116,7 +116,7 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-08-19,38,150-->
+<!--SR:2022-10-15,57,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
@@ -367,7 +367,7 @@ What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-08-19,33,190-->
+<!--SR:2022-11-17,90,210-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -521,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-08-19,37,210-->
+<!--SR:2022-09-05,17,190-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -1198,7 +1198,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-08-19,15,170-->
+<!--SR:2022-09-15,27,170-->
 
 How is $C$ computed by Prove in a QAPLIP?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-08-19,6,130-->
+<!--SR:2022-08-22,3,130-->
 
 ##### Vfy
 
@@ -1286,7 +1286,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-08-19,9,230-->
+<!--SR:2022-09-17,29,250-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?

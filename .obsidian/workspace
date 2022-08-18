@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Software/EigenLayer.md",
+            "file": "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Software/EigenLayer.md",
+                "file": "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +97,9 @@
   },
   "active": "ae41b1345c609984",
   "lastOpenFiles": [
+    "Study/Software/EigenLayer.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Circomlib.md",
-    "Study/Software/EigenLayer.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
     "Study/Programming/Halo2/Halo2.md",

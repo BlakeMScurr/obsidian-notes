@@ -1197,7 +1197,7 @@ The index for the array in the constraint is unknown.
 What restrictions are placed on the size of an array?
 ?
 The size must be a known value.
-<!--SR:2022-08-19,58,250-->
+<!--SR:2023-03-02,195,270-->
 
 What is wrong with the following code and what message does it generate?
 ```
