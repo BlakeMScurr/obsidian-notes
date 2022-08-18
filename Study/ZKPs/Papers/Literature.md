@@ -243,7 +243,7 @@ Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
-<!--SR:2022-08-16,35,250-->
+<!--SR:2022-12-31,135,270-->
 
 What did GKMMM18 contribute?
 ?

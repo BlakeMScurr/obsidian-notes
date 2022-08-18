@@ -24,7 +24,7 @@ In what sense are interactive proofs probabilistic?
 ?
 The verifier can be convinced of a false n-bit statement with $1/2^n$ probability.
 The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probability.
-<!--SR:2022-08-18,61,210-->
+<!--SR:2022-12-24,128,210-->
 
 ### Knowledge Complexity
 * We can investigate the knowledge (as opposed to time) complexity of a proof
@@ -337,7 +337,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-08-17,35,130-->
+<!--SR:2022-10-06,49,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -446,7 +446,7 @@ How do we know that we can't falsely prove $x \in \mathcal{L}$ (i.e., where $x \
 ?
 $x \notin QNR \implies xr^2 \notin QNR \land r^2 \notin QNR$ making either case a random quadratic residue.
 So the verifier has a $1/2$ chance of picking any given toss, and a $1/2^n$ chance of getting all n tosses.
-<!--SR:2022-08-15,80,250-->
+<!--SR:2023-06-05,291,270-->
 
 How many coin flips does the verifier do in the basic QNR IP?
 ?
@@ -499,7 +499,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-08-17,31,210-->
+<!--SR:2022-09-04,17,190-->
 
 ### Interactive Hierarchy
 
@@ -1385,7 +1385,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-08-16,39,190-->
+<!--SR:2022-12-11,115,210-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?

@@ -263,7 +263,7 @@ Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable no
 What are Type III bilinear groups?
 ?
 Where there is no efficiently computable non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
-<!--SR:2022-08-15,39,230-->
+<!--SR:2023-01-02,137,250-->
 
 What is special about Type III bilinear groups?
 ?
@@ -319,7 +319,7 @@ Auxilliary information that the relation generator might output, which will be g
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-08-16,32,210-->
+<!--SR:2022-10-26,69,210-->
 
 What is the definition of $\textbf{Setup}$?
 ?
@@ -394,7 +394,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-08-18,36,210-->
+<!--SR:2022-12-04,108,230-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -484,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-08-16,25,190-->
+<!--SR:2022-10-28,71,210-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -632,7 +632,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-08-15,20,190-->
+<!--SR:2022-10-17,60,210-->
 
 What is the form of our arithmetic constraints?
 ?
@@ -660,7 +660,7 @@ $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$
 In what sense are addition gates handled "for free?"
 ?
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
-<!--SR:2022-08-15,34,230-->
+<!--SR:2022-12-12,116,250-->
 
 ### Formulating QAPs
 
@@ -732,7 +732,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-08-15,29,250-->
+<!--SR:2022-09-04,17,230-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -897,7 +897,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-08-17,6,210-->
+<!--SR:2022-09-08,21,230-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -944,7 +944,7 @@ If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
 What are the degrees and dimensions of a LIP?
 ?
 $d_Q, d_D, \mu, m, n, k, \eta$
-<!--SR:2022-08-18,34,210-->
+<!--SR:2022-11-23,97,230-->
 
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
@@ -1042,7 +1042,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-08-16,7,150-->
+<!--SR:2022-09-07,20,170-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1135,7 +1135,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-08-18,8,210-->
+<!--SR:2022-09-14,27,230-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1176,7 +1176,7 @@ What are the steps involved in Prove for a QAP LIP?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
-<!--SR:2022-08-18,20,250-->
+<!--SR:2022-10-27,70,270-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-08-17,9,210-->
+<!--SR:2022-08-24,6,190-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
