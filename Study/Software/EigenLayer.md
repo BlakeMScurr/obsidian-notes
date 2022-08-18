@@ -17,7 +17,7 @@ Cost of corruption.
 What is the $CoC$ of a DApp without restaking?
 ?
 $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
-<!--SR:2022-08-18,6,250-->
+<!--SR:2022-09-05,18,270-->
 
 What is the $CoC$ of a DApp with restaking?
 ?
@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-08-16,3,230-->
+<!--SR:2022-08-20,2,210-->
 
 What does $T$ denote?
 ?
@@ -46,7 +46,7 @@ The amount of stake held by staker $i$
 What does $S_j$ denote?
 ?
 The set of stakers who have staked for the task $j$.
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-09,22,270-->
 
 What does $\alpha_j$ denote?
 ?
@@ -55,8 +55,8 @@ The fraction of stake require to corrupt task $j$.
 
 What does $U$ denote?
 ?
-A sumset of the validators/restakers $S$.
-<!--SR:2022-08-18,6,250-->
+A subset of the validators/restakers $S$.
+<!--SR:2022-09-09,22,270-->
 
 What does $V$ denote?
 ?
@@ -66,7 +66,7 @@ A subset of the tasks $T$
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-08-18,4,210-->
+<!--SR:2022-08-26,8,210-->
 
 What is $S_j^c$?
 ?
@@ -78,57 +78,57 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:2022-08-17,5,250-->
+<!--SR:2022-09-06,19,270-->
 
 What does $S^c(V)$ denote?
 ?
 The collection of staker sets which are sufficient to corrupt all tasks in the subset $V$.
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-12,25,270-->
 
 What is the definition of $S^c(V)$?
 ?
 $\bigcap_{j \in V} S_j^c$
-<!--SR:2022-08-16,4,250-->
+<!--SR:2022-09-07,20,270-->
 
 What does $c(V)$ denote?
 ?
 The cost of corruption for a subset of tasks $V$.
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-03,16,270-->
 
 How is $c(V)$ defined?
 ?
 $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-02,15,250-->
 
 What does $p_j$ denote?
 ?
 The profit from corruption of task $j$.
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-15,28,290-->
 
 What does $p(V)$ denote?
 ?
 The total profit from corrupting the set of tasks $V$.
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-10,23,270-->
 
 How is $p(V)$ defined?
 ?
 $$\sum_{j \in V} p_j$$
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-13,26,290-->
 
 When is a task $j$ secure? Use natural language.
 ?
 If for all sets of tasks containing $j$, the cost of corruption is higher than the profit from corruption.
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-03,16,250-->
 
 When is a task $j$ secure? Use mathmatical symbols.
 ?
 $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
-<!--SR:2022-08-16,4,250-->
+<!--SR:2022-09-08,21,270-->
 
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
 $c(V) > p(V)$
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-16,29,290-->
 
 What does $T^c(U)$ denote?
 ?
@@ -140,18 +140,18 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-08-17,3,210-->
+<!--SR:2022-08-23,5,210-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-08-17,3,230-->
+<!--SR:2022-08-31,13,250-->
 
 What does $\gamma_{ij}$ denote?
 ?
 The fraction of task $j$s securing stake which is held by staker $i$.
-<!--SR:2022-08-15,4,270-->
+<!--SR:2022-09-10,23,290-->
 
 How is $\gamma_{ij}$ defined?
 ?
@@ -161,7 +161,7 @@ $s_i/\sum_{k \in S_j} s_k$
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-11,24,290-->
 
 ### B.1
 
@@ -170,12 +170,12 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-01,14,250-->
 
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-08-16,5,270-->
+<!--SR:2022-09-11,24,290-->
 
 ### B.1
 
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-08-15,4,250-->
+<!--SR:2022-09-01,14,250-->
 
 
 ??? How do the steps in line (10) work?

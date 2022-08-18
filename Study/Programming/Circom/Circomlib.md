@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-08-17,41,170-->
+<!--SR:2022-09-07,20,150-->
 
 ### binsum
 
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-08-16,42,210-->
+<!--SR:2022-12-30,134,230-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-08-18,48,230-->
+<!--SR:2022-12-08,112,230-->
 
 ## e
 
@@ -353,7 +353,7 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-08-16,17,190-->
+<!--SR:2022-08-27,9,170-->
 
 ### Mux1
 
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-08-18,37,170-->
+<!--SR:2022-10-16,59,170-->
 
 ## p-s
 

@@ -91,7 +91,7 @@ Any set where you can add, subtract, multiply, and divide elements.
 Name a field (basic, but highly relevant to Galois theory)
 ?
 The rational numbers
-<!--SR:2022-08-15,64,250-->
+<!--SR:2023-03-31,225,270-->
 
 What can't you do in a field?
 ?
@@ -128,10 +128,10 @@ What is $Aut\ F$?
 The set of all automorphisms of $F$.
 <!--SR:2022-10-17,103,250-->
 
-What is the additional property of an automorphism fixing $\mathbb{Q}$?
+What is the additional property of an automorphism fixing $\mathbb{Q}$? (As compared to an ordinary automorphism not fixing $\mathbb{Q}$).
 ?
 $\sigma(x) = x,\ \forall x \in \mathbb{Q}$
-<!--SR:2022-08-17,66,250-->
+<!--SR:2022-09-20,33,230-->
 
 What is $Aut\ F/\mathbb{Q}$?
 ?

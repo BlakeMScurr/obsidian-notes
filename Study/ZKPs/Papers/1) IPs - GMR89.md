@@ -368,7 +368,7 @@ None are guaranteed to be able to be constructed. Interactive proof systems don'
 What is QNR, loosely?
 ?
 The quadratic non residue language. The language of non-"squares" mod some large number.
-<!--SR:2022-08-18,82,250-->
+<!--SR:2023-05-20,275,270-->
 
 What is $\mathbb{Z^*_m}$?
 ?
@@ -612,7 +612,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The language accepted by the probabilistic computation.
-<!--SR:2022-08-15,41,190-->
+<!--SR:2022-12-16,120,210-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -771,7 +771,7 @@ They may become significantly more distinguishable.
 Why does feeding $m > 1$ strings to a distinguisher matter for encryption schemes?
 ?
 It can be equivalent to sending multiple messages encrypted by the same key, which may significantly reduce the distinguishability of the ensembles and security of the encryption.
-<!--SR:2022-08-16,80,250-->
+<!--SR:2023-06-02,288,270-->
 ### Knowledge Communication
 #### Knowledge Communication Definition
 * Communications that convey knowledge are those that output an infeasible computation
@@ -846,7 +846,7 @@ To the degree that they are different, some knowledge has leaked.
 How do I extend my analogy for determining knowledge to cover all the knowledge conveyed by a prover?
 ?
 Consider the most malicious student aiming to get whatever lessons he can from the wizard, even by tricking him during the lesson.
-<!--SR:2022-08-17,81,250-->
+<!--SR:2023-05-19,274,270-->
 
 * The imitator M tries to select as string "as undistinguishable as possible" from a computation randomly selected from $(A,B)[\cdot]$.
 	* No information is hidden from M
@@ -1350,7 +1350,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-08-17,29,170-->
+<!--SR:2022-10-27,70,190-->
 
 How does $B$ reveal $D$?
 ?
@@ -1420,7 +1420,7 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 4?
 ?
 $A$ checks the form and size of $X' \cup Y'$. If those are invalid halts and rejects, otherwise, $A$ computes and sends $\mathbb{Q}_m(x)$.
-<!--SR:2022-08-17,62,230-->
+<!--SR:2023-03-11,205,250-->
 
 What is $v$?
 ?
@@ -1449,12 +1449,12 @@ $B$ sends $X' \cup Y'$ to $A$ in a random order.
 What happens in step 5?
 ?
 $B$ checks $v$, halts if it detects cheating, updates $iteration$, accepts if finished, or starts again at step 1.
-<!--SR:2022-08-16,60,230-->
+<!--SR:2023-03-08,202,250-->
 
 How does $B$ check $v$?
 ?
 $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
-<!--SR:2022-08-16,63,230-->
+<!--SR:2023-03-17,211,250-->
 
 When does $B$ accept?
 ?
@@ -1556,7 +1556,7 @@ Show that chance is less than the bound given by GMR.
 Based on what condition might we halt given honest $A$ and $B$?
 ?
 If $|X' \cup Y'| \leq n/3$
-<!--SR:2022-08-18,64,250-->
+<!--SR:2023-03-20,214,270-->
 
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?

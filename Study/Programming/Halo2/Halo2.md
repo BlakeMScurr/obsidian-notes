@@ -61,7 +61,7 @@ Multivariate polynomails over F.
 What must the constraints evaluate to?
 ?
 Zero *for each row*.
-<!--SR:2022-08-15,12,230-->
+<!--SR:2022-10-08,51,250-->
 
 What do the variables in a polynomial constraint refer to?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-15,1,130-->
+<!--SR:2022-08-21,3,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-08-15,2,130-->
+<!--SR:2022-08-19,1,130-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -93,7 +93,7 @@ The proving key and the verification key.
 What is a selector?
 ?
 A value defined in a fixed column that allows polynomial constraints to be turned on or off.
-<!--SR:2022-08-17,18,270-->
+<!--SR:2022-10-26,69,290-->
 
 How, roughly are gates implemented?
 ?
