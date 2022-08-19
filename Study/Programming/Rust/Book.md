@@ -34,7 +34,138 @@ How do you locally access the rust documentation?
 ?
 `rustup docs`
 
+How do you manually format a rust file, say `main.rs`?
+?
+`rustfmt main.rs`
+
 # Guessing Game
+
+How do you bring the input/output library into scope?
+?
+`use std::io;`
+
+What is the identifier for the standard library?
+?
+`std`
+
+What is the identifier for the input/output library?
+?
+`io`
+
+What is the keyword used to bring libraries into scope?
+?
+`use`
+
+What is the prelude?
+?
+A set of items defined in the standard library that is brought into scope by default into every program.
+
+How do you define the entrypoint for a rust program?
+?
+`fn main () {}`
+
+How do you print a string, say, `"hello"` to stdout?
+?
+`println!("hello");`
+
+Are variables mutable or immutable by default?
+?
+Immutable
+
+How do you create a new immutable variable `a` set to `5`?
+?
+`let a = 5;`
+
+What keyword is used to create variables?
+?
+`let`
+
+How do you create a new mutable variable `b` and set it to `5`?
+?
+`let mut b = 5;`
+
+What is `String`?
+?
+A type from the standard library that is a growable, UTF-8 encoded piece of text.
+
+What is `String::new`?
+?
+A function that returns a new instance of `String`.
+
+What does the `::` syntax on `String::new` indicate?
+?
+That `new` is an associated function of the string type.
+
+What is an associated function?
+?
+A function that's implemented on a type.
+
+What does `let mut guess = String::new()` do, exactly?
+?
+Creates a mutable variable called guess and binds it to a new, empty instance of the type `String`.
+
+What does `io::stdin()` return?
+?
+An instance of `std::io::Stdin`, which is a type that represents a handle to the standard input to the terminal.
+
+What is `read_line`?
+?
+A method on the standard input handle to get input from the user.
+
+How would get the user's input into a string called `guess`?
+?
+```
+io:stdin()
+	.read_line(&mut guess)
+```
+
+What is a `Result`?
+?
+An enum type that is either `Ok` or `Err`.
+
+What does the `expect`  method on the `Result` type do?
+?
+Crash the program with the provided message if the `Result` is an `Err` value.
+Return the appropriate value if the `Result` is an `Ok` value.
+<!--SR:2022-08-24,5,270-->
+
+How can you use placeholders to print the value "x is 5", where the varialbe `x` has the value `5`?
+?
+`println!("x is {x}");`
+
+How can you use multiple placeholders to print the values of `x` and `y`?
+?
+`println!("x = {}, y = {}", x, y);`
+<!--SR:2022-08-23,4,270-->
+
+How do you get access to random numbers in Rust?
+?
+Using the `rand` crate.
+
+What two kinds of crates are there and how are they different?
+?
+Library and binary.
+Library crates can't be run but they can be included in other programs.
+Binary crates are executables.
+
+Where are dependency crates defined?
+?
+`Cargo.toml`
+
+How do you create a random number between 1 and 100 (inclusive)?
+?
+```
+use rand::Rng;
+rand::thread_rng().gen_range(1..=100);
+```
+
+What keyword do we use to get an infinite loop?
+?
+`loop {}`
+
+What keyword do we use to break out of an infinite loop?
+?
+`break`
 
 
 
