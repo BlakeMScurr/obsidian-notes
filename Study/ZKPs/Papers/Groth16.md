@@ -151,7 +151,7 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-08-22,39,230-->
+<!--SR:2022-12-21,121,250-->
 
 ??? Wait, is this right? It appears to only mean that they approach each other polynomially.
 
@@ -193,7 +193,7 @@ We pick $y$ uniformly at random from set $S$.
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
-<!--SR:2022-08-22,39,230-->
+<!--SR:2022-12-27,127,250-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -441,7 +441,7 @@ What is the definition of computational soundness?
 ?
 Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
 $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \phi \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-08-22,41,230-->
+<!--SR:2023-01-04,135,250-->
 
 What does the adversary represent in the definition of computational soundness?
 ?
@@ -588,7 +588,7 @@ Since those results rely on specific auxiliary input distributions, we can assum
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-08-21,26,210-->
+<!--SR:2022-11-11,81,230-->
 
 What represents the statement in our arithmetic circuit?
 ?
@@ -756,7 +756,7 @@ What is the definition of $\mathscr{l}$?
 $1 \leq \mathscr{l} \leq m$
 <!--SR:2022-09-03,30,210-->
 
-How do $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
+How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
 <!--SR:2022-08-21,39,230-->
@@ -934,7 +934,7 @@ An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
 What arguments is $t$ passed?
 ?
 $(\sigma, \pi)$
-<!--SR:2022-08-21,12,170-->
+<!--SR:2022-09-25,34,190-->
 
 When does Vfy accept in a LIP?
 ?

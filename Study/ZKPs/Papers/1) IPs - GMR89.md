@@ -423,7 +423,7 @@ If heads, B forms $t_i = r_i^2\ mod\ n$
 What does A do in the basic QNR IP?
 ?
 Calculates B's coin flips by deciding quadratic residues, and sending those flips back to B.
-<!--SR:2022-08-21,84,250-->
+<!--SR:2023-06-16,298,270-->
 
 ##### Properties
 
@@ -627,7 +627,7 @@ The distribution of outputs on $x$
 What is an I-c-ensemble's $c$ through a computational lens?
 ?
 The highest power (probably +1) in the polynomial restricting the output size, so that all possible outputs are represented in the ensemble.
-<!--SR:2022-08-22,81,230-->
+<!--SR:2023-05-12,263,250-->
 
 How do we define an I-c-ensembles's $I$?
 ?
@@ -827,7 +827,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-08-22,26,150-->
+<!--SR:2022-10-18,57,170-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -919,7 +919,7 @@ More than Zero if $QNR \notin PP$, namely the residuosity of each $t_i$
 How does B' work in naive QNR?
 ?
 B' is an adversarial verifier trying to learn additional knowledge. B' can learn the unknown residuosity of some $t_i$ by sending it to A.
-<!--SR:2022-08-22,85,250-->
+<!--SR:2022-10-07,46,230-->
 ### Knowledge Complexity
 #### Knowledge conveyed by a Theorem Proof
 
@@ -1005,7 +1005,7 @@ That $x \in L$, but the text is of no other use, and could in fact the text coul
 For GMR, what is the theoretical application for knowledge complexity and why?
 ?
 Classifying languages. Languages, or equivalently, theorem proving procedures are intended to communicate knowledge, and are naturally classed by their knowledge complexity, for GMR.
-<!--SR:2022-08-22,56,210-->
+<!--SR:2023-02-02,164,230-->
 
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
@@ -1307,7 +1307,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-08-21,35,150-->
+<!--SR:2022-10-14,53,150-->
 
 How large is $Z$?
 ?
@@ -1430,7 +1430,7 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-08-22,35,210--> 
+<!--SR:2022-12-05,105,230--> 
 
 What form should the values in $X' \cup Y'$  be?
 ?

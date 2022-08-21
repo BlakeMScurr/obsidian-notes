@@ -46,7 +46,7 @@ A column whose values are fixed by the circuit.
 What is an advice column?
 ?
 A column that corresponds to witness values.
-<!--SR:2022-08-21,17,230-->
+<!--SR:2022-10-19,58,250-->
 
 What is an instance column?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-08-21,3,130-->
+<!--SR:2022-08-28,6,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-08-22,2,150-->
+<!--SR:2022-08-27,5,170-->
 
 What keys do we genererate from the circuit description?
 ?

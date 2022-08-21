@@ -173,7 +173,7 @@ template BinSum(n, ops) {
 What is binsub?
 ?
 Creates a constraint specifying that A - B = C for A, B, C binary numbers
-<!--SR:2022-08-21,54,250-->
+<!--SR:2023-02-23,185,270-->
 
 ### compconstant
 

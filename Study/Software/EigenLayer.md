@@ -36,7 +36,7 @@ The set of all stakers.
 What does $T$ denote?
 ?
 The set of all tasks secured by eigenlayer.
-<!--SR:2022-08-21,8,250-->
+<!--SR:2022-09-12,21,250-->
 
 What does $s_i$ denote?
 ?
@@ -156,7 +156,7 @@ The fraction of task $j$s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-08-22,8,250-->
+<!--SR:2022-09-11,20,250-->
 
 What does $T_i$ denote?
 ?

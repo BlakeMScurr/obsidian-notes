@@ -306,7 +306,7 @@ An arithmetic circuit.
 What does a component consist of?
 ?
 $N$ input signals, $M$ output signals, and $K$ intermediate signals.
-<!--SR:2022-08-21,61,250-->
+<!--SR:2023-03-19,209,270-->
 
 What can a component produce?
 ?

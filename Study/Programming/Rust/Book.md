@@ -10,17 +10,17 @@ What is the rust file extension?
 How do you compile a rust program, say `main.rs`?
 ?
 `rustc main.rs`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-09-04,13,290-->
 
 How do you create a new cargo project, called, say `hello_world`?
 ?
 `cargo new hello_world`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-09-03,12,290-->
 
 How do you run a cargo project?
 ?
 `cargo run`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-08-31,9,290-->
 
 How do you compile a cargo project?
 ?
@@ -30,7 +30,7 @@ How do you compile a cargo project?
 What does `cargo check` do?
 ?
 It checks that the cargo project still compiles without producing an executable.
-<!--SR:2022-08-21,2,250-->
+<!--SR:2022-09-03,12,270-->
 
 How do you build a cargo project ready for release?
 ?
@@ -40,7 +40,7 @@ How do you build a cargo project ready for release?
 How do you locally access the rust documentation?
 ?
 `rustup docs`
-<!--SR:2022-08-21,2,250-->
+<!--SR:2022-09-02,11,270-->
 
 How do you manually format a rust file, say `main.rs`?
 ?
@@ -57,7 +57,7 @@ How do you bring the input/output library into scope?
 What is the identifier for the standard library?
 ?
 `std`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-08-31,9,290-->
 
 What is the identifier for the input/output library?
 ?
@@ -67,12 +67,12 @@ What is the identifier for the input/output library?
 What is the keyword used to bring libraries into scope?
 ?
 `use`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-09-04,13,290-->
 
 What is the prelude?
 ?
 A set of items defined in the standard library that is brought into scope by default into every program.
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-08-29,7,270-->
 
 How do you define the entrypoint for a rust program?
 ?
@@ -92,7 +92,7 @@ Immutable
 How do you create a new immutable variable `a` set to `5`?
 ?
 `let a = 5;`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-09-01,10,290-->
 
 What keyword is used to create variables?
 ?
@@ -107,7 +107,7 @@ How do you create a new mutable variable `b` and set it to `5`?
 What is `String`?
 ?
 A type from the standard library that is a growable, UTF-8 encoded piece of text.
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-08-25,3,250-->
 
 What is `String: :new`?
 ?
@@ -131,8 +131,8 @@ Creates a mutable variable called guess and binds it to a new, empty instance of
 
 What does `io: :stdin()` return?
 ?
-An instance of `std::io::Stdin`, which is a type that represents a handle to the standard input to the terminal.
-<!--SR:2022-08-22,3,250-->
+An instance of `std: :io: :Stdin`, which is a type that represents a handle to the standard input to the terminal.
+<!--SR:2022-08-30,8,250-->
 
 What is `read_line`?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-08-21,2,250-->
+<!--SR:2022-08-23,1,230-->
 
 What is a `Result`?
 ?
@@ -183,7 +183,7 @@ Binary crates are executables.
 Where are dependency crates defined?
 ?
 `Cargo.toml`
-<!--SR:2022-08-22,3,270-->
+<!--SR:2022-09-02,11,290-->
 
 How do you create a random number between 1 and 100 (inclusive)?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-21,1,210-->
+<!--SR:2022-08-23,1,190-->
 
 What keyword do we use to get an infinite loop?
 ?
