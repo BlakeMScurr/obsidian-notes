@@ -117,12 +117,12 @@ A function that returns a new instance of `String`.
 What does the `: :` syntax on `String: :new` indicate?
 ?
 That `new` is an associated function of the string type.
-<!--SR:2022-08-20,1,230-->
+<!--SR:2022-08-23,3,250-->
 
 What is an associated function?
 ?
 A function that's implemented on a type, but doesn't have access to a specific instance like a method.
-<!--SR:2022-08-20,1,230-->
+<!--SR:2022-08-24,4,250-->
 
 What does `let mut guess = String: :new()` do, exactly?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-20,1,230-->
+<!--SR:2022-08-21,1,210-->
 
 What keyword do we use to get an infinite loop?
 ?

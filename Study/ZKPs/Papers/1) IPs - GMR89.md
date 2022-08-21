@@ -909,7 +909,7 @@ How does M simulate (A,B) in naive QNR?
 ?
 M can simply simulate B since B is polynomial.
 M can simulate A by just looking at B's coin tosses directly, since B knows the residuosity of each number.
-<!--SR:2022-08-20,83,250-->
+<!--SR:2023-06-07,291,270-->
 
 How much information does A communicate in naive QNR?
 ?
@@ -983,7 +983,7 @@ What is the verifier left with at the end of an interactive proof?
 ?
 The knowledge that $x \in L$.
 The text of the computation with the prover, containing no more than $f(n)$ extra knowledge, no matter how cleverly and maliciousy the verifier operates
-<!--SR:2022-08-20,65,210-->
+<!--SR:2023-02-22,186,230-->
 
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?

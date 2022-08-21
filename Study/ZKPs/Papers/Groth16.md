@@ -655,7 +655,7 @@ $a_i \cdot a_j = a_k$, i.e, and equation where $u_i = v_j = w_k = 1$ and the rem
 How can an addition gate be described as a constraint?
 ?
 $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$ by definition.
-<!--SR:2022-08-20,39,230-->
+<!--SR:2022-12-25,127,250-->
 
 In what sense are addition gates handled "for free?"
 ?
@@ -710,14 +710,14 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-08-20,6,150-->
+<!--SR:2022-09-02,13,170-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-08-20,37,210-->
+<!--SR:2022-12-13,115,230-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -990,7 +990,7 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:2022-08-20,16,210-->
+<!--SR:2022-10-09,50,230-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
@@ -1047,7 +1047,7 @@ With multi-exponentiations of group elements, corresponding to linear operations
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-08-20,33,190-->
+<!--SR:2022-10-22,63,190-->
 
 What are pairing product equations?
 ?
@@ -1169,7 +1169,7 @@ x^it(x)
 What is the function signature of Prove for a QAPLIP?
 ?
 $\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
-<!--SR:2022-08-20,26,230-->
+<!--SR:2022-11-16,88,250-->
 
 What are the steps involved in Prove for a QAP LIP?
 ?
@@ -1228,7 +1228,7 @@ A quadratic multi-variate polynomial.
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
-<!--SR:2022-08-20,12,230-->
+<!--SR:2022-09-29,40,250-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

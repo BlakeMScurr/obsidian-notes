@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-08-20,40,170-->
+<!--SR:2022-10-23,64,170-->
 
 Where can operators be used?
 ?
@@ -584,7 +584,7 @@ Boolean AND operator.
 What is `||`?
 ?
 Boolean OR operator.
-<!--SR:2022-08-20,58,250-->
+<!--SR:2023-03-04,196,270-->
 
 What is `!`?
 ?

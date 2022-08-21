@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-08-20,2,210-->
+<!--SR:2022-08-26,6,230-->
 
 What does $T$ denote?
 ?
@@ -71,7 +71,7 @@ $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share 
 What is $S_j^c$?
 ?
 The collection of staker sets sufficient to corrupt $j$.
-<!--SR:2022-08-20,7,250-->
+<!--SR:2022-09-16,27,270-->
 
 How do we define $S_j^c$?
 ?
