@@ -759,7 +759,7 @@ $1 \leq \mathscr{l} \leq m$
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-08-21,39,230-->
+<!--SR:2022-12-30,130,250-->
 
 What is the setbuilder notation for a quadratic arithmetic program as a relation?
 ?
@@ -1101,7 +1101,7 @@ Set $\boldsymbol{\sigma}$
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:2022-08-22,17,230-->
+<!--SR:2022-10-16,55,250-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-08-22,12,190-->
+<!--SR:2022-09-17,26,190-->
 
 ##### Prove
 
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-08-22,3,130-->
+<!--SR:2022-08-26,4,130-->
 
 ##### Vfy
 

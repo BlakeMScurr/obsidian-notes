@@ -63,7 +63,7 @@ An interactive proof system that doesn't rely on the one way function assumption
 What is FRS88's title?
 ?
 On the power of multi-prover interactive protocols
-<!--SR:2022-08-21,78,210-->
+<!--SR:2023-04-15,236,230-->
 
 Who are the authors of FRS88?
 ?
@@ -219,7 +219,7 @@ Given commitments to matrices, gives a sublinear proof showing their product. Ar
 Who are the authors of Groth16?
 ?
 Jens Groth
-<!--SR:2022-08-22,68,250-->
+<!--SR:2023-04-18,239,270-->
 
 What is the title of Groth16?
 ?
@@ -268,7 +268,7 @@ Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured
 What did MBKM19 contribute?
 ?
 A zk_SNARK with a universal updatable CRS that scales linearly with respect to the supported circuits. GKMMM18's CRS, the previous state of the art, scaled quadratically.
-<!--SR:2022-08-21,38,230-->
+<!--SR:2022-11-19,89,230-->
 
 What is MBKM19 otherwise known as?
 ?
@@ -304,7 +304,7 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
-<!--SR:2022-08-21,39,230-->
+<!--SR:2022-12-26,126,250-->
 
 What is the title of BGM19?
 ?
