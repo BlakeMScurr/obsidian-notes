@@ -5,7 +5,7 @@
 What is the rust file extension?
 ?
 `.rs`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-04,12,270-->
 
 How do you compile a rust program, say `main.rs`?
 ?
@@ -35,7 +35,7 @@ It checks that the cargo project still compiles without producing an executable.
 How do you build a cargo project ready for release?
 ?
 `cargo build --release`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-05,13,270-->
 
 How do you locally access the rust documentation?
 ?
@@ -62,7 +62,7 @@ What is the identifier for the standard library?
 What is the identifier for the input/output library?
 ?
 `io`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-03,11,270-->
 
 What is the keyword used to bring libraries into scope?
 ?
@@ -77,17 +77,17 @@ A set of items defined in the standard library that is brought into scope by def
 How do you define the entrypoint for a rust program?
 ?
 `fn main () {}`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-02,10,270-->
 
 How do you print a string, say, `"hello"` to stdout?
 ?
 `println!("hello");`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-06,14,290-->
 
 Are variables mutable or immutable by default?
 ?
 Immutable
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-05,13,270-->
 
 How do you create a new immutable variable `a` set to `5`?
 ?
@@ -102,7 +102,7 @@ What keyword is used to create variables?
 How do you create a new mutable variable `b` and set it to `5`?
 ?
 `let mut b = 5;`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-05,13,270-->
 
 What is `String`?
 ?
@@ -117,7 +117,7 @@ A function that returns a new instance of `String`.
 What does the `: :` syntax on `String: :new` indicate?
 ?
 That `new` is an associated function of the string type.
-<!--SR:2022-08-23,3,250-->
+<!--SR:2022-09-03,11,270-->
 
 What is an associated function?
 ?
@@ -137,7 +137,7 @@ An instance of `std: :io: :Stdin`, which is a type that represents a handle to t
 What is `read_line`?
 ?
 A method on the standard input handle to get input from the user.
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-07,15,290-->
 
 How do you get the user's input into a string called `guess`?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-08-23,1,230-->
+<!--SR:2022-08-27,4,250-->
 
 What is a `Result`?
 ?
@@ -166,7 +166,7 @@ How can you use placeholders to print the value "x is 5", where the varialbe `x`
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
 `println!("x = {}, y = {}", x, y);`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-04,12,270-->
 
 How do you get access to random numbers in Rust?
 ?
@@ -178,7 +178,7 @@ What two kinds of crates are there and how are they different?
 Library and binary.
 Library crates can't be run but they can be included in other programs.
 Binary crates are executables.
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-05,13,270-->
 
 Where are dependency crates defined?
 ?
@@ -191,17 +191,17 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-23,1,190-->
+<!--SR:2022-08-24,1,170-->
 
 What keyword do we use to get an infinite loop?
 ?
 `loop {}`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-01,9,270-->
 
 What keyword do we use to break out of an infinite loop?
 ?
 `break`
-<!--SR:2022-08-23,4,270-->
+<!--SR:2022-09-01,9,270-->
 
 
 # Common Concepts
@@ -219,6 +219,7 @@ fn main() {
 ```
 ?
 cannot assign twice to immutable variable `x`
+<!--SR:2022-08-27,4,250-->
 
 Why is it useful to create immutable variables in Rust?
 ?
@@ -227,6 +228,7 @@ You might write code that assumes that a variable doesn't change. One part of th
 When are constants evalutated?
 ?
 Compile time.
+<!--SR:2022-08-25,2,250-->
 
 What do constants require that variables don't?
 ?
@@ -329,6 +331,7 @@ $0$ to $2^{n-1}$
 What does the `_` mean in a number literal?
 ?
 It's a visual separator to make it easier to read. I.e., `1_000_000`.
+<!--SR:2022-08-28,5,270-->
 
 What is the visual separator character for number literals?
 ?
@@ -357,6 +360,7 @@ Because compiling in debug mode panics, whereas the overflow actually occurs whe
 What do we use to explicitly handle overflowing?
 ?
 Using methods from the standard library that handle the overflow differently than standard arithmetic operators, i.e., `wrapping_add` rather than `+`
+<!--SR:2022-08-28,5,270-->
 
 What does `wrapping_*` do?
 ?
@@ -365,6 +369,7 @@ Wraps in all modes, (including debug).
 What does `checked_*` do?
 ?
 Returns the `None` value if there is overflow.
+<!--SR:2022-08-24,1,230-->
 
 What does `overflowing_*` do?
 ?
@@ -373,6 +378,7 @@ Return the value and a boolean indicating whether there was overflow.
 What does `saturating_*` do?
 ?
 Saturates at the value's maximum or minimum values.
+<!--SR:2022-08-26,3,250-->
 
 ### Floating-point
 
@@ -493,3 +499,22 @@ What happens if you provide an invalid array access?
 Panic at runtime (or compile time if it's compile time detectable).
 ## Functions
 
+What is the conventional case for writing variables and functions?
+?
+snake_case
+
+What's the keyword for creating functions?
+?
+`fn`
+
+Can you call a function that is defined later in a scope?
+?
+Yes.
+
+What is the difference between a parameter and argument?
+?
+A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
+
+How could you define a function that takes a `i32` parameter called `x`?
+?
+`fn foo(x: i32) {}`
