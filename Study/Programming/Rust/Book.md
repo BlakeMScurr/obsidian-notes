@@ -224,6 +224,7 @@ cannot assign twice to immutable variable `x`
 Why is it useful to create immutable variables in Rust?
 ?
 You might write code that assumes that a variable doesn't change. One part of the code may assume that the variable will never change, and if it does change that will introduce a bug. So it's useful to have the compiler ensure that doesn't happen.
+<!--SR:2022-08-28,5,270-->
 
 When are constants evalutated?
 ?
@@ -233,19 +234,25 @@ Compile time.
 What do constants require that variables don't?
 ?
 A type annotation.
+<!--SR:2022-08-27,4,250-->
+
+??? Why?
 
 Can constants be mutable?
 ?
 No
+<!--SR:2022-08-27,4,250-->
 
 What is shadowing?
 ?
 When a new variable is declared with the same name as an old one.
+<!--SR:2022-08-25,2,250-->
 
 How is shadowing with mutable variables different to having mutable varialbes?
 ?
 The variables are still immutable after the shadowing has been done.
 With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
+<!--SR:2022-08-25,2,250-->
 
 How do you shadow a variable?
 ?
@@ -254,6 +261,7 @@ By reusing the `let` keyword.
 let x = 5;
 let x = 3;
 ```
+<!--SR:2022-08-25,2,250-->
 
 What is the output of the following program?
 ```
@@ -270,6 +278,7 @@ fn main() {
 ?
 12
 6
+<!--SR:2022-08-27,4,250-->
 
 What is wrong with the following code?
 ```
@@ -281,6 +290,7 @@ fn main() {
 ```
 ?
 You can't mutable the type of a variable.
+<!--SR:2022-08-26,3,250-->
 
 ## Data Types
 
@@ -291,10 +301,12 @@ What is wrong with the following code?
 ?
 There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
 `let guess: u32 = "42".parse().expect("Not a number!");`
+<!--SR:2022-08-27,4,250-->
 
 What is a scalar type?
 ?
 A type that represents a single value.
+<!--SR:2022-08-24,1,230-->
 
 What are the main scalar types?
 ?
@@ -302,31 +314,38 @@ Integers
 Floating point numbers
 Booleans
 Characters
+<!--SR:2022-08-27,4,250-->
 
 What are the different bit sizes available for integers in rust?
 ?
 8, 16, 32, 64, 128, arch
+<!--SR:2022-08-25,2,250-->
 
 What is the type annotation for an unsigned arch sized integer?
 ?
 `usize`
+<!--SR:2022-08-25,2,250-->
 
 What are the prefixes to represent signed an unsigned integers?
 ?
 `u` for unsigned
 `i` for signed
+<!--SR:2022-08-26,3,250-->
 
 How are signed integers represented?
 ?
 Using two's complement representation.
+<!--SR:2022-08-25,2,250-->
 
 What range of values can a signed integer store?
 ?
 $-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
+<!--SR:2022-08-28,5,270-->
 
 What range of values can an unsigned integer store?
 ?
-$0$ to $2^{n-1}$
+$0$ to $2^n-1$
+<!--SR:2022-08-25,2,250-->
 
 What does the `_` mean in a number literal?
 ?
@@ -336,35 +355,47 @@ It's a visual separator to make it easier to read. I.e., `1_000_000`.
 What is the visual separator character for number literals?
 ?
 `_`
+<!--SR:2022-08-27,4,250-->
 
 What is the prefix for hex number literals?
 ?
 `0x`
+<!--SR:2022-08-27,4,250-->
 
 What is the prefix for octal number literals?
 ?
-`0x`
+`0o`
+<!--SR:2022-08-26,3,250-->
 
 What is the prefix for binary number literals?
 ?
 `0b`
+<!--SR:2022-08-24,1,230-->
 
 What is the syntax for byte number literals?
 ?
 `b'A'`, where `A` represents an 8bit integer.
+<!--SR:2022-08-25,2,250-->
 
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
 Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
+<!--SR:2022-08-27,4,250-->
 
 What do we use to explicitly handle overflowing?
 ?
 Using methods from the standard library that handle the overflow differently than standard arithmetic operators, i.e., `wrapping_add` rather than `+`
 <!--SR:2022-08-28,5,270-->
 
+What are the different method prefixes for handling overflow explicitly?
+?
+`wrapping`, `checked`, `overflowing`, `saturating`.
+<!--SR:2022-08-24,1,230-->
+
 What does `wrapping_*` do?
 ?
 Wraps in all modes, (including debug).
+<!--SR:2022-08-26,3,250-->
 
 What does `checked_*` do?
 ?
@@ -374,6 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
+<!--SR:2022-08-24,1,230-->
 
 What does `saturating_*` do?
 ?
@@ -382,106 +414,128 @@ Saturates at the value's maximum or minimum values.
 
 ### Floating-point
 
-What are the floating-point types?
+What are the kinds of floating-point types?
 ?
 `f32` and `f64`
+<!--SR:2022-08-28,5,270-->
 
 What is the default floating-point type and why?
 ?
 `f64`, because it's roughly as fast as `f32` on modern CPUs, and allows more precision.
+<!--SR:2022-08-28,5,270-->
 
 What standard are floats implemented according to?
 ?
 IEEE-754
+<!--SR:2022-08-25,2,250-->
 
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
 1, because integer division rounds down to the nearest integer.
+<!--SR:2022-08-25,2,250-->
 
 ### Boolean
 
 How do we write the boolean literals?
 ?
 `true` and `false`
+<!--SR:2022-08-27,4,250-->
 
 ### Characters
 
 How many bytes is a `char`?
 ?
 4
+<!--SR:2022-08-25,2,250-->
 
 How do we declare a `char`?
 ?
 With single quotes, i.e.;
 `let c = 'z';`
+<!--SR:2022-08-26,3,250-->
 
 What standard does a char represent?
 ?
 A Unicode Scalar Value
+<!--SR:2022-08-24,1,230-->
 
 ### Compound Types
 
 What are the primitive compound types?
 ?
 Arrays and tuples.
+<!--SR:2022-08-26,3,250-->
 
 #### Tuples
 
 Do tuples have a fixed or variable length?
 ?
 Fixed.
+<!--SR:2022-08-26,3,250-->
 
 Are type annotations required for tuples?
 ?
 No.
+<!--SR:2022-08-26,3,250-->
 
 How do you declare a tuple? (give type annotations).
 ?
 `let tup: (i32, f64, u8) = (500, 6.4, 1);`
+<!--SR:2022-08-28,5,270-->
 
 How do you destructure a tuple?
 ?
 Using pattern matching, i.e.:
 `let (x, y, z) = tup;`
+<!--SR:2022-08-25,2,250-->
 
 How do we directly access a tuple element?
 ?
 Dot notation, i.e.,:
 `tup.0`
+<!--SR:2022-08-26,3,250-->
 
 What is the name for the  tuple without values?
 ?
 The unit
+<!--SR:2022-08-25,2,250-->
 
 How do you write the unit and its type?
 ?
 Both as `()`
+<!--SR:2022-08-26,3,250-->
 
 What do expressions implicitly return if they don't return any other value?
 ?
 The unit, i.e., the empty tuple `()`
+<!--SR:2022-08-27,4,250-->
 
 #### Arrays
 
 Do arrays have fixed or variable lengths?
 ?
 Fixed.
+<!--SR:2022-08-26,3,250-->
 
 Can the elements in an array have different types from one another?
 ?
 No.
+<!--SR:2022-08-26,3,250-->
 
 How do you declare an array?
 ?
 `let a = [1,2,3,4];`
+<!--SR:2022-08-27,4,250-->
 
 Are arrays stored on the stack or the heap?
 ?
 Stack.
+<!--SR:2022-08-25,2,250-->
 
 What is the more flexible type similar to an array?
 ?
 Vector.
+<!--SR:2022-08-27,4,250-->
 
 How do you write an array's type?
 ?
@@ -489,32 +543,196 @@ Square brackets and a semicolon, i.e., an array of 5 `i32`s:
 ````rust
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 ````
+<!--SR:2022-08-27,4,250-->
 
-How do you write an array filled with the same value?
+How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
 `let a = [3;5]` will make `[3,3,3,3,3]`
+<!--SR:2022-08-26,3,250-->
 
 What happens if you provide an invalid array access?
 ?
 Panic at runtime (or compile time if it's compile time detectable).
+<!--SR:2022-08-25,2,250-->
+
 ## Functions
+
 
 What is the conventional case for writing variables and functions?
 ?
 snake_case
+<!--SR:2022-08-26,3,250-->
 
 What's the keyword for creating functions?
 ?
 `fn`
+<!--SR:2022-08-27,4,250-->
 
 Can you call a function that is defined later in a scope?
 ?
 Yes.
+<!--SR:2022-08-26,3,250-->
 
 What is the difference between a parameter and argument?
 ?
 A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
+<!--SR:2022-08-27,4,250-->
 
 How could you define a function that takes a `i32` parameter called `x`?
 ?
 `fn foo(x: i32) {}`
+<!--SR:2022-08-24,1,230-->
+
+Do you have to put type annotations on function parameters? Why?
+?
+Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
+
+What is the difference between a statement and an expression?
+?
+_Statements_ are instructions that perform some action and do not return a value.
+_Expressions_ evaluate to a resulting value.
+
+Does `let` create an expression or a statement?
+?
+Statement.
+
+Are function definitions expressions or statements?
+?
+Statements.
+
+What is wrong with the following code?
+```
+fn main() { 
+	let x = (let y = 6); 
+}
+```
+?
+It expects a statement to evaluate to a value.
+
+What does the following code print?
+```
+fn main() {
+	let y = {
+		let x = 3;
+		x + 1
+	};
+	println!("The value of y is: {y}");
+}
+```
+?
+4
+
+What is the syntactic difference between statements and expressions?
+?
+Statements end in a semicolon, and expressions do not.
+
+How do you make scopes created with curly brackets into expressions?
+?
+By ending them in an expression, which the whole scope evaluates to.
+
+How do you write a function that returns an `i32`?
+?
+`fn foo () -> i32 {}`
+
+Do you have to declare the return type of a function?
+?
+Yes.
+
+How do you return a value from a function?
+?
+By ending the function's block with an expression of that value, or using the `return` keyword earlier.
+
+What character creates comments?
+?
+`//`
+
+How do you do multiline comments?
+?
+`//` on each line
+
+## Control Flow
+### If
+
+Do `if` expressions require brackets for the condition?
+?
+No.
+
+What is wrong with the following code?
+```
+fn main() { 
+	let number = 3; 
+	if number { 
+		println!("number was three"); 
+	} 
+}
+```
+?
+We need a bool in the if's condition, whereas we have an int.
+
+Does rust convert non boolean types by default?
+?
+No.
+
+Does rust have a ternary operator? Why?
+?
+No, because if/else expressions do the same thing with (arguably) clearer syntax.
+
+### Loops
+
+#### Loop
+
+How do you return a value from a `loop`?
+?
+By passing a value to the `break` statement, i.e.:
+`break x + 2;`
+
+What is a loop label for?
+?
+Disambiguating between multiple loops, so you can break from the correct one.
+
+What is the syntax for creating and using a loop label?
+?
+Start with a single backtick.
+Declare before the `loop` keyword with a colon.
+```
+'counting_up: loop {
+	...
+	break 'counting_up;
+```
+
+What is a `while` loop for?
+?
+Looping while a condition is true, which saves code compared to implementing the same behaviour using `loop`, `if/else`, and `break`
+
+Can you use labels and breaks with a `while` loop?
+?
+Yes.
+
+Can `while` loops return a value?
+?
+No.
+
+What does a `for` loop do?
+?
+Loops over a collection with simpler syntax than the equivalent `while` loop (which has to keep track of an index, and concern itself with index out of bounds errors).
+
+How do you write a `for` loop? Say, over an array literal `[1,2,3]`, printing each value.
+?
+```
+for x in [1,2,3] {
+	println!("{x}");
+}
+```
+
+How do you make a range from 1 to 4?
+?
+`1..4`
+
+How do you make a range from 4 down to 1?
+?
+`(1..4).rev()`
+
+Can we shorten `+= 1` with `++`? Why?
+?
+No.
+Because it can be understood to return a value, which can lead to subtle bugs.

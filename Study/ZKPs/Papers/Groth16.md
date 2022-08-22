@@ -278,7 +278,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-08-23,40,230-->
+<!--SR:2022-11-20,89,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-08-23,12,210-->
+<!--SR:2022-09-18,26,210-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 

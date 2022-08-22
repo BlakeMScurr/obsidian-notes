@@ -140,7 +140,7 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-08-23,5,210-->
+<!--SR:2022-09-03,11,210-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?

@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-08-23,34,130-->
+<!--SR:2022-09-10,18,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-08-23,19,170-->
+<!--SR:2022-08-31,8,150-->
 
 Who are the authors of GOS06?
 ?
@@ -229,7 +229,7 @@ On the Size of Pairing-Based Non-interactive Arguments
 What did Groth16 contribute?
 ?
 Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2 group elements in the symmetric group setting
-<!--SR:2022-08-23,57,210-->
+<!--SR:2022-12-15,114,210-->
 
 ## Universal Updatable Snarks
 
@@ -238,7 +238,7 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
-<!--SR:2022-08-23,39,230-->
+<!--SR:2022-11-21,90,230-->
 
 What is the title of GKMMM18?
 ?
@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-08-23,27,210-->
+<!--SR:2022-10-19,57,210-->
 
 What did MBKM19 contribute?
 ?

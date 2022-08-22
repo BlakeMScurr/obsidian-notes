@@ -195,7 +195,7 @@ A classroom lesson has a *teacher* and *student* in *conversation* about a *prop
 What does ITM stand for?
 ?
 An Interactive Turing Machine.
-<!--SR:2022-08-23,85,250-->
+<!--SR:2023-03-24,213,250-->
 
 What does an ITM model?
 ?
@@ -551,7 +551,7 @@ The Model Centric Framework is a formalisation for knowledge and communication.
 What worldview does MCF capture?
 ?
 The scientific/empricial worldview that it's hard to learn facts about reality, and that we communicate testimony about those facts.
-<!--SR:2022-08-23,53,190-->
+<!--SR:2022-12-02,101,190-->
 
 What are MCF's assumptions?
 ?
@@ -857,7 +857,7 @@ Consider the most malicious student aiming to get whatever lessons he can from t
 What does the imitator machine M try to do?
 ?
 Select as string as undistinguishable as possible from a computation randomly selected from $(A,B)[\cdot]$
-<!--SR:2022-08-23,86,250-->
+<!--SR:2023-03-26,215,250-->
 
 What are the inputs of imitator M?
 ?
@@ -1228,7 +1228,7 @@ $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
 What is $x$ in the zk QNR IP?
 ?
 The random residuosity number B quizzes A about.
-<!--SR:2022-08-23,65,210-->
+<!--SR:2023-01-08,138,210-->
 
 How is $x$ defined in the zk QNR IP?
 ?
