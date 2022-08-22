@@ -387,3 +387,109 @@ What is the default floating-point type and why?
 What standard are floats implemented according to?
 ?
 IEEE-754
+
+What is the output of `println!("{}", 5 / 4);` and why?
+?
+1, because integer division rounds down to the nearest integer.
+
+### Boolean
+
+How do we write the boolean literals?
+?
+`true` and `false`
+
+### Characters
+
+How many bytes is a `char`?
+?
+4
+
+How do we declare a `char`?
+?
+With single quotes, i.e.;
+`let c = 'z';`
+
+What standard does a char represent?
+?
+A Unicode Scalar Value
+
+### Compound Types
+
+What are the primitive compound types?
+?
+Arrays and tuples.
+
+#### Tuples
+
+Do tuples have a fixed or variable length?
+?
+Fixed.
+
+Are type annotations required for tuples?
+?
+No.
+
+How do you declare a tuple? (give type annotations).
+?
+`let tup: (i32, f64, u8) = (500, 6.4, 1);`
+
+How do you destructure a tuple?
+?
+Using pattern matching, i.e.:
+`let (x, y, z) = tup;`
+
+How do we directly access a tuple element?
+?
+Dot notation, i.e.,:
+`tup.0`
+
+What is the name for the  tuple without values?
+?
+The unit
+
+How do you write the unit and its type?
+?
+Both as `()`
+
+What do expressions implicitly return if they don't return any other value?
+?
+The unit, i.e., the empty tuple `()`
+
+#### Arrays
+
+Do arrays have fixed or variable lengths?
+?
+Fixed.
+
+Can the elements in an array have different types from one another?
+?
+No.
+
+How do you declare an array?
+?
+`let a = [1,2,3,4];`
+
+Are arrays stored on the stack or the heap?
+?
+Stack.
+
+What is the more flexible type similar to an array?
+?
+Vector.
+
+How do you write an array's type?
+?
+Square brackets and a semicolon, i.e., an array of 5 `i32`s:
+````rust
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+````
+
+How do you write an array filled with the same value?
+?
+`let a = [3;5]` will make `[3,3,3,3,3]`
+
+What happens if you provide an invalid array access?
+?
+Panic at runtime (or compile time if it's compile time detectable).
+## Functions
+
