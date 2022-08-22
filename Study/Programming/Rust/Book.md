@@ -204,4 +204,186 @@ What keyword do we use to break out of an infinite loop?
 <!--SR:2022-08-23,4,270-->
 
 
+# Common Concepts
 
+## Variables
+
+What is wrong with the following code?
+```
+fn main() {
+	let x = 5;
+	println!("The value of x is: {x}");
+	x = 6;
+	println!("The value of x is: {x}");`
+}
+```
+?
+cannot assign twice to immutable variable `x`
+
+Why is it useful to create immutable variables in Rust?
+?
+You might write code that assumes that a variable doesn't change. One part of the code may assume that the variable will never change, and if it does change that will introduce a bug. So it's useful to have the compiler ensure that doesn't happen.
+
+When are constants evalutated?
+?
+Compile time.
+
+What do constants require that variables don't?
+?
+A type annotation.
+
+Can constants be mutable?
+?
+No
+
+What is shadowing?
+?
+When a new variable is declared with the same name as an old one.
+
+How is shadowing with mutable variables different to having mutable varialbes?
+?
+The variables are still immutable after the shadowing has been done.
+With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
+
+How do you shadow a variable?
+?
+By reusing the `let` keyword.
+```
+let x = 5;
+let x = 3;
+```
+
+What is the output of the following program?
+```
+fn main() {
+	let x = 5;
+	let x = x + 1;
+	{
+		let x = x * 2;
+		println!("{x}");
+	}
+	println!("{x}");
+}
+```
+?
+12
+6
+
+What is wrong with the following code?
+```
+fn main() {
+	let mut spaces = " ";
+	spaces = spaces.len();
+	println!("{spaces}");
+}
+```
+?
+You can't mutable the type of a variable.
+
+## Data Types
+
+### Integers
+
+What is wrong with the following code?
+`let guess = "42".parse().expect("Not a number!");`
+?
+There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
+`let guess: u32 = "42".parse().expect("Not a number!");`
+
+What is a scalar type?
+?
+A type that represents a single value.
+
+What are the main scalar types?
+?
+Integers
+Floating point numbers
+Booleans
+Characters
+
+What are the different bit sizes available for integers in rust?
+?
+8, 16, 32, 64, 128, arch
+
+What is the type annotation for an unsigned arch sized integer?
+?
+`usize`
+
+What are the prefixes to represent signed an unsigned integers?
+?
+`u` for unsigned
+`i` for signed
+
+How are signed integers represented?
+?
+Using two's complement representation.
+
+What range of values can a signed integer store?
+?
+$-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
+
+What range of values can an unsigned integer store?
+?
+$0$ to $2^{n-1}$
+
+What does the `_` mean in a number literal?
+?
+It's a visual separator to make it easier to read. I.e., `1_000_000`.
+
+What is the visual separator character for number literals?
+?
+`_`
+
+What is the prefix for hex number literals?
+?
+`0x`
+
+What is the prefix for octal number literals?
+?
+`0x`
+
+What is the prefix for binary number literals?
+?
+`0b`
+
+What is the syntax for byte number literals?
+?
+`b'A'`, where `A` represents an 8bit integer.
+
+Why might integer overflow cause different kinds of behaviours in Rust?
+?
+Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
+
+What do we use to explicitly handle overflowing?
+?
+Using methods from the standard library that handle the overflow differently than standard arithmetic operators, i.e., `wrapping_add` rather than `+`
+
+What does `wrapping_*` do?
+?
+Wraps in all modes, (including debug).
+
+What does `checked_*` do?
+?
+Returns the `None` value if there is overflow.
+
+What does `overflowing_*` do?
+?
+Return the value and a boolean indicating whether there was overflow.
+
+What does `saturating_*` do?
+?
+Saturates at the value's maximum or minimum values.
+
+### Floating-point
+
+What are the floating-point types?
+?
+`f32` and `f64`
+
+What is the default floating-point type and why?
+?
+`f64`, because it's roughly as fast as `f32` on modern CPUs, and allows more precision.
+
+What standard are floats implemented according to?
+?
+IEEE-754
