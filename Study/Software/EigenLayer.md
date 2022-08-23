@@ -12,7 +12,7 @@ How does "the value of Ethereum increases significantly due to the future fee op
 What $CoC$ mean?
 ?
 Cost of corruption.
-<!--SR:2022-08-24,10,250-->
+<!--SR:2022-09-19,26,250-->
 
 What is the $CoC$ of a DApp without restaking?
 ?

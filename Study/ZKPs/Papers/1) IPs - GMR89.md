@@ -756,7 +756,7 @@ Which notion of indistinguishability presented in GMR is necessary for zero know
 How much data is each distinguisher fed at a time?
 ?
 A single $|x|^c$-bit string
-<!--SR:2022-08-24,64,210-->
+<!--SR:2023-01-05,134,210-->
 
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -766,7 +766,7 @@ They remain 0-distinguishable, provided $m < poly(|x|)$.
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They may become significantly more distinguishable.
-<!--SR:2022-08-24,86,250-->
+<!--SR:2023-03-27,215,250-->
 
 Why does feeding $m > 1$ strings to a distinguisher matter for encryption schemes?
 ?
@@ -1051,7 +1051,7 @@ How much knowledge does an NP proof for a language not in BPP communicate and ho
 ?
 More than zero.
 An NP prover sends one message. If the message released no knowledge then it would be imitable by a probabilistic turing machine, and therefore the language would be in BPP.
-<!--SR:2022-08-24,73,230-->
+<!--SR:2022-09-30,37,210-->
 
 Why is KC(0)-BPP of interest to GMR?
 ?

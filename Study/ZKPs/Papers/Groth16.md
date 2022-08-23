@@ -205,7 +205,7 @@ $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the 
 What are the parts of a bilinear group?
 ?
 $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
-<!--SR:2022-08-24,43,250-->
+<!--SR:2022-09-15,22,230-->
 
 What is $p$?
 ?
@@ -509,7 +509,7 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-08-24,41,230-->
+<!--SR:2022-11-26,94,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
@@ -887,7 +887,7 @@ Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-08-24,27,230-->
+<!--SR:2022-10-25,62,230-->
 
 What is the output of ProofMatrix?
 ?
@@ -1027,7 +1027,7 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-08-24,32,210-->
+<!--SR:2022-11-02,70,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-08-24,6,190-->
+<!--SR:2022-08-28,4,170-->
 
 What is the definition of $B$ in a QAPLIP?
 ?

@@ -25,7 +25,7 @@ How do you run a cargo project?
 How do you compile a cargo project?
 ?
 `cargo build`
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-06,13,270-->
 
 What does `cargo check` do?
 ?
@@ -45,13 +45,13 @@ How do you locally access the rust documentation?
 How do you manually format a rust file, say `main.rs`?
 ?
 `rustfmt main.rs`
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-07,14,270-->
 
 # Guessing Game
 
 How do you bring the input/output library into scope?
 ?
-`use std::io;`
+`use std: :io;`
 <!--SR:2022-09-06,13,270-->
 
 What is the identifier for the standard library?
@@ -97,7 +97,7 @@ How do you create a new immutable variable `a` set to `5`?
 What keyword is used to create variables?
 ?
 `let`
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-07,14,270-->
 
 How do you create a new mutable variable `b` and set it to `5`?
 ?
@@ -112,7 +112,7 @@ A type from the standard library that is a growable, UTF-8 encoded piece of text
 What is `String: :new`?
 ?
 A function that returns a new instance of `String`.
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-06,13,270-->
 
 What does the `: :` syntax on `String: :new` indicate?
 ?
@@ -122,12 +122,12 @@ That `new` is an associated function of the string type.
 What is an associated function?
 ?
 A function that's implemented on a type, but doesn't have access to a specific instance like a method.
-<!--SR:2022-08-24,4,250-->
+<!--SR:2022-09-01,8,250-->
 
 What does `let mut guess = String: :new()` do, exactly?
 ?
 Creates a mutable variable called guess and binds it to a new, empty instance of the type `String`.
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-09,16,270-->
 
 What does `io: :stdin()` return?
 ?
@@ -150,18 +150,18 @@ io::stdin()
 What is a `Result`?
 ?
 An enum type that is either `Ok` or `Err`.
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-08,15,270-->
 
 What does the `expect`  method on the `Result` type do?
 ?
 Crash the program with the provided message if the `Result` is an `Err` value.
 Return the appropriate value if the `Result` is an `Ok` value.
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-08,15,270-->
 
 How can you use placeholders to print the value "x is 5", where the varialbe `x` has the value `5`?
 ?
 `println!("x is {x}");`
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-09,16,270-->
 
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
@@ -171,7 +171,7 @@ How can you use multiple placeholders to print the values of `x` and `y`?
 How do you get access to random numbers in Rust?
 ?
 Using the `rand` crate.
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-08,15,270-->
 
 What two kinds of crates are there and how are they different?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-24,1,170-->
+<!--SR:2022-08-27,3,170-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -306,7 +306,7 @@ There needs to be a type annotation on guess, as `parse()` is ambiguous and coul
 What is a scalar type?
 ?
 A type that represents a single value.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-27,3,230-->
 
 What are the main scalar types?
 ?
@@ -370,7 +370,7 @@ What is the prefix for octal number literals?
 What is the prefix for binary number literals?
 ?
 `0b`
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 What is the syntax for byte number literals?
 ?
@@ -390,7 +390,7 @@ Using methods from the standard library that handle the overflow differently tha
 What are the different method prefixes for handling overflow explicitly?
 ?
 `wrapping`, `checked`, `overflowing`, `saturating`.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-25,1,210-->
 
 What does `wrapping_*` do?
 ?
@@ -400,12 +400,12 @@ Wraps in all modes, (including debug).
 What does `checked_*` do?
 ?
 Returns the `None` value if there is overflow.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-25,1,210-->
 
 What does `saturating_*` do?
 ?
@@ -457,7 +457,7 @@ With single quotes, i.e.;
 What standard does a char represent?
 ?
 A Unicode Scalar Value
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 ### Compound Types
 
@@ -581,7 +581,7 @@ A parameter is the name for something passed into a function in the function def
 How could you define a function that takes a `i32` parameter called `x`?
 ?
 `fn foo(x: i32) {}`
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-27,3,230-->
 
 Do you have to put type annotations on function parameters? Why?
 ?
@@ -754,7 +754,7 @@ for x in [1,2,3] {
 How do you make a range from 1 to 4?
 ?
 `1..4`
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-27,3,230-->
 
 How do you make a range from 4 down to 1?
 ?
@@ -820,7 +820,7 @@ How does allocating on the heap work, roughly?
 You request a certain amount of memory.
 The allocator finds some memory.
 The allocator returns a _pointer_, which is the address of the location.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 How is the stack used by functions?
 ?
@@ -865,7 +865,7 @@ How do you push a new string literal to a `String`?
 Why are string literals more efficient than mutable strings?
 ?
 Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 How do we request memory from the allocator for a new string?
 ?
@@ -891,7 +891,7 @@ println!("{}, world!", s1);
 Why can't strings be accessed after they're moved?
 ?
 When they're moved you end up with two variables pointing at the same memory, and if the first variable were still accessible you could cause memory issues (like double dropping memory as the two variables go out of scope).
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-27,3,230-->
 
 What does `drop` do?
 ?
