@@ -586,19 +586,23 @@ How could you define a function that takes a `i32` parameter called `x`?
 Do you have to put type annotations on function parameters? Why?
 ?
 Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
+<!--SR:2022-08-27,4,250-->
 
 What is the difference between a statement and an expression?
 ?
 _Statements_ are instructions that perform some action and do not return a value.
 _Expressions_ evaluate to a resulting value.
+<!--SR:2022-08-27,4,250-->
 
 Does `let` create an expression or a statement?
 ?
 Statement.
+<!--SR:2022-08-26,3,250-->
 
 Are function definitions expressions or statements?
 ?
 Statements.
+<!--SR:2022-08-25,2,250-->
 
 What is wrong with the following code?
 ```
@@ -608,6 +612,7 @@ fn main() {
 ```
 ?
 It expects a statement to evaluate to a value.
+<!--SR:2022-08-26,3,250-->
 
 What does the following code print?
 ```
@@ -620,35 +625,43 @@ fn main() {
 }
 ```
 ?
-4
+The value of y is: 4
+<!--SR:2022-08-27,4,250-->
 
 What is the syntactic difference between statements and expressions?
 ?
 Statements end in a semicolon, and expressions do not.
+<!--SR:2022-08-27,4,250-->
 
 How do you make scopes created with curly brackets into expressions?
 ?
 By ending them in an expression, which the whole scope evaluates to.
+<!--SR:2022-08-25,2,250-->
 
 How do you write a function that returns an `i32`?
 ?
 `fn foo () -> i32 {}`
+<!--SR:2022-08-27,4,250-->
 
 Do you have to declare the return type of a function?
 ?
 Yes.
+<!--SR:2022-08-27,4,250-->
 
 How do you return a value from a function?
 ?
 By ending the function's block with an expression of that value, or using the `return` keyword earlier.
+<!--SR:2022-08-26,3,250-->
 
 What character creates comments?
 ?
 `//`
+<!--SR:2022-08-27,4,250-->
 
 How do you do multiline comments?
 ?
 `//` on each line
+<!--SR:2022-08-27,4,250-->
 
 ## Control Flow
 ### If
@@ -656,6 +669,7 @@ How do you do multiline comments?
 Do `if` expressions require brackets for the condition?
 ?
 No.
+<!--SR:2022-08-25,2,250-->
 
 What is wrong with the following code?
 ```
@@ -668,14 +682,17 @@ fn main() {
 ```
 ?
 We need a bool in the if's condition, whereas we have an int.
+<!--SR:2022-08-25,2,250-->
 
 Does rust convert non boolean types by default?
 ?
 No.
+<!--SR:2022-08-25,2,250-->
 
 Does rust have a ternary operator? Why?
 ?
 No, because if/else expressions do the same thing with (arguably) clearer syntax.
+<!--SR:2022-08-26,3,250-->
 
 ### Loops
 
@@ -685,10 +702,12 @@ How do you return a value from a `loop`?
 ?
 By passing a value to the `break` statement, i.e.:
 `break x + 2;`
+<!--SR:2022-08-25,2,250-->
 
 What is a loop label for?
 ?
 Disambiguating between multiple loops, so you can break from the correct one.
+<!--SR:2022-08-26,3,250-->
 
 What is the syntax for creating and using a loop label?
 ?
@@ -699,22 +718,29 @@ Declare before the `loop` keyword with a colon.
 	...
 	break 'counting_up;
 ```
+<!--SR:2022-08-27,4,250-->
 
 What is a `while` loop for?
 ?
 Looping while a condition is true, which saves code compared to implementing the same behaviour using `loop`, `if/else`, and `break`
+<!--SR:2022-08-26,3,250-->
 
 Can you use labels and breaks with a `while` loop?
 ?
 Yes.
+<!--SR:2022-08-25,2,250-->
 
 Can `while` loops return a value?
 ?
 No.
+<!--SR:2022-08-26,3,250-->
 
-What does a `for` loop do?
+??? Can you use labels and breaks with a `for` loop?
+
+What does a `for` loop do? Why does it exist?
 ?
 Loops over a collection with simpler syntax than the equivalent `while` loop (which has to keep track of an index, and concern itself with index out of bounds errors).
+<!--SR:2022-08-26,3,250-->
 
 How do you write a `for` loop? Say, over an array literal `[1,2,3]`, printing each value.
 ?
@@ -723,19 +749,23 @@ for x in [1,2,3] {
 	println!("{x}");
 }
 ```
+<!--SR:2022-08-26,3,250-->
 
 How do you make a range from 1 to 4?
 ?
 `1..4`
+<!--SR:2022-08-24,1,230-->
 
 How do you make a range from 4 down to 1?
 ?
 `(1..4).rev()`
+<!--SR:2022-08-26,3,250-->
 
 Can we shorten `+= 1` with `++`? Why?
 ?
 No.
 Because it can be understood to return a value, which can lead to subtle bugs.
+<!--SR:2022-08-26,3,250-->
 
 # Ownership
 
@@ -744,90 +774,108 @@ Because it can be understood to return a value, which can lead to subtle bugs.
 What is the purpose of ownership?
 ?
 To make memory safety guarantees without needing a garbage collector.
+<!--SR:2022-08-26,3,250-->
 
 What is ownership?
 ?
 A set of rules governing how rust manages memory.
+<!--SR:2022-08-25,2,250-->
 
 When are ownership rules checked?
 ?
 Compile time.
+<!--SR:2022-08-25,2,250-->
 
 ### The Stack and the Heap
 
 How does the stack work, roughly?
 ?
 Data can be pushed on or popped off, and nothing else is possible.
+<!--SR:2022-08-26,3,250-->
 
 Which is faster to push to, the stack or the heap? Why?
 ?
 The stack. 
 Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
+<!--SR:2022-08-27,4,250-->
 
 Which is faster to pull from, the stack or the heap? Why?
 ?
 The stack.
 Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
+<!--SR:2022-08-27,4,250-->
 
 What kind of data can be put on the stack?
 ?
 Data with a known size at compile time.
+<!--SR:2022-08-25,2,250-->
 
 Where is data with unknown size at compile time stored?
 ?
 The heap.
+<!--SR:2022-08-25,2,250-->
 
 How does allocating on the heap work, roughly?
 ?
 You request a certain amount of memory.
 The allocator finds some memory.
 The allocator returns a _pointer_, which is the address of the location.
+<!--SR:2022-08-24,1,230-->
 
 How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
+<!--SR:2022-08-26,3,250-->
 
 What problems does heap has, that ownership addresses?
 ?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
+<!--SR:2022-08-24,1,230-->
 
 ### Ownership Rules
 
-What are the ownership rule?
+What are the ownership rules?
 ?
 Each value has an owner.
 There can only be one owner at a time.
 When the owner goes out of scope, the value is dropped.
+<!--SR:2022-08-25,2,250-->
 
 What is the relationship between variable validity and scope?
 ?
 When a variable comes into scope it is valid.
 When it goes out of scope it's invalid.
+<!--SR:2022-08-25,2,250-->
 
 ### Strings
 
 How do you create a new string of type `String` from a string literal, say, `"hello"`?
 ?
 `let x = String::from("hello");`
+<!--SR:2022-08-27,4,250-->
 
-How do you pust a new string literal to a `String`?
+How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
+<!--SR:2022-08-27,4,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
 Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
+<!--SR:2022-08-24,1,230-->
 
 How do we request memory from the allocator for a new string?
 ?
 `String::from("literal");` does this for us.
+<!--SR:2022-08-25,2,250-->
 
 What function is called for us when a variable goes out of scope?
 ?
 `drop`
+<!--SR:2022-08-25,2,250-->
 
 
 What is wrong with the following code?
@@ -838,43 +886,53 @@ println!("{}, world!", s1);
 ```
 ?
 `s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
+<!--SR:2022-08-25,2,250-->
 
 Why can't strings be accessed after they're moved?
 ?
-Because they have data that is stored on the stack, and when they're moved you end up with two variables pointing at the same memory, which could cause memory issues (like double dropping memory as the two variables go out of scope).
+When they're moved you end up with two variables pointing at the same memory, and if the first variable were still accessible you could cause memory issues (like double dropping memory as the two variables go out of scope).
+<!--SR:2022-08-24,1,230-->
 
 What does `drop` do?
 ?
 Deallocates the memory for that variable.
+<!--SR:2022-08-26,3,250-->
 
 What's the difference between a shallow copy and a move?
 ?
 Moves are shallow copies where the first variable is invalidated.
+<!--SR:2022-08-26,3,250-->
 
 When is automatic copying deep vs shallow?
 ?
 Rust never does automatic deep copying.
+<!--SR:2022-08-26,3,250-->
 
 How do you clone a `String`?
 ?
 `let s2 = s1.clone();`
+<!--SR:2022-08-27,4,250-->
 
 Why aren't integers moved when another value is assigned to their value?
 ?
 Because they live solely on the stack, and can be efficiently copied.
+<!--SR:2022-08-27,4,250-->
 
-What trait indicates that a type lives on the stack and can't be copied?
+What trait indicates that a type lives on the stack?
 ?
 The `Copy` trait.
+<!--SR:2022-08-25,2,250-->
 
 What trait can't coexist with the `Copy` trait, and how exactly?
 ?
 `Drop`.
 If the type or any of its parts implement `Drop`, it can't implement `Copy`.
+<!--SR:2022-08-28,5,270-->
 
 What kinds of types tend to implement the `Copy` trait?
 ?
 Groups of scalar values.
+<!--SR:2022-08-24,1,230-->
 
 What's wrong with the following code?
 ```
@@ -889,14 +947,17 @@ fn f(s: String) {
 ```
 ?
 `s` is moved by the call `f(s)`, so it's inaccessible on the next line.
+<!--SR:2022-08-27,4,250-->
 
 What operations can move a value?
 ?
 Assingment, and function calls.
+<!--SR:2022-08-27,4,250-->
 
 How can you return ownership that was taken by a function?
 ?
 By returning the value.
+<!--SR:2022-08-26,3,250-->
 
 
 ## References and Borrowing
