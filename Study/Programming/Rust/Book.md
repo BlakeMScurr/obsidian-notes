@@ -52,7 +52,7 @@ How do you manually format a rust file, say `main.rs`?
 How do you bring the input/output library into scope?
 ?
 `use std::io;`
-<!--SR:2022-08-24,5,270-->
+<!--SR:2022-09-06,13,270-->
 
 What is the identifier for the standard library?
 ?
@@ -833,7 +833,7 @@ What problems does heap has, that ownership addresses?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-25,1,210-->
 
 ### Ownership Rules
 
@@ -932,7 +932,7 @@ If the type or any of its parts implement `Drop`, it can't implement `Copy`.
 What kinds of types tend to implement the `Copy` trait?
 ?
 Groups of scalar values.
-<!--SR:2022-08-24,1,230-->
+<!--SR:2022-08-26,2,230-->
 
 What's wrong with the following code?
 ```

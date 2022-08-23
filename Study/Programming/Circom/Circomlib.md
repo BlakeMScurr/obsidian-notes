@@ -365,7 +365,7 @@ What are the top level constructs in Mux1?
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
-<!--SR:2022-08-24,57,250-->
+<!--SR:2023-01-10,139,250-->
 
 What does `Mux1` do?
 ?

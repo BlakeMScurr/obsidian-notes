@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-08-24,38,230-->
+<!--SR:2022-12-20,118,250-->
 
 What is wrong with the following code and what error will it generate?
 ```

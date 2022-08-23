@@ -98,7 +98,7 @@ A value defined in a fixed column that allows polynomial constraints to be turne
 How, roughly are gates implemented?
 ?
 Sets of constraints like $q_i \cdot p(...)$, along with a set of selector columns are called a gate.
-<!--SR:2022-08-24,21,250-->
+<!--SR:2022-11-06,74,270-->
 
 ??? Why is it not just a single constraint along with a selector column? Intuitively that's what a gate would be, to me.
 
