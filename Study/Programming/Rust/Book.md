@@ -736,3 +736,170 @@ Can we shorten `+= 1` with `++`? Why?
 ?
 No.
 Because it can be understood to return a value, which can lead to subtle bugs.
+
+# Ownership
+
+## Ownership
+
+What is the purpose of ownership?
+?
+To make memory safety guarantees without needing a garbage collector.
+
+What is ownership?
+?
+A set of rules governing how rust manages memory.
+
+When are ownership rules checked?
+?
+Compile time.
+
+### The Stack and the Heap
+
+How does the stack work, roughly?
+?
+Data can be pushed on or popped off, and nothing else is possible.
+
+Which is faster to push to, the stack or the heap? Why?
+?
+The stack. 
+Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
+
+Which is faster to pull from, the stack or the heap? Why?
+?
+The stack.
+Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
+
+What kind of data can be put on the stack?
+?
+Data with a known size at compile time.
+
+Where is data with unknown size at compile time stored?
+?
+The heap.
+
+How does allocating on the heap work, roughly?
+?
+You request a certain amount of memory.
+The allocator finds some memory.
+The allocator returns a _pointer_, which is the address of the location.
+
+How is the stack used by functions?
+?
+When a function is called, the values passed to the function are pushed to the stack.
+When the function is over, those values are popped off the stack.
+
+What problems does heap has, that ownership addresses?
+?
+Keeping track of what parts of code are using what data on the heap.
+Minimizing duplicate data on the heap.
+Cleaning up unused data to make sure you don't run out of space.
+
+### Ownership Rules
+
+What are the ownership rule?
+?
+Each value has an owner.
+There can only be one owner at a time.
+When the owner goes out of scope, the value is dropped.
+
+What is the relationship between variable validity and scope?
+?
+When a variable comes into scope it is valid.
+When it goes out of scope it's invalid.
+
+### Strings
+
+How do you create a new string of type `String` from a string literal, say, `"hello"`?
+?
+`let x = String::from("hello");`
+
+How do you pust a new string literal to a `String`?
+?
+`s.push_str("literal");`
+
+Why are string literals more efficient than mutable strings?
+?
+Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
+
+How do we request memory from the allocator for a new string?
+?
+`String::from("literal");` does this for us.
+
+What function is called for us when a variable goes out of scope?
+?
+`drop`
+
+
+What is wrong with the following code?
+```
+let s1 = String::from("hello"); 
+let s2 = s1; 
+println!("{}, world!", s1);
+```
+?
+`s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
+
+Why can't strings be accessed after they're moved?
+?
+Because they have data that is stored on the stack, and when they're moved you end up with two variables pointing at the same memory, which could cause memory issues (like double dropping memory as the two variables go out of scope).
+
+What does `drop` do?
+?
+Deallocates the memory for that variable.
+
+What's the difference between a shallow copy and a move?
+?
+Moves are shallow copies where the first variable is invalidated.
+
+When is automatic copying deep vs shallow?
+?
+Rust never does automatic deep copying.
+
+How do you clone a `String`?
+?
+`let s2 = s1.clone();`
+
+Why aren't integers moved when another value is assigned to their value?
+?
+Because they live solely on the stack, and can be efficiently copied.
+
+What trait indicates that a type lives on the stack and can't be copied?
+?
+The `Copy` trait.
+
+What trait can't coexist with the `Copy` trait, and how exactly?
+?
+`Drop`.
+If the type or any of its parts implement `Drop`, it can't implement `Copy`.
+
+What kinds of types tend to implement the `Copy` trait?
+?
+Groups of scalar values.
+
+What's wrong with the following code?
+```
+fn main() {
+	let s = String::from("hello");
+	f(s);
+	println!("{}", s)
+}
+fn f(s: String) {
+	println!("{}", s);
+}
+```
+?
+`s` is moved by the call `f(s)`, so it's inaccessible on the next line.
+
+What operations can move a value?
+?
+Assingment, and function calls.
+
+How can you return ownership that was taken by a function?
+?
+By returning the value.
+
+
+## References and Borrowing
+
+
+
