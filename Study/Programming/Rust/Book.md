@@ -963,4 +963,180 @@ By returning the value.
 ## References and Borrowing
 
 
+# MISSING 4.2 to 6.3
+# Module System
+## Packages and Crates
 
+What are the components of the module system?
+?
+Packages
+Crates
+Modules
+Paths
+
+What is a crate?
+?
+A tree of modules that produces a library or executable.
+
+What are the types of crate?
+?
+Binary and library.
+
+What kinds of crates have a main function?
+?
+Binary, not library.
+
+What is a crate root?
+?
+The file containing the root module of a crate.
+
+What is a package?
+?
+A bundle of crates.
+
+How many crates can/must a package have?
+?
+As many binary packages as it likes.
+At most one library crate.
+At least one crate.
+
+What is the name and type of the crate whose root is at `src/main.rs`?
+?
+A binary crate named the same as the package.
+
+What is the name and type of the crate whose root is at `src/lib.rs`?
+?
+A library crate named the same as the package.
+
+Where do extra binary packages go?
+?
+`src/bin`
+
+## Modules
+
+Where does the compiler look first when compiling a crate?
+?
+The crate root.
+
+Where would the compiler look for, say, the `garden` module declared in the crate root?
+?
+Inline, within curly brackets that replace the semicolon following `mod garden`,
+In the file `src/garden.rs`,
+Or in the file `src/garden/mod.rs`
+
+Where can you declare submodules?
+?
+Any file but the crate root.
+
+Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
+?
+Inline in curly brackets directly following `mod vegetables`,
+In the file `src/garden/vegetables.rs`,
+Or in the file `src/garden/vegetables/mod.rs`
+
+When can you refer to code in another module?
+?
+Whenever that module is part of the same crate, as long as privacy allows.
+
+How do you make code in a module public and private?
+?
+The whole module is private by default.
+Use `pub mod` when declaring the module to make the module public.
+Use `pub` before any declarations in the module to make those items public.
+
+What does `use` do for a module within the same crate?
+?
+Creates a shortcut.
+I.e., after `use crate::garden::vegetables::asparagus` you can refer directly to `asparagus`
+
+## Paths
+
+What kinds of paths are there?
+?
+Absolute and relative.
+
+What does an absolute path start with?
+?
+The literal `crate`, referring to the crate root.
+
+What does a relative path start with?
+?
+`self`, `super`, or an identifier in the current module.
+
+What is the path delimiter?
+?
+`::`
+
+Are modules private or public by default?
+?
+Private
+
+Are functions, structs, etc private or public by default?
+?
+Private
+
+Are fields on structs public or private by default?
+?
+Private
+
+Does making a struct public make its fields public?
+?
+No
+
+Does making a module public make its functions and structs etc public?
+?
+No
+
+How do you create shortcuts to paths?
+?
+With the `use` keyword
+
+Do `use` shortcuts apply in child scopes?
+?
+No
+
+How do you use `use` paths idiomatically?
+?
+`use` the module and call its functions off that module.
+`use` structs, enums, and other items directly
+
+What keyword do we use to create aliases?
+?
+`as`
+
+How do you import `std::io::Result` as `IoResult`?
+?
+`use std::io::Result as IoResult;`
+
+How do you re-export?
+?
+`pub use crate::thingA::thingB;`
+
+What is re-exporting for?
+?
+Organising the API of your code when its internals are structured differently to how programmers using it would think about the domain.
+
+How can you rewrite the following code with nested paths?
+```
+use std::cmp::Ordering;
+use std::io;
+```
+?
+`use std::{cmp::Ordering, io};`
+
+How can you rewrite the following code with nested paths?
+```
+use std::io;
+use std::io::Write;
+```
+?
+`use std::io::{self, Write};`
+
+How could you bring everything in `std::collections` into scope?
+?
+`use std::collections::*;`
+
+What two things does `use` do?
+?
+Creates shortcuts to accessible code in other submodules of the crate.
+Brings inaccessible code from external packages into scope.
