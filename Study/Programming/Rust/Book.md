@@ -1140,3 +1140,101 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
+
+# MISSING 8
+# Error Handling
+
+What are the two major categories of errors?
+?
+Recoverable and unrecoverable.
+
+## Panic
+
+What do we use for unrecoverable errors?
+?
+The `panic!` macro
+
+How do you use `panic!`?
+?
+Pass a string (etc) to it:
+`panic!("you didn't do this right");`
+
+How can you find the stacktrace for a panic?
+?
+By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
+`RUST_BACKTRACE=1 cargo run`
+
+## Result
+
+What do we use for recoverable errors?
+?
+The `Result` type.
+
+What is the definition of the `Result` type?
+?
+```
+enum Result<T, E> {
+	Ok(T),
+	Err(E),
+}
+```
+
+How do you open a file called `"hello.txt"`?
+?
+```
+use std::fs::File;
+File::open("hello.txt");
+```
+
+What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
+?
+Matching on the type of the `Result` enum, i.e.,:
+```Rust
+let greeting_file_result = File::open("hello.txt");
+let greeting_file = match greeting_file_result {
+	Ok(file) => file,
+	Err(error) => panic!("Problem opening the file: {:?}", error),
+};
+```
+
+Are `Result` and its variants in the prelude?
+?
+Yes.
+
+How do you match on the "file not found" error type?
+?
+```Rust
+use std::io::ErrorKind;
+// ...
+fn main() {
+	// ...
+	match error.kind() {
+		ErrorKind::NotFound => //...
+	}
+}
+```
+
+What method can we use to clean up nested match statements when dealing with errors?
+?
+`unwrap_or_else`
+
+What does `unwrap_or_else` do?
+?
+Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
+
+What are the shortcut methods for panicking on error?
+?
+`unwrap` and `expect`
+
+What does `unwrap` do?
+?
+Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
+
+What does `expect` do?
+?
+Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
+
+Which of `expect` and `unwrap` is generally preferred for product code and why?
+?
+`expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
+
