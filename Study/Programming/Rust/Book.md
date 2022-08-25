@@ -1356,12 +1356,42 @@ Or to stop your code proceeding in a bad state.
 
 # Generics, Traits, and Lifetimes
 
+## Outline
+
 What are generics?
 ?
 Abstract stand-ins for concrete types or other properties.
 
 What do traits do, broadly, as opposed to generics?
 ?
-Define behaviour in a generic way.
-Generics let different concrete types use the same behaviour.
+Traits abstract/generalise over behaviour.
+Generics let different concrete types use the same behaviour with the same function call.
+Traits let different concrete types use different behaviour with the same function call.
 
+What are lifetimes?
+?
+Generics that give the compiler information about how references relate to each other.
+
+## Generics
+
+What is the conventional case for naming types?
+?
+CamelCase
+
+What is the conventional name for a generic type?
+?
+`T`
+
+Where do you declare a type parameter name in a function?
+?
+In angle brackets between the function name and the parameter list.
+
+What is the function signature for the `largest` method which is generic over types?
+?
+`fn largest<T>(list: &[T]) -> &T {}`
+
+How do you make sure the value for a generic type parameter of a function can be compared?
+?
+`fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
+
+# Up to file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
