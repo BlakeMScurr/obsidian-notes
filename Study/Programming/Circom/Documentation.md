@@ -66,7 +66,7 @@ How do we instantiate a component?
 template B() {
 	component someName = A();
 }
-<!--SR:2022-08-25,64,250-->
+<!--SR:2023-02-04,163,250-->
 
 template A(){
 	...

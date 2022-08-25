@@ -36,7 +36,7 @@ What are the possible specifications for each column?
 Fixed
 Advice
 Instance
-<!--SR:2022-08-25,6,210-->
+<!--SR:2022-09-09,15,210-->
 
 What is a fixed column?
 ?
@@ -51,7 +51,7 @@ A column that corresponds to witness values.
 What is an instance column?
 ?
 It's for elements shared between the prover and verifier, typeically public inputs.
-<!--SR:2022-08-25,19,230-->
+<!--SR:2022-10-10,46,230-->
 
 What are the constraints?
 ?
