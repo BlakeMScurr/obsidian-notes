@@ -210,7 +210,7 @@ $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
 What is $p$?
 ?
 A prime number.
-<!--SR:2022-08-26,45,250-->
+<!--SR:2022-12-19,115,250-->
 
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
@@ -299,7 +299,7 @@ The statement.
 What is $w$?
 ?
 The witness.
-<!--SR:2022-08-26,45,250-->
+<!--SR:2022-12-22,118,250-->
 
 What kinds of pairs are in $R$?
 ?
@@ -574,7 +574,7 @@ Assuming public coin differing input obfuscation and other cryptographic assumpt
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-08-26,27,210-->
+<!--SR:2022-10-24,59,210-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
@@ -684,7 +684,7 @@ Forming $t(x)$.
 Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
 Expressing the constraints as an evaluation of a single polynomial.
 Refomulating the polynomial evaluation over values mod $t(x)$.
-<!--SR:2022-08-26,40,210-->
+<!--SR:2022-11-18,84,210-->
 
 What is the random vector?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-08-26,4,130-->
+<!--SR:2022-08-31,5,130-->
 
 ##### Vfy
 
@@ -1260,7 +1260,7 @@ $A \cdot B$
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\alpha \cdot \beta$
-<!--SR:2022-08-26,35,270-->
+<!--SR:2022-11-29,95,270-->
 
 What is in the "statement sum" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

@@ -788,7 +788,7 @@ Those that transmit the output of an unfeasible computation, a computation that 
 How much knowledge do random bits convey and why?
 ?
 None because we could generate them ourselves trivially.
-<!--SR:2022-08-26,88,250-->
+<!--SR:2023-04-03,220,250-->
 
 How much knowledge do the results of a polynomial computation convey and why?
 ?

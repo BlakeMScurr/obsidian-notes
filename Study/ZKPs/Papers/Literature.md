@@ -314,7 +314,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-08-26,18,230-->
+<!--SR:2022-09-06,11,210-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

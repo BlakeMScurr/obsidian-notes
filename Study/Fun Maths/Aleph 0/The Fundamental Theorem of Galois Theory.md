@@ -136,7 +136,7 @@ $\sigma(x) = x,\ \forall x \in \mathbb{Q}$
 What is $Aut\ F/\mathbb{Q}$?
 ?
 The set of all automorphisms over $F$ fixing $\mathbb{Q}$.
-<!--SR:2022-08-26,73,250-->
+<!--SR:2023-02-16,174,250-->
 
 What are the formalisations for "numbers" and permutations from the $\sqrt{2}$  example?
 ?

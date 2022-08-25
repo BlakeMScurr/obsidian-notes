@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-08-26,6,230-->
+<!--SR:2022-09-10,15,230-->
 
 What does $T$ denote?
 ?
@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-08-26,12,250-->
+<!--SR:2022-09-01,6,230-->
 
 What does $S_j$ denote?
 ?
@@ -66,7 +66,7 @@ A subset of the tasks $T$
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-08-26,8,210-->
+<!--SR:2022-09-14,19,210-->
 
 What is $S_j^c$?
 ?

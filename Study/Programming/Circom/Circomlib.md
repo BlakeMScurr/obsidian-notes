@@ -240,7 +240,7 @@ What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
-<!--SR:2022-08-26,58,250-->
+<!--SR:2023-01-13,140,250-->
 
 What does `b` look like and what is its formula?
 ?
