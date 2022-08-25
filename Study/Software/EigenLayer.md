@@ -133,7 +133,7 @@ $c(V) > p(V)$
 What does $T^c(U)$ denote?
 ?
 The set of tasks that the stakers $U$ are able to corrupt.
-<!--SR:2022-08-25,11,270-->
+<!--SR:2022-09-26,32,270-->
 
 What is the definition of $T^c(U)$?
 ?

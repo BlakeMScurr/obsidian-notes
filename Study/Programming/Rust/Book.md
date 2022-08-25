@@ -993,10 +993,12 @@ Binary, not library.
 What is a crate root?
 ?
 The file containing the root module of a crate.
+<!--SR:2022-08-26,1,230-->
 
 What is a package?
 ?
 A bundle of crates.
+<!--SR:2022-08-29,4,250-->
 
 How many crates can/must a package have?
 ?
@@ -1013,6 +1015,7 @@ A binary crate named the same as the package.
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?
 A library crate named the same as the package.
+<!--SR:2022-08-28,3,250-->
 
 Where do extra binary packages go?
 ?
@@ -1031,6 +1034,7 @@ Where would the compiler look for, say, the `garden` module declared in the crat
 Inline, within curly brackets that replace the semicolon following `mod garden`,
 In the file `src/garden.rs`,
 Or in the file `src/garden/mod.rs`
+<!--SR:2022-08-29,4,250-->
 
 Where can you declare submodules?
 ?
@@ -1042,6 +1046,7 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
+<!--SR:2022-08-28,3,250-->
 
 When can you refer to code in another module?
 ?
@@ -1053,6 +1058,7 @@ How do you make code in a module public and private?
 The whole module is private by default.
 Use `pub mod` when declaring the module to make the module public.
 Use `pub` before any declarations in the module to make those items public.
+<!--SR:2022-08-28,3,250-->
 
 What does `use` do for a module within the same crate?
 ?
@@ -1090,10 +1096,12 @@ Private
 Are functions, structs, etc private or public by default?
 ?
 Private
+<!--SR:2022-08-28,3,250-->
 
 Are fields on structs public or private by default?
 ?
 Private
+<!--SR:2022-08-28,3,250-->
 
 Does making a struct public make its fields public?
 ?
@@ -1103,6 +1111,7 @@ No
 Does making a module public make its functions and structs etc public?
 ?
 No
+<!--SR:2022-08-29,4,250-->
 
 How do you create shortcuts to paths?
 ?
@@ -1147,6 +1156,7 @@ use std::io;
 ```
 ?
 `use std::{cmp::Ordering, io};`
+<!--SR:2022-08-28,3,250-->
 
 How can you rewrite the following code with nested paths?
 ```
@@ -1157,9 +1167,9 @@ use std::io::Write;
 `use std::io::{self, Write};`
 <!--SR:2022-08-26,1,230-->
 
-How could you bring everything in `std::collections` into scope?
+How could you bring everything in `std: :collections` into scope?
 ?
-`use std::collections::*;`
+`use std: :collections: :*;`
 <!--SR:2022-08-28,3,250-->
 
 What two things does `use` do?
@@ -1174,6 +1184,7 @@ Brings inaccessible code from external packages into scope.
 What are the two major categories of errors?
 ?
 Recoverable and unrecoverable.
+<!--SR:2022-08-29,4,250-->
 
 ## Panic
 
@@ -1186,6 +1197,7 @@ How do you use `panic!`?
 ?
 Pass a string (etc) to it:
 `panic!("you didn't do this right");`
+<!--SR:2022-08-29,4,250-->
 
 How can you find the stacktrace for a panic?
 ?
@@ -1228,6 +1240,7 @@ let greeting_file = match greeting_file_result {
 	Err(error) => panic!("Problem opening the file: {:?}", error),
 };
 ```
+<!--SR:2022-08-26,1,230-->
 
 Are `Result` and its variants in the prelude?
 ?
@@ -1251,10 +1264,12 @@ fn main() {
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
+<!--SR:2022-08-29,4,250-->
 
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
+<!--SR:2022-08-29,4,250-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1264,6 +1279,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
+<!--SR:2022-08-28,3,250-->
 
 What does `expect` do?
 ?
@@ -1306,6 +1322,7 @@ What is the difference between `?` and the basic manual way of propogating error
 When can you use the `?` operator?
 ?
 On a `Result` type in a function that returns a `Result`, or on an `Option` type in a function that returns an `Option`.
+<!--SR:2022-08-29,4,250-->
 
 How can you use the `?` operator in the `main` function?
 ?
@@ -1336,3 +1353,15 @@ When writing examples, prototypes, or test code.
 Or to catch developer errors where there are logical issues that the compiler can't catch, i.e., parsing a hardcoded IP address.
 Or to stop your code proceeding in a bad state.
 <!--SR:2022-08-29,4,250-->
+
+# Generics, Traits, and Lifetimes
+
+What are generics?
+?
+Abstract stand-ins for concrete types or other properties.
+
+What do traits do, broadly, as opposed to generics?
+?
+Define behaviour in a generic way.
+Generics let different concrete types use the same behaviour.
+

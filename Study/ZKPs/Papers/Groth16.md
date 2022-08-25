@@ -162,8 +162,8 @@ Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \
 
 What is the limit definition of $\omega$?
 ?
-$lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
-<!--SR:2022-08-25,44,250-->
+$f(n) = \omega(g(n)) \iff lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
+<!--SR:2022-12-13,110,250-->
 
 What is the formal definition of $\omega$?
 ?
@@ -361,7 +361,7 @@ What is the definition of $\textbf{Vfy}$?
 ?
 $0/1 \leftarrow \textbf{Vfy}(R, \sigma, \phi, \pi)$
 The verification algorithm takes as input the common reference string, the statement, and the argument, and returns 0 (reject) or 1 (accept).
-<!--SR:2022-08-25,44,250-->
+<!--SR:2022-12-08,105,250-->
 
 What is the definition of $\textbf{Sim}$?
 ?
@@ -473,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-08-25,15,170-->
+<!--SR:2022-09-20,26,170-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -873,7 +873,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-08-25,41,230-->
+<!--SR:2022-09-13,19,210-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 

@@ -440,7 +440,7 @@ Calculates B's coin flips by deciding quadratic residues, and sending those flip
 How do we know that we can prove $x \in \mathcal{L}$ with sufficient probability in the basic QNR IP?
 ?
 $x \in QNR \implies xr^2 \in QNR \land r^2 \notin QNR$ so the prover can perfectly pick the coin toss.
-<!--SR:2022-08-25,87,250-->
+<!--SR:2023-03-22,209,250-->
 
 How do we know that we can't falsely prove $x \in \mathcal{L}$ (i.e., where $x \notin \mathcal{L}$) with non-negligible probability for the basic QNR IP?
 ?
@@ -809,7 +809,7 @@ Bits.
 How do we define the the possible outputs of a probabilistic turing machine?
 ?
 The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible outputs of M on x.
-<!--SR:2022-08-25,59,190-->
+<!--SR:2022-12-17,114,190-->
 
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
@@ -903,7 +903,7 @@ The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0,
 How much information does A communicate to honest B in naive QNR IP? (Multi round version, not just NP version).
 ?
 Zero.
-<!--SR:2022-08-25,30,230-->
+<!--SR:2022-11-05,72,230-->
 
 How does M simulate (A,B) in naive QNR?
 ?
@@ -953,7 +953,7 @@ Note: by restricting to the strings in the language we can use the notion of zer
 How do we denote that $L$ has knowledge complexity $f(n)$?
 ?
 $L \in KC(f(n))$
-<!--SR:2022-08-25,85,250-->
+<!--SR:2023-03-16,203,250-->
 
 $L$ has knowledge complexity $f(n)$ if . . . ?
 ?
