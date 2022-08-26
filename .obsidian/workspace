@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Rust/Book.md",
+            "file": "Study/Programming/Rust/Tidbits from Review.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Rust/Book.md",
+                "file": "Study/Programming/Rust/Tidbits from Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +97,8 @@
   },
   "active": "ae41b1345c609984",
   "lastOpenFiles": [
-    "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Rust/Book.md",
+    "Study/ZKPs/Papers/Groth16.md",
     "tmp err handling.md",
     "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
     "Study/Software/EigenLayer.md",
