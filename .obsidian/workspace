@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Study/Programming/Rust/Tidbits from Review.md",
+            "file": "Study/Programming/Rust/Book.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Rust/Tidbits from Review.md",
+                "file": "Study/Programming/Rust/Book.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "ae41b1345c609984",
   "lastOpenFiles": [
+    "Study/Programming/Rust/Tidbits from Review.md",
     "Study/Programming/Rust/Book.md",
     "Study/ZKPs/Papers/Groth16.md",
     "tmp err handling.md",
@@ -105,7 +106,6 @@
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Circomlib.md",
     "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/Programming/Halo2/Halo2.md",
-    "Study/ZKPs/Papers/Literature.md"
+    "Study/Programming/Halo2/Halo2.md"
   ]
 }

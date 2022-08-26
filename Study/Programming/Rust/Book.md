@@ -1402,4 +1402,113 @@ How do you make sure the value for a generic type parameter of a function can be
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
 <!--SR:2022-08-27,1,230-->
 
-# Up to file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
+# Missing ...
+Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
+
+What is an attribute, broadly?
+?
+A piece of metadata about a piece of code.
+
+How do you change a function into a test function?
+?
+Adding `#[test]` on the line before `fn`
+
+What is `#[test]`?
+?
+The test attribute.
+
+What command do we use to run test?
+?
+`cargo test`
+
+What is the testing template that Cargo automatically gives us when writing a library crate?
+?
+```
+#[cfg(test)]
+mod tests {
+	#[test]
+	fn it_works() {
+		let result = 2 + 2;
+		assert_eq!(result, 4);
+	}
+}
+```
+
+What does the `0 measured` statistic that is often output from `cargo test` mean?
+?
+That there are no benchmark tests. I.e., tests to measure performance.
+
+What does the `0 ignored` statistic that is often output from `cargo test` mean?
+?
+That there are no tests marked to be ignored (unless specifically requested).
+
+What does the `0 filtered` statistic that is often output from `cargo test` mean?
+?
+That there are no tests that are filtered out by our argument to `cargo test`
+
+When do tests fail?
+?
+When the test panics.
+
+What does `assertEq!` do?
+?
+Panics if the values passed in are not equal, nothing otherwise.
+
+What does `assert!` do?
+?
+Panics if passed false, nothing if passed true.
+
+What does `assert_ne!` do?
+?
+Panics if the two arguments are equal, nothing otherwise.
+
+Which argument passed to `assert` etc is considered "expected" and which is "actual"?
+?
+Neither, in Rust they are just called left and right.
+
+What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
+?
+`PartialEq` because they're compared using `==` and `!=` respectively.
+`Debug` because they're printed using debug formatting.
+
+How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
+?
+`#[derive(PartialEq, Debug)]`
+
+What are the main assertion macros?
+?
+`assert!`, `assert_eq!`, and `assert_ne!`
+
+How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
+?
+Passing a format string and any values it requires after the required arguments.
+I.e.,:
+```rust
+assert!(
+	result.contains("Carol"),
+	"Greeting did not contain name, value was `{}`",
+	result
+);
+```
+
+How do you test that a function panics?
+?
+By adding the `should_panic` attribute, i.e.:
+```rust
+#[test]
+#[should_panic]
+fn some_test() {
+	...
+}
+```
+
+How do you test that a function panics with a specific message?
+?
+By setting the expected panic message in the `shoud_panic attribute`, i.e.,:
+```rust
+#[test]
+#[should_panic(expected = "some particular panic message")]
+fn some_test() {
+	...
+}
+```
