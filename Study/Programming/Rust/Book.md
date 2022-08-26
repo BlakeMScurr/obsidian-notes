@@ -1405,21 +1405,29 @@ How do you make sure the value for a generic type parameter of a function can be
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
 
+# Testing
+
+## How to Write Tests
+
 What is an attribute, broadly?
 ?
 A piece of metadata about a piece of code.
+<!--SR:2022-08-30,4,250-->
 
 How do you change a function into a test function?
 ?
 Adding `#[test]` on the line before `fn`
+<!--SR:2022-08-30,4,250-->
 
 What is `#[test]`?
 ?
 The test attribute.
+<!--SR:2022-08-30,4,250-->
 
 What command do we use to run test?
 ?
 `cargo test`
+<!--SR:2022-08-30,4,250-->
 
 What is the testing template that Cargo automatically gives us when writing a library crate?
 ?
@@ -1433,51 +1441,63 @@ mod tests {
 	}
 }
 ```
+<!--SR:2022-08-27,1,230-->
 
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
 That there are no benchmark tests. I.e., tests to measure performance.
+<!--SR:2022-08-30,4,250-->
 
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests marked to be ignored (unless specifically requested).
+<!--SR:2022-08-30,4,250-->
 
 What does the `0 filtered` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests that are filtered out by our argument to `cargo test`
+<!--SR:2022-08-30,4,250-->
 
 When do tests fail?
 ?
 When the test panics.
+<!--SR:2022-08-30,4,250-->
 
-What does `assertEq!` do?
+What does `assert_eq!` do?
 ?
 Panics if the values passed in are not equal, nothing otherwise.
+<!--SR:2022-08-30,4,250-->
 
 What does `assert!` do?
 ?
 Panics if passed false, nothing if passed true.
+<!--SR:2022-08-30,4,250-->
 
 What does `assert_ne!` do?
 ?
 Panics if the two arguments are equal, nothing otherwise.
+<!--SR:2022-08-30,4,250-->
 
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
 Neither, in Rust they are just called left and right.
+<!--SR:2022-08-30,4,250-->
 
 What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
 ?
 `PartialEq` because they're compared using `==` and `!=` respectively.
 `Debug` because they're printed using debug formatting.
+<!--SR:2022-08-30,4,250-->
 
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
+<!--SR:2022-08-30,4,250-->
 
 What are the main assertion macros?
 ?
 `assert!`, `assert_eq!`, and `assert_ne!`
+<!--SR:2022-08-27,1,230-->
 
 How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
 ?
@@ -1490,6 +1510,7 @@ assert!(
 	result
 );
 ```
+<!--SR:2022-08-30,4,250-->
 
 How do you test that a function panics?
 ?
@@ -1501,6 +1522,7 @@ fn some_test() {
 	...
 }
 ```
+<!--SR:2022-08-30,4,250-->
 
 How do you test that a function panics with a specific message?
 ?
@@ -1512,3 +1534,32 @@ fn some_test() {
 	...
 }
 ```
+<!--SR:2022-08-30,4,250-->
+
+How do you make a test that can return an error?
+?
+Just change the function signature to return some kind of result, i.e.:
+```
+#[test]
+fn some_test() -> Result<(), String> {
+	...
+}
+```
+<!--SR:2022-08-30,4,250-->
+
+Why write tests that return `Result`s?
+?
+So you can use the question mark operator in the body of the tests, so you can conveniently fail if there is an `Err`.
+<!--SR:2022-08-30,4,250-->
+
+How do you assert that a result is an err?
+?
+`assert!(value.is_err())` - not by using the question mark operator.
+<!--SR:2022-08-30,4,250-->
+
+Can you use the `#[should_panic]` annotation on tests that return `Result`s?
+?
+No
+<!--SR:2022-08-30,4,250-->
+
+## How Tests are Run
