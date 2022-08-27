@@ -280,7 +280,7 @@ Sonic
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-08-27,41,210-->
+<!--SR:2022-11-24,89,210-->
 
 What is the title of GWC21?
 ?

@@ -273,7 +273,7 @@ They are the most efficient type of bilinear groups, and hence the most relevant
 For which type of bilinear group is the lower bound given?
 ?
 Type III
-<!--SR:2022-08-27,46,250-->
+<!--SR:2022-12-23,118,250-->
 
 For which type of bilinear group does the construction work?
 ?
@@ -494,7 +494,7 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
-<!--SR:2022-08-27,37,230-->
+<!--SR:2022-11-22,87,230-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
@@ -1274,7 +1274,7 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-08-27,28,230-->
+<!--SR:2022-10-30,64,230-->
 
 When does Vfy accept in a QAPLIP?
 ?

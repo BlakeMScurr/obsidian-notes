@@ -22,7 +22,7 @@ $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
 What is the $CoC$ of a DApp with restaking?
 ?
 $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
-<!--SR:2022-08-27,13,270-->
+<!--SR:2022-10-01,35,270-->
 
 ## B
 

@@ -373,7 +373,7 @@ The quadratic non residue language. The language of non-"squares" mod some large
 What is $\mathbb{Z^*_m}$?
 ?
 The integers between 1 and m relatively prime to m.
-<!--SR:2022-08-27,89,250-->
+<!--SR:2023-04-07,223,250-->
 
 $a \in \mathbb{Z}^*_m$ is a quadratic residue if . . . ?
 ?
@@ -582,7 +582,7 @@ What does GMR study with respect to knowledge?
 ?
 What a polynomially bounded participant can learn from communication.
 The quantity of knowledge required to prove a theorem.
-<!--SR:2022-08-27,69,210-->
+<!--SR:2022-10-03,37,190-->
 
 ### Distinguishing
 #### Ensembles
@@ -678,7 +678,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-08-27,43,150-->
+<!--SR:2022-10-31,65,150-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -734,7 +734,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-08-27,21,150-->
+<!--SR:2022-10-02,36,150-->
 
 What was distinguishability used for before GMR?
 ?
@@ -1038,7 +1038,7 @@ For proving the correctness of cryptographic protocols in a modular way.
 How, in an abstract sense, can we study the characteristics of KC(0)?
 ?
 By comparing it to other language classes.
-<!--SR:2022-08-27,74,230-->
+<!--SR:2023-02-13,170,230-->
 
 What are the trivial relationships between KC(0) and polynomial languages and how do we know?
 ?

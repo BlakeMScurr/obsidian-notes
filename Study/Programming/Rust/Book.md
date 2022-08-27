@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-08-30,3,230-->
 
 What is a `Result`?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-27,3,170-->
+<!--SR:2022-08-29,2,150-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -219,7 +219,7 @@ fn main() {
 ```
 ?
 cannot assign twice to immutable variable `x`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 Why is it useful to create immutable variables in Rust?
 ?
@@ -234,14 +234,14 @@ Compile time.
 What do constants require that variables don't?
 ?
 A type annotation.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-08-30,3,230-->
 
 ??? Why?
 
 Can constants be mutable?
 ?
 No
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 What is shadowing?
 ?
@@ -278,7 +278,7 @@ fn main() {
 ?
 12
 6
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 What is wrong with the following code?
 ```
@@ -301,12 +301,12 @@ What is wrong with the following code?
 ?
 There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
 `let guess: u32 = "42".parse().expect("Not a number!");`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 What is a scalar type?
 ?
 A type that represents a single value.
-<!--SR:2022-08-27,3,230-->
+<!--SR:2022-09-05,9,230-->
 
 What are the main scalar types?
 ?
@@ -314,7 +314,7 @@ Integers
 Floating point numbers
 Booleans
 Characters
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 What are the different bit sizes available for integers in rust?
 ?
@@ -355,12 +355,12 @@ It's a visual separator to make it easier to read. I.e., `1_000_000`.
 What is the visual separator character for number literals?
 ?
 `_`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 What is the prefix for hex number literals?
 ?
 `0x`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 What is the prefix for octal number literals?
 ?
@@ -380,7 +380,7 @@ What is the syntax for byte number literals?
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
 Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 What do we use to explicitly handle overflowing?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-08-27,1,170-->
+<!--SR:2022-08-28,1,150-->
 
 What does `saturating_*` do?
 ?
@@ -439,7 +439,7 @@ What is the output of `println!("{}", 5 / 4);` and why?
 How do we write the boolean literals?
 ?
 `true` and `false`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 ### Characters
 
@@ -508,7 +508,7 @@ Both as `()`
 What do expressions implicitly return if they don't return any other value?
 ?
 The unit, i.e., the empty tuple `()`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 #### Arrays
 
@@ -525,7 +525,7 @@ No.
 How do you declare an array?
 ?
 `let a = [1,2,3,4];`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 Are arrays stored on the stack or the heap?
 ?
@@ -535,7 +535,7 @@ Stack.
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 How do you write an array's type?
 ?
@@ -543,7 +543,7 @@ Square brackets and a semicolon, i.e., an array of 5 `i32`s:
 ````rust
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 ````
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
@@ -566,7 +566,7 @@ snake_case
 What's the keyword for creating functions?
 ?
 `fn`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 Can you call a function that is defined later in a scope?
 ?
@@ -576,23 +576,23 @@ Yes.
 What is the difference between a parameter and argument?
 ?
 A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 How could you define a function that takes a `i32` parameter called `x`?
 ?
 `fn foo(x: i32) {}`
-<!--SR:2022-08-27,3,230-->
+<!--SR:2022-09-03,7,230-->
 
 Do you have to put type annotations on function parameters? Why?
 ?
 Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 What is the difference between a statement and an expression?
 ?
 _Statements_ are instructions that perform some action and do not return a value.
 _Expressions_ evaluate to a resulting value.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 Does `let` create an expression or a statement?
 ?
@@ -626,12 +626,12 @@ fn main() {
 ```
 ?
 The value of y is: 4
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-04,8,250-->
 
 What is the syntactic difference between statements and expressions?
 ?
 Statements end in a semicolon, and expressions do not.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 How do you make scopes created with curly brackets into expressions?
 ?
@@ -641,12 +641,12 @@ By ending them in an expression, which the whole scope evaluates to.
 How do you write a function that returns an `i32`?
 ?
 `fn foo () -> i32 {}`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 Do you have to declare the return type of a function?
 ?
 Yes.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-08-31,4,250-->
 
 How do you return a value from a function?
 ?
@@ -656,12 +656,12 @@ By ending the function's block with an expression of that value, or using the `r
 What character creates comments?
 ?
 `//`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 How do you do multiline comments?
 ?
 `//` on each line
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 ## Control Flow
 ### If
@@ -718,7 +718,7 @@ Declare before the `loop` keyword with a colon.
 	...
 	break 'counting_up;
 ```
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 What is a `while` loop for?
 ?
@@ -754,7 +754,7 @@ for x in [1,2,3] {
 How do you make a range from 1 to 4?
 ?
 `1..4`
-<!--SR:2022-08-27,3,230-->
+<!--SR:2022-09-04,8,230-->
 
 How do you make a range from 4 down to 1?
 ?
@@ -797,13 +797,13 @@ Which is faster to push to, the stack or the heap? Why?
 ?
 The stack. 
 Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-08,12,250-->
 
 Which is faster to pull from, the stack or the heap? Why?
 ?
 The stack.
 Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 What kind of data can be put on the stack?
 ?
@@ -855,12 +855,12 @@ When it goes out of scope it's invalid.
 How do you create a new string of type `String` from a string literal, say, `"hello"`?
 ?
 `let x = String: :from("hello");`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
@@ -891,7 +891,7 @@ println!("{}, world!", s1);
 Why can't strings be accessed after they're moved?
 ?
 When they're moved you end up with two variables pointing at the same memory, and if the first variable were still accessible you could cause memory issues (like double dropping memory as the two variables go out of scope).
-<!--SR:2022-08-27,3,230-->
+<!--SR:2022-08-30,3,210-->
 
 What does `drop` do?
 ?
@@ -911,12 +911,12 @@ Rust never does automatic deep copying.
 How do you clone a `String`?
 ?
 `let s2 = s1.clone();`
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-05,9,250-->
 
 Why aren't integers moved when another value is assigned to their value?
 ?
 Because they live solely on the stack, and can be efficiently copied.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-06,10,250-->
 
 What trait indicates that a type lives on the stack?
 ?
@@ -947,12 +947,12 @@ fn f(s: String) {
 ```
 ?
 `s` is moved by the call `f(s)`, so it's inaccessible on the next line.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 What operations can move a value?
 ?
 Assingment, and function calls.
-<!--SR:2022-08-27,4,250-->
+<!--SR:2022-09-07,11,250-->
 
 How can you return ownership that was taken by a function?
 ?
@@ -1039,7 +1039,7 @@ Or in the file `src/garden/mod.rs`
 Where can you declare submodules?
 ?
 Any file but the crate root.
-<!--SR:2022-08-27,1,210-->
+<!--SR:2022-08-29,2,210-->
 
 Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
 ?
@@ -1228,7 +1228,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-08-27,1,210-->
+<!--SR:2022-08-28,1,190-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1259,7 +1259,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-08-27,1,210-->
+<!--SR:2022-08-29,2,210-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1343,7 +1343,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-08-27,1,210-->
+<!--SR:2022-08-28,1,190-->
 
 ## When to Panic!
 
@@ -1373,7 +1373,7 @@ Traits let different concrete types use different behaviour with the same functi
 What are lifetimes?
 ?
 Generics that give the compiler information about how references relate to each other.
-<!--SR:2022-08-27,1,230-->
+<!--SR:2022-08-29,2,230-->
 
 ## Generics
 
@@ -1395,12 +1395,12 @@ In angle brackets between the function name and the parameter list.
 What is the function signature for the `largest` method which is generic over types?
 ?
 `fn largest<T>(list: &[T]) -> &T {}`
-<!--SR:2022-08-27,1,230-->
+<!--SR:2022-08-28,1,210-->
 
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-08-27,1,230-->
+<!--SR:2022-08-30,3,230-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1441,7 +1441,7 @@ mod tests {
 	}
 }
 ```
-<!--SR:2022-08-27,1,230-->
+<!--SR:2022-08-28,1,210-->
 
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
@@ -1497,7 +1497,7 @@ How do you derive the traits required to use a struct/enum as an argument to `as
 What are the main assertion macros?
 ?
 `assert!`, `assert_eq!`, and `assert_ne!`
-<!--SR:2022-08-27,1,230-->
+<!--SR:2022-08-30,3,230-->
 
 How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
 ?

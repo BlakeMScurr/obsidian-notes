@@ -692,7 +692,7 @@ Rightshift
 What is the `<<`?
 ?
 Leftshift
-<!--SR:2022-08-27,61,250-->
+<!--SR:2023-01-27,153,250-->
 
 How are the shift operators extended?
 ?
