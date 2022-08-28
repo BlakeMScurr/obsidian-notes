@@ -440,7 +440,7 @@ Numeric values, or expressions, or arrays of one or the other.
 Can functions be recursive?
 ?
 Yes.
-<!--SR:2022-08-28,62,250-->
+<!--SR:2023-01-30,155,250-->
 
 How many return statements can a function have?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-08-28,25,210-->
+<!--SR:2022-11-07,71,230-->
 
 # Constraint Generation
 
