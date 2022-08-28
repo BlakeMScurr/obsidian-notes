@@ -51,7 +51,7 @@ The set of stakers who have staked for the task $j$.
 What does $\alpha_j$ denote?
 ?
 The fraction of stake require to corrupt task $j$.
-<!--SR:2022-08-28,14,270-->
+<!--SR:2022-10-09,42,270-->
 
 What does $U$ denote?
 ?

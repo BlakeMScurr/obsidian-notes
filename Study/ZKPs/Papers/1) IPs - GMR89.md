@@ -176,7 +176,7 @@ A book must, in a sense answer all possible questions in advance.
 What are the components of a classroom lesson (in the context of IPs at a high level)?
 ?
 A classroom lesson has a *teacher* and *student* in *conversation* about a *proposition*.
-<!--SR:2022-08-28,81,230-->
+<!--SR:2023-02-27,183,230-->
 
 ### Interactive Turing Machine
 
@@ -556,7 +556,7 @@ The scientific/empricial worldview that it's hard to learn facts about reality, 
 What are MCF's assumptions?
 ?
 Infinite computing power by all. The various inputs discussed can be hidden to different participants.
-<!--SR:2022-08-28,89,250-->
+<!--SR:2023-04-08,223,250-->
 
 #### GMR vs MCF
 

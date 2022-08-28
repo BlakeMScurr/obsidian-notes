@@ -101,7 +101,7 @@ The proof does not reveal anything but the truth of the statement, in particular
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
 To non-interactive zero knowledge proofs (NIZK) in the common reference string model.
-<!--SR:2022-08-28,70,250-->
+<!--SR:2023-02-11,167,250-->
 
 Where are NIZKs useful, according to Groth16?
 ?
@@ -111,7 +111,7 @@ The construction of non-interactive cryptographic schemes, e.g., digital key sig
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
 Kili92, by Joe Kilian.
-<!--SR:2022-08-28,53,190-->
+<!--SR:2022-12-07,101,190-->
 
 What did Micali00 propose?
 ?
@@ -386,7 +386,7 @@ We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zer
 What is perfect completeness, roughly?
 ?
 Completeness says that, given any true statement, an honest prover should be able to convince an honest verifier.
-<!--SR:2022-08-28,46,250-->
+<!--SR:2022-12-21,115,250-->
 
 What is the definition of perfect completeness?
 ?
@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-08-28,17,170-->
+<!--SR:2022-09-08,11,150-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -537,7 +537,7 @@ Preprocessing succinct non-interactive argument
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-08-28,41,230-->
+<!--SR:2022-09-18,21,210-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-08-28,4,170-->
+<!--SR:2022-09-06,9,170-->
 
 What is the definition of $B$ in a QAPLIP?
 ?

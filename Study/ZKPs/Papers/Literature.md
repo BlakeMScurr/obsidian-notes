@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-08-28,34,190-->
+<!--SR:2022-09-16,19,170-->
 
 What is the title of GO94?
 ?
