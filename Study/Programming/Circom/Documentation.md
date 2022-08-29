@@ -958,7 +958,7 @@ Signals, vars, the same type of component, or arrays.
 How, for example, do we declare a 2D array with lengths?
 ?
 `var dbl[16][2];`
-<!--SR:2022-08-29,63,250-->
+<!--SR:2023-02-07,162,250-->
 
 What is wrong with the following code?
 `var z = [2,8,4];`
@@ -1229,7 +1229,7 @@ template A() {
 ?
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
-<!--SR:2022-08-29,63,250-->
+<!--SR:2023-02-09,164,250-->
 
 What two things are wrong with the following code and what message does it generate?
 ```
