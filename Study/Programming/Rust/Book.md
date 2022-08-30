@@ -72,7 +72,7 @@ What is the keyword used to bring libraries into scope?
 What is the prelude?
 ?
 A set of items defined in the standard library that is brought into scope by default into every program.
-<!--SR:2022-08-29,7,270-->
+<!--SR:2022-09-22,23,270-->
 
 How do you define the entrypoint for a rust program?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-08-30,3,230-->
+<!--SR:2022-09-08,9,230-->
 
 What is a `Result`?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-08-29,2,150-->
+<!--SR:2022-08-31,1,130-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -246,13 +246,13 @@ No
 What is shadowing?
 ?
 When a new variable is declared with the same name as an old one.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 How is shadowing with mutable variables different to having mutable varialbes?
 ?
 The variables are still immutable after the shadowing has been done.
 With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-13,14,250-->
 
 How do you shadow a variable?
 ?
@@ -427,12 +427,12 @@ What is the default floating-point type and why?
 What standard are floats implemented according to?
 ?
 IEEE-754
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-14,15,250-->
 
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
 1, because integer division rounds down to the nearest integer.
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-14,15,250-->
 
 ### Boolean
 
@@ -487,7 +487,7 @@ How do you destructure a tuple?
 ?
 Using pattern matching, i.e.:
 `let (x, y, z) = tup;`
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 How do we directly access a tuple element?
 ?
@@ -553,7 +553,7 @@ How do you write an array filled with the same value? (show the fully explicit w
 What happens if you provide an invalid array access?
 ?
 Panic at runtime (or compile time if it's compile time detectable).
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 ## Functions
 
@@ -826,7 +826,7 @@ How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
-<!--SR:2022-08-29,3,230-->
+<!--SR:2022-09-01,2,210-->
 
 What problems does heap has, that ownership addresses?
 ?
@@ -1027,7 +1027,7 @@ Where do extra binary packages go?
 Where does the compiler look first when compiling a crate?
 ?
 The crate root.
-<!--SR:2022-08-29,3,230-->
+<!--SR:2022-09-09,10,230-->
 
 Where would the compiler look for, say, the `garden` module declared in the crate root?
 ?
@@ -1039,7 +1039,7 @@ Or in the file `src/garden/mod.rs`
 Where can you declare submodules?
 ?
 Any file but the crate root.
-<!--SR:2022-08-29,2,210-->
+<!--SR:2022-09-04,5,210-->
 
 Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
 ?
@@ -1076,7 +1076,7 @@ Absolute and relative.
 What does an absolute path start with?
 ?
 The literal `crate`, referring to the crate root.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 What does a relative path start with?
 ?
@@ -1259,7 +1259,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-08-29,2,210-->
+<!--SR:2022-09-03,4,210-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1284,12 +1284,12 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-01,2,230-->
 
-Which of `expect` and `unwrap` is generally preferred for product code and why?
+Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 ## Propogation
 
@@ -1307,7 +1307,7 @@ match something {
 	Err(e) => return Err(e), 
 }
 ```
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 What does the `?` operator do?
 ?
@@ -1361,7 +1361,7 @@ Or to stop your code proceeding in a bad state.
 What are generics?
 ?
 Abstract stand-ins for concrete types or other properties.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-02,3,230-->
 
 What do traits do, broadly, as opposed to generics?
 ?
@@ -1373,7 +1373,7 @@ Traits let different concrete types use different behaviour with the same functi
 What are lifetimes?
 ?
 Generics that give the compiler information about how references relate to each other.
-<!--SR:2022-08-29,2,230-->
+<!--SR:2022-09-05,6,230-->
 
 ## Generics
 
@@ -1385,12 +1385,12 @@ CamelCase
 What is the conventional name for a generic type?
 ?
 `T`
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 Where do you declare a type parameter name in a function?
 ?
 In angle brackets between the function name and the parameter list.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 What is the function signature for the `largest` method which is generic over types?
 ?
@@ -1400,7 +1400,7 @@ What is the function signature for the `largest` method which is generic over ty
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-08-30,3,230-->
+<!--SR:2022-09-02,3,210-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1446,7 +1446,7 @@ mod tests {
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
 That there are no benchmark tests. I.e., tests to measure performance.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-09,10,250-->
 
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
@@ -1461,7 +1461,7 @@ That there are no tests that are filtered out by our argument to `cargo test`
 When do tests fail?
 ?
 When the test panics.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 What does `assert_eq!` do?
 ?
@@ -1481,7 +1481,7 @@ Panics if the two arguments are equal, nothing otherwise.
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
 Neither, in Rust they are just called left and right.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
 ?
@@ -1510,7 +1510,7 @@ assert!(
 	result
 );
 ```
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 How do you test that a function panics?
 ?
@@ -1550,7 +1550,7 @@ fn some_test() -> Result<(), String> {
 Why write tests that return `Result`s?
 ?
 So you can use the question mark operator in the body of the tests, so you can conveniently fail if there is an `Err`.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-09,10,250-->
 
 How do you assert that a result is an err?
 ?
@@ -1560,6 +1560,6 @@ How do you assert that a result is an err?
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?
 No
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 ## How Tests are Run

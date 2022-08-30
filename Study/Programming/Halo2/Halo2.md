@@ -117,7 +117,7 @@ To create a higher level API than the matrix view of a PLONKish circuit, offerin
 What are some examples of things chips might do?
 ?
 Cryptographic primitives like hash functions or ciphers, or algorithms like scalar multiplication or pairings.
-<!--SR:2022-08-30,25,250-->
+<!--SR:2022-11-01,63,250-->
 
 What is the advantage of using custom gates?
 ?

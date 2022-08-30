@@ -848,7 +848,7 @@ The else block is optional.
 What is the syntax for `for` loops?
 ?
 `for ( initialization_code ; boolean_condition ; step_code ) block_of_code`
-<!--SR:2022-08-30,64,250-->
+<!--SR:2023-02-06,160,250-->
 
 What's wrong with the following code?
 ```
