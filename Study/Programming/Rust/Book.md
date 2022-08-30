@@ -234,7 +234,7 @@ Compile time.
 What do constants require that variables don't?
 ?
 A type annotation.
-<!--SR:2022-08-30,3,230-->
+<!--SR:2022-09-08,9,230-->
 
 ??? Why?
 
@@ -464,7 +464,7 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-08-29,3,230-->
+<!--SR:2022-09-02,3,210-->
 
 #### Tuples
 
@@ -682,7 +682,7 @@ fn main() {
 ```
 ?
 We need a bool in the if's condition, whereas we have an int.
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-14,15,250-->
 
 Does rust convert non boolean types by default?
 ?
@@ -808,12 +808,12 @@ Because of the cost to the processor of moving around memory. Values on the stac
 What kind of data can be put on the stack?
 ?
 Data with a known size at compile time.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-09,10,250-->
 
 Where is data with unknown size at compile time stored?
 ?
 The heap.
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-13,14,250-->
 
 How does allocating on the heap work, roughly?
 ?
@@ -842,7 +842,7 @@ What are the ownership rules?
 Each value has an owner.
 There can only be one owner at a time.
 When the owner goes out of scope, the value is dropped.
-<!--SR:2022-08-29,3,230-->
+<!--SR:2022-09-09,10,230-->
 
 What is the relationship between variable validity and scope?
 ?
@@ -886,7 +886,7 @@ println!("{}, world!", s1);
 ```
 ?
 `s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
-<!--SR:2022-08-30,5,250-->
+<!--SR:2022-09-14,15,250-->
 
 Why can't strings be accessed after they're moved?
 ?
@@ -998,14 +998,14 @@ The file containing the root module of a crate.
 What is a package?
 ?
 A bundle of crates.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 How many crates can/must a package have?
 ?
 As many binary packages as it likes.
 At most one library crate.
 At least one crate.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
@@ -1020,7 +1020,7 @@ A library crate named the same as the package.
 Where do extra binary packages go?
 ?
 `src/bin`
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 ## Modules
 
@@ -1176,7 +1176,7 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-02,3,230-->
 
 # MISSING 8
 # Error Handling
@@ -1197,7 +1197,7 @@ How do you use `panic!`?
 ?
 Pass a string (etc) to it:
 `panic!("you didn't do this right");`
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-12,13,250-->
 
 How can you find the stacktrace for a panic?
 ?
@@ -1264,7 +1264,7 @@ fn main() {
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-01,2,230-->
 
 What does `unwrap_or_else` do?
 ?
@@ -1332,13 +1332,13 @@ By setting the return type of main to `Result<(), Box<dyn Error>>`
 How can we understand `Box<dyn Error>` at a high level?
 ?
 As "any kind of error."
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-01,2,230-->
 
 What happens when a main function with a return type of `Result<(), E>` returns?
 ?
 If it returns `Ok`, the executable exits with `0`.
 It returns a non zero exit value if it returns an `Err` value.
-<!--SR:2022-08-29,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 What kinds of types can the main function return?
 ?
@@ -1417,17 +1417,17 @@ A piece of metadata about a piece of code.
 How do you change a function into a test function?
 ?
 Adding `#[test]` on the line before `fn`
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 What is `#[test]`?
 ?
 The test attribute.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-09,10,250-->
 
 What command do we use to run test?
 ?
 `cargo test`
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 What is the testing template that Cargo automatically gives us when writing a library crate?
 ?
@@ -1471,7 +1471,7 @@ Panics if the values passed in are not equal, nothing otherwise.
 What does `assert!` do?
 ?
 Panics if passed false, nothing if passed true.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-10,11,250-->
 
 What does `assert_ne!` do?
 ?
@@ -1487,7 +1487,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 ?
 `PartialEq` because they're compared using `==` and `!=` respectively.
 `Debug` because they're printed using debug formatting.
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
@@ -1545,7 +1545,7 @@ fn some_test() -> Result<(), String> {
 	...
 }
 ```
-<!--SR:2022-08-30,4,250-->
+<!--SR:2022-09-11,12,250-->
 
 Why write tests that return `Result`s?
 ?
