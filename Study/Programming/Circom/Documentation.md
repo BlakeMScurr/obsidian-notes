@@ -188,7 +188,7 @@ template tempid (param_1, param2) {
 	...
 }
 ```
-<!--SR:2022-09-01,66,250-->
+<!--SR:2023-02-13,165,250-->
 
 What can templates not include?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-08-31,27,170-->
+<!--SR:2022-10-14,43,170-->
 
 What are the bitwise assignment operators?
 ?
@@ -887,7 +887,7 @@ component main{public [in]} = wrong(1);
 ```
 ?
 The condition depends on an unknown, and there are constraints generated inside the condition. This makes it impossible to generate a static circuit from the code.
-<!--SR:2022-08-31,65,250-->
+<!--SR:2023-02-11,163,250-->
 
 What template has an error and why?
 ```
@@ -1008,7 +1008,7 @@ There are two types of components being put into the array `c`. This applies eve
 How does scoping work?
 ?
 We have static/lexical scoping, and that signals must be defined at the top level block of the template that uses them, effectively giving them global scope.
-<!--SR:2022-08-31,65,250-->
+<!--SR:2023-02-03,155,250-->
 
 What is wrong with the following code and what error does it produce?
 ```

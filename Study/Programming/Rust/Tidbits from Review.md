@@ -25,4 +25,4 @@ Doesn't preserve order.
 How do you add a large collection of items to an `Vec`?
 ?
 `append` for an existing `Vec`, and `extend` for items that aren't already a `Vec`, but implement `IntoIterator`
-<!--SR:2022-09-01,2,230-->
+<!--SR:2022-09-06,5,230-->

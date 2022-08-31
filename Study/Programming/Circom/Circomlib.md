@@ -73,7 +73,7 @@ No.
 What does `nbits` do?
 ?
 Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
-<!--SR:2022-08-31,61,250-->
+<!--SR:2023-02-01,153,250-->
 
 What do `a`, `r`, and `n` represent in `nbits`?
 ?
@@ -112,7 +112,7 @@ What are `lin` and `lout` in `Binsum`?
 ?
 `lin` is the algebraic expression for the sum of the numbers in `in`.
 `lout` is the algebraic expression for the value of `out`
-<!--SR:2022-08-31,41,230-->
+<!--SR:2022-12-04,94,230-->
 
 ??? does the l in lin and lout represent "algebra?"
 
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-08-31,13,130-->
+<!--SR:2022-09-10,9,130-->
 
 What are the variables in compconstant?
 ?

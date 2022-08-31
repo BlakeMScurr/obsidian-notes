@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-09-01,19,190-->
+<!--SR:2022-09-13,12,170-->
 
 What are the possible specifications for each column?
 ?
@@ -71,7 +71,7 @@ A cell in a given column of the current row, or a given column of another row re
 What is the maximum degree of each polynomial?
 ?
 The maximum constraint degree.
-<!--SR:2022-09-01,29,250-->
+<!--SR:2022-11-13,73,250-->
 
 What are lookup arguments defined over?
 ?
