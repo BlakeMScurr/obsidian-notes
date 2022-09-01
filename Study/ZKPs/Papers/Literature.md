@@ -12,7 +12,7 @@ The Knowledge Complexity of Interactive Proof-Systems.
 Who are the authors of GMR89?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff
-<!--SR:2022-08-31,80,210-->
+<!--SR:2023-02-09,161,210-->
 
 What does GMR89 contribute?
 ?
@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-08-31,23,150-->
+<!--SR:2022-10-10,39,150-->
 
 ## BGKW88
 
@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-08-30,26,150-->
+<!--SR:2022-10-12,41,150-->
 
 What did GOS12 contribute?
 ?
@@ -137,12 +137,12 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-08-31,8,150-->
+<!--SR:2022-09-06,5,130-->
 
 Who are the authors of GOS06?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-08-30,73,250-->
+<!--SR:2023-03-05,185,250-->
 
 What is the title of GOS06?
 ?

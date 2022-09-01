@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-08-29,16,190-->
+<!--SR:2022-09-11,10,170-->
 
 What is the limit definition of $\omega$?
 ?
@@ -1125,7 +1125,7 @@ The exponentiations of $x$
 The linear combinations for $\phi$
 The linear combinations for $w$
 The evaluations of $t(x)$
-<!--SR:2022-08-29,34,250-->
+<!--SR:2022-09-20,19,230-->
 
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?

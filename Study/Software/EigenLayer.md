@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-09-01,6,230-->
+<!--SR:2022-09-15,14,230-->
 
 What does $S_j$ denote?
 ?
@@ -61,7 +61,7 @@ A subset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2022-08-30,16,270-->
+<!--SR:2022-09-05,4,250-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
@@ -146,7 +146,7 @@ $$
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-08-31,13,250-->
+<!--SR:2022-09-09,8,230-->
 
 What does $\gamma_{ij}$ denote?
 ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-09-01,14,250-->
+<!--SR:2022-09-10,9,230-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-09-01,14,250-->
+<!--SR:2022-09-10,9,230-->
 
 
 ??? How do the steps in line (10) work?

@@ -142,7 +142,7 @@ A proof has a is easier to verify than compute, whereas a computation must be en
 What two foundational ideas are actually intuitive notions with various formalisations, for GMR?
 ?
 Proof and computation.
-<!--SR:2022-08-30,91,250-->
+<!--SR:2023-04-11,222,250-->
 
 What are GMR's examples of formalisations for "computation?"
 ?
@@ -637,7 +637,7 @@ An infinite set of strings.
 How do we define an I-c-ensembles's $c$?
 ?
 Some natural number.
-<!--SR:2022-08-29,90,250-->
+<!--SR:2023-04-09,220,250-->
 
 How do we define an I-c-ensembles's $\Pi_x$?
 ?
@@ -914,7 +914,7 @@ M can simulate A by just looking at B's coin tosses directly, since B knows the 
 How much information does A communicate in naive QNR?
 ?
 More than Zero if $QNR \notin PP$, namely the residuosity of each $t_i$
-<!--SR:2022-08-29,72,230-->
+<!--SR:2023-02-17,169,230-->
 
 How does B' work in naive QNR?
 ?
@@ -936,7 +936,7 @@ A square root of x, in addition to showing $x \in QR$
 How much knowledge do traditional proofs of theorems convey?
 ?
 More than language membership, think NP style QR.
-<!--SR:2022-09-01,90,250-->
+<!--SR:2023-04-04,215,250-->
 
 What is the notion of "$L$ has $f(n$) knowledge complexity" meant to capture?
 ?
@@ -1355,7 +1355,7 @@ $\{t_{i_1},...,t_{i_d}\}$.
 How does $B$ reveal $D$?
 ?
 $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \cdot r_{i_j}^2 \mod m$ for some $1 \leq i_j \leq 2n$.
-<!--SR:2022-08-31,57,190-->
+<!--SR:2022-12-19,109,190-->
 
 How is $X$ defined?
 ?
