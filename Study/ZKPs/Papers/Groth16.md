@@ -60,7 +60,7 @@ By showing that linear interactive proofs cannot have a linear decision procedur
 What would extending the lower bound in Groth16 prove?
 ?
 Extending the lower bound to 2 elements would prove the optimality of the 3 element SNARG.
-<!--SR:2022-09-01,71,250-->
+<!--SR:2023-02-28,180,250-->
 
 ??? How do we know that the lower bound actually applies - is a LIP really the only information theoretic model that could yield pairing based SNARKs?
 
@@ -132,7 +132,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-09-01,35,170-->
+<!--SR:2022-10-28,57,170-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -198,7 +198,7 @@ That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
 $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the same input (including random coins).
-<!--SR:2022-08-29,48,250-->
+<!--SR:2023-01-03,124,250-->
 
 ## Bilinear Groups
 
@@ -622,7 +622,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2022-09-01,58,230-->
+<!--SR:2023-01-15,136,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?
@@ -954,7 +954,7 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-08-29,25,210-->
+<!--SR:2022-10-29,58,210-->
 
 What is $d_D$?
 ?
@@ -964,7 +964,7 @@ The multiplicative depth of the verifier circuit output by Test.
 What is $\mu$?
 ?
 The dimension of the randomness vector used in Setup.
-<!--SR:2022-08-30,46,250-->
+<!--SR:2022-12-28,118,250-->
 
 What is $m$ in a LIP?
 ?
@@ -981,7 +981,7 @@ The dimension of the simulation trapdoor vector $\tau$ made in Setup.
 What is $\eta$ in a LIP?
 ?
 The dimension of the vector output by $t$.
-<!--SR:2022-08-29,42,230-->
+<!--SR:2022-12-10,100,230-->
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
@@ -1144,7 +1144,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:2022-08-30,35,250-->
+<!--SR:2022-09-21,20,230-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1188,7 +1188,7 @@ $3 \times (m + 2n + 4)$
 What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
-<!--SR:2022-08-31,39,270-->
+<!--SR:2022-12-17,107,270-->
 
 What is the definition of $A$ in a QAPLIP?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-08-31,5,130-->
+<!--SR:2022-09-05,4,130-->
 
 ##### Vfy
 

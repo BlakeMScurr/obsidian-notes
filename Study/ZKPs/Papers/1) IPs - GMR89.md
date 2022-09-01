@@ -250,7 +250,7 @@ As a write only tape, where each cell can only be written once, and each cell mu
 What does an ITM's input tape represent?
 ?
 The proposition being thought about.
-<!--SR:2022-09-01,92,250-->
+<!--SR:2022-10-17,46,230-->
 
 ### Interactive Pair
 
@@ -342,7 +342,7 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-08-30,41,150-->
+<!--SR:2022-11-03,63,150-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
@@ -1192,7 +1192,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-09-01,42,150-->
+<!--SR:2022-11-02,62,150-->
 
 What is the problem with the naive QNR IP?
 ?
@@ -1285,7 +1285,7 @@ Type 1
 What type are each $t_i in S$?
 ?
 Type 2
-<!--SR:2022-09-01,50,230-->
+<!--SR:2022-12-29,119,230-->
 
 How does $B$ send $T$ and $S$ to $A$?
 ?
@@ -1345,7 +1345,7 @@ The difference in size between $T - Z$ and $S - Z$.
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
 $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - Z$ or $S -Z$.
-<!--SR:2022-08-30,64,210-->
+<!--SR:2023-01-16,137,210-->
 
 How is $D$ notated?
 ?
@@ -1568,7 +1568,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-08-30,56,190-->
+<!--SR:2022-09-30,29,170-->
 
 How does the proof for claim 1 work?
 ?
