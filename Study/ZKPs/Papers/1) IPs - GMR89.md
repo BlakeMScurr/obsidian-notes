@@ -52,7 +52,7 @@ Knowledge is information that is difficult to acquire.
 How can we study knowledge complexity per se, rather than instances of proof systems?
 ?
 By classifying languages according to their knowledge complexity.
-<!--SR:2022-09-02,90,230-->
+<!--SR:2023-03-25,204,230-->
  
 
 ### Interaction reduces knowledge
@@ -317,7 +317,7 @@ The text of all possible computations of (A, B) on input x, taken over the distr
 What is an interactive proof system analogous to?
 ?
 A lesson in a classroom.
-<!--SR:2022-09-02,93,250-->
+<!--SR:2023-04-23,233,250-->
 
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
@@ -1370,7 +1370,7 @@ $S - Z - D$
 What is the purpose of $X' \cup Y'$?
 ?
 Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqrt{x}$. That is, so that a simulator $M$ can calculate $\sqrt{x}$ using $B'$.
-<!--SR:2022-09-02,47,150-->
+<!--SR:2022-11-12,71,150-->
 
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?

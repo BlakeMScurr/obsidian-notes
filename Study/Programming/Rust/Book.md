@@ -40,7 +40,7 @@ How do you build a cargo project ready for release?
 How do you locally access the rust documentation?
 ?
 `rustup docs`
-<!--SR:2022-09-02,11,270-->
+<!--SR:2022-10-05,33,270-->
 
 How do you manually format a rust file, say `main.rs`?
 ?
@@ -77,7 +77,7 @@ A set of items defined in the standard library that is brought into scope by def
 How do you define the entrypoint for a rust program?
 ?
 `fn main () {}`
-<!--SR:2022-09-02,10,270-->
+<!--SR:2022-10-01,29,270-->
 
 How do you print a string, say, `"hello"` to stdout?
 ?
@@ -107,7 +107,7 @@ How do you create a new mutable variable `b` and set it to `5`?
 What is `String`?
 ?
 A type from the standard library that is a growable, UTF-8 encoded piece of text.
-<!--SR:2022-09-02,8,250-->
+<!--SR:2022-09-23,21,250-->
 
 What is `String: :new`?
 ?
@@ -183,7 +183,7 @@ Binary crates are executables.
 Where are dependency crates defined?
 ?
 `Cargo.toml`
-<!--SR:2022-09-02,11,290-->
+<!--SR:2022-09-09,7,270-->
 
 How do you create a random number between 1 and 100 (inclusive)?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-09-02,1,130-->
+<!--SR:2022-09-03,1,130-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -290,7 +290,7 @@ fn main() {
 ```
 ?
 You can't mutable the type of a variable.
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-22,20,250-->
 
 ## Data Types
 
@@ -395,7 +395,7 @@ What are the different method prefixes for handling overflow explicitly?
 What does `wrapping_*` do?
 ?
 Wraps in all modes, (including debug).
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-22,20,250-->
 
 What does `checked_*` do?
 ?
@@ -452,7 +452,7 @@ How do we declare a `char`?
 ?
 With single quotes, i.e.;
 `let c = 'z';`
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-22,20,250-->
 
 What standard does a char represent?
 ?
@@ -464,7 +464,7 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-09-02,3,210-->
+<!--SR:2022-09-09,7,210-->
 
 #### Tuples
 
@@ -503,7 +503,7 @@ The unit
 How do you write the unit and its type?
 ?
 Both as `()`
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-21,19,250-->
 
 What do expressions implicitly return if they don't return any other value?
 ?
@@ -692,7 +692,7 @@ No.
 Does rust have a ternary operator? Why?
 ?
 No, because if/else expressions do the same thing with (arguably) clearer syntax.
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-20,18,250-->
 
 ### Loops
 
@@ -774,7 +774,7 @@ Because it can be understood to return a value, which can lead to subtle bugs.
 What is the purpose of ownership?
 ?
 To make memory safety guarantees without needing a garbage collector.
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-21,19,250-->
 
 What is ownership?
 ?
@@ -957,7 +957,7 @@ Assingment, and function calls.
 How can you return ownership that was taken by a function?
 ?
 By returning the value.
-<!--SR:2022-09-02,7,250-->
+<!--SR:2022-09-20,18,250-->
 
 
 ## References and Borrowing
@@ -978,7 +978,7 @@ Paths
 What is a crate?
 ?
 A tree of modules that produces a library or executable.
-<!--SR:2022-09-02,5,230-->
+<!--SR:2022-09-14,12,230-->
 
 What are the types of crate?
 ?
@@ -1051,7 +1051,7 @@ Or in the file `src/garden/vegetables/mod.rs`
 When can you refer to code in another module?
 ?
 Whenever that module is part of the same crate, as long as privacy allows.
-<!--SR:2022-09-02,5,230-->
+<!--SR:2022-09-16,14,230-->
 
 How do you make code in a module public and private?
 ?
@@ -1121,7 +1121,7 @@ With the `use` keyword
 Do `use` shortcuts apply in child modules defined in the same file?
 ?
 No
-<!--SR:2022-09-02,5,230-->
+<!--SR:2022-09-16,14,230-->
 
 How do you use `use` paths idiomatically?
 ?
@@ -1132,7 +1132,7 @@ How do you use `use` paths idiomatically?
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:2022-09-02,5,230-->
+<!--SR:2022-09-14,12,230-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1160,12 +1160,12 @@ use std::io;
 
 How can you rewrite the following code with nested paths?
 ```
-use std::io;
-use std::io::Write;
+use std: :io;
+use std: :io: :Write;
 ```
 ?
-`use std::io::{self, Write};`
-<!--SR:2022-09-02,5,230-->
+`use std: :io::{self, Write};`
+<!--SR:2022-09-14,12,230-->
 
 How could you bring everything in `std: :collections` into scope?
 ?
@@ -1176,7 +1176,7 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
-<!--SR:2022-09-02,3,230-->
+<!--SR:2022-09-11,9,230-->
 
 # MISSING 8
 # Error Handling
@@ -1240,7 +1240,7 @@ let greeting_file = match greeting_file_result {
 	Err(error) => panic!("Problem opening the file: {:?}", error),
 };
 ```
-<!--SR:2022-09-02,5,230-->
+<!--SR:2022-09-15,13,230-->
 
 Are `Result` and its variants in the prelude?
 ?
@@ -1361,7 +1361,7 @@ Or to stop your code proceeding in a bad state.
 What are generics?
 ?
 Abstract stand-ins for concrete types or other properties.
-<!--SR:2022-09-02,3,230-->
+<!--SR:2022-09-11,9,230-->
 
 What do traits do, broadly, as opposed to generics?
 ?
@@ -1400,7 +1400,7 @@ What is the function signature for the `largest` method which is generic over ty
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-09-02,3,210-->
+<!--SR:2022-09-08,6,210-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 

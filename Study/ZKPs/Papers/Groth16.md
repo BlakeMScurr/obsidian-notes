@@ -376,7 +376,7 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 What is a non-interactive argument?
 ?
 We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
-<!--SR:2022-09-02,20,230-->
+<!--SR:2022-10-20,48,230-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?

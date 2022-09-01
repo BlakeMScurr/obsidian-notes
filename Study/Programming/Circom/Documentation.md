@@ -383,7 +383,7 @@ When components are independent, i.e., the inputs do not depend on each others' 
 How do we use `parallel`?
 ?
 `template parallel NameTemplate(...){...}`
-<!--SR:2022-09-02,67,250-->
+<!--SR:2023-02-10,161,250-->
 
 What does `parallel` do?
 ?
@@ -948,7 +948,7 @@ No, they can hold a finite number of elements known at compile time.
 How many different types of elements can a single array hold?
 ?
 Just one type.
-<!--SR:2022-09-02,66,250-->
+<!--SR:2023-02-14,165,250-->
 
 What types can arrays hold?
 ?

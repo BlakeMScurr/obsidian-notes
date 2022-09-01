@@ -98,7 +98,7 @@ The cost of corruption for a subset of tasks $V$.
 How is $c(V)$ defined?
 ?
 $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
-<!--SR:2022-09-02,15,250-->
+<!--SR:2022-10-11,39,250-->
 
 What does $p_j$ denote?
 ?

@@ -276,7 +276,7 @@ What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 `-b*smsb*slsb + b*smsb + b*slsb`
 It must be `0` if `smsb == slsb == 0`
 `b` otherwise.
-<!--SR:2022-09-02,63,250-->
+<!--SR:2023-02-07,158,250-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 1`, how do we know?
 ?
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-09-02,31,150-->
+<!--SR:2022-10-15,43,150-->
