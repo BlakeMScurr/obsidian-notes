@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-09-02,13,170-->
+<!--SR:2022-09-10,8,150-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -773,7 +773,7 @@ w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}} \\
 \}
 \end{aligned}
 $$
-<!--SR:2022-09-02,41,210-->
+<!--SR:2022-11-25,84,210-->
 
 What is the definition of $\phi$ in a QAP?
 ?
