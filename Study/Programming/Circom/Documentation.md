@@ -210,7 +210,7 @@ We are assigning a value to an input signal in the same template where it has be
 What is the syntax to instantiate template parameters?
 ?
 `component c = tempid(value_1, ... , value_n)`;
-<!--SR:2022-09-03,68,250-->
+<!--SR:2023-02-22,171,250-->
 
 How are the possible values of template parameters restricted?
 ?
@@ -388,7 +388,7 @@ How do we use `parallel`?
 What does `parallel` do?
 ?
 The C++ file resulting from compilation will contain parallelized code to compute the witness.
-<!--SR:2022-09-04,69,250-->
+<!--SR:2023-02-24,173,250-->
 
 When is parallelization particularly useful?
 ?
@@ -612,7 +612,7 @@ val(z) = z, otherwise
 How is `x < y` defined?
 ?
 `val(x % p) < val(y % p)`
-<!--SR:2022-09-03,65,250-->
+<!--SR:2023-02-15,164,250-->
 
 How is `x > y` defined?
 ?
@@ -938,7 +938,7 @@ Field elements and arrays.
 What is the default type of signals and variables?
 ?
 A field element.
-<!--SR:2022-09-04,68,250-->
+<!--SR:2023-02-21,170,250-->
 
 Are arrays dynamic?
 ?
@@ -1146,7 +1146,7 @@ An error message saying that "Assignee and assigned types do not match operator.
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2022-09-04,55,230-->
+<!--SR:2023-01-09,127,230-->
 
 What kinds of values are always known or unknown?
 ?

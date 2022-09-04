@@ -10,12 +10,12 @@ What is the rust file extension?
 How do you compile a rust program, say `main.rs`?
 ?
 `rustc main.rs`
-<!--SR:2022-09-04,13,290-->
+<!--SR:2022-09-12,8,270-->
 
 How do you create a new cargo project, called, say `hello_world`?
 ?
 `cargo new hello_world`
-<!--SR:2022-09-03,12,290-->
+<!--SR:2022-10-11,37,290-->
 
 How do you run a cargo project?
 ?
@@ -30,7 +30,7 @@ How do you compile a cargo project?
 What does `cargo check` do?
 ?
 It checks that the cargo project still compiles without producing an executable.
-<!--SR:2022-09-03,12,270-->
+<!--SR:2022-10-12,38,270-->
 
 How do you build a cargo project ready for release?
 ?
@@ -62,12 +62,12 @@ What is the identifier for the standard library?
 What is the identifier for the input/output library?
 ?
 `io`
-<!--SR:2022-09-03,11,270-->
+<!--SR:2022-10-07,33,270-->
 
 What is the keyword used to bring libraries into scope?
 ?
 `use`
-<!--SR:2022-09-04,13,290-->
+<!--SR:2022-10-13,39,290-->
 
 What is the prelude?
 ?
@@ -117,7 +117,7 @@ A function that returns a new instance of `String`.
 What does the `: :` syntax on `String: :new` indicate?
 ?
 That `new` is an associated function of the string type.
-<!--SR:2022-09-03,11,270-->
+<!--SR:2022-10-06,32,270-->
 
 What is an associated function?
 ?
@@ -166,7 +166,7 @@ How can you use placeholders to print the value "x is 5", where the varialbe `x`
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
 `println!("x = {}, y = {}", x, y);`
-<!--SR:2022-09-04,12,270-->
+<!--SR:2022-10-08,34,270-->
 
 How do you get access to random numbers in Rust?
 ?
@@ -476,7 +476,7 @@ Fixed.
 Are type annotations required for tuples?
 ?
 No.
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-30,26,250-->
 
 How do you declare a tuple? (give type annotations).
 ?
@@ -493,7 +493,7 @@ How do we directly access a tuple element?
 ?
 Dot notation, i.e.,:
 `tup.0`
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-28,24,250-->
 
 What is the name for the  tuple without values?
 ?
@@ -515,12 +515,12 @@ The unit, i.e., the empty tuple `()`
 Do arrays have fixed or variable lengths?
 ?
 Fixed.
-<!--SR:2022-09-03,8,250-->
+<!--SR:2022-09-26,22,250-->
 
 Can the elements in an array have different types from one another?
 ?
 No.
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-29,25,250-->
 
 How do you declare an array?
 ?
@@ -548,7 +548,7 @@ let a: [i32; 5] = [1, 2, 3, 4, 5];
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
 `let a = [3;5]` will make `[3,3,3,3,3]`
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-25,21,250-->
 
 What happens if you provide an invalid array access?
 ?
@@ -581,7 +581,7 @@ A parameter is the name for something passed into a function in the function def
 How could you define a function that takes a `i32` parameter called `x`?
 ?
 `fn foo(x: i32) {}`
-<!--SR:2022-09-03,7,230-->
+<!--SR:2022-09-23,19,230-->
 
 Do you have to put type annotations on function parameters? Why?
 ?
@@ -612,7 +612,7 @@ fn main() {
 ```
 ?
 It expects a statement to evaluate to a value.
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-27,23,250-->
 
 What does the following code print?
 ```
@@ -754,7 +754,7 @@ for x in [1,2,3] {
 How do you make a range from 1 to 4?
 ?
 `1..4`
-<!--SR:2022-09-04,8,230-->
+<!--SR:2022-09-24,20,230-->
 
 How do you make a range from 4 down to 1?
 ?
@@ -765,7 +765,7 @@ Can we shorten `+= 1` with `++`? Why?
 ?
 No.
 Because it can be understood to return a value, which can lead to subtle bugs.
-<!--SR:2022-09-03,8,250-->
+<!--SR:2022-09-26,22,250-->
 
 # Ownership
 
@@ -896,12 +896,12 @@ When they're moved you end up with two variables pointing at the same memory, an
 What does `drop` do?
 ?
 Deallocates the memory for that variable.
-<!--SR:2022-09-04,9,250-->
+<!--SR:2022-09-29,25,250-->
 
 What's the difference between a shallow copy and a move?
 ?
 Moves are shallow copies where the first variable is invalidated.
-<!--SR:2022-09-03,8,250-->
+<!--SR:2022-09-28,24,250-->
 
 When is automatic copying deep vs shallow?
 ?
@@ -988,7 +988,7 @@ Binary and library.
 What kinds of crates have a main function?
 ?
 Binary, not library.
-<!--SR:2022-09-04,7,250-->
+<!--SR:2022-09-23,19,250-->
 
 What is a crate root?
 ?
@@ -1064,7 +1064,7 @@ What does `use` do for a module within the same crate?
 ?
 Creates a shortcut.
 I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly to `asparagus`
-<!--SR:2022-09-04,7,250-->
+<!--SR:2022-09-24,20,250-->
 
 ## Paths
 
@@ -1127,7 +1127,7 @@ How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:2022-09-03,6,250-->
+<!--SR:2022-09-20,16,250-->
 
 What keyword do we use to create aliases?
 ?
@@ -1259,7 +1259,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-09-03,4,210-->
+<!--SR:2022-09-15,11,210-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1269,7 +1269,7 @@ What method can we use to clean up nested match statements when dealing with err
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
-<!--SR:2022-09-03,2,230-->
+<!--SR:2022-09-11,7,230-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1279,7 +1279,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-09-04,3,210-->
+<!--SR:2022-09-07,3,190-->
 
 What does `expect` do?
 ?
@@ -1312,7 +1312,7 @@ match something {
 What does the `?` operator do?
 ?
 If the `Result` is `Ok` it just evalutes to the value inside the `Ok` and the code continues through the current function. If the `Result` is `Err`, it returns that error from the current function.
-<!--SR:2022-09-04,7,250-->
+<!--SR:2022-09-24,20,250-->
 
 What is the difference between `?` and the basic manual way of propogating errors (by matching on the `Result`'s type and returning if it's an `Err`)?
 ?
@@ -1322,7 +1322,7 @@ What is the difference between `?` and the basic manual way of propogating error
 When can you use the `?` operator?
 ?
 On a `Result` type in a function that returns a `Result`, or on an `Option` type in a function that returns an `Option`.
-<!--SR:2022-09-03,2,230-->
+<!--SR:2022-09-10,6,230-->
 
 How can you use the `?` operator in the `main` function?
 ?
@@ -1343,7 +1343,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-09-04,3,170-->
+<!--SR:2022-09-09,5,170-->
 
 ## When to Panic!
 
@@ -1492,7 +1492,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:2022-09-04,3,230-->
+<!--SR:2022-09-07,3,210-->
 
 What are the main assertion macros?
 ?
@@ -1534,7 +1534,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-09-03,2,230-->
+<!--SR:2022-09-11,7,230-->
 
 How do you make a test that can return an error?
 ?
