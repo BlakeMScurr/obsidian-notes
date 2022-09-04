@@ -378,7 +378,7 @@ ands[1] = MultiAnd(n2);
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-09-05,70,250-->
+<!--SR:2022-10-14,39,230-->
 
 How do we use `parallel`?
 ?
@@ -450,7 +450,7 @@ As many as it likes.
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2022-09-05,69,250-->
+<!--SR:2022-10-10,35,230-->
 
 What does executing a return statement do?
 ?
@@ -599,7 +599,7 @@ What are the relational operators?
 What is the `val(x)` function for?
 ?
 Defining negative numbers for use with the relational operators.
-<!--SR:2022-09-05,66,250-->
+<!--SR:2023-02-12,160,250-->
 
 What is the definition of the `val(x)` function?
 ?
@@ -607,7 +607,7 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-09-05,42,230-->
+<!--SR:2022-12-11,97,230-->
 
 How is `x < y` defined?
 ?
