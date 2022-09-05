@@ -46,7 +46,7 @@ Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
 Who are the authors of BGKW88?
 ?
 Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
-<!--SR:2022-09-03,60,170-->
+<!--SR:2022-12-18,104,170-->
 
 What does BGKW88 contribute?
 ?
@@ -177,7 +177,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-09-04,37,150-->
+<!--SR:2022-10-31,56,150-->
 
 What did GS12 contribute?
 ?
@@ -204,12 +204,12 @@ Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduce
 Who are the authors of Gro09?
 ?
 Jens Groth
-<!--SR:2022-09-03,75,250-->
+<!--SR:2023-03-14,190,250-->
 
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-09-05,37,150-->
+<!--SR:2022-09-26,21,130-->
 
 What did Gro09 contribute?
 ?
@@ -290,7 +290,7 @@ Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
-<!--SR:2022-09-04,46,250-->
+<!--SR:2023-01-01,118,250-->
 
 What is GWC21 otherwise known as?
 ?

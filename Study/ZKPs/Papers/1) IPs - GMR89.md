@@ -171,7 +171,7 @@ How might a class be more useful than a textbook?
 ?
 In classrooms, students can raise questions at crucial points.
 A book must, in a sense answer all possible questions in advance.
-<!--SR:2022-09-03,87,230-->
+<!--SR:2023-04-01,208,230-->
 
 What are the components of a classroom lesson (in the context of IPs at a high level)?
 ?
@@ -499,7 +499,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-09-04,17,190-->
+<!--SR:2022-10-08,33,190-->
 
 ### Interactive Hierarchy
 
@@ -516,7 +516,7 @@ $L \in AM \implies L \in NP$ for a random oracle
 How do classes AM and IP compare?
 ?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
-<!--SR:2022-09-04,67,230-->
+<!--SR:2023-01-31,148,230-->
 
 What do GMR believe about the "interactive hierarchy"?
 ?
@@ -729,7 +729,7 @@ Where $p:N \to [0,1]$
 What are 0-distinguishable otherwise described as?
 ?
 Indistinguishable.
-<!--SR:2022-09-05,95,250-->
+<!--SR:2023-04-21,228,250-->
 
 What does it mean for two ensembles to be indistinguishable?
 ?
@@ -793,7 +793,7 @@ None because we could generate them ourselves trivially.
 How much knowledge do the results of a polynomial computation convey and why?
 ?
 None because we could compute it ourselves easily.
-<!--SR:2022-09-04,94,250-->
+<!--SR:2023-04-22,229,250-->
 
 What is the unit for knowledge communcation?
 ?
@@ -862,7 +862,7 @@ Select as string as undistinguishable as possible from a computation randomly se
 What are the inputs of imitator M?
 ?
 A's program, B's program, and the input x. That is, nothing in the interactive proof is hidden.
-<!--SR:2022-09-03,94,250-->
+<!--SR:2023-04-24,231,250-->
 
 Can imitator M run A's program?
 ?
@@ -1081,7 +1081,7 @@ QNR and BL.
 Who invented the language BL?
 ?
 Manuel Blum.
-<!--SR:2022-09-04,90,250-->
+<!--SR:2023-04-12,219,250-->
 
 Why was the language BL interesting to GMR?
 ?
@@ -1108,10 +1108,10 @@ What is the definition of the language QNR?
 $QNR = \{(y, m) | \mathcal{Q}_m(y) = 1\}$
 <!--SR:2022-09-07,82,230-->
 
-GMR's proof that $QNR \in KC(0)$ relies on . . . ?
+What computational complexity assumptions does GMR's proof that $QNR \in KC(0)$ rely on?
 ?
-No unproven computational complexity assumptions.
-<!--SR:2022-09-05,90,250-->
+No unproven ones.
+<!--SR:2022-10-23,48,230-->
 
 
 ### The Quadratic Residuosity Problem

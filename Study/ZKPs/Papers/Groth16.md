@@ -314,7 +314,7 @@ The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
 What is $z$?
 ?
 Auxilliary information that the relation generator might output, which will be given to the adversary.
-<!--SR:2022-09-05,50,230-->
+<!--SR:2022-12-31,117,230-->
 
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
@@ -521,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-09-05,17,190-->
+<!--SR:2022-10-07,32,190-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -732,7 +732,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-09-04,17,230-->
+<!--SR:2022-10-15,40,230-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-09-03,30,210-->
+<!--SR:2022-09-20,15,190-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -1058,7 +1058,7 @@ Equations formed by multiplying together the results of pairings.
 What kind of language does our pairing based NIZK construction prove?
 ?
 Quadratic Arithmetic Programs.
-<!--SR:2022-09-03,37,230-->
+<!--SR:2022-11-30,86,230-->
 
 What does a proof in our NIZK construction consist of?
 ?
@@ -1181,7 +1181,7 @@ Calculating the matrix $\Pi$.
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-09-04,30,230-->
+<!--SR:2022-11-14,70,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-09-05,4,130-->
+<!--SR:2022-09-10,5,130-->
 
 ##### Vfy
 
@@ -1306,7 +1306,7 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-09-05,24,210-->
+<!--SR:2022-10-25,50,210-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

@@ -17,7 +17,7 @@ Cost of corruption.
 What is the $CoC$ of a DApp without restaking?
 ?
 $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
-<!--SR:2022-09-05,18,270-->
+<!--SR:2022-10-24,49,270-->
 
 What is the $CoC$ of a DApp with restaking?
 ?
@@ -61,7 +61,7 @@ A subset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2022-09-05,4,250-->
+<!--SR:2022-09-17,12,250-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
@@ -93,7 +93,7 @@ $\bigcap_{j \in V} S_j^c$
 What does $c(V)$ denote?
 ?
 The cost of corruption for a subset of tasks $V$.
-<!--SR:2022-09-03,16,270-->
+<!--SR:2022-10-21,46,270-->
 
 How is $c(V)$ defined?
 ?
@@ -118,7 +118,7 @@ $$\sum_{j \in V} p_j$$
 When is a task $j$ secure? Use natural language.
 ?
 If for all sets of tasks containing $j$, the cost of corruption is higher than the profit from corruption.
-<!--SR:2022-09-03,16,250-->
+<!--SR:2022-10-22,47,250-->
 
 When is a task $j$ secure? Use mathmatical symbols.
 ?
@@ -140,7 +140,7 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-09-03,11,210-->
+<!--SR:2022-10-02,27,210-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?

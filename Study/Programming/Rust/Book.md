@@ -35,7 +35,7 @@ It checks that the cargo project still compiles without producing an executable.
 How do you build a cargo project ready for release?
 ?
 `cargo build --release`
-<!--SR:2022-09-05,13,270-->
+<!--SR:2022-10-13,38,270-->
 
 How do you locally access the rust documentation?
 ?
@@ -178,7 +178,7 @@ What two kinds of crates are there and how are they different?
 Library and binary.
 Library crates can't be run but they can be included in other programs.
 Binary crates are executables.
-<!--SR:2022-09-05,13,270-->
+<!--SR:2022-10-14,39,270-->
 
 Where are dependency crates defined?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-09-03,1,130-->
+<!--SR:2022-09-08,3,130-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -306,7 +306,7 @@ There needs to be a type annotation on guess, as `parse()` is ambiguous and coul
 What is a scalar type?
 ?
 A type that represents a single value.
-<!--SR:2022-09-05,9,230-->
+<!--SR:2022-09-29,24,230-->
 
 What are the main scalar types?
 ?
@@ -1137,7 +1137,7 @@ What keyword do we use to create aliases?
 How do you import `std: :io: :Result` as `IoResult`?
 ?
 `use std: :io: :Result as IoResult;`
-<!--SR:2022-09-05,8,250-->
+<!--SR:2022-09-27,22,250-->
 
 How do you re-export?
 ?
