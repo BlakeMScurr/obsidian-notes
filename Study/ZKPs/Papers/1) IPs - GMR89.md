@@ -230,7 +230,7 @@ It means an ITM can't simply be modelled in an interaction with a more powerful 
 What does an ITM's random tape represent?
 ?
 The irreducibility/unmodelability of the human mind, we can think of this as our capacity for creative daydreaming.
-<!--SR:2022-09-06,96,250-->
+<!--SR:2023-04-26,232,250-->
 
 How is an ITM's random tape implemented?
 ?
@@ -617,7 +617,7 @@ The language accepted by the probabilistic computation.
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
 The input of a computation.
-<!--SR:2022-09-06,95,250-->
+<!--SR:2023-05-02,238,250-->
 
 What is an I-c-ensemble's $\Pi_x$ through a computational lens?
 ?
@@ -1435,7 +1435,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-09-06,56,210-->
+<!--SR:2022-10-05,29,190-->
 
 How is $X' \cup Y'$ sent?
 ?

@@ -860,7 +860,7 @@ i++
 ```
 ?
 `i` is only in scope for the `for` block and can't be used outside of it.
-<!--SR:2022-09-06,70,250-->
+<!--SR:2023-02-28,175,250-->
 
 What is the syntax for a `while` loop?
 ?

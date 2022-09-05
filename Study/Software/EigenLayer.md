@@ -78,7 +78,7 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:2022-09-06,19,270-->
+<!--SR:2022-10-27,51,270-->
 
 What does $S^c(V)$ denote?
 ?

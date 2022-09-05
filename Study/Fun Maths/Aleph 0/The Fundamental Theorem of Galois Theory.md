@@ -66,7 +66,7 @@ How many ways are there to permutate the conjugates of $\zeta$ over $\mathbb{Q}$
 ?
 $4! = 24$ permutations
 $4$ preserve algebraic relations
-<!--SR:2022-09-06,78,250-->
+<!--SR:2023-03-15,190,250-->
 
 What are the permutations of conjugates of $\zeta$ that preserve algebraic relations?
 ?

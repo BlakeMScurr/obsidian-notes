@@ -168,7 +168,7 @@ $f(n) = \omega(g(n)) \iff lim_{n \rightarrow \infty} |f(n)|/g(n) = \infty$
 What is the formal definition of $\omega$?
 ?
 $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
-<!--SR:2022-09-06,43,230-->
+<!--SR:2022-12-14,99,230-->
 
 What does $\lambda$ represent, and what do its values mean?
 ?
@@ -949,7 +949,7 @@ $d_Q, d_D, \mu, m, n, k, \eta$
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
 They may be constants or polynomials in the security parameter $\lambda$
-<!--SR:2022-09-06,39,250-->
+<!--SR:2022-12-09,94,250-->
 
 What is $d_Q$?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-09-06,9,170-->
+<!--SR:2022-09-21,15,170-->
 
 What is the definition of $B$ in a QAPLIP?
 ?

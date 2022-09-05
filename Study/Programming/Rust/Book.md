@@ -25,7 +25,7 @@ How do you run a cargo project?
 How do you compile a cargo project?
 ?
 `cargo build`
-<!--SR:2022-09-06,13,270-->
+<!--SR:2022-10-11,35,270-->
 
 What does `cargo check` do?
 ?
@@ -52,7 +52,7 @@ How do you manually format a rust file, say `main.rs`?
 How do you bring the input/output library into scope?
 ?
 `use std: :io;`
-<!--SR:2022-09-06,13,270-->
+<!--SR:2022-10-09,33,270-->
 
 What is the identifier for the standard library?
 ?
@@ -82,7 +82,7 @@ How do you define the entrypoint for a rust program?
 How do you print a string, say, `"hello"` to stdout?
 ?
 `println!("hello");`
-<!--SR:2022-09-06,14,290-->
+<!--SR:2022-10-17,41,290-->
 
 Are variables mutable or immutable by default?
 ?
@@ -112,7 +112,7 @@ A type from the standard library that is a growable, UTF-8 encoded piece of text
 What is `String: :new`?
 ?
 A function that returns a new instance of `String`.
-<!--SR:2022-09-06,13,270-->
+<!--SR:2022-10-15,39,270-->
 
 What does the `: :` syntax on `String: :new` indicate?
 ?
@@ -314,7 +314,7 @@ Integers
 Floating point numbers
 Booleans
 Characters
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-03,27,250-->
 
 What are the different bit sizes available for integers in rust?
 ?
@@ -355,7 +355,7 @@ It's a visual separator to make it easier to read. I.e., `1_000_000`.
 What is the visual separator character for number literals?
 ?
 `_`
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-03,27,250-->
 
 What is the prefix for hex number literals?
 ?
@@ -508,7 +508,7 @@ Both as `()`
 What do expressions implicitly return if they don't return any other value?
 ?
 The unit, i.e., the empty tuple `()`
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-04,28,250-->
 
 #### Arrays
 
@@ -535,7 +535,7 @@ Stack.
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-09-09,3,250-->
 
 How do you write an array's type?
 ?
@@ -566,7 +566,7 @@ snake_case
 What's the keyword for creating functions?
 ?
 `fn`
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-04,28,250-->
 
 Can you call a function that is defined later in a scope?
 ?
@@ -576,7 +576,7 @@ Yes.
 What is the difference between a parameter and argument?
 ?
 A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-04,28,250-->
 
 How could you define a function that takes a `i32` parameter called `x`?
 ?
@@ -586,13 +586,13 @@ How could you define a function that takes a `i32` parameter called `x`?
 Do you have to put type annotations on function parameters? Why?
 ?
 Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-04,28,250-->
 
 What is the difference between a statement and an expression?
 ?
 _Statements_ are instructions that perform some action and do not return a value.
 _Expressions_ evaluate to a resulting value.
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-09-28,22,250-->
 
 Does `let` create an expression or a statement?
 ?
@@ -718,7 +718,7 @@ Declare before the `loop` keyword with a colon.
 	...
 	break 'counting_up;
 ```
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-01,25,250-->
 
 What is a `while` loop for?
 ?
@@ -826,7 +826,7 @@ How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
-<!--SR:2022-09-06,5,210-->
+<!--SR:2022-09-19,13,210-->
 
 What problems does heap has, that ownership addresses?
 ?
@@ -916,7 +916,7 @@ How do you clone a `String`?
 Why aren't integers moved when another value is assigned to their value?
 ?
 Because they live solely on the stack, and can be efficiently copied.
-<!--SR:2022-09-06,10,250-->
+<!--SR:2022-10-04,28,250-->
 
 What trait indicates that a type lives on the stack?
 ?
@@ -983,7 +983,7 @@ A tree of modules that produces a library or executable.
 What are the types of crate?
 ?
 Binary and library.
-<!--SR:2022-09-06,9,250-->
+<!--SR:2022-10-02,26,250-->
 
 What kinds of crates have a main function?
 ?
@@ -1071,7 +1071,7 @@ I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly
 What kinds of paths are there?
 ?
 Absolute and relative.
-<!--SR:2022-09-06,9,250-->
+<!--SR:2022-10-01,25,250-->
 
 What does an absolute path start with?
 ?
@@ -1296,7 +1296,7 @@ Which of `expect` and `unwrap` is generally preferred for production code and wh
 How do you propogate an error up to the parent function?
 ?
 By returning a `Result` type.
-<!--SR:2022-09-06,9,250-->
+<!--SR:2022-09-30,24,250-->
 
 What is the fully explicit method for handling and propogating an error?
 ?
@@ -1332,7 +1332,7 @@ By setting the return type of main to `Result<(), Box<dyn Error>>`
 How can we understand `Box<dyn Error>` at a high level?
 ?
 As "any kind of error."
-<!--SR:2022-09-06,5,230-->
+<!--SR:2022-09-20,14,230-->
 
 What happens when a main function with a return type of `Result<(), E>` returns?
 ?

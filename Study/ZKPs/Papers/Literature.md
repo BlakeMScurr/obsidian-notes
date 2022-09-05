@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-09-06,5,130-->
+<!--SR:2022-09-09,3,130-->
 
 Who are the authors of GOS06?
 ?
@@ -314,7 +314,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-09-06,11,210-->
+<!--SR:2022-09-29,23,210-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.
