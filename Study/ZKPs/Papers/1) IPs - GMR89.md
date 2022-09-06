@@ -152,7 +152,7 @@ Deterministic Turing machines, and probabilistic Turing machines.
 What are GMR's examples of formalisations for "proof?"
 ?
 NP and IP.
-<!--SR:2022-09-07,97,250-->
+<!--SR:2023-05-08,243,250-->
 
 What are GMR's analogies for NP and IP?
 ?
@@ -1106,7 +1106,7 @@ $\mathcal{Q}_m(y) = 0$ if y is quadratic residue mod m, and $1$ otherwise.
 What is the definition of the language QNR?
 ?
 $QNR = \{(y, m) | \mathcal{Q}_m(y) = 1\}$
-<!--SR:2022-09-07,82,230-->
+<!--SR:2023-03-15,189,230-->
 
 What computational complexity assumptions does GMR's proof that $QNR \in KC(0)$ rely on?
 ?
@@ -1170,7 +1170,7 @@ Is not known to exist, efficiently.
 For which $x \in \mathbb{Z}_m^*$ is GMR's zk QNR IP defined?
 ?
 $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}{0}{x}{m} = 1$ (since $\genfrac(){}{0}{x}{m} = -1$ directly implies $x$ is a quadratic non residue)
-<!--SR:2022-09-07,71,210-->
+<!--SR:2023-01-28,143,210-->
 
 How powerful does the A have to be in GMR's zk QNR IP?
 ?

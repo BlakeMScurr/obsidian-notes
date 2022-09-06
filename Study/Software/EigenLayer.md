@@ -88,7 +88,7 @@ The collection of staker sets which are sufficient to corrupt all tasks in the s
 What is the definition of $S^c(V)$?
 ?
 $\bigcap_{j \in V} S_j^c$
-<!--SR:2022-09-07,20,270-->
+<!--SR:2022-10-28,51,270-->
 
 What does $c(V)$ denote?
 ?

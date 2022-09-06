@@ -12,7 +12,7 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2022-09-07,20,150-->
+<!--SR:2022-10-21,44,170-->
 
 ### binsum
 
@@ -246,7 +246,7 @@ What does `b` look like and what is its formula?
 ?
 1111110000 where the last 1 is the ith digit.
 (2^127-1) - (2^(i-1) - 1)
-<!--SR:2022-09-07,49,250-->
+<!--SR:2023-02-26,172,270-->
 
 What does `a` do from a bitwise perspective and how?
 ?

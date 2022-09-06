@@ -45,7 +45,7 @@ How do you locally access the rust documentation?
 How do you manually format a rust file, say `main.rs`?
 ?
 `rustfmt main.rs`
-<!--SR:2022-09-07,14,270-->
+<!--SR:2022-10-16,39,270-->
 
 # Guessing Game
 
@@ -97,7 +97,7 @@ How do you create a new immutable variable `a` set to `5`?
 What keyword is used to create variables?
 ?
 `let`
-<!--SR:2022-09-07,14,270-->
+<!--SR:2022-10-18,41,270-->
 
 How do you create a new mutable variable `b` and set it to `5`?
 ?
@@ -137,7 +137,7 @@ An instance of `std: :io: :Stdin`, which is a type that represents a handle to t
 What is `read_line`?
 ?
 A method on the standard input handle to get input from the user.
-<!--SR:2022-09-07,15,290-->
+<!--SR:2022-10-19,42,290-->
 
 How do you get the user's input into a string called `guess`?
 ?
@@ -219,7 +219,7 @@ fn main() {
 ```
 ?
 cannot assign twice to immutable variable `x`
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-08,31,250-->
 
 Why is it useful to create immutable variables in Rust?
 ?
@@ -439,7 +439,7 @@ What is the output of `println!("{}", 5 / 4);` and why?
 How do we write the boolean literals?
 ?
 `true` and `false`
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-07,30,250-->
 
 ### Characters
 
@@ -631,7 +631,7 @@ The value of y is: 4
 What is the syntactic difference between statements and expressions?
 ?
 Statements end in a semicolon, and expressions do not.
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-05,28,250-->
 
 How do you make scopes created with curly brackets into expressions?
 ?
@@ -661,7 +661,7 @@ What character creates comments?
 How do you do multiline comments?
 ?
 `//` on each line
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-06,29,250-->
 
 ## Control Flow
 ### If
@@ -803,7 +803,7 @@ Which is faster to pull from, the stack or the heap? Why?
 ?
 The stack.
 Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-09,32,250-->
 
 What kind of data can be put on the stack?
 ?
@@ -855,12 +855,12 @@ When it goes out of scope it's invalid.
 How do you create a new string of type `String` from a string literal, say, `"hello"`?
 ?
 `let x = String: :from("hello");`
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-06,29,250-->
 
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-09-11,4,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
@@ -947,12 +947,12 @@ fn f(s: String) {
 ```
 ?
 `s` is moved by the call `f(s)`, so it's inaccessible on the next line.
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-07,30,250-->
 
 What operations can move a value?
 ?
 Assingment, and function calls.
-<!--SR:2022-09-07,11,250-->
+<!--SR:2022-10-06,29,250-->
 
 How can you return ownership that was taken by a function?
 ?
@@ -1046,7 +1046,7 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:2022-09-07,10,250-->
+<!--SR:2022-10-02,25,250-->
 
 When can you refer to code in another module?
 ?
@@ -1086,7 +1086,7 @@ What does a relative path start with?
 What is the path delimiter?
 ?
 `::`
-<!--SR:2022-09-07,10,250-->
+<!--SR:2022-10-05,28,250-->
 
 Are modules private or public by default?
 ?
@@ -1156,7 +1156,7 @@ use std::io;
 ```
 ?
 `use std::{cmp::Ordering, io};`
-<!--SR:2022-09-07,10,250-->
+<!--SR:2022-10-05,28,250-->
 
 How can you rewrite the following code with nested paths?
 ```
@@ -1264,7 +1264,7 @@ fn main() {
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
-<!--SR:2022-09-07,6,230-->
+<!--SR:2022-09-22,15,230-->
 
 What does `unwrap_or_else` do?
 ?
@@ -1279,12 +1279,12 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-09-07,3,190-->
+<!--SR:2022-09-10,3,170-->
 
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-09-07,6,230-->
+<!--SR:2022-09-11,4,210-->
 
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
@@ -1492,7 +1492,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:2022-09-07,3,210-->
+<!--SR:2022-09-14,7,210-->
 
 What are the main assertion macros?
 ?

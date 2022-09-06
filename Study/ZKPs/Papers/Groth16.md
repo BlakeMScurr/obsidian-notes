@@ -892,7 +892,7 @@ A probabilistc polynomial time algorithm used in Prove in a LIP that produces a 
 What is the output of ProofMatrix?
 ?
 A matrix $\Pi \in \mathbb{F}^{k \times m}$
-<!--SR:2022-09-07,52,250-->
+<!--SR:2023-01-15,130,250-->
 
 What is $k$ in a LIP?
 ?
@@ -1042,7 +1042,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-09-07,20,170-->
+<!--SR:2022-10-12,35,170-->
 
 How does the verifier in a compiled LIP check the argument?
 ?

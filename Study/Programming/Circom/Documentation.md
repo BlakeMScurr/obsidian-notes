@@ -486,7 +486,7 @@ The main component.
 How is the main component different from other components?
 ?
 It defines global input and outputs of the circuit, so it needs to be able to specify which input signals are public.
-<!--SR:2022-09-07,72,250-->
+<!--SR:2023-03-09,183,250-->
 
 What is the syntax for creating a main component?
 ?
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-09-07,68,250-->
+<!--SR:2022-10-10,33,230-->
 
 What are the possible values of a field element?
 ?
