@@ -44,12 +44,12 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-09-08,35,150-->
+<!--SR:2022-11-05,57,150-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
 It is zero knowledge.
-<!--SR:2022-09-09,71,230-->
+<!--SR:2023-02-19,163,230-->
 
 What is the second contribution of Groth16 and how is it shown?
 ?
@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-09-08,11,150-->
+<!--SR:2022-09-26,17,150-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -593,7 +593,7 @@ Addition and multiplication gates over a finite field.
 What represents the statement in our arithmetic circuit?
 ?
 Some subset of the the input/ouput wires.
-<!--SR:2022-09-08,65,210-->
+<!--SR:2023-01-25,138,210-->
 
 %% Why? Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.%%
 
@@ -897,7 +897,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-09-08,21,230-->
+<!--SR:2022-10-29,50,230-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -1130,7 +1130,7 @@ The evaluations of $t(x)$
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
 $\alpha, \beta, \gamma, \delta$
-<!--SR:2022-09-08,45,270-->
+<!--SR:2023-01-04,117,270-->
 
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1279,7 +1279,7 @@ $C \cdot \delta$
 When does Vfy accept in a QAPLIP?
 ?
 When the polynomial test passes.
-<!--SR:2022-09-09,46,270-->
+<!--SR:2023-01-11,124,270-->
 
 ##### Sim
 
@@ -1298,7 +1298,7 @@ Return proof.
 How does the simulator pick A and B in a QAPLIP?
 ?
 Randomly from $\mathbb{F}$
-<!--SR:2022-09-09,36,290-->
+<!--SR:2022-12-22,104,290-->
 
 How does the simulator in a QAPLIP compute C?
 ?

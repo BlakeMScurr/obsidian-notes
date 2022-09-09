@@ -36,7 +36,7 @@ What are the possible specifications for each column?
 Fixed
 Advice
 Instance
-<!--SR:2022-09-09,15,210-->
+<!--SR:2022-10-13,34,210-->
 
 What is a fixed column?
 ?

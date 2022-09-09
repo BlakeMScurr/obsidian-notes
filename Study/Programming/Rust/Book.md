@@ -127,7 +127,7 @@ A function that's implemented on a type, but doesn't have access to a specific i
 What does `let mut guess = String: :new()` do, exactly?
 ?
 Creates a mutable variable called guess and binds it to a new, empty instance of the type `String`.
-<!--SR:2022-09-09,16,270-->
+<!--SR:2022-10-26,47,270-->
 
 What does `io: :stdin()` return?
 ?
@@ -145,23 +145,23 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-09-08,9,230-->
+<!--SR:2022-09-15,6,210-->
 
 What is a `Result`?
 ?
 An enum type that is either `Ok` or `Err`.
-<!--SR:2022-09-08,15,270-->
+<!--SR:2022-10-23,44,270-->
 
 What does the `expect`  method on the `Result` type do?
 ?
 Crash the program with the provided message if the `Result` is an `Err` value.
 Return the appropriate value if the `Result` is an `Ok` value.
-<!--SR:2022-09-08,15,270-->
+<!--SR:2022-10-24,45,270-->
 
 How can you use placeholders to print the value "x is 5", where the varialbe `x` has the value `5`?
 ?
 `println!("x is {x}");`
-<!--SR:2022-09-09,16,270-->
+<!--SR:2022-10-22,43,270-->
 
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
@@ -171,7 +171,7 @@ How can you use multiple placeholders to print the values of `x` and `y`?
 How do you get access to random numbers in Rust?
 ?
 Using the `rand` crate.
-<!--SR:2022-09-08,15,270-->
+<!--SR:2022-10-25,46,270-->
 
 What two kinds of crates are there and how are they different?
 ?
@@ -183,7 +183,7 @@ Binary crates are executables.
 Where are dependency crates defined?
 ?
 `Cargo.toml`
-<!--SR:2022-09-09,7,270-->
+<!--SR:2022-09-28,19,270-->
 
 How do you create a random number between 1 and 100 (inclusive)?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-09-08,3,130-->
+<!--SR:2022-09-14,5,130-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -234,14 +234,14 @@ Compile time.
 What do constants require that variables don't?
 ?
 A type annotation.
-<!--SR:2022-09-08,9,230-->
+<!--SR:2022-09-30,21,230-->
 
 ??? Why?
 
 Can constants be mutable?
 ?
 No
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-09,30,250-->
 
 What is shadowing?
 ?
@@ -278,7 +278,7 @@ fn main() {
 ?
 12
 6
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-13,34,250-->
 
 What is wrong with the following code?
 ```
@@ -301,7 +301,7 @@ What is wrong with the following code?
 ?
 There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
 `let guess: u32 = "42".parse().expect("Not a number!");`
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-11,32,250-->
 
 What is a scalar type?
 ?
@@ -360,7 +360,7 @@ What is the visual separator character for number literals?
 What is the prefix for hex number literals?
 ?
 `0x`
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-10,31,250-->
 
 What is the prefix for octal number literals?
 ?
@@ -380,7 +380,7 @@ What is the syntax for byte number literals?
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
 Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-14,35,250-->
 
 What do we use to explicitly handle overflowing?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-09-08,3,130-->
+<!--SR:2022-09-12,3,130-->
 
 What does `saturating_*` do?
 ?
@@ -464,7 +464,7 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-09-09,7,210-->
+<!--SR:2022-09-23,14,210-->
 
 #### Tuples
 
@@ -525,7 +525,7 @@ No.
 How do you declare an array?
 ?
 `let a = [1,2,3,4];`
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-10,31,250-->
 
 Are arrays stored on the stack or the heap?
 ?
@@ -535,7 +535,7 @@ Stack.
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-09-09,3,250-->
+<!--SR:2022-09-19,10,250-->
 
 How do you write an array's type?
 ?
@@ -543,7 +543,7 @@ Square brackets and a semicolon, i.e., an array of 5 `i32`s:
 ````rust
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 ````
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-09-16,7,230-->
 
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
@@ -641,7 +641,7 @@ By ending them in an expression, which the whole scope evaluates to.
 How do you write a function that returns an `i32`?
 ?
 `fn foo () -> i32 {}`
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-12,33,250-->
 
 Do you have to declare the return type of a function?
 ?
@@ -656,7 +656,7 @@ By ending the function's block with an expression of that value, or using the `r
 What character creates comments?
 ?
 `//`
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-14,35,250-->
 
 How do you do multiline comments?
 ?
@@ -797,7 +797,7 @@ Which is faster to push to, the stack or the heap? Why?
 ?
 The stack. 
 Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
-<!--SR:2022-09-08,12,250-->
+<!--SR:2022-10-08,29,250-->
 
 Which is faster to pull from, the stack or the heap? Why?
 ?
@@ -808,7 +808,7 @@ Because of the cost to the processor of moving around memory. Values on the stac
 What kind of data can be put on the stack?
 ?
 Data with a known size at compile time.
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-07,28,250-->
 
 Where is data with unknown size at compile time stored?
 ?
@@ -828,12 +828,12 @@ When a function is called, the values passed to the function are pushed to the s
 When the function is over, those values are popped off the stack.
 <!--SR:2022-09-19,13,210-->
 
-What problems does heap has, that ownership addresses?
+What problems does the heap have, that ownership addresses?
 ?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
-<!--SR:2022-09-09,8,190-->
+<!--SR:2022-09-24,15,190-->
 
 ### Ownership Rules
 
@@ -842,7 +842,7 @@ What are the ownership rules?
 Each value has an owner.
 There can only be one owner at a time.
 When the owner goes out of scope, the value is dropped.
-<!--SR:2022-09-09,10,230-->
+<!--SR:2022-10-04,25,230-->
 
 What is the relationship between variable validity and scope?
 ?
@@ -1027,7 +1027,7 @@ Where do extra binary packages go?
 Where does the compiler look first when compiling a crate?
 ?
 The crate root.
-<!--SR:2022-09-09,10,230-->
+<!--SR:2022-10-03,24,230-->
 
 Where would the compiler look for, say, the `garden` module declared in the crate root?
 ?
@@ -1228,7 +1228,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-09-09,8,190-->
+<!--SR:2022-09-13,4,170-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1343,7 +1343,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-09-09,5,170-->
+<!--SR:2022-09-20,11,170-->
 
 ## When to Panic!
 
@@ -1395,12 +1395,12 @@ In angle brackets between the function name and the parameter list.
 What is the function signature for the `largest` method which is generic over types?
 ?
 `fn largest<T>(list: &[T]) -> &T {}`
-<!--SR:2022-09-09,8,210-->
+<!--SR:2022-09-27,18,210-->
 
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-09-08,6,210-->
+<!--SR:2022-09-12,3,190-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1422,7 +1422,7 @@ Adding `#[test]` on the line before `fn`
 What is `#[test]`?
 ?
 The test attribute.
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-06,27,250-->
 
 What command do we use to run test?
 ?
@@ -1446,7 +1446,7 @@ mod tests {
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
 That there are no benchmark tests. I.e., tests to measure performance.
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-06,27,250-->
 
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
@@ -1550,7 +1550,7 @@ fn some_test() -> Result<(), String> {
 Why write tests that return `Result`s?
 ?
 So you can use the question mark operator in the body of the tests, so you can conveniently fail if there is an `Err`.
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-07,28,250-->
 
 How do you assert that a result is an err?
 ?

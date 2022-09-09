@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2022-09-09,57,210-->
+<!--SR:2023-01-07,120,210-->
 
 What do signals contain?
 ?
@@ -91,7 +91,7 @@ template A(){
 What happens if try to access a non output signal on a component?
 ?
 Compile error.
-<!--SR:2022-09-08,73,250-->
+<!--SR:2023-03-12,184,250-->
 
 What is wrong with the following code?
 ```
@@ -129,7 +129,7 @@ Identifiers that hold non-signal data and are mutable.
 How do we declare a variable?
 ?
 `var x;` declares a variable called `x`.
-<!--SR:2022-09-09,74,250-->
+<!--SR:2023-03-13,185,250-->
 
 What values do variables hold?
 ?
@@ -1119,7 +1119,7 @@ A compiler message that means that what you've done is allowed but uncommon, so 
 What is a warning?
 ?
 A compiler message meaning that what you've done is allowed but should not happen in general.
-<!--SR:2022-09-09,72,250-->
+<!--SR:2023-03-08,180,250-->
 
  ??? why do we suggest adding a `0*in = 0` signal where `in` is unused? Surely we should just get rid of `in`, or at least leave it, as the constraint does nothing but add code.
 
@@ -1152,7 +1152,7 @@ What kinds of values are always known or unknown?
 ?
 Constant values and template parameters are known.
 Signals are unknown.
-<!--SR:2022-09-08,71,250-->
+<!--SR:2023-03-07,179,250-->
 
 When are expressions known?
 ?

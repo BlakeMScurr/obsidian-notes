@@ -4,12 +4,12 @@ What trait can we implement for a default function taking no arguments, and why 
 ?
 The `Default` trait (in the prelude).
 So that where we implement `Default` for `T`, for values of type `t: Option<T>`, we can use methods like `t.unwrap_or_default()`.
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-06,27,250-->
 
 What does `unwrap_or_default()` do?
 ?
 Takes an `Option<Default>`, and returns a value of type `T`, either the `Some` inside, or whatever is returned from `default()`
-<!--SR:2022-09-09,10,250-->
+<!--SR:2022-10-07,28,250-->
 
 How do you make a `u8` typed range from, `0` to `26`?
 ?

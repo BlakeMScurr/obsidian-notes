@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-09-09,3,130-->
+<!--SR:2022-09-16,7,150-->
 
 Who are the authors of GOS06?
 ?
@@ -194,7 +194,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-09-08,25,190-->
+<!--SR:2022-10-30,51,190-->
 
 What did Gro10 contribute?
 ?
@@ -273,7 +273,7 @@ A zk_SNARK with a universal updatable CRS that scales linearly with respect to t
 What is MBKM19 otherwise known as?
 ?
 Sonic
-<!--SR:2022-09-08,53,250-->
+<!--SR:2023-01-21,134,250-->
 
 ### GWC21
 

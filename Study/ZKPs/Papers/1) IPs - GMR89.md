@@ -67,7 +67,7 @@ By classifying languages according to their knowledge complexity.
 How do interactive proofs relate to knowledge complexity?
 ?
 Interaction may reduce knowledge complexity.
-<!--SR:2022-09-08,94,230-->
+<!--SR:2023-04-05,208,230-->
 
 How does adding interaction reduce the knowledge complexity of deciding quadratic residuosity?
 ?
@@ -456,7 +456,7 @@ $n = |x|$, i.e., the length of x.
 How is the basic QNR IP not zero knowledge?
 ?
 By acting maliciously and sending a random element with unknown residuosity, B learns its residuosity.
-<!--SR:2022-09-08,97,250-->
+<!--SR:2023-05-11,244,250-->
 
 ### The Class IP
 
@@ -683,7 +683,7 @@ Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |
 What does $p^D_{x, 1}$ denote?
 ?
 The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen with $\Pi_{1,x}$
-<!--SR:2022-09-09,98,250-->
+<!--SR:2023-04-30,233,250-->
 
 What does $p^D_{x, 2}$ denote?
 ?
@@ -1317,7 +1317,7 @@ $n$
 How does $A$ send $Z$ to $B$?
 ?
 However it pleases - no restriction.
-<!--SR:2022-09-09,84,230-->
+<!--SR:2022-10-21,42,210-->
 
 ??? why is $x$ chosen $mod\ n$ rather than $mod\ m$?
 
