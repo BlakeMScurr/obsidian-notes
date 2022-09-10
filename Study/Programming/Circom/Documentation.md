@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2022-09-10,65,210-->
+<!--SR:2023-01-19,131,210-->
 
 How do we declare a variable?
 ?
@@ -589,7 +589,7 @@ Boolean OR operator.
 What is `!`?
 ?
 Boolean NEGATION operator.
-<!--SR:2022-09-10,73,250-->
+<!--SR:2023-03-03,174,250-->
 
 What are the relational operators?
 ?
@@ -662,7 +662,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-09-10,53,250-->
+<!--SR:2022-10-11,31,230-->
 
 What is the `&` operator?
 ?

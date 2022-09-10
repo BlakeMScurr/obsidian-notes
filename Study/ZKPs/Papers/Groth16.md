@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-09-10,8,150-->
+<!--SR:2022-09-14,4,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-09-10,5,130-->
+<!--SR:2022-09-21,11,150-->
 
 ##### Vfy
 
@@ -1269,7 +1269,7 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-09-10,37,230-->
+<!--SR:2022-12-03,84,230-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

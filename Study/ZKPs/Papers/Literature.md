@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-09-10,18,130-->
+<!--SR:2022-10-03,23,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -147,7 +147,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-09-10,51,170-->
+<!--SR:2022-12-06,87,170-->
 
 What did GOS06 contribute?
 ?

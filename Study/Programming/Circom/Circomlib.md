@@ -34,7 +34,7 @@ The parameter specifying the number of bits in each operand (binary number being
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-09-10,12,210-->
+<!--SR:2022-10-08,28,210-->
 
 What is the main constraint in binsum and what is it for?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-09-10,9,130-->
+<!--SR:2022-09-22,12,130-->
 
 What are the variables in compconstant?
 ?

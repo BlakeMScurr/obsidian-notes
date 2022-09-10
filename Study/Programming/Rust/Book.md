@@ -340,7 +340,7 @@ Using two's complement representation.
 What range of values can a signed integer store?
 ?
 $-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
-<!--SR:2022-09-10,13,270-->
+<!--SR:2022-10-16,36,270-->
 
 What range of values can an unsigned integer store?
 ?
@@ -390,7 +390,7 @@ Using methods from the standard library that handle the overflow differently tha
 What are the different method prefixes for handling overflow explicitly?
 ?
 `wrapping`, `checked`, `overflowing`, `saturating`.
-<!--SR:2022-09-10,9,190-->
+<!--SR:2022-09-27,17,190-->
 
 What does `wrapping_*` do?
 ?
@@ -487,7 +487,7 @@ How do you destructure a tuple?
 ?
 Using pattern matching, i.e.:
 `let (x, y, z) = tup;`
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-11,31,250-->
 
 How do we directly access a tuple element?
 ?
@@ -1274,12 +1274,12 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs 
 What are the shortcut methods for panicking on error?
 ?
 `unwrap` and `expect`
-<!--SR:2022-09-10,9,230-->
+<!--SR:2022-09-16,6,210-->
 
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-09-10,3,170-->
+<!--SR:2022-09-15,5,170-->
 
 What does `expect` do?
 ?
@@ -1322,7 +1322,7 @@ What is the difference between `?` and the basic manual way of propogating error
 When can you use the `?` operator?
 ?
 On a `Result` type in a function that returns a `Result`, or on an `Option` type in a function that returns an `Option`.
-<!--SR:2022-09-10,6,230-->
+<!--SR:2022-09-25,15,230-->
 
 How can you use the `?` operator in the `main` function?
 ?
@@ -1338,7 +1338,7 @@ What happens when a main function with a return type of `Result<(), E>` returns?
 ?
 If it returns `Ok`, the executable exits with `0`.
 It returns a non zero exit value if it returns an `Err` value.
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-12,32,250-->
 
 What kinds of types can the main function return?
 ?
@@ -1385,7 +1385,7 @@ CamelCase
 What is the conventional name for a generic type?
 ?
 `T`
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-08,28,250-->
 
 Where do you declare a type parameter name in a function?
 ?
@@ -1417,7 +1417,7 @@ A piece of metadata about a piece of code.
 How do you change a function into a test function?
 ?
 Adding `#[test]` on the line before `fn`
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-09,29,250-->
 
 What is `#[test]`?
 ?
@@ -1427,7 +1427,7 @@ The test attribute.
 What command do we use to run test?
 ?
 `cargo test`
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-10,30,250-->
 
 What is the testing template that Cargo automatically gives us when writing a library crate?
 ?
@@ -1461,7 +1461,7 @@ That there are no tests that are filtered out by our argument to `cargo test`
 When do tests fail?
 ?
 When the test panics.
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-09,29,250-->
 
 What does `assert_eq!` do?
 ?
@@ -1471,7 +1471,7 @@ Panics if the values passed in are not equal, nothing otherwise.
 What does `assert!` do?
 ?
 Panics if passed false, nothing if passed true.
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-12,32,250-->
 
 What does `assert_ne!` do?
 ?
@@ -1510,7 +1510,7 @@ assert!(
 	result
 );
 ```
-<!--SR:2022-09-10,11,250-->
+<!--SR:2022-10-10,30,250-->
 
 How do you test that a function panics?
 ?

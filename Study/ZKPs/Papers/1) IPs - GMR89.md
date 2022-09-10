@@ -546,7 +546,7 @@ Transferring knowledge.
 What is MCF?
 ?
 The Model Centric Framework is a formalisation for knowledge and communication.
-<!--SR:2022-09-10,92,230-->
+<!--SR:2023-04-02,204,230-->
 
 What worldview does MCF capture?
 ?
@@ -576,7 +576,7 @@ GMR hold that our computation is limited, and that we communicate about availabl
 What does GMR's philosophy of knowledge apply to, in addition to epistemology?
 ?
 Cryptography.
-<!--SR:2022-09-10,99,250-->
+<!--SR:2023-05-16,248,250-->
 
 What does GMR study with respect to knowledge?
 ?
@@ -663,7 +663,7 @@ We say $\Pi = \{\Pi_x | x \in I\}$ is an I-c-ensemble.
 What does a distinguisher represent in general?
 ?
 A computationally bounded adversary trying to distinguish between distributions, such as encrypted data from truly random data, or the output of an interactive proof system from an imitator.
-<!--SR:2022-09-10,75,210-->
+<!--SR:2023-02-08,151,210-->
 
 What does the distinguisher represent in an Interactive Proof?
 ?

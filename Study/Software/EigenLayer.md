@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-09-10,15,230-->
+<!--SR:2022-10-17,37,230-->
 
 What does $T$ denote?
 ?
@@ -108,7 +108,7 @@ The profit from corruption of task $j$.
 What does $p(V)$ denote?
 ?
 The total profit from corrupting the set of tasks $V$.
-<!--SR:2022-09-10,23,270-->
+<!--SR:2022-11-15,66,270-->
 
 How is $p(V)$ defined?
 ?
@@ -151,7 +151,7 @@ $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
 What does $\gamma_{ij}$ denote?
 ?
 The fraction of task $j$s securing stake which is held by staker $i$.
-<!--SR:2022-09-10,23,290-->
+<!--SR:2022-11-16,67,290-->
 
 How is $\gamma_{ij}$ defined?
 ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-09-10,9,230-->
+<!--SR:2022-10-01,21,230-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-09-10,9,230-->
+<!--SR:2022-10-01,21,230-->
 
 
 ??? How do the steps in line (10) work?
