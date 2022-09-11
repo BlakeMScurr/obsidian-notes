@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-09-11,10,170-->
+<!--SR:2022-09-17,6,150-->
 
 What is the limit definition of $\omega$?
 ?
@@ -919,7 +919,7 @@ A deterministic polynomial time algorithm.
 What are the inputs of Test?
 ?
 $(R, \phi)$
-<!--SR:2022-09-11,54,230-->
+<!--SR:2022-10-11,30,210-->
 
 What does Test output?
 ?
@@ -1311,7 +1311,7 @@ $$
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
 $\boldsymbol{\pi} = (A,B,C)$
-<!--SR:2022-09-11,38,290-->
+<!--SR:2023-01-02,113,290-->
 
 
 

@@ -103,7 +103,7 @@ That proofs are easy to verify, i.e., they can be verified in polynomial time.
 What "physical" parts does NP consist of?
 ?
 A prover, verifier, input tape, and communication tape.
-<!--SR:2022-09-11,91,230-->
+<!--SR:2023-04-06,207,230-->
 
 What are NP's prover and verifier?
 ?
@@ -327,7 +327,7 @@ A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and 
 How is the general topic of an interactive proof system formalised?
 ?
 As a language $\mathcal{L} \subseteq \{0,1\}^*$
-<!--SR:2022-09-11,99,250-->
+<!--SR:2023-05-17,248,250-->
 
 How is the "idea" in an interactive proof system formalised?
 ?
@@ -1096,7 +1096,7 @@ To solve the problem of flipping a coin over the telephone.
 What is the definition of the BL language?
 ?
 Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
-<!--SR:2022-09-11,51,230-->
+<!--SR:2023-01-06,117,230-->
 
 What is the definition of the quadratic predicate?
 ?

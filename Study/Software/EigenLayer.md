@@ -156,12 +156,12 @@ The fraction of task $j$s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-09-11,20,250-->
+<!--SR:2022-11-01,51,250-->
 
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-09-11,24,290-->
+<!--SR:2022-11-20,70,290-->
 
 ### B.1
 
@@ -175,7 +175,7 @@ $$
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-09-11,24,290-->
+<!--SR:2022-11-20,70,290-->
 
 ### B.1
 

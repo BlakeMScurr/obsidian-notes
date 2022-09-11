@@ -574,7 +574,7 @@ What is the conditional expression?
 What are the boolean operators?
 ?
 `&& || !`
-<!--SR:2022-09-11,73,250-->
+<!--SR:2023-03-04,174,250-->
 
 What is `&&`?
 ?

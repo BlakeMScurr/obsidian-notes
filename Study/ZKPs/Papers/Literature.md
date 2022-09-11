@@ -85,7 +85,7 @@ Non-deterministic exponential time has two prover interactive protocols.
 Who are the authors of BFL90?
 ?
 Lázsló Babai, Lance Fortnow, and Carsten Lund
-<!--SR:2022-09-11,76,190-->
+<!--SR:2023-02-02,144,190-->
 
 What does BFL90 show?
 ?

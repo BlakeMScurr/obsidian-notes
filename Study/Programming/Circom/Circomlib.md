@@ -58,7 +58,7 @@ out[1] * (out[1] -	1) === 0;
 ...
 out[n+e-1] * (out[n+e-1] - 1) === 0;
 ```
-<!--SR:2022-09-11,68,250-->
+<!--SR:2022-10-18,37,230-->
 
 What are the top level constructions in the binsum.circom file?
 ?

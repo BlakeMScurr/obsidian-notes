@@ -224,7 +224,7 @@ cannot assign twice to immutable variable `x`
 Why is it useful to create immutable variables in Rust?
 ?
 You might write code that assumes that a variable doesn't change. One part of the code may assume that the variable will never change, and if it does change that will introduce a bug. So it's useful to have the compiler ensure that doesn't happen.
-<!--SR:2022-09-11,14,270-->
+<!--SR:2022-10-20,39,270-->
 
 When are constants evalutated?
 ?
@@ -481,7 +481,7 @@ No.
 How do you declare a tuple? (give type annotations).
 ?
 `let tup: (i32, f64, u8) = (500, 6.4, 1);`
-<!--SR:2022-09-11,14,270-->
+<!--SR:2022-10-19,38,270-->
 
 How do you destructure a tuple?
 ?
@@ -860,7 +860,7 @@ How do you create a new string of type `String` from a string literal, say, `"he
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2022-09-11,4,250-->
+<!--SR:2022-09-23,12,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
@@ -891,7 +891,7 @@ println!("{}, world!", s1);
 Why can't strings be accessed after they're moved?
 ?
 When they're moved you end up with two variables pointing at the same memory, and if the first variable were still accessible you could cause memory issues (like double dropping memory as the two variables go out of scope).
-<!--SR:2022-09-11,10,210-->
+<!--SR:2022-09-29,18,210-->
 
 What does `drop` do?
 ?
@@ -998,7 +998,7 @@ The file containing the root module of a crate.
 What is a package?
 ?
 A bundle of crates.
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-09-18,7,230-->
 
 How many crates can/must a package have?
 ?
@@ -1058,7 +1058,7 @@ How do you make code in a module public and private?
 The whole module is private by default.
 Use `pub mod` when declaring the module to make the module public.
 Use `pub` before any declarations in the module to make those items public.
-<!--SR:2022-09-11,10,230-->
+<!--SR:2022-10-02,21,230-->
 
 What does `use` do for a module within the same crate?
 ?
@@ -1176,7 +1176,7 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
-<!--SR:2022-09-11,9,230-->
+<!--SR:2022-10-05,24,230-->
 
 # MISSING 8
 # Error Handling
@@ -1269,7 +1269,7 @@ What method can we use to clean up nested match statements when dealing with err
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
-<!--SR:2022-09-11,7,230-->
+<!--SR:2022-09-25,14,230-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1284,7 +1284,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-09-11,4,210-->
+<!--SR:2022-09-21,10,210-->
 
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
@@ -1361,7 +1361,7 @@ Or to stop your code proceeding in a bad state.
 What are generics?
 ?
 Abstract stand-ins for concrete types or other properties.
-<!--SR:2022-09-11,9,230-->
+<!--SR:2022-09-30,19,230-->
 
 What do traits do, broadly, as opposed to generics?
 ?
@@ -1390,7 +1390,7 @@ What is the conventional name for a generic type?
 Where do you declare a type parameter name in a function?
 ?
 In angle brackets between the function name and the parameter list.
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-10-13,32,250-->
 
 What is the function signature for the `largest` method which is generic over types?
 ?
@@ -1441,7 +1441,7 @@ mod tests {
 	}
 }
 ```
-<!--SR:2022-09-11,10,230-->
+<!--SR:2022-10-04,23,230-->
 
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
@@ -1481,13 +1481,13 @@ Panics if the two arguments are equal, nothing otherwise.
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
 Neither, in Rust they are just called left and right.
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-10-14,33,250-->
 
 What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
 ?
 `PartialEq` because they're compared using `==` and `!=` respectively.
 `Debug` because they're printed using debug formatting.
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-10-15,34,250-->
 
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
@@ -1534,7 +1534,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-09-11,7,230-->
+<!--SR:2022-09-27,16,230-->
 
 How do you make a test that can return an error?
 ?
@@ -1545,7 +1545,7 @@ fn some_test() -> Result<(), String> {
 	...
 }
 ```
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-10-13,32,250-->
 
 Why write tests that return `Result`s?
 ?
@@ -1560,6 +1560,6 @@ How do you assert that a result is an err?
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?
 No
-<!--SR:2022-09-11,12,250-->
+<!--SR:2022-10-14,33,250-->
 
 ## How Tests are Run
