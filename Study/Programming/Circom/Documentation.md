@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-09-12,35,150-->
+<!--SR:2022-11-06,55,150-->
 
 # Operators
 
@@ -677,7 +677,7 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2022-09-12,57,210-->
+<!--SR:2023-01-08,118,210-->
 
 What is the `^` operator?
 ?
@@ -926,7 +926,7 @@ template wrong() {
 ```
 ?
 The value of `t` is used in a constraint and its construction depends on the unknown signal `in` via control flow, making the resulting constraint non quadratic. This will cause a compiler error.
-<!--SR:2022-09-12,74,250-->
+<!--SR:2023-03-16,185,250-->
 
 # Data Types
 
