@@ -446,7 +446,7 @@ How do we write the boolean literals?
 How many bytes is a `char`?
 ?
 4
-<!--SR:2022-09-13,12,230-->
+<!--SR:2022-10-13,30,230-->
 
 How do we declare a `char`?
 ?
@@ -457,7 +457,7 @@ With single quotes, i.e.;
 What standard does a char represent?
 ?
 A Unicode Scalar Value
-<!--SR:2022-09-13,8,210-->
+<!--SR:2022-09-30,17,210-->
 
 ### Compound Types
 
@@ -707,7 +707,7 @@ By passing a value to the `break` statement, i.e.:
 What is a loop label for?
 ?
 Disambiguating between multiple loops, so you can break from the correct one.
-<!--SR:2022-09-13,12,230-->
+<!--SR:2022-10-15,32,230-->
 
 What is the syntax for creating and using a loop label?
 ?
@@ -813,7 +813,7 @@ Data with a known size at compile time.
 Where is data with unknown size at compile time stored?
 ?
 The heap.
-<!--SR:2022-09-13,14,250-->
+<!--SR:2022-10-21,38,250-->
 
 How does allocating on the heap work, roughly?
 ?
@@ -1010,7 +1010,7 @@ At least one crate.
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
 A binary crate named the same as the package.
-<!--SR:2022-09-13,12,230-->
+<!--SR:2022-10-14,31,230-->
 
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?

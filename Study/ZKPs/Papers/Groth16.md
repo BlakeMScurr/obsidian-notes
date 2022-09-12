@@ -137,7 +137,7 @@ Constant size NIZK arguments based on progression-free sets to reduce the size o
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-09-13,61,190-->
+<!--SR:2022-10-18,35,170-->
 
 UNFINISHED
 
@@ -605,7 +605,7 @@ The wires that aren't the statement.
 What does binary relation of our arithmetic circuit consist of?
 ?
 Statement wires and witness wires that satisfy the arithmetic circuit.
-<!--SR:2022-09-13,76,250-->
+<!--SR:2023-03-22,190,250-->
 
 ### Arithmetic Constraints
 
@@ -873,7 +873,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2022-09-13,19,210-->
+<!--SR:2022-10-24,41,210-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -1112,7 +1112,7 @@ $(\alpha, \beta, \gamma, \delta, x)$
 What set are the parameters in Setup for a LIP for a QAP selected from?
 ?
 $\mathbb{F}^*$
-<!--SR:2022-09-13,45,230-->
+<!--SR:2022-12-26,104,230-->
 
 ??? How is it possible that they are selected from this? They appear to just be single elements?
 
@@ -1153,7 +1153,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-09-13,39,230-->
+<!--SR:2022-10-02,19,210-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?

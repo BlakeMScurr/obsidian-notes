@@ -113,7 +113,7 @@ The total profit from corrupting the set of tasks $V$.
 How is $p(V)$ defined?
 ?
 $$\sum_{j \in V} p_j$$
-<!--SR:2022-09-13,26,290-->
+<!--SR:2022-11-27,75,290-->
 
 When is a task $j$ secure? Use natural language.
 ?
@@ -146,7 +146,7 @@ $$
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-09-13,4,210-->
+<!--SR:2022-09-22,9,210-->
 
 What does $\gamma_{ij}$ denote?
 ?

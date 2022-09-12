@@ -200,7 +200,7 @@ An Interactive Turing Machine.
 What does an ITM model?
 ?
 A person who *listens*, *thinks*, *daydreams creatively*, and *speaks* about a *proposition*.
-<!--SR:2022-09-13,101,250-->
+<!--SR:2023-05-24,253,250-->
 
 What are the components of an ITM?
 ?
@@ -1412,7 +1412,7 @@ $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-09-13,83,250-->
+<!--SR:2023-04-17,216,250-->
 <!--SR:2022-05-05,2,230-->
 
 ##### Step 4
@@ -1440,7 +1440,7 @@ $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cd
 How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
-<!--SR:2022-09-13,83,250-->
+<!--SR:2023-04-17,216,250-->
 
 ??? why does it matter that $X' \cup Y'$ is sent in a random order?
 
