@@ -673,7 +673,7 @@ An verifier trying to tell its own studies apart from notes taken in class.
 What is the definition of a distinguisher?
 ?
 A probabilistic polynomial time algorithm $D$ that takes a string $s$ and outputs a bit.
-<!--SR:2022-09-12,100,250-->
+<!--SR:2023-05-09,239,250-->
 
 What, formally, does a distinguisher distinguish between?
 ?
@@ -1330,7 +1330,7 @@ B makes equally sized sets of opposite secret residuosity $X$ and $Y$.
 B reveals the random values left over.
 B ties $X$ and $Y$ to  the residuosity of $x$ with sets $X'$ and $Y'$.
 B sends $X' \cup Y'$ to A.
-<!--SR:2022-09-12,66,190-->
+<!--SR:2023-01-12,122,190-->
 
 How does B reveal the random $r$ values in $Z$?
 ?

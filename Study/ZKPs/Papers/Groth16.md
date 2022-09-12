@@ -902,7 +902,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-09-12,38,190-->
+<!--SR:2022-09-29,17,170-->
 
 What does Vfy do in a LIP?
 ?

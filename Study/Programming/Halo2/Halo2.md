@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-09-13,12,170-->
+<!--SR:2022-10-03,20,170-->
 
 What are the possible specifications for each column?
 ?
@@ -66,7 +66,7 @@ Zero *for each row*.
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
-<!--SR:2022-09-13,32,230-->
+<!--SR:2022-11-26,74,230-->
 
 What is the maximum degree of each polynomial?
 ?
@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-09-13,6,150-->
+<!--SR:2022-09-24,11,150-->
 
 What keys do we genererate from the circuit description?
 ?

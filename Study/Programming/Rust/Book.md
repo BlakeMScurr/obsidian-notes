@@ -10,7 +10,7 @@ What is the rust file extension?
 How do you compile a rust program, say `main.rs`?
 ?
 `rustc main.rs`
-<!--SR:2022-09-12,8,270-->
+<!--SR:2022-10-06,24,270-->
 
 How do you create a new cargo project, called, say `hello_world`?
 ?
@@ -246,13 +246,13 @@ No
 What is shadowing?
 ?
 When a new variable is declared with the same name as an old one.
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-17,35,250-->
 
 How is shadowing with mutable variables different to having mutable varialbes?
 ?
 The variables are still immutable after the shadowing has been done.
 With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
-<!--SR:2022-09-13,14,250-->
+<!--SR:2022-10-20,37,250-->
 
 How do you shadow a variable?
 ?
@@ -350,7 +350,7 @@ $0$ to $2^n-1$
 What does the `_` mean in a number literal?
 ?
 It's a visual separator to make it easier to read. I.e., `1_000_000`.
-<!--SR:2022-09-13,16,270-->
+<!--SR:2022-10-28,45,270-->
 
 What is the visual separator character for number literals?
 ?
@@ -385,7 +385,7 @@ Because compiling in debug mode panics, whereas the overflow actually occurs whe
 What do we use to explicitly handle overflowing?
 ?
 Using methods from the standard library that handle the overflow differently than standard arithmetic operators, i.e., `wrapping_add` rather than `+`
-<!--SR:2022-09-12,15,270-->
+<!--SR:2022-10-23,41,270-->
 
 What are the different method prefixes for handling overflow explicitly?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-09-12,3,130-->
+<!--SR:2022-09-17,5,130-->
 
 What does `saturating_*` do?
 ?
@@ -417,12 +417,12 @@ Saturates at the value's maximum or minimum values.
 What are the kinds of floating-point types?
 ?
 `f32` and `f64`
-<!--SR:2022-09-12,15,270-->
+<!--SR:2022-10-27,45,270-->
 
 What is the default floating-point type and why?
 ?
 `f64`, because it's roughly as fast as `f32` on modern CPUs, and allows more precision.
-<!--SR:2022-09-13,16,270-->
+<!--SR:2022-10-29,46,270-->
 
 What standard are floats implemented according to?
 ?
@@ -553,7 +553,7 @@ How do you write an array filled with the same value? (show the fully explicit w
 What happens if you provide an invalid array access?
 ?
 Panic at runtime (or compile time if it's compile time detectable).
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-18,36,250-->
 
 ## Functions
 
@@ -733,7 +733,7 @@ Yes.
 Can `while` loops return a value?
 ?
 No.
-<!--SR:2022-09-12,7,210-->
+<!--SR:2022-09-17,5,190-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
@@ -927,7 +927,7 @@ What trait can't coexist with the `Copy` trait, and how exactly?
 ?
 `Drop`.
 If the type or any of its parts implement `Drop`, it can't implement `Copy`.
-<!--SR:2022-09-13,12,250-->
+<!--SR:2022-10-16,33,250-->
 
 What kinds of types tend to implement the `Copy` trait?
 ?
@@ -993,7 +993,7 @@ Binary, not library.
 What is a crate root?
 ?
 The file containing the root module of a crate.
-<!--SR:2022-09-13,12,230-->
+<!--SR:2022-10-15,32,230-->
 
 What is a package?
 ?
@@ -1005,7 +1005,7 @@ How many crates can/must a package have?
 As many binary packages as it likes.
 At most one library crate.
 At least one crate.
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-16,34,250-->
 
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
@@ -1020,7 +1020,7 @@ A library crate named the same as the package.
 Where do extra binary packages go?
 ?
 `src/bin`
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-16,34,250-->
 
 ## Modules
 
@@ -1076,12 +1076,12 @@ Absolute and relative.
 What does an absolute path start with?
 ?
 The literal `crate`, referring to the crate root.
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-17,35,250-->
 
 What does a relative path start with?
 ?
 `self`, `super`, or an identifier in the current module.
-<!--SR:2022-09-13,12,230-->
+<!--SR:2022-10-12,29,230-->
 
 What is the path delimiter?
 ?
@@ -1197,20 +1197,20 @@ How do you use `panic!`?
 ?
 Pass a string (etc) to it:
 `panic!("you didn't do this right");`
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-19,37,250-->
 
 How can you find the stacktrace for a panic?
 ?
 By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
 `RUST_BACKTRACE=1 cargo run`
-<!--SR:2022-09-12,11,230-->
+<!--SR:2022-10-08,26,230-->
 
 ## Result
 
 What do we use for recoverable errors?
 ?
 The `Result` type.
-<!--SR:2022-09-13,12,250-->
+<!--SR:2022-10-17,34,250-->
 
 What is the definition of the `Result` type?
 ?
@@ -1228,7 +1228,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-09-13,4,170-->
+<!--SR:2022-09-16,3,150-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1289,7 +1289,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-09-21,9,230-->
 
 ## Propogation
 
@@ -1307,7 +1307,7 @@ match something {
 	Err(e) => return Err(e), 
 }
 ```
-<!--SR:2022-09-12,13,250-->
+<!--SR:2022-10-18,36,250-->
 
 What does the `?` operator do?
 ?
@@ -1400,7 +1400,7 @@ What is the function signature for the `largest` method which is generic over ty
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-09-12,3,190-->
+<!--SR:2022-09-19,7,190-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1497,7 +1497,7 @@ How do you derive the traits required to use a struct/enum as an argument to `as
 What are the main assertion macros?
 ?
 `assert!`, `assert_eq!`, and `assert_ne!`
-<!--SR:2022-09-12,11,230-->
+<!--SR:2022-10-09,27,230-->
 
 How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
 ?

@@ -96,7 +96,7 @@ The rational numbers
 What can't you do in a field?
 ?
 Take square roots.
-<!--SR:2022-09-12,84,250-->
+<!--SR:2023-04-13,213,250-->
 
 What is $\mathbb{Q}(\sqrt(2)$? What does it contain?
 ?
@@ -116,7 +116,7 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:2022-09-13,70,210-->
+<!--SR:2022-10-22,39,190-->
 
 What is the intuition behind the definition of an automorphism?
 ?

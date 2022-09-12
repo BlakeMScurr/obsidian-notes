@@ -36,7 +36,7 @@ The set of all stakers.
 What does $T$ denote?
 ?
 The set of all tasks secured by eigenlayer.
-<!--SR:2022-09-12,21,250-->
+<!--SR:2022-11-07,56,250-->
 
 What does $s_i$ denote?
 ?
@@ -83,7 +83,7 @@ $$
 What does $S^c(V)$ denote?
 ?
 The collection of staker sets which are sufficient to corrupt all tasks in the subset $V$.
-<!--SR:2022-09-12,25,270-->
+<!--SR:2022-11-19,68,270-->
 
 What is the definition of $S^c(V)$?
 ?
