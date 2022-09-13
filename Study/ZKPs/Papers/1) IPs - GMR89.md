@@ -622,7 +622,7 @@ The input of a computation.
 What is an I-c-ensemble's $\Pi_x$ through a computational lens?
 ?
 The distribution of outputs on $x$
-<!--SR:2022-09-14,101,250-->
+<!--SR:2023-05-25,253,250-->
 
 What is an I-c-ensemble's $c$ through a computational lens?
 ?
@@ -1561,7 +1561,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:2022-09-14,83,250-->
+<!--SR:2022-10-30,46,230-->
 
 ##### Claim 1
 

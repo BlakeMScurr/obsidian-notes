@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-09-14,5,130-->
+<!--SR:2022-09-26,12,150-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -427,12 +427,12 @@ What is the default floating-point type and why?
 What standard are floats implemented according to?
 ?
 IEEE-754
-<!--SR:2022-09-14,15,250-->
+<!--SR:2022-10-23,39,250-->
 
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
 1, because integer division rounds down to the nearest integer.
-<!--SR:2022-09-14,15,250-->
+<!--SR:2022-10-24,40,250-->
 
 ### Boolean
 
@@ -646,7 +646,7 @@ How do you write a function that returns an `i32`?
 Do you have to declare the return type of a function?
 ?
 Yes.
-<!--SR:2022-09-14,13,250-->
+<!--SR:2022-10-19,35,250-->
 
 How do you return a value from a function?
 ?
@@ -682,7 +682,7 @@ fn main() {
 ```
 ?
 We need a bool in the if's condition, whereas we have an int.
-<!--SR:2022-09-14,15,250-->
+<!--SR:2022-10-25,41,250-->
 
 Does rust convert non boolean types by default?
 ?
@@ -886,7 +886,7 @@ println!("{}, world!", s1);
 ```
 ?
 `s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
-<!--SR:2022-09-14,15,250-->
+<!--SR:2022-10-22,38,250-->
 
 Why can't strings be accessed after they're moved?
 ?
@@ -932,7 +932,7 @@ If the type or any of its parts implement `Drop`, it can't implement `Copy`.
 What kinds of types tend to implement the `Copy` trait?
 ?
 Groups of scalar values.
-<!--SR:2022-09-14,13,230-->
+<!--SR:2022-10-17,33,230-->
 
 What's wrong with the following code?
 ```
@@ -978,7 +978,7 @@ Paths
 What is a crate?
 ?
 A tree of modules that produces a library or executable.
-<!--SR:2022-09-14,12,230-->
+<!--SR:2022-10-12,28,230-->
 
 What are the types of crate?
 ?
@@ -1091,7 +1091,7 @@ What is the path delimiter?
 Are modules private or public by default?
 ?
 Private
-<!--SR:2022-09-14,13,250-->
+<!--SR:2022-10-21,37,250-->
 
 Are functions, structs, etc private or public by default?
 ?
@@ -1132,7 +1132,7 @@ How do you use `use` paths idiomatically?
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:2022-09-14,12,230-->
+<!--SR:2022-10-16,32,230-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1165,7 +1165,7 @@ use std: :io: :Write;
 ```
 ?
 `use std: :io::{self, Write};`
-<!--SR:2022-09-14,12,230-->
+<!--SR:2022-10-16,32,230-->
 
 How could you bring everything in `std: :collections` into scope?
 ?
@@ -1368,7 +1368,7 @@ What do traits do, broadly, as opposed to generics?
 Traits abstract/generalise over behaviour.
 Generics let different concrete types use the same behaviour with the same function call.
 Traits let different concrete types use different behaviour with the same function call.
-<!--SR:2022-09-14,13,250-->
+<!--SR:2022-10-20,36,250-->
 
 What are lifetimes?
 ?
@@ -1412,7 +1412,7 @@ Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-
 What is an attribute, broadly?
 ?
 A piece of metadata about a piece of code.
-<!--SR:2022-09-14,13,250-->
+<!--SR:2022-10-19,35,250-->
 
 How do you change a function into a test function?
 ?
@@ -1492,7 +1492,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:2022-09-14,7,210-->
+<!--SR:2022-09-28,14,210-->
 
 What are the main assertion macros?
 ?

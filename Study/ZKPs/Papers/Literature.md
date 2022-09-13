@@ -172,7 +172,7 @@ Applications of pairing NIZKs to particular problems (without expensive circuit 
 Who are the authors of GS12?
 ?
 Jens Groth, Amit Sahai
-<!--SR:2022-09-14,84,250-->
+<!--SR:2023-04-12,210,250-->
 
 What is the title of GS12?
 ?

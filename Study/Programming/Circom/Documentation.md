@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get from misusing signals
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2022-09-14,59,190-->
+<!--SR:2023-01-04,112,190-->
 
 ### Components
 
@@ -474,7 +474,7 @@ function example(N) {
 How do you include library code?
 ?
 `include "example_library.circom";`
-<!--SR:2022-09-14,71,250-->
+<!--SR:2023-03-11,178,250-->
 
 ## The main Component
 
@@ -496,7 +496,7 @@ What is the syntax for creating a main component?
 Which input signals in the main component are private?
 ?
 All input signals not explicitly declared to be public.
-<!--SR:2022-09-14,76,250-->
+<!--SR:2023-03-23,190,250-->
 
 How can we define multiple main components in one program?
 ?

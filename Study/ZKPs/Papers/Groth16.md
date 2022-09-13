@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-09-14,41,150-->
+<!--SR:2022-10-07,23,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-09-14,4,130-->
+<!--SR:2022-09-20,6,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -1032,7 +1032,7 @@ Designated verifier non-interactive arguments using Paillier encryption.
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
-<!--SR:2022-09-14,36,230-->
+<!--SR:2022-12-02,79,230-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?
@@ -1096,7 +1096,7 @@ What are the steps in Setup for a LIP for a QAP, roughly?
 Pick parameters
 Set $\boldsymbol{\tau}$
 Set $\boldsymbol{\sigma}$
-<!--SR:2022-09-14,49,250-->
+<!--SR:2023-01-13,121,250-->
 
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
@@ -1135,7 +1135,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-09-14,27,230-->
+<!--SR:2022-11-17,64,230-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
