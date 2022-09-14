@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-09-15,39,270-->
+<!--SR:2022-10-08,23,250-->
 
 What is advice?
 ?

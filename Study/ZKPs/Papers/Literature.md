@@ -29,7 +29,7 @@ Proofs that Yield Nothing but their Validity or All Languages in NP Have Zero-Kn
 Who are the authors of GMW91
 ?
 Oded Goldreich, Silvio Micali, and Avi Widgerson
-<!--SR:2022-09-15,80,190-->
+<!--SR:2023-02-16,154,190-->
 
 What does GMW91 contribute?
 ?

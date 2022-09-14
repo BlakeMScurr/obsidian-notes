@@ -647,7 +647,7 @@ $\forall x \in I$ where $|x| = n$ let $\Pi_x$ be a probability distribution over
 How do we define an I-c-ensemble $\Pi$?
 ?
 We say $\Pi = \{\Pi_x | x \in I\}$ is an I-c-ensemble.
-<!--SR:2022-09-15,102,250-->
+<!--SR:2023-05-28,255,250-->
 
 
 #### Distinguishers
@@ -1086,7 +1086,7 @@ Manuel Blum.
 Why was the language BL interesting to GMR?
 ?
 Because it was presented with all the ingredients required to prove that $BL \in KC(0)$
-<!--SR:2022-09-15,98,250-->
+<!--SR:2023-05-06,233,250-->
 
 Why was the language BL invented?
 ?

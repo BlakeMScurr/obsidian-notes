@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-09-15,6,210-->
+<!--SR:2022-09-28,13,210-->
 
 What is a `Result`?
 ?
@@ -370,7 +370,7 @@ What is the prefix for octal number literals?
 What is the prefix for binary number literals?
 ?
 `0b`
-<!--SR:2022-09-15,14,230-->
+<!--SR:2022-10-19,34,230-->
 
 What is the syntax for byte number literals?
 ?
@@ -728,7 +728,7 @@ Looping while a condition is true, which saves code compared to implementing the
 Can you use labels and breaks with a `while` loop?
 ?
 Yes.
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-20,35,250-->
 
 Can `while` loops return a value?
 ?
@@ -820,7 +820,7 @@ How does allocating on the heap work, roughly?
 You request a certain amount of memory.
 The allocator finds some memory.
 The allocator returns a _pointer_, which is the address of the location.
-<!--SR:2022-09-15,14,230-->
+<!--SR:2022-10-21,36,230-->
 
 How is the stack used by functions?
 ?
@@ -973,7 +973,7 @@ Packages
 Crates
 Modules
 Paths
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-22,37,250-->
 
 What is a crate?
 ?
@@ -1111,7 +1111,7 @@ No
 Does making a module public make its functions and structs etc public?
 ?
 No
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-24,39,250-->
 
 How do you create shortcuts to paths?
 ?
@@ -1240,7 +1240,7 @@ let greeting_file = match greeting_file_result {
 	Err(error) => panic!("Problem opening the file: {:?}", error),
 };
 ```
-<!--SR:2022-09-15,13,230-->
+<!--SR:2022-10-18,33,230-->
 
 Are `Result` and its variants in the prelude?
 ?
@@ -1259,7 +1259,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-09-15,11,210-->
+<!--SR:2022-09-22,7,190-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1279,7 +1279,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-09-15,5,170-->
+<!--SR:2022-09-24,9,170-->
 
 What does `expect` do?
 ?
@@ -1327,7 +1327,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-09-23,8,230-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1456,7 +1456,7 @@ That there are no tests marked to be ignored (unless specifically requested).
 What does the `0 filtered` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests that are filtered out by our argument to `cargo test`
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-23,38,250-->
 
 When do tests fail?
 ?
@@ -1476,7 +1476,7 @@ Panics if passed false, nothing if passed true.
 What does `assert_ne!` do?
 ?
 Panics if the two arguments are equal, nothing otherwise.
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-23,38,250-->
 
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
@@ -1522,7 +1522,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-09-15,14,250-->
+<!--SR:2022-10-22,37,250-->
 
 How do you test that a function panics with a specific message?
 ?
@@ -1555,7 +1555,7 @@ So you can use the question mark operator in the body of the tests, so you can c
 How do you assert that a result is an err?
 ?
 `assert!(value.is_err())` - not by using the question mark operator.
-<!--SR:2022-09-15,10,230-->
+<!--SR:2022-09-21,6,210-->
 
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?

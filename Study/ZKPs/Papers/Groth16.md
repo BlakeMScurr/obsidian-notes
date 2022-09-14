@@ -205,7 +205,7 @@ $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the 
 What are the parts of a bilinear group?
 ?
 $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
-<!--SR:2022-09-15,22,230-->
+<!--SR:2022-11-08,54,230-->
 
 What is $p$?
 ?
@@ -689,7 +689,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2022-09-15,55,250-->
+<!--SR:2023-01-26,133,250-->
 
 How is $t(x)$ defined?
 ?
@@ -1198,7 +1198,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-09-15,27,170-->
+<!--SR:2022-11-02,48,170-->
 
 How is $C$ computed by Prove in a QAPLIP?
 ?

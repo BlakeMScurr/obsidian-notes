@@ -667,7 +667,7 @@ What are the bitwise operators?
 What is the `&` operator?
 ?
 Bitwise AND
-<!--SR:2022-09-15,72,250-->
+<!--SR:2023-03-14,180,250-->
 
 What is the `|` operator?
 ?
@@ -682,7 +682,7 @@ Complement 254 bits
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2022-09-15,57,190-->
+<!--SR:2023-01-01,108,190-->
 
 What is the `>>` operator?
 ?
@@ -943,7 +943,7 @@ A field element.
 Are arrays dynamic?
 ?
 No, they can hold a finite number of elements known at compile time.
-<!--SR:2022-09-15,76,250-->
+<!--SR:2023-03-24,190,250-->
 
 How many different types of elements can a single array hold?
 ?

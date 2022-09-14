@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-09-15,14,230-->
+<!--SR:2022-10-20,35,230-->
 
 What does $S_j$ denote?
 ?
@@ -103,7 +103,7 @@ $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
 What does $p_j$ denote?
 ?
 The profit from corruption of task $j$.
-<!--SR:2022-09-15,28,290-->
+<!--SR:2022-12-05,81,290-->
 
 What does $p(V)$ denote?
 ?
