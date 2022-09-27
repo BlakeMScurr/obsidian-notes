@@ -9,7 +9,7 @@ Algerbraic expressions including values like $\sqrt{2}$ and $-\sqrt{2}$, and the
 What is the popularly known consequence of the Fundamental Theorem of Galois Theory?
 ?
 That there is no general formula to solve a polynomial of degree 5 or higher.
-<!--SR:2022-09-24,89,250-->
+<!--SR:2023-05-14,229,250-->
 
 
 # What is the Square root of 2?
@@ -55,7 +55,7 @@ Yes.
 What is $\zeta$
 ?
 $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
-<!--SR:2022-09-21,77,210-->
+<!--SR:2023-03-02,162,210-->
 
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?
@@ -74,7 +74,7 @@ $(\zeta,\zeta^2,\zeta^3,\zeta^4)$
 $(\zeta^2,\zeta^4,\zeta,\zeta^3)$
 $(\zeta^3,\zeta,\zeta^4,\zeta^2)$
 $(\zeta^4,\zeta^3,\zeta^2,\zeta)$
-<!--SR:2022-09-26,88,250-->
+<!--SR:2023-05-15,230,250-->
 
 Why do we want to study the algebra preserving permutations of conjugates?
 ?
@@ -131,7 +131,7 @@ The set of all automorphisms of $F$.
 What is the additional property of an automorphism fixing $\mathbb{Q}$? (As compared to an ordinary automorphism not fixing $\mathbb{Q}$).
 ?
 $\sigma(x) = x,\ \forall x \in \mathbb{Q}$
-<!--SR:2022-09-20,33,230-->
+<!--SR:2022-12-07,78,230-->
 
 What is $Aut\ F/\mathbb{Q}$?
 ?

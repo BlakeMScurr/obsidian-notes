@@ -12,7 +12,7 @@ How does "the value of Ethereum increases significantly due to the future fee op
 What $CoC$ mean?
 ?
 Cost of corruption.
-<!--SR:2022-09-19,26,250-->
+<!--SR:2022-11-21,63,250-->
 
 What is the $CoC$ of a DApp without restaking?
 ?
@@ -61,7 +61,7 @@ A subset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2022-09-17,12,250-->
+<!--SR:2022-10-24,35,250-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
@@ -71,7 +71,7 @@ $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share 
 What is $S_j^c$?
 ?
 The collection of staker sets sufficient to corrupt $j$.
-<!--SR:2022-09-16,27,270-->
+<!--SR:2022-11-28,73,270-->
 
 How do we define $S_j^c$?
 ?
@@ -128,12 +128,12 @@ $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
 $c(V) > p(V)$
-<!--SR:2022-09-16,29,290-->
+<!--SR:2022-12-12,87,290-->
 
 What does $T^c(U)$ denote?
 ?
 The set of tasks that the stakers $U$ are able to corrupt.
-<!--SR:2022-09-26,32,270-->
+<!--SR:2022-12-24,88,270-->
 
 What is the definition of $T^c(U)$?
 ?
@@ -146,7 +146,7 @@ $$
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-09-22,9,210-->
+<!--SR:2022-10-11,19,210-->
 
 What does $\gamma_{ij}$ denote?
 ?

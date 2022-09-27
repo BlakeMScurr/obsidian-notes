@@ -13,7 +13,7 @@
 What are interactive proof systems?
 ?
 Interactive proof systems are a method of communicating a proof, they are interactive and probabilistic.
-<!--SR:2022-09-22,85,190-->
+<!--SR:2023-02-23,154,190-->
 
 What does the "interactive" in interactive proof systems mean?
 ?
@@ -42,12 +42,12 @@ A measure of the additional knowledge conveyed by a proof.
 What extra information does a standard NP proof of a Hamiltonian path convey?
 ?
 The exact path itself, as opposed to just the 1 bit statement of its existence.
-<!--SR:2022-09-27,105,250-->
+<!--SR:2023-06-17,263,250-->
 
 What is knowledge as opposed to information, roughly?
 ?
 Knowledge is information that is difficult to acquire.
-<!--SR:2022-09-17,103,250-->
+<!--SR:2023-05-26,249,250-->
 
 How can we study knowledge complexity per se, rather than instances of proof systems?
 ?
@@ -77,7 +77,7 @@ It removes the need to give `m`'s factorisation, and allows a zero knowledge pro
 What is true of all known NP algorithms of quadratic residuosity?
 ?
 They exhibit `m`'s factorisation to the verifier.
-<!--SR:2022-09-26,108,250-->
+<!--SR:2023-06-25,271,250-->
 
 ## Interactive Proof Systems
 
@@ -93,12 +93,12 @@ They exhibit `m`'s factorisation to the verifier.
 What intuitive notion is NP a formalisation for?
 ?
 Theorem proving.
-<!--SR:2022-09-19,102,250-->
+<!--SR:2023-05-21,244,250-->
 
 What's the key property of proofs in NP?
 ?
 That proofs are easy to verify, i.e., they can be verified in polynomial time.
-<!--SR:2022-09-16,103,250-->
+<!--SR:2023-06-01,258,250-->
 
 What "physical" parts does NP consist of?
 ?
@@ -125,7 +125,7 @@ What are the 3 defining features of theorem proving for GMR?
 It must be possible to prove a true theorem.
 It must be impossible to prove a false theorem.
 It must be easier to verify a proof than construct it originally.
-<!--SR:2022-09-17,97,230-->
+<!--SR:2023-05-03,226,230-->
 
 What, intuitively, is the difference between a proof and a computation, for GMR?
 ?
@@ -383,7 +383,7 @@ $a = x^2\ mod\ m$ for some $x \in \mathbb{Z}^*_m$
 $a \in \mathbb{Z}^*_m$ is a quadratic non-residue if . . . ?
 ?
 $a \neq x^2\ mod\ m$ for all $x \in \mathbb{Z}^*_m$
-<!--SR:2022-09-24,103,250-->
+<!--SR:2023-06-15,261,250-->
 
 Is $QNR \in NP$? How do we know?
 ?
@@ -411,7 +411,7 @@ Choose random numbers.
 Form squares (i.e., non residues).
 Mix/multiply some with input x.
 Sends the mix to A.
-<!--SR:2022-09-19,90,230-->
+<!--SR:2023-04-14,207,230-->
 
 How does B mix random numbers with x in the basic QNR IP?
 ?
@@ -493,7 +493,7 @@ László Babai.
 Which came first, Arthur-Merlin games, or Interactive Proof Systems?
 ?
 Arthur-Merlin games.
-<!--SR:2022-09-21,108,270-->
+<!--SR:2023-07-10,292,270-->
 
 How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
@@ -739,7 +739,7 @@ That they are "equal" with respect to any polynomial time computation. At least,
 What was distinguishability used for before GMR?
 ?
 Probabilistic encryption and pseudo random number generation.
-<!--SR:2022-09-20,85,230-->
+<!--SR:2022-11-02,43,210-->
 
 In what sense is zkQNR indistinguishable?
 ?
@@ -783,7 +783,7 @@ It can be equivalent to sending multiple messages encrypted by the same key, whi
 Informally, which communications convey knowledge?
 ?
 Those that transmit the output of an unfeasible computation, a computation that we cannot perform ourselves.
-<!--SR:2022-09-18,83,230-->
+<!--SR:2023-03-30,192,230-->
 
 How much knowledge do random bits convey and why?
 ?
@@ -890,7 +890,7 @@ What are the cases in GMR's communication complexity analogy?
 The reporter knows what the cop will say - i.e., their chance of generating the police's statements is 1. i.e., zero knowledge.
 The reporter knows some of what the cop will say - i.e., their chance '' '' is, say 3/4, i.e., some knowledge
 The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0, i.e., a lot of knowledge is communicated
-<!--SR:2022-09-22,116,270-->
+<!--SR:2023-08-01,313,270-->
 
 #### KC of naive QNR
  
@@ -1045,7 +1045,7 @@ What are the trivial relationships between KC(0) and polynomial languages and ho
 $P \subseteq KC(0),\ RP \subseteq KC(0),\ BPP \subseteq KC(0)$
 Intuitively, polynomial computation is defined as "easy" and not containing knowledge.
 All these languages can be decided with a probabilistic polynomial machine. Hence a trivial polynomial imitator machine can be constructed with an identical ouput, thus communicating zero knowledge.
-<!--SR:2022-09-18,101,250-->
+<!--SR:2023-05-31,254,250-->
 
 How much knowledge does an NP proof for a language not in BPP communicate and how do we know?
 ?
@@ -1145,7 +1145,7 @@ $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
 Computing $\mathcal{Q}_m(x)$ is a hard problem.
-<!--SR:2022-09-19,80,210-->
+<!--SR:2023-03-06,168,210-->
 
 The algorithm for generating $x$ with $\mathcal{Q}_m(x) = 1$ and $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1274,7 +1274,7 @@ $T = \{t_1, ..., t_n\ |\ t_i = r_i^2\}$
 How is $S$ constructed?
 ?
 $S = \{t_{n+1},...,t_{2n}\ |\ t_i = y\cdot r_i^2\}$
-<!--SR:2022-09-21,95,250-->
+<!--SR:2023-05-07,228,250-->
 
 
 What type are each $t_i$?
@@ -1312,7 +1312,7 @@ $A$ randomly selects a subset of $T \cup S$ of size $n$
 How large is $Z$?
 ?
 $n$
-<!--SR:2022-09-25,98,250-->
+<!--SR:2023-05-23,238,250-->
 
 How does $A$ send $Z$ to $B$?
 ?
@@ -1340,7 +1340,7 @@ For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = 
 What is $d$?
 ?
 The difference in size between $T - Z$ and $S - Z$.
-<!--SR:2022-09-23,85,230-->
+<!--SR:2023-03-29,187,230-->
 
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
@@ -1365,7 +1365,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-09-25,57,190-->
+<!--SR:2022-10-28,31,170-->
 
 What is the purpose of $X' \cup Y'$?
 ?
@@ -1395,7 +1395,7 @@ Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_
 What are the two forms of numbers in $X' \cup Y'$?
 ?
 $\sqrt{y \cdot x \cdot t_i}$ and $\sqrt{x \cdot t_i}$
-<!--SR:2022-09-20,83,230-->
+<!--SR:2023-03-21,182,230-->
 
 How is $X' \cup Y'$ defined?
 ?
@@ -1459,7 +1459,7 @@ $B$ checks that $v = C_x$, i.e., that $A$ has predicted the coin flip.
 When does $B$ accept?
 ?
 If $iteration \geq n$
-<!--SR:2022-09-22,87,250-->
+<!--SR:2023-05-05,225,250-->
 
 When does $B$ increment $iteration$?
 ?
@@ -1581,7 +1581,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-09-16,85,250-->
+<!--SR:2023-04-27,223,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
@@ -1638,7 +1638,7 @@ $C_x = 0$ and $w \in X'$
 $C_x = 0$ and $w \in Y'$
 $C_x = 1$ and $w \in X'$
 $C_x = 1$ and $w \in Y'$
-<!--SR:2022-09-16,85,250-->
+<!--SR:2023-04-27,223,250-->
 
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?

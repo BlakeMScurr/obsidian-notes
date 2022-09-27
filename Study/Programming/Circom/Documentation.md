@@ -17,7 +17,7 @@ Field elements in $\mathbb{Z}/p\mathbb{Z}$
 What are the kinds of signals?
 ?
 Input, output, and intermediate.
-<!--SR:2022-09-22,69,210-->
+<!--SR:2023-02-20,151,210-->
 
 How do you declare an input signal?
 ?
@@ -44,7 +44,7 @@ When are signals private vs public?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2022-09-20,57,230-->
+<!--SR:2023-01-23,125,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
@@ -101,7 +101,7 @@ out <== comp.outA;
 ```
 ?
 Signals are immutable, so assigning to `out` twice gives a compilation error.
-<!--SR:2022-09-18,79,250-->
+<!--SR:2023-04-06,199,250-->
 
 What operators can be used to assign signals?
 ?
@@ -111,13 +111,13 @@ What operators can be used to assign signals?
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
 `==>` and `<==` add a constraint, making them the safer option.
-<!--SR:2022-09-23,80,250-->
+<!--SR:2023-04-11,200,250-->
 
 What's an example of when we must use `<--` rather than `<==` and what does it do?
 ?
 `out[k] <-- (in >> k) & 1`
 Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the end of the number, and `& 1` gives us the least significant bit.
-<!--SR:2022-09-27,85,250-->
+<!--SR:2023-04-28,213,250-->
 
 ## Variables and Mutability
 
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-09-18,57,170-->
+<!--SR:2022-12-23,95,170-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -174,12 +174,12 @@ An assignment, which is a statement and has no value, is being used as part of a
 What do we use to create generic circuits in circom?
 ?
 Templates.
-<!--SR:2022-09-26,84,250-->
+<!--SR:2023-04-26,211,250-->
 
 When are template's parameters instantiated?
 ?
 When the template is used.
-<!--SR:2022-09-23,73,230-->
+<!--SR:2023-03-10,168,230-->
 
 What is the syntax to define a template parameter?
 ?
@@ -274,7 +274,7 @@ component main{public [in]} = A(1);
 ?
 The intermediate signal `inter` is only used in one constraint, which makes it effectively useless, as it can't constrain inputs to outputs.
 It will give a hint when using `--inspect` at compile time: "In template "A1". One constraint intermediate: "inter" = Maybe use: inter * 0 === 0".
-<!--SR:2022-09-27,72,210-->
+<!--SR:2023-02-25,151,210-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -326,7 +326,7 @@ x = c.b;
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
 Instantiation won't be triggered until all the component's inputs have been supplied, meaning instantiaion may be delayed. This means the outputs of a component can't be used until all the inputs are set.
-<!--SR:2022-09-22,80,250-->
+<!--SR:2023-03-31,190,250-->
 
 What is wrong with the following piece of code?
 ```
@@ -430,7 +430,7 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2022-09-16,77,250-->
+<!--SR:2022-10-26,40,230-->
 
 What can functions output?
 ?
@@ -455,7 +455,7 @@ At the end of every execution trace.
 What does executing a return statement do?
 ?
 Returns control to the caller of the function.
-<!--SR:2022-09-25,82,250-->
+<!--SR:2023-04-23,208,250-->
 
 What error does this code produce?
 ```
@@ -501,7 +501,7 @@ All input signals not explicitly declared to be public.
 How can we define multiple main components in one program?
 ?
 We can't - we'll get a "Multiple main components  in the project structure" error.
-<!--SR:2022-09-25,83,250-->
+<!--SR:2023-04-15,200,250-->
 
 
 
@@ -510,7 +510,7 @@ We can't - we'll get a "Multiple main components  in the project structure" erro
 What is the comment syntax for circom?
 ?
 `//` for single line, and `/**/` for multiline.
-<!--SR:2022-09-26,83,250-->
+<!--SR:2023-04-24,209,250-->
 
 What can be used for identifiers?
 ?
@@ -579,7 +579,7 @@ What are the boolean operators?
 What is `&&`?
 ?
 Boolean AND operator.
-<!--SR:2022-09-17,74,250-->
+<!--SR:2023-03-26,188,250-->
 
 What is `||`?
 ?
@@ -617,7 +617,7 @@ How is `x < y` defined?
 How is `x > y` defined?
 ?
 `val(x % p) > val(y % p)`
-<!--SR:2022-09-24,81,250-->
+<!--SR:2023-04-21,206,250-->
 
 How is `x <= y` defined?
 ?
@@ -632,7 +632,7 @@ How is `x >= y` defined?
 What are the arithmetic operators?
 ?
 `+ - * ** / \ %`
-<!--SR:2022-09-21,79,250-->
+<!--SR:2023-04-07,198,250-->
 
 What are the `+ - * **` operators?
 ?
@@ -642,7 +642,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2022-09-19,67,210-->
+<!--SR:2023-02-04,138,210-->
 
 What is the `\` operator?
 ?
@@ -672,7 +672,7 @@ Bitwise AND
 What is the `|` operator?
 ?
 Bitwise OR
-<!--SR:2022-09-27,84,250-->
+<!--SR:2023-04-25,210,250-->
 
 What is the `~` operator?
 ?
@@ -697,7 +697,7 @@ Leftshift
 How are the shift operators extended?
 ?
 They work modulo p (assuming p>=7).
-<!--SR:2022-09-26,76,230-->
+<!--SR:2023-03-19,173,230-->
 
 How do the shift operators work for `0 >= k <= p/2`?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-09-21,64,190-->
+<!--SR:2022-10-26,35,170-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -818,7 +818,7 @@ template multi3() {
 ?
 The constraint `out === in*in1*in2` is not quadratic so we get:
 "Non quadratic constraints are not allowed!"
-<!--SR:2022-09-19,76,250-->
+<!--SR:2023-03-28,190,250-->
 
 Write out the full constraint generated by the following code, why does it work like this?
 ```
@@ -830,7 +830,7 @@ b <== x + 3;
 ?
 `b === a * a + 3`
 Because `x` holds the algebraic expression `a*a` which is used to generate constraints over signals, because we can't use variables in a constraint.
-<!--SR:2022-09-18,75,250-->
+<!--SR:2023-03-27,189,250-->
 
 # Control Flow
 
@@ -969,7 +969,7 @@ The size of `z` is not explicitly given, and it will produce a compiler error.
 Can a single array hold multiple types of signals?
 ?
 No, each array can only hold one type of signal.
-<!--SR:2022-09-20,78,250-->
+<!--SR:2023-04-03,195,250-->
 
 Can an array contain components with different parameters?
 ?
@@ -1001,7 +1001,7 @@ template All(N){
 ?
 `c[i] = fun[i] -> Assignee and assigned types do not match`
 There are two types of components being put into the array `c`. This applies even though the two types are identical, and no components can actually be of type 2 if you follow the runtime logic.
-<!--SR:2022-09-27,81,250-->
+<!--SR:2023-04-08,193,250-->
 
 # Scoping
 
@@ -1055,7 +1055,7 @@ template t() {
 ```
 ?
 `t` is trying to access a component within a component which is not allowed. If we want an indirect descendant's signals, we need to pass them via the intervening components.
-<!--SR:2022-09-24,80,250-->
+<!--SR:2023-04-19,204,250-->
 
 
 
@@ -1090,7 +1090,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-09-22,41,230-->
+<!--SR:2022-12-25,94,230-->
 
 What's an example of a `log` instruction?
 ?

@@ -35,7 +35,7 @@ What are the elementary consequences of the group axioms?
 Uniqueness of the identity
 Uniqueness of the inverse
 Inversion of a product
-<!--SR:2022-09-21,45,230-->
+<!--SR:2022-12-31,101,230-->
 
 How do you prove the uniqueness of group identity?
 ?
@@ -69,7 +69,7 @@ In additive notation we have n summands of a:
 $$
 na = a + a + ... + a
 $$
-<!--SR:2022-09-20,100,210-->
+<!--SR:2023-04-18,210,210-->
 
 How do we know that $a_1a_2...a_n$ is an unambiguous expression for a group?
 ?
@@ -139,15 +139,15 @@ $$(t, s) \in R \implies (s, t) \in R$$
 What is the transitivity property of an equivalence relation?
 ?
 $$(s, t),\ (t, u) \in R \implies (s, u) \in R$$
-<!--SR:2022-09-25,102,230-->
+<!--SR:2023-05-22,237,230-->
 
 How does an equivalence relation induce a partition of $S$?
 ?
 A partition of $S$ is a representation of $S$ as a union of mutually disjoint subsets of $S$.
 The union of equivalence classes is equivalent to $S$ because of reflexivity (all elements are in a class at least containing themselves), and the classes are mutually disjoint because of symmetry and transitivity (if any two elements are equivalent, they share the same equivalence class with all their other equivalents).
-<!--SR:2022-09-23,101,230-->
+<!--SR:2023-05-13,232,230-->
 
 What is the definition of an equivalence class?
 ?
 $$[s] = \{ t \in S\ |\ (s, t) \in R\ \}$$
-<!--SR:2022-09-23,67,170-->
+<!--SR:2023-01-17,116,170-->

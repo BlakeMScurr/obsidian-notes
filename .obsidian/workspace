@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "ae41b1345c609984",
+        "id": "114a0b435497d899",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ae41b1345c609984",
+  "active": "114a0b435497d899",
   "lastOpenFiles": [
-    "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/Programming/Rust/Book.md",
-    "Study/Software/EigenLayer.md",
     "Study/Programming/Rust/Tidbits from Review.md",
+    "Study/Programming/Rust/Book.md",
+    "Study/Programming/Halo2/Halo2.md",
+    "Study/Biology/Huberman/Fasting Episode 41.md",
+    "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+    "Study/ZKPs/Papers/1) IPs - GMR89.md",
+    "Study/Software/EigenLayer.md",
     "Study/ZKPs/Papers/Groth16.md",
     "tmp err handling.md",
-    "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
-    "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
-    "Study/Programming/Circom/Circomlib.md",
-    "Study/Programming/Halo2/Halo2.md"
+    "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md"
   ]
 }

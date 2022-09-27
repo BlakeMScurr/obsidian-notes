@@ -14,12 +14,12 @@ Succinct non-interactive argument
 What is a SNARK?
 ?
 Succinct non-interactive argument of knowledge
-<!--SR:2022-09-18,83,250-->
+<!--SR:2023-04-16,209,250-->
 
 What does a pairing based SNARG consist of?
 ?
 A number of group elements.
-<!--SR:2022-09-21,85,250-->
+<!--SR:2023-04-22,213,250-->
 
 What is the central question of Groth16?
 ?
@@ -127,7 +127,7 @@ The first linear sized proofs based on standard assumptions.
 What did Gro10 achieve wrt communication complexity and how?
 ?
 The first constant size NIZK arguments, by combining pairing based NIZKs with ideas from interactive zero-knowledge.
-<!--SR:2022-09-27,54,190-->
+<!--SR:2023-01-08,103,190-->
 
 What did Lip12 achieve wrt communication complexity?
 ?
@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-09-17,6,150-->
+<!--SR:2022-09-30,11,150-->
 
 What is the limit definition of $\omega$?
 ?
@@ -248,7 +248,7 @@ Type I, Type II, and Type III
 Who classified the types of bilinear groups?
 ?
 Galbraith et al GPS08
-<!--SR:2022-09-22,46,190-->
+<!--SR:2022-12-16,85,190-->
 
 What is a Type I bilinear group?
 ?
@@ -287,7 +287,7 @@ All 3 types
 What is $\mathcal{R}$?
 ?
 A relation generator that, given $\lambda$ in unary returns a polynomial time decidable binary relation $R$.
-<!--SR:2022-09-25,65,250-->
+<!--SR:2023-03-05,159,250-->
 
 ??? Why is lambda in unary?
 
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2022-09-23,42,190-->
+<!--SR:2023-01-20,119,210-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-09-26,17,150-->
+<!--SR:2022-10-25,28,150-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -473,7 +473,7 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-09-20,26,170-->
+<!--SR:2022-10-30,40,170-->
 Note, this is already implicit in its access to the adversaries state.
 
 
@@ -537,7 +537,7 @@ Preprocessing succinct non-interactive argument
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-09-18,21,210-->
+<!--SR:2022-11-03,45,210-->
 
 What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
 ?
@@ -547,7 +547,7 @@ You can compile a preprocessing SNARK into a fully succinct SNARK.
 Who showed the relationship between preprocessing and fully succinct SNARKs?
 ?
 Bitansky et al BCCT13.
-<!--SR:2022-09-18,39,270-->
+<!--SR:2022-12-30,102,270-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
@@ -564,12 +564,12 @@ Indisginguishability obfuscation implies that for every candidate SNARK there ar
 Who discovered the first danger that was implied by indistinguishability obfuscation?
 ?
 Bitansky et al BCPR14
-<!--SR:2022-09-24,49,190-->
+<!--SR:2022-12-28,92,190-->
 
 What is the strongest negative consequence of indistinguishability obfuscation?
 ?
 Assuming public coin differing input obfuscation and other cryptographic assumptions, there is an auxiliary output distribution that defeats witness extraction for all candidate SNARKs.
-<!--SR:2022-09-23,63,230-->
+<!--SR:2023-02-15,145,230-->
 
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
@@ -612,12 +612,12 @@ Statement wires and witness wires that satisfy the arithmetic circuit.
 What is the generalisation for circuits?
 ?
 Arithmetic constraints - relations described by equations over a set of variables.
-<!--SR:2022-09-24,86,250-->
+<!--SR:2023-05-04,219,250-->
 
 What corresponds to the statement in our arithmetic constraints?
 ?
 A subset of the variables.
-<!--SR:2022-09-17,80,250-->
+<!--SR:2023-04-10,203,250-->
 
 What corresponds to the witness in our arithmetic constraints?
 ?
@@ -627,7 +627,7 @@ The variables not in the statement.
 What is the binary relation of our arithmetic constraints?
 ?
 WItnesses and statements that satisfy all the equations.
-<!--SR:2022-09-17,81,250-->
+<!--SR:2023-04-02,195,250-->
 
 What are our arithmetic constraints over?
 ?
@@ -645,7 +645,7 @@ where $u_{i,q},v_{i,q},w_{i,q}$ are constants specifying the $q$th equation.
 How do we know arithmetic constraints generalise circuits?
 ?
 Multiplication and addition gates are special cases of constraint equations.
-<!--SR:2022-09-27,88,250-->
+<!--SR:2023-05-05,220,250-->
 
 How can a multiplication gate be described as a constraint?
 ?
@@ -702,7 +702,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-09-26,53,190-->
+<!--SR:2022-10-26,29,170-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-09-20,6,130-->
+<!--SR:2022-09-28,5,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-09-20,15,190-->
+<!--SR:2022-09-28,8,170-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -778,7 +778,7 @@ $$
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-09-16,52,210-->
+<!--SR:2022-10-10,24,190-->
 
 What is the definition of $w$ in a QAP?
 ?
@@ -788,13 +788,13 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-09-21,48,210-->
+<!--SR:2022-10-15,24,190-->
 
 How might relation generators vary in practice?
 ?
 Deterministic vs randomised.
 Field generated the rest of the relation is built on the field vs polynomials specified first then a random field is chosen.
-<!--SR:2022-09-24,66,250-->
+<!--SR:2023-03-20,174,250-->
 
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
@@ -856,7 +856,7 @@ Vfy
 What is a LIP generated by, and what do we assume about it?
 ?
 A relation generator $\mathcal{R}$, where we assume the relations specify a finite field $\mathbb{F}$.
-<!--SR:2022-09-17,39,190-->
+<!--SR:2022-12-01,73,190-->
 
 What, broadly, is a LIP?
 ?
@@ -866,7 +866,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-09-17,44,190-->
+<!--SR:2022-12-15,87,190-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -882,7 +882,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-09-16,40,170-->
+<!--SR:2022-11-23,68,170-->
 
 What is ProofMatrix, broadly?
 ?
@@ -934,7 +934,7 @@ An arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$
 What arguments is $t$ passed?
 ?
 $(\sigma, \pi)$
-<!--SR:2022-09-25,34,190-->
+<!--SR:2022-12-03,67,190-->
 
 When does Vfy accept in a LIP?
 ?
@@ -1011,7 +1011,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-09-19,40,190-->
+<!--SR:2022-11-30,72,190-->
 
 ??? Is there a mistake here, should it me that Pi in kxm rather than mxk?
 
@@ -1125,7 +1125,7 @@ The exponentiations of $x$
 The linear combinations for $\phi$
 The linear combinations for $w$
 The evaluations of $t(x)$
-<!--SR:2022-09-20,19,230-->
+<!--SR:2022-10-31,41,230-->
 
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
@@ -1144,7 +1144,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:2022-09-21,20,230-->
+<!--SR:2022-11-09,49,230-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-09-17,26,190-->
+<!--SR:2022-11-09,51,190-->
 
 ##### Prove
 
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-09-21,15,170-->
+<!--SR:2022-10-17,26,170-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
@@ -1211,14 +1211,14 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-09-21,11,150-->
+<!--SR:2022-10-10,13,150-->
 
 ##### Vfy
 
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-09-19,39,230-->
+<!--SR:2022-10-11,22,210-->
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-09-18,26,210-->
+<!--SR:2022-10-02,13,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1286,14 +1286,14 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-09-17,29,250-->
+<!--SR:2022-12-03,75,250-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?
 Pick A and B.
 Compute C.
 Return proof.
-<!--SR:2022-09-23,46,290-->
+<!--SR:2023-02-05,135,290-->
 
 How does the simulator pick A and B in a QAPLIP?
 ?

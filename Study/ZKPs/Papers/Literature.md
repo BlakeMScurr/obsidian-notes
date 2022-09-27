@@ -80,7 +80,7 @@ That interaction with two provers is equivalent to interaction with one prover p
 What is BFL90's title?
 ?
 Non-deterministic exponential time has two prover interactive protocols.
-<!--SR:2022-09-18,62,170-->
+<!--SR:2023-01-03,106,170-->
 
 Who are the authors of BFL90?
 ?
@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-09-16,19,170-->
+<!--SR:2022-10-18,32,170-->
 
 What is the title of GO94?
 ?
@@ -109,13 +109,13 @@ Definitions and properties of zero-knowledge proof systems
 What does GO94 show, according to Groth's talk in the 3rd BIU winter school?
 ?
 That NIZKs are only possible in the plain model for trivial languages, where $L \in BPP$
-<!--SR:2022-09-23,88,250-->
+<!--SR:2023-05-10,229,250-->
 
 What does GO94 show?
 ?
 Classifies and defines two new definitions of zero knowledge: auxiliary input, and simultation, and shows that blackbox-simulation -> auxiliary -> GMR definition, and that composition of auxiliary gives auxiliary.
 That 1 round NIZKs are only possible for trival (BPP) languages.
-<!--SR:2022-09-22,62,190-->
+<!--SR:2023-01-18,118,190-->
 
 
 # Pairing Based Snarks
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-09-16,7,150-->
+<!--SR:2022-10-01,4,130-->
 
 Who are the authors of GOS06?
 ?
@@ -152,7 +152,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-09-18,45,150-->
+<!--SR:2022-11-22,64,150-->
 
 Who are the authors of Gro06?
 ?
@@ -209,7 +209,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-09-26,21,130-->
+<!--SR:2022-10-29,32,130-->
 
 What did Gro09 contribute?
 ?
@@ -251,14 +251,14 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-09-27,49,250-->
+<!--SR:2022-10-22,25,230-->
 
 ### MBKM19
 
 Who are the authors of MBKM19?
 ?
 Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
-<!--SR:2022-09-26,70,270-->
+<!--SR:2023-04-05,190,270-->
 
 What is the title of MBKM19?
 ?
@@ -285,7 +285,7 @@ Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2022-09-24,51,230-->
+<!--SR:2023-01-26,121,230-->
 
 What did GWC21 contribute?
 ?
@@ -309,7 +309,7 @@ Sean Bowe, Ariel Gabizon, Ian Miers
 What is the title of BGM19?
 ?
 Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Model
-<!--SR:2022-09-17,67,270-->
+<!--SR:2023-03-17,179,270-->
 
 What did BGM19 contribute?
 ?

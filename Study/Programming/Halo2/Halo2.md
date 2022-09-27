@@ -17,7 +17,7 @@ Intermediate values used to create the proof
 What is the witness?
 ?
 The advice and the private inputs.
-<!--SR:2022-09-25,49,290-->
+<!--SR:2023-02-19,145,290-->
 
 ## PLONKish Arithmetization
 
@@ -55,8 +55,8 @@ It's for elements shared between the prover and verifier, typeically public inpu
 
 What are the constraints?
 ?
-Multivariate polynomails over F.
-<!--SR:2022-09-20,45,290-->
+Multivariate polynomials over F.
+<!--SR:2023-01-24,126,290-->
 
 What must the constraints evaluate to?
 ?
@@ -76,19 +76,19 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-09-17,12,130-->
+<!--SR:2022-10-06,17,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-09-24,11,150-->
+<!--SR:2022-10-18,21,150-->
 
 What keys do we genererate from the circuit description?
 ?
 The proving key and the verification key.
-<!--SR:2022-09-21,41,270-->
+<!--SR:2023-01-14,115,270-->
 
 What is a selector?
 ?
@@ -122,6 +122,6 @@ Cryptographic primitives like hash functions or ciphers, or algorithms like scal
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:2022-09-26,49,290-->
+<!--SR:2022-10-24,27,270-->
 
 ## Gadgets

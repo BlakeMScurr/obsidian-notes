@@ -72,7 +72,7 @@ What is the keyword used to bring libraries into scope?
 What is the prelude?
 ?
 A set of items defined in the standard library that is brought into scope by default into every program.
-<!--SR:2022-09-22,23,270-->
+<!--SR:2022-11-24,63,270-->
 
 How do you define the entrypoint for a rust program?
 ?
@@ -107,7 +107,7 @@ How do you create a new mutable variable `b` and set it to `5`?
 What is `String`?
 ?
 A type from the standard library that is a growable, UTF-8 encoded piece of text.
-<!--SR:2022-09-23,21,250-->
+<!--SR:2022-11-16,54,250-->
 
 What is `String: :new`?
 ?
@@ -122,7 +122,7 @@ That `new` is an associated function of the string type.
 What is an associated function?
 ?
 A function that's implemented on a type, but doesn't have access to a specific instance like a method.
-<!--SR:2022-09-23,22,250-->
+<!--SR:2022-11-18,56,250-->
 
 What does `let mut guess = String: :new()` do, exactly?
 ?
@@ -132,7 +132,7 @@ Creates a mutable variable called guess and binds it to a new, empty instance of
 What does `io: :stdin()` return?
 ?
 An instance of `std: :io: :Stdin`, which is a type that represents a handle to the standard input to the terminal.
-<!--SR:2022-09-27,26,250-->
+<!--SR:2022-12-01,65,250-->
 
 What is `read_line`?
 ?
@@ -191,17 +191,17 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-09-26,12,150-->
+<!--SR:2022-10-16,19,150-->
 
 What keyword do we use to get an infinite loop?
 ?
 `loop {}`
-<!--SR:2022-09-25,24,270-->
+<!--SR:2022-12-08,72,270-->
 
 What keyword do we use to break out of an infinite loop?
 ?
 `break`
-<!--SR:2022-09-24,23,270-->
+<!--SR:2022-11-29,63,270-->
 
 
 # Common Concepts
@@ -229,7 +229,7 @@ You might write code that assumes that a variable doesn't change. One part of th
 When are constants evalutated?
 ?
 Compile time.
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-07,49,250-->
 
 What do constants require that variables don't?
 ?
@@ -261,7 +261,7 @@ By reusing the `let` keyword.
 let x = 5;
 let x = 3;
 ```
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-10-29,40,250-->
 
 What is the output of the following program?
 ```
@@ -289,8 +289,8 @@ fn main() {
 }
 ```
 ?
-You can't mutable the type of a variable.
-<!--SR:2022-09-22,20,250-->
+You can't assign a new type of value to a variable, even if it's mutable.
+<!--SR:2022-11-15,54,250-->
 
 ## Data Types
 
@@ -319,12 +319,12 @@ Characters
 What are the different bit sizes available for integers in rust?
 ?
 8, 16, 32, 64, 128, arch
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-01,43,250-->
 
 What is the type annotation for an unsigned arch sized integer?
 ?
 `usize`
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-07,49,250-->
 
 What are the prefixes to represent signed an unsigned integers?
 ?
@@ -335,7 +335,7 @@ What are the prefixes to represent signed an unsigned integers?
 How are signed integers represented?
 ?
 Using two's complement representation.
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-10-31,42,250-->
 
 What range of values can a signed integer store?
 ?
@@ -345,7 +345,7 @@ $-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
 What range of values can an unsigned integer store?
 ?
 $0$ to $2^n-1$
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-07,49,250-->
 
 What does the `_` mean in a number literal?
 ?
@@ -375,7 +375,7 @@ What is the prefix for binary number literals?
 What is the syntax for byte number literals?
 ?
 `b'A'`, where `A` represents an 8bit integer.
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-01,43,250-->
 
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
@@ -390,22 +390,22 @@ Using methods from the standard library that handle the overflow differently tha
 What are the different method prefixes for handling overflow explicitly?
 ?
 `wrapping`, `checked`, `overflowing`, `saturating`.
-<!--SR:2022-09-27,17,190-->
+<!--SR:2022-10-06,9,170-->
 
 What does `wrapping_*` do?
 ?
 Wraps in all modes, (including debug).
-<!--SR:2022-09-22,20,250-->
+<!--SR:2022-11-14,53,250-->
 
 What does `checked_*` do?
 ?
 Returns the `None` value if there is overflow.
-<!--SR:2022-09-17,16,230-->
+<!--SR:2022-10-31,42,230-->
 
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-09-17,5,130-->
+<!--SR:2022-10-09,12,130-->
 
 What does `saturating_*` do?
 ?
@@ -452,7 +452,7 @@ How do we declare a `char`?
 ?
 With single quotes, i.e.;
 `let c = 'z';`
-<!--SR:2022-09-22,20,250-->
+<!--SR:2022-11-13,52,250-->
 
 What standard does a char represent?
 ?
@@ -464,14 +464,14 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-09-23,14,210-->
+<!--SR:2022-10-23,30,210-->
 
 #### Tuples
 
 Do tuples have a fixed or variable length?
 ?
 Fixed.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-06,48,250-->
 
 Are type annotations required for tuples?
 ?
@@ -498,12 +498,12 @@ Dot notation, i.e.,:
 What is the name for the  tuple without values?
 ?
 The unit
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-03,45,250-->
 
 How do you write the unit and its type?
 ?
 Both as `()`
-<!--SR:2022-09-21,19,250-->
+<!--SR:2022-11-11,51,250-->
 
 What do expressions implicitly return if they don't return any other value?
 ?
@@ -515,7 +515,7 @@ The unit, i.e., the empty tuple `()`
 Do arrays have fixed or variable lengths?
 ?
 Fixed.
-<!--SR:2022-09-26,22,250-->
+<!--SR:2022-11-18,52,250-->
 
 Can the elements in an array have different types from one another?
 ?
@@ -530,12 +530,12 @@ How do you declare an array?
 Are arrays stored on the stack or the heap?
 ?
 Stack.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-05,47,250-->
 
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-09-19,10,250-->
+<!--SR:2022-10-17,28,250-->
 
 How do you write an array's type?
 ?
@@ -543,12 +543,12 @@ Square brackets and a semicolon, i.e., an array of 5 `i32`s:
 ````rust
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 ````
-<!--SR:2022-09-16,7,230-->
+<!--SR:2022-10-04,18,230-->
 
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
 `let a = [3;5]` will make `[3,3,3,3,3]`
-<!--SR:2022-09-25,21,250-->
+<!--SR:2022-11-25,59,250-->
 
 What happens if you provide an invalid array access?
 ?
@@ -581,7 +581,7 @@ A parameter is the name for something passed into a function in the function def
 How could you define a function that takes a `i32` parameter called `x`?
 ?
 `fn foo(x: i32) {}`
-<!--SR:2022-09-23,19,230-->
+<!--SR:2022-11-10,48,230-->
 
 Do you have to put type annotations on function parameters? Why?
 ?
@@ -602,7 +602,7 @@ Statement.
 Are function definitions expressions or statements?
 ?
 Statements.
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-02,44,250-->
 
 What is wrong with the following code?
 ```
@@ -612,7 +612,7 @@ fn main() {
 ```
 ?
 It expects a statement to evaluate to a value.
-<!--SR:2022-09-27,23,250-->
+<!--SR:2022-11-26,60,250-->
 
 What does the following code print?
 ```
@@ -626,7 +626,7 @@ fn main() {
 ```
 ?
 The value of y is: 4
-<!--SR:2022-09-26,21,250-->
+<!--SR:2022-11-16,50,250-->
 
 What is the syntactic difference between statements and expressions?
 ?
@@ -636,7 +636,7 @@ Statements end in a semicolon, and expressions do not.
 How do you make scopes created with curly brackets into expressions?
 ?
 By ending them in an expression, which the whole scope evaluates to.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-06,48,250-->
 
 How do you write a function that returns an `i32`?
 ?
@@ -651,7 +651,7 @@ Yes.
 How do you return a value from a function?
 ?
 By ending the function's block with an expression of that value, or using the `return` keyword earlier.
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-27,41,250-->
 
 What character creates comments?
 ?
@@ -669,7 +669,7 @@ How do you do multiline comments?
 Do `if` expressions require brackets for the condition?
 ?
 No.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-04,46,250-->
 
 What is wrong with the following code?
 ```
@@ -687,12 +687,12 @@ We need a bool in the if's condition, whereas we have an int.
 Does rust convert non boolean types by default?
 ?
 No.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-06,48,250-->
 
 Does rust have a ternary operator? Why?
 ?
 No, because if/else expressions do the same thing with (arguably) clearer syntax.
-<!--SR:2022-09-20,18,250-->
+<!--SR:2022-11-08,49,250-->
 
 ### Loops
 
@@ -702,7 +702,7 @@ How do you return a value from a `loop`?
 ?
 By passing a value to the `break` statement, i.e.:
 `break x + 2;`
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-03,45,250-->
 
 What is a loop label for?
 ?
@@ -733,7 +733,7 @@ Yes.
 Can `while` loops return a value?
 ?
 No.
-<!--SR:2022-09-17,5,190-->
+<!--SR:2022-10-02,9,170-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
@@ -754,7 +754,7 @@ for x in [1,2,3] {
 How do you make a range from 1 to 4?
 ?
 `1..4`
-<!--SR:2022-09-24,20,230-->
+<!--SR:2022-11-15,49,230-->
 
 How do you make a range from 4 down to 1?
 ?
@@ -765,7 +765,7 @@ Can we shorten `+= 1` with `++`? Why?
 ?
 No.
 Because it can be understood to return a value, which can lead to subtle bugs.
-<!--SR:2022-09-26,22,250-->
+<!--SR:2022-11-22,56,250-->
 
 # Ownership
 
@@ -774,17 +774,17 @@ Because it can be understood to return a value, which can lead to subtle bugs.
 What is the purpose of ownership?
 ?
 To make memory safety guarantees without needing a garbage collector.
-<!--SR:2022-09-21,19,250-->
+<!--SR:2022-11-12,52,250-->
 
 What is ownership?
 ?
 A set of rules governing how rust manages memory.
-<!--SR:2022-09-18,17,250-->
+<!--SR:2022-11-02,44,250-->
 
 When are ownership rules checked?
 ?
 Compile time.
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-04,46,250-->
 
 ### The Stack and the Heap
 
@@ -826,14 +826,14 @@ How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
-<!--SR:2022-09-19,13,210-->
+<!--SR:2022-10-19,30,210-->
 
 What problems does the heap have, that ownership addresses?
 ?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
-<!--SR:2022-09-24,15,190-->
+<!--SR:2022-10-30,33,190-->
 
 ### Ownership Rules
 
@@ -848,7 +848,7 @@ What is the relationship between variable validity and scope?
 ?
 When a variable comes into scope it is valid.
 When it goes out of scope it's invalid.
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-05,47,250-->
 
 ### Strings
 
@@ -860,22 +860,22 @@ How do you create a new string of type `String` from a string literal, say, `"he
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2022-09-23,12,250-->
+<!--SR:2022-10-27,34,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
 Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
-<!--SR:2022-09-16,15,230-->
+<!--SR:2022-10-25,39,230-->
 
 How do we request memory from the allocator for a new string?
 ?
 `String: :from("literal");` does this for us.
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-26,40,250-->
 
 What function is called for us when a variable goes out of scope?
 ?
 `drop`
-<!--SR:2022-09-19,18,250-->
+<!--SR:2022-11-04,46,250-->
 
 
 What is wrong with the following code?
@@ -921,7 +921,7 @@ Because they live solely on the stack, and can be efficiently copied.
 What trait indicates that a type lives on the stack?
 ?
 The `Copy` trait.
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-25,39,250-->
 
 What trait can't coexist with the `Copy` trait, and how exactly?
 ?
@@ -957,7 +957,7 @@ Assingment, and function calls.
 How can you return ownership that was taken by a function?
 ?
 By returning the value.
-<!--SR:2022-09-20,18,250-->
+<!--SR:2022-11-08,49,250-->
 
 
 ## References and Borrowing
@@ -988,7 +988,7 @@ Binary and library.
 What kinds of crates have a main function?
 ?
 Binary, not library.
-<!--SR:2022-09-23,19,250-->
+<!--SR:2022-11-11,49,250-->
 
 What is a crate root?
 ?
@@ -998,7 +998,7 @@ The file containing the root module of a crate.
 What is a package?
 ?
 A bundle of crates.
-<!--SR:2022-09-18,7,230-->
+<!--SR:2022-10-05,16,230-->
 
 How many crates can/must a package have?
 ?
@@ -1034,12 +1034,12 @@ Where would the compiler look for, say, the `garden` module declared in the crat
 Inline, within curly brackets that replace the semicolon following `mod garden`,
 In the file `src/garden.rs`,
 Or in the file `src/garden/mod.rs`
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-28,42,250-->
 
 Where can you declare submodules?
 ?
 Any file but the crate root.
-<!--SR:2022-09-19,14,210-->
+<!--SR:2022-10-20,31,210-->
 
 Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
 ?
@@ -1051,7 +1051,7 @@ Or in the file `src/garden/vegetables/mod.rs`
 When can you refer to code in another module?
 ?
 Whenever that module is part of the same crate, as long as privacy allows.
-<!--SR:2022-09-16,14,230-->
+<!--SR:2022-10-21,35,230-->
 
 How do you make code in a module public and private?
 ?
@@ -1064,7 +1064,7 @@ What does `use` do for a module within the same crate?
 ?
 Creates a shortcut.
 I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly to `asparagus`
-<!--SR:2022-09-24,20,250-->
+<!--SR:2022-11-24,58,250-->
 
 ## Paths
 
@@ -1096,17 +1096,17 @@ Private
 Are functions, structs, etc private or public by default?
 ?
 Private
-<!--SR:2022-09-25,20,250-->
+<!--SR:2022-11-23,57,250-->
 
 Are fields on structs public or private by default?
 ?
 Private
-<!--SR:2022-09-22,17,250-->
+<!--SR:2022-11-08,47,250-->
 
 Does making a struct public make its fields public?
 ?
 No
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-03,45,250-->
 
 Does making a module public make its functions and structs etc public?
 ?
@@ -1116,18 +1116,18 @@ No
 How do you create shortcuts to paths?
 ?
 With the `use` keyword
-<!--SR:2022-09-23,18,250-->
+<!--SR:2022-11-09,47,250-->
 
 Do `use` shortcuts apply in child modules defined in the same file?
 ?
 No
-<!--SR:2022-09-16,14,230-->
+<!--SR:2022-10-22,36,230-->
 
 How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:2022-09-20,16,250-->
+<!--SR:2022-10-14,17,230-->
 
 What keyword do we use to create aliases?
 ?
@@ -1137,17 +1137,17 @@ What keyword do we use to create aliases?
 How do you import `std: :io: :Result` as `IoResult`?
 ?
 `use std: :io: :Result as IoResult;`
-<!--SR:2022-09-27,22,250-->
+<!--SR:2022-11-21,55,250-->
 
 How do you re-export?
 ?
 `pub use crate: :thingA: :thingB;`
-<!--SR:2022-09-24,19,250-->
+<!--SR:2022-11-17,51,250-->
 
 What is re-exporting for?
 ?
 Organising the API of your code when its internals are structured differently to how programmers using it would think about the domain.
-<!--SR:2022-09-25,20,250-->
+<!--SR:2022-11-19,53,250-->
 
 How can you rewrite the following code with nested paths?
 ```
@@ -1170,7 +1170,7 @@ use std: :io: :Write;
 How could you bring everything in `std: :collections` into scope?
 ?
 `use std: :collections: :*;`
-<!--SR:2022-09-26,21,250-->
+<!--SR:2022-11-20,54,250-->
 
 What two things does `use` do?
 ?
@@ -1184,14 +1184,14 @@ Brings inaccessible code from external packages into scope.
 What are the two major categories of errors?
 ?
 Recoverable and unrecoverable.
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-05,47,250-->
 
 ## Panic
 
 What do we use for unrecoverable errors?
 ?
 The `panic!` macro
-<!--SR:2022-09-27,22,250-->
+<!--SR:2022-11-25,59,250-->
 
 How do you use `panic!`?
 ?
@@ -1220,7 +1220,7 @@ enum Result<T, E> {
 	Err(E),
 }
 ```
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-10-30,41,250-->
 
 How do you open a file called `"hello.txt"`?
 ?
@@ -1228,7 +1228,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-09-16,3,150-->
+<!--SR:2022-10-03,6,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1245,7 +1245,7 @@ let greeting_file = match greeting_file_result {
 Are `Result` and its variants in the prelude?
 ?
 Yes.
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-28,42,250-->
 
 How do you match on the "file not found" error type?
 ?
@@ -1259,37 +1259,37 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-09-22,7,190-->
+<!--SR:2022-10-04,7,170-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
-<!--SR:2022-09-22,15,230-->
+<!--SR:2022-10-29,37,230-->
 
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
-<!--SR:2022-09-25,14,230-->
+<!--SR:2022-11-01,35,230-->
 
 What are the shortcut methods for panicking on error?
 ?
 `unwrap` and `expect`
-<!--SR:2022-09-16,6,210-->
+<!--SR:2022-09-29,13,210-->
 
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-09-24,9,170-->
+<!--SR:2022-10-15,18,170-->
 
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-09-21,10,210-->
+<!--SR:2022-10-14,23,210-->
 
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:2022-09-21,9,230-->
+<!--SR:2022-10-13,22,230-->
 
 ## Propogation
 
@@ -1312,27 +1312,27 @@ match something {
 What does the `?` operator do?
 ?
 If the `Result` is `Ok` it just evalutes to the value inside the `Ok` and the code continues through the current function. If the `Result` is `Err`, it returns that error from the current function.
-<!--SR:2022-09-24,20,250-->
+<!--SR:2022-11-17,51,250-->
 
 What is the difference between `?` and the basic manual way of propogating errors (by matching on the `Result`'s type and returning if it's an `Err`)?
 ?
 `?` calls the `from` function defined on the `From` trait in the standard library, which converts the error type to the error type of the current function.
-<!--SR:2022-09-25,20,250-->
+<!--SR:2022-11-21,55,250-->
 
 When can you use the `?` operator?
 ?
 On a `Result` type in a function that returns a `Result`, or on an `Option` type in a function that returns an `Option`.
-<!--SR:2022-09-25,15,230-->
+<!--SR:2022-11-06,40,230-->
 
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-09-23,8,230-->
+<!--SR:2022-09-28,5,210-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
 As "any kind of error."
-<!--SR:2022-09-20,14,230-->
+<!--SR:2022-10-25,35,230-->
 
 What happens when a main function with a return type of `Result<(), E>` returns?
 ?
@@ -1343,7 +1343,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-09-20,11,170-->
+<!--SR:2022-10-09,19,170-->
 
 ## When to Panic!
 
@@ -1352,7 +1352,7 @@ When might you want to `panic!` instead of using the `Result` type?
 When writing examples, prototypes, or test code.
 Or to catch developer errors where there are logical issues that the compiler can't catch, i.e., parsing a hardcoded IP address.
 Or to stop your code proceeding in a bad state.
-<!--SR:2022-09-17,16,250-->
+<!--SR:2022-11-01,43,250-->
 
 # Generics, Traits, and Lifetimes
 
@@ -1373,14 +1373,14 @@ Traits let different concrete types use different behaviour with the same functi
 What are lifetimes?
 ?
 Generics that give the compiler information about how references relate to each other.
-<!--SR:2022-09-21,16,230-->
+<!--SR:2022-10-29,38,230-->
 
 ## Generics
 
 What is the conventional case for naming types?
 ?
 CamelCase
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-26,40,250-->
 
 What is the conventional name for a generic type?
 ?
@@ -1394,13 +1394,13 @@ In angle brackets between the function name and the parameter list.
 
 What is the function signature for the `largest` method which is generic over types?
 ?
-`fn largest<T>(list: &[T]) -> &T {}`
-<!--SR:2022-09-27,18,210-->
+`fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}`
+<!--SR:2022-11-05,39,210-->
 
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-09-19,7,190-->
+<!--SR:2022-09-30,7,170-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1451,7 +1451,7 @@ That there are no benchmark tests. I.e., tests to measure performance.
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests marked to be ignored (unless specifically requested).
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-28,42,250-->
 
 What does the `0 filtered` statistic that is often output from `cargo test` mean?
 ?
@@ -1466,7 +1466,7 @@ When the test panics.
 What does `assert_eq!` do?
 ?
 Panics if the values passed in are not equal, nothing otherwise.
-<!--SR:2022-09-16,15,250-->
+<!--SR:2022-10-27,41,250-->
 
 What does `assert!` do?
 ?
@@ -1534,7 +1534,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-09-27,16,230-->
+<!--SR:2022-11-04,38,230-->
 
 How do you make a test that can return an error?
 ?
@@ -1555,7 +1555,7 @@ So you can use the question mark operator in the body of the tests, so you can c
 How do you assert that a result is an err?
 ?
 `assert!(value.is_err())` - not by using the question mark operator.
-<!--SR:2022-09-21,6,210-->
+<!--SR:2022-10-04,13,210-->
 
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?

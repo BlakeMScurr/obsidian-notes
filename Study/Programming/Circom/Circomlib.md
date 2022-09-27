@@ -24,7 +24,7 @@ Creates a constraint specifying that some binary inputs add to some binary outpu
 What is `ops` in binsum?
 ?
 The parameter specifying the number of operands. I.e., the number of binary numbers being added together.
-<!--SR:2022-09-16,73,250-->
+<!--SR:2023-03-18,183,250-->
 
 What is `n` in binsum?
 ?
@@ -63,7 +63,7 @@ out[n+e-1] * (out[n+e-1] - 1) === 0;
 What are the top level constructions in the binsum.circom file?
 ?
 The `nbits` function and the `BinSum` template.
-<!--SR:2022-09-20,77,250-->
+<!--SR:2023-04-01,193,250-->
 
 Does `BinSum` check that inputs are binary?
 ?
@@ -80,7 +80,7 @@ What do `a`, `r`, and `n` represent in `nbits`?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
 `n` is `2^r`
-<!--SR:2022-09-19,52,250-->
+<!--SR:2023-01-22,125,250-->
 
 What is the code for `nbits`?
 ?
@@ -106,7 +106,7 @@ What are `in` and `out` in `Binsum`?
 ?
 `in` is a 2D array of bits representing binary numbers.
 `out` is an array bits representing a number, namely the sum of the numbers in `in`.
-<!--SR:2022-09-25,80,250-->
+<!--SR:2023-04-09,194,250-->
 
 What are `lin` and `lout` in `Binsum`?
 ?
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-09-22,12,130-->
+<!--SR:2022-10-10,18,130-->
 
 What are the variables in compconstant?
 ?
@@ -214,12 +214,12 @@ var a = 1;
 var e = 1;
 var i;
 ```
-<!--SR:2022-09-16,66,230-->
+<!--SR:2023-02-18,155,230-->
 
 What do `clsb` etc represent?
 ?
 Constant/signal least/most significant bit.
-<!--SR:2022-09-22,76,250-->
+<!--SR:2023-03-25,184,250-->
 
 How do we calculate `clsb` etc?
 ?
@@ -229,7 +229,7 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-09-27,23,230-->
+<!--SR:2022-11-19,53,230-->
 
 What does each part resolve to, and when?
 ?
@@ -353,14 +353,14 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-09-21,25,190-->
+<!--SR:2022-11-10,50,190-->
 
 ### Mux1
 
 What are the top level constructs in Mux1?
 ?
 `template MultiMux1` and `template Mux1`
-<!--SR:2022-09-19,82,270-->
+<!--SR:2023-04-28,221,270-->
 
 What does `MultiMux1` do?
 ?
