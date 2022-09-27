@@ -147,7 +147,7 @@ Proof and computation.
 What are GMR's examples of formalisations for "computation?"
 ?
 Deterministic Turing machines, and probabilistic Turing machines.
-<!--SR:2022-09-28,113,270-->
+<!--SR:2023-07-30,305,270-->
 
 What are GMR's examples of formalisations for "proof?"
 ?

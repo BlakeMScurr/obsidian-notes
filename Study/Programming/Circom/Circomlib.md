@@ -304,7 +304,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `a` if `smsb == 1` and `slsb == 0`
 It must be `0` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-09-28,78,250-->
+<!--SR:2023-04-04,188,250-->
 
 What is the updating code for each loop?
 ?

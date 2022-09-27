@@ -20,7 +20,7 @@ How do you create a new cargo project, called, say `hello_world`?
 How do you run a cargo project?
 ?
 `cargo run`
-<!--SR:2022-09-28,27,290-->
+<!--SR:2022-12-15,78,290-->
 
 How do you compile a cargo project?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-09-28,13,210-->
+<!--SR:2022-10-05,7,190-->
 
 What is a `Result`?
 ?
@@ -183,7 +183,7 @@ Binary crates are executables.
 Where are dependency crates defined?
 ?
 `Cargo.toml`
-<!--SR:2022-09-28,19,270-->
+<!--SR:2022-11-18,51,270-->
 
 How do you create a random number between 1 and 100 (inclusive)?
 ?
@@ -330,7 +330,7 @@ What are the prefixes to represent signed an unsigned integers?
 ?
 `u` for unsigned
 `i` for signed
-<!--SR:2022-09-28,23,250-->
+<!--SR:2022-11-28,61,250-->
 
 How are signed integers represented?
 ?
@@ -493,7 +493,7 @@ How do we directly access a tuple element?
 ?
 Dot notation, i.e.,:
 `tup.0`
-<!--SR:2022-09-28,24,250-->
+<!--SR:2022-11-27,60,250-->
 
 What is the name for the  tuple without values?
 ?
@@ -592,7 +592,7 @@ What is the difference between a statement and an expression?
 ?
 _Statements_ are instructions that perform some action and do not return a value.
 _Expressions_ evaluate to a resulting value.
-<!--SR:2022-09-28,22,250-->
+<!--SR:2022-11-22,55,250-->
 
 Does `let` create an expression or a statement?
 ?
@@ -901,7 +901,7 @@ Deallocates the memory for that variable.
 What's the difference between a shallow copy and a move?
 ?
 Moves are shallow copies where the first variable is invalidated.
-<!--SR:2022-09-28,24,250-->
+<!--SR:2022-11-29,62,250-->
 
 When is automatic copying deep vs shallow?
 ?
@@ -1015,7 +1015,7 @@ A binary crate named the same as the package.
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?
 A library crate named the same as the package.
-<!--SR:2022-09-28,23,250-->
+<!--SR:2022-11-25,58,250-->
 
 Where do extra binary packages go?
 ?
@@ -1327,7 +1327,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-09-28,5,210-->
+<!--SR:2022-10-02,4,190-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1492,7 +1492,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:2022-09-28,14,210-->
+<!--SR:2022-10-31,33,210-->
 
 What are the main assertion macros?
 ?

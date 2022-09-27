@@ -408,7 +408,7 @@ What is the line at the top of every circom file?
 What is pragma for?
 ?
 To ensure that the circuit is compatible with the specified compiler version.
-<!--SR:2022-09-28,85,250-->
+<!--SR:2023-04-29,213,250-->
 
 If there is no pragma, what do we assume?
 ?
@@ -778,7 +778,7 @@ An expression resulting from the multiplication of two linear expressions and ad
 Circom generates constraints, what form must they have?
 ?
 They must be quadratic of the form `A*B+C=0` where `A,B,C` are linear combinations of variables.
-<!--SR:2022-09-28,84,250-->
+<!--SR:2023-04-20,204,250-->
 
 What transformations does circom apply to correctly form constraints?
 ?
@@ -1139,7 +1139,7 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2022-09-28,53,210-->
+<!--SR:2023-01-17,111,210-->
 
 ## Unknowns
 

@@ -76,7 +76,7 @@ Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
 Who introduced zero-knowledge proofs?
 ?
 Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
-<!--SR:2022-09-28,93,270-->
+<!--SR:2023-05-27,241,270-->
 
 What are the 3 core properties of zero knowledge proofs?
 ?
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-09-28,5,130-->
+<!--SR:2022-10-07,9,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-09-28,8,170-->
+<!--SR:2022-10-13,15,170-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
