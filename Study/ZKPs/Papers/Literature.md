@@ -167,7 +167,7 @@ Simulation-sound NIZK proofs for a practical language and constant size group si
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-09-30,80,210-->
+<!--SR:2022-11-11,42,190-->
 
 Who are the authors of GS12?
 ?
@@ -314,7 +314,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-09-29,23,210-->
+<!--SR:2022-11-12,44,210-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

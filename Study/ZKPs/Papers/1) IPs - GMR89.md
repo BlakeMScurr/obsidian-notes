@@ -130,7 +130,7 @@ It must be easier to verify a proof than construct it originally.
 What, intuitively, is the difference between a proof and a computation, for GMR?
 ?
 A proof has a is easier to verify than compute, whereas a computation must be entirely rerun to be verified.
-<!--SR:2022-09-29,108,250-->
+<!--SR:2023-06-26,270,250-->
 
 ### Moving from NP to IPs
 
@@ -1051,7 +1051,7 @@ How much knowledge does an NP proof for a language not in BPP communicate and ho
 ?
 More than zero.
 An NP prover sends one message. If the message released no knowledge then it would be imitable by a probabilistic turing machine, and therefore the language would be in BPP.
-<!--SR:2022-09-30,37,210-->
+<!--SR:2022-12-17,78,210-->
 
 Why is KC(0)-BPP of interest to GMR?
 ?
@@ -1269,7 +1269,7 @@ $2n$, since $T$ and $S$ both have size $n$.
 How is $T$ constructed?
 ?
 $T = \{t_1, ..., t_n\ |\ t_i = r_i^2\}$
-<!--SR:2022-09-30,101,250-->
+<!--SR:2023-06-10,253,250-->
 
 How is $S$ constructed?
 ?
@@ -1568,7 +1568,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-09-30,29,170-->
+<!--SR:2022-11-18,49,170-->
 
 How does the proof for claim 1 work?
 ?

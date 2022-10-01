@@ -57,7 +57,7 @@ How do you bring the input/output library into scope?
 What is the identifier for the standard library?
 ?
 `std`
-<!--SR:2022-09-29,28,290-->
+<!--SR:2022-12-20,82,290-->
 
 What is the identifier for the input/output library?
 ?
@@ -234,7 +234,7 @@ Compile time.
 What do constants require that variables don't?
 ?
 A type annotation.
-<!--SR:2022-09-30,21,230-->
+<!--SR:2022-11-14,45,230-->
 
 ??? Why?
 
@@ -306,7 +306,7 @@ There needs to be a type annotation on guess, as `parse()` is ambiguous and coul
 What is a scalar type?
 ?
 A type that represents a single value.
-<!--SR:2022-09-29,24,230-->
+<!--SR:2022-11-23,55,230-->
 
 What are the main scalar types?
 ?
@@ -410,7 +410,7 @@ Return the value and a boolean indicating whether there was overflow.
 What does `saturating_*` do?
 ?
 Saturates at the value's maximum or minimum values.
-<!--SR:2022-09-30,25,250-->
+<!--SR:2022-12-06,67,250-->
 
 ### Floating-point
 
@@ -457,7 +457,7 @@ With single quotes, i.e.;
 What standard does a char represent?
 ?
 A Unicode Scalar Value
-<!--SR:2022-09-30,17,210-->
+<!--SR:2022-11-09,40,210-->
 
 ### Compound Types
 
@@ -476,7 +476,7 @@ Fixed.
 Are type annotations required for tuples?
 ?
 No.
-<!--SR:2022-09-30,26,250-->
+<!--SR:2022-12-05,66,250-->
 
 How do you declare a tuple? (give type annotations).
 ?
@@ -520,7 +520,7 @@ Fixed.
 Can the elements in an array have different types from one another?
 ?
 No.
-<!--SR:2022-09-29,25,250-->
+<!--SR:2022-12-02,64,250-->
 
 How do you declare an array?
 ?
@@ -891,12 +891,12 @@ println!("{}, world!", s1);
 Why can't strings be accessed after they're moved?
 ?
 When they're moved you end up with two variables pointing at the same memory, and if the first variable were still accessible you could cause memory issues (like double dropping memory as the two variables go out of scope).
-<!--SR:2022-09-29,18,210-->
+<!--SR:2022-11-10,42,210-->
 
 What does `drop` do?
 ?
 Deallocates the memory for that variable.
-<!--SR:2022-09-29,25,250-->
+<!--SR:2022-11-30,62,250-->
 
 What's the difference between a shallow copy and a move?
 ?
@@ -906,12 +906,12 @@ Moves are shallow copies where the first variable is invalidated.
 When is automatic copying deep vs shallow?
 ?
 Rust never does automatic deep copying.
-<!--SR:2022-09-29,24,250-->
+<!--SR:2022-11-28,60,250-->
 
 How do you clone a `String`?
 ?
 `let s2 = s1.clone();`
-<!--SR:2022-09-30,25,250-->
+<!--SR:2022-12-04,65,250-->
 
 Why aren't integers moved when another value is assigned to their value?
 ?
@@ -1274,7 +1274,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs 
 What are the shortcut methods for panicking on error?
 ?
 `unwrap` and `expect`
-<!--SR:2022-09-29,13,210-->
+<!--SR:2022-10-30,31,210-->
 
 What does `unwrap` do?
 ?
@@ -1296,7 +1296,7 @@ Which of `expect` and `unwrap` is generally preferred for production code and wh
 How do you propogate an error up to the parent function?
 ?
 By returning a `Result` type.
-<!--SR:2022-09-30,24,250-->
+<!--SR:2022-11-29,60,250-->
 
 What is the fully explicit method for handling and propogating an error?
 ?
@@ -1361,7 +1361,7 @@ Or to stop your code proceeding in a bad state.
 What are generics?
 ?
 Abstract stand-ins for concrete types or other properties.
-<!--SR:2022-09-30,19,230-->
+<!--SR:2022-11-13,44,230-->
 
 What do traits do, broadly, as opposed to generics?
 ?
@@ -1400,7 +1400,7 @@ What is the function signature for the `largest` method which is generic over ty
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-09-30,7,170-->
+<!--SR:2022-10-12,12,170-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 

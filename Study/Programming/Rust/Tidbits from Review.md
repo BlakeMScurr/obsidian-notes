@@ -27,7 +27,7 @@ Doesn't preserve order.
 How do you add a large collection of items to an `Vec`?
 ?
 `append` for an existing `Vec`, and `extend` for items that aren't already a `Vec`, but implement `IntoIterator`
-<!--SR:2022-09-30,3,190-->
+<!--SR:2022-10-06,6,190-->
 
 # Truncate PR 2
 
@@ -45,24 +45,24 @@ It returns whether any of the elements match the condition of the closure.
 What is `skip`?
 ?
 A method on iterators that skips a certain number of elements.
-<!--SR:2022-09-29,2,250-->
+<!--SR:2022-10-04,5,250-->
 
 What is `step_by`?
 ?
 A method on iterators that makes it step through by a certain number of steps. I.e., `step_by(2)` would make the iterator yield even indexed elements.
-<!--SR:2022-09-29,2,250-->
+<!--SR:2022-10-03,4,250-->
 
 What is `get_mut`?
 ?
 A method on collections that gets a mutable reference to the element at an index. The same as `get` except the returned value is mutable.
-<!--SR:2022-09-29,2,250-->
+<!--SR:2022-10-05,6,250-->
 
 What is `with_capacity`?
 ?
 An associated function on `Vec` that lets you initialised a new `Vec` with a given capacity to save allocations when filling it up.
 <!--SR:2022-10-01,4,250-->
 
-What does `..` refer to in a match statement? Say, `if let Some(Square::Occupied(..))` etc?
+What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupied(..))` etc?
 <!--SR:2022-09-30,3,250-->
 ?
 Ignore all properties.
@@ -72,4 +72,4 @@ Equivalent to `(_, _)` where the enum has 2 properties, for example.
 What is `and_then`?
 ?
 A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:2022-09-30,3,250-->
+<!--SR:2022-10-02,2,230-->

@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-09-30,11,150-->
+<!--SR:2022-10-19,19,150-->
 
 What is the limit definition of $\omega$?
 ?
@@ -675,7 +675,7 @@ That the field $\mathbb{F}$ is large enough.
 Who introduced the idea of quadratic arithmetic programs?
 ?
 Gennaro et al GGPR13.
-<!--SR:2022-09-30,57,190-->
+<!--SR:2023-01-16,108,190-->
 
 What are the steps in reformulating arithmetic constraints as a quadratic arithmetic program?
 ?
@@ -694,7 +694,7 @@ Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
 How is $t(x)$ defined?
 ?
 $t(x) = \prod_{q=1}^n(x-r_q)$
-<!--SR:2022-09-29,66,250-->
+<!--SR:2023-03-13,165,250-->
 
 What are $u_i(x), v_i(x), w_i(x)$ and how are they defined?
 ?
@@ -820,7 +820,7 @@ Why do we have to assume the relation generator is benign?
 ?
 Because indistinguishability obfuscation implies there is some auxiliary information for which witness extraction is impossible.
 And because the relation generator picks the bilinear group to give our generator definition flexibility.
-<!--SR:2022-09-30,74,270-->
+<!--SR:2023-04-13,195,270-->
 
 ## Linear Interactive Proofs
 
@@ -902,7 +902,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-09-29,17,170-->
+<!--SR:2022-10-31,32,170-->
 
 What does Vfy do in a LIP?
 ?
@@ -1223,12 +1223,12 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-09-29,54,250-->
+<!--SR:2022-10-27,28,230-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\boldsymbol{t}(\boldsymbol{\sigma}, \boldsymbol{\pi}) = 0$
-<!--SR:2022-09-29,40,250-->
+<!--SR:2023-01-07,100,250-->
 
 What is the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

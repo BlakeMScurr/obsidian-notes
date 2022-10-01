@@ -12,7 +12,7 @@ Signals.
 What do signals contain?
 ?
 Field elements in $\mathbb{Z}/p\mathbb{Z}$
-<!--SR:2022-09-29,87,250-->
+<!--SR:2023-04-30,213,250-->
 
 What are the kinds of signals?
 ?
@@ -32,12 +32,12 @@ How do you declare an output signal?
 How do you declare an intermediate signal?
 ?
 `signal inter;` declares an intermediate signal named `inter`.
-<!--SR:2022-09-29,86,250-->
+<!--SR:2023-05-02,215,250-->
 
 How do you declare an array of output signals?
 ?
 `signal output out[N];` declares an array of length `N` called `out` containing output signals.
-<!--SR:2022-09-29,79,230-->
+<!--SR:2023-03-30,182,230-->
 
 When are signals private vs public?
 ?
@@ -445,7 +445,7 @@ Yes.
 How many return statements can a function have?
 ?
 As many as it likes.
-<!--SR:2022-09-30,87,250-->
+<!--SR:2023-05-06,218,250-->
 
 When is a return statement required?
 ?
@@ -481,7 +481,7 @@ How do you include library code?
 Where do we start execution?
 ?
 The main component.
-<!--SR:2022-09-30,87,250-->
+<!--SR:2023-05-07,219,250-->
 
 How is the main component different from other components?
 ?
@@ -719,7 +719,7 @@ x << k = x >> (p - k)
 What are the bitwise assignment operators?
 ?
 `&= |= ~= ^= >>= <<=`
-<!--SR:2022-09-29,85,250-->
+<!--SR:2023-05-01,214,250-->
 
 What is the code for the `IsZero` template?
 ?
@@ -773,7 +773,7 @@ By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
 What is a quadratic expression?
 ?
 An expression resulting from the multiplication of two linear expressions and addition of another: `A*B+C` where `A,B,C` are linear expressions.
-<!--SR:2022-09-30,85,250-->
+<!--SR:2023-05-03,215,250-->
 
 Circom generates constraints, what form must they have?
 ?
