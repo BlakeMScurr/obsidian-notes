@@ -40,7 +40,7 @@ How do you build a cargo project ready for release?
 How do you locally access the rust documentation?
 ?
 `rustup docs`
-<!--SR:2022-10-05,33,270-->
+<!--SR:2023-01-02,89,270-->
 
 How do you manually format a rust file, say `main.rs`?
 ?
@@ -77,7 +77,7 @@ A set of items defined in the standard library that is brought into scope by def
 How do you define the entrypoint for a rust program?
 ?
 `fn main () {}`
-<!--SR:2022-10-01,29,270-->
+<!--SR:2022-12-27,83,270-->
 
 How do you print a string, say, `"hello"` to stdout?
 ?
@@ -92,7 +92,7 @@ Immutable
 How do you create a new immutable variable `a` set to `5`?
 ?
 `let a = 5;`
-<!--SR:2022-10-04,33,290-->
+<!--SR:2023-01-10,97,290-->
 
 What keyword is used to create variables?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-10-05,7,190-->
+<!--SR:2022-10-18,13,190-->
 
 What is a `Result`?
 ?
@@ -314,7 +314,7 @@ Integers
 Floating point numbers
 Booleans
 Characters
-<!--SR:2022-10-03,27,250-->
+<!--SR:2022-12-10,66,250-->
 
 What are the different bit sizes available for integers in rust?
 ?
@@ -355,7 +355,7 @@ It's a visual separator to make it easier to read. I.e., `1_000_000`.
 What is the visual separator character for number literals?
 ?
 `_`
-<!--SR:2022-10-03,27,250-->
+<!--SR:2022-12-16,72,250-->
 
 What is the prefix for hex number literals?
 ?
@@ -365,7 +365,7 @@ What is the prefix for hex number literals?
 What is the prefix for octal number literals?
 ?
 `0o`
-<!--SR:2022-10-03,28,250-->
+<!--SR:2022-12-21,77,250-->
 
 What is the prefix for binary number literals?
 ?
@@ -508,7 +508,7 @@ Both as `()`
 What do expressions implicitly return if they don't return any other value?
 ?
 The unit, i.e., the empty tuple `()`
-<!--SR:2022-10-04,28,250-->
+<!--SR:2022-12-16,72,250-->
 
 #### Arrays
 
@@ -543,7 +543,7 @@ Square brackets and a semicolon, i.e., an array of 5 `i32`s:
 ````rust
 let a: [i32; 5] = [1, 2, 3, 4, 5];
 ````
-<!--SR:2022-10-04,18,230-->
+<!--SR:2022-11-14,40,230-->
 
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
@@ -561,22 +561,22 @@ Panic at runtime (or compile time if it's compile time detectable).
 What is the conventional case for writing variables and functions?
 ?
 snake_case
-<!--SR:2022-10-02,27,250-->
+<!--SR:2022-12-19,75,250-->
 
 What's the keyword for creating functions?
 ?
 `fn`
-<!--SR:2022-10-04,28,250-->
+<!--SR:2022-12-13,69,250-->
 
 Can you call a function that is defined later in a scope?
 ?
 Yes.
-<!--SR:2022-10-01,26,250-->
+<!--SR:2022-12-14,70,250-->
 
 What is the difference between a parameter and argument?
 ?
 A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
-<!--SR:2022-10-04,28,250-->
+<!--SR:2022-12-15,71,250-->
 
 How could you define a function that takes a `i32` parameter called `x`?
 ?
@@ -586,7 +586,7 @@ How could you define a function that takes a `i32` parameter called `x`?
 Do you have to put type annotations on function parameters? Why?
 ?
 Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
-<!--SR:2022-10-04,28,250-->
+<!--SR:2022-12-12,68,250-->
 
 What is the difference between a statement and an expression?
 ?
@@ -597,7 +597,7 @@ _Expressions_ evaluate to a resulting value.
 Does `let` create an expression or a statement?
 ?
 Statement.
-<!--SR:2022-10-02,27,250-->
+<!--SR:2022-12-18,74,250-->
 
 Are function definitions expressions or statements?
 ?
@@ -631,7 +631,7 @@ The value of y is: 4
 What is the syntactic difference between statements and expressions?
 ?
 Statements end in a semicolon, and expressions do not.
-<!--SR:2022-10-05,28,250-->
+<!--SR:2022-12-18,74,250-->
 
 How do you make scopes created with curly brackets into expressions?
 ?
@@ -718,12 +718,12 @@ Declare before the `loop` keyword with a colon.
 	...
 	break 'counting_up;
 ```
-<!--SR:2022-10-01,25,250-->
+<!--SR:2022-12-12,68,250-->
 
 What is a `while` loop for?
 ?
 Looping while a condition is true, which saves code compared to implementing the same behaviour using `loop`, `if/else`, and `break`
-<!--SR:2022-10-01,26,250-->
+<!--SR:2022-12-14,70,250-->
 
 Can you use labels and breaks with a `while` loop?
 ?
@@ -733,14 +733,14 @@ Yes.
 Can `while` loops return a value?
 ?
 No.
-<!--SR:2022-10-02,9,170-->
+<!--SR:2022-10-24,19,170-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
 What does a `for` loop do? Why does it exist?
 ?
 Loops over a collection with simpler syntax than the equivalent `while` loop (which has to keep track of an index, and concern itself with index out of bounds errors).
-<!--SR:2022-10-01,26,250-->
+<!--SR:2022-12-10,66,250-->
 
 How do you write a `for` loop? Say, over an array literal `[1,2,3]`, printing each value.
 ?
@@ -749,7 +749,7 @@ for x in [1,2,3] {
 	println!("{x}");
 }
 ```
-<!--SR:2022-10-03,28,250-->
+<!--SR:2022-12-13,69,250-->
 
 How do you make a range from 1 to 4?
 ?
@@ -759,7 +759,7 @@ How do you make a range from 1 to 4?
 How do you make a range from 4 down to 1?
 ?
 `(1..4).rev()`
-<!--SR:2022-10-03,28,250-->
+<!--SR:2022-12-20,76,250-->
 
 Can we shorten `+= 1` with `++`? Why?
 ?
@@ -791,7 +791,7 @@ Compile time.
 How does the stack work, roughly?
 ?
 Data can be pushed on or popped off, and nothing else is possible.
-<!--SR:2022-10-02,27,250-->
+<!--SR:2022-12-11,67,250-->
 
 Which is faster to push to, the stack or the heap? Why?
 ?
@@ -842,7 +842,7 @@ What are the ownership rules?
 Each value has an owner.
 There can only be one owner at a time.
 When the owner goes out of scope, the value is dropped.
-<!--SR:2022-10-04,25,230-->
+<!--SR:2022-12-07,63,230-->
 
 What is the relationship between variable validity and scope?
 ?
@@ -916,7 +916,7 @@ How do you clone a `String`?
 Why aren't integers moved when another value is assigned to their value?
 ?
 Because they live solely on the stack, and can be efficiently copied.
-<!--SR:2022-10-04,28,250-->
+<!--SR:2022-12-11,67,250-->
 
 What trait indicates that a type lives on the stack?
 ?
@@ -983,7 +983,7 @@ A tree of modules that produces a library or executable.
 What are the types of crate?
 ?
 Binary and library.
-<!--SR:2022-10-02,26,250-->
+<!--SR:2022-12-09,65,250-->
 
 What kinds of crates have a main function?
 ?
@@ -998,7 +998,7 @@ The file containing the root module of a crate.
 What is a package?
 ?
 A bundle of crates.
-<!--SR:2022-10-05,16,230-->
+<!--SR:2022-11-13,39,230-->
 
 How many crates can/must a package have?
 ?
@@ -1027,7 +1027,7 @@ Where do extra binary packages go?
 Where does the compiler look first when compiling a crate?
 ?
 The crate root.
-<!--SR:2022-10-03,24,230-->
+<!--SR:2022-12-02,58,230-->
 
 Where would the compiler look for, say, the `garden` module declared in the crate root?
 ?
@@ -1046,7 +1046,7 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:2022-10-02,25,250-->
+<!--SR:2022-10-17,12,230-->
 
 When can you refer to code in another module?
 ?
@@ -1058,7 +1058,7 @@ How do you make code in a module public and private?
 The whole module is private by default.
 Use `pub mod` when declaring the module to make the module public.
 Use `pub` before any declarations in the module to make those items public.
-<!--SR:2022-10-02,21,230-->
+<!--SR:2022-11-27,53,230-->
 
 What does `use` do for a module within the same crate?
 ?
@@ -1071,7 +1071,7 @@ I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly
 What kinds of paths are there?
 ?
 Absolute and relative.
-<!--SR:2022-10-01,25,250-->
+<!--SR:2022-12-08,64,250-->
 
 What does an absolute path start with?
 ?
@@ -1086,7 +1086,7 @@ What does a relative path start with?
 What is the path delimiter?
 ?
 `::`
-<!--SR:2022-10-05,28,250-->
+<!--SR:2023-01-11,98,270-->
 
 Are modules private or public by default?
 ?
@@ -1150,13 +1150,15 @@ Organising the API of your code when its internals are structured differently to
 <!--SR:2022-11-19,53,250-->
 
 How can you rewrite the following code with nested paths?
-```
+```Rust
 use std::cmp::Ordering;
 use std::io;
 ```
 ?
-`use std::{cmp::Ordering, io};`
-<!--SR:2022-10-05,28,250-->
+```
+use std::{cmp::Ordering, io};
+```
+<!--SR:2022-12-17,73,250-->
 
 How can you rewrite the following code with nested paths?
 ```
@@ -1176,7 +1178,7 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
-<!--SR:2022-10-05,24,230-->
+<!--SR:2022-11-26,52,230-->
 
 # MISSING 8
 # Error Handling
@@ -1228,7 +1230,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-10-03,6,130-->
+<!--SR:2022-10-08,3,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1259,7 +1261,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-10-04,7,170-->
+<!--SR:2022-10-19,14,170-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1327,7 +1329,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-10-02,4,190-->
+<!--SR:2022-10-07,2,170-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1394,7 +1396,9 @@ In angle brackets between the function name and the parameter list.
 
 What is the function signature for the `largest` method which is generic over types?
 ?
-`fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}`
+```Rust
+fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
+```
 <!--SR:2022-11-05,39,210-->
 
 How do you make sure the value for a generic type parameter of a function can be compared?
@@ -1441,7 +1445,7 @@ mod tests {
 	}
 }
 ```
-<!--SR:2022-10-04,23,230-->
+<!--SR:2022-11-24,50,230-->
 
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
@@ -1555,7 +1559,7 @@ So you can use the question mark operator in the body of the tests, so you can c
 How do you assert that a result is an err?
 ?
 `assert!(value.is_err())` - not by using the question mark operator.
-<!--SR:2022-10-04,13,210-->
+<!--SR:2022-11-05,31,210-->
 
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?

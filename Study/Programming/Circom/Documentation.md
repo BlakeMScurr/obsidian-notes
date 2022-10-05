@@ -321,7 +321,7 @@ c.a <== y*z-1;
 var x;
 x = c.b;
 ```
-<!--SR:2022-10-01,87,250-->
+<!--SR:2023-05-11,218,250-->
 
 What is the difference between component instantiation and the component creation instruction? Why does it matter?
 ?
@@ -393,7 +393,7 @@ The C++ file resulting from compilation will contain parallelized code to comput
 When is parallelization particularly useful?
 ?
 When dealing with large circuits.
-<!--SR:2022-10-03,89,250-->
+<!--SR:2022-11-19,45,230-->
 
 
 
@@ -403,7 +403,7 @@ When dealing with large circuits.
 What is the line at the top of every circom file?
 ?
 `pragma circom 2.0.0;`
-<!--SR:2022-10-05,83,230-->
+<!--SR:2023-04-14,191,230-->
 
 What is pragma for?
 ?
@@ -467,7 +467,7 @@ function example(N) {
 ```
 ?
 "In example there are paths without return"
-<!--SR:2022-10-02,88,250-->
+<!--SR:2023-05-08,215,250-->
 
 ## Include
 
@@ -559,7 +559,7 @@ To make expressions, but the conditional operator can only be used at the top le
 What are the possible values of a field element?
 ?
 It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular large number.
-<!--SR:2022-10-04,89,250-->
+<!--SR:2023-05-17,224,250-->
 
 What do you use to change the field size?
 ?
@@ -637,7 +637,7 @@ What are the arithmetic operators?
 What are the `+ - * **` operators?
 ?
 Addition, subtraction, multiplication, exponentiation all mod p.
-<!--SR:2022-10-04,89,250-->
+<!--SR:2023-05-09,216,250-->
 
 What is the `/` operator?
 ?
@@ -687,7 +687,7 @@ XOR 254 bits
 What is the `>>` operator?
 ?
 Rightshift
-<!--SR:2022-10-05,89,250-->
+<!--SR:2023-05-12,219,250-->
 
 What is the `<<`?
 ?
@@ -763,7 +763,7 @@ component main{public[in]} = Num2Bits(3);
 What is a linear expression?
 ?
 An expression where only addition is used.
-<!--SR:2022-10-02,87,250-->
+<!--SR:2023-05-14,221,250-->
 
 How can we rewrite some linear expressions succinctly?
 ?
@@ -790,7 +790,7 @@ Multiplication (or division) by constants.
 Which operators impose constraints?
 ?
 `===`, `<==`
-<!--SR:2022-10-04,89,250-->
+<!--SR:2023-05-15,222,250-->
 
 Rewrite `out <== 1 - a * b;` more explicitly
 ?
@@ -910,7 +910,7 @@ template B(N1, N2) {
 ```
 ?
 `A`, because its condition depends on a signal which means it's unknown, whereas `B`'s depends on a parameter which means it's known at compile time.
-<!--SR:2022-10-05,89,250-->
+<!--SR:2023-05-18,225,250-->
 
 What is wrong with the following code?
 ```
@@ -964,7 +964,7 @@ What is wrong with the following code?
 `var z = [2,8,4];`
 ?
 The size of `z` is not explicitly given, and it will produce a compiler error.
-<!--SR:2022-10-03,88,250-->
+<!--SR:2023-05-16,223,250-->
 
 Can a single array hold multiple types of signals?
 ?
@@ -974,7 +974,7 @@ No, each array can only hold one type of signal.
 Can an array contain components with different parameters?
 ?
 Yes, as long as they have the same type.
-<!--SR:2022-10-05,89,250-->
+<!--SR:2023-05-10,217,250-->
 
 What is wrong with the following code and what error message will it give?
 ```
@@ -1080,7 +1080,7 @@ The `assert` keyword, and constraints.
 How do you use `assert`, for example?
 ?
 `assert(n <= 254);`
-<!--SR:2022-10-01,86,250-->
+<!--SR:2023-05-13,220,250-->
 
 What is `log`?
 ?
@@ -1109,7 +1109,7 @@ Code generation, where the code to compute the witness is generated
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
-<!--SR:2022-10-01,85,250-->
+<!--SR:2022-11-17,43,230-->
 
 What is a hint?
 ?

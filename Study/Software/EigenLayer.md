@@ -22,7 +22,7 @@ $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
 What is the $CoC$ of a DApp with restaking?
 ?
 $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
-<!--SR:2022-10-01,35,270-->
+<!--SR:2023-01-13,100,270-->
 
 ## B
 
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-01,21,230-->
+<!--SR:2022-10-16,11,210-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-01,21,230-->
+<!--SR:2022-10-16,11,210-->
 
 
 ??? How do the steps in line (10) work?

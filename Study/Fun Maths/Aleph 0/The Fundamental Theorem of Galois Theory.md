@@ -17,7 +17,7 @@ That there is no general formula to solve a polynomial of degree 5 or higher.
 What is the square root of 2 as a truncated decimal?
 ?
 1.41... and -1.41...
-<!--SR:2022-10-01,88,230-->
+<!--SR:2023-04-30,207,230-->
 
 Explain the "algebraic difference" between $\sqrt(2)$ and $-\sqrt{2}$.
 ?

@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-10-03,20,170-->
+<!--SR:2022-11-12,38,170-->
 
 What are the possible specifications for each column?
 ?
@@ -41,7 +41,7 @@ Instance
 What is a fixed column?
 ?
 A column whose values are fixed by the circuit.
-<!--SR:2022-10-03,54,290-->
+<!--SR:2023-03-14,160,290-->
 
 What is an advice column?
 ?
@@ -105,7 +105,7 @@ Sets of constraints like $q_i \cdot p(...)$, along with a set of selector column
 What kinds of gates are there?
 ?
 Standard gates that support generic field operations like multiplication and addition, and custom gates for more specialized operations.
-<!--SR:2022-10-01,53,290-->
+<!--SR:2022-11-04,30,270-->
 
 ## Chips
 
