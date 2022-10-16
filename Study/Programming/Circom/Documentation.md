@@ -80,7 +80,7 @@ template B(){
 	component comp = A();
 	someSignal <== A.outA
 }
-<!--SR:2022-10-08,88,250-->
+<!--SR:2023-05-30,225,250-->
 
 template A(){
 	...
@@ -235,7 +235,7 @@ component main{public [a]} = wrong(1);
 ?
 `A(a, N)` passes a signal to a template as a parameter, which means the value of the parameter can't be known at compile time.
 "Every component instantiation must be resolved during the constraint generation phase."
-<!--SR:2022-10-13,63,230-->
+<!--SR:2023-03-16,150,230-->
 
 When do we use `--inspect`?
 ?
@@ -378,7 +378,7 @@ ands[1] = MultiAnd(n2);
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-10-14,39,230-->
+<!--SR:2022-11-07,21,210-->
 
 How do we use `parallel`?
 ?
@@ -420,7 +420,7 @@ That the code is compatible with the compiler's latest version.
 What do functions do?
 ?
 Define abstract pieces of code that can perform some computation to obtain a value or an expression to be returned.
-<!--SR:2022-10-10,85,230-->
+<!--SR:2023-05-19,214,230-->
 
 What does a function look like?
 ?
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-10-10,33,230-->
+<!--SR:2022-11-03,17,210-->
 
 What are the possible values of a field element?
 ?
@@ -1114,7 +1114,7 @@ Hints, warnings, and errors.
 What is a hint?
 ?
 A compiler message that means that what you've done is allowed but uncommon, so it's better to check if it was done on purpose.
-<!--SR:2022-10-12,92,250-->
+<!--SR:2023-06-03,229,250-->
 
 What is a warning?
 ?
@@ -1126,7 +1126,7 @@ A compiler message meaning that what you've done is allowed but should not happe
 What is an error?
 ?
 A compiler message meaning that what you've done is not allowed, and the compilation of the program fails.
-<!--SR:2022-10-13,92,250-->
+<!--SR:2023-06-09,235,250-->
 
 What is wrong with the following code, and what message is genreated?
 ```
@@ -1158,7 +1158,7 @@ When are expressions known?
 ?
 Expressions depending on only known values are known.
 Expressions depending on unknowns are unknown.
-<!--SR:2022-10-10,90,250-->
+<!--SR:2023-06-08,234,250-->
 
 Which identifiers and known and unknown in the following code?
 ```
@@ -1209,7 +1209,7 @@ template A() {
 ?
 Length of `array` must be known.
 "Error: The length of every array must known during the constraint generation phase"
-<!--SR:2022-10-09,89,250-->
+<!--SR:2023-06-04,230,250-->
 
 A control flow with a constraint . . . ?
 ?

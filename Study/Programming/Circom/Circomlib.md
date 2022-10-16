@@ -34,7 +34,7 @@ The parameter specifying the number of bits in each operand (binary number being
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-10-08,28,210-->
+<!--SR:2022-12-24,68,210-->
 
 What is the main constraint in binsum and what is it for?
 ?
@@ -100,7 +100,7 @@ function nbits(a) {
 What is `nout` in `Binsum`?
 ?
 The number of bits required to represent the output of the sum.
-<!--SR:2022-10-09,89,250-->
+<!--SR:2023-06-11,237,250-->
 
 What are `in` and `out` in `Binsum`?
 ?
