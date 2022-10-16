@@ -450,7 +450,7 @@ As many as it likes.
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2022-10-10,35,230-->
+<!--SR:2023-01-14,89,230-->
 
 What does executing a return statement do?
 ?
@@ -622,7 +622,7 @@ How is `x > y` defined?
 How is `x <= y` defined?
 ?
 `val(x % p) <= val(y % p)`
-<!--SR:2022-10-07,88,250-->
+<!--SR:2023-05-29,224,250-->
 
 How is `x >= y` defined?
 ?
@@ -662,7 +662,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2022-10-11,31,230-->
+<!--SR:2023-01-05,80,230-->
 
 What is the `&` operator?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-10-14,43,170-->
+<!--SR:2022-11-10,24,150-->
 
 What are the bitwise assignment operators?
 ?

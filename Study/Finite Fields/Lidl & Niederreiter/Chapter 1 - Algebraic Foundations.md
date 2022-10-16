@@ -91,7 +91,7 @@ What is "0-fold" of $a$ in both notations?
 $a^0 = e$
 $0a = 0$
 Where the last zero is the identity in G, and the others are the integer 0
-<!--SR:2022-10-12,195,250-->
+<!--SR:2024-02-23,494,250-->
 
 What are some trivial examples of groups?
 ?
@@ -119,12 +119,12 @@ Cyclic groups are commutative because all elements can be represented as a power
 What are the generators of the additive group $\mathbb{z}$?
 ?
 $1$ and $-1$.
-<!--SR:2022-10-13,114,250-->
+<!--SR:2023-08-03,290,250-->
 
 What are the properties of an equivalence relation?
 ?
 Reflexivity, symmetry, and transitivity.
-<!--SR:2022-10-13,42,230-->
+<!--SR:2023-01-21,96,230-->
 
 What is the reflexivity property of an equivalence relation?
 ?
