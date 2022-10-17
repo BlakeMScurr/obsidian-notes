@@ -5,7 +5,7 @@
 What is the rust file extension?
 ?
 `.rs`
-<!--SR:2022-10-12,37,270-->
+<!--SR:2023-03-24,158,290-->
 
 How do you compile a rust program, say `main.rs`?
 ?
@@ -30,7 +30,7 @@ How do you compile a cargo project?
 What does `cargo check` do?
 ?
 It checks that the cargo project still compiles without producing an executable.
-<!--SR:2022-10-12,38,270-->
+<!--SR:2023-02-03,109,270-->
 
 How do you build a cargo project ready for release?
 ?
@@ -52,7 +52,7 @@ How do you manually format a rust file, say `main.rs`?
 How do you bring the input/output library into scope?
 ?
 `use std: :io;`
-<!--SR:2022-10-09,33,270-->
+<!--SR:2023-01-25,100,270-->
 
 What is the identifier for the standard library?
 ?
@@ -62,7 +62,7 @@ What is the identifier for the standard library?
 What is the identifier for the input/output library?
 ?
 `io`
-<!--SR:2022-10-07,33,270-->
+<!--SR:2023-01-28,103,270-->
 
 What is the keyword used to bring libraries into scope?
 ?
@@ -112,12 +112,12 @@ A type from the standard library that is a growable, UTF-8 encoded piece of text
 What is `String: :new`?
 ?
 A function that returns a new instance of `String`.
-<!--SR:2022-10-15,39,270-->
+<!--SR:2023-01-29,104,270-->
 
 What does the `: :` syntax on `String: :new` indicate?
 ?
 That `new` is an associated function of the string type.
-<!--SR:2022-10-06,32,270-->
+<!--SR:2023-01-22,97,270-->
 
 What is an associated function?
 ?
@@ -191,7 +191,7 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:2022-10-16,19,150-->
+<!--SR:2022-11-16,30,150-->
 
 What keyword do we use to get an infinite loop?
 ?
@@ -219,7 +219,7 @@ fn main() {
 ```
 ?
 cannot assign twice to immutable variable `x`
-<!--SR:2022-10-08,31,250-->
+<!--SR:2023-01-16,91,250-->
 
 Why is it useful to create immutable variables in Rust?
 ?
@@ -246,7 +246,7 @@ No
 What is shadowing?
 ?
 When a new variable is declared with the same name as an old one.
-<!--SR:2022-10-17,35,250-->
+<!--SR:2023-01-12,87,250-->
 
 How is shadowing with mutable variables different to having mutable varialbes?
 ?
@@ -278,7 +278,7 @@ fn main() {
 ?
 12
 6
-<!--SR:2022-10-13,34,250-->
+<!--SR:2023-01-15,90,250-->
 
 What is wrong with the following code?
 ```
@@ -340,7 +340,7 @@ Using two's complement representation.
 What range of values can a signed integer store?
 ?
 $-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
-<!--SR:2022-10-16,36,270-->
+<!--SR:2023-01-24,99,270-->
 
 What range of values can an unsigned integer store?
 ?
@@ -360,7 +360,7 @@ What is the visual separator character for number literals?
 What is the prefix for hex number literals?
 ?
 `0x`
-<!--SR:2022-10-10,31,250-->
+<!--SR:2023-01-11,86,250-->
 
 What is the prefix for octal number literals?
 ?
@@ -390,7 +390,7 @@ Using methods from the standard library that handle the overflow differently tha
 What are the different method prefixes for handling overflow explicitly?
 ?
 `wrapping`, `checked`, `overflowing`, `saturating`.
-<!--SR:2022-10-06,9,170-->
+<!--SR:2022-11-11,25,170-->
 
 What does `wrapping_*` do?
 ?
@@ -525,7 +525,7 @@ No.
 How do you declare an array?
 ?
 `let a = [1,2,3,4];`
-<!--SR:2022-10-10,31,250-->
+<!--SR:2023-01-07,82,250-->
 
 Are arrays stored on the stack or the heap?
 ?
@@ -656,12 +656,12 @@ By ending the function's block with an expression of that value, or using the `r
 What character creates comments?
 ?
 `//`
-<!--SR:2022-10-14,35,250-->
+<!--SR:2023-01-18,93,250-->
 
 How do you do multiline comments?
 ?
 `//` on each line
-<!--SR:2022-10-06,29,250-->
+<!--SR:2023-01-07,82,250-->
 
 ## Control Flow
 ### If
@@ -808,7 +808,7 @@ Because of the cost to the processor of moving around memory. Values on the stac
 What kind of data can be put on the stack?
 ?
 Data with a known size at compile time.
-<!--SR:2022-10-07,28,250-->
+<!--SR:2023-01-08,83,250-->
 
 Where is data with unknown size at compile time stored?
 ?
@@ -855,7 +855,7 @@ When it goes out of scope it's invalid.
 How do you create a new string of type `String` from a string literal, say, `"hello"`?
 ?
 `let x = String: :from("hello");`
-<!--SR:2022-10-06,29,250-->
+<!--SR:2023-01-15,90,250-->
 
 How do you push a new string literal to a `String`?
 ?
@@ -927,12 +927,12 @@ What trait can't coexist with the `Copy` trait, and how exactly?
 ?
 `Drop`.
 If the type or any of its parts implement `Drop`, it can't implement `Copy`.
-<!--SR:2022-10-16,33,250-->
+<!--SR:2022-11-02,16,230-->
 
 What kinds of types tend to implement the `Copy` trait?
 ?
 Groups of scalar values.
-<!--SR:2022-10-17,33,230-->
+<!--SR:2023-01-01,76,230-->
 
 What's wrong with the following code?
 ```
@@ -947,7 +947,7 @@ fn f(s: String) {
 ```
 ?
 `s` is moved by the call `f(s)`, so it's inaccessible on the next line.
-<!--SR:2022-10-07,30,250-->
+<!--SR:2023-01-13,88,250-->
 
 What operations can move a value?
 ?
@@ -978,7 +978,7 @@ Paths
 What is a crate?
 ?
 A tree of modules that produces a library or executable.
-<!--SR:2022-10-12,28,230-->
+<!--SR:2022-12-26,70,230-->
 
 What are the types of crate?
 ?
@@ -1020,7 +1020,7 @@ A library crate named the same as the package.
 Where do extra binary packages go?
 ?
 `src/bin`
-<!--SR:2022-10-16,34,250-->
+<!--SR:2023-01-12,87,250-->
 
 ## Modules
 
@@ -1212,7 +1212,7 @@ By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
 What do we use for recoverable errors?
 ?
 The `Result` type.
-<!--SR:2022-10-17,34,250-->
+<!--SR:2022-11-04,18,230-->
 
 What is the definition of the `Result` type?
 ?
@@ -1281,7 +1281,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-10-15,18,170-->
+<!--SR:2022-10-28,11,150-->
 
 What does `expect` do?
 ?
@@ -1291,7 +1291,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:2022-10-13,22,230-->
+<!--SR:2022-10-29,12,210-->
 
 ## Propogation
 
@@ -1340,7 +1340,7 @@ What happens when a main function with a return type of `Result<(), E>` returns?
 ?
 If it returns `Ok`, the executable exits with `0`.
 It returns a non zero exit value if it returns an `Err` value.
-<!--SR:2022-10-12,32,250-->
+<!--SR:2023-01-09,84,250-->
 
 What kinds of types can the main function return?
 ?
@@ -1387,12 +1387,12 @@ CamelCase
 What is the conventional name for a generic type?
 ?
 `T`
-<!--SR:2022-10-08,28,250-->
+<!--SR:2023-01-06,81,250-->
 
 Where do you declare a type parameter name in a function?
 ?
 In angle brackets between the function name and the parameter list.
-<!--SR:2022-10-13,32,250-->
+<!--SR:2023-01-10,85,250-->
 
 What is the function signature for the `largest` method which is generic over types?
 ?
@@ -1421,17 +1421,17 @@ A piece of metadata about a piece of code.
 How do you change a function into a test function?
 ?
 Adding `#[test]` on the line before `fn`
-<!--SR:2022-10-09,29,250-->
+<!--SR:2023-01-04,79,250-->
 
 What is `#[test]`?
 ?
 The test attribute.
-<!--SR:2022-10-06,27,250-->
+<!--SR:2023-01-06,81,250-->
 
 What command do we use to run test?
 ?
 `cargo test`
-<!--SR:2022-10-10,30,250-->
+<!--SR:2023-01-05,80,250-->
 
 What is the testing template that Cargo automatically gives us when writing a library crate?
 ?
@@ -1465,7 +1465,7 @@ That there are no tests that are filtered out by our argument to `cargo test`
 When do tests fail?
 ?
 When the test panics.
-<!--SR:2022-10-09,29,250-->
+<!--SR:2023-01-08,83,250-->
 
 What does `assert_eq!` do?
 ?
@@ -1475,7 +1475,7 @@ Panics if the values passed in are not equal, nothing otherwise.
 What does `assert!` do?
 ?
 Panics if passed false, nothing if passed true.
-<!--SR:2022-10-12,32,250-->
+<!--SR:2023-01-09,84,250-->
 
 What does `assert_ne!` do?
 ?
@@ -1485,7 +1485,7 @@ Panics if the two arguments are equal, nothing otherwise.
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
 Neither, in Rust they are just called left and right.
-<!--SR:2022-10-14,33,250-->
+<!--SR:2023-01-14,89,250-->
 
 What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
 ?
@@ -1501,7 +1501,7 @@ How do you derive the traits required to use a struct/enum as an argument to `as
 What are the main assertion macros?
 ?
 `assert!`, `assert_eq!`, and `assert_ne!`
-<!--SR:2022-10-09,27,230-->
+<!--SR:2022-12-27,71,230-->
 
 How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
 ?
