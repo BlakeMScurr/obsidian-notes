@@ -35,7 +35,7 @@ It checks that the cargo project still compiles without producing an executable.
 How do you build a cargo project ready for release?
 ?
 `cargo build --release`
-<!--SR:2022-10-13,38,270-->
+<!--SR:2023-02-07,112,270-->
 
 How do you locally access the rust documentation?
 ?
@@ -45,7 +45,7 @@ How do you locally access the rust documentation?
 How do you manually format a rust file, say `main.rs`?
 ?
 `rustfmt main.rs`
-<!--SR:2022-10-16,39,270-->
+<!--SR:2023-02-04,109,270-->
 
 # Guessing Game
 
@@ -67,7 +67,7 @@ What is the identifier for the input/output library?
 What is the keyword used to bring libraries into scope?
 ?
 `use`
-<!--SR:2022-10-13,39,290-->
+<!--SR:2023-02-11,116,290-->
 
 What is the prelude?
 ?
@@ -82,12 +82,12 @@ How do you define the entrypoint for a rust program?
 How do you print a string, say, `"hello"` to stdout?
 ?
 `println!("hello");`
-<!--SR:2022-10-17,41,290-->
+<!--SR:2023-02-09,114,290-->
 
 Are variables mutable or immutable by default?
 ?
 Immutable
-<!--SR:2022-10-11,36,270-->
+<!--SR:2023-02-01,106,270-->
 
 How do you create a new immutable variable `a` set to `5`?
 ?
@@ -97,7 +97,7 @@ How do you create a new immutable variable `a` set to `5`?
 What keyword is used to create variables?
 ?
 `let`
-<!--SR:2022-10-18,41,270-->
+<!--SR:2023-02-05,110,270-->
 
 How do you create a new mutable variable `b` and set it to `5`?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-10-18,13,190-->
+<!--SR:2022-11-22,35,210-->
 
 What is a `Result`?
 ?
@@ -166,7 +166,7 @@ How can you use placeholders to print the value "x is 5", where the varialbe `x`
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
 `println!("x = {}, y = {}", x, y);`
-<!--SR:2022-10-08,34,270-->
+<!--SR:2023-01-31,105,270-->
 
 How do you get access to random numbers in Rust?
 ?
@@ -241,7 +241,7 @@ A type annotation.
 Can constants be mutable?
 ?
 No
-<!--SR:2022-10-09,30,250-->
+<!--SR:2023-01-12,86,250-->
 
 What is shadowing?
 ?
@@ -301,7 +301,7 @@ What is wrong with the following code?
 ?
 There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
 `let guess: u32 = "42".parse().expect("Not a number!");`
-<!--SR:2022-10-11,32,250-->
+<!--SR:2023-01-15,89,250-->
 
 What is a scalar type?
 ?
@@ -380,7 +380,7 @@ What is the syntax for byte number literals?
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
 Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
-<!--SR:2022-10-14,35,250-->
+<!--SR:2023-01-20,94,250-->
 
 What do we use to explicitly handle overflowing?
 ?
@@ -439,14 +439,14 @@ What is the output of `println!("{}", 5 / 4);` and why?
 How do we write the boolean literals?
 ?
 `true` and `false`
-<!--SR:2022-10-07,30,250-->
+<!--SR:2023-01-17,91,250-->
 
 ### Characters
 
 How many bytes is a `char`?
 ?
 4
-<!--SR:2022-10-13,30,230-->
+<!--SR:2023-01-01,75,230-->
 
 How do we declare a `char`?
 ?
@@ -487,7 +487,7 @@ How do you destructure a tuple?
 ?
 Using pattern matching, i.e.:
 `let (x, y, z) = tup;`
-<!--SR:2022-10-11,31,250-->
+<!--SR:2023-01-13,87,250-->
 
 How do we directly access a tuple element?
 ?
@@ -535,7 +535,7 @@ Stack.
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-10-17,28,250-->
+<!--SR:2022-12-28,71,250-->
 
 How do you write an array's type?
 ?
@@ -641,7 +641,7 @@ By ending them in an expression, which the whole scope evaluates to.
 How do you write a function that returns an `i32`?
 ?
 `fn foo () -> i32 {}`
-<!--SR:2022-10-12,33,250-->
+<!--SR:2023-01-16,90,250-->
 
 Do you have to declare the return type of a function?
 ?
@@ -707,7 +707,7 @@ By passing a value to the `break` statement, i.e.:
 What is a loop label for?
 ?
 Disambiguating between multiple loops, so you can break from the correct one.
-<!--SR:2022-10-15,32,230-->
+<!--SR:2022-12-30,73,230-->
 
 What is the syntax for creating and using a loop label?
 ?
@@ -803,7 +803,7 @@ Which is faster to pull from, the stack or the heap? Why?
 ?
 The stack.
 Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
-<!--SR:2022-10-09,32,250-->
+<!--SR:2023-01-19,93,250-->
 
 What kind of data can be put on the stack?
 ?
@@ -1010,7 +1010,7 @@ At least one crate.
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
 A binary crate named the same as the package.
-<!--SR:2022-10-14,31,230-->
+<!--SR:2023-01-02,76,230-->
 
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?
@@ -1076,12 +1076,12 @@ Absolute and relative.
 What does an absolute path start with?
 ?
 The literal `crate`, referring to the crate root.
-<!--SR:2022-10-17,35,250-->
+<!--SR:2023-01-14,88,250-->
 
 What does a relative path start with?
 ?
 `self`, `super`, or an identifier in the current module.
-<!--SR:2022-10-12,29,230-->
+<!--SR:2022-12-31,74,230-->
 
 What is the path delimiter?
 ?
@@ -1166,8 +1166,8 @@ use std: :io;
 use std: :io: :Write;
 ```
 ?
-`use std: :io::{self, Write};`
-<!--SR:2022-10-16,32,230-->
+`use std: :io: :{self, Write};`
+<!--SR:2023-01-02,76,230-->
 
 How could you bring everything in `std: :collections` into scope?
 ?
@@ -1242,7 +1242,7 @@ let greeting_file = match greeting_file_result {
 	Err(error) => panic!("Problem opening the file: {:?}", error),
 };
 ```
-<!--SR:2022-10-18,33,230-->
+<!--SR:2022-12-29,72,230-->
 
 Are `Result` and its variants in the prelude?
 ?
@@ -1309,7 +1309,7 @@ match something {
 	Err(e) => return Err(e), 
 }
 ```
-<!--SR:2022-10-18,36,250-->
+<!--SR:2023-01-20,94,250-->
 
 What does the `?` operator do?
 ?
@@ -1404,7 +1404,7 @@ fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-10-12,12,170-->
+<!--SR:2022-10-25,7,150-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1491,7 +1491,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 ?
 `PartialEq` because they're compared using `==` and `!=` respectively.
 `Debug` because they're printed using debug formatting.
-<!--SR:2022-10-15,34,250-->
+<!--SR:2023-01-18,92,250-->
 
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?

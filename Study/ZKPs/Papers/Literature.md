@@ -24,7 +24,7 @@ The notion of interactive proofs, communcation complexity, and that interactive 
 What is GMW91's title?
 ?
 Proofs that Yield Nothing but their Validity or All Languages in NP Have Zero-Knowledge Proof Systems
-<!--SR:2022-10-05,53,130-->
+<!--SR:2022-12-31,74,130-->
 
 Who are the authors of GMW91
 ?
@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-10-10,39,150-->
+<!--SR:2022-10-21,3,250-->
 
 ## BGKW88
 
@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-10-03,23,130-->
+<!--SR:2022-12-01,44,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -90,7 +90,7 @@ Lázsló Babai, Lance Fortnow, and Carsten Lund
 What does BFL90 show?
 ?
 NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
-<!--SR:2022-10-09,80,170-->
+<!--SR:2022-12-02,45,150-->
 
 
 
@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-10-18,32,170-->
+<!--SR:2022-12-09,52,170-->
 
 What is the title of GO94?
 ?
@@ -128,7 +128,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-10-12,41,150-->
+<!--SR:2022-12-23,66,150-->
 
 What did GOS12 contribute?
 ?
@@ -137,7 +137,7 @@ What did GOS12 contribute?
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
  - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-10-01,4,130-->
+<!--SR:2022-10-22,4,130-->
 
 Who are the authors of GOS06?
 ?
@@ -162,7 +162,7 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:2022-10-18,60,170-->
+<!--SR:2022-11-17,30,150-->
 
 What did Gro06 contribute?
 ?
@@ -199,7 +199,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-10-06,80,250-->
+<!--SR:2022-11-30,43,230-->
 
 Who are the authors of Gro09?
 ?

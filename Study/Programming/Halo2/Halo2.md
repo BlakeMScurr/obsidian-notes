@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-10-08,23,250-->
+<!--SR:2022-11-01,14,230-->
 
 What is advice?
 ?
@@ -36,7 +36,7 @@ What are the possible specifications for each column?
 Fixed
 Advice
 Instance
-<!--SR:2022-10-13,34,210-->
+<!--SR:2023-01-03,77,210-->
 
 What is a fixed column?
 ?
@@ -50,8 +50,8 @@ A column that corresponds to witness values.
 
 What is an instance column?
 ?
-It's for elements shared between the prover and verifier, typeically public inputs.
-<!--SR:2022-10-10,46,230-->
+It's for elements shared between the prover and verifier, typically public inputs.
+<!--SR:2023-02-10,115,230-->
 
 What are the constraints?
 ?
@@ -61,7 +61,7 @@ Multivariate polynomials over F.
 What must the constraints evaluate to?
 ?
 Zero *for each row*.
-<!--SR:2022-10-08,51,250-->
+<!--SR:2023-03-01,134,250-->
 
 What do the variables in a polynomial constraint refer to?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-10-06,17,130-->
+<!--SR:2022-10-30,12,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-10-18,21,150-->
+<!--SR:2022-10-31,13,130-->
 
 What keys do we genererate from the circuit description?
 ?

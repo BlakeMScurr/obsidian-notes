@@ -72,7 +72,7 @@ Interaction may reduce knowledge complexity.
 How does adding interaction reduce the knowledge complexity of deciding quadratic residuosity?
 ?
 It removes the need to give `m`'s factorisation, and allows a zero knowledge proof.
-<!--SR:2022-10-06,116,250-->
+<!--SR:2022-12-19,62,230-->
 
 What is true of all known NP algorithms of quadratic residuosity?
 ?
@@ -931,7 +931,7 @@ B' is an adversarial verifier trying to learn additional knowledge. B' can learn
 What additional information does the super basic NP style algorithm for proving $x \in QR$ convey?
 ?
 A square root of x, in addition to showing $x \in QR$
-<!--SR:2022-10-03,94,230-->
+<!--SR:2023-06-08,233,230-->
 
 How much knowledge do traditional proofs of theorems convey?
 ?
@@ -1435,7 +1435,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-10-05,29,190-->
+<!--SR:2022-11-05,18,170-->
 
 How is $X' \cup Y'$ sent?
 ?
@@ -1573,7 +1573,7 @@ If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with proba
 How does the proof for claim 1 work?
 ?
 $P[C_x = 0] = 1/2$, and even with infinite computation power $A'$ can't tell the two types in $X' \cup Y'$ apart since they're all random square roots of random squares. We run through all 4 cases of $C_x$ and $w$ showing that they're random square roots of random squares.
-<!--SR:2022-10-14,93,230-->
+<!--SR:2023-05-20,214,230-->
 
 What cases do we have to prove to show that all $w \in X' \cup Y'$ are random square roots of random squares if $(y, m) \notin QNR$?
 ?

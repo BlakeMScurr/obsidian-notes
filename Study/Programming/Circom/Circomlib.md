@@ -29,7 +29,7 @@ The parameter specifying the number of operands. I.e., the number of binary numb
 What is `n` in binsum?
 ?
 The parameter specifying the number of bits in each operand (binary number being added together).
-<!--SR:2022-10-08,88,250-->
+<!--SR:2023-06-18,243,250-->
 
 What does `e` specifiy in the binsum constraints?
 ?
@@ -47,7 +47,7 @@ in[ops-1][0]*2^0 + i[ops-1][1]*2^1 + ... in[ops-1][n-1]*2^(n-1)
 ===
 out[0]+2^0 + out[1]^2^1 + ..... + out[n+e-1]*2^(n+e-1)
 ```
-<!--SR:2022-10-11,91,250-->
+<!--SR:2023-06-13,238,250-->
 
 What is the secondary constraint in binsum and what is it for?
 ?
@@ -58,7 +58,7 @@ out[1] * (out[1] -	1) === 0;
 ...
 out[n+e-1] * (out[n+e-1] - 1) === 0;
 ```
-<!--SR:2022-10-18,37,230-->
+<!--SR:2023-01-09,83,230-->
 
 What are the top level constructions in the binsum.circom file?
 ?
@@ -95,7 +95,7 @@ function nbits(a) {
 	return r;
 }
 ```
-<!--SR:2022-10-10,90,250-->
+<!--SR:2022-12-05,48,230-->
 
 What is `nout` in `Binsum`?
 ?
@@ -120,18 +120,18 @@ What are `k` and `j` in `Binsum`?
 ?
 `k` is the index variable used to count through the `n` digits of each `in` number, and the `nout` digits of `out`.
 `j` is the index variable used to count through the `ops` operands in `in`.
-<!--SR:2022-10-12,92,250-->
+<!--SR:2023-06-19,244,250-->
 
 What is `e2` in `Binsum`?
 ?
 `e2` is the variable that keeps track of the power of 2 represented by each digit to save exponentiations.
-<!--SR:2022-10-13,93,250-->
+<!--SR:2023-06-20,245,250-->
 
 What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-10-11,59,230-->
+<!--SR:2022-11-20,33,210-->
 
 What is the code for `BinSum`?
 ?
@@ -180,7 +180,7 @@ Creates a constraint specifying that A - B = C for A, B, C binary numbers
 What is compconstant?
 ?
 Returns 1 if the binary input signal is greater than some constant.
-<!--SR:2022-10-09,88,250-->
+<!--SR:2023-06-14,239,250-->
 
 What are the sections in compconstant?
 ?
@@ -234,7 +234,7 @@ smsb = in[i*2+1];
 What does each part resolve to, and when?
 ?
 `a` if the constant is larger, `b` if the signal is larger, `0` if they are equal.
-<!--SR:2022-10-06,65,250-->
+<!--SR:2023-04-06,170,250-->
 
 What does `a` look like and what is its formula?
 ?
@@ -252,7 +252,7 @@ What does `a` do from a bitwise perspective and how?
 ?
 Zeroes each `jth` left hand bit where `i < j <= 127`.
 Either they're all 0, in which case it has no effect, or they're all 1, and they cascade to zero, leaving some value in bits 128 and above.
-<!--SR:2022-10-06,86,250-->
+<!--SR:2023-06-05,230,250-->
 
 What does `b` do from a bitwise perspective and how?
 ?
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-10-11,85,250-->
+<!--SR:2022-12-04,47,230-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-10-08,44,150-->
+<!--SR:2022-11-12,25,130-->
 
 ## g-m
 
@@ -370,7 +370,7 @@ Selects 1 of 2 length n arrays.
 What does `Mux1` do?
 ?
 Selects 1 of 2 values.
-<!--SR:2022-10-07,87,250-->
+<!--SR:2023-06-12,237,250-->
 
 What is the code for MultiMux1?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2022-10-16,59,170-->
+<!--SR:2023-01-23,97,170-->
 
 ## p-s
 
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2022-10-15,43,150-->
+<!--SR:2023-01-30,104,170-->

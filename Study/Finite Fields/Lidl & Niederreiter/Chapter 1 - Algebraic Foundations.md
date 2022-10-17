@@ -129,7 +129,7 @@ Reflexivity, symmetry, and transitivity.
 What is the reflexivity property of an equivalence relation?
 ?
 $$(s, s) \in R\ \forall s \in S$$
-<!--SR:2022-10-18,75,170-->
+<!--SR:2023-02-27,132,170-->
 
 What is the symmetry property of an equivalence relation?
 ?

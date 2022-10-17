@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-10-07,23,130-->
+<!--SR:2022-11-24,37,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -435,7 +435,7 @@ $R, z, \sigma, \tau, \pi$
 What is computational soundness, roughly?
 ?
 We say a set of algorithms is sound if it is not possible to prove a false statement, i.e., convince the verifier if no witness exists.
-<!--SR:2022-10-14,78,250-->
+<!--SR:2023-05-06,200,250-->
 
 What is the definition of computational soundness?
 ?
@@ -539,10 +539,10 @@ What does fully succinct mean?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
 <!--SR:2022-11-03,45,210-->
 
-What is the relationship between preprocessing and fully succinct SNARKs, and who showed it?
+What is the relationship between preprocessing and fully succinct SNARKs?
 ?
 You can compile a preprocessing SNARK into a fully succinct SNARK.
-<!--SR:2022-10-04,70,250-->
+<!--SR:2023-04-29,193,250-->
 
 Who showed the relationship between preprocessing and fully succinct SNARKs?
 ?
@@ -668,7 +668,7 @@ What can we reformulate arithmetic constraints as, and what assumption do we hav
 ?
 As a quadratic arithmetic program.
 That the field $\mathbb{F}$ is large enough.
-<!--SR:2022-10-03,70,250-->
+<!--SR:2022-11-20,33,230-->
 
 ??? Is this because the modular rearrangement doesn't work for tiny fields? Maybe fields with fewer elements than the number of roots in the polynomial?
 
@@ -710,7 +710,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-10-07,9,130-->
+<!--SR:2022-11-08,21,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -1240,7 +1240,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-10-02,13,190-->
+<!--SR:2022-11-27,40,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1255,7 +1255,7 @@ Proof CRS product
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $A \cdot B$
-<!--SR:2022-10-07,55,250-->
+<!--SR:2023-03-18,151,250-->
 
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

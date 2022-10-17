@@ -107,7 +107,7 @@ Being closed under +, -, \*, and /, it contains $1+\sqrt{2}$ etc.
 Describe the automorphisms analogous to our non-rigorous motivating example with $\sqrt{2}$
 ?
 Some automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-10-14,89,210-->
+<!--SR:2023-04-27,191,210-->
 
 What is an automorphism, formally?
 ?
@@ -121,12 +121,12 @@ for all x and y in the field
 What is the intuition behind the definition of an automorphism?
 ?
 An automorphism is a function that shuffles around the field elements while respecting the field operations.
-<!--SR:2022-10-15,95,230-->
+<!--SR:2023-05-28,222,230-->
 
 What is $Aut\ F$?
 ?
 The set of all automorphisms of $F$.
-<!--SR:2022-10-17,103,250-->
+<!--SR:2023-07-04,259,250-->
 
 What is the additional property of an automorphism fixing $\mathbb{Q}$? (As compared to an ordinary automorphism not fixing $\mathbb{Q}$).
 ?
@@ -142,7 +142,7 @@ What are the formalisations for "numbers" and permutations from the $\sqrt{2}$  
 ?
 Numbers become fields, i.e., $\sqrt{2}$ and $-\sqrt{2}$ becomes $\mathbb{Q}(\sqrt{2})$.
 Permutations become automorphism, i.e., the permutations of $\sqrt{2}$ and $-\sqrt{2}$ become the automorphisms of $\mathbb{Q}(\sqrt{2})$.
-<!--SR:2022-10-08,95,250-->
+<!--SR:2023-06-21,246,250-->
 
 
 # Examples
@@ -159,18 +159,18 @@ $= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative pro
 $= a + b\sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
 $= a + b \cdot(\pm\sqrt{2})$ since automorphisms send numbers to one of their conjugates
 So there are just 2 such automorphisms.
-<!--SR:2022-10-08,88,250-->
+<!--SR:2022-12-06,49,230-->
 
 How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
 ?
 Just draw how it acts on the conjugates of $\sqrt{2}$, since that determines how it acts on the whole field.
-<!--SR:2022-10-07,87,250-->
+<!--SR:2023-06-06,231,250-->
 
 What do the each of the automorphisms fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$ do to the conjugates of $\sqrt{2}$?
 ?
 The first leaves all conjugates in the same place.
 The second swaps $\sqrt{2}$ and $-\sqrt{2}$
-<!--SR:2022-10-06,86,250-->
+<!--SR:2023-05-25,219,250-->
 
 # Group Theory
 
