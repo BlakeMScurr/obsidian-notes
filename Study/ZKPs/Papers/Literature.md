@@ -263,7 +263,7 @@ Mary Maller, Sean Bowe, Markulf Kohlweiss, Sarah Meiklejohn
 What is the title of MBKM19?
 ?
 Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings
-<!--SR:2022-10-19,57,210-->
+<!--SR:2023-02-16,120,210-->
 
 What did MBKM19 contribute?
 ?

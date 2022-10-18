@@ -24,7 +24,7 @@ A number of group elements.
 What is the central question of Groth16?
 ?
 How efficient can pairing based SNARGs be?
-<!--SR:2022-10-19,94,230-->
+<!--SR:2023-05-23,216,230-->
 
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
@@ -67,7 +67,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-10-19,76,170-->
+<!--SR:2022-11-26,38,150-->
 
 # Introduction
 
@@ -183,7 +183,7 @@ That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
 What does $y \leftarrow A(x)$ mean?
 ?
 We pick randomness $r$ at random and set $y = A(x;r)$.
-<!--SR:2022-10-17,88,270-->
+<!--SR:2023-06-24,248,270-->
 
 What does $y \leftarrow S$ mean?
 ?
@@ -225,7 +225,7 @@ $e : \mathbb{G}_1 \times \mathbb{G}_2 \rightarrow \mathbb{G}_T$ is a bilinear ma
 What is a property of generators of our bilinear group?
 ?
 if $G$ is a generator of $\mathbb{G}_1$ and $H$ is a generator of $\mathbb{G}_2$ then $e(G, H)$ is a generator of $\mathbb{G}_T$.
-<!--SR:2022-10-04,55,250-->
+<!--SR:2023-03-17,149,250-->
 
 What are the generic bilinear group operations?
 ?
@@ -258,7 +258,7 @@ Where $\mathbb{G}_1 = \mathbb{G}_2$
 What are Type II bilinear groups?
 ?
 Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable non-trivial homomorphism $\psi : \mathbb{G}_1 \rightarrow \mathbb{G}_2$
-<!--SR:2022-10-02,69,250-->
+<!--SR:2023-05-01,194,250-->
 
 What are Type III bilinear groups?
 ?
@@ -268,7 +268,7 @@ Where there is no efficiently computable non-trivial homomorphism in either dire
 What is special about Type III bilinear groups?
 ?
 They are the most efficient type of bilinear groups, and hence the most relevant for practical applications.
-<!--SR:2022-10-12,84,270-->
+<!--SR:2023-06-23,247,270-->
 
 For which type of bilinear group is the lower bound given?
 ?
@@ -294,7 +294,7 @@ A relation generator that, given $\lambda$ in unary returns a polynomial time de
 What is $\phi$?
 ?
 The statement.
-<!--SR:2022-10-10,75,250-->
+<!--SR:2023-04-28,191,250-->
 
 What is $w$?
 ?
@@ -914,12 +914,12 @@ It then accepts the proof if and only if $t(\sigma, \pi) = \textbf{0}$, i.e., th
 What is Test?
 ?
 A deterministic polynomial time algorithm.
-<!--SR:2022-10-19,88,270-->
+<!--SR:2023-06-22,246,270-->
 
 What are the inputs of Test?
 ?
 $(R, \phi)$
-<!--SR:2022-10-11,30,210-->
+<!--SR:2022-12-25,67,210-->
 
 What does Test output?
 ?
@@ -1101,7 +1101,7 @@ Set $\boldsymbol{\sigma}$
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:2022-10-16,55,250-->
+<!--SR:2022-11-16,28,230-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
@@ -1218,7 +1218,9 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-10-11,22,210-->
+<!--SR:2022-11-02,14,190-->
+
+%% Are we missing an implicit argument pi in Vfy?%%
 
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
