@@ -10,7 +10,7 @@ What is the rust file extension?
 How do you compile a rust program, say `main.rs`?
 ?
 `rustc main.rs`
-<!--SR:2022-10-06,24,270-->
+<!--SR:2023-01-06,79,270-->
 
 How do you create a new cargo project, called, say `hello_world`?
 ?
@@ -25,7 +25,7 @@ How do you run a cargo project?
 How do you compile a cargo project?
 ?
 `cargo build`
-<!--SR:2022-10-11,35,270-->
+<!--SR:2022-11-07,19,250-->
 
 What does `cargo check` do?
 ?
@@ -178,7 +178,7 @@ What two kinds of crates are there and how are they different?
 Library and binary.
 Library crates can't be run but they can be included in other programs.
 Binary crates are executables.
-<!--SR:2022-10-14,39,270-->
+<!--SR:2023-02-12,116,270-->
 
 Where are dependency crates defined?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-10-09,12,130-->
+<!--SR:2022-10-26,7,130-->
 
 What does `saturating_*` do?
 ?
@@ -481,7 +481,7 @@ No.
 How do you declare a tuple? (give type annotations).
 ?
 `let tup: (i32, f64, u8) = (500, 6.4, 1);`
-<!--SR:2022-10-19,38,270-->
+<!--SR:2023-01-30,103,270-->
 
 How do you destructure a tuple?
 ?
@@ -553,7 +553,7 @@ How do you write an array filled with the same value? (show the fully explicit w
 What happens if you provide an invalid array access?
 ?
 Panic at runtime (or compile time if it's compile time detectable).
-<!--SR:2022-10-18,36,250-->
+<!--SR:2023-01-21,94,250-->
 
 ## Functions
 
@@ -646,7 +646,7 @@ How do you write a function that returns an `i32`?
 Do you have to declare the return type of a function?
 ?
 Yes.
-<!--SR:2022-10-19,35,250-->
+<!--SR:2023-01-15,88,250-->
 
 How do you return a value from a function?
 ?
@@ -797,7 +797,7 @@ Which is faster to push to, the stack or the heap? Why?
 ?
 The stack. 
 Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
-<!--SR:2022-10-08,29,250-->
+<!--SR:2023-01-13,86,250-->
 
 Which is faster to pull from, the stack or the heap? Why?
 ?
@@ -952,7 +952,7 @@ fn f(s: String) {
 What operations can move a value?
 ?
 Assingment, and function calls.
-<!--SR:2022-10-06,29,250-->
+<!--SR:2023-01-20,93,250-->
 
 How can you return ownership that was taken by a function?
 ?
@@ -993,7 +993,7 @@ Binary, not library.
 What is a crate root?
 ?
 The file containing the root module of a crate.
-<!--SR:2022-10-15,32,230-->
+<!--SR:2023-01-03,76,230-->
 
 What is a package?
 ?
@@ -1005,7 +1005,7 @@ How many crates can/must a package have?
 As many binary packages as it likes.
 At most one library crate.
 At least one crate.
-<!--SR:2022-10-16,34,250-->
+<!--SR:2022-11-07,19,230-->
 
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
@@ -1127,12 +1127,11 @@ How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:2022-10-14,17,230-->
+<!--SR:2022-10-28,9,210-->
 
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:2022-10-16,32,230-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1199,7 +1198,7 @@ How do you use `panic!`?
 ?
 Pass a string (etc) to it:
 `panic!("you didn't do this right");`
-<!--SR:2022-10-19,37,250-->
+<!--SR:2023-01-22,95,250-->
 
 How can you find the stacktrace for a panic?
 ?
@@ -1230,7 +1229,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-10-08,3,130-->
+<!--SR:2022-10-30,11,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1286,7 +1285,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-10-14,23,210-->
+<!--SR:2022-12-08,50,210-->
 
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
@@ -1329,7 +1328,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-10-07,2,170-->
+<!--SR:2022-10-23,4,150-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1416,7 +1415,7 @@ Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-
 What is an attribute, broadly?
 ?
 A piece of metadata about a piece of code.
-<!--SR:2022-10-19,35,250-->
+<!--SR:2023-01-19,92,250-->
 
 How do you change a function into a test function?
 ?
@@ -1549,12 +1548,12 @@ fn some_test() -> Result<(), String> {
 	...
 }
 ```
-<!--SR:2022-10-13,32,250-->
+<!--SR:2023-01-11,84,250-->
 
 Why write tests that return `Result`s?
 ?
 So you can use the question mark operator in the body of the tests, so you can conveniently fail if there is an `Err`.
-<!--SR:2022-10-07,28,250-->
+<!--SR:2022-11-06,18,230-->
 
 How do you assert that a result is an err?
 ?

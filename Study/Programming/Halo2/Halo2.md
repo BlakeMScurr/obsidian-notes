@@ -46,7 +46,7 @@ A column whose values are fixed by the circuit.
 What is an advice column?
 ?
 A column that corresponds to witness values.
-<!--SR:2022-10-19,58,250-->
+<!--SR:2023-03-06,138,250-->
 
 What is an instance column?
 ?

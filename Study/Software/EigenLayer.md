@@ -146,7 +146,7 @@ $$
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-10-11,19,210-->
+<!--SR:2022-12-07,49,210-->
 
 What does $\gamma_{ij}$ denote?
 ?

@@ -91,7 +91,7 @@ Given a statement and a witness, the prover can convince the verifier.
 Describe the soundness property.
 ?
 A malicious prover cannot convince the verifier of a false statement.
-<!--SR:2022-10-18,98,250-->
+<!--SR:2023-06-27,251,250-->
 
 Describe the zero knowledge property.
 ?
@@ -116,7 +116,7 @@ Kili92, by Joe Kilian.
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2022-10-15,57,150-->
+<!--SR:2023-01-18,91,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
@@ -178,7 +178,7 @@ $\lambda$ is the security parameter, and as it grows we want higher security.
 What does $y = A(x;r)$ mean?
 ?
 That the algorithm $A$ outputs $y$ on the input $x$ with randomness $r$.
-<!--SR:2022-10-04,78,270-->
+<!--SR:2023-06-07,231,270-->
 
 What does $y \leftarrow A(x)$ mean?
 ?
@@ -347,10 +347,10 @@ What is $\tau$?
 The simulation trapdoor.
 <!--SR:2022-10-30,97,270-->
 
-What is $tau$ used for?
+What is $\tau$ used for?
 ?
-The simulator gets access to $tau$ so it can generate proofs indistinguishable from actual proofs, so that we can prove that an argument is zero knowledge.
-<!--SR:2022-10-05,70,250-->
+The simulator gets access to $\tau$ so it can generate proofs indistinguishable from actual proofs, so that we can prove that an argument is zero knowledge.
+<!--SR:2023-04-21,184,250-->
 
 What is $\pi$?
 ?
@@ -521,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-10-07,32,190-->
+<!--SR:2022-11-06,18,170-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -632,7 +632,7 @@ WItnesses and statements that satisfy all the equations.
 What are our arithmetic constraints over?
 ?
 $a_0 = 1$ and $a_1,...,a_m \in \mathbb{F}$
-<!--SR:2022-10-17,60,210-->
+<!--SR:2023-02-24,128,210-->
 
 What is the form of our arithmetic constraints?
 ?
@@ -732,7 +732,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-10-15,40,230-->
+<!--SR:2022-11-09,21,210-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-10-13,15,170-->
+<!--SR:2022-10-27,8,150-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -778,17 +778,17 @@ $$
 What is the definition of $\phi$ in a QAP?
 ?
 $\phi = (a_1, ..., a_{\mathscr{l}}) \in \mathbb{F}^{\mathscr{l}}$
-<!--SR:2022-10-10,24,190-->
+<!--SR:2022-12-12,54,190-->
 
 What is the definition of $w$ in a QAP?
 ?
 $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
-<!--SR:2022-10-16,79,250-->
+<!--SR:2023-05-08,201,250-->
 
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-10-15,24,190-->
+<!--SR:2022-11-03,15,170-->
 
 How might relation generators vary in practice?
 ?
@@ -909,7 +909,7 @@ What does Vfy do in a LIP?
 The verifier runs in two stages.
 First is runs a deterministic polynomial time algorithm $t \leftarrow \textbf{Test}(R, \phi)$ to get an arithmetic circuit $t : \mathbb{F}^{m+k} \rightarrow \mathbb{F}^\eta$ of multiplicative depth $d_D$
 It then accepts the proof if and only if $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-10-01,74,270-->
+<!--SR:2023-05-31,224,270-->
 
 What is Test?
 ?
@@ -976,7 +976,7 @@ The dimension in the crs vector $\sigma$ made in Setup.
 What is $n$ in a LIP?
 ?
 The dimension of the simulation trapdoor vector $\tau$ made in Setup.
-<!--SR:2022-10-08,81,270-->
+<!--SR:2022-12-03,45,250-->
 
 What is $\eta$ in a LIP?
 ?
@@ -1153,7 +1153,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-10-02,19,210-->
+<!--SR:2022-10-31,12,190-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-10-10,13,150-->
+<!--SR:2022-10-26,7,130-->
 
 ##### Vfy
 

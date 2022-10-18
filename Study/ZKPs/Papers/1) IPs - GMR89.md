@@ -18,7 +18,7 @@ Interactive proof systems are a method of communicating a proof, they are intera
 What does the "interactive" in interactive proof systems mean?
 ?
 That a verifier asks a series of questions of a prover.
-<!--SR:2022-10-14,119,250-->
+<!--SR:2023-08-19,304,250-->
 
 In what sense are interactive proofs probabilistic?
 ?
@@ -225,7 +225,7 @@ It is a full read-write tape.
 What does an ITM's random tape achieve?
 ?
 It means an ITM can't simply be modelled in an interaction with a more powerful adversary.
-<!--SR:2022-10-03,110,250-->
+<!--SR:2023-08-10,295,250-->
 
 What does an ITM's random tape represent?
 ?
@@ -250,7 +250,7 @@ As a write only tape, where each cell can only be written once, and each cell mu
 What does an ITM's input tape represent?
 ?
 The proposition being thought about.
-<!--SR:2022-10-17,46,230-->
+<!--SR:2023-02-08,112,230-->
 
 ### Interactive Pair
 
@@ -270,7 +270,7 @@ The proposition being thought about.
 What does a pair of interactive Turing machines represent?
 ?
 The possible polite conversations that two (particular) people might have on a proposition.
-<!--SR:2022-10-06,90,210-->
+<!--SR:2023-05-10,203,210-->
 
 How do we define an interactive pair (A, B)?
 ?
@@ -499,7 +499,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-10-08,33,190-->
+<!--SR:2022-12-27,69,190-->
 
 ### Interactive Hierarchy
 
@@ -706,7 +706,7 @@ Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
 for all distinguishers $D$, $|p^d_{x,1} - p^d_{x,2}| < p(|x|) + 1/|x|^k$ for all k and sufficiently long x.
 Where $p:N \to [0,1]$
-<!--SR:2022-10-15,80,190-->
+<!--SR:2023-03-19,151,190-->
 
 
 #### 0-Distinguishability
@@ -734,7 +734,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-10-02,36,150-->
+<!--SR:2022-12-22,64,150-->
 
 What was distinguishability used for before GMR?
 ?
@@ -761,7 +761,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2022-10-02,59,150-->
+<!--SR:2023-01-28,101,150-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -988,7 +988,7 @@ The text of the computation with the prover, containing no more than $f(n)$ extr
 What does it mean practically that the verifier's text has at most $f(n)$ extra knowledge after an interactive proof?
 ?
 That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" text.
-<!--SR:2022-10-03,83,230-->
+<!--SR:2023-05-21,214,230-->
 
 If $L \in KC(0)$, the verifier learns . . . ?
 ?

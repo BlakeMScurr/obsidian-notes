@@ -14,7 +14,7 @@ How do withdrawls work?
 The user splits their private note into a secret part and a nullifier.
 The user generates a zkp of the merkle proof that their nullifier is in the tree.
 The user sends the nullifier and the zkp to the contract who verifies it and sends the user money.
-<!--SR:2022-10-02,77,250-->
+<!--SR:2023-05-24,217,250-->
 
 What are the circom files in tornado cash?
 ?
@@ -42,13 +42,13 @@ What are the top level constructions in merkleTree.circom?
 The HashLeftRight template
 The DualMux template
 The MerkleTreeChecker template
-<!--SR:2022-10-13,80,210-->
+<!--SR:2022-11-29,41,190-->
 
 What does HashLeftRight do?
 ?
 Outputs the mimcsponge hash of two input signals left and right.
 I.e., `computes MiMC([left, right])`
-<!--SR:2022-10-18,88,250-->
+<!--SR:2023-05-26,219,250-->
 
 What is the code for HashLeftRight?
 ?
@@ -71,7 +71,7 @@ What does DualMux do?
 ?
 if `s === 0` returns `[in[0], in[1]]`
 if `s === 1` returns `[in[1], in[0]]`
-<!--SR:2022-10-07,80,250-->
+<!--SR:2023-05-22,215,250-->
 
 What is the code for DualMux?
 ?

@@ -14,7 +14,7 @@ It doesn't matter in which direction you associate the operations, i.e.;
 $$
 \forall a, b, c \in G, a \ast(b\ast c) = (a \ast b) \ast c
 $$
-<!--SR:2022-10-19,202,270-->
+<!--SR:2024-04-16,545,270-->
 
 What is the group identity axiom?
 ?
