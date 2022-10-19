@@ -21,6 +21,7 @@ Overheard.
 What's the non naive approach to signing long messages?
 ?
 Hash the message then sign the hash.
+<!--SR:2022-10-24,4,250-->
 
 ## Properties of Hash Functions
 
@@ -28,10 +29,12 @@ What are our length requirements for a hash function for messages?
 ?
 Arbitrary length inputs.
 Fixed small length outputs.
+<!--SR:2022-10-22,2,250-->
 
 What are the efficiency requirements for a message hash function?
 ?
 Should be fast (much faster than signatures).
+<!--SR:2022-10-24,4,250-->
 
 What are the security requirements for a message hash function?
 ?
@@ -58,14 +61,17 @@ An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(
 What's the online banking example where second preimage resistance is important?
 ?
 Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to the same value as the signed message, he can get the bank to accept that instead.
+<!--SR:2022-10-25,5,270-->
 
 What is another phrase for second preimage resistant?
 ?
 Weak collision resistance.
+<!--SR:2022-10-24,4,250-->
 
 What is the difference between collision resistance and second preimage resistance?
 ?
 in second preimage resistance we have a fixed message we're trying to find a collision for.
+<!--SR:2022-10-22,2,250-->
 
 ??? Does collision resistance imply second preimage resistance?
 
@@ -86,6 +92,7 @@ No.
 Why do all hash functions have collisions?
 ?
 Because the input space is of arbitrary length, and the output is fixed.
+<!--SR:2022-10-24,4,250-->
 
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
@@ -96,10 +103,12 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
+<!--SR:2022-10-21,1,230-->
 
 How does the birthday problem apply to hash functions?
 ?
 It's equivalent to the problem of finding a hash collision.
+<!--SR:2022-10-22,2,250-->
 
 What is the probability:
 That 2 people in a room share a birthday?
@@ -109,6 +118,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
+<!--SR:2022-10-21,1,230-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?
@@ -126,6 +136,7 @@ Where:
 What standards and defacto standards preceeded SHA-3?
 ?
 MD4, MD5, SHA-1, and SHA-2
+<!--SR:2022-10-22,2,250-->
 
 What is the name of the hash that won the SHA-3 competition?
 ?
@@ -139,6 +150,7 @@ Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
 224 bits has the same strength as triple DES
 The other security levels have the same strength as forms of AES
+<!--SR:2022-10-24,4,250-->
 
 ## Keccak Sponge
 
@@ -178,7 +190,7 @@ What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
- 
+
 What is the relationship between keccak and SHA-3?
 ?
 Keccak is a family of functions that includes SHA-3, namely for SHA-3, $b=1600$
@@ -190,10 +202,12 @@ The number of rounds
 What is the relationship between $b$, $c$, and $r$?
 ?
 $b = r + c$
+<!--SR:2022-10-23,3,250-->
 
 How do you make keccak into a PRNG?
 ?
 By continuing to squeeze to create arbitrary length outputs.
+<!--SR:2022-10-22,2,250-->
 
 What is the main purpose of the preprocessing step in keccak?
 ?
@@ -203,6 +217,7 @@ How many times do we run the absorbtion phase (i.e., run the $f$ function and `X
 ?
 As many times as required to get the entire input in.
 I.e., for an input with $m$ bits, it takes $m/r$ rounds.
+<!--SR:2022-10-23,3,250-->
 
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
@@ -213,6 +228,7 @@ Just truncate it.
 What is the keccak-f function broken down into?
 ?
 Rounds.
+<!--SR:2022-10-24,4,250-->
 
 How many rounds in the keccak-f function?
 ?
@@ -227,6 +243,7 @@ What is the round function of keccak-f broken down?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
+<!--SR:2022-10-21,1,230-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
@@ -247,10 +264,12 @@ Which 11 bits are used by $theta$ and how are they combined?
 ?
 The original bit, the 5 bit column "to the left" of the bit  , and the 5 bit column "to the right and one position to the front" of the bit
 original plus/XOR left plus/XOR
+<!--SR:2022-10-23,3,250-->
 
 What do $\rho$ and $\pi$ operate on?
 ?
 64 bit words
+<!--SR:2022-10-23,3,250-->
 
  What are the inputs and outputs of $\rho$ and $\pi$?
  ?
@@ -268,14 +287,17 @@ Rotates each word by a fixed number of positions (defined by a fairly arbitrary 
 What do they call a word in the keccak document?
 ?
 A lane
+<!--SR:2022-10-23,3,250-->
 
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
+<!--SR:2022-10-22,2,250-->
 
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
+<!--SR:2022-10-23,3,250-->
 
 What does $\iota$ do?
 ?
