@@ -17,6 +17,7 @@ What are the main problems with the naive approach to signing long messages?
 Rearrangement.
 Cost.
 Overheard.
+<!--SR:2022-10-23,3,250-->
 
 What's the non naive approach to signing long messages?
 ?
@@ -41,6 +42,7 @@ What are the security requirements for a message hash function?
 Preimage resistance.
 Second preimage resistance.
 Collision resistance.
+<!--SR:2022-10-21,1,230-->
 
 What is preimage resistance also known as?
 ?
@@ -57,6 +59,7 @@ Input
 What does second preimage resistance mean?
 ?
 An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(x_1) = z$
+<!--SR:2022-10-24,4,250-->
 
 What's the online banking example where second preimage resistance is important?
 ?
@@ -80,6 +83,7 @@ in second preimage resistance we have a fixed message we're trying to find a col
 What is an example of a collision attack (where a hash function doesn't have collision resistance)?
 ?
 Suppose an attacker (think of a malicious crypto site) gets someone to sign the hash of a benign transaction, i.e., a swap they want to do. The malicious site gets metamask to show the benign transaction. However, there is another malicious transaction that hashes to the same value, so the malicious site can send that to the blockchain instead (racing metamask and the user to the chain).
+<!--SR:2022-10-24,4,250-->
 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
@@ -97,6 +101,7 @@ Because the input space is of arbitrary length, and the output is fixed.
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
 By making it *hard* to create collisions, rather than impossible.
+<!--SR:2022-10-24,4,250-->
 
 Suppose a hash function has a range of size n = 2^b, what is the *approximate and natural* number of times that an attacker needs to run the hash to brute force a second preimage collision? If they do that, what is the exact probability they have  a collision, and the limit of that probability as n approaches infinity?
 ?
@@ -127,6 +132,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
+<!--SR:2022-10-21,1,230-->
 
 
 # SHA-3
@@ -141,6 +147,7 @@ MD4, MD5, SHA-1, and SHA-2
 What is the name of the hash that won the SHA-3 competition?
 ?
 Keccak
+<!--SR:2022-10-24,4,250-->
 
 What are the possible SHA-3 output lengths?
 ?
@@ -157,15 +164,18 @@ The other security levels have the same strength as forms of AES
 What kind of construction does keccak use?
 ?
 A sponge construction.
+<!--SR:2022-10-22,2,250-->
 
 Why is it called a "sponge" construction?
 ?
 Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
+<!--SR:2022-10-22,2,250-->
 
 What are the phases of a sponge construction?
 ?
 Absorbtion (taking in input bits)
 Squeezing (output is produced)
+<!--SR:2022-10-22,2,250-->
 
 What are the internal parameters of keccak?
 ?
@@ -173,6 +183,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
+<!--SR:2022-10-21,1,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -212,6 +223,7 @@ By continuing to squeeze to create arbitrary length outputs.
 What is the main purpose of the preprocessing step in keccak?
 ?
 Padding.
+<!--SR:2022-10-22,2,250-->
 
 How many times do we run the absorbtion phase (i.e., run the $f$ function and `XOR` the new input)?
 ?
@@ -222,6 +234,7 @@ I.e., for an input with $m$ bits, it takes $m/r$ rounds.
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
 Just truncate it.
+<!--SR:2022-10-24,4,250-->
 
 ## Keccak-f
 
@@ -237,6 +250,7 @@ $r$ (24 in SHA-3)
 What is the input and output size of keccak-f?
 ?
 $b$ for bouth input and output (1600 in SHA-3)
+<!--SR:2022-10-23,3,250-->
 
 What is the round function of keccak-f broken down?
 ?
@@ -248,6 +262,7 @@ Theta, rho, pi, chi, and iota
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
 Same as the round function, $b$ for both input and output (1600 for SHA-3)
+<!--SR:2022-10-23,3,250-->
 
 How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \iota$ functions?
 ?
@@ -259,6 +274,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
+<!--SR:2022-10-21,1,230-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
@@ -279,6 +295,7 @@ The input is called $A$ and the output is called $B$
 Why is $\rho$ named $\rho$?
 ?
 Because it involves rotation
+<!--SR:2022-10-23,3,250-->
 
 What does $rho$ do?
 ?
@@ -302,6 +319,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
+<!--SR:2022-10-21,1,230-->
 
 
 
