@@ -120,3 +120,167 @@ Where:
 
 
 # SHA-3
+
+## Background
+
+What standards and defacto standards preceeded SHA-3?
+?
+MD4, MD5, SHA-1, and SHA-2
+
+What is the name of the hash that won the SHA-3 competition?
+?
+Keccak
+
+What are the possible SHA-3 output lengths?
+?
+224, 256, 384, and 512
+
+Why are 224 and 384 chosen as SHA-3 output lengths?
+?
+224 bits has the same strength as triple DES
+The other security levels have the same strength as forms of AES
+
+## Keccak Sponge
+
+What kind of construction does keccak use?
+?
+A sponge construction.
+
+Why is it called a "sponge" construction?
+?
+Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
+
+What are the phases of a sponge construction?
+?
+Absorbtion (taking in input bits)
+Squeezing (output is produced)
+
+What are the internal parameters of keccak?
+?
+The state length $b$ 
+The number of rounds $n_r$
+The bitrate, or output block size $r$
+The capacity $c$
+
+What are the parameters of SHA-3?
+?
+$b = 1600$
+$n_r = 24$
+output length $\in \{224, 256, 348, 512\}$
+$r \in \{1152, 1085, 832, 576\}$
+$c \in \{448, 512, 768, 1024\}$
+
+What does $b$ represent?
+?
+The state length.
+
+What formula does $b$ follow, and what are its possible values?
+?
+$b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
+${25, 50, 100, 200, 400, 800, 1600}$
+ 
+What is the relationship between keccak and SHA-3?
+?
+Keccak is a family of functions that includes SHA-3, namely for SHA-3, $b=1600$
+
+What does $n_r$ represent?
+?
+The number of rounds
+
+What is the relationship between $b$, $c$, and $r$?
+?
+$b = r + c$
+
+How do you make keccak into a PRNG?
+?
+By continuing to squeeze to create arbitrary length outputs.
+
+What is the main purpose of the preprocessing step in keccak?
+?
+Padding.
+
+How many times do we run the absorbtion phase (i.e., run the $f$ function and `XOR` the new input)?
+?
+As many times as required to get the entire input in.
+I.e., for an input with $m$ bits, it takes $m/r$ rounds.
+
+If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
+?
+Just truncate it.
+
+## Keccak-f
+
+What is the keccak-f function broken down into?
+?
+Rounds.
+
+How many rounds in the keccak-f function?
+?
+$r$ (24 in SHA-3)
+
+What is the input and output size of keccak-f?
+?
+$b$ for bouth input and output (1600 in SHA-3)
+
+What is the round function of keccak-f broken down?
+?
+5 atomic functions:
+$\theta, \rho, \pi, \chi, \iota$
+Theta, rho, pi, chi, and iota
+
+What is the input and output size of the sub functions of the keccak-f round functions?
+?
+Same as the round function, $b$ for both input and output (1600 for SHA-3)
+
+How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \iota$ functions?
+?
+As a 3-dimensional array
+A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
+
+#### Greek Functions
+
+What does $theta$ do, roughly?
+?
+Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
+
+Which 11 bits are used by $theta$ and how are they combined?
+?
+The original bit, the 5 bit column "to the left" of the bit  , and the 5 bit column "to the right and one position to the front" of the bit
+original plus/XOR left plus/XOR
+
+What do $\rho$ and $\pi$ operate on?
+?
+64 bit words
+
+ What are the inputs and outputs of $\rho$ and $\pi$?
+ ?
+ An array of $[x,y]$ coordinates where $x,y \in 0,1,2,3,4$
+The input is called $A$ and the output is called $B$
+
+Why is $\rho$ named $\rho$?
+?
+Because it involves rotation
+
+What does $rho$ do?
+?
+Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
+
+What do they call a word in the keccak document?
+?
+A lane
+
+What does $\pi$ do?
+?
+Permutes all the words using a simple relation
+
+What does $\chi$ do?
+?
+Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
+
+What does $\iota$ do?
+?
+Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
+
+
+
+
