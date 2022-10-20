@@ -44,12 +44,12 @@ What are the security requirements for a message hash function?
 Preimage resistance.
 Second preimage resistance.
 Collision resistance.
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-23,2,230-->
 
 What is preimage resistance also known as?
 ?
 One-wayness
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-23,2,230-->
 
 What does preimage resistance mean?
 ?
@@ -115,7 +115,7 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-24,3,230-->
 
 How does the birthday problem apply to hash functions?
 ?
@@ -130,7 +130,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-22,1,210-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-24,3,230-->
 
 
 # SHA-3
@@ -159,7 +159,7 @@ Keccak
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-24,3,230-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
@@ -191,7 +191,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-23,2,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-22,1,210-->
 
 What does $b$ represent?
 ?
@@ -211,7 +211,7 @@ What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-23,2,230-->
 
 What is the relationship between keccak and SHA-3?
 ?
@@ -271,7 +271,7 @@ What is the round function of keccak-f broken down?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-22,1,210-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
@@ -289,7 +289,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-24,3,230-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:2022-10-21,1,230-->
+<!--SR:2022-10-22,1,210-->
 
 
 

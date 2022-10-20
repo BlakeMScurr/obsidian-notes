@@ -1095,7 +1095,7 @@ Any expression except the conditional expression.
 What's an example of a `log` instruction?
 ?
 `log(123);`
-<!--SR:2022-10-21,94,250-->
+<!--SR:2023-06-13,235,250-->
 
 # Circom Insights
 ## Compiler

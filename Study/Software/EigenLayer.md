@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2022-10-17,37,230-->
+<!--SR:2023-01-23,94,230-->
 
 What does $T$ denote?
 ?
@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2022-10-20,35,230-->
+<!--SR:2023-01-07,78,230-->
 
 What does $S_j$ denote?
 ?
@@ -51,7 +51,7 @@ The set of stakers who have staked for the task $j$.
 What does $\alpha_j$ denote?
 ?
 The fraction of stake require to corrupt task $j$.
-<!--SR:2022-10-09,42,270-->
+<!--SR:2023-02-28,130,270-->
 
 What does $U$ denote?
 ?
@@ -93,12 +93,12 @@ $\bigcap_{j \in V} S_j^c$
 What does $c(V)$ denote?
 ?
 The cost of corruption for a subset of tasks $V$.
-<!--SR:2022-10-21,46,270-->
+<!--SR:2023-02-22,124,270-->
 
 How is $c(V)$ defined?
 ?
 $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
-<!--SR:2022-10-11,39,250-->
+<!--SR:2022-11-11,21,230-->
 
 What does $p_j$ denote?
 ?
@@ -140,7 +140,7 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-10-02,27,210-->
+<!--SR:2022-11-08,18,190-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-16,11,210-->
+<!--SR:2022-10-28,7,190-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-16,11,210-->
+<!--SR:2022-10-28,7,190-->
 
 
 ??? How do the steps in line (10) work?

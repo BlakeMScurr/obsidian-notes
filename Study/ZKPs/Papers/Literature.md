@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-10-21,3,250-->
+<!--SR:2022-10-29,8,250-->
 
 ## BGKW88
 
@@ -73,7 +73,7 @@ Lance Fortnow, John Rompel, and Michael Sipser.
 What does FRS88 contribute?
 ?
 That interaction with two provers is equivalent to interaction with one prover plus oracle access to a proof string. $MIP[poly(n), poly(n)] \subseteq NEXP$.
-<!--SR:2022-10-20,69,170-->
+<!--SR:2023-02-14,116,170-->
 
 ## BFL90
 
@@ -182,7 +182,7 @@ Efficient noninteractive proof systems for bilinear groups
 What did GS12 contribute?
 ?
 Practical efficient NIZK and NI witness indistinguishable proofs by satisfying equations over bilinear groups rather than reducing to circuit satisfiability.
-<!--SR:2022-10-20,74,170-->
+<!--SR:2023-02-25,127,170-->
 
 ??? why do we use reductions to circuits today, i.e., circom? Especially since it uses groth16!
 
@@ -214,7 +214,7 @@ Linear algebra with sub-linear zero-knowledge arguments
 What did Gro09 contribute?
 ?
 Given commitments to matrices, gives a sublinear proof showing their product. Arithmetic circuits can be formed using these matrices, giving a more efficient reduction than earlier proof systems for circuit satisfiability
-<!--SR:2022-10-21,71,170-->
+<!--SR:2023-02-18,120,170-->
 
 Who are the authors of Groth16?
 ?

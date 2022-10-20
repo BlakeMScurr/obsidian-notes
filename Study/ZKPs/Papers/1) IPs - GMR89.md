@@ -215,7 +215,7 @@ Input tape
 How is an ITM's listening tape implemented?
 ?
 It is read only.
-<!--SR:2022-10-07,113,250-->
+<!--SR:2023-08-17,300,250-->
 
 How is an ITM's work tape implemented?
 ?
@@ -235,7 +235,7 @@ The irreducibility/unmodelability of the human mind, we can think of this as our
 How is an ITM's random tape implemented?
 ?
 It is readonly from left to right.
-<!--SR:2022-10-15,115,250-->
+<!--SR:2023-08-12,295,250-->
 
 How can we think of a read from an ITM's random tape?
 ?
@@ -332,12 +332,12 @@ As a language $\mathcal{L} \subseteq \{0,1\}^*$
 How is the "idea" in an interactive proof system formalised?
 ?
 As the input $x \in \mathcal{L}$
-<!--SR:2022-10-11,98,210-->
+<!--SR:2023-06-01,223,210-->
 
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-10-06,49,130-->
+<!--SR:2022-11-15,25,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -378,7 +378,7 @@ The integers between 1 and m relatively prime to m.
 $a \in \mathbb{Z}^*_m$ is a quadratic residue if . . . ?
 ?
 $a = x^2\ mod\ m$ for some $x \in \mathbb{Z}^*_m$
-<!--SR:2022-10-16,116,250-->
+<!--SR:2023-08-13,296,250-->
 
 $a \in \mathbb{Z}^*_m$ is a quadratic non-residue if . . . ?
 ?
@@ -582,7 +582,7 @@ What does GMR study with respect to knowledge?
 ?
 What a polynomially bounded participant can learn from communication.
 The quantity of knowledge required to prove a theorem.
-<!--SR:2022-10-03,37,190-->
+<!--SR:2022-11-10,20,170-->
 
 ### Distinguishing
 #### Ensembles
@@ -602,7 +602,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2022-10-12,59,150-->
+<!--SR:2023-01-27,98,150-->
 
 What is an I-c-ensemble used for?
 ?
@@ -827,7 +827,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2022-10-18,57,170-->
+<!--SR:2023-01-26,97,170-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -919,7 +919,7 @@ More than Zero if $QNR \notin PP$, namely the residuosity of each $t_i$
 How does B' work in naive QNR?
 ?
 B' is an adversarial verifier trying to learn additional knowledge. B' can learn the unknown residuosity of some $t_i$ by sending it to A.
-<!--SR:2022-10-07,46,230-->
+<!--SR:2023-02-21,123,230-->
 ### Knowledge Complexity
 #### Knowledge conveyed by a Theorem Proof
 
@@ -993,7 +993,7 @@ That we can always make texts $(1-1/2^{f(n)})$-distinguishable from the "real" t
 If $L \in KC(0)$, the verifier learns . . . ?
 ?
 That $x \in L$, but the text is of no other use, and could in fact the text could easily have been generated without the prover.
-<!--SR:2022-10-05,99,230-->
+<!--SR:2023-06-29,251,230-->
 
 #### Applications of Knowledge Complexity
 
@@ -1061,7 +1061,7 @@ If KC(0)-BPP is non empty, then there are non-trivial zero knowledge proofs.
 What set (subtraction) preceding GMR, is analogous to KC(0)-BPP for GMR and why?
 ?
 RP-P, there appears to be a language, namely primality testing, which may be in RP-P (it is certainly in RP, and maybe P). A similar language would be useful to distinguish KC(0) and BPP.
-<!--SR:2022-10-16,91,230-->
+<!--SR:2023-05-27,218,230-->
 
 #### Known languages in KC(0)-BPP
 * There are 2 languages known to be in KC(0)-BPP
@@ -1221,7 +1221,7 @@ $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
 What happens in step 1?
 ?
 $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
-<!--SR:2022-10-18,113,250-->
+<!--SR:2023-07-20,272,250-->
 
 ###### x
 
@@ -1246,13 +1246,13 @@ If $C_x = 0$, what are $x$ and the type of $x$?
 ?
 $x = r_0^2 \mod n$
 $x$ is of  type 1
-<!--SR:2022-10-04,103,250-->
+<!--SR:2023-07-27,279,250-->
 
 If $C_x = 1$, what are $x$ and the type of $x$?
 ?
 $x = y \cdot r_0^2 \mod n$
 $x$ is of  type 2
-<!--SR:2022-10-21,114,250-->
+<!--SR:2023-08-02,285,250-->
 
 ###### T and S
 
@@ -1307,7 +1307,7 @@ Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2022-10-14,53,150-->
+<!--SR:2023-01-14,85,150-->
 
 How large is $Z$?
 ?
@@ -1317,7 +1317,7 @@ $n$
 How does $A$ send $Z$ to $B$?
 ?
 However it pleases - no restriction.
-<!--SR:2022-10-21,42,210-->
+<!--SR:2023-01-17,88,210-->
 
 ??? why is $x$ chosen $mod\ n$ rather than $mod\ m$?
 
@@ -1380,7 +1380,7 @@ Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0 ^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-10-15,88,230-->
+<!--SR:2023-05-18,209,230-->
 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1390,7 +1390,7 @@ Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in Y$, then $\sqrt{x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-10-02,89,230-->
+<!--SR:2023-05-29,220,230-->
 
 What are the two forms of numbers in $X' \cup Y'$?
 ?
@@ -1586,7 +1586,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-10-20,97,230-->
+<!--SR:2023-06-02,224,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf
@@ -1643,7 +1643,7 @@ $C_x = 1$ and $w \in Y'$
 How do we show $w \in X'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 ?
 $w = r_0r_i = \sqrt{t_ix} = \sqrt{r_0^2r_i^2}$
-<!--SR:2022-10-20,97,230-->
+<!--SR:2023-06-02,224,230-->
 
 How do we show $w \in Y'$ is a random square root of a random square if $C_x = 0$ and $(y, m) \notin QNR$?
 asdf

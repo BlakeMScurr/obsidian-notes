@@ -813,14 +813,14 @@ Data with a known size at compile time.
 Where is data with unknown size at compile time stored?
 ?
 The heap.
-<!--SR:2022-10-21,38,250-->
+<!--SR:2023-01-24,95,250-->
 
 How does allocating on the heap work, roughly?
 ?
 You request a certain amount of memory.
 The allocator finds some memory.
 The allocator returns a _pointer_, which is the address of the location.
-<!--SR:2022-10-21,36,230-->
+<!--SR:2023-01-08,79,230-->
 
 How is the stack used by functions?
 ?
@@ -1051,7 +1051,7 @@ Or in the file `src/garden/vegetables/mod.rs`
 When can you refer to code in another module?
 ?
 Whenever that module is part of the same crate, as long as privacy allows.
-<!--SR:2022-10-21,35,230-->
+<!--SR:2023-01-10,81,230-->
 
 How do you make code in a module public and private?
 ?
@@ -1091,7 +1091,7 @@ What is the path delimiter?
 Are modules private or public by default?
 ?
 Private
-<!--SR:2022-10-21,37,250-->
+<!--SR:2023-01-25,96,250-->
 
 Are functions, structs, etc private or public by default?
 ?

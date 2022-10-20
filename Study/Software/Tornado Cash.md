@@ -28,7 +28,7 @@ What does withdraw.circom include?
 circomlib/circuits/bitify.circom
 circomlib/circuits/pedersen.circom
 merkleTree.circom
-<!--SR:2022-10-21,24,190-->
+<!--SR:2022-12-09,49,190-->
 
 ## MerkleTree
 
@@ -65,7 +65,7 @@ template HashLeftRight(){
 	out <== mimc.outs[0];
 }
 ```
-<!--SR:2022-10-21,87,230-->
+<!--SR:2023-07-31,283,250-->
 
 What does DualMux do?
 ?

@@ -55,7 +55,7 @@ A method on iterators that makes it step through by a certain number of steps. I
 What is `get_mut`?
 ?
 A method on collections that gets a mutable reference to the element at an index. The same as `get` except the returned value is mutable.
-<!--SR:2022-10-21,16,250-->
+<!--SR:2022-11-30,40,250-->
 
 What is `with_capacity`?
 ?

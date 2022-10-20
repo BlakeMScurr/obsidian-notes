@@ -96,7 +96,7 @@ A malicious prover cannot convince the verifier of a false statement.
 Describe the zero knowledge property.
 ?
 The proof does not reveal anything but the truth of the statement, in particular it does not reveal the prover's witness.
-<!--SR:2022-10-21,77,190-->
+<!--SR:2023-03-09,139,190-->
 
 How did Blum, Feldman, and Micali extend the notion of interactive proofs?
 ?
@@ -137,7 +137,7 @@ Constant size NIZK arguments based on progression-free sets to reduce the size o
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-10-18,35,170-->
+<!--SR:2022-12-22,62,170-->
 
 UNFINISHED
 
@@ -376,7 +376,7 @@ The simulator takes as input a simulation trapdoor and statement $\phi$, and out
 What is a non-interactive argument?
 ?
 We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathcal{R}$ if it has perfect completeness and computational soundness.
-<!--SR:2022-10-20,48,230-->
+<!--SR:2023-02-10,112,230-->
 
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
@@ -990,7 +990,7 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:2022-10-09,50,230-->
+<!--SR:2022-11-18,28,210-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
@@ -1042,7 +1042,7 @@ Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the 
 How does the prover in a compiled LIP compute the proof?
 ?
 With multi-exponentiations of group elements, corresponding to linear operations on the field elements in $\sigma$ (where $\sigma$ refers to the crs of the LIP).
-<!--SR:2022-10-12,35,170-->
+<!--SR:2022-12-25,65,170-->
 
 How does the verifier in a compiled LIP check the argument?
 ?
@@ -1193,7 +1193,7 @@ $\pi = \Pi\sigma = (A, B, C)$
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-10-17,26,170-->
+<!--SR:2022-12-10,50,170-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
