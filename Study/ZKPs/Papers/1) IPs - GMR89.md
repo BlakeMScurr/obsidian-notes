@@ -541,7 +541,7 @@ That it doesn't collapse. I.e., each layer is a strict subset of the next: $IP[k
 What is communication for, according to GMR?
 ?
 Transferring knowledge.
-<!--SR:2022-10-17,120,250-->
+<!--SR:2023-08-20,304,250-->
 
 What is MCF?
 ?
@@ -744,7 +744,7 @@ Probabilistic encryption and pseudo random number generation.
 In what sense is zkQNR indistinguishable?
 ?
 Strictly more than traditional indistinguishability: for all $|x|^c$ bit string are equal, except a set of strings whose total probability doesn't exceed $1/2^{d|x|}$ for some d between 0 and 1.
-<!--SR:2022-10-10,97,230-->
+<!--SR:2023-06-12,235,230-->
 
 ??? how does this further notion of indistinguishability map onto my understanding of the proof for the zero knowledge of the protocol?
 
@@ -958,7 +958,7 @@ $L \in KC(f(n))$
 $L$ has knowledge complexity $f(n)$ if . . . ?
 ?
 When restricting inputs of $(A, B)$ to the strings in $L$, A communicates at most $f(n)$ bits of knowledge.
-<!--SR:2022-10-09,96,230-->
+<!--SR:2023-06-10,233,230-->
 
 #### Zero *extra* knowlege
  * ??? Is it reasonable to call the text of a zero knowledge computation "irrelevant" for any other purpose? It may be useful for speeding up polynomial computations.
@@ -1297,7 +1297,7 @@ As $T \cup S$ in a random order.
 What happens in step 2?
 ?
 $A$ constructs $Z$ and sends it to $B$.
-<!--SR:2022-10-11,106,250-->
+<!--SR:2023-07-23,276,250-->
 
 What is $Z$ for?
 ?

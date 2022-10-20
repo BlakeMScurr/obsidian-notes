@@ -6,7 +6,7 @@ What are the axioms of a group called?
 Assosiativity
 Identity
 Inverse
-<!--SR:2022-10-20,203,270-->
+<!--SR:2024-04-20,548,270-->
 
 What is the group associativity axiom?
 ?

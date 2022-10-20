@@ -15,7 +15,7 @@ How do you compile a rust program, say `main.rs`?
 How do you create a new cargo project, called, say `hello_world`?
 ?
 `cargo new hello_world`
-<!--SR:2022-10-11,37,290-->
+<!--SR:2023-02-17,120,290-->
 
 How do you run a cargo project?
 ?
@@ -102,7 +102,7 @@ What keyword is used to create variables?
 How do you create a new mutable variable `b` and set it to `5`?
 ?
 `let mut b = 5;`
-<!--SR:2022-10-09,34,270-->
+<!--SR:2023-02-04,107,270-->
 
 What is `String`?
 ?
@@ -137,7 +137,7 @@ An instance of `std: :io: :Stdin`, which is a type that represents a handle to t
 What is `read_line`?
 ?
 A method on the standard input handle to get input from the user.
-<!--SR:2022-10-19,42,290-->
+<!--SR:2023-02-20,123,290-->
 
 How do you get the user's input into a string called `guess`?
 ?
@@ -224,7 +224,7 @@ cannot assign twice to immutable variable `x`
 Why is it useful to create immutable variables in Rust?
 ?
 You might write code that assumes that a variable doesn't change. One part of the code may assume that the variable will never change, and if it does change that will introduce a bug. So it's useful to have the compiler ensure that doesn't happen.
-<!--SR:2022-10-20,39,270-->
+<!--SR:2023-02-02,105,270-->
 
 When are constants evalutated?
 ?
@@ -252,7 +252,7 @@ How is shadowing with mutable variables different to having mutable varialbes?
 ?
 The variables are still immutable after the shadowing has been done.
 With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
-<!--SR:2022-10-20,37,250-->
+<!--SR:2023-01-23,95,250-->
 
 How do you shadow a variable?
 ?
@@ -370,7 +370,7 @@ What is the prefix for octal number literals?
 What is the prefix for binary number literals?
 ?
 `0b`
-<!--SR:2022-10-19,34,230-->
+<!--SR:2023-01-04,76,230-->
 
 What is the syntax for byte number literals?
 ?
@@ -728,7 +728,7 @@ Looping while a condition is true, which saves code compared to implementing the
 Can you use labels and breaks with a `while` loop?
 ?
 Yes.
-<!--SR:2022-10-20,35,250-->
+<!--SR:2023-01-12,84,250-->
 
 Can `while` loops return a value?
 ?
@@ -826,7 +826,7 @@ How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
-<!--SR:2022-10-19,30,210-->
+<!--SR:2022-12-23,64,210-->
 
 What problems does the heap have, that ownership addresses?
 ?
@@ -1039,14 +1039,14 @@ Or in the file `src/garden/mod.rs`
 Where can you declare submodules?
 ?
 Any file but the crate root.
-<!--SR:2022-10-20,31,210-->
+<!--SR:2022-12-24,65,210-->
 
 Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
 ?
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:2022-10-17,12,230-->
+<!--SR:2022-10-27,7,210-->
 
 When can you refer to code in another module?
 ?
@@ -1132,6 +1132,7 @@ How do you use `use` paths idiomatically?
 What keyword do we use to create aliases?
 ?
 `as`
+<!--SR:2022-10-23,3,250-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1204,7 +1205,7 @@ How can you find the stacktrace for a panic?
 ?
 By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
 `RUST_BACKTRACE=1 cargo run`
-<!--SR:2022-10-08,26,230-->
+<!--SR:2022-12-29,70,230-->
 
 ## Result
 
@@ -1251,7 +1252,7 @@ Yes.
 How do you match on the "file not found" error type?
 ?
 ```Rust
-use std::io::ErrorKind;
+use std::fs::ErrorKind;
 // ...
 fn main() {
 	// ...
@@ -1260,7 +1261,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:2022-10-19,14,170-->
+<!--SR:2022-11-14,25,170-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1344,7 +1345,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-10-09,19,170-->
+<!--SR:2022-12-04,45,170-->
 
 ## When to Panic!
 
@@ -1369,7 +1370,7 @@ What do traits do, broadly, as opposed to generics?
 Traits abstract/generalise over behaviour.
 Generics let different concrete types use the same behaviour with the same function call.
 Traits let different concrete types use different behaviour with the same function call.
-<!--SR:2022-10-20,36,250-->
+<!--SR:2023-01-22,94,250-->
 
 What are lifetimes?
 ?
@@ -1449,7 +1450,7 @@ mod tests {
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
 That there are no benchmark tests. I.e., tests to measure performance.
-<!--SR:2022-10-06,27,250-->
+<!--SR:2023-01-09,81,250-->
 
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
@@ -1513,7 +1514,7 @@ assert!(
 	result
 );
 ```
-<!--SR:2022-10-10,30,250-->
+<!--SR:2023-01-16,88,250-->
 
 How do you test that a function panics?
 ?
@@ -1563,6 +1564,6 @@ How do you assert that a result is an err?
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?
 No
-<!--SR:2022-10-14,33,250-->
+<!--SR:2023-01-21,93,250-->
 
 ## How Tests are Run

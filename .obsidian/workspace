@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 193.49999809265137,
-    "collapsed": true
+    "width": 193.49999809265137
   },
   "right": {
     "id": "df608e470bfd07c0",
@@ -99,6 +98,7 @@
   "active": "114a0b435497d899",
   "lastOpenFiles": [
     "Study/Programming/Rust/Book.md",
+    "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Halo2/Halo2.md",
@@ -106,7 +106,6 @@
     "Study/Programming/Rust/Tidbits from Review.md",
     "Study/Biology/Huberman/Fasting Episode 41.md",
     "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
-    "Study/ZKPs/Papers/1) IPs - GMR89.md",
-    "Study/Software/EigenLayer.md"
+    "Study/ZKPs/Papers/1) IPs - GMR89.md"
   ]
 }

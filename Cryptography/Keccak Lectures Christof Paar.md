@@ -7,10 +7,12 @@
 What is the motiviating example for hash functions?
 ?
 Hashing a message to be signed
+<!--SR:2022-10-22,2,250-->
 
 What's the naive approach to signing long messages?
 ?
 Signing each chunk individually.
+<!--SR:2022-10-22,2,250-->
 
 What are the main problems with the naive approach to signing long messages?
 ?
@@ -47,14 +49,17 @@ Collision resistance.
 What is preimage resistance also known as?
 ?
 One-wayness
+<!--SR:2022-10-21,1,230-->
 
-Whatdoes preimage resistance mean?
+What does preimage resistance mean?
 ?
 That we can't compute $x$ from $h(x)$.
+<!--SR:2022-10-24,4,250-->
 
 What does preimage mean, simply?
 ?
 Input
+<!--SR:2022-10-23,3,250-->
 
 What does second preimage resistance mean?
 ?
@@ -88,10 +93,12 @@ Suppose an attacker (think of a malicious crypto site) gets someone to sign the 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
 Collision attacks take the square root of the amount of steps as a preimage attack.
+<!--SR:2022-10-23,3,250-->
 
 Can you build a hash function without collisions?
 ?
 No.
+<!--SR:2022-10-23,3,250-->
 
 Why do all hash functions have collisions?
 ?
@@ -152,6 +159,7 @@ Keccak
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
+<!--SR:2022-10-21,1,230-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
@@ -192,23 +200,28 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
+<!--SR:2022-10-21,1,230-->
 
 What does $b$ represent?
 ?
 The state length.
+<!--SR:2022-10-24,4,250-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
+<!--SR:2022-10-21,1,230-->
 
 What is the relationship between keccak and SHA-3?
 ?
 Keccak is a family of functions that includes SHA-3, namely for SHA-3, $b=1600$
+<!--SR:2022-10-24,4,250-->
 
 What does $n_r$ represent?
 ?
 The number of rounds
+<!--SR:2022-10-24,4,250-->
 
 What is the relationship between $b$, $c$, and $r$?
 ?
@@ -246,6 +259,7 @@ Rounds.
 How many rounds in the keccak-f function?
 ?
 $r$ (24 in SHA-3)
+<!--SR:2022-10-23,3,250-->
 
 What is the input and output size of keccak-f?
 ?
@@ -268,6 +282,7 @@ How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \i
 ?
 As a 3-dimensional array
 A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
+<!--SR:2022-10-22,2,250-->
 
 #### Greek Functions
 
@@ -300,6 +315,7 @@ Because it involves rotation
 What does $rho$ do?
 ?
 Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
+<!--SR:2022-10-22,2,250-->
 
 What do they call a word in the keccak document?
 ?

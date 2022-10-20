@@ -158,7 +158,7 @@ That two functions approach each other exponentially.
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-10-19,19,150-->
+<!--SR:2022-12-05,46,170-->
 
 What is the limit definition of $\omega$?
 ?
@@ -420,7 +420,7 @@ A malicious verifier trying to learn extra information from the proof.
 What does the adversary in the definition of perfect zero knowledge do?
 ?
 Tries to distinguish between the proof from prover and the proof from simulator.
-<!--SR:2022-10-16,87,270-->
+<!--SR:2023-06-28,251,270-->
 
 What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
@@ -552,7 +552,7 @@ Bitansky et al BCCT13.
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
 Preprocessing SNARKs.
-<!--SR:2022-10-17,79,250-->
+<!--SR:2023-05-09,201,250-->
 
 #### Benign Relation Generators
 
