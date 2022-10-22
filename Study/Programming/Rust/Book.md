@@ -161,7 +161,7 @@ Return the appropriate value if the `Result` is an `Ok` value.
 How can you use placeholders to print the value "x is 5", where the varialbe `x` has the value `5`?
 ?
 `println!("x is {x}");`
-<!--SR:2022-10-22,43,270-->
+<!--SR:2023-02-15,116,270-->
 
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
@@ -886,7 +886,7 @@ println!("{}, world!", s1);
 ```
 ?
 `s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
-<!--SR:2022-10-22,38,250-->
+<!--SR:2023-01-29,99,250-->
 
 Why can't strings be accessed after they're moved?
 ?
@@ -973,7 +973,7 @@ Packages
 Crates
 Modules
 Paths
-<!--SR:2022-10-22,37,250-->
+<!--SR:2023-01-25,95,250-->
 
 What is a crate?
 ?
@@ -1121,7 +1121,7 @@ With the `use` keyword
 Do `use` shortcuts apply in child modules defined in the same file?
 ?
 No
-<!--SR:2022-10-22,36,230-->
+<!--SR:2023-01-13,83,230-->
 
 How do you use `use` paths idiomatically?
 ?
@@ -1526,7 +1526,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-10-22,37,250-->
+<!--SR:2023-01-24,94,250-->
 
 How do you test that a function panics with a specific message?
 ?

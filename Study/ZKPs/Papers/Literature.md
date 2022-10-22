@@ -7,7 +7,7 @@
 What is GMR89's title?
 ?
 The Knowledge Complexity of Interactive Proof-Systems.
-<!--SR:2022-10-22,128,250-->
+<!--SR:2023-09-07,320,250-->
 
 Who are the authors of GMR89?
 ?
@@ -132,12 +132,15 @@ New techniques for noninteractive zero-knowledge
 
 What did GOS12 contribute?
 ?
-- Introduced pairing based NIZKs. 
- - Reduced CRS size. 
+Introduced pairing based NIZKs. 
+<!--SR:2022-10-28,6,130-->
+
+%%Do I care about the rest of the specifics? Probably not, as a practicioner and circuit writer, rather than as a scientist%%
+ %%- Reduced CRS size. 
  - First perfect NIZK for all NP. 
  - First universally composable NIZK argument for all NP in the presence of an adaptive adversary. 
- - First non-interactive zap for all NP based on a standard cryptographic security assumption.
-<!--SR:2022-10-22,4,130-->
+ - First non-interactive zap for all NP based on a standard cryptographic security assumption.%%
+
 
 Who are the authors of GOS06?
 ?
@@ -251,7 +254,7 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-10-22,25,230-->
+<!--SR:2022-12-20,59,230-->
 
 ### MBKM19
 

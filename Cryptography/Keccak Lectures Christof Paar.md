@@ -7,12 +7,12 @@
 What is the motiviating example for hash functions?
 ?
 Hashing a message to be signed
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-27,5,250-->
 
 What's the naive approach to signing long messages?
 ?
 Signing each chunk individually.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-27,5,250-->
 
 What are the main problems with the naive approach to signing long messages?
 ?
@@ -32,7 +32,7 @@ What are our length requirements for a hash function for messages?
 ?
 Arbitrary length inputs.
 Fixed small length outputs.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-26,4,250-->
 
 What are the efficiency requirements for a message hash function?
 ?
@@ -79,7 +79,7 @@ Weak collision resistance.
 What is the difference between collision resistance and second preimage resistance?
 ?
 in second preimage resistance we have a fixed message we're trying to find a collision for.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-26,4,250-->
 
 ??? Does collision resistance imply second preimage resistance?
 
@@ -120,7 +120,7 @@ With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
 How does the birthday problem apply to hash functions?
 ?
 It's equivalent to the problem of finding a hash collision.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-28,6,250-->
 
 What is the probability:
 That 2 people in a room share a birthday?
@@ -130,7 +130,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
-<!--SR:2022-10-22,1,210-->
+<!--SR:2022-10-25,3,210-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?
@@ -149,7 +149,7 @@ Where:
 What standards and defacto standards preceeded SHA-3?
 ?
 MD4, MD5, SHA-1, and SHA-2
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-26,4,250-->
 
 What is the name of the hash that won the SHA-3 competition?
 ?
@@ -172,18 +172,18 @@ The other security levels have the same strength as forms of AES
 What kind of construction does keccak use?
 ?
 A sponge construction.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-27,5,250-->
 
 Why is it called a "sponge" construction?
 ?
 Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-28,6,250-->
 
 What are the phases of a sponge construction?
 ?
 Absorbtion (taking in input bits)
 Squeezing (output is produced)
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-26,4,250-->
 
 What are the internal parameters of keccak?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-22,1,210-->
+<!--SR:2022-10-23,1,190-->
 
 What does $b$ represent?
 ?
@@ -231,12 +231,12 @@ $b = r + c$
 How do you make keccak into a PRNG?
 ?
 By continuing to squeeze to create arbitrary length outputs.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-27,5,250-->
 
 What is the main purpose of the preprocessing step in keccak?
 ?
 Padding.
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-27,5,250-->
 
 How many times do we run the absorbtion phase (i.e., run the $f$ function and `XOR` the new input)?
 ?
@@ -271,7 +271,7 @@ What is the round function of keccak-f broken down?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:2022-10-22,1,210-->
+<!--SR:2022-10-23,1,190-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
@@ -282,7 +282,7 @@ How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \i
 ?
 As a 3-dimensional array
 A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-26,4,250-->
 
 #### Greek Functions
 
@@ -315,7 +315,7 @@ Because it involves rotation
 What does $rho$ do?
 ?
 Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-28,6,250-->
 
 What do they call a word in the keccak document?
 ?
@@ -325,7 +325,7 @@ A lane
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
-<!--SR:2022-10-22,2,250-->
+<!--SR:2022-10-23,1,230-->
 
 What does $\chi$ do?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:2022-10-22,1,210-->
+<!--SR:2022-10-25,3,210-->
 
 
 

@@ -452,7 +452,7 @@ What inputs does the adversary in the definition of computational soundness acce
 ?
 The relation, the auxilary input, and the common reference string.
 $(R, z, \sigma)$
-<!--SR:2022-10-22,92,270-->
+<!--SR:2023-07-01,252,270-->
 
 ??? Why does it not also accept the simulation trapdoor? Is it because then it could create any proof it likes.
 
@@ -514,7 +514,7 @@ When $\sigma_V$ cannot be deduced from $\sigma_P$.
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
 We can relax soundness and knowledge soundness such that the adversary only sees $\sigma_P$ but not $\sigma_V$.
-<!--SR:2022-10-22,91,270-->
+<!--SR:2023-06-30,251,270-->
 
 #### SNARKs and SNARGs
 
@@ -814,7 +814,7 @@ Because we can think of the tradition setting where the relation is chosen first
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
 That the relation generator is benign.
-<!--SR:2022-10-22,78,250-->
+<!--SR:2023-05-05,195,250-->
 
 Why do we have to assume the relation generator is benign?
 ?
@@ -1047,7 +1047,7 @@ With multi-exponentiations of group elements, corresponding to linear operations
 How does the verifier in a compiled LIP check the argument?
 ?
 By verifying a number of pairing product equations, which corresponds to checking quadratic equations in the exponents.
-<!--SR:2022-10-22,63,190-->
+<!--SR:2023-02-23,124,190-->
 
 What are pairing product equations?
 ?

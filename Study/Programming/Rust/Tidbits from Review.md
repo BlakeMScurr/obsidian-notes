@@ -60,7 +60,7 @@ A method on collections that gets a mutable reference to the element at an index
 What is `with_capacity`?
 ?
 An associated function on `Vec` that lets you initialised a new `Vec` with a given capacity to save allocations when filling it up.
-<!--SR:2022-10-22,17,250-->
+<!--SR:2022-12-06,45,250-->
 
 What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupied(..))` etc?
 <!--SR:2022-09-30,3,250-->

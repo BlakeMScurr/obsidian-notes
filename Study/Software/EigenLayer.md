@@ -118,7 +118,7 @@ $$\sum_{j \in V} p_j$$
 When is a task $j$ secure? Use natural language.
 ?
 If for all sets of tasks containing $j$, the cost of corruption is higher than the profit from corruption.
-<!--SR:2022-10-22,47,250-->
+<!--SR:2023-02-17,118,250-->
 
 When is a task $j$ secure? Use mathmatical symbols.
 ?

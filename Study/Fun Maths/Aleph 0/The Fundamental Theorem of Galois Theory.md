@@ -116,7 +116,7 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:2022-10-22,39,190-->
+<!--SR:2022-11-12,21,170-->
 
 What is the intuition behind the definition of an automorphism?
 ?
