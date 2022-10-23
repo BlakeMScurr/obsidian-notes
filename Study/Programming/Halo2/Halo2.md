@@ -122,6 +122,6 @@ Cryptographic primitives like hash functions or ciphers, or algorithms like scal
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:2022-10-24,27,270-->
+<!--SR:2022-11-09,16,250-->
 
 ## Gadgets

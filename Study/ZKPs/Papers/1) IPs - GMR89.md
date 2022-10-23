@@ -288,7 +288,7 @@ Let $a_i$ be A's $i^{th}$ message, which is the entire string written during A's
 What is (A, B)[x] for an interactive pair?
 ?
 The text of all possible computations of (A, B) on input x, taken over the distribution of the coin tosses of both machines.
-<!--SR:2022-10-24,77,170-->
+<!--SR:2023-03-04,131,170-->
 
 ### Interactive Proof System Definition
 
@@ -1185,7 +1185,7 @@ $r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
 What are type 2 numbers in GMR's zk QNR IP?
 ?
 $y \cdot r^2$ where $r \in \mathbb{Z}_m^*$ is randomly selected.
-<!--SR:2022-10-24,93,230-->
+<!--SR:2023-05-30,218,230-->
 
 What is the basic (pre zk) idea of GMR's zk QNR IP?
 ?
@@ -1208,7 +1208,7 @@ What is the relationship between types and quadratic residuosity?
 ?
 Type 1 numbers are always quadratic residues.
 But type 2 numbers are quadratic residues if and only if $y$ is a quadratic residue.
-<!--SR:2022-10-24,115,250-->
+<!--SR:2023-08-08,288,250-->
 
 #### Protocol
 ##### Step 1

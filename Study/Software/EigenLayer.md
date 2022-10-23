@@ -17,7 +17,7 @@ Cost of corruption.
 What is the $CoC$ of a DApp without restaking?
 ?
 $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
-<!--SR:2022-10-24,49,270-->
+<!--SR:2023-03-05,132,270-->
 
 What is the $CoC$ of a DApp with restaking?
 ?
@@ -61,7 +61,7 @@ A subset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2022-10-24,35,250-->
+<!--SR:2023-01-20,88,250-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?

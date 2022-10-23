@@ -24,7 +24,7 @@ Overheard.
 What's the non naive approach to signing long messages?
 ?
 Hash the message then sign the hash.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-04,11,250-->
 
 ## Properties of Hash Functions
 
@@ -37,7 +37,7 @@ Fixed small length outputs.
 What are the efficiency requirements for a message hash function?
 ?
 Should be fast (much faster than signatures).
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-03,10,250-->
 
 What are the security requirements for a message hash function?
 ?
@@ -54,7 +54,7 @@ One-wayness
 What does preimage resistance mean?
 ?
 That we can't compute $x$ from $h(x)$.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-03,10,250-->
 
 What does preimage mean, simply?
 ?
@@ -64,7 +64,7 @@ Input
 What does second preimage resistance mean?
 ?
 An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(x_1) = z$
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-05,12,250-->
 
 What's the online banking example where second preimage resistance is important?
 ?
@@ -74,7 +74,7 @@ Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to
 What is another phrase for second preimage resistant?
 ?
 Weak collision resistance.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-03,10,250-->
 
 What is the difference between collision resistance and second preimage resistance?
 ?
@@ -88,7 +88,7 @@ in second preimage resistance we have a fixed message we're trying to find a col
 What is an example of a collision attack (where a hash function doesn't have collision resistance)?
 ?
 Suppose an attacker (think of a malicious crypto site) gets someone to sign the hash of a benign transaction, i.e., a swap they want to do. The malicious site gets metamask to show the benign transaction. However, there is another malicious transaction that hashes to the same value, so the malicious site can send that to the blockchain instead (racing metamask and the user to the chain).
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-04,11,250-->
 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
@@ -103,19 +103,19 @@ No.
 Why do all hash functions have collisions?
 ?
 Because the input space is of arbitrary length, and the output is fixed.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-05,12,250-->
 
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
 By making it *hard* to create collisions, rather than impossible.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-05,12,250-->
 
 Suppose a hash function has a range of size n = 2^b, what is the *approximate and natural* number of times that an attacker needs to run the hash to brute force a second preimage collision? If they do that, what is the exact probability they have  a collision, and the limit of that probability as n approaches infinity?
 ?
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:2022-10-24,3,230-->
+<!--SR:2022-11-01,8,230-->
 
 How does the birthday problem apply to hash functions?
 ?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:2022-10-24,3,230-->
+<!--SR:2022-10-30,6,230-->
 
 
 # SHA-3
@@ -154,18 +154,18 @@ MD4, MD5, SHA-1, and SHA-2
 What is the name of the hash that won the SHA-3 competition?
 ?
 Keccak
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-04,11,250-->
 
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
-<!--SR:2022-10-24,3,230-->
+<!--SR:2022-11-02,9,230-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
 224 bits has the same strength as triple DES
 The other security levels have the same strength as forms of AES
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-03,10,250-->
 
 ## Keccak Sponge
 
@@ -200,12 +200,12 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-24,1,170-->
+<!--SR:2022-10-25,1,150-->
 
 What does $b$ represent?
 ?
 The state length.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-10-26,2,230-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
@@ -216,12 +216,12 @@ ${25, 50, 100, 200, 400, 800, 1600}$
 What is the relationship between keccak and SHA-3?
 ?
 Keccak is a family of functions that includes SHA-3, namely for SHA-3, $b=1600$
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-03,10,250-->
 
 What does $n_r$ represent?
 ?
 The number of rounds
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-04,11,250-->
 
 What is the relationship between $b$, $c$, and $r$?
 ?
@@ -247,14 +247,14 @@ I.e., for an input with $m$ bits, it takes $m/r$ rounds.
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
 Just truncate it.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-05,12,250-->
 
 ## Keccak-f
 
 What is the keccak-f function broken down into?
 ?
 Rounds.
-<!--SR:2022-10-24,4,250-->
+<!--SR:2022-11-04,11,250-->
 
 How many rounds in the keccak-f function?
 ?
@@ -289,7 +289,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:2022-10-24,3,230-->
+<!--SR:2022-10-31,7,230-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?

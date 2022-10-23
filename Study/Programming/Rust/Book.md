@@ -156,7 +156,7 @@ What does the `expect`  method on the `Result` type do?
 ?
 Crash the program with the provided message if the `Result` is an `Err` value.
 Return the appropriate value if the `Result` is an `Ok` value.
-<!--SR:2022-10-24,45,270-->
+<!--SR:2023-02-26,125,270-->
 
 How can you use placeholders to print the value "x is 5", where the varialbe `x` has the value `5`?
 ?
@@ -432,7 +432,7 @@ IEEE-754
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
 1, because integer division rounds down to the nearest integer.
-<!--SR:2022-10-24,40,250-->
+<!--SR:2023-02-03,102,250-->
 
 ### Boolean
 
@@ -733,7 +733,7 @@ Yes.
 Can `while` loops return a value?
 ?
 No.
-<!--SR:2022-10-24,19,170-->
+<!--SR:2022-11-21,28,170-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
@@ -1111,7 +1111,7 @@ No
 Does making a module public make its functions and structs etc public?
 ?
 No
-<!--SR:2022-10-24,39,250-->
+<!--SR:2023-02-01,100,250-->
 
 How do you create shortcuts to paths?
 ?
