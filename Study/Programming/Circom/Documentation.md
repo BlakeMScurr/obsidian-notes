@@ -549,7 +549,7 @@ Bitwise
 Relational
 Logical
 Assignment
-<!--SR:2022-10-23,64,170-->
+<!--SR:2023-02-09,109,170-->
 
 Where can operators be used?
 ?
@@ -1173,7 +1173,7 @@ template A(n1, n2) {
 ?
 `n1`, `n2`, `x`, and `y` are known.
 `in1`, `in2`, and `z` are unknown.
-<!--SR:2022-10-23,110,270-->
+<!--SR:2023-08-16,297,270-->
 
 A constraint with an array access . . . ?
 ?

@@ -19,7 +19,7 @@ What are the main problems with the naive approach to signing long messages?
 Rearrangement.
 Cost.
 Overheard.
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-31,8,250-->
 
 What's the non naive approach to signing long messages?
 ?
@@ -44,12 +44,12 @@ What are the security requirements for a message hash function?
 Preimage resistance.
 Second preimage resistance.
 Collision resistance.
-<!--SR:2022-10-23,2,230-->
+<!--SR:2022-10-29,6,230-->
 
 What is preimage resistance also known as?
 ?
 One-wayness
-<!--SR:2022-10-23,2,230-->
+<!--SR:2022-10-29,6,230-->
 
 What does preimage resistance mean?
 ?
@@ -59,7 +59,7 @@ That we can't compute $x$ from $h(x)$.
 What does preimage mean, simply?
 ?
 Input
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-01,9,250-->
 
 What does second preimage resistance mean?
 ?
@@ -93,12 +93,12 @@ Suppose an attacker (think of a malicious crypto site) gets someone to sign the 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
 Collision attacks take the square root of the amount of steps as a preimage attack.
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-01,9,250-->
 
 Can you build a hash function without collisions?
 ?
 No.
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-29,6,250-->
 
 Why do all hash functions have collisions?
 ?
@@ -191,7 +191,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
-<!--SR:2022-10-23,2,230-->
+<!--SR:2022-10-29,6,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-23,1,190-->
+<!--SR:2022-10-24,1,170-->
 
 What does $b$ represent?
 ?
@@ -211,7 +211,7 @@ What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
-<!--SR:2022-10-23,2,230-->
+<!--SR:2022-10-29,6,230-->
 
 What is the relationship between keccak and SHA-3?
 ?
@@ -226,7 +226,7 @@ The number of rounds
 What is the relationship between $b$, $c$, and $r$?
 ?
 $b = r + c$
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-30,7,250-->
 
 How do you make keccak into a PRNG?
 ?
@@ -242,7 +242,7 @@ How many times do we run the absorbtion phase (i.e., run the $f$ function and `X
 ?
 As many times as required to get the entire input in.
 I.e., for an input with $m$ bits, it takes $m/r$ rounds.
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-30,7,250-->
 
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
@@ -259,24 +259,24 @@ Rounds.
 How many rounds in the keccak-f function?
 ?
 $r$ (24 in SHA-3)
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-01,9,250-->
 
 What is the input and output size of keccak-f?
 ?
 $b$ for bouth input and output (1600 in SHA-3)
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-31,8,250-->
 
-What is the round function of keccak-f broken down?
+What is the round function of keccak-f broken down into?
 ?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:2022-10-23,1,190-->
+<!--SR:2022-10-25,2,190-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
 Same as the round function, $b$ for both input and output (1600 for SHA-3)
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-02,10,250-->
 
 How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \iota$ functions?
 ?
@@ -295,12 +295,12 @@ Which 11 bits are used by $theta$ and how are they combined?
 ?
 The original bit, the 5 bit column "to the left" of the bit  , and the 5 bit column "to the right and one position to the front" of the bit
 original plus/XOR left plus/XOR
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-02,10,250-->
 
 What do $\rho$ and $\pi$ operate on?
 ?
 64 bit words
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-31,8,250-->
 
  What are the inputs and outputs of $\rho$ and $\pi$?
  ?
@@ -310,7 +310,7 @@ The input is called $A$ and the output is called $B$
 Why is $\rho$ named $\rho$?
 ?
 Because it involves rotation
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-11-02,10,250-->
 
 What does $rho$ do?
 ?
@@ -320,17 +320,17 @@ Rotates each word by a fixed number of positions (defined by a fairly arbitrary 
 What do they call a word in the keccak document?
 ?
 A lane
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-29,6,250-->
 
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
-<!--SR:2022-10-23,1,230-->
+<!--SR:2022-10-25,2,230-->
 
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-25,2,230-->
 
 What does $\iota$ do?
 ?

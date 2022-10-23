@@ -44,7 +44,7 @@ When you don't manufacture your own insulin.
 What is type 2 diabetes?
 ?
 Insulin insensitivity leading to high blood glucose.
-<!--SR:2022-10-23,18,210-->
+<!--SR:2022-11-28,36,210-->
 
 What does GLP1 stand for?
 ?
@@ -59,7 +59,7 @@ In a fasted state
 What is GLP1 involved in?
 ?
 Mobilising energy sources like fat, carbohydrates, or even muscle
-<!--SR:2022-10-23,6,210-->
+<!--SR:2022-11-05,13,210-->
 
 What is lipolosis?
 ?

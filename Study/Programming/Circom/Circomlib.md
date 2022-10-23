@@ -68,7 +68,7 @@ The `nbits` function and the `BinSum` template.
 Does `BinSum` check that inputs are binary?
 ?
 No.
-<!--SR:2022-10-23,82,230-->
+<!--SR:2023-04-22,181,230-->
 
 What does `nbits` do?
 ?

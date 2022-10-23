@@ -150,7 +150,7 @@ io::stdin()
 What is a `Result`?
 ?
 An enum type that is either `Ok` or `Err`.
-<!--SR:2022-10-23,44,270-->
+<!--SR:2023-02-19,119,270-->
 
 What does the `expect`  method on the `Result` type do?
 ?
@@ -385,7 +385,7 @@ Because compiling in debug mode panics, whereas the overflow actually occurs whe
 What do we use to explicitly handle overflowing?
 ?
 Using methods from the standard library that handle the overflow differently than standard arithmetic operators, i.e., `wrapping_add` rather than `+`
-<!--SR:2022-10-23,41,270-->
+<!--SR:2023-02-11,111,270-->
 
 What are the different method prefixes for handling overflow explicitly?
 ?
@@ -427,7 +427,7 @@ What is the default floating-point type and why?
 What standard are floats implemented according to?
 ?
 IEEE-754
-<!--SR:2022-10-23,39,250-->
+<!--SR:2023-01-31,100,250-->
 
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
@@ -464,7 +464,7 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-10-23,30,210-->
+<!--SR:2022-12-21,59,210-->
 
 #### Tuples
 
@@ -1132,7 +1132,7 @@ How do you use `use` paths idiomatically?
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:2022-10-23,3,250-->
+<!--SR:2022-10-30,7,250-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1329,7 +1329,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-10-23,4,150-->
+<!--SR:2022-10-25,2,130-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1460,7 +1460,7 @@ That there are no tests marked to be ignored (unless specifically requested).
 What does the `0 filtered` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests that are filtered out by our argument to `cargo test`
-<!--SR:2022-10-23,38,250-->
+<!--SR:2023-01-27,96,250-->
 
 When do tests fail?
 ?
@@ -1480,7 +1480,7 @@ Panics if passed false, nothing if passed true.
 What does `assert_ne!` do?
 ?
 Panics if the two arguments are equal, nothing otherwise.
-<!--SR:2022-10-23,38,250-->
+<!--SR:2023-01-26,95,250-->
 
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?

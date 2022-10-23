@@ -1111,7 +1111,7 @@ $QNR = \{(y, m) | \mathcal{Q}_m(y) = 1\}$
 What computational complexity assumptions does GMR's proof that $QNR \in KC(0)$ rely on?
 ?
 No unproven ones.
-<!--SR:2022-10-23,48,230-->
+<!--SR:2023-02-05,105,230-->
 
 
 ### The Quadratic Residuosity Problem
@@ -1135,7 +1135,7 @@ No unproven ones.
 What is the Jacobi symbol?
 ?
 $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates to 1 or -1 and gives information on the residuosity of x in $\mathbb{Z}^*_m$
-<!--SR:2022-10-23,78,210-->
+<!--SR:2023-04-05,164,210-->
 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?

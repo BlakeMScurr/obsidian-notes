@@ -81,7 +81,7 @@ Shafi Goldwasser, Silvio Micali, and Charles Rackoff.
 What are the 3 core properties of zero knowledge proofs?
 ?
 Completeness, Soundness, and Zero-Knowledge.
-<!--SR:2022-10-23,103,250-->
+<!--SR:2023-07-08,258,250-->
 
 Describe the completeness property.
 ?
