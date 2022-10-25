@@ -171,7 +171,7 @@ How can you use multiple placeholders to print the values of `x` and `y`?
 How do you get access to random numbers in Rust?
 ?
 Using the `rand` crate.
-<!--SR:2022-10-25,46,270-->
+<!--SR:2023-02-27,125,270-->
 
 What two kinds of crates are there and how are they different?
 ?
@@ -682,7 +682,7 @@ fn main() {
 ```
 ?
 We need a bool in the if's condition, whereas we have an int.
-<!--SR:2022-10-25,41,250-->
+<!--SR:2023-02-06,104,250-->
 
 Does rust convert non boolean types by default?
 ?
@@ -865,7 +865,7 @@ How do you push a new string literal to a `String`?
 Why are string literals more efficient than mutable strings?
 ?
 Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
-<!--SR:2022-10-25,39,230-->
+<!--SR:2023-01-23,90,230-->
 
 How do we request memory from the allocator for a new string?
 ?
@@ -921,7 +921,7 @@ Because they live solely on the stack, and can be efficiently copied.
 What trait indicates that a type lives on the stack?
 ?
 The `Copy` trait.
-<!--SR:2022-10-25,39,250-->
+<!--SR:2023-01-31,98,250-->
 
 What trait can't coexist with the `Copy` trait, and how exactly?
 ?
@@ -1329,12 +1329,12 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-10-25,2,130-->
+<!--SR:2022-10-29,4,130-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
 As "any kind of error."
-<!--SR:2022-10-25,35,230-->
+<!--SR:2023-01-14,81,230-->
 
 What happens when a main function with a return type of `Result<(), E>` returns?
 ?
@@ -1404,7 +1404,7 @@ fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:2022-10-25,7,150-->
+<!--SR:2022-11-06,12,150-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 

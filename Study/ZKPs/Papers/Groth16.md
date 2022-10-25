@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-10-25,28,150-->
+<!--SR:2022-12-07,43,150-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -887,7 +887,7 @@ Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-10-25,62,230-->
+<!--SR:2022-11-25,31,210-->
 
 What is the output of ProofMatrix?
 ?
@@ -1037,7 +1037,7 @@ An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
 What does the crs of a compiled LIP contain, roughly?
 ?
 Exponentiations of the field elements in $\boldsymbol{\sigma}$, (the crs of the LIP).
-<!--SR:2022-10-25,78,210-->
+<!--SR:2023-04-07,164,210-->
 
 How does the prover in a compiled LIP compute the proof?
 ?
@@ -1308,7 +1308,7 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-10-25,50,210-->
+<!--SR:2022-11-19,25,190-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

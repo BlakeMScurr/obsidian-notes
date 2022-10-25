@@ -69,7 +69,7 @@ An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(
 What's the online banking example where second preimage resistance is important?
 ?
 Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to the same value as the signed message, he can get the bank to accept that instead.
-<!--SR:2022-10-25,5,270-->
+<!--SR:2022-11-10,16,270-->
 
 What is another phrase for second preimage resistant?
 ?
@@ -130,7 +130,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
-<!--SR:2022-10-25,3,210-->
+<!--SR:2022-11-01,7,210-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-25,1,150-->
+<!--SR:2022-10-28,3,150-->
 
 What does $b$ represent?
 ?
@@ -271,7 +271,7 @@ What is the round function of keccak-f broken down into?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:2022-10-25,2,190-->
+<!--SR:2022-10-30,5,190-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
@@ -325,17 +325,17 @@ A lane
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
-<!--SR:2022-10-25,2,230-->
+<!--SR:2022-10-30,5,230-->
 
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
-<!--SR:2022-10-25,2,230-->
+<!--SR:2022-10-31,6,230-->
 
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:2022-10-25,3,210-->
+<!--SR:2022-11-01,7,210-->
 
 
 

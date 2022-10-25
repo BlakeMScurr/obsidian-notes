@@ -1234,7 +1234,7 @@ How is $x$ defined in the zk QNR IP?
 ?
 In step 1, $B$ chooses a random $r_0$ from $\mathbb{Z}_m^*$ and then tosses a coin $C_x$.
 If $C_x = 0$ then B sets $x = r_0^2 \mod n$,  else if $C_x = 1$, $B$ sets $x = y \cdot r^2 \mod n$
-<!--SR:2022-10-25,105,230-->
+<!--SR:2023-07-05,253,230-->
 
 If $C_x = 0$, what are $x$ and the type of $x$?
 ?
