@@ -319,13 +319,13 @@ Auxilliary information that the relation generator might output, which will be g
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
 A quadruple of polynomial time algorithms $(\textbf{Setup, Prove, Vfy, Sim})$
-<!--SR:2022-10-26,69,210-->
+<!--SR:2023-03-20,145,210-->
 
 What is the definition of $\textbf{Setup}$?
 ?
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R)$
 The setup takes as input the security paramater $\lambda$ and a relation $R \in R_\lambda$ and returns a common reference string $\sigma$ and a simulation trapdoor $\tau$ for the relation $R$.
-<!--SR:2022-10-26,95,270-->
+<!--SR:2022-12-13,48,250-->
 
 ??? why don't we write the setup as explicitly taking the security parameter?
 
@@ -702,7 +702,7 @@ They are degree $n-1$ polynomials such that for $i=0,...,m, q=1,...n$:
 $u_i(r_q) = u_{i,q}$
 $v_i(r_q) = v_{i,q}$
 $w_i(r_q) = w_{i,q}$
-<!--SR:2022-10-26,29,170-->
+<!--SR:2022-11-11,16,150-->
 
 ??? why does q start at 1 but i starts at 0? Is it that there are m+1 variables and n equations?
 
@@ -1052,7 +1052,7 @@ By verifying a number of pairing product equations, which corresponds to checkin
 What are pairing product equations?
 ?
 Equations formed by multiplying together the results of pairings.
-<!--SR:2022-10-26,83,250-->
+<!--SR:2023-05-22,208,250-->
 # Constructions
 
 What kind of language does our pairing based NIZK construction prove?
@@ -1211,7 +1211,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-10-26,7,130-->
+<!--SR:2022-11-06,11,130-->
 
 ##### Vfy
 

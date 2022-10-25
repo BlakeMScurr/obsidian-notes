@@ -127,7 +127,7 @@ A function that's implemented on a type, but doesn't have access to a specific i
 What does `let mut guess = String: :new()` do, exactly?
 ?
 Creates a mutable variable called guess and binds it to a new, empty instance of the type `String`.
-<!--SR:2022-10-26,47,270-->
+<!--SR:2023-03-02,127,270-->
 
 What does `io: :stdin()` return?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:2022-10-26,7,130-->
+<!--SR:2022-11-06,11,130-->
 
 What does `saturating_*` do?
 ?
@@ -870,7 +870,7 @@ Because their size is known at compile time, and it hardcoded into the executabl
 How do we request memory from the allocator for a new string?
 ?
 `String: :from("literal");` does this for us.
-<!--SR:2022-10-26,40,250-->
+<!--SR:2023-02-03,100,250-->
 
 What function is called for us when a variable goes out of scope?
 ?
@@ -1382,7 +1382,7 @@ Generics that give the compiler information about how references relate to each 
 What is the conventional case for naming types?
 ?
 CamelCase
-<!--SR:2022-10-26,40,250-->
+<!--SR:2023-02-07,104,250-->
 
 What is the conventional name for a generic type?
 ?

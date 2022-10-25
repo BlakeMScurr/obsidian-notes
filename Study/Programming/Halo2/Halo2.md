@@ -93,7 +93,7 @@ The proving key and the verification key.
 What is a selector?
 ?
 A value defined in a fixed column that allows polynomial constraints to be turned on or off.
-<!--SR:2022-10-26,69,290-->
+<!--SR:2023-05-14,200,290-->
 
 How, roughly are gates implemented?
 ?

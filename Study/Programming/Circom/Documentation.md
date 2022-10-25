@@ -430,7 +430,7 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2022-10-26,40,230-->
+<!--SR:2023-01-28,94,230-->
 
 What can functions output?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-10-26,35,170-->
+<!--SR:2022-11-13,18,150-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?

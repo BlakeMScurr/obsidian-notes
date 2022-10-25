@@ -385,7 +385,7 @@ template MultiMux2(n) {
 	}
 }
 ```
-<!--SR:2022-10-26,50,210-->
+<!--SR:2023-02-08,105,210-->
 
 What is the code for Mux1?
 ?

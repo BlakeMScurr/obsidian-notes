@@ -32,7 +32,7 @@ What are our length requirements for a hash function for messages?
 ?
 Arbitrary length inputs.
 Fixed small length outputs.
-<!--SR:2022-10-26,4,250-->
+<!--SR:2022-11-07,12,250-->
 
 What are the efficiency requirements for a message hash function?
 ?
@@ -79,7 +79,7 @@ Weak collision resistance.
 What is the difference between collision resistance and second preimage resistance?
 ?
 in second preimage resistance we have a fixed message we're trying to find a collision for.
-<!--SR:2022-10-26,4,250-->
+<!--SR:2022-11-06,11,250-->
 
 ??? Does collision resistance imply second preimage resistance?
 
@@ -149,7 +149,7 @@ Where:
 What standards and defacto standards preceeded SHA-3?
 ?
 MD4, MD5, SHA-1, and SHA-2
-<!--SR:2022-10-26,4,250-->
+<!--SR:2022-11-07,12,250-->
 
 What is the name of the hash that won the SHA-3 competition?
 ?
@@ -183,7 +183,7 @@ What are the phases of a sponge construction?
 ?
 Absorbtion (taking in input bits)
 Squeezing (output is produced)
-<!--SR:2022-10-26,4,250-->
+<!--SR:2022-11-06,11,250-->
 
 What are the internal parameters of keccak?
 ?
@@ -205,7 +205,7 @@ $c \in \{448, 512, 768, 1024\}$
 What does $b$ represent?
 ?
 The state length.
-<!--SR:2022-10-26,2,230-->
+<!--SR:2022-10-31,5,230-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
@@ -282,7 +282,7 @@ How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \i
 ?
 As a 3-dimensional array
 A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
-<!--SR:2022-10-26,4,250-->
+<!--SR:2022-11-07,12,250-->
 
 #### Greek Functions
 
