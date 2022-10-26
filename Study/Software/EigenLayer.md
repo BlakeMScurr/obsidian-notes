@@ -66,7 +66,7 @@ A subset of the tasks $T$
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
 $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share of stake surpasses the fraction $\alpha_j$.
-<!--SR:2022-10-27,43,210-->
+<!--SR:2023-01-29,94,210-->
 
 What is $S_j^c$?
 ?
@@ -78,7 +78,7 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:2022-10-27,51,270-->
+<!--SR:2022-11-22,26,250-->
 
 What does $S^c(V)$ denote?
 ?

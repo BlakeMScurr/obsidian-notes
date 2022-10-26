@@ -843,7 +843,7 @@ What is the syntax `if` statements?
 ?
 `if ( boolean_condition ) block_of_code else block_of_code`
 The else block is optional.
-<!--SR:2022-10-27,94,230-->
+<!--SR:2023-06-03,219,230-->
 
 What is the syntax for `for` loops?
 ?

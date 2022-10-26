@@ -1216,7 +1216,7 @@ But type 2 numbers are quadratic residues if and only if $y$ is a quadratic resi
 What is the input to the zk QNR IP?
 ?
 $(y, m) \in \mathcal{L}$ such that $\genfrac(){}{0}{y}{m} = 1$ and $n = log_2m$
-<!--SR:2022-10-27,83,210-->
+<!--SR:2023-04-19,174,210-->
 
 What happens in step 1?
 ?
@@ -1290,7 +1290,7 @@ Type 2
 How does $B$ send $T$ and $S$ to $A$?
 ?
 As $T \cup S$ in a random order.
-<!--SR:2022-10-27,114,250-->
+<!--SR:2023-07-25,271,250-->
 
 ##### Step 2
 
@@ -1350,7 +1350,7 @@ $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - 
 How is $D$ notated?
 ?
 $\{t_{i_1},...,t_{i_d}\}$.
-<!--SR:2022-10-27,70,190-->
+<!--SR:2023-03-03,127,190-->
 
 How does $B$ reveal $D$?
 ?

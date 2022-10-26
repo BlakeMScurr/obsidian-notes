@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-10-27,8,150-->
+<!--SR:2022-11-08,12,150-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -1176,7 +1176,7 @@ What are the steps involved in Prove for a QAP LIP?
 Choosing random values.
 Calculating the elements $(A, B, C)$.
 Calculating the matrix $\Pi$.
-<!--SR:2022-10-27,70,270-->
+<!--SR:2023-05-04,189,270-->
 
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
@@ -1225,7 +1225,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-10-27,28,230-->
+<!--SR:2022-11-12,16,210-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

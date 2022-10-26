@@ -417,7 +417,7 @@ Saturates at the value's maximum or minimum values.
 What are the kinds of floating-point types?
 ?
 `f32` and `f64`
-<!--SR:2022-10-27,45,270-->
+<!--SR:2023-03-01,125,270-->
 
 What is the default floating-point type and why?
 ?
@@ -651,7 +651,7 @@ Yes.
 How do you return a value from a function?
 ?
 By ending the function's block with an expression of that value, or using the `return` keyword earlier.
-<!--SR:2022-10-27,41,250-->
+<!--SR:2023-02-12,108,250-->
 
 What character creates comments?
 ?
@@ -860,7 +860,7 @@ How do you create a new string of type `String` from a string literal, say, `"he
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2022-10-27,34,250-->
+<!--SR:2023-01-19,84,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
@@ -1046,7 +1046,7 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:2022-10-27,7,210-->
+<!--SR:2022-11-12,16,210-->
 
 When can you refer to code in another module?
 ?
@@ -1470,7 +1470,7 @@ When the test panics.
 What does `assert_eq!` do?
 ?
 Panics if the values passed in are not equal, nothing otherwise.
-<!--SR:2022-10-27,41,250-->
+<!--SR:2023-02-07,103,250-->
 
 What does `assert!` do?
 ?

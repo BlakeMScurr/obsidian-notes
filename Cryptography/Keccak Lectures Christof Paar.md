@@ -7,12 +7,12 @@
 What is the motiviating example for hash functions?
 ?
 Hashing a message to be signed
-<!--SR:2022-10-27,5,250-->
+<!--SR:2022-11-11,15,250-->
 
 What's the naive approach to signing long messages?
 ?
 Signing each chunk individually.
-<!--SR:2022-10-27,5,250-->
+<!--SR:2022-11-10,14,250-->
 
 What are the main problems with the naive approach to signing long messages?
 ?
@@ -172,7 +172,7 @@ The other security levels have the same strength as forms of AES
 What kind of construction does keccak use?
 ?
 A sponge construction.
-<!--SR:2022-10-27,5,250-->
+<!--SR:2022-11-09,13,250-->
 
 Why is it called a "sponge" construction?
 ?
@@ -231,12 +231,12 @@ $b = r + c$
 How do you make keccak into a PRNG?
 ?
 By continuing to squeeze to create arbitrary length outputs.
-<!--SR:2022-10-27,5,250-->
+<!--SR:2022-11-09,13,250-->
 
 What is the main purpose of the preprocessing step in keccak?
 ?
 Padding.
-<!--SR:2022-10-27,5,250-->
+<!--SR:2022-11-08,12,250-->
 
 How many times do we run the absorbtion phase (i.e., run the $f$ function and `XOR` the new input)?
 ?
