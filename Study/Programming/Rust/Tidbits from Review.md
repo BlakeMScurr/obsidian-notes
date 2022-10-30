@@ -67,7 +67,7 @@ What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupie
 ?
 Ignore all properties.
 Equivalent to `(_, _)` where the enum has 2 properties, for example.
-<!--SR:2022-11-23,34,250-->
+<!--SR:!2022-09-30,3,250-->
 
 What is `and_then`?
 ?

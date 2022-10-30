@@ -1413,7 +1413,7 @@ How is $X' \cup Y'$ sent?
 ?
 $B$ sends $X' \cup Y'$ to $A$ in a random order.
 <!--SR:2023-04-17,216,250-->
-<!--SR:2022-05-05,2,230-->
+<!--SR:!2023-04-17,216,250-->
 
 ##### Step 4
 

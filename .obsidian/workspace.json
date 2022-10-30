@@ -1,0 +1,126 @@
+{
+  "main": {
+    "id": "f898069709d32bb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e74fa9aaedb5745f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a79f7cdefdd57463",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c7df6d9788595fc5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7685e94c847e0ed0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0defa784b00328c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd665029fe7d3e2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "45dd9589317113c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 193.49999809265137
+  },
+  "right": {
+    "id": "df608e470bfd07c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e46981d43ee11bdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24833a9bfac23e3d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d8114f4cc421c0f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4d8114f4cc421c0f",
+  "lastOpenFiles": [
+    "Cryptography/Keccak Lectures Christof Paar.md",
+    "Study/ZKPs/Papers/Literature.md",
+    "Study/Programming/Rust/Book.md",
+    "Study/ZKPs/Papers/Groth16.md",
+    "Study/Programming/Halo2/Halo2.md",
+    "Study/Programming/Circom/Circomlib.md",
+    "Study/Programming/Rust/Tidbits from Review.md",
+    "Study/Biology/Huberman/Fasting Episode 41.md",
+    "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md",
+    "Study/ZKPs/Papers/1) IPs - GMR89.md"
+  ]
+}

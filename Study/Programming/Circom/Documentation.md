@@ -27,7 +27,7 @@ How do you declare an input signal?
 How do you declare an output signal?
 ?
 `signal output out;` declares an output signal named `out`
-<!--SR:2022-10-31,103,250-->
+<!--SR:2023-07-16,258,250-->
 
 How do you declare an intermediate signal?
 ?

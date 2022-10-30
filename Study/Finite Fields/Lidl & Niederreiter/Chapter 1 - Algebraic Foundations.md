@@ -21,14 +21,14 @@ What is the group identity axiom?
 $$
 \exists e \in G\ |\ \forall a \in G ae = ea = a
 $$
-<!--SR:2022-10-30,213,270-->
+<!--SR:2024-05-29,576,270-->
 
 What is the group inverse axiom?
 ?
 $$
 \forall a \in G\ \exists a^{-1}\ |\ a^{-1}a = aa^{-1} = e
 $$
-<!--SR:2022-10-29,212,270-->
+<!--SR:2024-05-28,575,270-->
 
 What are the elementary consequences of the group axioms?
 ?

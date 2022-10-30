@@ -19,7 +19,7 @@ What are the main problems with the naive approach to signing long messages?
 Rearrangement.
 Cost.
 Overheard.
-<!--SR:2022-10-31,8,250-->
+<!--SR:!2022-11-23,23,250-->
 
 What's the non naive approach to signing long messages?
 ?
@@ -44,12 +44,12 @@ What are the security requirements for a message hash function?
 Preimage resistance.
 Second preimage resistance.
 Collision resistance.
-<!--SR:2022-10-29,6,230-->
+<!--SR:!2022-11-15,15,230-->
 
 What is preimage resistance also known as?
 ?
 One-wayness
-<!--SR:2022-10-29,6,230-->
+<!--SR:!2022-11-16,16,230-->
 
 What does preimage resistance mean?
 ?
@@ -98,7 +98,7 @@ Collision attacks take the square root of the amount of steps as a preimage atta
 Can you build a hash function without collisions?
 ?
 No.
-<!--SR:2022-10-29,6,250-->
+<!--SR:!2022-11-18,18,250-->
 
 Why do all hash functions have collisions?
 ?
@@ -120,7 +120,7 @@ With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
 How does the birthday problem apply to hash functions?
 ?
 It's equivalent to the problem of finding a hash collision.
-<!--SR:2022-10-28,6,250-->
+<!--SR:!2022-11-18,18,250-->
 
 What is the probability:
 That 2 people in a room share a birthday?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:2022-10-30,6,230-->
+<!--SR:!2022-11-03,3,210-->
 
 
 # SHA-3
@@ -177,7 +177,7 @@ A sponge construction.
 Why is it called a "sponge" construction?
 ?
 Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
-<!--SR:2022-10-28,6,250-->
+<!--SR:!2022-11-21,21,250-->
 
 What are the phases of a sponge construction?
 ?
@@ -191,7 +191,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
-<!--SR:2022-10-29,6,230-->
+<!--SR:!2022-11-17,17,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -200,18 +200,18 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:2022-10-28,3,150-->
+<!--SR:!2022-11-08,8,150-->
 
 What does $b$ represent?
 ?
 The state length.
-<!--SR:2022-10-31,5,230-->
+<!--SR:!2022-11-13,13,230-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
-<!--SR:2022-10-29,6,230-->
+<!--SR:!2022-11-16,16,230-->
 
 What is the relationship between keccak and SHA-3?
 ?
@@ -226,7 +226,7 @@ The number of rounds
 What is the relationship between $b$, $c$, and $r$?
 ?
 $b = r + c$
-<!--SR:2022-10-30,7,250-->
+<!--SR:!2022-11-17,17,250-->
 
 How do you make keccak into a PRNG?
 ?
@@ -242,7 +242,7 @@ How many times do we run the absorbtion phase (i.e., run the $f$ function and `X
 ?
 As many times as required to get the entire input in.
 I.e., for an input with $m$ bits, it takes $m/r$ rounds.
-<!--SR:2022-10-30,7,250-->
+<!--SR:!2022-11-19,19,250-->
 
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
@@ -264,14 +264,14 @@ $r$ (24 in SHA-3)
 What is the input and output size of keccak-f?
 ?
 $b$ for bouth input and output (1600 in SHA-3)
-<!--SR:2022-10-31,8,250-->
+<!--SR:!2022-11-20,20,250-->
 
 What is the round function of keccak-f broken down into?
 ?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:2022-10-30,5,190-->
+<!--SR:!2022-11-03,3,170-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
@@ -289,7 +289,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:2022-10-31,7,230-->
+<!--SR:!2022-11-15,15,230-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
@@ -300,7 +300,7 @@ original plus/XOR left plus/XOR
 What do $\rho$ and $\pi$ operate on?
 ?
 64 bit words
-<!--SR:2022-10-31,8,250-->
+<!--SR:!2022-11-23,23,250-->
 
  What are the inputs and outputs of $\rho$ and $\pi$?
  ?
@@ -315,22 +315,22 @@ Because it involves rotation
 What does $rho$ do?
 ?
 Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
-<!--SR:2022-10-28,6,250-->
+<!--SR:!2022-11-20,20,250-->
 
 What do they call a word in the keccak document?
 ?
 A lane
-<!--SR:2022-10-29,6,250-->
+<!--SR:!2022-11-18,18,250-->
 
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
-<!--SR:2022-10-30,5,230-->
+<!--SR:!2022-11-14,14,230-->
 
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
-<!--SR:2022-10-31,6,230-->
+<!--SR:!2022-11-03,3,210-->
 
 What does $\iota$ do?
 ?
