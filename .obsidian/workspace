@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "114a0b435497d899",
+        "id": "a79f7cdefdd57463",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Cryptography/Keccak Lectures Christof Paar.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography/Keccak Lectures Christof Paar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,10 +90,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "114a0b435497d899",
+  "active": "a79f7cdefdd57463",
   "lastOpenFiles": [
-    "Study/ZKPs/Papers/Literature.md",
     "Cryptography/Keccak Lectures Christof Paar.md",
+    "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Rust/Book.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Halo2/Halo2.md",
