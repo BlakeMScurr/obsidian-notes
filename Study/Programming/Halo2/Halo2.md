@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:2022-11-01,14,230-->
+<!--SR:!2022-11-10,9,210-->
 
 What is advice?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:2022-10-30,12,130-->
+<!--SR:!2022-11-08,7,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:2022-10-31,13,130-->
+<!--SR:!2022-11-21,20,130-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -117,7 +117,7 @@ To create a higher level API than the matrix view of a PLONKish circuit, offerin
 What are some examples of things chips might do?
 ?
 Cryptographic primitives like hash functions or ciphers, or algorithms like scalar multiplication or pairings.
-<!--SR:2022-11-01,63,250-->
+<!--SR:!2023-04-08,158,250-->
 
 What is the advantage of using custom gates?
 ?

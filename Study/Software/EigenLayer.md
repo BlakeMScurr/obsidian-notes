@@ -88,7 +88,7 @@ The collection of staker sets which are sufficient to corrupt all tasks in the s
 What is the definition of $S^c(V)$?
 ?
 $\bigcap_{j \in V} S_j^c$
-<!--SR:2022-10-28,51,270-->
+<!--SR:!2023-03-23,142,270-->
 
 What does $c(V)$ denote?
 ?
@@ -156,7 +156,7 @@ The fraction of task $j$s securing stake which is held by staker $i$.
 How is $\gamma_{ij}$ defined?
 ?
 $s_i/\sum_{k \in S_j} s_k$
-<!--SR:2022-11-01,51,250-->
+<!--SR:!2023-03-07,126,250-->
 
 What does $T_i$ denote?
 ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-28,7,190-->
+<!--SR:!2022-11-20,19,190-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:2022-10-28,7,190-->
+<!--SR:!2022-11-20,19,190-->
 
 
 ??? How do the steps in line (10) work?

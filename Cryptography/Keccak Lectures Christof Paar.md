@@ -59,7 +59,7 @@ That we can't compute $x$ from $h(x)$.
 What does preimage mean, simply?
 ?
 Input
-<!--SR:2022-11-01,9,250-->
+<!--SR:!2022-11-26,25,250-->
 
 What does second preimage resistance mean?
 ?
@@ -93,7 +93,7 @@ Suppose an attacker (think of a malicious crypto site) gets someone to sign the 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
 Collision attacks take the square root of the amount of steps as a preimage attack.
-<!--SR:2022-11-01,9,250-->
+<!--SR:!2022-11-24,23,250-->
 
 Can you build a hash function without collisions?
 ?
@@ -115,7 +115,7 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:2022-11-01,8,230-->
+<!--SR:!2022-11-05,4,210-->
 
 How does the birthday problem apply to hash functions?
 ?
@@ -259,7 +259,7 @@ Rounds.
 How many rounds in the keccak-f function?
 ?
 $r$ (24 in SHA-3)
-<!--SR:2022-11-01,9,250-->
+<!--SR:!2022-11-27,26,250-->
 
 What is the input and output size of keccak-f?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:2022-11-01,7,210-->
+<!--SR:!2022-11-05,4,190-->
 
 
 

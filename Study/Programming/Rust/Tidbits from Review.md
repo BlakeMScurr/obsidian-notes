@@ -63,11 +63,11 @@ An associated function on `Vec` that lets you initialised a new `Vec` with a giv
 <!--SR:2022-12-06,45,250-->
 
 What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupied(..))` etc?
-<!--SR:2022-09-30,3,250-->
+
 ?
 Ignore all properties.
 Equivalent to `(_, _)` where the enum has 2 properties, for example.
-<!--SR:!2022-09-30,3,250-->
+<!--SR:!2022-12-19,48,250-->
 
 What is `and_then`?
 ?

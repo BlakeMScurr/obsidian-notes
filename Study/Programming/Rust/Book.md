@@ -261,7 +261,7 @@ By reusing the `let` keyword.
 let x = 5;
 let x = 3;
 ```
-<!--SR:2022-10-29,40,250-->
+<!--SR:!2023-02-13,104,250-->
 
 What is the output of the following program?
 ```
@@ -319,7 +319,7 @@ Characters
 What are the different bit sizes available for integers in rust?
 ?
 8, 16, 32, 64, 128, arch
-<!--SR:2022-11-01,43,250-->
+<!--SR:!2023-02-16,107,250-->
 
 What is the type annotation for an unsigned arch sized integer?
 ?
@@ -335,7 +335,7 @@ What are the prefixes to represent signed an unsigned integers?
 How are signed integers represented?
 ?
 Using two's complement representation.
-<!--SR:2022-10-31,42,250-->
+<!--SR:!2023-02-15,106,250-->
 
 What range of values can a signed integer store?
 ?
@@ -350,7 +350,7 @@ $0$ to $2^n-1$
 What does the `_` mean in a number literal?
 ?
 It's a visual separator to make it easier to read. I.e., `1_000_000`.
-<!--SR:2022-10-28,45,270-->
+<!--SR:!2023-03-08,127,270-->
 
 What is the visual separator character for number literals?
 ?
@@ -375,7 +375,7 @@ What is the prefix for binary number literals?
 What is the syntax for byte number literals?
 ?
 `b'A'`, where `A` represents an 8bit integer.
-<!--SR:2022-11-01,43,250-->
+<!--SR:!2022-11-23,22,230-->
 
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
@@ -400,7 +400,7 @@ Wraps in all modes, (including debug).
 What does `checked_*` do?
 ?
 Returns the `None` value if there is overflow.
-<!--SR:2022-10-31,42,230-->
+<!--SR:!2023-02-06,97,230-->
 
 What does `overflowing_*` do?
 ?
@@ -422,7 +422,7 @@ What are the kinds of floating-point types?
 What is the default floating-point type and why?
 ?
 `f64`, because it's roughly as fast as `f32` on modern CPUs, and allows more precision.
-<!--SR:2022-10-29,46,270-->
+<!--SR:!2023-03-10,129,270-->
 
 What standard are floats implemented according to?
 ?
@@ -833,7 +833,7 @@ What problems does the heap have, that ownership addresses?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
-<!--SR:2022-10-30,33,190-->
+<!--SR:!2023-01-05,65,190-->
 
 ### Ownership Rules
 
@@ -1034,7 +1034,7 @@ Where would the compiler look for, say, the `garden` module declared in the crat
 Inline, within curly brackets that replace the semicolon following `mod garden`,
 In the file `src/garden.rs`,
 Or in the file `src/garden/mod.rs`
-<!--SR:2022-10-28,42,250-->
+<!--SR:!2023-02-20,111,250-->
 
 Where can you declare submodules?
 ?
@@ -1127,12 +1127,12 @@ How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:2022-10-28,9,210-->
+<!--SR:!2022-11-24,23,210-->
 
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:2022-10-30,7,250-->
+<!--SR:!2022-11-22,21,250-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1222,7 +1222,7 @@ enum Result<T, E> {
 	Err(E),
 }
 ```
-<!--SR:2022-10-30,41,250-->
+<!--SR:!2023-02-14,105,250-->
 
 How do you open a file called `"hello.txt"`?
 ?
@@ -1230,7 +1230,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:2022-10-30,11,130-->
+<!--SR:!2022-11-17,16,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1247,7 +1247,7 @@ let greeting_file = match greeting_file_result {
 Are `Result` and its variants in the prelude?
 ?
 Yes.
-<!--SR:2022-10-28,42,250-->
+<!--SR:!2023-02-21,112,250-->
 
 How do you match on the "file not found" error type?
 ?
@@ -1266,22 +1266,22 @@ fn main() {
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
-<!--SR:2022-10-29,37,230-->
+<!--SR:!2023-02-01,92,230-->
 
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
-<!--SR:2022-11-01,35,230-->
+<!--SR:!2022-11-19,18,210-->
 
 What are the shortcut methods for panicking on error?
 ?
 `unwrap` and `expect`
-<!--SR:2022-10-30,31,210-->
+<!--SR:!2022-11-16,15,190-->
 
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:2022-10-28,11,150-->
+<!--SR:!2022-11-21,20,150-->
 
 What does `expect` do?
 ?
@@ -1291,7 +1291,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:2022-10-29,12,210-->
+<!--SR:!2022-12-01,30,210-->
 
 ## Propogation
 
@@ -1329,7 +1329,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:2022-10-29,4,130-->
+<!--SR:!2022-11-09,8,130-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1354,7 +1354,7 @@ When might you want to `panic!` instead of using the `Result` type?
 When writing examples, prototypes, or test code.
 Or to catch developer errors where there are logical issues that the compiler can't catch, i.e., parsing a hardcoded IP address.
 Or to stop your code proceeding in a bad state.
-<!--SR:2022-11-01,43,250-->
+<!--SR:!2023-02-22,113,250-->
 
 # Generics, Traits, and Lifetimes
 
@@ -1375,7 +1375,7 @@ Traits let different concrete types use different behaviour with the same functi
 What are lifetimes?
 ?
 Generics that give the compiler information about how references relate to each other.
-<!--SR:2022-10-29,38,230-->
+<!--SR:!2023-01-30,90,230-->
 
 ## Generics
 
@@ -1455,7 +1455,7 @@ That there are no benchmark tests. I.e., tests to measure performance.
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
 That there are no tests marked to be ignored (unless specifically requested).
-<!--SR:2022-10-28,42,250-->
+<!--SR:!2023-02-18,109,250-->
 
 What does the `0 filtered` statistic that is often output from `cargo test` mean?
 ?
@@ -1496,7 +1496,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:2022-10-31,33,210-->
+<!--SR:!2023-01-11,71,210-->
 
 What are the main assertion macros?
 ?
