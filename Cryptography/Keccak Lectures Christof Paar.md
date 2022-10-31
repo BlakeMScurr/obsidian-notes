@@ -130,7 +130,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
-<!--SR:2022-11-01,7,210-->
+<!--SR:!2022-11-14,13,210-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?

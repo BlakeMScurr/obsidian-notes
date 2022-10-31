@@ -45,7 +45,7 @@ $e_1 = e_1e_2 = e_2$ by the indentity property of $e_1$ and $e_2$
 How do you prove the uniqueness of the group inverse?
 ?
 $a^{-1}_1 = a^{-1}_2aa^{-1}_1 = a^{-1}_2$
-<!--SR:2022-11-01,215,270-->
+<!--SR:!2024-06-04,581,270-->
 
 What is the "inversion of a product" elementary group property, and how do you prove it?
 ?

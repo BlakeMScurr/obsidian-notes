@@ -9,7 +9,7 @@ In rats, low blood glucose is associated with mortality.
 What does time restricted feeding refer to?
 ?
 The practice of limiting your eating to certain times. As opposed to fasting which can just refer to the specific period when not eating.
-<!--SR:2022-11-01,27,250-->
+<!--SR:!2023-01-06,66,250-->
 
 What happens to blood glucose when you eat?
 ?
