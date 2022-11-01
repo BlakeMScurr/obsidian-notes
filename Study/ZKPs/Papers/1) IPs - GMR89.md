@@ -511,7 +511,7 @@ They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, a
 How do classes AM and NP compare?
 ?
 $L \in AM \implies L \in NP$ for a random oracle
-<!--SR:2022-10-28,101,210-->
+<!--SR:!2023-06-04,215,210-->
 
 How do classes AM and IP compare?
 ?
@@ -1365,7 +1365,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:2022-10-28,31,170-->
+<!--SR:!2022-12-26,55,170-->
 
 What is the purpose of $X' \cup Y'$?
 ?

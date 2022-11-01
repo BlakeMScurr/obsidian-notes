@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:2022-10-29,8,250-->
+<!--SR:!2022-11-28,27,250-->
 
 ## BGKW88
 
@@ -133,7 +133,7 @@ New techniques for noninteractive zero-knowledge
 What did GOS12 contribute?
 ?
 Introduced pairing based NIZKs. 
-<!--SR:2022-10-28,6,130-->
+<!--SR:!2022-11-13,12,130-->
 
 %%Do I care about the rest of the specifics? Probably not, as a practicioner and circuit writer, rather than as a scientist%%
  %%- Reduced CRS size. 
@@ -180,7 +180,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:2022-10-31,56,150-->
+<!--SR:!2022-12-02,31,130-->
 
 What did GS12 contribute?
 ?
@@ -197,7 +197,7 @@ Jens Groth
 What is the title of Gro10?
 ?
 Short pairing-based non-interactive zero-knowledge arguments
-<!--SR:2022-10-30,51,190-->
+<!--SR:!2023-02-08,99,190-->
 
 What did Gro10 contribute?
 ?
@@ -212,7 +212,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:2022-10-29,32,130-->
+<!--SR:!2022-12-15,44,130-->
 
 What did Gro09 contribute?
 ?
