@@ -301,7 +301,7 @@ No output signal in template.
 What does a component represent?
 ?
 An arithmetic circuit.
-<!--SR:2022-11-03,105,250-->
+<!--SR:!2023-07-24,263,250-->
 
 What does a component consist of?
 ?
@@ -554,7 +554,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:2022-11-03,17,210-->
+<!--SR:!2022-12-11,38,210-->
 
 What are the possible values of a field element?
 ?

@@ -14,7 +14,7 @@ The practice of limiting your eating to certain times. As opposed to fasting whi
 What happens to blood glucose when you eat?
 ?
 It goes up.
-<!--SR:2022-11-02,28,250-->
+<!--SR:!2023-01-12,70,250-->
 
 What happens to insulin when you eat?
 ?
@@ -69,7 +69,7 @@ Using fat as an energy source in the body
 Do insulin and blood glucose levels change immediately? Why is this important?
 ?
 No, over the course of roughly hours. Because the benefits of time restricted eating come from being in certain "states" or "conditions" for certain amounts of time.
-<!--SR:2022-11-03,29,250-->
+<!--SR:!2023-01-15,73,250-->
 
 Do you lose fat faster on a low fat or low carb diet?
 ?
