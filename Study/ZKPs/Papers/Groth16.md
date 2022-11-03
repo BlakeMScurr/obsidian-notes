@@ -499,7 +499,7 @@ Public verifiability and designated verifier proofs.
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
 We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover and the verifier respectively.
-<!--SR:2022-11-02,99,270-->
+<!--SR:!2023-07-29,267,270-->
 
 When is a non-interactive argument publicly verifiable?
 ?
@@ -897,7 +897,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:2022-10-29,50,230-->
+<!--SR:!2022-11-29,25,210-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -969,7 +969,7 @@ The dimension of the randomness vector used in Setup.
 What is $m$ in a LIP?
 ?
 The dimension in the crs vector $\sigma$ made in Setup.
-<!--SR:2022-11-03,98,270-->
+<!--SR:!2022-12-23,49,250-->
 
 ??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 

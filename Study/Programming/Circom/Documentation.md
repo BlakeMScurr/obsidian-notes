@@ -785,7 +785,7 @@ What transformations does circom apply to correctly form constraints?
 Moves from one side of the equality to the other.
 Applications of the commutativity of addition.
 Multiplication (or division) by constants.
-<!--SR:2022-11-04,99,250-->
+<!--SR:!2023-07-09,247,250-->
 
 Which operators impose constraints?
 ?

@@ -37,7 +37,7 @@ The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probabili
 What is knowledge complexity?
 ?
 A measure of the additional knowledge conveyed by a proof.
-<!--SR:2022-10-28,120,230-->
+<!--SR:!2023-08-15,284,230-->
 
 What extra information does a standard NP proof of a Hamiltonian path convey?
 ?
@@ -240,7 +240,7 @@ It is readonly from left to right.
 How can we think of a read from an ITM's random tape?
 ?
 It's a coin flip.
-<!--SR:2022-10-31,126,250-->
+<!--SR:!2023-09-20,320,250-->
 
 How is an ITM's speaking tape implemented?
 ?
@@ -342,12 +342,12 @@ $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
 $\forall x \notin \mathcal{L}$ given as input to $(A', B)$ the probability B accepts $\leq 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-11-03,63,150-->
+<!--SR:!2023-02-05,93,150-->
 
 Does a verifier in an interactive proof system require a specific prover? Why/why not?
 ?
 No, because the properties (true statements are provable, and false ones aren't) hold independently of the prover by definition.
-<!--SR:2022-11-03,113,210-->
+<!--SR:!2023-07-06,244,210-->
 
 What proofs can be constructed in an interactive proof system for $x \not in \mathcal{L}$?
 $
@@ -388,7 +388,7 @@ $a \neq x^2\ mod\ m$ for all $x \in \mathbb{Z}^*_m$
 Is $QNR \in NP$? How do we know?
 ?
 Yes. If the prover factorizes m, the verifier can decide quadratic residuosity in polynomial time using a method like euclid's algorithm that uses quadratic reciprocity.
-<!--SR:2022-11-04,130,250-->
+<!--SR:!2023-09-25,325,250-->
 
 #### QNR IP
 
@@ -678,7 +678,7 @@ A probabilistic polynomial time algorithm $D$ that takes a string $s$ and output
 What, formally, does a distinguisher distinguish between?
 ?
 Two I-c-ensembles $\Pi_1 = \{\Pi_{1,x} |\ x\ in\ I\}$ and $\Pi_2 = \{\Pi_{2,x} |\ x\ in\ I\}$
-<!--SR:2022-10-31,65,150-->
+<!--SR:!2023-02-13,101,150-->
 
 What does $p^D_{x, 1}$ denote?
 ?
@@ -739,7 +739,7 @@ That they are "equal" with respect to any polynomial time computation. At least,
 What was distinguishability used for before GMR?
 ?
 Probabilistic encryption and pseudo random number generation.
-<!--SR:2022-11-02,43,210-->
+<!--SR:!2023-02-04,92,210-->
 
 In what sense is zkQNR indistinguishable?
 ?
@@ -1015,7 +1015,7 @@ NP, since it's a special class of interactive proofs.
 How can knowledge complexity be used for cryptography?
 ?
 For proving the correctness of cryptographic protocols in a modular way.
-<!--SR:2022-11-02,117,230-->
+<!--SR:!2023-08-04,273,230-->
 
 
 
@@ -1192,7 +1192,7 @@ What is the basic (pre zk) idea of GMR's zk QNR IP?
 B generates type 1 and 2 numbers.
 If $y \in QNR$ A can tell the types of these numbers.
 If $y \notin QNR$ A cannot tell the types of the numbers and A will fail the quizzes with high probability.
-<!--SR:2022-11-02,62,150-->
+<!--SR:!2023-02-09,97,150-->
 
 What is the problem with the naive QNR IP?
 ?
@@ -1259,7 +1259,7 @@ $x$ is of  type 2
 What is $T \cup S$ for?
 ?
 The set of random numbers used to convince $A$ that $B$ knows the residuosity of $x$ without revealing it.
-<!--SR:2022-11-01,101,230-->
+<!--SR:!2023-07-07,245,230-->
 
 What is the size of $T \cup S$?
 ?
@@ -1375,7 +1375,7 @@ Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqr
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{x \cdot t_i} = \sqrt{r_0^2 \cdot r_i^2} = r_0 \cdot r_i$
-<!--SR:2022-11-03,86,190-->
+<!--SR:!2023-04-17,164,190-->
 
 If $x$ is type 1, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
@@ -1544,7 +1544,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:2022-10-28,93,210-->
+<!--SR:!2022-12-20,46,190-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?
@@ -1561,7 +1561,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:2022-10-30,46,230-->
+<!--SR:!2022-11-28,24,210-->
 
 ##### Claim 1
 

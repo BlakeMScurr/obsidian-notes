@@ -24,7 +24,7 @@ Overheard.
 What's the non naive approach to signing long messages?
 ?
 Hash the message then sign the hash.
-<!--SR:2022-11-04,11,250-->
+<!--SR:!2022-12-04,30,250-->
 
 ## Properties of Hash Functions
 
@@ -37,7 +37,7 @@ Fixed small length outputs.
 What are the efficiency requirements for a message hash function?
 ?
 Should be fast (much faster than signatures).
-<!--SR:2022-11-03,10,250-->
+<!--SR:!2022-11-30,26,250-->
 
 What are the security requirements for a message hash function?
 ?
@@ -54,7 +54,7 @@ One-wayness
 What does preimage resistance mean?
 ?
 That we can't compute $x$ from $h(x)$.
-<!--SR:2022-11-03,10,250-->
+<!--SR:!2022-12-03,29,250-->
 
 What does preimage mean, simply?
 ?
@@ -74,7 +74,7 @@ Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to
 What is another phrase for second preimage resistant?
 ?
 Weak collision resistance.
-<!--SR:2022-11-03,10,250-->
+<!--SR:!2022-11-30,26,250-->
 
 What is the difference between collision resistance and second preimage resistance?
 ?
@@ -88,7 +88,7 @@ in second preimage resistance we have a fixed message we're trying to find a col
 What is an example of a collision attack (where a hash function doesn't have collision resistance)?
 ?
 Suppose an attacker (think of a malicious crypto site) gets someone to sign the hash of a benign transaction, i.e., a swap they want to do. The malicious site gets metamask to show the benign transaction. However, there is another malicious transaction that hashes to the same value, so the malicious site can send that to the blockchain instead (racing metamask and the user to the chain).
-<!--SR:2022-11-04,11,250-->
+<!--SR:!2022-12-05,31,250-->
 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:!2022-11-03,3,210-->
+<!--SR:!2022-11-12,8,210-->
 
 
 # SHA-3
@@ -154,18 +154,18 @@ MD4, MD5, SHA-1, and SHA-2
 What is the name of the hash that won the SHA-3 competition?
 ?
 Keccak
-<!--SR:2022-11-04,11,250-->
+<!--SR:!2022-12-02,28,250-->
 
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
-<!--SR:2022-11-02,9,230-->
+<!--SR:!2022-11-29,25,230-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
 224 bits has the same strength as triple DES
 The other security levels have the same strength as forms of AES
-<!--SR:2022-11-03,10,250-->
+<!--SR:!2022-12-01,27,250-->
 
 ## Keccak Sponge
 
@@ -216,12 +216,12 @@ ${25, 50, 100, 200, 400, 800, 1600}$
 What is the relationship between keccak and SHA-3?
 ?
 Keccak is a family of functions that includes SHA-3, namely for SHA-3, $b=1600$
-<!--SR:2022-11-03,10,250-->
+<!--SR:!2022-12-02,28,250-->
 
 What does $n_r$ represent?
 ?
 The number of rounds
-<!--SR:2022-11-04,11,250-->
+<!--SR:!2022-12-06,32,250-->
 
 What is the relationship between $b$, $c$, and $r$?
 ?
@@ -254,7 +254,7 @@ Just truncate it.
 What is the keccak-f function broken down into?
 ?
 Rounds.
-<!--SR:2022-11-04,11,250-->
+<!--SR:!2022-12-04,30,250-->
 
 How many rounds in the keccak-f function?
 ?
@@ -271,12 +271,12 @@ What is the round function of keccak-f broken down into?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:!2022-11-03,3,170-->
+<!--SR:!2022-11-11,7,170-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
 Same as the round function, $b$ for both input and output (1600 for SHA-3)
-<!--SR:2022-11-02,10,250-->
+<!--SR:!2022-12-03,29,250-->
 
 How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \iota$ functions?
 ?
@@ -295,7 +295,7 @@ Which 11 bits are used by $theta$ and how are they combined?
 ?
 The original bit, the 5 bit column "to the left" of the bit  , and the 5 bit column "to the right and one position to the front" of the bit
 original plus/XOR left plus/XOR
-<!--SR:2022-11-02,10,250-->
+<!--SR:!2022-12-06,32,250-->
 
 What do $\rho$ and $\pi$ operate on?
 ?
@@ -310,7 +310,7 @@ The input is called $A$ and the output is called $B$
 Why is $\rho$ named $\rho$?
 ?
 Because it involves rotation
-<!--SR:2022-11-02,10,250-->
+<!--SR:!2022-12-05,31,250-->
 
 What does $rho$ do?
 ?
@@ -330,7 +330,7 @@ Permutes all the words using a simple relation
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
-<!--SR:!2022-11-03,3,210-->
+<!--SR:!2022-11-13,9,210-->
 
 What does $\iota$ do?
 ?

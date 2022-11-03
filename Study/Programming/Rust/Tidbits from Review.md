@@ -72,4 +72,4 @@ Equivalent to `(_, _)` where the enum has 2 properties, for example.
 What is `and_then`?
 ?
 A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:2022-11-02,6,190-->
+<!--SR:!2022-11-07,3,170-->

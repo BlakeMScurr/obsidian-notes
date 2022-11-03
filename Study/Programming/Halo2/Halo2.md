@@ -105,7 +105,7 @@ Sets of constraints like $q_i \cdot p(...)$, along with a set of selector column
 What kinds of gates are there?
 ?
 Standard gates that support generic field operations like multiplication and addition, and custom gates for more specialized operations.
-<!--SR:2022-11-04,30,270-->
+<!--SR:!2023-01-24,81,270-->
 
 ## Chips
 

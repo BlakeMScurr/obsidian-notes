@@ -498,7 +498,7 @@ Dot notation, i.e.,:
 What is the name for the  tuple without values?
 ?
 The unit
-<!--SR:2022-11-03,45,250-->
+<!--SR:!2023-02-26,114,250-->
 
 How do you write the unit and its type?
 ?
@@ -602,7 +602,7 @@ Statement.
 Are function definitions expressions or statements?
 ?
 Statements.
-<!--SR:2022-11-02,44,250-->
+<!--SR:!2023-02-25,113,250-->
 
 What is wrong with the following code?
 ```
@@ -669,7 +669,7 @@ How do you do multiline comments?
 Do `if` expressions require brackets for the condition?
 ?
 No.
-<!--SR:2022-11-04,46,250-->
+<!--SR:!2023-03-01,117,250-->
 
 What is wrong with the following code?
 ```
@@ -702,7 +702,7 @@ How do you return a value from a `loop`?
 ?
 By passing a value to the `break` statement, i.e.:
 `break x + 2;`
-<!--SR:2022-11-03,45,250-->
+<!--SR:!2023-02-23,111,250-->
 
 What is a loop label for?
 ?
@@ -779,12 +779,12 @@ To make memory safety guarantees without needing a garbage collector.
 What is ownership?
 ?
 A set of rules governing how rust manages memory.
-<!--SR:2022-11-02,44,250-->
+<!--SR:!2023-02-24,112,250-->
 
 When are ownership rules checked?
 ?
 Compile time.
-<!--SR:2022-11-04,46,250-->
+<!--SR:!2023-02-27,115,250-->
 
 ### The Stack and the Heap
 
@@ -875,7 +875,7 @@ How do we request memory from the allocator for a new string?
 What function is called for us when a variable goes out of scope?
 ?
 `drop`
-<!--SR:2022-11-04,46,250-->
+<!--SR:!2023-02-28,116,250-->
 
 
 What is wrong with the following code?
@@ -927,7 +927,7 @@ What trait can't coexist with the `Copy` trait, and how exactly?
 ?
 `Drop`.
 If the type or any of its parts implement `Drop`, it can't implement `Copy`.
-<!--SR:2022-11-02,16,230-->
+<!--SR:!2022-12-16,42,230-->
 
 What kinds of types tend to implement the `Copy` trait?
 ?
@@ -1106,7 +1106,7 @@ Private
 Does making a struct public make its fields public?
 ?
 No
-<!--SR:2022-11-03,45,250-->
+<!--SR:!2023-03-02,118,250-->
 
 Does making a module public make its functions and structs etc public?
 ?
@@ -1212,7 +1212,7 @@ By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
 What do we use for recoverable errors?
 ?
 The `Result` type.
-<!--SR:2022-11-04,18,230-->
+<!--SR:!2022-12-14,40,230-->
 
 What is the definition of the `Result` type?
 ?
@@ -1538,7 +1538,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2022-11-04,38,230-->
+<!--SR:!2022-11-25,21,210-->
 
 How do you make a test that can return an error?
 ?

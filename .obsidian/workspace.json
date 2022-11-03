@@ -4,29 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e74fa9aaedb5745f",
+        "id": "15b6272f31919e32",
         "type": "tabs",
         "children": [
           {
-            "id": "a79f7cdefdd57463",
+            "id": "cda2a217b711a172",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "c7df6d9788595fc5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +99,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4d8114f4cc421c0f",
+  "active": "cda2a217b711a172",
   "lastOpenFiles": [
     "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/ZKPs/Papers/Literature.md",
