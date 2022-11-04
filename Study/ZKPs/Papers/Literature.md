@@ -56,7 +56,7 @@ The notion of multi-prover interactive protocols, that all languages in NP have 
 What did BGKW88 see themselves as contributing?
 ?
 An interactive proof system that doesn't rely on the one way function assumption, instead relying on physical separation.
-<!--SR:2022-11-04,63,150-->
+<!--SR:!2023-02-10,98,150-->
 
 ## FRS88
 
