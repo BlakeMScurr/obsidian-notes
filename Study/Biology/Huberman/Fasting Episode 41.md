@@ -59,7 +59,7 @@ In a fasted state
 What is GLP1 involved in?
 ?
 Mobilising energy sources like fat, carbohydrates, or even muscle
-<!--SR:2022-11-05,13,210-->
+<!--SR:!2022-12-01,26,210-->
 
 What is lipolosis?
 ?

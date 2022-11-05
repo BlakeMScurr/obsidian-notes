@@ -64,7 +64,7 @@ Input
 What does second preimage resistance mean?
 ?
 An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(x_1) = z$
-<!--SR:2022-11-05,12,250-->
+<!--SR:!2022-12-07,32,250-->
 
 What's the online banking example where second preimage resistance is important?
 ?
@@ -103,7 +103,7 @@ No.
 Why do all hash functions have collisions?
 ?
 Because the input space is of arbitrary length, and the output is fixed.
-<!--SR:2022-11-05,12,250-->
+<!--SR:!2022-12-08,33,250-->
 
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
@@ -247,7 +247,7 @@ I.e., for an input with $m$ bits, it takes $m/r$ rounds.
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
 Just truncate it.
-<!--SR:2022-11-05,12,250-->
+<!--SR:!2022-12-09,34,250-->
 
 ## Keccak-f
 

@@ -1034,7 +1034,7 @@ The `out2` signal is declared inside a nested block.
 Which signals of subcomponents are visible?
 ?
 The direct children's signals are visible, but none of their descendant's signals are visible.
-<!--SR:2022-11-05,95,230-->
+<!--SR:!2023-06-11,218,230-->
 
 What is wrong with this code?
 ```
