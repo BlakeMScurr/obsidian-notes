@@ -768,7 +768,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:2022-11-07,97,230-->
+<!--SR:!2022-12-28,51,210-->
 
 What is a quadratic expression?
 ?
