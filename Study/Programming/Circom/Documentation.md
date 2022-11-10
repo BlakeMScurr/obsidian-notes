@@ -837,7 +837,7 @@ Because `x` holds the algebraic expression `a*a` which is used to generate const
 What control flow constructions do we have?
 ?
 `if`, `for`, and `while`
-<!--SR:2022-11-08,106,250-->
+<!--SR:!2023-08-07,269,250-->
 
 What is the syntax `if` statements?
 ?
@@ -1104,7 +1104,7 @@ What are the compiler phases called and what do they do?
 ?
 Construction, where constraints are generated
 Code generation, where the code to compute the witness is generated
-<!--SR:2022-11-09,103,250-->
+<!--SR:!2023-07-28,259,250-->
 
 What kinds of compiler messages are there?
 ?
