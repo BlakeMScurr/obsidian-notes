@@ -41,7 +41,7 @@ If one way functions exist, then every NP language has a computationally zero-kn
 What is BGKW88's title?
 ?
 Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
-<!--SR:2022-11-13,95,170-->
+<!--SR:!2023-04-26,161,170-->
 
 Who are the authors of BGKW88?
 ?
@@ -68,7 +68,7 @@ On the power of multi-prover interactive protocols
 Who are the authors of FRS88?
 ?
 Lance Fortnow, John Rompel, and Michael Sipser.
-<!--SR:2022-11-05,109,190-->
+<!--SR:!2023-06-22,218,190-->
 
 What does FRS88 contribute?
 ?
@@ -123,7 +123,7 @@ That 1 round NIZKs are only possible for trival (BPP) languages.
 Who are the authors of GOS12?
 ?
 Jens Groth, Rafail Ostrovsky, and Amit Sahai
-<!--SR:2022-11-06,117,250-->
+<!--SR:!2023-09-17,305,250-->
 
 What is the title of GOS12?
 ?
@@ -133,7 +133,7 @@ New techniques for noninteractive zero-knowledge
 What did GOS12 contribute?
 ?
 Introduced pairing based NIZKs. 
-<!--SR:!2022-11-13,12,130-->
+<!--SR:!2022-12-04,18,130-->
 
 %%Do I care about the rest of the specifics? Probably not, as a practicioner and circuit writer, rather than as a scientist%%
  %%- Reduced CRS size. 
@@ -170,7 +170,7 @@ Simulation-sound NIZK proofs for a practical language and constant size group si
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:2022-11-11,42,190-->
+<!--SR:!2022-12-11,25,170-->
 
 Who are the authors of GS12?
 ?
@@ -317,7 +317,7 @@ Scalable Multi-party Computation for zk-SNARK Parameters in the Random Beacon Mo
 What did BGM19 contribute?
 ?
 A scalabe multi-party computation secure in the random beacon model which omits the precommitment phase, which holds even if an adversary has limited influence on the beacon.
-<!--SR:2022-11-12,44,210-->
+<!--SR:!2023-02-21,97,210-->
 
 # To investigate 
 Algebraic methods for interactive proof systems, Lund, Fortnow, Karloff, Nisan.

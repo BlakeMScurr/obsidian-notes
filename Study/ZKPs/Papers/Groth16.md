@@ -132,7 +132,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:2022-10-28,57,170-->
+<!--SR:!2022-12-17,31,150-->
 
 What is Groth's constant size NIZK based on?
 ?

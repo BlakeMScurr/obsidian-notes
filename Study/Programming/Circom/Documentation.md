@@ -193,7 +193,7 @@ template tempid (param_1, param2) {
 What can templates not include?
 ?
 Local functions or template definitions.
-<!--SR:2022-11-13,110,250-->
+<!--SR:!2023-08-22,279,250-->
 
 What is wrong with the following code, and what error will it generate?
 ```
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:2022-11-14,88,190-->
+<!--SR:!2022-12-29,43,170-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -287,7 +287,7 @@ component main{public [in]} = A(1);
 ?
 There is no output signal from the `A` template..
 The warning at compile time with `--inspect` is: "There is no output signal"
-<!--SR:2022-11-10,108,230-->
+<!--SR:!2023-07-26,252,230-->
 
 What, roughly, are the three compiler warnings you can get from misusing signals in a template?
 ?
@@ -311,7 +311,7 @@ $N$ input signals, $M$ output signals, and $K$ intermediate signals.
 What can a component produce?
 ?
 A set of arithmetic constraints.
-<!--SR:2022-11-16,114,250-->
+<!--SR:!2023-08-28,285,250-->
 
 How do we access the input or output signals of a component?
 ?
@@ -378,7 +378,7 @@ ands[1] = MultiAnd(n2);
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:2022-11-07,21,210-->
+<!--SR:!2023-01-09,54,210-->
 
 How do we use `parallel`?
 ?
@@ -537,7 +537,7 @@ log
 assert
 include
 pragma circom
-<!--SR:2022-11-06,55,150-->
+<!--SR:!2022-12-18,32,130-->
 
 # Operators
 
@@ -564,7 +564,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:2022-11-11,116,250-->
+<!--SR:!2023-01-16,61,230-->
 
 What is the conditional expression?
 ?
@@ -714,7 +714,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:2022-11-10,24,150-->
+<!--SR:!2022-12-27,41,150-->
 
 What are the bitwise assignment operators?
 ?
