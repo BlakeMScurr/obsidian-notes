@@ -163,7 +163,7 @@ if (x = 3) {
 ```
 ?
 An assignment, which is a statement and has no value, is being used as part of an expression. This is a compiler error.
-<!--SR:2022-11-11,105,230-->
+<!--SR:!2023-07-22,246,230-->
 
 # Templates
 
@@ -435,7 +435,7 @@ function funid (param_1, ..., param_n) {
 What can functions output?
 ?
 Numeric values, or expressions, or arrays of one or the other.
-<!--SR:2022-11-16,118,250-->
+<!--SR:!2023-09-12,298,250-->
 
 Can functions be recursive?
 ?
@@ -594,7 +594,7 @@ Boolean NEGATION operator.
 What are the relational operators?
 ?
 `< > <= >= == !=`
-<!--SR:2022-11-17,120,250-->
+<!--SR:!2023-09-15,301,250-->
 
 What is the `val(x)` function for?
 ?
@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:2022-11-13,18,150-->
+<!--SR:!2022-11-28,10,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -756,7 +756,7 @@ template Num2Bits(N) {
 }
 component main{public[in]} = Num2Bits(3);
 ```
-<!--SR:2022-11-07,71,230-->
+<!--SR:!2023-05-13,176,230-->
 
 # Constraint Generation
 
@@ -1109,7 +1109,7 @@ Code generation, where the code to compute the witness is generated
 What kinds of compiler messages are there?
 ?
 Hints, warnings, and errors.
-<!--SR:2022-11-17,43,230-->
+<!--SR:!2023-02-26,100,230-->
 
 What is a hint?
 ?

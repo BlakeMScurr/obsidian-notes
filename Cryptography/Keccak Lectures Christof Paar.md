@@ -98,7 +98,7 @@ Collision attacks take the square root of the amount of steps as a preimage atta
 Can you build a hash function without collisions?
 ?
 No.
-<!--SR:!2022-11-18,18,250-->
+<!--SR:!2023-01-04,47,250-->
 
 Why do all hash functions have collisions?
 ?
@@ -120,7 +120,7 @@ With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
 How does the birthday problem apply to hash functions?
 ?
 It's equivalent to the problem of finding a hash collision.
-<!--SR:!2022-11-18,18,250-->
+<!--SR:!2022-12-31,43,250-->
 
 What is the probability:
 That 2 people in a room share a birthday?
@@ -191,7 +191,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
-<!--SR:!2022-11-17,17,230-->
+<!--SR:!2022-12-30,42,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -226,7 +226,7 @@ The number of rounds
 What is the relationship between $b$, $c$, and $r$?
 ?
 $b = r + c$
-<!--SR:!2022-11-17,17,250-->
+<!--SR:!2023-01-01,44,250-->
 
 How do you make keccak into a PRNG?
 ?
@@ -320,7 +320,7 @@ Rotates each word by a fixed number of positions (defined by a fairly arbitrary 
 What do they call a word in the keccak document?
 ?
 A lane
-<!--SR:!2022-11-18,18,250-->
+<!--SR:!2023-01-02,45,250-->
 
 What does $\pi$ do?
 ?

@@ -902,7 +902,7 @@ The number of rows in the matrix from ProofMatrix
 What arguments does ProofMatrix accept?
 ?
 $(R, \phi, w)$
-<!--SR:2022-10-31,32,170-->
+<!--SR:!2022-12-08,20,150-->
 
 What does Vfy do in a LIP?
 ?
@@ -1101,7 +1101,7 @@ Set $\boldsymbol{\sigma}$
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:2022-11-16,28,230-->
+<!--SR:!2023-01-25,68,230-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?

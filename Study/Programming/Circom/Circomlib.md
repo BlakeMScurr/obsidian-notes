@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:2022-11-15,29,130-->
+<!--SR:!2022-12-29,41,130-->
 
 What are the variables in compconstant?
 ?
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:2022-11-12,25,130-->
+<!--SR:!2022-12-01,13,130-->
 
 ## g-m
 
@@ -353,7 +353,7 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:2022-11-10,50,190-->
+<!--SR:!2022-12-14,26,170-->
 
 ### Mux1
 

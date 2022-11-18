@@ -33,7 +33,7 @@ $(\sqrt{2})^3 = 2\sqrt{2}$
 What does it mean to say that $\sqrt{2}$ and $-\sqrt{2}$ are conjugate over $\mathbb{Q}$?
 ?
 Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ with $-\sqrt{2}$ will leave the equation holding true.
-<!--SR:2022-11-12,112,210-->
+<!--SR:!2023-07-18,242,210-->
 
 ??? Does this mean that we can construct expressions with non rational coefficients for which $\sqrt{2}$ and $-\sqrt{2}$ are not conjugate?
 
@@ -86,7 +86,7 @@ It helps to understand how numbers (like $\sqrt{2}$ and $e^{\frac{2i\pi}{5}}$) a
 What is a field, roughly speaking?
 ?
 Any set where you can add, subtract, multiply, and divide elements.
-<!--SR:2022-11-13,119,250-->
+<!--SR:!2023-09-18,304,250-->
 
 Name a field (basic, but highly relevant to Galois theory)
 ?
@@ -116,7 +116,7 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:2022-11-12,21,170-->
+<!--SR:!2022-12-29,41,170-->
 
 What is the intuition behind the definition of an automorphism?
 ?

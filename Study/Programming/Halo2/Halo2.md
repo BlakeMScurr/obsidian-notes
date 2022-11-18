@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:!2022-11-10,9,210-->
+<!--SR:!2022-11-25,7,190-->
 
 What is advice?
 ?
@@ -29,7 +29,7 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:2022-11-12,38,170-->
+<!--SR:!2022-12-09,21,150-->
 
 What are the possible specifications for each column?
 ?
@@ -71,12 +71,12 @@ A cell in a given column of the current row, or a given column of another row re
 What is the maximum degree of each polynomial?
 ?
 The maximum constraint degree.
-<!--SR:2022-11-13,73,250-->
+<!--SR:!2023-05-26,189,250-->
 
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:!2022-11-08,7,130-->
+<!--SR:!2022-12-05,17,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
@@ -98,7 +98,7 @@ A value defined in a fixed column that allows polynomial constraints to be turne
 How, roughly are gates implemented?
 ?
 Sets of constraints like $q_i \cdot p(...)$, along with a set of selector columns are called a gate.
-<!--SR:2022-11-06,74,270-->
+<!--SR:!2023-06-21,215,270-->
 
 ??? Why is it not just a single constraint along with a selector column? Intuitively that's what a gate would be, to me.
 
@@ -122,6 +122,6 @@ Cryptographic primitives like hash functions or ciphers, or algorithms like scal
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:2022-11-09,16,250-->
+<!--SR:!2023-01-07,50,250-->
 
 ## Gadgets
