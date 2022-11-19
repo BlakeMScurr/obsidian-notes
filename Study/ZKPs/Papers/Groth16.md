@@ -278,7 +278,7 @@ Type III
 For which type of bilinear group does the construction work?
 ?
 All 3 types
-<!--SR:2022-11-20,89,230-->
+<!--SR:!2023-06-14,206,230-->
 
 ## Non-interactive Zero-Knowledge Arguments of Knowledge
 
@@ -355,7 +355,7 @@ The simulator gets access to $\tau$ so it can generate proofs indistinguishable 
 What is $\pi$?
 ?
 The argument.
-<!--SR:2022-11-15,95,250-->
+<!--SR:!2023-07-19,241,250-->
 
 What is the definition of $\textbf{Vfy}$?
 ?
@@ -399,7 +399,7 @@ $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
 What is perfect zero knowledge, roughly?
 ?
 An argument is zero knowledge if it does not leak any information besides the truth of the statement.
-<!--SR:2022-11-15,109,270-->
+<!--SR:!2023-09-16,300,270-->
 
 What is the definition of perfect zero-knowledge?
 ?
@@ -473,8 +473,8 @@ What does the extractor in the definition of computational knowledge soundness h
 ?
 Full access to the adversary's state, including any random coins.
 It operates on the same inputs too, $(R, z, \sigma)$
-<!--SR:2022-10-30,40,170-->
-Note, this is already implicit in its access to the adversaries state.
+
+Note, this is already implicit in its access to the adversaries state.<!--SR:!2023-02-14,86,170-->
 
 
 What is the definition of computational knowledge soundness?
@@ -579,7 +579,7 @@ Boyle and Pass BP15
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
 Since those results rely on specific auxiliary input distributions, we can assume that the relationship generator is benign in the sense that the relation and the auxiliary input are distributed in such a way that SNARKs can exist.
-<!--SR:2022-11-09,102,270-->
+<!--SR:!2023-09-06,290,270-->
 
 ## Quadratic Arithmetic Programs
 
@@ -829,7 +829,7 @@ And because the relation generator picks the bilinear group to give our generato
 What does LIP stand for?
 ?
 Linear interactive proof
-<!--SR:2022-11-01,85,250-->
+<!--SR:!2023-07-14,236,250-->
 
 What is the purpose of a LIP?
 ?
@@ -1135,7 +1135,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:2022-11-17,64,230-->
+<!--SR:!2022-12-20,30,210-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1225,7 +1225,7 @@ $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
 What kind of thing is $\boldsymbol{t}$ in a QAPLIP?
 ?
 A quadratic multi-variate polynomial.
-<!--SR:2022-11-12,16,210-->
+<!--SR:!2023-01-05,46,210-->
 
 What is the short form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
