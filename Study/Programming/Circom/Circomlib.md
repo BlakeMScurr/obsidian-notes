@@ -229,7 +229,7 @@ cmsb = (ct >> (i*2+1)) & 1;
 slsb = in[i*2];
 smsb = in[i*2+1];
 ```
-<!--SR:2022-11-19,53,230-->
+<!--SR:!2023-03-15,116,230-->
 
 What does each part resolve to, and when?
 ?

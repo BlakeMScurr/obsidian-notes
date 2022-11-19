@@ -27,7 +27,7 @@ Doesn't preserve order.
 How do you add a large collection of items to an `Vec`?
 ?
 `append` for an existing `Vec`, and `extend` for items that aren't already a `Vec`, but implement `IntoIterator`
-<!--SR:2022-11-13,26,190-->
+<!--SR:!2022-12-03,14,170-->
 
 # Truncate PR 2
 
@@ -72,4 +72,4 @@ Equivalent to `(_, _)` where the enum has 2 properties, for example.
 What is `and_then`?
 ?
 A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:!2022-11-07,3,170-->
+<!--SR:!2022-11-22,3,150-->

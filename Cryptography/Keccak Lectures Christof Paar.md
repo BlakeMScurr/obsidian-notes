@@ -242,7 +242,7 @@ How many times do we run the absorbtion phase (i.e., run the $f$ function and `X
 ?
 As many times as required to get the entire input in.
 I.e., for an input with $m$ bits, it takes $m/r$ rounds.
-<!--SR:!2022-11-19,19,250-->
+<!--SR:!2023-01-06,48,250-->
 
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:!2022-11-19,3,170-->
+<!--SR:!2022-11-24,5,170-->
 
 
 

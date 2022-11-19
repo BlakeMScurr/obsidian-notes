@@ -393,7 +393,7 @@ The C++ file resulting from compilation will contain parallelized code to comput
 When is parallelization particularly useful?
 ?
 When dealing with large circuits.
-<!--SR:2022-11-19,45,230-->
+<!--SR:!2023-03-06,107,230-->
 
 
 
@@ -1075,7 +1075,7 @@ Introduces a condition to be checked at execution time. If the condition fails, 
 What creates assertions?
 ?
 The `assert` keyword, and constraints.
-<!--SR:2022-11-19,109,230-->
+<!--SR:!2023-07-21,244,230-->
 
 How do you use `assert`, for example?
 ?
