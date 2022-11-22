@@ -106,7 +106,7 @@ To non-interactive zero knowledge proofs (NIZK) in the common reference string m
 Where are NIZKs useful, according to Groth16?
 ?
 The construction of non-interactive cryptographic schemes, e.g., digital key signatures, and CCA-secure public key encryption.
-<!--SR:2022-10-31,78,190-->
+<!--SR:!2023-05-12,171,190-->
 
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
@@ -309,7 +309,7 @@ $(\phi, w)$, i.e., statement and witness
 What is $\mathcal{R}_\lambda$?
 ?
 The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
-<!--SR:2022-11-18,111,270-->
+<!--SR:!2023-09-23,305,270-->
 
 What is $z$?
 ?
@@ -959,7 +959,7 @@ The multiplicative depth of the setup circuit.
 What is $d_D$?
 ?
 The multiplicative depth of the verifier circuit output by Test.
-<!--SR:2022-11-01,95,270-->
+<!--SR:!2023-01-11,50,250-->
 
 What is $\mu$?
 ?
@@ -1144,7 +1144,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:2022-11-09,49,230-->
+<!--SR:!2022-12-18,26,210-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1169,7 +1169,7 @@ x^it(x)
 What is the function signature of Prove for a QAPLIP?
 ?
 $\pi \leftarrow$Prove$(R, \sigma, a_1, ..., a_m)$
-<!--SR:2022-11-16,88,250-->
+<!--SR:!2023-07-11,231,250-->
 
 What are the steps involved in Prove for a QAP LIP?
 ?
@@ -1218,7 +1218,7 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:2022-11-02,14,190-->
+<!--SR:!2023-01-10,49,190-->
 
 %% Are we missing an implicit argument pi in Vfy?%%
 
