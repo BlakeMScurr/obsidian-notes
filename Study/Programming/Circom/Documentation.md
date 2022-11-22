@@ -627,7 +627,7 @@ How is `x <= y` defined?
 How is `x >= y` defined?
 ?
 `val(x % p) >= val(y % p)`
-<!--SR:2022-11-20,121,250-->
+<!--SR:!2023-09-24,305,250-->
 
 What are the arithmetic operators?
 ?
@@ -1070,7 +1070,7 @@ template t() {
 What does assert do?
 ?
 Introduces a condition to be checked at execution time. If the condition fails, the witness generation is interrupted and the error is reported.
-<!--SR:2022-11-20,94,190-->
+<!--SR:!2023-05-23,181,190-->
 
 What creates assertions?
 ?

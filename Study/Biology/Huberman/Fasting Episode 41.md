@@ -34,7 +34,7 @@ Complex carbohydrates (grains, breads, pastas etc)
 Fibrous carbohydrates (brocolli, lettuce etc)
 Protein
 Fat
-<!--SR:2022-11-21,35,250-->
+<!--SR:!2023-02-20,89,250-->
 
 What is type 1 diabetes?
 ?
