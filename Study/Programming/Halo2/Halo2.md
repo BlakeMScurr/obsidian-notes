@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:!2022-11-21,20,130-->
+<!--SR:!2022-12-06,12,130-->
 
 What keys do we genererate from the circuit description?
 ?

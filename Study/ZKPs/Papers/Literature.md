@@ -192,7 +192,7 @@ Practical efficient NIZK and NI witness indistinguishable proofs by satisfying e
 Who are the authors of Gro10?
 ?
 Jens Groth
-<!--SR:2022-11-24,133,250-->
+<!--SR:!2023-10-23,333,250-->
 
 What is the title of Gro10?
 ?
@@ -283,7 +283,7 @@ Sonic
 Who are the authors of GWC21?
 ?
 Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
-<!--SR:2022-11-24,89,210-->
+<!--SR:!2023-05-31,188,210-->
 
 What is the title of GWC21?
 ?

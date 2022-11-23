@@ -278,7 +278,7 @@ How do we define an interactive pair (A, B)?
 Where each listen's to the others' speaking tape.
 They take turns being active.
 Either can halt the pair.
-<!--SR:2022-11-18,127,230-->
+<!--SR:!2023-09-19,299,230-->
 
 What is output of an interactive pair?
 ?
@@ -337,7 +337,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:2022-11-15,25,130-->
+<!--SR:!2023-01-01,38,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -632,7 +632,7 @@ The highest power (probably +1) in the polynomial restricting the output size, s
 How do we define an I-c-ensembles's $I$?
 ?
 An infinite set of strings.
-<!--SR:2022-11-22,140,250-->
+<!--SR:!2023-11-12,353,250-->
 
 How do we define an I-c-ensembles's $c$?
 ?
@@ -668,7 +668,7 @@ A computationally bounded adversary trying to distinguish between distributions,
 What does the distinguisher represent in an Interactive Proof?
 ?
 An verifier trying to tell its own studies apart from notes taken in class.
-<!--SR:2022-11-12,123,230-->
+<!--SR:!2023-09-14,294,230-->
 
 What is the definition of a distinguisher?
 ?
@@ -798,7 +798,7 @@ None because we could compute it ourselves easily.
 What is the unit for knowledge communcation?
 ?
 Bits.
-<!--SR:2022-11-08,143,270-->
+<!--SR:!2024-01-06,408,270-->
 
 #### Machine Ensembles
 * Probabilistic (polynomial output) turing machines generate ensembles
@@ -903,7 +903,7 @@ The reporter doesn't know what the cop will say - i.e., their chance '' '' is 0,
 How much information does A communicate to honest B in naive QNR IP? (Multi round version, not just NP version).
 ?
 Zero.
-<!--SR:2022-11-05,72,230-->
+<!--SR:!2023-05-30,187,230-->
 
 How does M simulate (A,B) in naive QNR?
 ?
@@ -1140,7 +1140,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:2022-11-06,94,190-->
+<!--SR:!2023-01-12,49,170-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1202,7 +1202,7 @@ $A$ may release the quadratic residuosity of another $x\in \mathbb{Z}_m^*$chosen
 How (roughly) do we change the naive QNR IP to make it zero knowledge?
 ?
 We have $A$ make sure $B$ "knows" the types of the numbers it quizzes $A$ about.
-<!--SR:2022-11-19,130,250-->
+<!--SR:!2023-10-21,331,250-->
 
 What is the relationship between types and quadratic residuosity?
 ?
@@ -1280,7 +1280,7 @@ $S = \{t_{n+1},...,t_{2n}\ |\ t_i = y\cdot r_i^2\}$
 What type are each $t_i$?
 ?
 Type 1
-<!--SR:2022-11-06,110,230-->
+<!--SR:!2023-08-25,274,230-->
 
 What type are each $t_i in S$?
 ?

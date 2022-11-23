@@ -12,7 +12,7 @@ How does "the value of Ethereum increases significantly due to the future fee op
 What $CoC$ mean?
 ?
 Cost of corruption.
-<!--SR:2022-11-21,63,250-->
+<!--SR:!2023-05-02,159,250-->
 
 What is the $CoC$ of a DApp without restaking?
 ?
@@ -36,7 +36,7 @@ The set of all stakers.
 What does $T$ denote?
 ?
 The set of all tasks secured by eigenlayer.
-<!--SR:2022-11-07,56,250-->
+<!--SR:!2023-05-03,160,250-->
 
 What does $s_i$ denote?
 ?
@@ -46,7 +46,7 @@ The amount of stake held by staker $i$
 What does $S_j$ denote?
 ?
 The set of stakers who have staked for the task $j$.
-<!--SR:2022-11-10,62,270-->
+<!--SR:!2023-05-29,186,270-->
 
 What does $\alpha_j$ denote?
 ?
@@ -56,7 +56,7 @@ The fraction of stake require to corrupt task $j$.
 What does $U$ denote?
 ?
 A subset of the validators/restakers $S$.
-<!--SR:2022-11-08,60,270-->
+<!--SR:!2023-05-27,184,270-->
 
 What does $V$ denote?
 ?
@@ -78,12 +78,12 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:2022-11-22,26,250-->
+<!--SR:!2023-01-31,68,250-->
 
 What does $S^c(V)$ denote?
 ?
 The collection of staker sets which are sufficient to corrupt all tasks in the subset $V$.
-<!--SR:2022-11-19,68,270-->
+<!--SR:!2023-06-01,189,270-->
 
 What is the definition of $S^c(V)$?
 ?
@@ -98,7 +98,7 @@ The cost of corruption for a subset of tasks $V$.
 How is $c(V)$ defined?
 ?
 $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
-<!--SR:2022-11-11,21,230-->
+<!--SR:!2023-01-27,64,230-->
 
 What does $p_j$ denote?
 ?
@@ -108,7 +108,7 @@ The profit from corruption of task $j$.
 What does $p(V)$ denote?
 ?
 The total profit from corrupting the set of tasks $V$.
-<!--SR:2022-11-15,66,270-->
+<!--SR:!2023-06-09,197,270-->
 
 How is $p(V)$ defined?
 ?
@@ -123,7 +123,7 @@ If for all sets of tasks containing $j$, the cost of corruption is higher than t
 When is a task $j$ secure? Use mathmatical symbols.
 ?
 $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
-<!--SR:2022-11-09,61,270-->
+<!--SR:!2023-05-28,185,270-->
 
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
@@ -140,7 +140,7 @@ What is the definition of $T^c(U)$?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:2022-11-08,18,190-->
+<!--SR:!2023-01-10,47,190-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
@@ -151,7 +151,7 @@ $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
 What does $\gamma_{ij}$ denote?
 ?
 The fraction of task $j$s securing stake which is held by staker $i$.
-<!--SR:2022-11-16,67,290-->
+<!--SR:!2023-06-18,206,290-->
 
 How is $\gamma_{ij}$ defined?
 ?
@@ -161,7 +161,7 @@ $s_i/\sum_{k \in S_j} s_k$
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-11-20,70,290-->
+<!--SR:!2022-12-30,36,270-->
 
 ### B.1
 
@@ -170,12 +170,12 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-11-20,19,190-->
+<!--SR:!2022-12-04,10,170-->
 
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:2022-11-20,70,290-->
+<!--SR:!2022-12-30,36,270-->
 
 ### B.1
 
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-11-20,19,190-->
+<!--SR:!2022-12-04,10,170-->
 
 
 ??? How do the steps in line (10) work?

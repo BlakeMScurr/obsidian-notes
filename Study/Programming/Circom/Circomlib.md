@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:2022-11-20,33,210-->
+<!--SR:!2022-12-12,18,190-->
 
 What is the code for `BinSum`?
 ?

@@ -19,7 +19,7 @@ What are the main problems with the naive approach to signing long messages?
 Rearrangement.
 Cost.
 Overheard.
-<!--SR:!2022-11-23,23,250-->
+<!--SR:!2023-01-26,63,250-->
 
 What's the non naive approach to signing long messages?
 ?
@@ -93,7 +93,7 @@ Suppose an attacker (think of a malicious crypto site) gets someone to sign the 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
 Collision attacks take the square root of the amount of steps as a preimage attack.
-<!--SR:!2022-11-24,23,250-->
+<!--SR:!2023-01-21,58,250-->
 
 Can you build a hash function without collisions?
 ?
@@ -177,7 +177,7 @@ A sponge construction.
 Why is it called a "sponge" construction?
 ?
 Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
-<!--SR:!2022-11-21,21,250-->
+<!--SR:!2023-01-19,56,250-->
 
 What are the phases of a sponge construction?
 ?
@@ -200,12 +200,12 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:!2022-11-21,5,130-->
+<!--SR:!2022-11-27,3,130-->
 
 What does $b$ represent?
 ?
 The state length.
-<!--SR:!2022-11-22,6,210-->
+<!--SR:!2022-12-10,16,210-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
@@ -264,7 +264,7 @@ $r$ (24 in SHA-3)
 What is the input and output size of keccak-f?
 ?
 $b$ for bouth input and output (1600 in SHA-3)
-<!--SR:!2022-11-20,20,250-->
+<!--SR:!2023-01-21,58,250-->
 
 What is the round function of keccak-f broken down into?
 ?
@@ -289,7 +289,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:!2022-11-24,8,210-->
+<!--SR:!2022-11-28,4,190-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
@@ -300,7 +300,7 @@ original plus/XOR left plus/XOR
 What do $\rho$ and $\pi$ operate on?
 ?
 64 bit words
-<!--SR:!2022-11-23,23,250-->
+<!--SR:!2023-01-22,59,250-->
 
  What are the inputs and outputs of $\rho$ and $\pi$?
  ?
@@ -315,7 +315,7 @@ Because it involves rotation
 What does $rho$ do?
 ?
 Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
-<!--SR:!2022-11-20,20,250-->
+<!--SR:!2023-01-17,54,250-->
 
 What do they call a word in the keccak document?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:!2022-11-24,5,170-->
+<!--SR:!2022-12-04,10,170-->
 
 
 

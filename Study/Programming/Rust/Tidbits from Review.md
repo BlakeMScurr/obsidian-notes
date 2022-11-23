@@ -40,7 +40,7 @@ It lets you accept `String`, `&mut String` , `str` etc etc as an argument to you
 What is the `any` function on an iterator?
 ?
 It returns whether any of the elements match the condition of the closure.
-<!--SR:2022-11-23,36,250-->
+<!--SR:!2023-02-23,91,250-->
 
 What is `skip`?
 ?
@@ -50,7 +50,7 @@ A method on iterators that skips a certain number of elements.
 What is `step_by`?
 ?
 A method on iterators that makes it step through by a certain number of steps. I.e., `step_by(2)` would make the iterator yield even indexed elements.
-<!--SR:2022-11-22,35,250-->
+<!--SR:!2023-02-22,90,250-->
 
 What is `get_mut`?
 ?
@@ -72,4 +72,4 @@ Equivalent to `(_, _)` where the enum has 2 properties, for example.
 What is `and_then`?
 ?
 A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:!2022-11-22,3,150-->
+<!--SR:!2022-11-30,6,150-->

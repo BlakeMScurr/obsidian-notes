@@ -72,7 +72,7 @@ What is the keyword used to bring libraries into scope?
 What is the prelude?
 ?
 A set of items defined in the standard library that is brought into scope by default into every program.
-<!--SR:2022-11-24,63,270-->
+<!--SR:!2023-05-15,172,270-->
 
 How do you define the entrypoint for a rust program?
 ?
@@ -122,7 +122,7 @@ That `new` is an associated function of the string type.
 What is an associated function?
 ?
 A function that's implemented on a type, but doesn't have access to a specific instance like a method.
-<!--SR:2022-11-18,56,250-->
+<!--SR:!2023-04-20,147,250-->
 
 What does `let mut guess = String: :new()` do, exactly?
 ?
@@ -145,7 +145,7 @@ How do you get the user's input into a string called `guess`?
 io::stdin()
 	.read_line(&mut guess)
 ```
-<!--SR:2022-11-22,35,210-->
+<!--SR:!2023-02-11,79,210-->
 
 What is a `Result`?
 ?
@@ -183,7 +183,7 @@ Binary crates are executables.
 Where are dependency crates defined?
 ?
 `Cargo.toml`
-<!--SR:2022-11-18,51,270-->
+<!--SR:!2023-04-23,150,270-->
 
 How do you create a random number between 1 and 100 (inclusive)?
 ?
@@ -306,7 +306,7 @@ There needs to be a type annotation on guess, as `parse()` is ambiguous and coul
 What is a scalar type?
 ?
 A type that represents a single value.
-<!--SR:2022-11-23,55,230-->
+<!--SR:!2023-04-03,130,230-->
 
 What are the main scalar types?
 ?
@@ -375,7 +375,7 @@ What is the prefix for binary number literals?
 What is the syntax for byte number literals?
 ?
 `b'A'`, where `A` represents an 8bit integer.
-<!--SR:!2022-11-23,22,230-->
+<!--SR:!2022-12-07,13,210-->
 
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
@@ -515,7 +515,7 @@ The unit, i.e., the empty tuple `()`
 Do arrays have fixed or variable lengths?
 ?
 Fixed.
-<!--SR:2022-11-18,52,250-->
+<!--SR:!2023-04-10,137,250-->
 
 Can the elements in an array have different types from one another?
 ?
@@ -592,7 +592,7 @@ What is the difference between a statement and an expression?
 ?
 _Statements_ are instructions that perform some action and do not return a value.
 _Expressions_ evaluate to a resulting value.
-<!--SR:2022-11-22,55,250-->
+<!--SR:!2023-04-12,139,250-->
 
 Does `let` create an expression or a statement?
 ?
@@ -733,7 +733,7 @@ Yes.
 Can `while` loops return a value?
 ?
 No.
-<!--SR:2022-11-21,28,170-->
+<!--SR:!2023-01-13,50,170-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
@@ -765,7 +765,7 @@ Can we shorten `+= 1` with `++`? Why?
 ?
 No.
 Because it can be understood to return a value, which can lead to subtle bugs.
-<!--SR:2022-11-22,56,250-->
+<!--SR:!2023-04-16,143,250-->
 
 # Ownership
 
@@ -1064,7 +1064,7 @@ What does `use` do for a module within the same crate?
 ?
 Creates a shortcut.
 I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly to `asparagus`
-<!--SR:2022-11-24,58,250-->
+<!--SR:!2023-04-18,145,250-->
 
 ## Paths
 
@@ -1096,7 +1096,7 @@ Private
 Are functions, structs, etc private or public by default?
 ?
 Private
-<!--SR:2022-11-23,57,250-->
+<!--SR:!2023-04-11,138,250-->
 
 Are fields on structs public or private by default?
 ?
@@ -1127,27 +1127,27 @@ How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:!2022-11-24,23,210-->
+<!--SR:!2023-01-11,48,210-->
 
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:!2022-11-22,21,250-->
+<!--SR:!2023-01-20,57,250-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
 `use std: :io: :Result as IoResult;`
-<!--SR:2022-11-21,55,250-->
+<!--SR:!2023-04-15,142,250-->
 
 How do you re-export?
 ?
 `pub use crate: :thingA: :thingB;`
-<!--SR:2022-11-17,51,250-->
+<!--SR:!2023-04-09,136,250-->
 
 What is re-exporting for?
 ?
 Organising the API of your code when its internals are structured differently to how programmers using it would think about the domain.
-<!--SR:2022-11-19,53,250-->
+<!--SR:!2023-04-12,139,250-->
 
 How can you rewrite the following code with nested paths?
 ```Rust
@@ -1172,7 +1172,7 @@ use std: :io: :Write;
 How could you bring everything in `std: :collections` into scope?
 ?
 `use std: :collections: :*;`
-<!--SR:2022-11-20,54,250-->
+<!--SR:!2023-04-13,140,250-->
 
 What two things does `use` do?
 ?
@@ -1230,7 +1230,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:!2022-11-17,16,130-->
+<!--SR:!2022-12-16,22,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1270,8 +1270,8 @@ What method can we use to clean up nested match statements when dealing with err
 
 What does `unwrap_or_else` do?
 ?
-Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure to handle the `Err` and returns the result from that closure.
-<!--SR:!2022-11-19,18,210-->
+Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure and returns the result from that closure, which has the same type as the wrapped value.
+<!--SR:!2022-12-06,12,190-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1281,7 +1281,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:!2022-11-21,20,150-->
+<!--SR:!2022-12-26,32,150-->
 
 What does `expect` do?
 ?
@@ -1314,12 +1314,12 @@ match something {
 What does the `?` operator do?
 ?
 If the `Result` is `Ok` it just evalutes to the value inside the `Ok` and the code continues through the current function. If the `Result` is `Err`, it returns that error from the current function.
-<!--SR:2022-11-17,51,250-->
+<!--SR:!2023-04-09,136,250-->
 
 What is the difference between `?` and the basic manual way of propogating errors (by matching on the `Result`'s type and returning if it's an `Err`)?
 ?
 `?` calls the `from` function defined on the `From` trait in the standard library, which converts the error type to the error type of the current function.
-<!--SR:2022-11-21,55,250-->
+<!--SR:!2022-12-19,25,230-->
 
 When can you use the `?` operator?
 ?
@@ -1404,7 +1404,7 @@ fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:!2022-11-23,7,130-->
+<!--SR:!2022-12-05,11,130-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1445,7 +1445,7 @@ mod tests {
 	}
 }
 ```
-<!--SR:2022-11-24,50,230-->
+<!--SR:!2023-03-18,114,230-->
 
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?

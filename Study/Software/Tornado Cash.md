@@ -19,7 +19,7 @@ The user sends the nullifier and the zkp to the contract who verifies it and sen
 What are the circom files in tornado cash?
 ?
 withdraw.circom and merkleTree.circom
-<!--SR:2022-11-14,117,270-->
+<!--SR:!2023-10-19,329,270-->
 
 ## Withdraw
 
