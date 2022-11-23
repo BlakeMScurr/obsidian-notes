@@ -367,7 +367,7 @@ What is the definition of $\textbf{Sim}$?
 ?
 $\pi \leftarrow \textbf{Sim}(R, \tau, \phi)$
 The simulator takes as input a simulation trapdoor and statement $\phi$, and outputs an argument.
-<!--SR:2022-11-17,90,210-->
+<!--SR:!2023-06-10,198,210-->
 
 ??? Why does the simulator not get the common reference string? Is it because it's efficiently computable from the trapdoor?
 
@@ -494,7 +494,7 @@ $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
 What are the two types of verifiability for proofs?
 ?
 Public verifiability and designated verifier proofs.
-<!--SR:2022-11-22,87,230-->
+<!--SR:!2023-06-17,205,230-->
 
 How do we genaralise the definition of a non-interactive argument to create a designated verifier proof?
 ?
@@ -521,7 +521,7 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:2022-11-06,18,170-->
+<!--SR:!2023-01-08,45,170-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -537,7 +537,7 @@ Preprocessing succinct non-interactive argument
 What does fully succinct mean?
 ?
 A SNARK or SNARG is fully succinct if the common reference string is polynomial in $\lambda$, as well as having succinct verification.
-<!--SR:2022-11-03,45,210-->
+<!--SR:!2023-03-20,116,210-->
 
 What is the relationship between preprocessing and fully succinct SNARKs?
 ?
@@ -732,7 +732,7 @@ Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
 What is the formal description of a whole quadratic arithmetic program? (Use independent elements describing the relation, not set builder notation for the pairs in the relation).
 ?
 $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
-<!--SR:2022-11-09,21,210-->
+<!--SR:!2022-12-07,13,190-->
 
 ??? Why are u, v, w described by their evaluations, but not t(X)?
 
@@ -834,7 +834,7 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:2022-11-10,98,250-->
+<!--SR:!2023-01-18,55,230-->
 
 Who invented LIPs?
 ?
@@ -882,7 +882,7 @@ What does the Prove do in a LIP?
 It operates in two stages.
 First it runs $\Pi \leftarrow \textbf{ProofMatrix}(R, \phi, w)$ where ProofMatrix is a probabilistic polynomial time algorithm that generates a matrix $\Pi \in \mathbb{F}^{k \times m}$
 Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
-<!--SR:2022-11-23,68,170-->
+<!--SR:!2023-03-19,115,170-->
 
 What is ProofMatrix, broadly?
 ?
@@ -1198,7 +1198,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:2022-11-02,48,170-->
+<!--SR:!2022-12-20,26,150-->
 
 How is $C$ computed by Prove in a QAPLIP?
 ?

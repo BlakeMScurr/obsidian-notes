@@ -155,7 +155,7 @@ Non-interactive zaps and new techniques for NIZK
 What did GOS06 contribute?
 ?
 Gives non interactive Zaps for all NP (where they had only existed for some non trivial but not NP complete language before).
-<!--SR:2022-11-22,64,150-->
+<!--SR:!2023-03-01,97,150-->
 
 Who are the authors of Gro06?
 ?
@@ -241,7 +241,7 @@ Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2
 Who are the authors of GKMMM18?
 ?
 Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
-<!--SR:2022-11-21,90,230-->
+<!--SR:!2023-06-21,209,230-->
 
 What is the title of GKMMM18?
 ?

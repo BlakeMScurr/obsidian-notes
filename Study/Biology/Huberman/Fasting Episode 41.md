@@ -49,7 +49,7 @@ Insulin insensitivity leading to high blood glucose.
 What does GLP1 stand for?
 ?
 Glucagon-like peptide 1
-<!--SR:2022-11-24,38,230-->
+<!--SR:!2023-02-16,84,230-->
 
 When is GLP1 secreted?
 ?
