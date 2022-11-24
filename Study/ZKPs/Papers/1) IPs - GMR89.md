@@ -157,7 +157,7 @@ NP and IP.
 What are GMR's analogies for NP and IP?
 ?
 NP is "book proofs", IP is "classroom proofs."
-<!--SR:2022-11-21,139,250-->
+<!--SR:!2023-11-10,351,250-->
 
 ### IPs Informally
 
@@ -582,7 +582,7 @@ What does GMR study with respect to knowledge?
 ?
 What a polynomially bounded participant can learn from communication.
 The quantity of knowledge required to prove a theorem.
-<!--SR:2022-11-10,20,170-->
+<!--SR:!2023-01-09,46,170-->
 
 ### Distinguishing
 #### Ensembles
@@ -700,7 +700,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 When (at a high level) are two ensembles "at most p-distinguishable?"
 ?
 If they can be told apart with at most p(n) probability
-<!--SR:2022-11-09,120,230-->
+<!--SR:!2023-09-13,293,230-->
 
 Ensembles $\Pi_1, \Pi_2$ are "at most p-distinguishable" if . . .?
 ?
@@ -832,7 +832,7 @@ There exists a probabilstic polynomial-time machine M such that the I-c-ensemble
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
 For all polynomial time ITMs B', A communicates at most $f(n)$ bits of knowledge to B'
-<!--SR:2022-11-21,115,210-->
+<!--SR:!2023-08-05,254,210-->
 
 What is my analogy for determining the knowledge conveyed from a prover to a verifier?
 ?
@@ -1175,7 +1175,7 @@ $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}
 How powerful does the A have to be in GMR's zk QNR IP?
 ?
 It can just be probabilistic polynomial time turing machine with the additionalpower to compute $\mathcal{Q}_m$.
-<!--SR:2022-11-23,134,250-->
+<!--SR:!2023-10-26,336,250-->
 
 What are type 1 numbers in GMR's zk QNR IP?
 ?
@@ -1264,7 +1264,7 @@ The set of random numbers used to convince $A$ that $B$ knows the residuosity of
 What is the size of $T \cup S$?
 ?
 $2n$, since $T$ and $S$ both have size $n$.
-<!--SR:2022-11-07,125,250-->
+<!--SR:!2023-10-24,334,250-->
 
 How is $T$ constructed?
 ?
@@ -1335,7 +1335,7 @@ B sends $X' \cup Y'$ to A.
 How does B reveal the random $r$ values in $Z$?
 ?
 For each $z \in Z$ $B$ sends to $A$ some $r$ such that $z = r^2 \mod m$ or $z = y \cdot r^2 \mod m$
-<!--SR:2022-11-17,113,230-->
+<!--SR:!2023-08-23,272,230-->
 
 What is $d$?
 ?
@@ -1360,7 +1360,7 @@ $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \c
 How is $X$ defined?
 ?
 $T - Z - D$
-<!--SR:2022-11-10,118,250-->
+<!--SR:!2023-10-03,313,250-->
 
 How is $Y$ defined?
 ?
@@ -1370,7 +1370,7 @@ $S - Z - D$
 What is the purpose of $X' \cup Y'$?
 ?
 Tying the residuosity of $x$ to that of each $t_i$, such that $B'$ "knows" $\sqrt{x}$. That is, so that a simulator $M$ can calculate $\sqrt{x}$ using $B'$.
-<!--SR:2022-11-12,71,150-->
+<!--SR:!2023-03-21,117,150-->
 
 If $x$ is type 1, how do we form $\sqrt{x \cdot t_i}$?
 ?
@@ -1435,7 +1435,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:2022-11-05,18,170-->
+<!--SR:!2022-12-05,11,150-->
 
 How is $X' \cup Y'$ sent?
 ?
@@ -1568,7 +1568,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:2022-11-18,49,170-->
+<!--SR:!2022-12-19,25,150-->
 
 How does the proof for claim 1 work?
 ?

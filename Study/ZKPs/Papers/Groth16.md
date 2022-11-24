@@ -4,7 +4,7 @@
 What makes SNARGs succinct?
 ?
 Small size and low verification complexity.
-<!--SR:2022-11-15,118,230-->
+<!--SR:!2023-09-02,282,230-->
 
 What is a SNARG?
 ?
@@ -44,7 +44,7 @@ What does a Groth16 SNARG consist of?
 What does verifying a Groth16 SNARG require?
 ?
 Checking a single pairing product equation using 3 pairings in total.
-<!--SR:2022-11-05,57,150-->
+<!--SR:!2023-03-07,103,150-->
 
 What is the knowledge complexity of the Groth16 SNARG?
 ?
@@ -461,7 +461,7 @@ $(R, z, \sigma)$
 What is computational knowledge soundness, roughly?
 ?
 A strengthening of the notion of soundness, where there is an extractor that can compute a witness whenver an adversary produces a valid argument.
-<!--SR:2022-11-07,102,270-->
+<!--SR:!2023-09-21,301,270-->
 
 ??? Why does the extractor in the definition for computational knowledge soundness not need the simulation trapdoor?
 
@@ -684,7 +684,7 @@ Forming $t(x)$.
 Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
 Expressing the constraints as an evaluation of a single polynomial.
 Refomulating the polynomial evaluation over values mod $t(x)$.
-<!--SR:2022-11-18,84,210-->
+<!--SR:!2023-01-05,42,190-->
 
 What is the random vector?
 ?
@@ -725,7 +725,7 @@ $t(X)$ is the lowest degree monomial with $t(r_q) = 0$ for each $r_q$.
 Let $LHS = a(x)$ and $RHS = b(x)$
 $a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot t(X) = b(X)$ from the definition of mod
 Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
-<!--SR:2022-11-08,102,270-->
+<!--SR:!2023-01-16,53,250-->
 
 ### QAP Definition
 
@@ -754,7 +754,7 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:2022-11-08,12,150-->
+<!--SR:!2022-12-24,30,150-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
@@ -788,7 +788,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:2022-11-03,15,170-->
+<!--SR:!2023-01-06,43,170-->
 
 How might relation generators vary in practice?
 ?
@@ -799,7 +799,7 @@ Field generated the rest of the relation is built on the field vs polynomials sp
 Why are the definitions of relation generators agnostic wrt the exact way the field and relation are generated?
 ?
 To get the maximum flexibility, so that all different options can be modelled by the appropriate choices of relation generators.
-<!--SR:2022-11-14,107,270-->
+<!--SR:!2023-09-22,302,270-->
 
 In pairing based NIZK arguments, what does aux specify and why?
 ?
@@ -861,7 +861,7 @@ A relation generator $\mathcal{R}$, where we assume the relations specify a fini
 What, broadly, is a LIP?
 ?
 A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work with matrices.
-<!--SR:2022-11-12,93,250-->
+<!--SR:!2023-08-06,255,250-->
 
 What does Setup do in a LIP?
 ?
@@ -1252,7 +1252,7 @@ Proof element product
 CRS product
 Statement sum
 Proof CRS product
-<!--SR:2022-10-30,77,270-->
+<!--SR:!2023-07-17,235,270-->
 
 What is in the "proof element product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
