@@ -415,7 +415,7 @@ $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, 
 What does the adversary represent in the definition of perfect zero knowledge?
 ?
 A malicious verifier trying to learn extra information from the proof.
-<!--SR:2022-10-29,96,270-->
+<!--SR:!2023-09-10,289,270-->
 
 What does the adversary in the definition of perfect zero knowledge do?
 ?
@@ -668,7 +668,7 @@ What can we reformulate arithmetic constraints as, and what assumption do we hav
 ?
 As a quadratic arithmetic program.
 That the field $\mathbb{F}$ is large enough.
-<!--SR:2022-11-20,33,230-->
+<!--SR:!2023-02-14,81,230-->
 
 ??? Is this because the modular rearrangement doesn't work for tiny fields? Maybe fields with fewer elements than the number of roots in the polynomial?
 
@@ -924,7 +924,7 @@ $(R, \phi)$
 What does Test output?
 ?
 An arithmetic circuit $t$.
-<!--SR:2022-10-30,95,270-->
+<!--SR:!2023-09-11,290,270-->
 
 What is the definition of $t$?
 ?
@@ -1076,7 +1076,7 @@ Convert the LIP into a pairing-based NIZK argument.
 What is $h(x)$?
 ?
 The quotient polynomial, i.e, the number of times we add $t(X)$ to make each side of the QAP equation equal, given equality $\mod t(X)$.
-<!--SR:2022-11-24,110,270-->
+<!--SR:!2023-09-26,305,270-->
 
 What is the degree of $h(X)$?
 ?
@@ -1106,7 +1106,7 @@ $\alpha, \beta, \gamma, \delta, x$
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
 $(\alpha, \beta, \gamma, \delta, x)$
-<!--SR:2022-10-29,83,250-->
+<!--SR:!2023-07-15,232,250-->
 
 
 What set are the parameters in Setup for a LIP for a QAP selected from?
@@ -1153,7 +1153,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:2022-10-31,12,190-->
+<!--SR:!2022-12-03,8,170-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?

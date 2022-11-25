@@ -548,7 +548,7 @@ let a: [i32; 5] = [1, 2, 3, 4, 5];
 How do you write an array filled with the same value? (show the fully explicit way of writing it too).
 ?
 `let a = [3;5]` will make `[3,3,3,3,3]`
-<!--SR:2022-11-25,59,250-->
+<!--SR:!2023-04-25,151,250-->
 
 What happens if you provide an invalid array access?
 ?
@@ -1015,7 +1015,7 @@ A binary crate named the same as the package.
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?
 A library crate named the same as the package.
-<!--SR:2022-11-25,58,250-->
+<!--SR:!2022-12-23,28,230-->
 
 Where do extra binary packages go?
 ?
@@ -1193,7 +1193,7 @@ Recoverable and unrecoverable.
 What do we use for unrecoverable errors?
 ?
 The `panic!` macro
-<!--SR:2022-11-25,59,250-->
+<!--SR:!2023-04-24,150,250-->
 
 How do you use `panic!`?
 ?
@@ -1538,7 +1538,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:!2022-11-25,21,210-->
+<!--SR:!2023-01-07,43,210-->
 
 How do you make a test that can return an error?
 ?

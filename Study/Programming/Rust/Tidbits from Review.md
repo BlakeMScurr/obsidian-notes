@@ -45,7 +45,7 @@ It returns whether any of the elements match the condition of the closure.
 What is `skip`?
 ?
 A method on iterators that skips a certain number of elements.
-<!--SR:2022-11-25,36,250-->
+<!--SR:!2023-02-24,91,250-->
 
 What is `step_by`?
 ?

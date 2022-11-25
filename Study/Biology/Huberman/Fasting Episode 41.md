@@ -4,7 +4,7 @@ What is the relationship between blood glucose and mortality in rats and humans?
 ?
 In humans, high blood glucose is associated with mortality.
 In rats, low blood glucose is associated with mortality.
-<!--SR:2022-11-25,39,250-->
+<!--SR:!2023-03-03,98,250-->
 
 What does time restricted feeding refer to?
 ?

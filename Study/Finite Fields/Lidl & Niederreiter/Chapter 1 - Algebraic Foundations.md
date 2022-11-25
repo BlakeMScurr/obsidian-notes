@@ -74,7 +74,7 @@ $$
 How do we know that $a_1a_2...a_n$ is an unambiguous expression for a group?
 ?
 The associative law implies that no matter how we insert parentheses, the expression will always represent the same element of G.
-<!--SR:2022-11-25,151,250-->
+<!--SR:!2023-12-08,378,250-->
 
 What are the "n-fold" rules in each notation?
 ?
