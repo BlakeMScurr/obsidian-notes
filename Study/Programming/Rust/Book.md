@@ -25,7 +25,7 @@ How do you run a cargo project?
 How do you compile a cargo project?
 ?
 `cargo build`
-<!--SR:!2022-11-27,11,230-->
+<!--SR:!2022-12-22,25,230-->
 
 What does `cargo check` do?
 ?
@@ -493,7 +493,7 @@ How do we directly access a tuple element?
 ?
 Dot notation, i.e.,:
 `tup.0`
-<!--SR:2022-11-27,60,250-->
+<!--SR:!2023-04-26,150,250-->
 
 What is the name for the  tuple without values?
 ?
@@ -612,7 +612,7 @@ fn main() {
 ```
 ?
 It expects a statement to evaluate to a value.
-<!--SR:2022-11-26,60,250-->
+<!--SR:!2023-04-27,151,250-->
 
 What does the following code print?
 ```
@@ -1005,7 +1005,7 @@ How many crates can/must a package have?
 As many binary packages as it likes.
 At most one library crate.
 At least one crate.
-<!--SR:!2022-11-27,11,210-->
+<!--SR:!2022-12-21,24,210-->
 
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
@@ -1046,7 +1046,7 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:!2022-11-26,10,190-->
+<!--SR:!2022-12-17,20,190-->
 
 When can you refer to code in another module?
 ?
@@ -1058,7 +1058,7 @@ How do you make code in a module public and private?
 The whole module is private by default.
 Use `pub mod` when declaring the module to make the module public.
 Use `pub` before any declarations in the module to make those items public.
-<!--SR:2022-11-27,53,230-->
+<!--SR:!2023-03-23,116,230-->
 
 What does `use` do for a module within the same crate?
 ?
@@ -1178,7 +1178,7 @@ What two things does `use` do?
 ?
 Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
-<!--SR:2022-11-26,52,230-->
+<!--SR:!2023-03-24,117,230-->
 
 # MISSING 8
 # Error Handling

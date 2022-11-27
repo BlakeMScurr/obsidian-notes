@@ -688,7 +688,7 @@ The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen w
 What does $p^D_{x, 2}$ denote?
 ?
 The probability that D outputs 1 on the input a $|x|^c$ bit long string chosen with $\Pi_{2,x}$
-<!--SR:2022-11-26,131,230-->
+<!--SR:!2023-09-27,304,230-->
 
 #### At Most Distinguishable
 
@@ -1551,7 +1551,7 @@ What are my steps for proving the upper bound for the chance that we halt and re
 Show that $X$ or $Y \leq n/6$ if we halt. 
 Show the chance of that is some factorial expression using a string permutation argument.
 Show that chance is less than the bound given by GMR.
-<!--SR:2022-11-26,114,250-->
+<!--SR:!2023-09-09,286,250-->
 
 Based on what condition might we halt given honest $A$ and $B$?
 ?

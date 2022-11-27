@@ -509,7 +509,7 @@ When $\sigma_V$ can be deduced from $\sigma_P$.
 When is a non-interactive argument a designated verifier proof?
 ?
 When $\sigma_V$ cannot be deduced from $\sigma_P$.
-<!--SR:2022-11-26,94,230-->
+<!--SR:!2023-07-02,217,230-->
 
 We can relax the definitions of some properties of non-interactive arguments for designated verifier proofs. Which, and how?
 ?
@@ -809,7 +809,7 @@ The bilinear group. To provide a better model of settings where the relation is 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
 Because we can think of the tradition setting where the relation is chosen first, then the bilinear group is chosen at random as the special case where the relation generator works in two steps, first choosing the relation and then picking a random bilinear group.
-<!--SR:2022-11-04,98,270-->
+<!--SR:!2023-09-28,305,270-->
 
 What assumption does chosing the binlinear group as auxiliary information force?
 ?
@@ -939,7 +939,7 @@ $(\sigma, \pi)$
 When does Vfy accept in a LIP?
 ?
 If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
-<!--SR:2022-11-11,99,250-->
+<!--SR:!2023-08-24,270,250-->
 
 What are the degrees and dimensions of a LIP?
 ?
@@ -990,7 +990,7 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:2022-11-18,28,210-->
+<!--SR:!2022-12-12,15,190-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
@@ -1069,7 +1069,7 @@ What are the (very broad) steps for consructing the Groth16 NIZK argument?
 ?
 Construct a LIP.
 Convert the LIP into a pairing-based NIZK argument.
-<!--SR:2022-11-23,109,270-->
+<!--SR:!2023-01-22,56,250-->
 
 ### LIPs for QAPs
 
@@ -1276,7 +1276,7 @@ $$
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $C \cdot \delta$
-<!--SR:2022-10-30,64,230-->
+<!--SR:!2023-05-25,179,230-->
 
 When does Vfy accept in a QAPLIP?
 ?
@@ -1306,9 +1306,9 @@ How does the simulator in a QAPLIP compute C?
 ?
 $$
 C =
-\frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta ui(x) + \alpha v_i(x) + w_i(x))}{\delta}
+\frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:2022-11-19,25,190-->
+<!--SR:!2022-12-13,16,170-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

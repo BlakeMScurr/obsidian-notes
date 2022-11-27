@@ -104,7 +104,7 @@ Oded Goldreich and Yair Oren
 What is the title of GO94?
 ?
 Definitions and properties of zero-knowledge proof systems
-<!--SR:2022-11-27,109,190-->
+<!--SR:!2023-06-23,208,190-->
 
 What does GO94 show, according to Groth's talk in the 3rd BIU winter school?
 ?

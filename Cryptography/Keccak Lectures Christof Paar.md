@@ -59,7 +59,7 @@ That we can't compute $x$ from $h(x)$.
 What does preimage mean, simply?
 ?
 Input
-<!--SR:!2022-11-26,25,250-->
+<!--SR:!2023-01-30,64,250-->
 
 What does second preimage resistance mean?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:!2022-11-27,3,130-->
+<!--SR:!2022-11-29,2,130-->
 
 What does $b$ represent?
 ?
@@ -259,7 +259,7 @@ Rounds.
 How many rounds in the keccak-f function?
 ?
 $r$ (24 in SHA-3)
-<!--SR:!2022-11-27,26,250-->
+<!--SR:!2023-02-01,66,250-->
 
 What is the input and output size of keccak-f?
 ?

@@ -40,7 +40,7 @@ Inversion of a product
 How do you prove the uniqueness of group identity?
 ?
 $e_1 = e_1e_2 = e_2$ by the indentity property of $e_1$ and $e_2$
-<!--SR:2022-11-27,153,250-->
+<!--SR:!2023-12-15,383,250-->
 
 How do you prove the uniqueness of the group inverse?
 ?

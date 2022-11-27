@@ -39,7 +39,7 @@ Fat
 What is type 1 diabetes?
 ?
 When you don't manufacture your own insulin.
-<!--SR:2022-11-26,40,250-->
+<!--SR:!2023-03-08,101,250-->
 
 What is type 2 diabetes?
 ?
@@ -74,4 +74,4 @@ No, over the course of roughly hours. Because the benefits of time restricted ea
 Do you lose fat faster on a low fat or low carb diet?
 ?
 No difference, assume both have a caloric defecit.
-<!--SR:2022-11-27,41,250-->
+<!--SR:!2023-03-10,103,250-->

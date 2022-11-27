@@ -113,7 +113,7 @@ The total profit from corrupting the set of tasks $V$.
 How is $p(V)$ defined?
 ?
 $$\sum_{j \in V} p_j$$
-<!--SR:2022-11-27,75,290-->
+<!--SR:!2023-07-12,227,290-->
 
 When is a task $j$ secure? Use natural language.
 ?

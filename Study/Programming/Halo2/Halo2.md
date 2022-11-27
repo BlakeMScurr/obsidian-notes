@@ -66,7 +66,7 @@ Zero *for each row*.
 What do the variables in a polynomial constraint refer to?
 ?
 A cell in a given column of the current row, or a given column of another row relative to the current one (with wrap-around, i.e., taken modulo n).
-<!--SR:2022-11-26,74,230-->
+<!--SR:!2023-05-17,171,230-->
 
 What is the maximum degree of each polynomial?
 ?
