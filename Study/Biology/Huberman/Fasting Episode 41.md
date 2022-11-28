@@ -44,7 +44,7 @@ When you don't manufacture your own insulin.
 What is type 2 diabetes?
 ?
 Insulin insensitivity leading to high blood glucose.
-<!--SR:2022-11-28,36,210-->
+<!--SR:!2023-02-12,76,210-->
 
 What does GLP1 stand for?
 ?

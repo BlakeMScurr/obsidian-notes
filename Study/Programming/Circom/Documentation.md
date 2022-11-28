@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:!2022-11-28,10,130-->
+<!--SR:!2022-12-02,4,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?

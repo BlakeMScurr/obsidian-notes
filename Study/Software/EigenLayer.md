@@ -71,7 +71,7 @@ $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share 
 What is $S_j^c$?
 ?
 The collection of staker sets sufficient to corrupt $j$.
-<!--SR:2022-11-28,73,270-->
+<!--SR:!2023-01-04,37,250-->
 
 How do we define $S_j^c$?
 ?

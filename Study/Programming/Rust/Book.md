@@ -330,7 +330,7 @@ What are the prefixes to represent signed an unsigned integers?
 ?
 `u` for unsigned
 `i` for signed
-<!--SR:2022-11-28,61,250-->
+<!--SR:!2023-05-07,160,250-->
 
 How are signed integers represented?
 ?
@@ -906,7 +906,7 @@ Moves are shallow copies where the first variable is invalidated.
 When is automatic copying deep vs shallow?
 ?
 Rust never does automatic deep copying.
-<!--SR:2022-11-28,60,250-->
+<!--SR:!2023-04-28,151,250-->
 
 How do you clone a `String`?
 ?

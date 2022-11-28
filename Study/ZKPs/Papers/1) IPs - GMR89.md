@@ -220,7 +220,7 @@ It is read only.
 How is an ITM's work tape implemented?
 ?
 It is a full read-write tape.
-<!--SR:2022-11-28,145,250-->
+<!--SR:!2023-11-26,363,250-->
 
 What does an ITM's random tape achieve?
 ?
@@ -1561,7 +1561,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:!2022-11-28,24,210-->
+<!--SR:!2023-01-17,50,210-->
 
 ##### Claim 1
 

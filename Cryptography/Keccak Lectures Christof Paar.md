@@ -289,7 +289,7 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:!2022-11-28,4,190-->
+<!--SR:!2022-12-08,10,190-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
