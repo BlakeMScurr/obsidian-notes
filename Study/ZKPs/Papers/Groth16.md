@@ -67,7 +67,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:2022-11-26,38,150-->
+<!--SR:!2023-01-28,60,150-->
 
 # Introduction
 
@@ -86,7 +86,7 @@ Completeness, Soundness, and Zero-Knowledge.
 Describe the completeness property.
 ?
 Given a statement and a witness, the prover can convince the verifier.
-<!--SR:2022-11-27,115,210-->
+<!--SR:!2023-08-09,253,210-->
 
 Describe the soundness property.
 ?
@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:2022-11-24,37,130-->
+<!--SR:!2023-01-23,55,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -446,7 +446,7 @@ $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{S
 What does the adversary represent in the definition of computational soundness?
 ?
 A malicious prover trying to find a proof and statement that the verifier will accept where the statement has no possible witness.
-<!--SR:2022-11-02,90,230-->
+<!--SR:!2023-07-25,238,230-->
 
 What inputs does the adversary in the definition of computational soundness accept?
 ?
@@ -484,7 +484,7 @@ $Pr[(R, z) \leftarrow \mathcal{R}(1^\lambda);$
 $(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $((\phi, \pi); w) \leftarrow (\mathcal{A} || \mathcal{X_A})(R, z, \sigma):$
 $(\phi, w) \notin R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2022-10-28,71,210-->
+<!--SR:!2023-06-03,186,210-->
 
 ??? Why doesn't the adversary and extractor get the trapdoor? Is that because then it could definitely make such a proof without a witness?
 
@@ -574,7 +574,7 @@ Assuming public coin differing input obfuscation and other cryptographic assumpt
 Who showed the strongest negative consequence of indistinguishability obfuscation?
 ?
 Boyle and Pass BP15
-<!--SR:2022-11-19,26,190-->
+<!--SR:!2022-12-14,15,170-->
 
 How do we get around impossibility results about relation generators' auxiliary input, and witness extraction? How do we know this works?
 ?
@@ -588,7 +588,7 @@ Since those results rely on specific auxiliary input distributions, we can assum
 What does our arithmetic circuit consist of?
 ?
 Addition and multiplication gates over a finite field.
-<!--SR:2022-11-11,81,230-->
+<!--SR:!2023-06-24,207,230-->
 
 What represents the statement in our arithmetic circuit?
 ?
@@ -744,7 +744,7 @@ A finite field.
 What is $aux$?
 ?
 Auxiliary information.
-<!--SR:2022-11-28,116,270-->
+<!--SR:!2023-10-10,315,270-->
 
 What is the $\mathscr{l}$ for?
 ?
@@ -1242,7 +1242,7 @@ A \cdot B =
 }{\gamma}
 \cdot \gamma + C \cdot \delta
 $$
-<!--SR:2022-11-27,40,190-->
+<!--SR:!2023-02-15,78,190-->
 
 ??? Why are we dividing by gamma then multiplying by it again?
 
@@ -1262,7 +1262,7 @@ $A \cdot B$
 What is in the "CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?
 $\alpha \cdot \beta$
-<!--SR:2022-11-29,95,270-->
+<!--SR:!2023-08-14,258,270-->
 
 What is in the "statement sum" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

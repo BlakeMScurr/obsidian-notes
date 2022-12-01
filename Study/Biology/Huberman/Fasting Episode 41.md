@@ -54,7 +54,7 @@ Glucagon-like peptide 1
 When is GLP1 secreted?
 ?
 In a fasted state
-<!--SR:2022-11-29,43,250-->
+<!--SR:!2023-03-17,108,250-->
 
 What is GLP1 involved in?
 ?

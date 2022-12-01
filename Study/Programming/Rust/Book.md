@@ -201,7 +201,7 @@ What keyword do we use to get an infinite loop?
 What keyword do we use to break out of an infinite loop?
 ?
 `break`
-<!--SR:2022-11-29,63,270-->
+<!--SR:!2023-05-16,168,270-->
 
 
 # Common Concepts
@@ -901,7 +901,7 @@ Deallocates the memory for that variable.
 What's the difference between a shallow copy and a move?
 ?
 Moves are shallow copies where the first variable is invalidated.
-<!--SR:2022-11-29,62,250-->
+<!--SR:!2023-05-03,155,250-->
 
 When is automatic copying deep vs shallow?
 ?
@@ -1298,7 +1298,7 @@ Which of `expect` and `unwrap` is generally preferred for production code and wh
 How do you propogate an error up to the parent function?
 ?
 By returning a `Result` type.
-<!--SR:2022-11-29,60,250-->
+<!--SR:!2023-04-29,151,250-->
 
 What is the fully explicit method for handling and propogating an error?
 ?

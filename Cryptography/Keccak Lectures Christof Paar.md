@@ -159,7 +159,7 @@ Keccak
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
-<!--SR:!2022-11-29,25,230-->
+<!--SR:!2022-12-13,14,210-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:!2022-11-29,2,130-->
+<!--SR:!2022-11-30,1,130-->
 
 What does $b$ represent?
 ?

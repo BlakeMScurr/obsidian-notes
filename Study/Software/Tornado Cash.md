@@ -42,7 +42,7 @@ What are the top level constructions in merkleTree.circom?
 The HashLeftRight template
 The DualMux template
 The MerkleTreeChecker template
-<!--SR:2022-11-29,41,190-->
+<!--SR:!2022-12-18,19,170-->
 
 What does HashLeftRight do?
 ?
