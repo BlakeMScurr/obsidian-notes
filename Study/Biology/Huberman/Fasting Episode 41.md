@@ -24,7 +24,7 @@ It goes up.
 What does insulin do?
 ?
 It mobilises glucose from the blood stream.
-<!--SR:2022-11-30,44,250-->
+<!--SR:!2023-03-25,113,250-->
 
 Which foods raise blood glucose most?
 ?
@@ -59,12 +59,12 @@ In a fasted state
 What is GLP1 involved in?
 ?
 Mobilising energy sources like fat, carbohydrates, or even muscle
-<!--SR:!2022-12-01,26,210-->
+<!--SR:!2023-01-29,58,210-->
 
 What is lipolosis?
 ?
 Using fat as an energy source in the body
-<!--SR:2022-12-01,45,250-->
+<!--SR:!2023-03-22,110,250-->
 
 Do insulin and blood glucose levels change immediately? Why is this important?
 ?

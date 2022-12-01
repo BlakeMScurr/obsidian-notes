@@ -706,7 +706,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:!2022-12-02,4,130-->
+<!--SR:!2022-12-04,2,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -865,7 +865,7 @@ i++
 What is the syntax for a `while` loop?
 ?
 `while ( boolean_condition ) block_of_code`
-<!--SR:2022-12-02,137,270-->
+<!--SR:!2023-12-07,370,270-->
 
 What restriction is placed on constraints inside control flow blocks?
 ?
@@ -933,7 +933,7 @@ The value of `t` is used in a constraint and its construction depends on the unk
 What are the basic var types?
 ?
 Field elements and arrays.
-<!--SR:2022-11-30,128,250-->
+<!--SR:!2023-10-22,324,250-->
 
 What is the default type of signals and variables?
 ?

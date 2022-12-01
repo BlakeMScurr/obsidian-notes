@@ -165,7 +165,7 @@ Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
 224 bits has the same strength as triple DES
 The other security levels have the same strength as forms of AES
-<!--SR:!2022-12-01,27,250-->
+<!--SR:!2023-02-09,69,250-->
 
 ## Keccak Sponge
 
