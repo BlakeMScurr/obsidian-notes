@@ -12,7 +12,7 @@ Private inputs and intemediate values called advice values.
 What is advice?
 ?
 Intermediate values used to create the proof
-<!--SR:2022-12-06,90,270-->
+<!--SR:!2023-08-06,243,270-->
 
 What is the witness?
 ?
@@ -76,14 +76,14 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:!2022-12-05,17,130-->
+<!--SR:!2022-12-28,22,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:!2022-12-06,12,130-->
+<!--SR:!2022-12-12,6,130-->
 
 What keys do we genererate from the circuit description?
 ?

@@ -551,7 +551,7 @@ The Model Centric Framework is a formalisation for knowledge and communication.
 What worldview does MCF capture?
 ?
 The scientific/empricial worldview that it's hard to learn facts about reality, and that we communicate testimony about those facts.
-<!--SR:2022-12-02,101,190-->
+<!--SR:!2023-06-20,196,190-->
 
 What are MCF's assumptions?
 ?
@@ -1430,12 +1430,12 @@ $\mathbb{Q}_m(x)$ calculated by $A$
 What should $|X' \cup Y'|$ be?
 ?
 $|X' \cup Y'| \gt \frac{n}{3}$
-<!--SR:2022-12-05,105,230--> 
+ <!--SR:!2023-08-05,242,230-->
 
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:!2022-12-05,11,150-->
+<!--SR:!2022-12-12,6,130-->
 
 How is $X' \cup Y'$ sent?
 ?

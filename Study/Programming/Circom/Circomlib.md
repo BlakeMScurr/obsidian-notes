@@ -95,7 +95,7 @@ function nbits(a) {
 	return r;
 }
 ```
-<!--SR:2022-12-05,48,230-->
+<!--SR:!2023-03-28,112,230-->
 
 What is `nout` in `Binsum`?
 ?
@@ -112,7 +112,7 @@ What are `lin` and `lout` in `Binsum`?
 ?
 `lin` is the algebraic expression for the sum of the numbers in `in`.
 `lout` is the algebraic expression for the value of `out`
-<!--SR:2022-12-04,94,230-->
+<!--SR:!2023-07-13,219,230-->
 
 ??? does the l in lin and lout represent "algebra?"
 
@@ -285,7 +285,7 @@ It must be `a` if `smsb == slsb == 0`
 It must be `0` if `smsb == 0` and `slsb == 1`
 It must be `b` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-12-04,47,230-->
+<!--SR:!2023-03-26,110,230-->
 
 
 What is `part[i]` if `cmsb == 1 && clsb == 0`, how do we know?

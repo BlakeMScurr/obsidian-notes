@@ -103,7 +103,7 @@ $$\underset{U \in S^c(V)}{\mathrm{min}} \sum_{i \in U}s_i$$
 What does $p_j$ denote?
 ?
 The profit from corruption of task $j$.
-<!--SR:2022-12-05,81,290-->
+<!--SR:!2023-07-30,236,290-->
 
 What does $p(V)$ denote?
 ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-12-04,10,170-->
+<!--SR:!2022-12-11,5,150-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-12-04,10,170-->
+<!--SR:!2022-12-11,5,150-->
 
 
 ??? How do the steps in line (10) work?

@@ -19,7 +19,7 @@ It goes up.
 What happens to insulin when you eat?
 ?
 It goes up.
-<!--SR:2022-12-03,47,250-->
+<!--SR:!2023-04-06,121,250-->
 
 What does insulin do?
 ?

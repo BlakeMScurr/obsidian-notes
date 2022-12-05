@@ -34,7 +34,7 @@ Oded Goldreich, Silvio Micali, and Avi Widgerson
 What does GMW91 contribute?
 ?
 If one way functions exist, then every NP language has a computationally zero-knowledge proof system.
-<!--SR:!2022-11-28,27,250-->
+<!--SR:!2023-02-25,81,250-->
 
 ## BGKW88
 
@@ -51,7 +51,7 @@ Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
 What does BGKW88 contribute?
 ?
 The notion of multi-prover interactive protocols, that all languages in NP have MIPs, and that 2 provers always suffice.
-<!--SR:2022-12-01,44,130-->
+<!--SR:!2023-02-04,60,130-->
 
 What did BGKW88 see themselves as contributing?
 ?
@@ -90,7 +90,7 @@ Lázsló Babai, Lance Fortnow, and Carsten Lund
 What does BFL90 show?
 ?
 NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
-<!--SR:2022-12-02,45,150-->
+<!--SR:!2023-02-14,70,150-->
 
 
 
@@ -133,7 +133,7 @@ New techniques for noninteractive zero-knowledge
 What did GOS12 contribute?
 ?
 Introduced pairing based NIZKs. 
-<!--SR:!2022-12-04,18,130-->
+<!--SR:!2023-01-02,27,130-->
 
 %%Do I care about the rest of the specifics? Probably not, as a practicioner and circuit writer, rather than as a scientist%%
  %%- Reduced CRS size. 
@@ -150,7 +150,7 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS06?
 ?
 Non-interactive zaps and new techniques for NIZK
-<!--SR:2022-12-06,87,170-->
+<!--SR:!2023-05-02,147,170-->
 
 What did GOS06 contribute?
 ?
@@ -180,7 +180,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:!2022-12-02,31,130-->
+<!--SR:!2023-01-18,43,130-->
 
 What did GS12 contribute?
 ?
@@ -202,7 +202,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:2022-11-30,43,230-->
+<!--SR:!2022-12-27,21,210-->
 
 Who are the authors of Gro09?
 ?

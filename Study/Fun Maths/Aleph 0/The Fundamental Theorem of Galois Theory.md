@@ -40,7 +40,7 @@ Whenever you have an equation with rational coefficients, replacing $\sqrt{2}$ w
 What is the "basic question" of Galois Theory?
 ?
 Given a bunch of numbers that are conjugate over $\mathbb{Q}$, how many ways are there to swap them that preserve algebraic relations?
-<!--SR:2022-12-03,120,210-->
+<!--SR:!2023-08-11,248,210-->
 
 What is an example of an equation where you can swap $\sqrt{2}$ and $-\sqrt{2}$?
 %%%%?
@@ -159,7 +159,7 @@ $= \sigma(a) + \sigma(b)\sigma(\sqrt{2})$ by the additive and multiplicative pro
 $= a + b\sigma(\sqrt{2})$ since $\sigma$ fixes $\mathbb{Q}$
 $= a + b \cdot(\pm\sqrt{2})$ since automorphisms send numbers to one of their conjugates
 So there are just 2 such automorphisms.
-<!--SR:2022-12-06,49,230-->
+<!--SR:!2023-03-29,113,230-->
 
 How do we visualise an automorphism fixing $\mathbb{Q}$ over $\mathbb{Q}(\sqrt{2})$?
 ?

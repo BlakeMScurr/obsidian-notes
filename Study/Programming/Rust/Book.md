@@ -132,7 +132,7 @@ Creates a mutable variable called guess and binds it to a new, empty instance of
 What does `io: :stdin()` return?
 ?
 An instance of `std: :io: :Stdin`, which is a type that represents a handle to the standard input to the terminal.
-<!--SR:2022-12-01,65,250-->
+<!--SR:!2023-05-24,169,250-->
 
 What is `read_line`?
 ?
@@ -410,7 +410,7 @@ Return the value and a boolean indicating whether there was overflow.
 What does `saturating_*` do?
 ?
 Saturates at the value's maximum or minimum values.
-<!--SR:2022-12-06,67,250-->
+<!--SR:!2023-05-23,168,250-->
 
 ### Floating-point
 
@@ -476,7 +476,7 @@ Fixed.
 Are type annotations required for tuples?
 ?
 No.
-<!--SR:2022-12-05,66,250-->
+<!--SR:!2023-01-08,33,230-->
 
 How do you declare a tuple? (give type annotations).
 ?
@@ -520,7 +520,7 @@ Fixed.
 Can the elements in an array have different types from one another?
 ?
 No.
-<!--SR:2022-12-02,64,250-->
+<!--SR:!2023-05-24,169,250-->
 
 How do you declare an array?
 ?
@@ -896,7 +896,7 @@ When they're moved you end up with two variables pointing at the same memory, an
 What does `drop` do?
 ?
 Deallocates the memory for that variable.
-<!--SR:2022-11-30,62,250-->
+<!--SR:!2023-05-21,166,250-->
 
 What's the difference between a shallow copy and a move?
 ?
@@ -911,7 +911,7 @@ Rust never does automatic deep copying.
 How do you clone a `String`?
 ?
 `let s2 = s1.clone();`
-<!--SR:2022-12-04,65,250-->
+<!--SR:!2023-05-20,165,250-->
 
 Why aren't integers moved when another value is assigned to their value?
 ?
@@ -1027,7 +1027,7 @@ Where do extra binary packages go?
 Where does the compiler look first when compiling a crate?
 ?
 The crate root.
-<!--SR:2022-12-02,58,230-->
+<!--SR:!2023-04-23,138,230-->
 
 Where would the compiler look for, say, the `garden` module declared in the crate root?
 ?
@@ -1271,7 +1271,7 @@ What method can we use to clean up nested match statements when dealing with err
 What does `unwrap_or_else` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure and returns the result from that closure, which has the same type as the wrapped value.
-<!--SR:!2022-12-06,12,190-->
+<!--SR:!2022-12-13,7,170-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1291,7 +1291,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
 `expect` because it gives more information in the error, and can explain your assumptions about why the code is always expected to succeed.
-<!--SR:!2022-12-01,30,210-->
+<!--SR:!2023-02-12,68,210-->
 
 ## Propogation
 
@@ -1329,7 +1329,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:!2022-12-03,17,130-->
+<!--SR:!2022-12-15,9,130-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1345,7 +1345,7 @@ It returns a non zero exit value if it returns an `Err` value.
 What kinds of types can the main function return?
 ?
 Types that implement the `std: :process: :Termination` trait.
-<!--SR:2022-12-04,45,170-->
+<!--SR:!2023-02-24,80,170-->
 
 ## When to Panic!
 
@@ -1404,7 +1404,7 @@ fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:!2022-12-05,11,130-->
+<!--SR:!2022-12-22,16,130-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 

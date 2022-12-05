@@ -27,7 +27,7 @@ Doesn't preserve order.
 How do you add a large collection of items to an `Vec`?
 ?
 `append` for an existing `Vec`, and `extend` for items that aren't already a `Vec`, but implement `IntoIterator`
-<!--SR:!2022-12-03,14,170-->
+<!--SR:!2022-12-31,25,170-->
 
 # Truncate PR 2
 
@@ -55,12 +55,12 @@ A method on iterators that makes it step through by a certain number of steps. I
 What is `get_mut`?
 ?
 A method on collections that gets a mutable reference to the element at an index. The same as `get` except the returned value is mutable.
-<!--SR:2022-11-30,40,250-->
+<!--SR:!2023-03-24,108,250-->
 
 What is `with_capacity`?
 ?
 An associated function on `Vec` that lets you initialised a new `Vec` with a given capacity to save allocations when filling it up.
-<!--SR:2022-12-06,45,250-->
+<!--SR:!2023-03-30,114,250-->
 
 What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupied(..))` etc?
 
@@ -72,4 +72,4 @@ Equivalent to `(_, _)` where the enum has 2 properties, for example.
 What is `and_then`?
 ?
 A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:!2022-11-30,6,150-->
+<!--SR:!2022-12-19,13,150-->
