@@ -1,4 +1,4 @@
-#flashcards/circom
+#flashcards/circom/docs
 
 # Signals
 
@@ -7,7 +7,7 @@
 What are circom circuits built over?
 ?
 Signals.
-<!--SR:2023-01-07,120,210-->
+<!--SR:!2023-10-18,268,210-->
 
 What do signals contain?
 ?
@@ -22,7 +22,7 @@ Input, output, and intermediate.
 How do you declare an input signal?
 ?
 `signal input in;` declares an input signal named `in`
-<!--SR:2022-12-18,143,250-->
+<!--SR:!2024-03-01,403,250-->
 
 How do you declare an output signal?
 ?
@@ -44,12 +44,12 @@ When are signals private vs public?
 All output signals of the main component are public and can't be made private.
 Input signals of the main component are private by default but can be declared private.
 The rest of the signals are private and can't be made public.
-<!--SR:2023-01-23,125,230-->
+<!--SR:!2023-11-07,288,230-->
 
 How would we declare public inputs for a component made by a template called `Multiplier2` with two public inputs `in1` and `in2`?
 ?
 `component main{public [in1, in2]} = Multiplier2();`
-<!--SR:2022-12-24,143,250-->
+<!--SR:!2023-04-08,75,230-->
 
 How can we rewrite the lines:
 ```
@@ -58,7 +58,7 @@ out <== in1 * in2;
 ```
 ?
 `signal output out <== in1 * in2`
-<!--SR:2023-01-23,172,270-->
+<!--SR:!2024-05-01,464,270-->
 
 How do we instantiate a component?
 ?
@@ -106,7 +106,7 @@ Signals are immutable, so assigning to `out` twice gives a compilation error.
 What operators can be used to assign signals?
 ?
 `<--`, `<==`, `-->`, or `==>`.
-<!--SR:2022-12-14,140,250-->
+<!--SR:!2024-02-26,399,250-->
 
 What's the difference between `==>` and `<==` vs `<--` and `-->`?
 ?
@@ -124,7 +124,7 @@ Puts the `k`th digit of `in` in `out[k]`. Right shift moves the `k`th bit to the
 What are variables?
 ?
 Identifiers that hold non-signal data and are mutable.
-<!--SR:2023-01-19,131,210-->
+<!--SR:!2023-10-29,279,210-->
 
 How do we declare a variable?
 ?
@@ -134,7 +134,7 @@ How do we declare a variable?
 What values do variables hold?
 ?
 Values of the field, or arithmetic expressions (when used to generate constraints)
-<!--SR:2022-12-23,95,170-->
+<!--SR:!2023-07-29,187,170-->
 
 What are the various ways we can assign to a variable?
 ?
@@ -144,7 +144,7 @@ x = 1;
 var y = 2;
 var z[3] = [3,4,5];
 ```
-<!--SR:2023-01-05,153,250-->
+<!--SR:!2024-03-03,405,250-->
 
 What is wrong with the following code?
 ```
@@ -205,7 +205,7 @@ template wrong() {
 ```
 ?
 We are assigning a value to an input signal in the same template where it has been defined. The error will be "Exception caused by invald assignment."
-<!--SR:!2022-12-29,43,170-->
+<!--SR:!2023-04-25,92,170-->
 
 What is the syntax to instantiate template parameters?
 ?
@@ -215,7 +215,7 @@ What is the syntax to instantiate template parameters?
 How are the possible values of template parameters restricted?
 ?
 They should be known constants at compile time.
-<!--SR:2023-01-18,145,250-->
+<!--SR:!2024-01-27,369,250-->
 
 What is wrong with the following code, and what error does it generate?
 ```
@@ -240,7 +240,7 @@ component main{public [a]} = wrong(1);
 When do we use `--inspect`?
 ?
 In the compilation phase.
-<!--SR:2022-12-20,118,250-->
+<!--SR:!2023-12-27,338,250-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -257,7 +257,7 @@ component main{public [in]} = A(1);
 ?
 The `in` signal is not used in any constraints. 
 It will give a warning when `--inspect` is used to compile: "In template "A1". Unconstrained signal. "in" = Maybe use: in*0 === 0"
-<!--SR:2022-12-16,139,250-->
+<!--SR:!2024-02-22,395,250-->
 
 What is wrong with the following code and what error will it generate?
 ```
@@ -294,7 +294,7 @@ What, roughly, are the three compiler warnings you can get from misusing signals
 Unconstrained signal.
 Intermediary signal used in one constraint.
 No output signal in template.
-<!--SR:2023-01-04,112,190-->
+<!--SR:!2023-03-22,58,170-->
 
 ### Components
 
@@ -348,7 +348,7 @@ component main{public[in]} = Main();
 ```
 ?
 `c`'s output is accessed before one of its inputs.
-<!--SR:2022-12-27,154,270-->
+<!--SR:!2024-04-18,451,270-->
 
 What's wrong with the following code and what error message does it produce?
 ```
@@ -362,7 +362,7 @@ if (N > 0) {
 ?
 If there are multiple initialization instructions for a component, they must all be from the same template (perhaps with different parameters).
 "Assignee and assigned types do not match"
-<!--SR:2023-01-11,155,250-->
+<!--SR:!2024-02-29,402,250-->
 
 How do you make an array of components? What is the syntactic restriction?
 ?
@@ -373,12 +373,12 @@ component ands[2];
 ands[0] = MultiAnd(n1);
 ands[1] = MultiAnd(n2);
 ```
-<!--SR:2022-12-17,131,250-->
+<!--SR:!2024-02-01,374,250-->
 
 When can we use `parallel`?
 ?
 When components are independent, i.e., the inputs do not depend on each others' outputs.
-<!--SR:!2023-01-09,54,210-->
+<!--SR:!2023-06-04,132,210-->
 
 How do we use `parallel`?
 ?
@@ -450,7 +450,7 @@ As many as it likes.
 When is a return statement required?
 ?
 At the end of every execution trace.
-<!--SR:2023-01-14,89,230-->
+<!--SR:!2023-03-09,45,210-->
 
 What does executing a return statement do?
 ?
@@ -491,7 +491,7 @@ It defines global input and outputs of the circuit, so it needs to be able to sp
 What is the syntax for creating a main component?
 ?
 `component main{public [signal_list]]} = template_id(v1, ..., vn);` where `{public [signal_list]}` is optional.
-<!--SR:2022-12-21,151,270-->
+<!--SR:!2024-04-19,452,270-->
 
 Which input signals in the main component are private?
 ?
@@ -519,25 +519,12 @@ What can be used for identifiers?
 
 What are the reserved keywords?
 ?
-signal
-input
-output
-public
-template
-component
-var
-function
-return
-if
-else
-for
-while
-do
-log
-assert
-include
-pragma circom
-<!--SR:!2022-12-18,32,130-->
+signal, input, output
+public, template, component
+var, function, return
+if, else, for, while, do
+log, assert, include, pragma circom
+<!--SR:!2023-02-13,21,130-->
 
 # Operators
 
@@ -554,7 +541,7 @@ Assignment
 Where can operators be used?
 ?
 To make expressions, but the conditional operator can only be used at the top level.
-<!--SR:!2022-12-11,38,210-->
+<!--SR:!2023-02-16,24,190-->
 
 What are the possible values of a field element?
 ?
@@ -564,7 +551,7 @@ It's in the domain `Z/pZ`, where p is a prime number, defaulting to a particular
 What do you use to change the field size?
 ?
 `GLOBAL_FIELD_P`
-<!--SR:!2023-01-16,61,230-->
+<!--SR:!2023-02-26,34,210-->
 
 What is the conditional expression?
 ?
@@ -607,7 +594,7 @@ What is the definition of the `val(x)` function?
 val(z) = z - p if p/2 + 1 <= z < p
 val(z) = z, otherwise
 ```
-<!--SR:2022-12-11,97,230-->
+<!--SR:!2023-10-25,275,230-->
 
 How is `x < y` defined?
 ?
@@ -647,12 +634,12 @@ Multiplication by the multiplicative inverse mod p.
 What is the `\` operator?
 ?
 Quotient after integer devision.
-<!--SR:2022-12-23,151,270-->
+<!--SR:!2024-04-17,450,270-->
 
 What is the `%` operator?
 ?
 Remainder after integer division.
-<!--SR:2023-01-12,156,250-->
+<!--SR:!2024-03-02,404,250-->
 
 What are the arithmetic/assignment operators?
 ?
@@ -662,7 +649,7 @@ What are the arithmetic/assignment operators?
 What are the bitwise operators?
 ?
 `& | ~ ^ >> <<`
-<!--SR:2023-01-05,80,230-->
+<!--SR:!2023-08-16,205,230-->
 
 What is the `&` operator?
 ?
@@ -677,12 +664,12 @@ Bitwise OR
 What is the `~` operator?
 ?
 Complement 254 bits
-<!--SR:2023-01-08,118,210-->
+<!--SR:!2023-10-14,264,210-->
 
 What is the `^` operator?
 ?
 XOR 254 bits
-<!--SR:2023-01-01,108,190-->
+<!--SR:!2023-09-05,225,190-->
 
 What is the `>>` operator?
 ?
@@ -706,7 +693,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:!2022-12-07,1,130-->
+<!--SR:!2023-01-29,6,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -714,7 +701,7 @@ How do the shift operators work for `p/2 + 1 <= k < p`?
 x >> k = x << (p - k)
 x << k = x >> (p - k)
 ```
-<!--SR:!2022-12-27,41,150-->
+<!--SR:!2023-02-16,24,130-->
 
 What are the bitwise assignment operators?
 ?
@@ -768,7 +755,7 @@ An expression where only addition is used.
 How can we rewrite some linear expressions succinctly?
 ?
 By multiplying variables by constants, i.e., `2*x` is equivalent to `x+x`.
-<!--SR:!2022-12-28,51,210-->
+<!--SR:!2023-06-06,134,210-->
 
 What is a quadratic expression?
 ?
@@ -1029,7 +1016,7 @@ component main{public [in]} = Multiplier2(5);
 ?
 The `out2` signal is declared inside a nested block.
 "`out2` is outside the initial scope".
-<!--SR:2023-01-17,152,250-->
+<!--SR:!2024-02-15,388,250-->
 
 Which signals of subcomponents are visible?
 ?
@@ -1090,7 +1077,7 @@ A way to log values to the standard error stream.
 What can be passed to `log`?
 ?
 Any expression except the conditional expression.
-<!--SR:2022-12-25,94,230-->
+<!--SR:!2023-03-15,51,210-->
 
 What's an example of a `log` instruction?
 ?
@@ -1139,14 +1126,14 @@ template A() {
 ?
 You can't assign to a signal using `=`.
 An error message saying that "Assignee and assigned types do not match operator."
-<!--SR:2023-01-17,111,210-->
+<!--SR:!2023-03-16,52,190-->
 
 ## Unknowns
 
 Why are checks imposed on the use of unknown values at compile?
 ?
 Because expressions accepted during constraint generation have to be quadratic.
-<!--SR:2023-01-09,127,230-->
+<!--SR:!2023-11-27,308,230-->
 
 What kinds of values are always known or unknown?
 ?
@@ -1178,7 +1165,7 @@ template A(n1, n2) {
 A constraint with an array access . . . ?
 ?
 Must have a known accessing position.
-<!--SR:2023-01-06,157,270-->
+<!--SR:!2023-04-14,81,250-->
 
 What is wrong with the following code, and what message does it generate?
 ```
@@ -1192,7 +1179,7 @@ template A(n) {
 ?
 The index for the array in the constraint is unknown.
 "Error: Non-quadratic constraint was detected statically, using unknown index will cause the constraint to be non-quadratic"
-<!--SR:2023-01-19,168,270-->
+<!--SR:!2024-04-26,459,270-->
 
 What restrictions are placed on the size of an array?
 ?
@@ -1245,7 +1232,7 @@ template A() {
 There is a constraint in control flow with an unknown condition.
 "Error: There are constraints depending on the value of the condition and it can be unknown during the constraint generation phase"
 Also, out is assigned multiple times.
-<!--SR:2022-12-08,133,250-->
+<!--SR:!2024-02-17,390,250-->
 
 
 

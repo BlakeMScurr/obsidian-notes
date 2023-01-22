@@ -35,7 +35,7 @@ What are the elementary consequences of the group axioms?
 Uniqueness of the identity
 Uniqueness of the inverse
 Inversion of a product
-<!--SR:2022-12-31,101,230-->
+<!--SR:!2023-10-09,259,230-->
 
 How do you prove the uniqueness of group identity?
 ?
@@ -84,7 +84,7 @@ $a^na^m = a^{n+m}$
 Additive:
 $(-n)a = n(-a)$
 $na + ma = (n + m)a$
-<!--SR:2023-01-10,126,210-->
+<!--SR:!2023-10-28,278,210-->
 
 What is "0-fold" of $a$ in both notations?
 ?
@@ -124,7 +124,7 @@ $1$ and $-1$.
 What are the properties of an equivalence relation?
 ?
 Reflexivity, symmetry, and transitivity.
-<!--SR:2023-01-21,96,230-->
+<!--SR:!2023-09-03,223,230-->
 
 What is the reflexivity property of an equivalence relation?
 ?
@@ -150,4 +150,4 @@ The union of equivalence classes is equivalent to $S$ because of reflexivity (al
 What is the definition of an equivalence class?
 ?
 $$[s] = \{ t \in S\ |\ (s, t) \in R\ \}$$
-<!--SR:2023-01-17,116,170-->
+<!--SR:!2023-08-13,202,170-->

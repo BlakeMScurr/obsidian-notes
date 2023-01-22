@@ -50,7 +50,7 @@ $\frac{1}{3 + 2\sqrt{2}} = [1 + (-\sqrt(2)]^2$
 Can we always swap $\sqrt{2}$ and $-\sqrt{2}$ in algebraic expressions with rational coefficients?
 ?
 Yes.
-<!--SR:2023-01-14,176,270-->
+<!--SR:!2024-05-24,487,270-->
 
 What is $\zeta$
 ?
@@ -60,7 +60,7 @@ $e^{\frac{2i\pi}{5}}$, a 5th root of unity.
 What are the conjugates of $\zeta$ over $\mathbb{Q}$?
 ?
 $\zeta,\zeta^2,\zeta^3,\zeta^4$
-<!--SR:2022-12-09,120,250-->
+<!--SR:!2024-01-14,356,250-->
 
 How many ways are there to permutate the conjugates of $\zeta$ over $\mathbb{Q}$, and how many of those permute algebraic relations?
 ?
@@ -116,7 +116,7 @@ A bijection $\sigma$ from $F$ to $F$ where
 $\sigma(x + y) = \sigma(x) + \sigma(y)$
 $\sigma(x\cdot y) = \sigma(x)\cdot\sigma(y)$
 for all x and y in the field
-<!--SR:!2022-12-29,41,170-->
+<!--SR:!2023-02-15,23,150-->
 
 What is the intuition behind the definition of an automorphism?
 ?
@@ -131,7 +131,7 @@ The set of all automorphisms of $F$.
 What is the additional property of an automorphism fixing $\mathbb{Q}$? (As compared to an ordinary automorphism not fixing $\mathbb{Q}$).
 ?
 $\sigma(x) = x,\ \forall x \in \mathbb{Q}$
-<!--SR:2022-12-07,78,230-->
+<!--SR:!2023-09-04,224,230-->
 
 What is $Aut\ F/\mathbb{Q}$?
 ?

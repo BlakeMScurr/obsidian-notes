@@ -12,14 +12,14 @@ binsum
 bitify
 comparators
 compconstant
-<!--SR:2023-01-04,75,170-->
+<!--SR:!2023-06-16,144,170-->
 
 ### binsum
 
 What is binsum?
 ?
 Creates a constraint specifying that some binary inputs add to some binary output.
-<!--SR:2023-01-03,150,250-->
+<!--SR:!2024-02-27,400,250-->
 
 What is `ops` in binsum?
 ?
@@ -34,7 +34,7 @@ The parameter specifying the number of bits in each operand (binary number being
 What does `e` specifiy in the binsum constraints?
 ?
 The number of carries required. I.e, the possible number of extra bits required to store the output compared to each input number.
-<!--SR:2022-12-24,68,210-->
+<!--SR:!2023-07-16,174,210-->
 
 What is the main constraint in binsum and what is it for?
 ?
@@ -58,7 +58,7 @@ out[1] * (out[1] -	1) === 0;
 ...
 out[n+e-1] * (out[n+e-1] - 1) === 0;
 ```
-<!--SR:2023-01-09,83,230-->
+<!--SR:!2023-08-26,215,230-->
 
 What are the top level constructions in the binsum.circom file?
 ?
@@ -80,7 +80,7 @@ What do `a`, `r`, and `n` represent in `nbits`?
 `a` is the number we're trying to represent in binary
 `r` is the number of bits required
 `n` is `2^r`
-<!--SR:2023-01-22,125,250-->
+<!--SR:!2023-03-27,63,230-->
 
 What is the code for `nbits`?
 ?
@@ -131,7 +131,7 @@ What are the knowns and unknowns in `Binsum`?
 ?
 `n`, `ops`, `nout`, `k`, `j`, and `e2` are known.
 `in`, `lin`, `out`, and `lout` are unknown
-<!--SR:!2022-12-12,18,190-->
+<!--SR:!2023-02-06,14,170-->
 
 What is the code for `BinSum`?
 ?
@@ -166,7 +166,7 @@ template BinSum(n, ops) {
 	lin === lout;
 }
 ```
-<!--SR:2022-12-29,108,230-->
+<!--SR:!2023-03-21,57,210-->
 
 ### binsub
 
@@ -199,7 +199,7 @@ signal output out;
 signal parts[127];
 signal sout;
 ```
-<!--SR:!2022-12-29,41,130-->
+<!--SR:!2023-04-04,71,130-->
 
 What are the variables in compconstant?
 ?
@@ -240,7 +240,7 @@ What does `a` look like and what is its formula?
 ?
 00000010000, where the 1 is at the ith digit
 2^i
-<!--SR:2023-01-13,140,250-->
+<!--SR:!2024-01-21,363,250-->
 
 What does `b` look like and what is its formula?
 ?
@@ -269,7 +269,7 @@ cmsb == 0 && clsb == 1
 cmsb == 1 && clsb == 0
 cmsb == 1 && clsb == 1
 ```
-<!--SR:2022-12-09,137,270-->
+<!--SR:!2024-03-29,431,270-->
 
 What is `part[i]` if `cmsb == 0 && clsb == 0`, how do we know?
 ?
@@ -295,7 +295,7 @@ It must be `a` if `smsb == 0` and `slsb == 0`
 It must be `a` if `smsb == 0` and `slsb == 1`
 It must be `0` if `smsb == 1` and `slsb == 0`
 It must be `b` if `smsb == 1` and `slsb == 1`
-<!--SR:2022-12-30,134,230-->
+<!--SR:!2023-12-25,336,230-->
 
 What is `part[i]` if `cmsb == 1 && clsb == 1`, how do we know?
 ?
@@ -324,7 +324,7 @@ component num2bits = Num2Bits(135);
 num2bits.in <== sout;
 out <== num2bits.out[127];
 ```
-<!--SR:2022-12-08,112,230-->
+<!--SR:!2023-03-23,59,210-->
 
 ## e
 
@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:!2022-12-11,9,130-->
+<!--SR:!2023-02-02,10,130-->
 
 ## g-m
 
@@ -353,7 +353,7 @@ mux1
 mux2
 mux3
 mux4
-<!--SR:!2022-12-14,26,170-->
+<!--SR:!2023-02-10,18,150-->
 
 ### Mux1
 
@@ -365,7 +365,7 @@ What are the top level constructs in Mux1?
 What does `MultiMux1` do?
 ?
 Selects 1 of 2 length n arrays.
-<!--SR:2023-01-10,139,250-->
+<!--SR:!2024-01-22,364,250-->
 
 What does `Mux1` do?
 ?
@@ -404,7 +404,7 @@ template Mux1() {
 	out <== mux.out[0];
 }
 ```
-<!--SR:2023-01-23,97,170-->
+<!--SR:!2023-07-07,165,170-->
 
 ## p-s
 
