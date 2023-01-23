@@ -286,6 +286,14 @@ A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
 
 #### Greek Functions
 
+What, roughly do the 5 atomic functions do?
+?
+$\theta$: XOR 11 bits
+$\rho$: rotation
+$\pi$: permutation
+$\chi$: combines 3 bits
+$\iota$: adds constants
+
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
