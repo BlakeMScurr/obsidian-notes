@@ -44,7 +44,7 @@ What are the security requirements for a message hash function?
 Preimage resistance.
 Second preimage resistance.
 Collision resistance.
-<!--SR:!2022-12-22,36,230-->
+<!--SR:!2023-05-22,119,230-->
 
 What is preimage resistance also known as?
 ?
@@ -69,7 +69,7 @@ An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(
 What's the online banking example where second preimage resistance is important?
 ?
 Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to the same value as the signed message, he can get the bank to accept that instead.
-<!--SR:!2023-01-03,48,270-->
+<!--SR:!2023-06-29,157,270-->
 
 What is another phrase for second preimage resistant?
 ?
@@ -108,7 +108,7 @@ Because the input space is of arbitrary length, and the output is fixed.
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
 By making it *hard* to create collisions, rather than impossible.
-<!--SR:!2023-01-02,47,250-->
+<!--SR:!2023-06-16,144,250-->
 
 Suppose a hash function has a range of size n = 2^b, what is the *approximate and natural* number of times that an attacker needs to run the hash to brute force a second preimage collision? If they do that, what is the exact probability they have  a collision, and the limit of that probability as n approaches infinity?
 ?
@@ -335,7 +335,7 @@ Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
 What does $\iota$ do?
 ?
 Adds constants from a constant table to $A[0,0]$, where there is a different constant for each round
-<!--SR:!2022-12-25,19,170-->
+<!--SR:!2023-02-07,15,150-->
 
 
 

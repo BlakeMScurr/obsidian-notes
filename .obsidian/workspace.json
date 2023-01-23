@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+                "file": "Cryptography/Keccak Lectures Christof Paar.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "funda",
+                "query": "iota",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
+                "file": "Cryptography/Keccak Lectures Christof Paar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "cda2a217b711a172",
   "lastOpenFiles": [
+    "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Rust/Book.md",
@@ -115,7 +116,6 @@
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Halo2/Halo2.md",
     "Study/Programming/Circom/Circomlib.md",
-    "Study/Biology/Huberman/Fasting Episode 41.md",
-    "Study/Finite Fields/Lidl & Niederreiter/Chapter 1 - Algebraic Foundations.md"
+    "Study/Biology/Huberman/Fasting Episode 41.md"
   ]
 }
