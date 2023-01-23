@@ -28,7 +28,7 @@ What does withdraw.circom include?
 circomlib/circuits/bitify.circom
 circomlib/circuits/pedersen.circom
 merkleTree.circom
-<!--SR:2022-12-09,49,190-->
+<!--SR:!2023-02-22,30,170-->
 
 ## MerkleTree
 
@@ -42,7 +42,7 @@ What are the top level constructions in merkleTree.circom?
 The HashLeftRight template
 The DualMux template
 The MerkleTreeChecker template
-<!--SR:!2022-12-18,19,170-->
+<!--SR:!2023-03-31,67,170-->
 
 What does HashLeftRight do?
 ?

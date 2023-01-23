@@ -20,12 +20,12 @@ How do you create a new cargo project, called, say `hello_world`?
 How do you run a cargo project?
 ?
 `cargo run`
-<!--SR:2022-12-15,78,290-->
+<!--SR:!2023-11-02,283,290-->
 
 How do you compile a cargo project?
 ?
 `cargo build`
-<!--SR:!2022-12-22,25,230-->
+<!--SR:!2023-04-24,91,230-->
 
 What does `cargo check` do?
 ?
@@ -57,7 +57,7 @@ How do you bring the input/output library into scope?
 What is the identifier for the standard library?
 ?
 `std`
-<!--SR:2022-12-20,82,290-->
+<!--SR:!2023-11-06,287,290-->
 
 What is the identifier for the input/output library?
 ?
@@ -92,7 +92,7 @@ Immutable
 How do you create a new immutable variable `a` set to `5`?
 ?
 `let a = 5;`
-<!--SR:2023-01-10,97,290-->
+<!--SR:!2023-11-19,300,290-->
 
 What keyword is used to create variables?
 ?
@@ -191,12 +191,12 @@ How do you create a random number between 1 and 100 (inclusive)?
 use rand::Rng;
 rand::thread_rng().gen_range(1..=100);
 ```
-<!--SR:!2022-12-31,45,150-->
+<!--SR:!2023-04-18,85,150-->
 
 What keyword do we use to get an infinite loop?
 ?
 `loop {}`
-<!--SR:2022-12-08,72,270-->
+<!--SR:!2023-10-07,257,270-->
 
 What keyword do we use to break out of an infinite loop?
 ?
@@ -219,7 +219,7 @@ fn main() {
 ```
 ?
 cannot assign twice to immutable variable `x`
-<!--SR:2023-01-16,91,250-->
+<!--SR:!2023-09-16,236,250-->
 
 Why is it useful to create immutable variables in Rust?
 ?
@@ -241,7 +241,7 @@ A type annotation.
 Can constants be mutable?
 ?
 No
-<!--SR:2023-01-12,86,250-->
+<!--SR:!2023-09-09,229,250-->
 
 What is shadowing?
 ?
@@ -301,7 +301,7 @@ What is wrong with the following code?
 ?
 There needs to be a type annotation on guess, as `parse()` is ambiguous and could give multiple types. I.e.,:
 `let guess: u32 = "42".parse().expect("Not a number!");`
-<!--SR:2023-01-15,89,250-->
+<!--SR:!2023-09-13,233,250-->
 
 What is a scalar type?
 ?
@@ -314,7 +314,7 @@ Integers
 Floating point numbers
 Booleans
 Characters
-<!--SR:2022-12-10,66,250-->
+<!--SR:!2023-08-31,220,250-->
 
 What are the different bit sizes available for integers in rust?
 ?
@@ -355,12 +355,12 @@ It's a visual separator to make it easier to read. I.e., `1_000_000`.
 What is the visual separator character for number literals?
 ?
 `_`
-<!--SR:2022-12-16,72,250-->
+<!--SR:!2023-09-08,228,250-->
 
 What is the prefix for hex number literals?
 ?
 `0x`
-<!--SR:2023-01-11,86,250-->
+<!--SR:!2023-08-30,219,250-->
 
 What is the prefix for octal number literals?
 ?
@@ -370,12 +370,12 @@ What is the prefix for octal number literals?
 What is the prefix for binary number literals?
 ?
 `0b`
-<!--SR:2023-01-04,76,230-->
+<!--SR:!2023-08-08,197,230-->
 
 What is the syntax for byte number literals?
 ?
 `b'A'`, where `A` represents an 8bit integer.
-<!--SR:!2022-12-07,13,210-->
+<!--SR:!2023-04-10,77,210-->
 
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
@@ -390,7 +390,7 @@ Using methods from the standard library that handle the overflow differently tha
 What are the different method prefixes for handling overflow explicitly?
 ?
 `wrapping`, `checked`, `overflowing`, `saturating`.
-<!--SR:!2022-12-30,44,170-->
+<!--SR:!2023-02-17,25,150-->
 
 What does `wrapping_*` do?
 ?
@@ -439,7 +439,7 @@ What is the output of `println!("{}", 5 / 4);` and why?
 How do we write the boolean literals?
 ?
 `true` and `false`
-<!--SR:2023-01-17,91,250-->
+<!--SR:!2023-09-15,235,250-->
 
 ### Characters
 
@@ -476,7 +476,7 @@ Fixed.
 Are type annotations required for tuples?
 ?
 No.
-<!--SR:!2023-01-08,33,230-->
+<!--SR:!2023-02-10,18,210-->
 
 How do you declare a tuple? (give type annotations).
 ?
@@ -487,7 +487,7 @@ How do you destructure a tuple?
 ?
 Using pattern matching, i.e.:
 `let (x, y, z) = tup;`
-<!--SR:2023-01-13,87,250-->
+<!--SR:!2023-09-10,230,250-->
 
 How do we directly access a tuple element?
 ?
@@ -535,7 +535,7 @@ Stack.
 What is the more flexible type similar to an array?
 ?
 Vector.
-<!--SR:2022-12-28,71,250-->
+<!--SR:!2023-08-27,216,250-->
 
 How do you write an array's type?
 ?
@@ -561,12 +561,12 @@ Panic at runtime (or compile time if it's compile time detectable).
 What is the conventional case for writing variables and functions?
 ?
 snake_case
-<!--SR:2022-12-19,75,250-->
+<!--SR:!2023-03-07,43,230-->
 
 What's the keyword for creating functions?
 ?
 `fn`
-<!--SR:2022-12-13,69,250-->
+<!--SR:!2023-03-04,40,230-->
 
 Can you call a function that is defined later in a scope?
 ?
@@ -576,7 +576,7 @@ Yes.
 What is the difference between a parameter and argument?
 ?
 A parameter is the name for something passed into a function in the function definition, and an argument is a concrete value passed into a specific function call.
-<!--SR:2022-12-15,71,250-->
+<!--SR:!2023-09-06,226,250-->
 
 How could you define a function that takes a `i32` parameter called `x`?
 ?
@@ -597,7 +597,7 @@ _Expressions_ evaluate to a resulting value.
 Does `let` create an expression or a statement?
 ?
 Statement.
-<!--SR:2022-12-18,74,250-->
+<!--SR:!2023-09-01,221,250-->
 
 Are function definitions expressions or statements?
 ?
@@ -641,7 +641,7 @@ By ending them in an expression, which the whole scope evaluates to.
 How do you write a function that returns an `i32`?
 ?
 `fn foo () -> i32 {}`
-<!--SR:2023-01-16,90,250-->
+<!--SR:!2023-09-14,234,250-->
 
 Do you have to declare the return type of a function?
 ?
@@ -661,7 +661,7 @@ What character creates comments?
 How do you do multiline comments?
 ?
 `//` on each line
-<!--SR:2023-01-07,82,250-->
+<!--SR:!2023-09-05,225,250-->
 
 ## Control Flow
 ### If
@@ -707,7 +707,7 @@ By passing a value to the `break` statement, i.e.:
 What is a loop label for?
 ?
 Disambiguating between multiple loops, so you can break from the correct one.
-<!--SR:2022-12-30,73,230-->
+<!--SR:!2023-08-07,196,230-->
 
 What is the syntax for creating and using a loop label?
 ?
@@ -723,24 +723,24 @@ Declare before the `loop` keyword with a colon.
 What is a `while` loop for?
 ?
 Looping while a condition is true, which saves code compared to implementing the same behaviour using `loop`, `if/else`, and `break`
-<!--SR:2022-12-14,70,250-->
+<!--SR:!2023-09-04,224,250-->
 
 Can you use labels and breaks with a `while` loop?
 ?
 Yes.
-<!--SR:2023-01-12,84,250-->
+<!--SR:!2023-08-29,218,250-->
 
 Can `while` loops return a value?
 ?
 No.
-<!--SR:!2023-01-13,50,170-->
+<!--SR:!2023-04-30,97,170-->
 
 ??? Can you use labels and breaks with a `for` loop?
 
 What does a `for` loop do? Why does it exist?
 ?
 Loops over a collection with simpler syntax than the equivalent `while` loop (which has to keep track of an index, and concern itself with index out of bounds errors).
-<!--SR:2022-12-10,66,250-->
+<!--SR:!2023-08-31,220,250-->
 
 How do you write a `for` loop? Say, over an array literal `[1,2,3]`, printing each value.
 ?
@@ -759,7 +759,7 @@ How do you make a range from 1 to 4?
 How do you make a range from 4 down to 1?
 ?
 `(1..4).rev()`
-<!--SR:2022-12-20,76,250-->
+<!--SR:!2023-09-12,232,250-->
 
 Can we shorten `+= 1` with `++`? Why?
 ?
@@ -791,7 +791,7 @@ Compile time.
 How does the stack work, roughly?
 ?
 Data can be pushed on or popped off, and nothing else is possible.
-<!--SR:2022-12-11,67,250-->
+<!--SR:!2023-09-01,221,250-->
 
 Which is faster to push to, the stack or the heap? Why?
 ?
@@ -803,7 +803,7 @@ Which is faster to pull from, the stack or the heap? Why?
 ?
 The stack.
 Because of the cost to the processor of moving around memory. Values on the stack are near each other, whereas values on the heap can be far away.
-<!--SR:2023-01-19,93,250-->
+<!--SR:!2023-09-29,249,250-->
 
 What kind of data can be put on the stack?
 ?
@@ -826,7 +826,7 @@ How is the stack used by functions?
 ?
 When a function is called, the values passed to the function are pushed to the stack.
 When the function is over, those values are popped off the stack.
-<!--SR:2022-12-23,64,210-->
+<!--SR:!2023-07-09,167,210-->
 
 What problems does the heap have, that ownership addresses?
 ?
@@ -855,7 +855,7 @@ When it goes out of scope it's invalid.
 How do you create a new string of type `String` from a string literal, say, `"hello"`?
 ?
 `let x = String: :from("hello");`
-<!--SR:2023-01-15,90,250-->
+<!--SR:!2023-03-13,49,230-->
 
 How do you push a new string literal to a `String`?
 ?
@@ -865,7 +865,7 @@ How do you push a new string literal to a `String`?
 Why are string literals more efficient than mutable strings?
 ?
 Because their size is known at compile time, and it hardcoded into the executable, whereas this can't be done for strings that could change size.
-<!--SR:2023-01-23,90,230-->
+<!--SR:!2023-08-18,207,230-->
 
 How do we request memory from the allocator for a new string?
 ?
@@ -978,7 +978,7 @@ Paths
 What is a crate?
 ?
 A tree of modules that produces a library or executable.
-<!--SR:2022-12-26,70,230-->
+<!--SR:!2023-08-02,191,230-->
 
 What are the types of crate?
 ?
@@ -1005,7 +1005,7 @@ How many crates can/must a package have?
 As many binary packages as it likes.
 At most one library crate.
 At least one crate.
-<!--SR:!2022-12-21,24,210-->
+<!--SR:!2023-04-17,84,210-->
 
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
@@ -1020,7 +1020,7 @@ A library crate named the same as the package.
 Where do extra binary packages go?
 ?
 `src/bin`
-<!--SR:2023-01-12,87,250-->
+<!--SR:!2023-03-12,48,230-->
 
 ## Modules
 
@@ -1046,12 +1046,12 @@ Where would the compiler look for, say, the `vegetables` module declared in `src
 Inline in curly brackets directly following `mod vegetables`,
 In the file `src/garden/vegetables.rs`,
 Or in the file `src/garden/vegetables/mod.rs`
-<!--SR:!2022-12-17,20,190-->
+<!--SR:!2023-04-05,72,190-->
 
 When can you refer to code in another module?
 ?
 Whenever that module is part of the same crate, as long as privacy allows.
-<!--SR:2023-01-10,81,230-->
+<!--SR:!2023-08-11,200,230-->
 
 How do you make code in a module public and private?
 ?
@@ -1076,7 +1076,7 @@ Absolute and relative.
 What does an absolute path start with?
 ?
 The literal `crate`, referring to the crate root.
-<!--SR:2023-01-14,88,250-->
+<!--SR:!2023-09-11,231,250-->
 
 What does a relative path start with?
 ?
@@ -1121,18 +1121,18 @@ With the `use` keyword
 Do `use` shortcuts apply in child modules defined in the same file?
 ?
 No
-<!--SR:2023-01-13,83,230-->
+<!--SR:!2023-08-12,201,230-->
 
 How do you use `use` paths idiomatically?
 ?
 `use` the module and call its functions off that module.
 `use` structs, enums, and other items directly
-<!--SR:!2023-01-11,48,210-->
+<!--SR:!2023-05-16,113,210-->
 
 What keyword do we use to create aliases?
 ?
 `as`
-<!--SR:!2023-01-20,57,250-->
+<!--SR:!2023-06-19,147,250-->
 
 How do you import `std: :io: :Result` as `IoResult`?
 ?
@@ -1167,7 +1167,7 @@ use std: :io: :Write;
 ```
 ?
 `use std: :io: :{self, Write};`
-<!--SR:2023-01-02,76,230-->
+<!--SR:!2023-03-05,41,210-->
 
 How could you bring everything in `std: :collections` into scope?
 ?
@@ -1205,14 +1205,14 @@ How can you find the stacktrace for a panic?
 ?
 By running with the environment variable `RUST_BACKTRACE=1`, i.e.,:
 `RUST_BACKTRACE=1 cargo run`
-<!--SR:2022-12-29,70,230-->
+<!--SR:!2023-03-06,42,210-->
 
 ## Result
 
 What do we use for recoverable errors?
 ?
 The `Result` type.
-<!--SR:!2022-12-14,40,230-->
+<!--SR:!2023-06-09,137,230-->
 
 What is the definition of the `Result` type?
 ?
@@ -1230,7 +1230,7 @@ How do you open a file called `"hello.txt"`?
 use std::fs::File;
 File::open("hello.txt");
 ```
-<!--SR:!2022-12-16,22,130-->
+<!--SR:!2023-02-08,16,130-->
 
 What is the basic way to handle `Result` errors (without methods of the result type), for say, opening a file?
 ?
@@ -1242,7 +1242,7 @@ let greeting_file = match greeting_file_result {
 	Err(error) => panic!("Problem opening the file: {:?}", error),
 };
 ```
-<!--SR:2022-12-29,72,230-->
+<!--SR:!2023-08-03,192,230-->
 
 Are `Result` and its variants in the prelude?
 ?
@@ -1276,7 +1276,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs 
 What are the shortcut methods for panicking on error?
 ?
 `unwrap` and `expect`
-<!--SR:!2022-12-17,31,190-->
+<!--SR:!2023-02-11,19,170-->
 
 What does `unwrap` do?
 ?
@@ -1416,7 +1416,7 @@ Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-
 What is an attribute, broadly?
 ?
 A piece of metadata about a piece of code.
-<!--SR:2023-01-19,92,250-->
+<!--SR:!2023-03-14,50,230-->
 
 How do you change a function into a test function?
 ?
@@ -1450,7 +1450,7 @@ mod tests {
 What does the `0 measured` statistic that is often output from `cargo test` mean?
 ?
 That there are no benchmark tests. I.e., tests to measure performance.
-<!--SR:2023-01-09,81,250-->
+<!--SR:!2023-08-30,219,250-->
 
 What does the `0 ignored` statistic that is often output from `cargo test` mean?
 ?
@@ -1501,7 +1501,7 @@ How do you derive the traits required to use a struct/enum as an argument to `as
 What are the main assertion macros?
 ?
 `assert!`, `assert_eq!`, and `assert_ne!`
-<!--SR:2022-12-27,71,230-->
+<!--SR:!2023-03-02,38,210-->
 
 How do you add custom failure messages to `assert!`, `assert_eq!`, and `assert_ne!`?
 ?
@@ -1538,7 +1538,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:!2023-01-07,43,210-->
+<!--SR:!2023-05-10,107,210-->
 
 How do you make a test that can return an error?
 ?

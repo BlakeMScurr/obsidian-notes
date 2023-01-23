@@ -12,7 +12,7 @@ Hashing a message to be signed
 What's the naive approach to signing long messages?
 ?
 Signing each chunk individually.
-<!--SR:!2022-12-28,42,250-->
+<!--SR:!2023-06-12,140,250-->
 
 What are the main problems with the naive approach to signing long messages?
 ?
@@ -64,7 +64,7 @@ Input
 What does second preimage resistance mean?
 ?
 An attacker can't compute $x_2$ such that $h(x_2) = z$ given $x_1$ such that $h(x_1) = z$
-<!--SR:!2022-12-07,32,250-->
+<!--SR:!2023-06-11,139,250-->
 
 What's the online banking example where second preimage resistance is important?
 ?
@@ -93,12 +93,12 @@ Suppose an attacker (think of a malicious crypto site) gets someone to sign the 
 Which is easier to perform, a collision attack, or a second preimage attack, and by how much?
 ?
 Collision attacks take the square root of the amount of steps as a preimage attack.
-<!--SR:!2023-01-21,58,250-->
+<!--SR:!2023-06-25,153,250-->
 
 Can you build a hash function without collisions?
 ?
 No.
-<!--SR:!2023-01-04,47,250-->
+<!--SR:!2023-06-13,141,250-->
 
 Why do all hash functions have collisions?
 ?
@@ -120,7 +120,7 @@ With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
 How does the birthday problem apply to hash functions?
 ?
 It's equivalent to the problem of finding a hash collision.
-<!--SR:!2022-12-31,43,250-->
+<!--SR:!2023-06-08,136,250-->
 
 What is the probability:
 That 2 people in a room share a birthday?
@@ -149,7 +149,7 @@ Where:
 What standards and defacto standards preceeded SHA-3?
 ?
 MD4, MD5, SHA-1, and SHA-2
-<!--SR:!2022-12-26,40,250-->
+<!--SR:!2023-02-14,22,230-->
 
 What is the name of the hash that won the SHA-3 competition?
 ?
@@ -159,7 +159,7 @@ Keccak
 What are the possible SHA-3 output lengths?
 ?
 224, 256, 384, and 512
-<!--SR:!2022-12-13,14,210-->
+<!--SR:!2023-02-03,11,190-->
 
 Why are 224 and 384 chosen as SHA-3 output lengths?
 ?
@@ -177,7 +177,7 @@ A sponge construction.
 Why is it called a "sponge" construction?
 ?
 Because it has an absorbtion phase (like absorbing the water), and a squeezing phase (like squeezing water out).
-<!--SR:!2023-01-19,56,250-->
+<!--SR:!2023-06-17,145,250-->
 
 What are the phases of a sponge construction?
 ?
@@ -211,7 +211,7 @@ What formula does $b$ follow, and what are its possible values?
 ?
 $b = 25 * 2^l$ where $l \in {0,1,2,3,4,5,6}$
 ${25, 50, 100, 200, 400, 800, 1600}$
-<!--SR:!2022-12-22,36,230-->
+<!--SR:!2023-02-13,21,210-->
 
 What is the relationship between keccak and SHA-3?
 ?
@@ -236,7 +236,7 @@ By continuing to squeeze to create arbitrary length outputs.
 What is the main purpose of the preprocessing step in keccak?
 ?
 Padding.
-<!--SR:!2022-12-24,38,250-->
+<!--SR:!2023-06-05,133,250-->
 
 How many times do we run the absorbtion phase (i.e., run the $f$ function and `XOR` the new input)?
 ?
@@ -247,7 +247,7 @@ I.e., for an input with $m$ bits, it takes $m/r$ rounds.
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?
 Just truncate it.
-<!--SR:!2022-12-09,34,250-->
+<!--SR:!2023-06-14,142,250-->
 
 ## Keccak-f
 
@@ -315,22 +315,22 @@ Because it involves rotation
 What does $rho$ do?
 ?
 Rotates each word by a fixed number of positions (defined by a fairly arbitrary looking table).
-<!--SR:!2023-01-17,54,250-->
+<!--SR:!2023-06-15,143,250-->
 
 What do they call a word in the keccak document?
 ?
 A lane
-<!--SR:!2023-01-02,45,250-->
+<!--SR:!2023-06-07,135,250-->
 
 What does $\pi$ do?
 ?
 Permutes all the words using a simple relation
-<!--SR:!2022-12-21,35,230-->
+<!--SR:!2023-05-21,118,230-->
 
 What does $\chi$ do?
 ?
 Combines each 3 adjacent bits of each words using `AND, NOT, and XOR`
-<!--SR:!2022-12-11,25,210-->
+<!--SR:!2023-05-01,98,210-->
 
 What does $\iota$ do?
 ?

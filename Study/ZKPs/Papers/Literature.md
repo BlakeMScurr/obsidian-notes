@@ -202,7 +202,7 @@ Short pairing-based non-interactive zero-knowledge arguments
 What did Gro10 contribute?
 ?
 Constant sized proofs without Fiat-Shamir heuristic or random oracles. Introduces the q-computational power Diffie-Hellman and q-power knowledge of exponent assumptions.
-<!--SR:!2022-12-27,21,210-->
+<!--SR:!2023-02-05,13,190-->
 
 Who are the authors of Gro09?
 ?
@@ -246,7 +246,7 @@ Jens Groth, Markulf Kohlweiss, Mary Maller, Sarah Meiklejohn, Ian Miers.
 What is the title of GKMMM18?
 ?
 Updatable and Universal Common Reference Strings with Applications to zk-SNARKs
-<!--SR:2022-12-31,135,270-->
+<!--SR:!2024-02-24,397,270-->
 
 What did GKMMM18 contribute?
 ?
