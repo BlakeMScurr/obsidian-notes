@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "15b6272f31919e32",
+        "id": "806097c343c11c95",
         "type": "tabs",
         "children": [
           {
-            "id": "cda2a217b711a172",
+            "id": "4f6e5abe359c1121",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Study/ZKPs/Papers/Groth16.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -57,8 +53,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/ZKPs/Papers/Groth16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +99,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cda2a217b711a172",
+  "active": "4f6e5abe359c1121",
   "lastOpenFiles": [
-    "Study/Programming/Rust/Tidbits from Review.md",
+    "Study/ZKPs/Papers/Groth16.md",
+    "Study/Programming/Rust/Tidbits.md",
     "Study/Programming/Rust/Book.md",
     "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Documentation.md",
-    "Study/ZKPs/Papers/Groth16.md",
     "Study/ZKPs/Papers/Literature.md",
     "Study/Programming/Halo2/Halo2.md",
-    "Study/Programming/Circom/Circomlib.md",
-    "Study/Biology/Huberman/Fasting Episode 41.md"
+    "Study/Programming/Circom/Circomlib.md"
   ]
 }

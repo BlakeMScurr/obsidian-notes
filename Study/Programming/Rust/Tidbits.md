@@ -1,5 +1,12 @@
 #flashcards/rust_lessons
 
+# General Study
+
+What, roughly, is the difference between `PartialEq` and `PartialOrd`?
+?
+`PartialEq` only supports `==` and `!=`, whereas `PartialOrd` also implements `>, <, <=, >=`
+<!--SR:!2023-01-26,2,238-->
+
 # Truncate PR 1
 
 What trait can we implement for a default function taking no arguments, and why would we?

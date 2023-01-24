@@ -32,7 +32,7 @@ What are our length requirements for a hash function for messages?
 ?
 Arbitrary length inputs.
 Fixed small length outputs.
-<!--SR:!2022-12-24,38,250-->
+<!--SR:!2023-06-07,134,250-->
 
 What are the efficiency requirements for a message hash function?
 ?

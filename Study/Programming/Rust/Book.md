@@ -117,7 +117,7 @@ A function that returns a new instance of `String`.
 What does the `: :` syntax on `String: :new` indicate?
 ?
 That `new` is an associated function of the string type.
-<!--SR:2023-01-22,97,270-->
+<!--SR:!2023-10-15,264,270-->
 
 What is an associated function?
 ?
@@ -252,7 +252,7 @@ How is shadowing with mutable variables different to having mutable varialbes?
 ?
 The variables are still immutable after the shadowing has been done.
 With shadowing, we are making multiple variables but reusing the name for human purposes - the compiler regards them as different variables.
-<!--SR:2023-01-23,95,250-->
+<!--SR:!2023-09-29,248,250-->
 
 How do you shadow a variable?
 ?
@@ -278,7 +278,7 @@ fn main() {
 ?
 12
 6
-<!--SR:2023-01-15,90,250-->
+<!--SR:!2023-09-17,236,250-->
 
 What is wrong with the following code?
 ```
@@ -365,7 +365,7 @@ What is the prefix for hex number literals?
 What is the prefix for octal number literals?
 ?
 `0o`
-<!--SR:2022-12-21,77,250-->
+<!--SR:!2023-09-27,246,250-->
 
 What is the prefix for binary number literals?
 ?
@@ -380,7 +380,7 @@ What is the syntax for byte number literals?
 Why might integer overflow cause different kinds of behaviours in Rust?
 ?
 Because compiling in debug mode panics, whereas the overflow actually occurs when the compiler is run in release mode with the `--release` flag.
-<!--SR:2023-01-20,94,250-->
+<!--SR:!2023-10-01,250,250-->
 
 What do we use to explicitly handle overflowing?
 ?
@@ -464,7 +464,7 @@ A Unicode Scalar Value
 What are the primitive compound types?
 ?
 Arrays and tuples.
-<!--SR:2022-12-21,59,210-->
+<!--SR:!2023-07-03,160,210-->
 
 #### Tuples
 
@@ -525,7 +525,7 @@ No.
 How do you declare an array?
 ?
 `let a = [1,2,3,4];`
-<!--SR:2023-01-07,82,250-->
+<!--SR:!2023-09-07,226,250-->
 
 Are arrays stored on the stack or the heap?
 ?
@@ -553,7 +553,7 @@ How do you write an array filled with the same value? (show the fully explicit w
 What happens if you provide an invalid array access?
 ?
 Panic at runtime (or compile time if it's compile time detectable).
-<!--SR:2023-01-21,94,250-->
+<!--SR:!2023-09-26,245,250-->
 
 ## Functions
 
@@ -646,7 +646,7 @@ How do you write a function that returns an `i32`?
 Do you have to declare the return type of a function?
 ?
 Yes.
-<!--SR:2023-01-15,88,250-->
+<!--SR:!2023-09-12,231,250-->
 
 How do you return a value from a function?
 ?
@@ -718,7 +718,7 @@ Declare before the `loop` keyword with a colon.
 	...
 	break 'counting_up;
 ```
-<!--SR:2022-12-12,68,250-->
+<!--SR:!2023-03-04,39,230-->
 
 What is a `while` loop for?
 ?
@@ -797,7 +797,7 @@ Which is faster to push to, the stack or the heap? Why?
 ?
 The stack. 
 Because the allocator doesn't have to look for a location for the new data - it's always at the top of the stack.
-<!--SR:2023-01-13,86,250-->
+<!--SR:!2023-09-10,229,250-->
 
 Which is faster to pull from, the stack or the heap? Why?
 ?
@@ -820,7 +820,7 @@ How does allocating on the heap work, roughly?
 You request a certain amount of memory.
 The allocator finds some memory.
 The allocator returns a _pointer_, which is the address of the location.
-<!--SR:2023-01-08,79,230-->
+<!--SR:!2023-08-15,203,230-->
 
 How is the stack used by functions?
 ?
@@ -842,7 +842,7 @@ What are the ownership rules?
 Each value has an owner.
 There can only be one owner at a time.
 When the owner goes out of scope, the value is dropped.
-<!--SR:2022-12-07,63,230-->
+<!--SR:!2023-08-19,207,230-->
 
 What is the relationship between variable validity and scope?
 ?
@@ -916,7 +916,7 @@ How do you clone a `String`?
 Why aren't integers moved when another value is assigned to their value?
 ?
 Because they live solely on the stack, and can be efficiently copied.
-<!--SR:2022-12-11,67,250-->
+<!--SR:!2023-08-24,212,250-->
 
 What trait indicates that a type lives on the stack?
 ?
@@ -993,7 +993,7 @@ Binary, not library.
 What is a crate root?
 ?
 The file containing the root module of a crate.
-<!--SR:2023-01-03,76,230-->
+<!--SR:!2023-08-17,205,230-->
 
 What is a package?
 ?
@@ -1010,12 +1010,12 @@ At least one crate.
 What is the name and type of the crate whose root is at `src/main.rs`?
 ?
 A binary crate named the same as the package.
-<!--SR:2023-01-02,76,230-->
+<!--SR:!2023-03-06,41,210-->
 
 What is the name and type of the crate whose root is at `src/lib.rs`?
 ?
 A library crate named the same as the package.
-<!--SR:!2022-12-23,28,230-->
+<!--SR:!2023-05-05,101,230-->
 
 Where do extra binary packages go?
 ?
@@ -1071,7 +1071,7 @@ I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly
 What kinds of paths are there?
 ?
 Absolute and relative.
-<!--SR:2022-12-08,64,250-->
+<!--SR:!2023-08-23,211,250-->
 
 What does an absolute path start with?
 ?
@@ -1199,7 +1199,7 @@ How do you use `panic!`?
 ?
 Pass a string (etc) to it:
 `panic!("you didn't do this right");`
-<!--SR:2023-01-22,95,250-->
+<!--SR:!2023-09-30,249,250-->
 
 How can you find the stacktrace for a panic?
 ?
@@ -1309,7 +1309,7 @@ match something {
 	Err(e) => return Err(e), 
 }
 ```
-<!--SR:2023-01-20,94,250-->
+<!--SR:!2023-10-02,251,250-->
 
 What does the `?` operator do?
 ?
@@ -1329,7 +1329,7 @@ On a `Result` type in a function that returns a `Result`, or on an `Option` type
 How can you use the `?` operator in the `main` function?
 ?
 By setting the return type of main to `Result<(), Box<dyn Error>>`
-<!--SR:!2022-12-15,9,130-->
+<!--SR:!2023-02-03,10,130-->
 
 How can we understand `Box<dyn Error>` at a high level?
 ?
@@ -1340,7 +1340,7 @@ What happens when a main function with a return type of `Result<(), E>` returns?
 ?
 If it returns `Ok`, the executable exits with `0`.
 It returns a non zero exit value if it returns an `Err` value.
-<!--SR:2023-01-09,84,250-->
+<!--SR:!2023-09-08,227,250-->
 
 What kinds of types can the main function return?
 ?
@@ -1399,12 +1399,12 @@ What is the function signature for the `largest` method which is generic over ty
 ```Rust
 fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {}
 ```
-<!--SR:!2022-12-09,23,190-->
+<!--SR:!2023-04-21,87,190-->
 
 How do you make sure the value for a generic type parameter of a function can be compared?
 ?
 `fn foo<T: std: :cmp: :PartialOrd>(...) {}`, by specifying the partial order trait on the type parameter.
-<!--SR:!2022-12-22,16,130-->
+<!--SR:!2023-02-05,12,130-->
 
 # Missing ...
 Up to: file:///Users/blakemcalevey-scurr/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/ch10-01-syntax.html#in-struct-definitions 
@@ -1421,17 +1421,17 @@ A piece of metadata about a piece of code.
 How do you change a function into a test function?
 ?
 Adding `#[test]` on the line before `fn`
-<!--SR:2023-01-04,79,250-->
+<!--SR:!2023-09-04,223,250-->
 
 What is `#[test]`?
 ?
 The test attribute.
-<!--SR:2023-01-06,81,250-->
+<!--SR:!2023-09-06,225,250-->
 
 What command do we use to run test?
 ?
 `cargo test`
-<!--SR:2023-01-05,80,250-->
+<!--SR:!2023-09-05,224,250-->
 
 What is the testing template that Cargo automatically gives us when writing a library crate?
 ?
@@ -1465,7 +1465,7 @@ That there are no tests that are filtered out by our argument to `cargo test`
 When do tests fail?
 ?
 When the test panics.
-<!--SR:2023-01-08,83,250-->
+<!--SR:!2023-09-09,228,250-->
 
 What does `assert_eq!` do?
 ?
@@ -1475,7 +1475,7 @@ Panics if the values passed in are not equal, nothing otherwise.
 What does `assert!` do?
 ?
 Panics if passed false, nothing if passed true.
-<!--SR:2023-01-09,84,250-->
+<!--SR:!2023-09-11,230,250-->
 
 What does `assert_ne!` do?
 ?
@@ -1485,13 +1485,13 @@ Panics if the two arguments are equal, nothing otherwise.
 Which argument passed to `assert` etc is considered "expected" and which is "actual"?
 ?
 Neither, in Rust they are just called left and right.
-<!--SR:2023-01-14,89,250-->
+<!--SR:!2023-09-16,235,250-->
 
 What traits must arguments passed to `assert_eq!` and `assert_neq!` implement and why?
 ?
 `PartialEq` because they're compared using `==` and `!=` respectively.
 `Debug` because they're printed using debug formatting.
-<!--SR:2023-01-18,92,250-->
+<!--SR:!2023-09-25,244,250-->
 
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
@@ -1549,7 +1549,7 @@ fn some_test() -> Result<(), String> {
 	...
 }
 ```
-<!--SR:2023-01-11,84,250-->
+<!--SR:!2023-03-09,44,230-->
 
 Why write tests that return `Result`s?
 ?
@@ -1564,6 +1564,6 @@ How do you assert that a result is an err?
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?
 No
-<!--SR:2023-01-21,93,250-->
+<!--SR:!2023-09-28,247,250-->
 
 ## How Tests are Run
