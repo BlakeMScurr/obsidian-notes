@@ -7,7 +7,7 @@
 What is the motiviating example for hash functions?
 ?
 Hashing a message to be signed
-<!--SR:!2023-01-01,46,250-->
+<!--SR:!2023-06-20,147,250-->
 
 What's the naive approach to signing long messages?
 ?
@@ -49,7 +49,7 @@ Collision resistance.
 What is preimage resistance also known as?
 ?
 One-wayness
-<!--SR:!2022-12-23,37,230-->
+<!--SR:!2023-05-26,122,230-->
 
 What does preimage resistance mean?
 ?
@@ -74,7 +74,7 @@ Bob signs that he gives $10 to Oscar, if Oscar can find a message that hashes to
 What is another phrase for second preimage resistant?
 ?
 Weak collision resistance.
-<!--SR:!2022-12-20,14,230-->
+<!--SR:!2023-04-07,73,230-->
 
 What is the difference between collision resistance and second preimage resistance?
 ?
@@ -130,7 +130,7 @@ That t people in a room share a birthday?
 $1 - \frac{1}{365}$
 $(1 - \frac{1}{365})(1 - \frac{2}{365})$
 $\Pi_{i=1}^{t-1}(1 - \frac{i}{365})$
-<!--SR:!2022-12-15,29,210-->
+<!--SR:!2023-05-07,103,210-->
 
 What is the exact formula for number of hashes required to achieve a collision, given the number of bits in the output, and the probability with which a collision should be achieved?
 ?
@@ -242,7 +242,7 @@ How many times do we run the absorbtion phase (i.e., run the $f$ function and `X
 ?
 As many times as required to get the entire input in.
 I.e., for an input with $m$ bits, it takes $m/r$ rounds.
-<!--SR:!2023-01-06,48,250-->
+<!--SR:!2023-06-22,149,250-->
 
 If we output too many bits from the end of the absorbtion phase, how do we reduce the number to the appropriate length, (like is required in SHA-3)?
 ?

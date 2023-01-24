@@ -10,7 +10,7 @@ What is the rust file extension?
 How do you compile a rust program, say `main.rs`?
 ?
 `rustc main.rs`
-<!--SR:2023-01-06,79,270-->
+<!--SR:!2023-09-22,241,270-->
 
 How do you create a new cargo project, called, say `hello_world`?
 ?
@@ -40,7 +40,7 @@ How do you build a cargo project ready for release?
 How do you locally access the rust documentation?
 ?
 `rustup docs`
-<!--SR:2023-01-02,89,270-->
+<!--SR:!2023-03-12,47,250-->
 
 How do you manually format a rust file, say `main.rs`?
 ?
@@ -246,7 +246,7 @@ No
 What is shadowing?
 ?
 When a new variable is declared with the same name as an old one.
-<!--SR:2023-01-12,87,250-->
+<!--SR:!2023-09-24,243,250-->
 
 How is shadowing with mutable variables different to having mutable varialbes?
 ?
@@ -457,7 +457,7 @@ With single quotes, i.e.;
 What standard does a char represent?
 ?
 A Unicode Scalar Value
-<!--SR:!2022-12-08,22,190-->
+<!--SR:!2023-02-09,16,170-->
 
 ### Compound Types
 
@@ -508,7 +508,7 @@ Both as `()`
 What do expressions implicitly return if they don't return any other value?
 ?
 The unit, i.e., the empty tuple `()`
-<!--SR:2022-12-16,72,250-->
+<!--SR:!2023-03-08,43,230-->
 
 #### Arrays
 
@@ -571,7 +571,7 @@ What's the keyword for creating functions?
 Can you call a function that is defined later in a scope?
 ?
 Yes.
-<!--SR:2022-12-14,70,250-->
+<!--SR:!2023-09-03,222,250-->
 
 What is the difference between a parameter and argument?
 ?
@@ -586,7 +586,7 @@ How could you define a function that takes a `i32` parameter called `x`?
 Do you have to put type annotations on function parameters? Why?
 ?
 Yes, because it means that they rarely have to be used elsewhere, as the compiler can infer the types from that.
-<!--SR:2022-12-12,68,250-->
+<!--SR:!2023-08-27,215,250-->
 
 What is the difference between a statement and an expression?
 ?
@@ -631,7 +631,7 @@ The value of y is: 4
 What is the syntactic difference between statements and expressions?
 ?
 Statements end in a semicolon, and expressions do not.
-<!--SR:2022-12-18,74,250-->
+<!--SR:!2023-09-17,236,250-->
 
 How do you make scopes created with curly brackets into expressions?
 ?
@@ -656,7 +656,7 @@ By ending the function's block with an expression of that value, or using the `r
 What character creates comments?
 ?
 `//`
-<!--SR:2023-01-18,93,250-->
+<!--SR:!2023-10-01,250,250-->
 
 How do you do multiline comments?
 ?
@@ -749,7 +749,7 @@ for x in [1,2,3] {
 	println!("{x}");
 }
 ```
-<!--SR:2022-12-13,69,250-->
+<!--SR:!2023-03-05,40,230-->
 
 How do you make a range from 1 to 4?
 ?
@@ -808,12 +808,12 @@ Because of the cost to the processor of moving around memory. Values on the stac
 What kind of data can be put on the stack?
 ?
 Data with a known size at compile time.
-<!--SR:2023-01-08,83,250-->
+<!--SR:!2023-09-19,238,250-->
 
 Where is data with unknown size at compile time stored?
 ?
 The heap.
-<!--SR:2023-01-24,95,250-->
+<!--SR:!2023-09-30,249,250-->
 
 How does allocating on the heap work, roughly?
 ?
@@ -833,7 +833,7 @@ What problems does the heap have, that ownership addresses?
 Keeping track of what parts of code are using what data on the heap.
 Minimizing duplicate data on the heap.
 Cleaning up unused data to make sure you don't run out of space.
-<!--SR:!2023-01-05,65,190-->
+<!--SR:!2023-06-19,146,190-->
 
 ### Ownership Rules
 
@@ -860,7 +860,7 @@ How do you create a new string of type `String` from a string literal, say, `"he
 How do you push a new string literal to a `String`?
 ?
 `s.push_str("literal");`
-<!--SR:2023-01-19,84,250-->
+<!--SR:!2023-08-28,216,250-->
 
 Why are string literals more efficient than mutable strings?
 ?
@@ -927,7 +927,7 @@ What trait can't coexist with the `Copy` trait, and how exactly?
 ?
 `Drop`.
 If the type or any of its parts implement `Drop`, it can't implement `Copy`.
-<!--SR:!2022-12-16,42,230-->
+<!--SR:!2023-06-18,145,230-->
 
 What kinds of types tend to implement the `Copy` trait?
 ?
@@ -947,7 +947,7 @@ fn f(s: String) {
 ```
 ?
 `s` is moved by the call `f(s)`, so it's inaccessible on the next line.
-<!--SR:2023-01-13,88,250-->
+<!--SR:!2023-09-21,240,250-->
 
 What operations can move a value?
 ?
@@ -983,7 +983,7 @@ A tree of modules that produces a library or executable.
 What are the types of crate?
 ?
 Binary and library.
-<!--SR:2022-12-09,65,250-->
+<!--SR:!2023-09-02,221,250-->
 
 What kinds of crates have a main function?
 ?
@@ -1039,7 +1039,7 @@ Or in the file `src/garden/mod.rs`
 Where can you declare submodules?
 ?
 Any file but the crate root.
-<!--SR:2022-12-24,65,210-->
+<!--SR:!2023-03-01,36,190-->
 
 Where would the compiler look for, say, the `vegetables` module declared in `src/garden.rs`?
 ?
@@ -1081,7 +1081,7 @@ The literal `crate`, referring to the crate root.
 What does a relative path start with?
 ?
 `self`, `super`, or an identifier in the current module.
-<!--SR:2022-12-31,74,230-->
+<!--SR:!2023-08-09,197,230-->
 
 What is the path delimiter?
 ?
@@ -1261,7 +1261,7 @@ fn main() {
 	}
 }
 ```
-<!--SR:!2022-12-30,44,170-->
+<!--SR:!2023-02-18,25,150-->
 
 What method can we use to clean up nested match statements when dealing with errors?
 ?
@@ -1270,8 +1270,8 @@ What method can we use to clean up nested match statements when dealing with err
 
 What does `unwrap_or_else` do?
 ?
-Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise runs a closure and returns the result from that closure, which has the same type as the wrapped value.
-<!--SR:!2022-12-13,7,170-->
+Returns the unwrapped value inside `Ok` if the `Result` is `Ok` (or `Some` for `Option`), otherwise runs a closure and returns the result from that closure, which has the same type as the wrapped value.
+<!--SR:!2023-03-13,48,170-->
 
 What are the shortcut methods for panicking on error?
 ?
@@ -1286,7 +1286,7 @@ Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panic
 What does `expect` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics with the message passed as an argument to `expect`.
-<!--SR:2022-12-08,50,210-->
+<!--SR:!2023-02-28,35,190-->
 
 Which of `expect` and `unwrap` is generally preferred for production code and why?
 ?
@@ -1334,7 +1334,7 @@ By setting the return type of main to `Result<(), Box<dyn Error>>`
 How can we understand `Box<dyn Error>` at a high level?
 ?
 As "any kind of error."
-<!--SR:2023-01-14,81,230-->
+<!--SR:!2023-08-10,198,230-->
 
 What happens when a main function with a return type of `Result<(), E>` returns?
 ?
@@ -1370,7 +1370,7 @@ What do traits do, broadly, as opposed to generics?
 Traits abstract/generalise over behaviour.
 Generics let different concrete types use the same behaviour with the same function call.
 Traits let different concrete types use different behaviour with the same function call.
-<!--SR:2023-01-22,94,250-->
+<!--SR:!2023-09-20,239,250-->
 
 What are lifetimes?
 ?
@@ -1387,12 +1387,12 @@ CamelCase
 What is the conventional name for a generic type?
 ?
 `T`
-<!--SR:2023-01-06,81,250-->
+<!--SR:!2023-08-29,217,250-->
 
 Where do you declare a type parameter name in a function?
 ?
 In angle brackets between the function name and the parameter list.
-<!--SR:2023-01-10,85,250-->
+<!--SR:!2023-09-07,226,250-->
 
 What is the function signature for the `largest` method which is generic over types?
 ?
@@ -1514,7 +1514,7 @@ assert!(
 	result
 );
 ```
-<!--SR:2023-01-16,88,250-->
+<!--SR:!2023-09-18,237,250-->
 
 How do you test that a function panics?
 ?
@@ -1526,7 +1526,7 @@ fn some_test() {
 	...
 }
 ```
-<!--SR:2023-01-24,94,250-->
+<!--SR:!2023-03-11,46,230-->
 
 How do you test that a function panics with a specific message?
 ?
@@ -1554,7 +1554,7 @@ fn some_test() -> Result<(), String> {
 Why write tests that return `Result`s?
 ?
 So you can use the question mark operator in the body of the tests, so you can conveniently fail if there is an `Err`.
-<!--SR:!2023-01-08,53,230-->
+<!--SR:!2023-02-21,28,210-->
 
 How do you assert that a result is an err?
 ?

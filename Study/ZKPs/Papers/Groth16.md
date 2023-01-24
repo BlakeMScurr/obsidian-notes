@@ -188,7 +188,7 @@ We pick randomness $r$ at random and set $y = A(x;r)$.
 What does $y \leftarrow S$ mean?
 ?
 We pick $y$ uniformly at random from set $S$.
-<!--SR:2022-11-28,111,250-->
+<!--SR:!2024-01-08,349,250-->
 
 What do we assume about random sampling?
 ?
@@ -233,7 +233,7 @@ Group operations for the groups.
 Evaluating the bilinear map.
 Deciding the equality of group elements.
 Sampling generators of the groups.
-<!--SR:2022-12-06,124,270-->
+<!--SR:!2023-04-02,68,250-->
 
 What do we assume about the bilinear group operations?
 ?
@@ -340,7 +340,7 @@ The prover algorithm takes as input the common reference string and $(\phi, w) \
 What is $\sigma$?
 ?
 The common reference string.
-<!--SR:2022-12-05,123,270-->
+<!--SR:!2024-02-28,400,270-->
 
 What is $\tau$?
 ?
@@ -426,7 +426,7 @@ What inputs does the adversary in the definition of perfect zero knowledge get?
 ?
 The relation, the auxillary output from the relation generator, the common reference string, the simulation trapdoor and the proof (from either the prover or the simulator).
 $R, z, \sigma, \tau, \pi$
-<!--SR:2022-12-07,43,150-->
+<!--SR:!2023-02-23,30,130-->
 
 ??? Why does this adversary get so much information including z and tau?
 
@@ -749,7 +749,7 @@ Auxiliary information.
 What is the $\mathscr{l}$ for?
 ?
 Delineating the variables for the statement and the witness.
-<!--SR:2022-12-14,126,270-->
+<!--SR:!2024-02-25,397,270-->
 
 What is the definition of $\mathscr{l}$?
 ?
@@ -788,7 +788,7 @@ $w = (a_{\mathscr{l}+1}, ..., a_m) \in \mathbb{F}^{m - \mathscr{l}}$
 When is $\mathcal{R}$ a QAP generator?
 ?
 If it generates relations of the appropriate form with fields of size larger than $2^{\lambda-1}$.
-<!--SR:!2023-01-06,43,170-->
+<!--SR:!2023-04-22,88,170-->
 
 How might relation generators vary in practice?
 ?
@@ -887,7 +887,7 @@ Then it computes the proof as $\boldsymbol{\pi} = \Pi \boldsymbol{\sigma}$
 What is ProofMatrix, broadly?
 ?
 A probabilistc polynomial time algorithm used in Prove in a LIP that produces a matrix.
-<!--SR:2022-11-25,31,210-->
+<!--SR:!2023-05-31,127,210-->
 
 What is the output of ProofMatrix?
 ?
@@ -944,7 +944,7 @@ If $t(\sigma, \pi) = \textbf{0}$, i.e., the zero vector.
 What are the degrees and dimensions of a LIP?
 ?
 $d_Q, d_D, \mu, m, n, k, \eta$
-<!--SR:2022-11-23,97,230-->
+<!--SR:!2023-03-20,55,210-->
 
 What kinds of values can the degrees and dimensions of a LIP take?
 ?
@@ -1032,7 +1032,7 @@ Designated verifier non-interactive arguments using Paillier encryption.
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
 An alegebraic LIP of degree $(d_Q, 2)$ can be executed "in the exponents."
-<!--SR:2022-12-02,79,230-->
+<!--SR:!2023-03-10,45,210-->
 
 What does the crs of a compiled LIP contain, roughly?
 ?

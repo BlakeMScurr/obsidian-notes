@@ -24,7 +24,7 @@ In what sense are interactive proofs probabilistic?
 ?
 The verifier can be convinced of a false n-bit statement with $1/2^n$ probability.
 The verifier can be convinced of a true n-bit statement with $1-1/2^n$ probability.
-<!--SR:2022-12-24,128,210-->
+<!--SR:!2023-11-21,301,210-->
 
 ### Knowledge Complexity
 * We can investigate the knowledge (as opposed to time) complexity of a proof
@@ -521,7 +521,7 @@ $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ accord
 What do GMR believe about the "interactive hierarchy"?
 ?
 That it doesn't collapse. I.e., each layer is a strict subset of the next: $IP[k] \subset IP[k+1]$
-<!--SR:2023-01-24,172,250-->
+<!--SR:!2023-04-20,86,230-->
 
 
 
@@ -1405,7 +1405,7 @@ $Y' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in Y\
 else:
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{y \cdot x \cdot t_i} \mod n\ |\ t_i \in X\}$ 
 $X' = \{y \cdot r_0 \cdot r_i = \sqrt{x \cdot t_i} \mod n\ |\ t_i \in Y\}$
-<!--SR:2022-12-26,159,250--> 
+ <!--SR:!2023-04-16,82,230-->
 
 ??? why $\mod n$ rather than $\mod m$???
 
@@ -1561,7 +1561,7 @@ If $|X' \cup Y'| \leq n/3$
 If $A$ and $B$ behave well, what is a useful lower bound for the chance that any given iteration will complete?
 ?
 $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
-<!--SR:!2023-01-17,50,210-->
+<!--SR:!2023-02-19,26,190-->
 
 ##### Claim 1
 

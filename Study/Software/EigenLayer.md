@@ -22,7 +22,7 @@ $CoC_i = \underset{j \in M_i}{\mathrm{min}} \{CoC_j\}$
 What is the $CoC$ of a DApp with restaking?
 ?
 $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
-<!--SR:2023-01-13,100,270-->
+<!--SR:!2023-03-17,52,250-->
 
 ## B
 
@@ -31,7 +31,7 @@ $$CoC_i = \sum_{j \in M_i} \{CoC_j\}$$
 What does $S$ denote?
 ?
 The set of all stakers.
-<!--SR:2023-01-23,94,230-->
+<!--SR:!2023-08-25,213,230-->
 
 What does $T$ denote?
 ?
@@ -146,7 +146,7 @@ $$
 All tasks are secure $\iff \forall\ U \in S$ . . . ?
 ?
 $$\sum_{i \in U}s_i > \sum_{j \in T^c(U)} p_j $$
-<!--SR:2022-12-07,49,210-->
+<!--SR:!2023-02-24,31,190-->
 
 What does $\gamma_{ij}$ denote?
 ?
@@ -161,7 +161,7 @@ $s_i/\sum_{k \in S_j} s_k$
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:!2022-12-30,36,270-->
+<!--SR:!2023-02-14,21,250-->
 
 ### B.1
 
@@ -170,12 +170,12 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-12-11,5,150-->
+<!--SR:!2023-02-01,8,130-->
 
 What does $T_i$ denote?
 ?
 The set of tasks for which $i$ is a staker.
-<!--SR:!2022-12-30,36,270-->
+<!--SR:!2023-02-14,21,250-->
 
 ### B.1
 
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2022-12-11,5,150-->
+<!--SR:!2023-02-01,8,130-->
 
 
 ??? How do the steps in line (10) work?

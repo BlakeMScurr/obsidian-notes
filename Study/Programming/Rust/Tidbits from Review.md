@@ -6,30 +6,32 @@ What trait can we implement for a default function taking no arguments, and why 
 ?
 The `Default` trait (in the prelude).
 So that where we implement `Default` for `T`, for values of type `t: Option<T>`, we can use methods like `t.unwrap_or_default()`.
-<!--SR:2023-01-05,79,250-->
+<!--SR:!2023-08-26,214,250-->
 
 What does `unwrap_or_default()` do?
 ?
-Takes an `Option<Default>`, and returns a value of type `T`, either the `Some` inside, or whatever is returned from `default()`
-<!--SR:2023-01-10,84,250-->
+Takes an `Option<Default>` (or `Result<Default, Err>`), and returns a value of type `T`, either the `Some` inside, or whatever is returned from `default()`
+<!--SR:!2023-03-09,44,230-->
 
 How do you make a `u8` typed range from, `0` to `26`?
 ?
 `0..26_u8`
-<!--SR:2023-01-19,93,250-->
+<!--SR:!2023-09-23,242,250-->
 
 How can you remove from a `Vec` in constant time, and what is the downside?
 ?
 `swap_remove`
 Doesn't preserve order.
-<!--SR:2023-01-17,91,250-->
+<!--SR:!2023-03-15,50,230-->
 
 How do you add a large collection of items to an `Vec`?
 ?
 `append` for an existing `Vec`, and `extend` for items that aren't already a `Vec`, but implement `IntoIterator`
-<!--SR:!2022-12-31,25,170-->
+<!--SR:!2023-02-08,15,150-->
+
 
 # Truncate PR 2
+
 
 What is an `AsRef<str>` and why is it useful?
 ?
@@ -63,13 +65,12 @@ An associated function on `Vec` that lets you initialised a new `Vec` with a giv
 <!--SR:!2023-03-30,114,250-->
 
 What does `..` refer to in a match statement? Say, `if let Some(Square: :Occupied(..))` etc?
-
 ?
 Ignore all properties.
 Equivalent to `(_, _)` where the enum has 2 properties, for example.
-<!--SR:!2022-12-19,48,250-->
+<!--SR:!2023-07-08,165,250-->
 
 What is `and_then`?
 ?
-A function on `Option` that runs as closure on the wrapped value, or returns None if the option is None.
-<!--SR:!2022-12-19,13,150-->
+A function on `Option` (or `Result`) that runs as closure on the wrapped value, or returns None if the option is None.
+<!--SR:!2023-03-16,51,150-->

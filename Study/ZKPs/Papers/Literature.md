@@ -24,7 +24,7 @@ The notion of interactive proofs, communcation complexity, and that interactive 
 What is GMW91's title?
 ?
 Proofs that Yield Nothing but their Validity or All Languages in NP Have Zero-Knowledge Proof Systems
-<!--SR:2022-12-31,74,130-->
+<!--SR:!2023-05-15,111,130-->
 
 Who are the authors of GMW91
 ?
@@ -46,7 +46,7 @@ Multi-Prover Interactive Proofs: How to Remove Intractability Assumptions
 Who are the authors of BGKW88?
 ?
 Michael Ben-Or, Shafi Goldwasser, Joe Killian, and Avi Widgerson
-<!--SR:2022-12-18,104,170-->
+<!--SR:!2023-08-20,208,170-->
 
 What does BGKW88 contribute?
 ?
@@ -80,7 +80,7 @@ That interaction with two provers is equivalent to interaction with one prover p
 What is BFL90's title?
 ?
 Non-deterministic exponential time has two prover interactive protocols.
-<!--SR:2023-01-03,106,170-->
+<!--SR:!2023-08-14,202,170-->
 
 Who are the authors of BFL90?
 ?
@@ -99,7 +99,7 @@ NEXP has 1 round 2 prover interactive protocols. Thus $MIP[2, 1] = NEXP$
 Who are the authors of GO94?
 ?
 Oded Goldreich and Yair Oren
-<!--SR:2022-12-09,52,170-->
+<!--SR:!2023-06-01,128,170-->
 
 What is the title of GO94?
 ?
@@ -115,7 +115,7 @@ What does GO94 show?
 ?
 Classifies and defines two new definitions of zero knowledge: auxiliary input, and simultation, and shows that blackbox-simulation -> auxiliary -> GMR definition, and that composition of auxiliary gives auxiliary.
 That 1 round NIZKs are only possible for trival (BPP) languages.
-<!--SR:2023-01-18,118,190-->
+<!--SR:!2023-03-25,60,170-->
 
 
 # Pairing Based Snarks
@@ -128,12 +128,12 @@ Jens Groth, Rafail Ostrovsky, and Amit Sahai
 What is the title of GOS12?
 ?
 New techniques for noninteractive zero-knowledge
-<!--SR:2022-12-23,66,150-->
+<!--SR:!2023-03-02,37,130-->
 
 What did GOS12 contribute?
 ?
 Introduced pairing based NIZKs. 
-<!--SR:!2023-01-02,27,130-->
+<!--SR:!2023-03-14,49,130-->
 
 %%Do I care about the rest of the specifics? Probably not, as a practicioner and circuit writer, rather than as a scientist%%
  %%- Reduced CRS size. 
@@ -165,12 +165,12 @@ Jens Groth
 What is the title of Gro06?
 ?
 Simulation-sound NIZK proofs for a practical language and constant size group signatures
-<!--SR:!2023-01-03,46,150-->
+<!--SR:!2023-02-19,26,130-->
 
 What did Gro06 contribute?
 ?
 Applications of pairing NIZKs to particular problems (without expensive circuit reductions). First group signature scheme satisfying the strong security definition of Bellare, Shi, and Zhang, without random oracles, with constant group elements per signature.
-<!--SR:!2022-12-11,25,170-->
+<!--SR:!2023-02-11,18,150-->
 
 Who are the authors of GS12?
 ?
@@ -180,7 +180,7 @@ Jens Groth, Amit Sahai
 What is the title of GS12?
 ?
 Efficient noninteractive proof systems for bilinear groups
-<!--SR:!2023-01-18,43,130-->
+<!--SR:!2023-02-12,19,130-->
 
 What did GS12 contribute?
 ?
@@ -212,7 +212,7 @@ Jens Groth
 What is the title of Gro09?
 ?
 Linear algebra with sub-linear zero-knowledge arguments
-<!--SR:!2022-12-15,44,130-->
+<!--SR:!2023-02-20,27,130-->
 
 What did Gro09 contribute?
 ?
@@ -232,7 +232,7 @@ On the Size of Pairing-Based Non-interactive Arguments
 What did Groth16 contribute?
 ?
 Construction of a 3 element pairing based SNARK, and proof of a lower bound of 2 group elements in the symmetric group setting
-<!--SR:2022-12-15,114,210-->
+<!--SR:!2023-11-01,281,210-->
 
 ## Universal Updatable Snarks
 
@@ -254,7 +254,7 @@ A zk-SNARK with an updatable and universal CRS.
 Updatability guarantees the security of the CRS as long as one party is honest.
 Universality means the CRS applies to any relation.
 Neither property had existed before.
-<!--SR:2022-12-20,59,230-->
+<!--SR:!2023-07-19,176,230-->
 
 ### MBKM19
 
@@ -276,7 +276,7 @@ A zk_SNARK with a universal updatable CRS that scales linearly with respect to t
 What is MBKM19 otherwise known as?
 ?
 Sonic
-<!--SR:2023-01-21,134,250-->
+<!--SR:!2023-12-29,339,250-->
 
 ### GWC21
 
@@ -293,7 +293,7 @@ Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments
 What did GWC21 contribute?
 ?
 A zk-SNARK with an linear sized updatable universal structured reference string with practical prover time. Where the prover requires about 7.5-20 times fewer group exponentiations than Sonic/MBKM19, the previous state of the art.
-<!--SR:2023-01-01,118,250-->
+<!--SR:!2023-03-27,62,230-->
 
 What is GWC21 otherwise known as?
 ?
@@ -307,7 +307,7 @@ Plonk
 Who are the authors of BGM19?
 ?
 Sean Bowe, Ariel Gabizon, Ian Miers
-<!--SR:2022-12-26,126,250-->
+<!--SR:!2024-01-10,351,250-->
 
 What is the title of BGM19?
 ?
