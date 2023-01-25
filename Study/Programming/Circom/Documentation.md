@@ -413,7 +413,7 @@ To ensure that the circuit is compatible with the specified compiler version.
 If there is no pragma, what do we assume?
 ?
 That the code is compatible with the compiler's latest version.
-<!--SR:2023-01-25,172,270-->
+<!--SR:!2024-05-03,464,270-->
 
 ## Functions
 

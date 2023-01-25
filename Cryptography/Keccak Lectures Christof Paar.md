@@ -79,7 +79,7 @@ Weak collision resistance.
 What is the difference between collision resistance and second preimage resistance?
 ?
 in second preimage resistance we have a fixed message we're trying to find a collision for.
-<!--SR:!2022-12-25,39,250-->
+<!--SR:!2023-06-09,135,250-->
 
 ??? Does collision resistance imply second preimage resistance?
 
@@ -103,7 +103,7 @@ No.
 Why do all hash functions have collisions?
 ?
 Because the input space is of arbitrary length, and the output is fixed.
-<!--SR:!2022-12-08,33,250-->
+<!--SR:!2023-06-23,149,250-->
 
 if all hash functions have collisions, how can we show collision/preimage resistance etc?
 ?
@@ -115,7 +115,7 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:!2022-12-07,21,210-->
+<!--SR:!2023-01-27,2,236-->
 
 How does the birthday problem apply to hash functions?
 ?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:!2022-12-10,24,210-->
+<!--SR:!2023-01-27,2,237-->
 
 
 # SHA-3
@@ -172,7 +172,7 @@ The other security levels have the same strength as forms of AES
 What kind of construction does keccak use?
 ?
 A sponge construction.
-<!--SR:!2022-12-28,42,250-->
+<!--SR:!2023-06-15,141,250-->
 
 Why is it called a "sponge" construction?
 ?
@@ -183,7 +183,7 @@ What are the phases of a sponge construction?
 ?
 Absorbtion (taking in input bits)
 Squeezing (output is produced)
-<!--SR:!2022-12-25,39,250-->
+<!--SR:!2023-06-10,136,250-->
 
 What are the internal parameters of keccak?
 ?
@@ -191,7 +191,7 @@ The state length $b$
 The number of rounds $n_r$
 The bitrate, or output block size $r$
 The capacity $c$
-<!--SR:!2022-12-30,42,230-->
+<!--SR:!2023-06-02,128,230-->
 
 What are the parameters of SHA-3?
 ?
@@ -200,12 +200,12 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:!2022-12-07,1,130-->
+<!--SR:!2023-01-31,6,130-->
 
 What does $b$ represent?
 ?
 The state length.
-<!--SR:!2022-12-10,16,210-->
+<!--SR:!2023-04-15,80,210-->
 
 What formula does $b$ follow, and what are its possible values?
 ?
@@ -226,12 +226,12 @@ The number of rounds
 What is the relationship between $b$, $c$, and $r$?
 ?
 $b = r + c$
-<!--SR:!2023-01-01,44,250-->
+<!--SR:!2023-06-14,140,250-->
 
 How do you make keccak into a PRNG?
 ?
 By continuing to squeeze to create arbitrary length outputs.
-<!--SR:!2022-12-26,40,250-->
+<!--SR:!2023-06-12,138,250-->
 
 What is the main purpose of the preprocessing step in keccak?
 ?
@@ -264,25 +264,25 @@ $r$ (24 in SHA-3)
 What is the input and output size of keccak-f?
 ?
 $b$ for bouth input and output (1600 in SHA-3)
-<!--SR:!2023-01-21,58,250-->
+<!--SR:!2023-02-25,31,230-->
 
 What is the round function of keccak-f broken down into?
 ?
 5 atomic functions:
 $\theta, \rho, \pi, \chi, \iota$
 Theta, rho, pi, chi, and iota
-<!--SR:!2023-01-03,28,170-->
+<!--SR:!2023-02-11,17,150-->
 
 What is the input and output size of the sub functions of the keccak-f round functions?
 ?
 Same as the round function, $b$ for both input and output (1600 for SHA-3)
-<!--SR:!2022-12-21,15,230-->
+<!--SR:!2023-04-11,76,230-->
 
 How should we view the $b = 1600$ bit state, to make sense of the $\theta ... \iota$ functions?
 ?
 As a 3-dimensional array
 A cube with a 5x5 face and a depth of 64 where each sub-cube has 1 bit
-<!--SR:!2022-12-27,41,250-->
+<!--SR:!2023-06-13,139,250-->
 
 #### Greek Functions
 
@@ -293,11 +293,12 @@ $\rho$: rotation
 $\pi$: permutation
 $\chi$: combines 3 bits
 $\iota$: adds constants
+<!--SR:!2023-01-27,2,236-->
 
 What does $theta$ do, roughly?
 ?
 Each of the $b$ (think $1600$) state bits is replaced by the XOR sum of 11 bits.
-<!--SR:!2022-12-08,10,190-->
+<!--SR:!2023-04-01,66,190-->
 
 Which 11 bits are used by $theta$ and how are they combined?
 ?
@@ -308,7 +309,7 @@ original plus/XOR left plus/XOR
 What do $\rho$ and $\pi$ operate on?
 ?
 64 bit words
-<!--SR:!2023-01-22,59,250-->
+<!--SR:!2023-06-26,152,250-->
 
  What are the inputs and outputs of $\rho$ and $\pi$?
  ?

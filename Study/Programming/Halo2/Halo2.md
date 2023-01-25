@@ -7,7 +7,7 @@
 What does a prover need to create a proof of a statement?
 ?
 Private inputs and intemediate values called advice values.
-<!--SR:!2022-12-08,13,190-->
+<!--SR:!2023-04-05,70,190-->
 
 What is advice?
 ?
@@ -29,14 +29,14 @@ Column subset that participate in equality constrains.
 Maximum consraint degree.
 Constraints.
 Lookup arguments.
-<!--SR:!2022-12-09,21,150-->
+<!--SR:!2023-02-10,16,130-->
 
 What are the possible specifications for each column?
 ?
 Fixed
 Advice
 Instance
-<!--SR:2023-01-03,77,210-->
+<!--SR:!2023-07-27,183,210-->
 
 What is a fixed column?
 ?
@@ -56,7 +56,7 @@ It's for elements shared between the prover and verifier, typically public input
 What are the constraints?
 ?
 Multivariate polynomials over F.
-<!--SR:2023-01-24,126,290-->
+<!--SR:!2024-01-26,366,290-->
 
 What must the constraints evaluate to?
 ?
@@ -76,19 +76,19 @@ The maximum constraint degree.
 What are lookup arguments defined over?
 ?
 Tuples of input expressions (i.e., multivariate polynomial constraints) and table columns.
-<!--SR:!2022-12-28,22,130-->
+<!--SR:!2023-02-07,13,130-->
 
 What does a PLONKish circuit define in addition to the configuration?
 ?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:!2022-12-12,6,130-->
+<!--SR:!2023-02-02,8,130-->
 
 What keys do we genererate from the circuit description?
 ?
 The proving key and the verification key.
-<!--SR:2023-01-14,115,270-->
+<!--SR:!2023-12-16,325,270-->
 
 What is a selector?
 ?
@@ -105,7 +105,7 @@ Sets of constraints like $q_i \cdot p(...)$, along with a set of selector column
 What kinds of gates are there?
 ?
 Standard gates that support generic field operations like multiplication and addition, and custom gates for more specialized operations.
-<!--SR:!2023-01-24,81,270-->
+<!--SR:!2023-08-22,209,270-->
 
 ## Chips
 
@@ -122,6 +122,6 @@ Cryptographic primitives like hash functions or ciphers, or algorithms like scal
 What is the advantage of using custom gates?
 ?
 Efficiency. It's possible to do arbitrary logic with standard gates, but that is not the most efficient way.
-<!--SR:!2023-01-07,50,250-->
+<!--SR:!2023-06-27,153,250-->
 
 ## Gadgets

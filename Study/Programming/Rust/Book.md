@@ -52,7 +52,7 @@ How do you manually format a rust file, say `main.rs`?
 How do you bring the input/output library into scope?
 ?
 `use std: :io;`
-<!--SR:2023-01-25,100,270-->
+<!--SR:!2023-10-27,275,270-->
 
 What is the identifier for the standard library?
 ?
@@ -77,7 +77,7 @@ A set of items defined in the standard library that is brought into scope by def
 How do you define the entrypoint for a rust program?
 ?
 `fn main () {}`
-<!--SR:2022-12-27,83,270-->
+<!--SR:!2023-10-13,261,270-->
 
 How do you print a string, say, `"hello"` to stdout?
 ?
@@ -340,7 +340,7 @@ Using two's complement representation.
 What range of values can a signed integer store?
 ?
 $-(2^{n-1})$ to $2^{n-1}-1$, where n is the number of bits
-<!--SR:2023-01-24,99,270-->
+<!--SR:!2023-10-17,265,270-->
 
 What range of values can an unsigned integer store?
 ?
@@ -405,7 +405,7 @@ Returns the `None` value if there is overflow.
 What does `overflowing_*` do?
 ?
 Return the value and a boolean indicating whether there was overflow.
-<!--SR:!2022-12-10,24,130-->
+<!--SR:!2023-03-26,60,130-->
 
 What does `saturating_*` do?
 ?
@@ -446,7 +446,7 @@ How do we write the boolean literals?
 How many bytes is a `char`?
 ?
 4
-<!--SR:2023-01-01,75,230-->
+<!--SR:!2023-03-08,42,210-->
 
 How do we declare a `char`?
 ?
@@ -932,7 +932,7 @@ If the type or any of its parts implement `Drop`, it can't implement `Copy`.
 What kinds of types tend to implement the `Copy` trait?
 ?
 Groups of scalar values.
-<!--SR:2023-01-01,76,230-->
+<!--SR:!2023-08-21,208,230-->
 
 What's wrong with the following code?
 ```
@@ -952,7 +952,7 @@ fn f(s: String) {
 What operations can move a value?
 ?
 Assingment, and function calls.
-<!--SR:2023-01-20,93,250-->
+<!--SR:!2023-10-02,250,250-->
 
 How can you return ownership that was taken by a function?
 ?
@@ -965,6 +965,7 @@ By returning the value.
 
 # MISSING 4.2 to 6.3
 # Module System
+
 ## Packages and Crates
 
 What are the components of the module system?
@@ -973,7 +974,7 @@ Packages
 Crates
 Modules
 Paths
-<!--SR:2023-01-25,95,250-->
+<!--SR:!2023-09-20,238,250-->
 
 What is a crate?
 ?
@@ -1022,6 +1023,7 @@ Where do extra binary packages go?
 `src/bin`
 <!--SR:!2023-03-12,48,230-->
 
+
 ## Modules
 
 Where does the compiler look first when compiling a crate?
@@ -1066,6 +1068,8 @@ Creates a shortcut.
 I.e., after `use crate: :garden: :vegetables: :asparagus` you can refer directly to `asparagus`
 <!--SR:!2023-04-18,145,250-->
 
+
+
 ## Paths
 
 What kinds of paths are there?
@@ -1091,7 +1095,7 @@ What is the path delimiter?
 Are modules private or public by default?
 ?
 Private
-<!--SR:2023-01-25,96,250-->
+<!--SR:!2023-10-04,252,250-->
 
 Are functions, structs, etc private or public by default?
 ?
@@ -1158,7 +1162,7 @@ use std::io;
 ```
 use std::{cmp::Ordering, io};
 ```
-<!--SR:2022-12-17,73,250-->
+<!--SR:!2023-09-13,231,250-->
 
 How can you rewrite the following code with nested paths?
 ```
@@ -1180,7 +1184,9 @@ Creates shortcuts to accessible code in other submodules of the crate.
 Brings inaccessible code from external packages into scope.
 <!--SR:!2023-03-24,117,230-->
 
+
 # MISSING 8
+
 # Error Handling
 
 What are the two major categories of errors?
@@ -1281,7 +1287,7 @@ What are the shortcut methods for panicking on error?
 What does `unwrap` do?
 ?
 Returns the unwrapped value inside `Ok` if the `Result` is `Ok`, otherwise panics on the `Err`'s value.
-<!--SR:!2022-12-26,32,150-->
+<!--SR:!2023-04-06,71,150-->
 
 What does `expect` do?
 ?
@@ -1319,7 +1325,7 @@ If the `Result` is `Ok` it just evalutes to the value inside the `Ok` and the co
 What is the difference between `?` and the basic manual way of propogating errors (by matching on the `Result`'s type and returning if it's an `Err`)?
 ?
 `?` calls the `from` function defined on the `From` trait in the standard library, which converts the error type to the error type of the current function.
-<!--SR:!2022-12-19,25,230-->
+<!--SR:!2023-05-04,99,230-->
 
 When can you use the `?` operator?
 ?
@@ -1496,7 +1502,7 @@ What traits must arguments passed to `assert_eq!` and `assert_neq!` implement an
 How do you derive the traits required to use a struct/enum as an argument to `assert_eq!`?
 ?
 `#[derive(PartialEq, Debug)]`
-<!--SR:!2023-01-11,71,210-->
+<!--SR:!2023-03-07,41,190-->
 
 What are the main assertion macros?
 ?

@@ -71,7 +71,7 @@ $U \subseteq S$ is sufficient to corrupt task $j \in T$ if their combined share 
 What is $S_j^c$?
 ?
 The collection of staker sets sufficient to corrupt $j$.
-<!--SR:!2023-01-04,37,250-->
+<!--SR:!2023-05-25,120,250-->
 
 How do we define $S_j^c$?
 ?
@@ -128,19 +128,19 @@ $j$ is secure $\iff \forall\ V \ni j,\ c(V) > p(V)$
 For all tasks to be secure, $\forall\ V \subseteq T$ . . .?
 ?
 $c(V) > p(V)$
-<!--SR:2022-12-12,87,290-->
+<!--SR:!2023-03-19,53,270-->
 
 What does $T^c(U)$ denote?
 ?
 The set of tasks that the stakers $U$ are able to corrupt.
-<!--SR:2022-12-24,88,270-->
+<!--SR:!2023-03-18,52,250-->
 
 What is the definition of $T^c(U)$?
 ?
 $$
 \{j \in T : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j}s_i\}
 $$
-<!--SR:!2023-01-10,47,190-->
+<!--SR:!2023-05-09,104,190-->
 
 
 All tasks are secure $\iff \forall\ U \in S$ . . . ?

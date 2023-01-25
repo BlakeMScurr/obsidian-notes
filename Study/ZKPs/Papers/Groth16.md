@@ -532,7 +532,7 @@ What is the full expanded acronym for SNARK and SNARG?
 ?
 Preprocessing succinct non-interactive argument of knowledge
 Preprocessing succinct non-interactive argument
-<!--SR:2022-12-11,129,270-->
+<!--SR:!2024-03-09,409,270-->
 
 What does fully succinct mean?
 ?
@@ -547,7 +547,7 @@ You can compile a preprocessing SNARK into a fully succinct SNARK.
 Who showed the relationship between preprocessing and fully succinct SNARKs?
 ?
 Bitansky et al BCCT13.
-<!--SR:2022-12-30,102,270-->
+<!--SR:!2023-12-02,311,270-->
 
 Does Groth16 focus on preprocessing SNARKs or fully succinct SNARKs?
 ?
@@ -739,7 +739,7 @@ $R = (\mathbb{F}, aux, \mathscr{l}, \{u_i(X), v_i(X),w_i(X)\}_{i=0}^m, t(X))$
 What is $\mathbb{F}$?
 ?
 A finite field.
-<!--SR:2022-12-02,117,270-->
+<!--SR:!2024-02-18,389,270-->
 
 What is $aux$?
 ?
@@ -1087,7 +1087,7 @@ How do we know the degree of $h(X)$?
 ?
 $u_i(X), v_i(X), w_i(X)$ are degree $n-1$ polynomials, and $t(X)$ is a degree $n$ polynomial. 
 Since, roughly, $h$ = $(u \cdot v - w)/t$ then the degree of is $(n-1) + (n-1) - n = n - 2$
-<!--SR:2022-12-07,120,270-->
+<!--SR:!2023-04-03,68,250-->
 
 #### Setup
 
@@ -1096,7 +1096,7 @@ What are the steps in Setup for a LIP for a QAP, roughly?
 Pick parameters
 Set $\boldsymbol{\tau}$
 Set $\boldsymbol{\sigma}$
-<!--SR:2023-01-13,121,250-->
+<!--SR:!2023-12-09,318,250-->
 
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
@@ -1125,7 +1125,7 @@ The exponentiations of $x$
 The linear combinations for $\phi$
 The linear combinations for $w$
 The evaluations of $t(x)$
-<!--SR:2022-10-31,41,230-->
+<!--SR:!2023-02-26,32,210-->
 
 What is "the $\tau$ part" of $\sigma$ for a QAPLIP?
 ?
@@ -1162,7 +1162,7 @@ $$\Bigl\{
 x^it(x)
 }{\delta}
 \Bigl\}^{n-2}_{i=0}$$
-<!--SR:2022-11-09,51,190-->
+<!--SR:!2023-03-03,37,170-->
 
 ##### Prove
 

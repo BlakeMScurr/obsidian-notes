@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "806097c343c11c95",
+        "id": "49ddef6f15bae8d3",
         "type": "tabs",
         "children": [
           {
-            "id": "4f6e5abe359c1121",
+            "id": "dd81cfe674d6fc70",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Study/Programming/Rust/Book.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"adversary in the ",
+                "query": "2024",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Study/Programming/Rust/Book.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,12 +105,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4f6e5abe359c1121",
+  "active": "45dd9589317113c8",
   "lastOpenFiles": [
+    "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Rust/Tidbits.md",
     "Study/Programming/Rust/Book.md",
-    "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/Literature.md",
