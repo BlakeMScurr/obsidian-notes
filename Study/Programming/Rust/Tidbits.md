@@ -5,7 +5,7 @@
 What, roughly, is the difference between `PartialEq` and `PartialOrd`?
 ?
 `PartialEq` only supports `==` and `!=`, whereas `PartialOrd` also implements `>, <, <=, >=`
-<!--SR:!2023-01-26,2,238-->
+<!--SR:!2023-01-30,4,238-->
 
 # Truncate PR 1
 

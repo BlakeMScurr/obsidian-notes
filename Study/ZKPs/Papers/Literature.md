@@ -288,7 +288,7 @@ Ariel Gabizon, Zachary J. Williamson, Oana Ciobotaru
 What is the title of GWC21?
 ?
 Plonk: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
-<!--SR:2023-01-26,121,230-->
+<!--SR:!2023-10-31,278,230-->
 
 What did GWC21 contribute?
 ?

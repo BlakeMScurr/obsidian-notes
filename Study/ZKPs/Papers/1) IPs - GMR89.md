@@ -72,7 +72,7 @@ Interaction may reduce knowledge complexity.
 How does adding interaction reduce the knowledge complexity of deciding quadratic residuosity?
 ?
 It removes the need to give `m`'s factorisation, and allows a zero knowledge proof.
-<!--SR:2022-12-19,62,230-->
+<!--SR:!2023-07-26,181,230-->
 
 What is true of all known NP algorithms of quadratic residuosity?
 ?
@@ -337,7 +337,7 @@ As the input $x \in \mathcal{L}$
 How is the notion that true ideas can be proven in an interactive proof system formalised?
 ?
 $\forall x \in \mathcal{L}$, the probability that B halts and accepts $\geq 1 - 1/n^k$ for all $k$ and sufficiently large $n$ (taken over B's coin flips)
-<!--SR:!2023-01-01,38,130-->
+<!--SR:!2023-04-02,66,130-->
 
 How is the notion that false ideas cannot be proven in an interactive proof system formalised?
 ?
@@ -477,7 +477,7 @@ The class of languages with an interactive proof system where the prover runs in
 What is $IP[f(n)]$?
 ?
 The class of languages with an interactive proof system that halts within $f(n)$ turns.
-<!--SR:2022-12-12,127,250-->
+<!--SR:!2024-02-04,374,250-->
 
 ### Arthur Merlin Games
 * "Arthur-Merlin" by Babai games are a predecessor of IPs by GMR
@@ -499,7 +499,7 @@ How do the features of Arthur-Merlin games compare to interactive Proof Systems?
 ?
 Merlin is similar to the prover, and Arthur the verifier.
 They differ in that in an Arthur-Merlin game, the prover sees all coin tosses, and they don't require arbitrary interaction (it's sufficient for Arthur to talk and Merlin to respond).
-<!--SR:2022-12-27,69,190-->
+<!--SR:!2023-07-05,160,190-->
 
 ### Interactive Hierarchy
 
@@ -582,7 +582,7 @@ What does GMR study with respect to knowledge?
 ?
 What a polynomially bounded participant can learn from communication.
 The quantity of knowledge required to prove a theorem.
-<!--SR:!2023-01-09,46,170-->
+<!--SR:!2023-04-29,93,170-->
 
 ### Distinguishing
 #### Ensembles
@@ -612,7 +612,7 @@ As an abstraction that allows us to compare and distinguish different types of c
 What is an I-c-ensemble's $I$ through a computational lens?
 ?
 The language accepted by the probabilistic computation.
-<!--SR:2022-12-16,120,210-->
+<!--SR:!2023-11-17,295,210-->
 
 What is an I-c-ensemble's $x$ through a computational lens?
 ?
@@ -734,7 +734,7 @@ Indistinguishable.
 What does it mean for two ensembles to be indistinguishable?
 ?
 That they are "equal" with respect to any polynomial time computation. At least, their difference vanishes superpolynomially.
-<!--SR:2022-12-22,64,150-->
+<!--SR:!2023-05-28,122,150-->
 
 What was distinguishability used for before GMR?
 ?
@@ -756,7 +756,7 @@ Which notion of indistinguishability presented in GMR is necessary for zero know
 How much data is each distinguisher fed at a time?
 ?
 A single $|x|^c$-bit string
-<!--SR:2023-01-05,134,210-->
+<!--SR:!2023-11-25,303,210-->
 
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -809,12 +809,12 @@ Bits.
 How do we define the the possible outputs of a probabilistic turing machine?
 ?
 The I-c-ensemble $M[.] = \{M[x] | x \in I\}$ where $M[x]$ is the possible outputs of M on x.
-<!--SR:2022-12-17,114,190-->
+<!--SR:!2023-10-08,255,190-->
 
 How do we characterise and denote the possible outputs of an ITM pair?
 ?
 As an I-c-ensemble $(A,B)[.]$
-<!--SR:2023-01-01,150,250-->
+<!--SR:!2023-04-13,77,230-->
 
 #### Communication
 * We can think of communication measurement as a student scrutinising a lesson for hidden knowledge
@@ -1010,7 +1010,7 @@ Classifying languages. Languages, or equivalently, theorem proving procedures ar
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
 NP, since it's a special class of interactive proofs.
-<!--SR:2023-01-16,170,250-->
+<!--SR:!2024-04-08,438,250-->
 
 How can knowledge complexity be used for cryptography?
 ?
@@ -1051,7 +1051,7 @@ How much knowledge does an NP proof for a language not in BPP communicate and ho
 ?
 More than zero.
 An NP prover sends one message. If the message released no knowledge then it would be imitable by a probabilistic turing machine, and therefore the language would be in BPP.
-<!--SR:2022-12-17,78,210-->
+<!--SR:!2023-08-20,206,210-->
 
 Why is KC(0)-BPP of interest to GMR?
 ?
@@ -1096,12 +1096,12 @@ To solve the problem of flipping a coin over the telephone.
 What is the definition of the BL language?
 ?
 Let n be a number with prime factorization $p_1^{h_1}...p_k^{h_k}$. Then $n \in L$ if the number of different primes congruent to 3 mod 4 is even.
-<!--SR:2023-01-06,117,230-->
+<!--SR:!2023-03-28,61,210-->
 
 What is the definition of the quadratic predicate?
 ?
 $\mathcal{Q}_m(y) = 0$ if y is quadratic residue mod m, and $1$ otherwise.
-<!--SR:2023-01-07,163,250-->
+<!--SR:!2024-04-01,431,250-->
 
 What is the definition of the language QNR?
 ?
@@ -1140,7 +1140,7 @@ $\genfrac(){}{0}{x}{m}$ is a polynomial time computable function that evaluates 
 If $\genfrac(){}{0}{x}{m} = -1$ . . . ?
 ?
 $\mathcal{Q}_m(x) = 1$, i.e., x is non residue mod m
-<!--SR:!2023-01-12,49,170-->
+<!--SR:!2023-05-01,95,170-->
 
 If $\genfrac(){}{0}{x}{m} = 1$ . . . ?
 ?
@@ -1228,7 +1228,7 @@ $B$ constrcuts $x$ and $T \cup S$ and sends both to $A$
 What is $x$ in the zk QNR IP?
 ?
 The random residuosity number B quizzes A about.
-<!--SR:2023-01-08,138,210-->
+<!--SR:!2023-12-01,309,210-->
 
 How is $x$ defined in the zk QNR IP?
 ?
@@ -1285,7 +1285,7 @@ Type 1
 What type are each $t_i in S$?
 ?
 Type 2
-<!--SR:2022-12-29,119,230-->
+<!--SR:!2023-11-28,306,230-->
 
 How does $B$ send $T$ and $S$ to $A$?
 ?
@@ -1302,12 +1302,12 @@ $A$ constructs $Z$ and sends it to $B$.
 What is $Z$ for?
 ?
 Requiring $B$ to prove it knows the type 1 and type 2 roots of each $t_i \in T \cup S$.
-<!--SR:2022-12-15,132,230-->
+<!--SR:!2024-01-13,352,230-->
 
 How is $Z$ constructed?
 ?
 $A$ randomly selects a subset of $T \cup S$ of size $n$
-<!--SR:2023-01-14,85,150-->
+<!--SR:!2023-06-11,136,150-->
 
 How large is $Z$?
 ?
@@ -1317,7 +1317,7 @@ $n$
 How does $A$ send $Z$ to $B$?
 ?
 However it pleases - no restriction.
-<!--SR:2023-01-17,88,210-->
+<!--SR:!2023-08-01,187,210-->
 
 ??? why is $x$ chosen $mod\ n$ rather than $mod\ m$?
 
@@ -1330,7 +1330,7 @@ B makes equally sized sets of opposite secret residuosity $X$ and $Y$.
 B reveals the random values left over.
 B ties $X$ and $Y$ to  the residuosity of $x$ with sets $X'$ and $Y'$.
 B sends $X' \cup Y'$ to A.
-<!--SR:2023-01-12,122,190-->
+<!--SR:!2023-10-05,252,190-->
 
 How does B reveal the random $r$ values in $Z$?
 ?
@@ -1365,7 +1365,7 @@ $T - Z - D$
 How is $Y$ defined?
 ?
 $S - Z - D$
-<!--SR:!2022-12-26,55,170-->
+<!--SR:!2023-02-28,33,150-->
 
 What is the purpose of $X' \cup Y'$?
 ?
@@ -1385,7 +1385,7 @@ Let $t_i \in Y$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot r_0^2 \cdot y 
 If $x$ is type 2, how do we form $\sqrt{y \cdot x \cdot t_i}$?
 ?
 Let $t_i \in X$, then $\sqrt{y \cdot x \cdot t_i} = \sqrt{y \cdot y \cdot r_0^2 \cdot r_i^2} = \sqrt{y^2 \cdot r_0^2 \cdot r_i^2} = y \cdot r_0 \cdot r_i$
-<!--SR:2022-12-11,115,210-->
+<!--SR:!2023-03-30,63,190-->
 
 If $x$ is type 2, how do we form $\sqrt{x \cdot t_i}$?
 ?
@@ -1435,7 +1435,7 @@ $|X' \cup Y'| \gt \frac{n}{3}$
 What form should the values in $X' \cup Y'$  be?
 ?
 $\forall w \in X' \cup Y', w^2 = t_i \cdot x \mod m\ \lor\ w^2 = y \cdot t_i \cdot x \mod m$ for some $t_i \in X \cup Y$
-<!--SR:!2022-12-12,6,130-->
+<!--SR:!2023-03-04,37,130-->
 
 How is $X' \cup Y'$ sent?
 ?
@@ -1464,7 +1464,7 @@ If $iteration \geq n$
 When does $B$ increment $iteration$?
 ?
 After checking $v$
-<!--SR:2023-01-22,171,250-->
+<!--SR:!2024-04-03,433,250-->
 
 What does $B$ do if $iteration \lt n$?
 ?
@@ -1544,7 +1544,7 @@ $Q < (n+2)!/2(n/2)!$ so $O(P) = 1/n! \implies \Omega(P) = 1/2^{cn}$
 What is remark 2?
 ?
 If $A$ and $B$ both operate according to the specification, then each iteration of the program will be completed with probability $> 1 - 1/2^{cn}$ for some $0 < c \leq 1$
-<!--SR:!2022-12-20,46,190-->
+<!--SR:!2023-02-27,32,170-->
 
 What are my steps for proving the upper bound for the chance that we halt and reject if $A$ and $B$ are honest?
 ?

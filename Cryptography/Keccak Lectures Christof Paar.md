@@ -19,7 +19,7 @@ What are the main problems with the naive approach to signing long messages?
 Rearrangement.
 Cost.
 Overheard.
-<!--SR:!2023-01-26,63,250-->
+<!--SR:!2023-07-04,159,250-->
 
 What's the non naive approach to signing long messages?
 ?

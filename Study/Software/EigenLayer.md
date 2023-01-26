@@ -41,7 +41,7 @@ The set of all tasks secured by eigenlayer.
 What does $s_i$ denote?
 ?
 The amount of stake held by staker $i$
-<!--SR:2023-01-07,78,230-->
+<!--SR:!2023-08-15,201,230-->
 
 What does $S_j$ denote?
 ?
@@ -61,7 +61,7 @@ A subset of the validators/restakers $S$.
 What does $V$ denote?
 ?
 A subset of the tasks $T$
-<!--SR:2023-01-20,88,250-->
+<!--SR:!2023-03-12,45,230-->
 
 When do we define the condition when a set of validators is sufficient to corrupt a task?
 ?
