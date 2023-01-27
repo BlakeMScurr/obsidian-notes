@@ -115,7 +115,7 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:!2023-01-27,2,236-->
+<!--SR:!2023-01-28,1,216-->
 
 How does the birthday problem apply to hash functions?
 ?
@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:!2023-01-27,2,237-->
+<!--SR:!2023-01-31,4,237-->
 
 
 # SHA-3
@@ -293,7 +293,7 @@ $\rho$: rotation
 $\pi$: permutation
 $\chi$: combines 3 bits
 $\iota$: adds constants
-<!--SR:!2023-01-27,2,236-->
+<!--SR:!2023-02-02,6,236-->
 
 What does $theta$ do, roughly?
 ?

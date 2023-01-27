@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Study/Programming/Rust/Book.md",
+                "file": "Study/ZKPs/Papers/Groth16.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2024",
+                "query": "\"definition of succinctness\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Study/Programming/Rust/Book.md",
+                "file": "Study/ZKPs/Papers/Groth16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,12 +105,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "45dd9589317113c8",
+  "active": "dd81cfe674d6fc70",
   "lastOpenFiles": [
+    "Study/Programming/Rust/Book.md",
     "Cryptography/Keccak Lectures Christof Paar.md",
     "Study/ZKPs/Papers/Groth16.md",
     "Study/Programming/Rust/Tidbits.md",
-    "Study/Programming/Rust/Book.md",
     "Study/Fun Maths/Aleph 0/The Fundamental Theorem of Galois Theory.md",
     "Study/Programming/Circom/Documentation.md",
     "Study/ZKPs/Papers/Literature.md",

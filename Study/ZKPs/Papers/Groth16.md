@@ -193,7 +193,7 @@ We pick $y$ uniformly at random from set $S$.
 What do we assume about random sampling?
 ?
 That it's possible to randomly sample from sets such as $\mathbb{Z}_p$
-<!--SR:2022-12-27,127,250-->
+<!--SR:!2024-01-18,356,250-->
 
 What does $(y;z) \leftarrow (\mathcal{A} || X_{\mathcal{A}})(x)$ mean?
 ?
@@ -253,7 +253,7 @@ Galbraith et al GPS08
 What is a Type I bilinear group?
 ?
 Where $\mathbb{G}_1 = \mathbb{G}_2$
-<!--SR:2022-12-03,121,270-->
+<!--SR:!2024-03-05,403,270-->
 
 What are Type II bilinear groups?
 ?
@@ -263,7 +263,7 @@ Where $\mathbb{G}_1 \neq \mathbb{G}_2$ and there is an efficiently computable no
 What are Type III bilinear groups?
 ?
 Where there is no efficiently computable non-trivial homomorphism in either direction between $\mathbb{G}_1$ and $\mathbb{G}_2$.
-<!--SR:2023-01-02,137,250-->
+<!--SR:!2024-02-05,374,250-->
 
 What is special about Type III bilinear groups?
 ?
@@ -333,7 +333,7 @@ What is the definition of $\textbf{Prove}$?
 ?
 $\pi \leftarrow\textbf{Prove}(R, \sigma, \phi, w)$
 The prover algorithm takes as input the common reference string and $(\phi, w) \in R$ and outputs the argument $\pi$.
-<!--SR:2022-12-07,125,270-->
+<!--SR:!2024-03-08,406,270-->
 
 ??? Why do we say the prover algorithm accepts the relation?
 
@@ -381,7 +381,7 @@ We say $(\textbf{Setup, Prove, Vfy)}$ is a non-interactive argument for $\mathca
 What is a perfect non-interactive zero-knowledge argument of knowledge?
 ?
 We say that $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect non-interactive zero-knowledge argument of knowledge for $\mathcal{R}$ if it has perfect completeness, perfect zero knowledge, and computational knowledge soundness.
-<!--SR:2022-12-10,128,270-->
+<!--SR:!2024-03-12,410,270-->
 
 What is perfect completeness, roughly?
 ?
@@ -521,7 +521,6 @@ We can relax soundness and knowledge soundness such that the adversary only sees
 What is the definition of succinctness for SNARKs and SNARGs?
 ?
 A non-interactive argument where the verifier runs in polynomial time in $\lambda + |\phi|$ and the proof size is polynomial in $\lambda$ is called succinct.
-<!--SR:!2023-01-08,45,170-->
 
 What is the difference between SNARKs and SNARGs?
 ?
@@ -600,7 +599,7 @@ Some subset of the the input/ouput wires.
 What represents the witness in our arithmetic circuit?
 ?
 The wires that aren't the statement.
-<!--SR:2023-01-09,150,230-->
+<!--SR:!2024-01-28,366,230-->
 
 What does binary relation of our arithmetic circuit consist of?
 ?
@@ -622,7 +621,7 @@ A subset of the variables.
 What corresponds to the witness in our arithmetic constraints?
 ?
 The variables not in the statement.
-<!--SR:2023-01-15,136,230-->
+<!--SR:!2023-12-20,327,230-->
 
 What is the binary relation of our arithmetic constraints?
 ?
@@ -873,7 +872,7 @@ It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as inp
 What do we assume for notational simplicity regarding the Setup algrotitm in a LIP?
 ?
 That $\sigma$ always contains 1 as an entry such that there is no distinction between affine and linear functions of $\sigma$
-<!--SR:2023-01-18,86,210-->
+<!--SR:!2023-08-05,190,210-->
 
 ??? What does affine mean? What does linear mean in this context, since these are circuits, not matrixes? What is the difference between affine and linear? How does this assumption make sure there's no difference between them? Is this a merited assumption, or could someone somehow create a LIP where $\sigma$ doesn't contain 1, invalidating the result?
 
@@ -1101,7 +1100,7 @@ Set $\boldsymbol{\sigma}$
 What are the parameters selected in the Setup for a LIP for a QAP?
 ?
 $\alpha, \beta, \gamma, \delta, x$
-<!--SR:!2023-01-25,68,230-->
+<!--SR:!2023-07-06,160,230-->
 
 What is $\boldsymbol{\tau}$ in a LIP for a QAP?
 ?
@@ -1211,7 +1210,7 @@ a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x)) + h(x)t(x)
 {\delta}
 + As + rB - rs\delta
 $$
-<!--SR:2022-11-06,11,130-->
+<!--SR:!2023-02-12,16,130-->
 
 ##### Vfy
 

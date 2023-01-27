@@ -679,7 +679,7 @@ Rightshift
 What is the `<<`?
 ?
 Leftshift
-<!--SR:2023-01-27,153,250-->
+<!--SR:!2024-02-14,383,250-->
 
 How are the shift operators extended?
 ?
@@ -722,7 +722,7 @@ template IsZero() {
 }
 component main{public [in]} = IsZero();
 ```
-<!--SR:2023-01-27,162,250-->
+<!--SR:!2024-03-07,405,250-->
 
 What is the code for `Num2Bits`
 ?

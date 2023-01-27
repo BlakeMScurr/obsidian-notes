@@ -322,7 +322,7 @@ A lesson in a classroom.
 What are the "objects" (in an OOP sense) in an interactive proof system?
 ?
 A language $\mathcal{L} \subseteq \{0,1\}^*$, an input $x \in \mathcal{L}$, and an interactive pair $(A,B)$
-<!--SR:2022-12-18,126,210-->
+<!--SR:!2023-11-30,307,210-->
 
 How is the general topic of an interactive proof system formalised?
 ?
@@ -602,7 +602,7 @@ The quantity of knowledge required to prove a theorem.
 What does an I-c-ensemble represent?
 ?
 The possible outputs (with polynomially bounded length) of a probabilistic computation over the strings in some language.
-<!--SR:2023-01-27,98,150-->
+<!--SR:!2023-06-30,154,150-->
 
 What is an I-c-ensemble used for?
 ?
@@ -827,7 +827,7 @@ As an I-c-ensemble $(A,B)[.]$
 $A$ communicates at most $f(n)$ bits of knowledge to $B$ if . . . ?
 ?
 There exists a probabilstic polynomial-time machine M such that the I-c-ensembles $M[\cdot]$ and $(A,B)[\cdot]$ are at most $1-1/2^{f(n)}$ distinguishable.
-<!--SR:2023-01-26,97,170-->
+<!--SR:!2023-07-12,166,170-->
 
 $A$ communicates at most $f(n)$ bits of knowledge if . . . ?
 ?
@@ -1345,7 +1345,7 @@ The difference in size between $T - Z$ and $S - Z$.
 What set does $B$ reveal other than $Z$, and how is it created?
 ?
 $D$. A set randomly chosen by $B$ with $d$ elements from the larger set of $T - Z$ or $S -Z$.
-<!--SR:2023-01-16,137,210-->
+<!--SR:!2023-11-22,299,210-->
 
 How is $D$ notated?
 ?
@@ -1355,7 +1355,7 @@ $\{t_{i_1},...,t_{i_d}\}$.
 How does $B$ reveal $D$?
 ?
 $B$ sends $r_{i_1},...,r_{i_d}$,  where $t_{i_j} = r_{i_j}^2$ or $t_{i_j} = y \cdot r_{i_j}^2 \mod m$ for some $1 \leq i_j \leq 2n$.
-<!--SR:2022-12-19,109,190-->
+<!--SR:!2023-10-03,249,190-->
 
 How is $X$ defined?
 ?
@@ -1568,7 +1568,7 @@ $1 - \frac{1}{2^{cn}}$ for $0 < c \leq 1$
 What is claim 1?
 ?
 If $(y, m) \notin QNR$ then $A$ (or any $A'$) correctly guessed $C_x$ with probability exactly $1/2$
-<!--SR:!2022-12-19,25,150-->
+<!--SR:!2023-02-13,17,130-->
 
 How does the proof for claim 1 work?
 ?

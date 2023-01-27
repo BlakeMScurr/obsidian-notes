@@ -189,7 +189,7 @@ Buliding a part
 looping along the bitstring
 Checking the 127th bit
 Output
-<!--SR:2023-01-27,150,250-->
+<!--SR:!2024-02-06,375,250-->
 
 What are the signals in compconstant?
 ?
