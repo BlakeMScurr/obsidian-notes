@@ -430,7 +430,7 @@ function funid (param_1, ..., param_n) {
 	return x;
 }
 ```
-<!--SR:2023-01-28,94,230-->
+<!--SR:!2023-09-01,216,230-->
 
 What can functions output?
 ?

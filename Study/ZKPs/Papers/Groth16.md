@@ -205,7 +205,7 @@ $\mathcal{A}$ outputs $y$ on input $x$ and $X_{\mathcal{A}}$ outputs $z$ on the 
 What are the parts of a bilinear group?
 ?
 $(p, \mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T, e)$
-<!--SR:2022-11-08,54,230-->
+<!--SR:!2023-09-02,217,230-->
 
 What is $p$?
 ?
@@ -299,7 +299,7 @@ The statement.
 What is $w$?
 ?
 The witness.
-<!--SR:2022-12-22,118,250-->
+<!--SR:!2024-01-03,340,250-->
 
 What kinds of pairs are in $R$?
 ?
@@ -896,7 +896,7 @@ A matrix $\Pi \in \mathbb{F}^{k \times m}$
 What is $k$ in a LIP?
 ?
 The number of rows in the matrix from ProofMatrix
-<!--SR:!2022-11-29,25,210-->
+<!--SR:!2023-05-27,119,210-->
 
 What arguments does ProofMatrix accept?
 ?
@@ -953,7 +953,7 @@ They may be constants or polynomials in the security parameter $\lambda$
 What is $d_Q$?
 ?
 The multiplicative depth of the setup circuit.
-<!--SR:2022-10-29,58,210-->
+<!--SR:!2023-09-03,218,210-->
 
 What is $d_D$?
 ?
@@ -989,7 +989,7 @@ The dimension of the vector output by $t$.
 What is the definition of a LIP?
 ?
 The tuple $(\textbf{Setup, Prove, Vfy})$ is a linear interactive proof for $\mathcal{R}$ if it has perfect completeness and statistical knowledge soundness against affine prover strategies.
-<!--SR:!2022-12-12,15,190-->
+<!--SR:!2023-02-08,11,170-->
 
 What, roughly, does statistical knowledge soundness against affine prover strategies mean?
 ?
@@ -1080,7 +1080,7 @@ The quotient polynomial, i.e, the number of times we add $t(X)$ to make each sid
 What is the degree of $h(X)$?
 ?
 $n-2$
-<!--SR:2022-11-25,111,270-->
+<!--SR:!2024-02-13,381,270-->
 
 How do we know the degree of $h(X)$?
 ?
@@ -1111,7 +1111,7 @@ $(\alpha, \beta, \gamma, \delta, x)$
 What set are the parameters in Setup for a LIP for a QAP selected from?
 ?
 $\mathbb{F}^*$
-<!--SR:2022-12-26,104,230-->
+<!--SR:!2023-11-04,280,230-->
 
 ??? How is it possible that they are selected from this? They appear to just be single elements?
 
@@ -1270,7 +1270,7 @@ $$
 \sum_{i=0}^\mathscr{l} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))
 }{\gamma} \cdot \gamma 
 $$
-<!--SR:2022-12-03,84,230-->
+<!--SR:!2023-03-17,48,210-->
 
 What is in the "proof CRS product" part of the long form equation $\boldsymbol{t}$ should satisfy in a QAPLIP?
 ?

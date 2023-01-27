@@ -761,7 +761,7 @@ A single $|x|^c$-bit string
 What happens to 0-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
 They remain 0-distinguishable, provided $m < poly(|x|)$.
-<!--SR:2023-01-28,101,150-->
+<!--SR:!2023-07-01,154,150-->
 
 What happens to p-distinguishable ensembles if they're fed $m > 1$ strings?
 ?
@@ -1170,7 +1170,7 @@ Is not known to exist, efficiently.
 For which $x \in \mathbb{Z}_m^*$ is GMR's zk QNR IP defined?
 ?
 $x \in QNR$ (since we're only interested in "yes instances") where $\genfrac(){}{0}{x}{m} = 1$ (since $\genfrac(){}{0}{x}{m} = -1$ directly implies $x$ is a quadratic non residue)
-<!--SR:2023-01-28,143,210-->
+<!--SR:!2023-11-20,296,210-->
 
 How powerful does the A have to be in GMR's zk QNR IP?
 ?

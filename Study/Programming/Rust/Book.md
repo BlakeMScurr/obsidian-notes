@@ -62,7 +62,7 @@ What is the identifier for the standard library?
 What is the identifier for the input/output library?
 ?
 `io`
-<!--SR:2023-01-28,103,270-->
+<!--SR:!2023-11-03,279,270-->
 
 What is the keyword used to bring libraries into scope?
 ?
