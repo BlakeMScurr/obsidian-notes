@@ -29,7 +29,7 @@ How efficient can pairing based SNARGs be?
 What language is Groth16's SNARG for, and what is that language's most important property?
 ?
 Circuit satisfiability, that it is NP-complete.
-<!--SR:2022-12-13,131,250-->
+<!--SR:!2024-02-16,385,250-->
 
 What kind of pairings does Groth16 use and why?
 ?
@@ -55,7 +55,7 @@ What is the second contribution of Groth16 and how is it shown?
 ?
 That SNARGs using generic symmetric bilinear group operations can't consist of a single element.
 By showing that linear interactive proofs cannot have a linear decision procedure.
-<!--SR:2022-12-01,109,210-->
+<!--SR:!2023-11-11,288,210-->
 
 What would extending the lower bound in Groth16 prove?
 ?
@@ -122,7 +122,7 @@ Which papers introduced pairing based NIZKs, and what did this yield?
 ?
 Groth et al: GOS12, GOS06, Gro06, GS12.
 The first linear sized proofs based on standard assumptions.
-<!--SR:!2023-01-23,55,130-->
+<!--SR:!2023-04-11,74,130-->
 
 What did Gro10 achieve wrt communication complexity and how?
 ?
@@ -273,7 +273,7 @@ They are the most efficient type of bilinear groups, and hence the most relevant
 For which type of bilinear group is the lower bound given?
 ?
 Type III
-<!--SR:2022-12-23,118,250-->
+<!--SR:!2023-04-01,64,230-->
 
 For which type of bilinear group does the construction work?
 ?
@@ -314,7 +314,7 @@ The set of possible relations $\mathcal{R}$ might output given $1^\lambda$.
 What is $z$?
 ?
 Auxilliary information that the relation generator might output, which will be given to the adversary.
-<!--SR:2022-12-31,117,230-->
+<!--SR:!2023-11-24,301,230-->
 
 What is an efficient prover publicly verifiable non-interactive argument for $\mathcal{R}$?
 ?
@@ -683,7 +683,7 @@ Forming $t(x)$.
 Creating the $u_i(x), v_i(x), w_i(x)$ polynomials.
 Expressing the constraints as an evaluation of a single polynomial.
 Refomulating the polynomial evaluation over values mod $t(x)$.
-<!--SR:!2023-01-05,42,190-->
+<!--SR:!2023-02-21,25,170-->
 
 What is the random vector?
 ?
@@ -1026,7 +1026,7 @@ What can LIPs be compiled into and how?
 ?
 Publicly verifiable non-interactive by using pairings.
 Designated verifier non-interactive arguments using Paillier encryption.
-<!--SR:2022-11-02,70,210-->
+<!--SR:!2023-09-22,238,210-->
 
 What kind of LIP compiles to a non-interactive argument and how (roughly) is it executed?
 ?
@@ -1143,7 +1143,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\gamma}
 \Bigl\}^\mathscr{l}_{i=0}$$
-<!--SR:!2022-12-18,26,210-->
+<!--SR:!2023-02-15,19,190-->
 
 What is the "linear combinations for $w$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1180,7 +1180,7 @@ Calculating the matrix $\Pi$.
 What is the dimension of $\Pi$ in a QAPLIP?
 ?
 $3 \times (m + 2n + 4)$
-<!--SR:2022-11-14,70,230-->
+<!--SR:!2023-10-11,257,230-->
 
 ??? Why is the number of columns $m + 2n + 4$? It should be $m + 2n + 3$, since there are 4 elements on their own, the witness and statement parts have m, and there are n exponeitations of x and n-1 evaluations of t(x), giving $4 + m + n + n - 1 = m + 2n + 3$.
 
