@@ -112,7 +112,7 @@ A type from the standard library that is a growable, UTF-8 encoded piece of text
 What is `String: :new`?
 ?
 A function that returns a new instance of `String`.
-<!--SR:2023-01-29,104,270-->
+<!--SR:!2023-11-05,280,270-->
 
 What does the `: :` syntax on `String: :new` indicate?
 ?
@@ -886,7 +886,7 @@ println!("{}, world!", s1);
 ```
 ?
 `s1` is being moved when it is assigned to `s2`, so it is no longer accessible.
-<!--SR:2023-01-29,99,250-->
+<!--SR:!2023-10-04,248,250-->
 
 Why can't strings be accessed after they're moved?
 ?

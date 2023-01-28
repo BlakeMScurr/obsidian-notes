@@ -98,7 +98,7 @@ What are some trivial examples of groups?
 Integers under addition.
 The group with a single element e.
 A modular arithmetic group.
-<!--SR:2023-01-29,163,230-->
+<!--SR:!2024-02-08,375,230-->
 
 What are the identity and inverse of $a$ in the additive group over the integers?
 ?
@@ -109,7 +109,7 @@ What is a cyclic multiplicative group, and what is the generator?
 ?
 A multiplicative group is called cyclic if there is some $a \in G$ such that for any $b \in G$ there is some integer $j$ with $b = a^j$.
 $a$ is called the generator and we write $G = \langle a\rangle$.
-<!--SR:2023-01-29,139,190-->
+<!--SR:!2023-10-12,256,190-->
 
 What is the immediate property of cyclic groups and how do we know?
 ?

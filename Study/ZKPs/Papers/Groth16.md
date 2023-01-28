@@ -9,7 +9,7 @@ Small size and low verification complexity.
 What is a SNARG?
 ?
 Succinct non-interactive argument
-<!--SR:2023-01-21,176,270-->
+<!--SR:!2024-05-30,487,270-->
 
 What is a SNARK?
 ?
@@ -238,7 +238,7 @@ Sampling generators of the groups.
 What do we assume about the bilinear group operations?
 ?
 That there are efficient algorithms for computing them.
-<!--SR:2022-12-04,122,270-->
+<!--SR:!2024-03-10,406,270-->
 
 What are the names for the types of bilinear groups?
 ?
@@ -394,7 +394,7 @@ For all $\lambda \in \mathbb{N}, R \in \mathcal{R}_\lambda, (\phi, w) \in R$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R);$
 $\pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w):$
 $\textbf{Vft}(R, \sigma, \phi, \pi) = 1] = 1$
-<!--SR:2022-12-04,108,230-->
+<!--SR:!2023-12-06,311,230-->
 
 What is perfect zero knowledge, roughly?
 ?
@@ -659,7 +659,7 @@ $(a_i + a_j) \cdot a_0 = a_k$ where $u_i = u_j = v_0 = w_k = 1$, since $a_0 = 1$
 In what sense are addition gates handled "for free?"
 ?
 If $a_i + a_j = a_k$ and $a_k$ is multiplied by $a_l$, we write $(a_i + a_j) \cdot a_l$ and skip the calculation of $a_k$.
-<!--SR:2022-12-12,116,250-->
+<!--SR:!2024-01-15,351,250-->
 
 ### Formulating QAPs
 
@@ -753,12 +753,12 @@ Delineating the variables for the statement and the witness.
 What is the definition of $\mathscr{l}$?
 ?
 $1 \leq \mathscr{l} \leq m$
-<!--SR:!2022-12-24,30,150-->
+<!--SR:!2023-02-18,20,130-->
 
 How do the degrees of $u_i(X), v_i(X), w_i(X), t(X)$ relate to each other?
 ?
 $u_i(X), v_i(X), w_i(X), t(X) \in \mathbb{F}[X]$ and $u_i(X), v_i(X), w_i(X)$ have strictly lower degree than $n$, the degree of $t(X)$.
-<!--SR:2022-12-30,130,250-->
+<!--SR:!2023-04-08,69,230-->
 
 What is the setbuilder notation for a quadratic arithmetic program as a relation?
 ?
@@ -833,7 +833,7 @@ Linear interactive proof
 What is the purpose of a LIP?
 ?
 It is a useful characterisation of the information theoretic underpinning of various SNARK constructions.
-<!--SR:!2023-01-18,55,230-->
+<!--SR:!2023-06-17,139,230-->
 
 Who invented LIPs?
 ?
@@ -980,7 +980,7 @@ The dimension of the simulation trapdoor vector $\tau$ made in Setup.
 What is $\eta$ in a LIP?
 ?
 The dimension of the vector output by $t$.
-<!--SR:2022-12-10,100,230-->
+<!--SR:!2023-03-23,53,210-->
 
 ??? Why are the algorithms in Setup and Vfy circuits, but the one in Prove is a polynomial time algorithm?
 
@@ -1287,7 +1287,7 @@ When the polynomial test passes.
 What is the function signature of Sim for a QAPLIP?
 ?
 $\pi \leftarrow Sim(R, \boldsymbol{\tau}, a_1, ..., a_\mathscr{l})$
-<!--SR:2022-12-03,75,250-->
+<!--SR:!2023-03-15,45,230-->
 
 What, roughly, are the steps of Sim in a QAPLIP?
 ?
