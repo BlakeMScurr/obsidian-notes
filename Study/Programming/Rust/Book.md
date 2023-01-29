@@ -481,7 +481,7 @@ No.
 How do you declare a tuple? (give type annotations).
 ?
 `let tup: (i32, f64, u8) = (500, 6.4, 1);`
-<!--SR:2023-01-30,103,270-->
+<!--SR:!2023-11-08,282,270-->
 
 How do you destructure a tuple?
 ?
@@ -1381,7 +1381,7 @@ Traits let different concrete types use different behaviour with the same functi
 What are lifetimes?
 ?
 Generics that give the compiler information about how references relate to each other.
-<!--SR:!2023-01-30,90,230-->
+<!--SR:!2023-08-25,207,230-->
 
 ## Generics
 

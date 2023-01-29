@@ -440,7 +440,7 @@ Numeric values, or expressions, or arrays of one or the other.
 Can functions be recursive?
 ?
 Yes.
-<!--SR:2023-01-30,155,250-->
+<!--SR:!2024-02-12,378,250-->
 
 How many return statements can a function have?
 ?

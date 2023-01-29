@@ -111,12 +111,12 @@ The construction of non-interactive cryptographic schemes, e.g., digital key sig
 Where was the first sub-linear communication zero-knowledge argument, sending fewer bits than the size of the statement given?
 ?
 Kili92, by Joe Kilian.
-<!--SR:2022-12-07,101,190-->
+<!--SR:!2023-03-28,57,170-->
 
 What did Micali00 propose?
 ?
 Sublinear size NIZK arguments by letting the prover in a communication efficient zero-knowledge argument compute the verifier's challenges using a cryptographic function.
-<!--SR:2023-01-18,91,150-->
+<!--SR:!2023-06-25,146,150-->
 
 Which papers introduced pairing based NIZKs, and what did this yield?
 ?
@@ -151,14 +151,14 @@ UNFINISHED
 What does $\approx$ mean, roughly?
 ?
 That two functions approach each other exponentially.
-<!--SR:2022-12-21,121,250-->
+<!--SR:!2024-01-17,352,250-->
 
 ??? Wait, is this right? It appears to only mean that they approach each other polynomially.
 
 What is the definition of $\approx$?
 ?
 Given two function $f, g : \mathbb{N} \rightarrow [0,1]$, we write $f(\lambda) \approx g(\lambda)$ when $| f(\lambda) - g(\lambda)| = \lambda^{-\omega(1)}$
-<!--SR:2022-12-05,46,170-->
+<!--SR:!2023-06-05,126,170-->
 
 What is the limit definition of $\omega$?
 ?
@@ -215,7 +215,7 @@ A prime number.
 What are $\mathbb{G}_1, \mathbb{G}_2, \mathbb{G}_T$
 ?
 Groups of prime order $p$.
-<!--SR:2022-12-22,132,270-->
+<!--SR:!2024-03-14,409,270-->
 
 What is $e$ and what is its definition?
 ?
@@ -441,7 +441,7 @@ What is the definition of computational soundness?
 ?
 Let $L_R$ be the language consisting of statements for which there exist matching witnesses in R. Formally, we require that for all non-uniform polynomial time adversaries $\mathcal{A}$:
 $Pr[(R,z) \leftarrow \mathcal{R}(1^\lambda); (\sigma, \tau) \leftarrow \textbf{Setup}(R); (\phi, \pi) \leftarrow \mathcal{A}(R, z, \sigma) : \phi \notin L_R \land \textbf{Vfy}(R, \sigma, \phi, \pi) = 1] \approx 0$
-<!--SR:2023-01-04,135,250-->
+<!--SR:!2024-02-03,369,250-->
 
 What does the adversary represent in the definition of computational soundness?
 ?
@@ -504,7 +504,7 @@ We split $\sigma$ into two parts $\sigma_P$ and $\sigma_V$, used by the prover a
 When is a non-interactive argument publicly verifiable?
 ?
 When $\sigma_V$ can be deduced from $\sigma_P$.
-<!--SR:2022-12-05,123,270-->
+<!--SR:!2024-03-13,408,270-->
 
 When is a non-interactive argument a designated verifier proof?
 ?
@@ -525,7 +525,7 @@ A non-interactive argument where the verifier runs in polynomial time in $\lambd
 What is the difference between SNARKs and SNARGs?
 ?
 A SNARG is sound, a SNARK is knowledge sound.
-<!--SR:2022-12-28,137,270-->
+<!--SR:!2024-03-19,414,270-->
 
 What is the full expanded acronym for SNARK and SNARG?
 ?
@@ -592,7 +592,7 @@ Addition and multiplication gates over a finite field.
 What represents the statement in our arithmetic circuit?
 ?
 Some subset of the the input/ouput wires.
-<!--SR:2023-01-25,138,210-->
+<!--SR:!2023-11-18,292,210-->
 
 %% Why? Requiring input and output wires allows the other wires to act as a constraint on the possible statements that can be proven.%%
 
@@ -688,7 +688,7 @@ Refomulating the polynomial evaluation over values mod $t(x)$.
 What is the random vector?
 ?
 Given $n$ equations, we pick arbitrary distinct $r_1,...,r_n \in \mathbb{F}$
-<!--SR:2023-01-26,133,250-->
+<!--SR:!2024-01-02,337,250-->
 
 How is $t(x)$ defined?
 ?
@@ -716,7 +716,7 @@ $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)
 What is the final form of a quadratic arithmetic program?
 ?
 $$\sum_{i=0}^ma_iu_i(X)\cdot \sum_{i=0}^ma_iv_i(X) \equiv \sum_{i=0}^ma_iw_i(X)\pmod{t(X)}$$
-<!--SR:2022-12-13,115,230-->
+<!--SR:!2023-04-04,64,210-->
 
 How do we know that the condition evaluated at each $r_q$ is equivalent to the condition evaluated at every $t(X)$ all $\pmod{t(X)}$?
 ?
@@ -803,7 +803,7 @@ To get the maximum flexibility, so that all different options can be modelled by
 In pairing based NIZK arguments, what does aux specify and why?
 ?
 The bilinear group. To provide a better model of settings where the relation is build on top of an already existing group.
-<!--SR:2022-10-31,95,270-->
+<!--SR:!2023-03-29,58,250-->
 
 Why does chosing the group in the auxiliary information not lose generality?
 ?
@@ -968,7 +968,7 @@ The dimension of the randomness vector used in Setup.
 What is $m$ in a LIP?
 ?
 The dimension in the crs vector $\sigma$ made in Setup.
-<!--SR:!2022-12-23,49,250-->
+<!--SR:!2023-03-01,30,230-->
 
 ??? Why is this called m? Is this equivalent to the number of variables in a QAP or constraint, or inputs in a circuit?
 
@@ -1010,7 +1010,7 @@ w \leftarrow \mathcal{X}(R, \phi, \Pi): \\
 ] \approx 0
 \end{align}
 $$
-<!--SR:2022-11-30,72,190-->
+<!--SR:!2023-08-13,195,190-->
 
 ??? Is there a mistake here, should it me that Pi in kxm rather than mxk?
 
@@ -1152,7 +1152,7 @@ $$\Bigl\{
 \beta u_i(x) + \alpha v_i(x) + w_i(x)
 }{\delta}
 \Bigl\}^m_{i=\mathscr{l}+1}$$
-<!--SR:!2022-12-03,8,170-->
+<!--SR:!2023-04-03,63,170-->
 
 What is the "evaluations of $t(x)$" part of $\sigma$ for a QAPLIP?
 ?
@@ -1187,12 +1187,12 @@ $3 \times (m + 2n + 4)$
 What is the definition of $\pi$ in a QAPLIP?
 ?
 $\pi = \Pi\sigma = (A, B, C)$
-<!--SR:2022-12-17,107,270-->
+<!--SR:!2024-01-12,347,270-->
 
 What is the definition of $A$ in a QAPLIP?
 ?
 $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
-<!--SR:2022-12-10,50,170-->
+<!--SR:!2023-03-02,31,150-->
 
 What is the definition of $B$ in a QAPLIP?
 ?
@@ -1217,7 +1217,7 @@ $$
 What is the signature of Vfy in a QAPLIP?
 ?
 $0/1 \leftarrow$Vfy$(R, \boldsymbol{\sigma}, a_1, ..., a_{\mathscr{l}})$
-<!--SR:!2023-01-10,49,190-->
+<!--SR:!2023-05-20,110,190-->
 
 %% Are we missing an implicit argument pi in Vfy?%%
 
@@ -1312,7 +1312,7 @@ $$
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?
 $\boldsymbol{\pi} = (A,B,C)$
-<!--SR:2023-01-02,113,290-->
+<!--SR:!2024-02-02,368,290-->
 
 
 

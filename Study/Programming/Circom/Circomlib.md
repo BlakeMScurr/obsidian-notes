@@ -259,7 +259,7 @@ What does `b` do from a bitwise perspective and how?
 Turns each `jth` left hand bit to `1`, where `i < j <= 127`.
 If they're all 0, simply by adding a 1 to each bit.
 If they'll all 1, then we turn them all to `0` in a cascade by adding 1 to the `ith` bit in the same way as `a`, then we add 1 to each following bit up to `127`.
-<!--SR:2023-01-30,181,290-->
+<!--SR:!2024-07-08,525,290-->
 
 What are the 4 cases for defining parts?
 ?
@@ -419,4 +419,4 @@ poseidon_constants_old
 poseidon_old
 sign
 switcher
-<!--SR:2023-01-30,104,170-->
+<!--SR:!2023-03-22,51,150-->

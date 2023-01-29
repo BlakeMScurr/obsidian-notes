@@ -59,7 +59,7 @@ That we can't compute $x$ from $h(x)$.
 What does preimage mean, simply?
 ?
 Input
-<!--SR:!2023-01-30,64,250-->
+<!--SR:!2023-07-10,161,250-->
 
 What does second preimage resistance mean?
 ?
@@ -115,7 +115,7 @@ Suppose a hash function has a range of size n = 2^b, what is the *approximate an
 Run the hash $~n$ times
 Giving an exact probability of $1 - [\frac{(n-1)}{n}]^n$ 
 With a limit of $1 - \frac{1}{e} \approx 1 - 0.3679 = 0.6321$
-<!--SR:!2023-01-30,2,216-->
+<!--SR:!2023-02-03,4,216-->
 
 How does the birthday problem apply to hash functions?
 ?
