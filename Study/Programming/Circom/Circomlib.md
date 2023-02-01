@@ -73,7 +73,7 @@ No.
 What does `nbits` do?
 ?
 Calculates the number of bits in the output required to hold a given value, namely the largest possible sum.
-<!--SR:2023-02-01,153,250-->
+<!--SR:!2024-02-11,375,250-->
 
 What do `a`, `r`, and `n` represent in `nbits`?
 ?

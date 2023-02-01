@@ -67,7 +67,7 @@ Extending the lower bound to 2 elements would prove the optimality of the 3 elem
 Who posed the question answered by Groth16's second contribution?
 ?
 Nir Bitansky, Allesandro Chisea, Yuval Ishai, Rafail Ostrovsky, and Omer Paneth.
-<!--SR:!2023-01-28,60,150-->
+<!--SR:!2023-05-06,94,150-->
 
 # Introduction
 
@@ -137,7 +137,7 @@ Constant size NIZK arguments based on progression-free sets to reduce the size o
 What is Groth's constant size NIZK based on?
 ?
 Constructing a set of polynomial equations and using pairings to efficiently verify these equations.
-<!--SR:2022-12-22,62,170-->
+<!--SR:!2023-06-26,145,170-->
 
 UNFINISHED
 
@@ -173,7 +173,7 @@ $\forall k > 0\ \exists n_0 \forall n > n_0 : f(n) > k \cdot g(n)$
 What does $\lambda$ represent, and what do its values mean?
 ?
 $\lambda$ is the security parameter, and as it grows we want higher security.
-<!--SR:2022-12-10,123,270-->
+<!--SR:!2024-03-11,404,270-->
 
 What does $y = A(x;r)$ mean?
 ?
@@ -406,7 +406,7 @@ What is the definition of perfect zero-knowledge?
 We say $(\textbf{Setup, Prove, Vfy, Sim})$ is a perfect zero-knowledge if for all $\lambda \in \mathbb{N}, (R, z) \leftarrow \mathcal{R}(1^\lambda), (\phi, w) \in R$ and adversaries $\mathcal{A}$:
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Prove}(R, \sigma, \phi, w): \mathcal{A}(R, z, \sigma, \tau, \pi) = 1] =$
 $Pr[(\sigma, \tau) \leftarrow \textbf{Setup}(R); \pi \leftarrow \textbf{Sim}(R, \tau, \phi) : \mathcal{A}(R, z, \sigma, \tau, \pi) = 1]$
-<!--SR:2023-01-20,119,210-->
+<!--SR:!2023-10-22,263,210-->
 
 ??? Why does the adversary not get phi as well? Does that represent a weakening of the definition? Is it because phi can somehow be inferred from the other arguments? Is it because the same phi is being given to both the simulator and the prover?
 
@@ -1134,7 +1134,7 @@ $\alpha, \beta, \gamma, \delta$
 What is the "exponentiations of $x$" part of $\sigma$ for a QAPLIP?
 ?
 $\{x^i\}_{i=0}^{n-1}$
-<!--SR:!2022-12-20,30,210-->
+<!--SR:!2023-02-22,21,190-->
 
 What is the "linear combinations for $\phi$" part of $\sigma$ for a QAPLIP?
 ?

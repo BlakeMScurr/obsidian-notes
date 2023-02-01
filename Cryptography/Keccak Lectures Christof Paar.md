@@ -139,7 +139,7 @@ Where:
 	$t$ is the number of hashes
 	$n$ is the number of bits in the output
 	$\lambda$ is the probability with which at least one collision occurs between at least two values
-<!--SR:!2023-01-31,4,237-->
+<!--SR:!2023-02-12,11,237-->
 
 
 # SHA-3
@@ -200,7 +200,7 @@ $n_r = 24$
 output length $\in \{224, 256, 348, 512\}$
 $r \in \{1152, 1085, 832, 576\}$
 $c \in \{448, 512, 768, 1024\}$
-<!--SR:!2023-01-31,6,130-->
+<!--SR:!2023-02-04,3,130-->
 
 What does $b$ represent?
 ?
@@ -259,7 +259,7 @@ Rounds.
 How many rounds in the keccak-f function?
 ?
 $r$ (24 in SHA-3)
-<!--SR:!2023-02-01,66,250-->
+<!--SR:!2023-03-06,33,230-->
 
 What is the input and output size of keccak-f?
 ?

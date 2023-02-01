@@ -109,7 +109,7 @@ What are NP's prover and verifier?
 ?
 The prover is an exponential time turing machine.
 The verifier is a polynomial time turing machine.
-<!--SR:2023-02-01,195,250-->
+<!--SR:!2024-06-03,488,250-->
 
 
 ### Proof Systems in General
@@ -516,7 +516,7 @@ $L \in AM \implies L \in NP$ for a random oracle
 How do classes AM and IP compare?
 ?
 $AM \subseteq IP$, in fact $AM \subseteq IP[1]$, probably $AM \subset IP$ according to GMR.
-<!--SR:2023-01-31,148,230-->
+<!--SR:!2024-01-09,342,230-->
 
 What do GMR believe about the "interactive hierarchy"?
 ?

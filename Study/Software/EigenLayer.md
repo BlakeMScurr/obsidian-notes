@@ -78,7 +78,7 @@ How do we define $S_j^c$?
 $$
 \{ U \subseteq S : \sum_{i \in S_j \cap U} s_i > \alpha_j \sum_{i \in S_j} s_i\}
 $$
-<!--SR:!2023-01-31,68,250-->
+<!--SR:!2023-07-22,171,250-->
 
 What does $S^c(V)$ denote?
 ?
@@ -170,7 +170,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2023-02-01,8,130-->
+<!--SR:!2023-02-05,4,130-->
 
 What does $T_i$ denote?
 ?
@@ -184,7 +184,7 @@ What is the simple sufficient enforcable condition for cryptoeconomic security o
 $$
 s_i \geq \sum_{j \in T_i} \gamma_{ij}\frac{p_j}{\alpha_j}
 $$
-<!--SR:!2023-02-01,8,130-->
+<!--SR:!2023-02-05,4,130-->
 
 
 ??? How do the steps in line (10) work?

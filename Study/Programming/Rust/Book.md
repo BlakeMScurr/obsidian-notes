@@ -87,7 +87,7 @@ How do you print a string, say, `"hello"` to stdout?
 Are variables mutable or immutable by default?
 ?
 Immutable
-<!--SR:2023-02-01,106,270-->
+<!--SR:!2023-11-14,286,270-->
 
 How do you create a new immutable variable `a` set to `5`?
 ?
@@ -166,7 +166,7 @@ How can you use placeholders to print the value "x is 5", where the varialbe `x`
 How can you use multiple placeholders to print the values of `x` and `y`?
 ?
 `println!("x = {}, y = {}", x, y);`
-<!--SR:2023-01-31,105,270-->
+<!--SR:!2023-11-13,285,270-->
 
 How do you get access to random numbers in Rust?
 ?
@@ -427,7 +427,7 @@ What is the default floating-point type and why?
 What standard are floats implemented according to?
 ?
 IEEE-754
-<!--SR:2023-01-31,100,250-->
+<!--SR:!2023-03-21,48,230-->
 
 What is the output of `println!("{}", 5 / 4);` and why?
 ?
@@ -921,7 +921,7 @@ Because they live solely on the stack, and can be efficiently copied.
 What trait indicates that a type lives on the stack?
 ?
 The `Copy` trait.
-<!--SR:2023-01-31,98,250-->
+<!--SR:!2023-10-05,246,250-->
 
 What trait can't coexist with the `Copy` trait, and how exactly?
 ?
@@ -1115,7 +1115,7 @@ No
 Does making a module public make its functions and structs etc public?
 ?
 No
-<!--SR:2023-02-01,100,250-->
+<!--SR:!2023-10-09,250,250-->
 
 How do you create shortcuts to paths?
 ?
@@ -1272,7 +1272,7 @@ fn main() {
 What method can we use to clean up nested match statements when dealing with errors?
 ?
 `unwrap_or_else`
-<!--SR:!2023-02-01,92,230-->
+<!--SR:!2023-03-19,46,210-->
 
 What does `unwrap_or_else` do?
 ?

@@ -693,7 +693,7 @@ x >> k = x/(2**k)
 x << k = (x*(2{**}k)~ & ~mask) % p
 ```
 where b is the number of significant bits of p and mask is `2{**}b - 1`
-<!--SR:!2023-02-01,3,130-->
+<!--SR:!2023-02-03,2,130-->
 
 How do the shift operators work for `p/2 + 1 <= k < p`?
 ?
@@ -790,7 +790,7 @@ out <-- 1 - a * b;
 What kinds of expressions are allowed in constraints?
 ?
 Quadratic expressions.
-<!--SR:2023-01-31,176,270-->
+<!--SR:!2024-05-23,477,270-->
 
 What is wrong with the following code and what error does it produce?
 ```
