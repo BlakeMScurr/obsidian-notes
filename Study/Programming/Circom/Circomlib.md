@@ -338,7 +338,7 @@ escalarmul
 escalarmulany
 escalarmulfix
 escalarmulw4table
-<!--SR:!2023-02-02,10,130-->
+<!--SR:!2023-02-16,14,130-->
 
 ## g-m
 

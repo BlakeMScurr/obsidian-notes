@@ -293,7 +293,7 @@ $\rho$: rotation
 $\pi$: permutation
 $\chi$: combines 3 bits
 $\iota$: adds constants
-<!--SR:!2023-02-02,6,236-->
+<!--SR:!2023-02-17,15,236-->
 
 What does $theta$ do, roughly?
 ?

@@ -132,7 +132,7 @@ The first constant size NIZK arguments, by combining pairing based NIZKs with id
 What did Lip12 achieve wrt communication complexity?
 ?
 Constant size NIZK arguments based on progression-free sets to reduce the size of the common reference string.
-<!--SR:!2022-12-17,31,150-->
+<!--SR:!2023-04-25,82,150-->
 
 What is Groth's constant size NIZK based on?
 ?
@@ -304,7 +304,7 @@ The witness.
 What kinds of pairs are in $R$?
 ?
 $(\phi, w)$, i.e., statement and witness
-<!--SR:2022-12-01,119,270-->
+<!--SR:!2024-03-15,407,270-->
 
 What is $\mathcal{R}_\lambda$?
 ?
@@ -709,7 +709,7 @@ What is the condition that follows from an arithmetic constraint's constants bei
 ?
 $a_0 = 1$ and the variables $a_1, ..., a_m$ satisfy the n equations if and only if at each point $r_1, ..., r_q$
 $$\sum_{i=0}^ma_iu_i(r_q)\cdot \sum_{i=0}^ma_iv_i(r_q) = \sum_{i=0}^ma_iw_i(r_q)$$
-<!--SR:2022-11-08,21,130-->
+<!--SR:!2023-02-24,22,130-->
 
 ??? is it supposed to say "each $r_1, ..., r_n$?"
 
@@ -724,7 +724,7 @@ $t(X)$ is the lowest degree monomial with $t(r_q) = 0$ for each $r_q$.
 Let $LHS = a(x)$ and $RHS = b(x)$
 $a(X) \equiv b(X) \pmod{t(X)} \implies \exists k \in \mathbb{N} : a(X) + k \cdot t(X) = b(X)$ from the definition of mod
 Which is true when $k \cdot t(X)$ is $0$, i.e., at each point $r_q$.
-<!--SR:!2023-01-16,53,250-->
+<!--SR:!2023-10-06,246,270-->
 
 ### QAP Definition
 
@@ -838,7 +838,7 @@ It is a useful characterisation of the information theoretic underpinning of var
 Who invented LIPs?
 ?
 Bitansky et al. BCI+13
-<!--SR:2022-12-29,137,270-->
+<!--SR:!2024-03-25,417,270-->
 
 How do we denote the degree of a LIP?
 ?
@@ -865,7 +865,7 @@ A non inteactive argument system where the (Setup, Prove, Vfy) algorithms work w
 What does Setup do in a LIP?
 ?
 It creates an arithmetic circuit of multiplicative depth $d_Q$ that takes as input randomness $\textbf{r} \in \mathbb{F}^\mu$ and returns vectors $\sigma \in \mathbb{F}^m$ and $\tau \in \mathbb{F}^n$.
-<!--SR:2022-12-15,87,190-->
+<!--SR:!2023-03-20,46,170-->
 
 ??? Why does it have to *create* a circuit? Why can't it just use a fixed circuit? Is this to create flexibility? But surely we have enough flexibility from the randomness vector that is given to the circuit.
 
@@ -1057,7 +1057,7 @@ Equations formed by multiplying together the results of pairings.
 What kind of language does our pairing based NIZK construction prove?
 ?
 Quadratic Arithmetic Programs.
-<!--SR:2022-11-30,86,230-->
+<!--SR:!2023-11-09,280,230-->
 
 What does a proof in our NIZK construction consist of?
 ?
@@ -1197,7 +1197,7 @@ $A = \alpha + \sum_{i=0}^m a_iu_i(x) + r\delta$
 What is the definition of $B$ in a QAPLIP?
 ?
 $B = \beta + \sum_{i=0}^m a_iv_i(x) + s\delta$
-<!--SR:!2022-12-20,26,150-->
+<!--SR:!2023-02-23,21,130-->
 
 How is $C$ computed by Prove in a QAPLIP?
 ?
@@ -1280,7 +1280,7 @@ $C \cdot \delta$
 When does Vfy accept in a QAPLIP?
 ?
 When the polynomial test passes.
-<!--SR:2023-01-11,124,270-->
+<!--SR:!2024-01-31,363,270-->
 
 ##### Sim
 
@@ -1307,7 +1307,7 @@ $$
 C =
 \frac{AB - \alpha\beta - \sum^{\mathscr{l}}_{i=0} a_i(\beta u_i(x) + \alpha v_i(x) + w_i(x))}{\delta}
 $$
-<!--SR:!2022-12-13,16,170-->
+<!--SR:!2023-02-16,14,150-->
 
 What is the definition of the proof that the simulator returns in a QAPLIP?
 ?

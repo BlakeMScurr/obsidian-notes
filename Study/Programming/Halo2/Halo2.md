@@ -83,7 +83,7 @@ What does a PLONKish circuit define in addition to the configuration?
 The number of rows in the matrix $n$.
 Equality constraints.
 The values of fixed columns at each row.
-<!--SR:!2023-02-02,8,130-->
+<!--SR:!2023-02-06,4,130-->
 
 What keys do we genererate from the circuit description?
 ?
@@ -112,7 +112,7 @@ Standard gates that support generic field operations like multiplication and add
 What is the purpose of a chip?
 ?
 To create a higher level API than the matrix view of a PLONKish circuit, offering auditability, efficiency, modularity, and expressiveness.
-<!--SR:2023-02-02,127,270-->
+<!--SR:!2024-01-11,343,270-->
 
 What are some examples of things chips might do?
 ?

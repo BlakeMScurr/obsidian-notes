@@ -224,7 +224,7 @@ cannot assign twice to immutable variable `x`
 Why is it useful to create immutable variables in Rust?
 ?
 You might write code that assumes that a variable doesn't change. One part of the code may assume that the variable will never change, and if it does change that will introduce a bug. So it's useful to have the compiler ensure that doesn't happen.
-<!--SR:2023-02-02,105,270-->
+<!--SR:!2023-11-15,286,270-->
 
 When are constants evalutated?
 ?
@@ -1565,7 +1565,7 @@ So you can use the question mark operator in the body of the tests, so you can c
 How do you assert that a result is an err?
 ?
 `assert!(value.is_err())` - not by using the question mark operator.
-<!--SR:!2023-02-02,78,210-->
+<!--SR:!2023-07-15,163,210-->
 
 Can you use the `#[should_panic]` annotation on tests that return `Result`s?
 ?

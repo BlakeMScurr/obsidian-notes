@@ -1005,7 +1005,7 @@ That $x \in L$, but the text is of no other use, and could in fact the text coul
 For GMR, what is the theoretical application for knowledge complexity and why?
 ?
 Classifying languages. Languages, or equivalently, theorem proving procedures are intended to communicate knowledge, and are naturally classed by their knowledge complexity, for GMR.
-<!--SR:2023-02-02,164,230-->
+<!--SR:!2024-02-10,373,230-->
 
 For which well known complexity class, known prior to the notion of knowledge complexity, is knowledge complexity defined for?
 ?
