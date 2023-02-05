@@ -629,7 +629,7 @@ Addition, subtraction, multiplication, exponentiation all mod p.
 What is the `/` operator?
 ?
 Multiplication by the multiplicative inverse mod p.
-<!--SR:2023-02-04,138,210-->
+<!--SR:!2023-11-29,296,210-->
 
 What is the `\` operator?
 ?
@@ -995,7 +995,7 @@ There are two types of components being put into the array `c`. This applies eve
 How does scoping work?
 ?
 We have static/lexical scoping, and that signals must be defined at the top level block of the template that uses them, effectively giving them global scope.
-<!--SR:2023-02-03,155,250-->
+<!--SR:!2023-04-24,77,230-->
 
 What is wrong with the following code and what error does it produce?
 ```
